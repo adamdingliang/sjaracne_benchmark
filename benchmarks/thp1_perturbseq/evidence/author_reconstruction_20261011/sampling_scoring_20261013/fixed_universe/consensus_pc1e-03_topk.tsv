@@ -1,0 +1,6 @@
+k	status	TP_tie_expected	TP_min	TP_max	FP_tie_expected	precision_tie_expected	sensitivity_tie_expected	specificity_tie_expected	FPR_tie_expected	boundary_MI	boundary_group_size	split_MI_tie
+1000	complete	519.4	519	520	480.6	0.5194	0.00044110590703145235	0.9998704702662421	0.00012952973375791201	0.4504	5	True
+5000	complete	2693.4	2691	2695	2306.6	0.53868	0.0022873982479755754	0.9993783327426425	0.0006216672573574694	0.3642	10	True
+10000	complete	5177.0	5176	5179	4823.0	0.5177	0.004396621641705485	0.9987001208782472	0.0012998791217528288	0.3029	9	True
+50000	exceeds_emitted_eligible_pairs											
+100000	exceeds_emitted_eligible_pairs											

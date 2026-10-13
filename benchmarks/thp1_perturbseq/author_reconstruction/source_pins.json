@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "analysis_commit": "c39f0aaffc22be81ae425adf9e7617504ae9ee33",
+  "paper_url": "https://www.nature.com/articles/s41467-025-59620-6",
+  "scminer_commit": "aad18299b0aba8f5a8afcab9e801593dde6de0ee",
+  "supercell_commit": "f4d02c88f4d2d38976ea526194ebdd565282a136",
+  "resources": [
+    {
+      "filename": "tf_sigs_hg.RData",
+      "url": "https://raw.githubusercontent.com/jyyulab/scMINER/aad18299b0aba8f5a8afcab9e801593dde6de0ee/inst/RData/tf_sigs_hg.RData",
+      "sha256": "8241a1df4dbe1137fed5b85319b6f3dbb720de7de37704133f985d85dfdb0bf7",
+      "git_blob": "1f5ca7e4202552959fd8bc7588f49d4beb453cf0"
+    },
+    {
+      "filename": "SCimplify.R",
+      "url": "https://raw.githubusercontent.com/GfellerLab/SuperCell/f4d02c88f4d2d38976ea526194ebdd565282a136/R/SCimplify.R",
+      "sha256": "b07cba4a03ffc45e3d6272f7c3f50cb7fcfd20680676e8ee6205b62df26c1e50",
+      "git_blob": "f829e1eb10a79cb4512e924cc81e2060c2fb6882"
+    },
+    {
+      "filename": "build_knn_graph.R",
+      "url": "https://raw.githubusercontent.com/GfellerLab/SuperCell/f4d02c88f4d2d38976ea526194ebdd565282a136/R/build_knn_graph.R",
+      "sha256": "e754356300e701beeb2e9de0419c3515b15ce3505700380a2ad420ce6bf85d3e",
+      "git_blob": "3c78b09981795f9200d276e298e52649798241d5"
+    },
+    {
+      "filename": "supercell_GE.R",
+      "url": "https://raw.githubusercontent.com/GfellerLab/SuperCell/f4d02c88f4d2d38976ea526194ebdd565282a136/R/supercell_GE.R",
+      "sha256": "9dc6d56d59bdf439565a675ef1980d30145c16313afa0194e47cc974902271ac",
+      "git_blob": "150ff52c603a1a62f19f51a591c5cd31ee9dd0ff"
+    }
+  ],
+  "supercell_default_branch_dependencies": ["Matrix", "igraph", "irlba", "RANN", "plyr"],
+  "supercell_unused_branches": {
+    "proxy": "do.approx=FALSE",
+    "bluster_and_dbscan": "DoSNN=FALSE",
+    "matrixStats": "supercell_GE_idx is not called",
+    "supercell_assign": "cell.annotation=NULL and cell.split.condition=NULL"
+  },
+  "paper_package_versions": {"scran": "1.32.0", "scater": "1.32.1", "SuperCell": "1.0"}
+}

@@ -1,0 +1,214 @@
+{
+  "status": "complete",
+  "scope": "reconstructed_legacy_eligible_emitted_EPR",
+  "primary_population": "eligible_emitted",
+  "scores": {
+    "consensus_pc1e-02": {
+      "consensus_p": 0.01,
+      "eligible_emitted_pairs": 23964,
+      "reference_positive_emitted_pairs": 10416,
+      "positive_fraction": 0.43465197796695043,
+      "anchors": [
+        {
+          "status": "complete",
+          "k": 1000,
+          "TP": 517,
+          "Random_TP": 424,
+          "EPR_R_seed1_shuffle": 1.2193396226415094,
+          "precision": 0.51700000000000002,
+          "split_MI_tie": true,
+          "TP_tie_expected": 517,
+          "TP_min": 517,
+          "TP_max": 517,
+          "EPR_tie_expected_TP_over_same_shuffle": 1.2193396226415094,
+          "Random_TP_expectation": 434.65197796695043,
+          "precision_lift_over_random_expectation": 1.1894573732718894
+        },
+        {
+          "status": "complete",
+          "k": 5000,
+          "TP": 2688,
+          "Random_TP": 2177,
+          "EPR_R_seed1_shuffle": 1.234726688102894,
+          "precision": 0.53759999999999997,
+          "split_MI_tie": true,
+          "TP_tie_expected": 2687.7142857142858,
+          "TP_min": 2687,
+          "TP_max": 2688,
+          "EPR_tie_expected_TP_over_same_shuffle": 1.2345954458954,
+          "Random_TP_expectation": 2173.2598898347519,
+          "precision_lift_over_random_expectation": 1.2367201448321266
+        },
+        {
+          "status": "complete",
+          "k": 10000,
+          "TP": 5199,
+          "Random_TP": 4369,
+          "EPR_R_seed1_shuffle": 1.1899748226138704,
+          "precision": 0.51990000000000003,
+          "split_MI_tie": true,
+          "TP_tie_expected": 5199.363636363636,
+          "TP_min": 5198,
+          "TP_max": 5201,
+          "EPR_tie_expected_TP_over_same_shuffle": 1.1900580536423979,
+          "Random_TP_expectation": 4346.5197796695038,
+          "precision_lift_over_random_expectation": 1.1962130393799748
+        },
+        {
+          "k": 50000,
+          "status": "exceeds_emitted_pairs"
+        },
+        {
+          "k": 100000,
+          "status": "exceeds_emitted_pairs"
+        }
+      ],
+      "full_pool_endpoint": {
+        "k": 23964,
+        "TP": 10416,
+        "Random_TP": 10416,
+        "EPR_R_seed1_shuffle": 1,
+        "precision": 0.43465197796695043,
+        "split_MI_tie": false,
+        "TP_tie_expected": 10416,
+        "TP_min": 10416,
+        "TP_max": 10416,
+        "EPR_tie_expected_TP_over_same_shuffle": 1,
+        "Random_TP_expectation": 10416,
+        "precision_lift_over_random_expectation": 1
+      }
+    },
+    "consensus_pc1e-03": {
+      "consensus_p": 0.001,
+      "eligible_emitted_pairs": 19201,
+      "reference_positive_emitted_pairs": 8522,
+      "positive_fraction": 0.44383105046612153,
+      "anchors": [
+        {
+          "status": "complete",
+          "k": 1000,
+          "TP": 519,
+          "Random_TP": 437,
+          "EPR_R_seed1_shuffle": 1.1876430205949657,
+          "precision": 0.51900000000000002,
+          "split_MI_tie": true,
+          "TP_tie_expected": 519.39999999999998,
+          "TP_min": 519,
+          "TP_max": 520,
+          "EPR_tie_expected_TP_over_same_shuffle": 1.1885583524027459,
+          "Random_TP_expectation": 443.83105046612155,
+          "precision_lift_over_random_expectation": 1.1702651255573808
+        },
+        {
+          "status": "complete",
+          "k": 5000,
+          "TP": 2695,
+          "Random_TP": 2249,
+          "EPR_R_seed1_shuffle": 1.1983103601600711,
+          "precision": 0.53900000000000003,
+          "split_MI_tie": true,
+          "TP_tie_expected": 2693.4000000000001,
+          "TP_min": 2691,
+          "TP_max": 2695,
+          "EPR_tie_expected_TP_over_same_shuffle": 1.1975989328590486,
+          "Random_TP_expectation": 2219.1552523306077,
+          "precision_lift_over_random_expectation": 1.2137050786200423
+        },
+        {
+          "status": "complete",
+          "k": 10000,
+          "TP": 5177,
+          "Random_TP": 4457,
+          "EPR_R_seed1_shuffle": 1.1615436392192058,
+          "precision": 0.51770000000000005,
+          "split_MI_tie": true,
+          "TP_tie_expected": 5177,
+          "TP_min": 5176,
+          "TP_max": 5179,
+          "EPR_tie_expected_TP_over_same_shuffle": 1.1615436392192058,
+          "Random_TP_expectation": 4438.3105046612154,
+          "precision_lift_over_random_expectation": 1.1664348392396151
+        },
+        {
+          "k": 50000,
+          "status": "exceeds_emitted_pairs"
+        },
+        {
+          "k": 100000,
+          "status": "exceeds_emitted_pairs"
+        }
+      ],
+      "full_pool_endpoint": {
+        "k": 19201,
+        "TP": 8522,
+        "Random_TP": 8522,
+        "EPR_R_seed1_shuffle": 1,
+        "precision": 0.44383105046612153,
+        "split_MI_tie": false,
+        "TP_tie_expected": 8522,
+        "TP_min": 8522,
+        "TP_max": 8522,
+        "EPR_tie_expected_TP_over_same_shuffle": 1,
+        "Random_TP_expectation": 8522,
+        "precision_lift_over_random_expectation": 1
+      }
+    }
+  },
+  "definitions": {
+    "EPR": "integer TP / actual eligible-pool R seed-1 shuffled TP",
+    "ties": "preserve saved author tie order for integer TP; tie-expectation numerator separately named",
+    "expectation_lift": "tie-expected TP / (k*P/N), not realized shuffled EPR",
+    "labels": "perturbation responses, not direct-edge ground truth"
+  },
+  "R_version": "4.4.3",
+  "RNGkind": ["Mersenne-Twister", "Inversion", "Rejection"],
+  "seed": 1,
+  "package_versions": [
+    {
+      "name": "jsonlite",
+      "version": "2.0.0"
+    },
+    {
+      "name": "digest",
+      "version": "0.6.39"
+    }
+  ],
+  "script_sha256": "5176e5aab179ab5f32207b0c32461073153b95fa8390426351f1109ba8457958",
+  "input_sha256": {
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/three_populations/metrics.json": "bddcab0cce7def013bb5c8f5b31c32988409c0d11c00a125ffe7e8b71be521b7",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/fixed_universe/metrics.json": "0c6998e623a3cd5626af6aca32a7125bbbb7f4983dc01b021982d359ddc23a11",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_after_80pct_20261012/run_manifest.json": "a666b4ae9b02e90281cfd1d59412a9ee0760e89ae92f248b8055624e4b1a36d5",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/prepared/prepare_manifest.json": "85489a966f18e91bd6ac4b4a8d5a5584447ac984bc0c5e18739d6965d9f26b6b",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/prepared/gene_selection.tsv": "ec335455b238ff8b5019eee7347fcbb1b7d5958334a69c964d60d291e9469d0b",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/prepared/reference_eligible_sources.tsv": "6669fb653b2494e4c422d3f4d26526eb25b15dd66f895fcb9acda8e65b871d02",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/prepared/reference_positive_edges.tsv": "e901dc5827739563bec8f7e1308643a20adc12f6b84bbd58019b3ccb603d2720",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/prepared/hubs.txt": "1b43bc91288b705ea24dc33ae12f679e72ac926647c9011e81409af3286fa5d1",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/prepared/expression.exp": "d2e27058034efe096ddf7417da566fa2657386a8dee19b2cc27e8b433e34421e",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_after_80pct_20261012/consensus_pc1e-02/edges.tsv": "e55925f223a465580346b0f78aca892d1c3c0ff0601a334b0e3deb78cf1ab88d",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-02/metrics.json": "a1f2bb01a7b89eb94fa1894339b2939d26c5650c9a90545436b84305f198ffbb",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-02/ranked_curves.tsv": "db9cdfb97e81f840d8e84ec135619647a2e55a716de1cc026f094fb1abff863a",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-02/comparison_to_publication.tsv": "515d1fd9c0783583f4e3700480c4a9569be66f59d1d2f0816048c0c65f8f7e44",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-02/roc_curves.tsv": "01aae4dd33071911f8d953a861612183cb8d52df4a9a0212b7ecbbdc8ed541db",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-02/MI_ranked_edges.tsv": "18d2330a04cf516b200dcd280c8d22e6100876944c3e67db2124b3bf3387bfd6",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-02/comparison_to_fig6a.png": "4a8037399d8f82f65938120b1e082dda8a062f417203549b4acbc4ce2aba5de5",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_after_80pct_20261012/consensus_pc1e-03/edges.tsv": "cb5624523528ba6e1cfcb5dd64089896ecdc276b4869518d79d6c442d4818869",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-03/metrics.json": "0f0da21e7bdf389f7874e63aa60f181cf86cb0c144c715463eaf6af08773e0f5",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-03/ranked_curves.tsv": "fd4e1b93b5eb24e6118a74a7848fbd713a43b45929ba596a7c7eea8ca04caea3",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-03/comparison_to_publication.tsv": "b4e8ea081d050c7ee544ea8989fd82ac2a05e8424b1ab0b37e42b79ab52aea73",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-03/roc_curves.tsv": "df18a69928a61170bfa20fbe1b672788f6990683f296d27aa7849d914fd2ac8d",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-03/MI_ranked_edges.tsv": "0e3bbc4af5359b2f05b05fb18454ed750c9608fd011767a744b262a67539071e",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/author_compatibility/score_pc1e-03/comparison_to_fig6a.png": "69d71da51b392d1a69f043c069c1eea141f4b40025a4a6d29cce405d1ef60d4b",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/fixed_universe/consensus_pc1e-02_roc.tsv": "8e3c657c4ec95b36610ff01775d0eacac7e75ee241e68b58eee880462aeb5bc2",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/fixed_universe/consensus_pc1e-02_topk.tsv": "aa2fc571d18a77d398656ee98b2a6fd2493fe040fafe07b469b125757751a0b1",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/fixed_universe/consensus_pc1e-03_roc.tsv": "0681cf395c4cdd6b7e3733d5c7e9f8f28a3393238f222afa51c5f949b78ba3d1",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/fixed_universe/consensus_pc1e-03_topk.tsv": "507d8e512aab6bfcd7f3c2e6b1e3d59a7546386326c6b2d7fc7af416b9c88343",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/fixed_universe/REPORT.md": "d7020cd2ba1429b118174fc268f63d44513f23461a1de78d0deac45754a7f650",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/fixed_universe/universe.json": "d887a0fe20df6a5acae174686d2cd37e475823e9c386a4ae44a836661c43b8a5",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/author_reconstruction/score_fixed_universe.py": "ab6d550da187bbaaa3e3a97ecadfad5db5206f8465c6ef5ab1f4254a695d5b13",
+    "/mnt/d/GitHub/SJARACNe/benchmarks/thp1_perturbseq/results/author_reconstruction_20261011/sampling_scoring_20261013/three_populations/REPORT.md": "44ffeab12414b7b5d07232028279f4aceea322cd0c1e630e6199abc9f3960e35"
+  },
+  "output_sha256": {
+    "REPORT.md": "f21b7a0df5166751c9787b97164bc7d454f9d56914b71bbc4f9e1c09ae53e6e4",
+    "ranked_curves.tsv": "bd0774d9138ea8326183cd0a5a50ab2c0bd44356984d9190f734c9bd9f3ea346"
+  }
+}

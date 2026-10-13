@@ -1,0 +1,7 @@
+# Separate exploration dependencies; do not change a running benchmark environment.
+-r requirements.txt
+scanpy>=1.11.5,<1.12
+igraph>=1.0,<2
+leidenalg>=0.11,<0.13
+threadpoolctl>=3.5,<4
+scikit-image>=0.25,<0.27
