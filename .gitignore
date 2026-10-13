@@ -1,0 +1,29 @@
+# Large data, environments, native runs and personal paths stay external.
+/data/
+/downloads/
+/runs/
+/work/
+/_work/
+/local/
+/.migration_sources.local.json
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+*.h5ad
+*.h5
+*.rds
+*.RData
+*.adj
+*.exe
+*.dll
+*.pdb
+*.o
+*.obj
+*.f64
+*.bin
+# Imported, explicitly selected compact evidence is under evidence/ or dated
+# package folders; new uncontrolled outputs belong in runs/ or work/.

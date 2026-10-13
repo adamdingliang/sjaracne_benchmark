@@ -1,0 +1,2 @@
+# Preserve bytes for frozen imported artifacts, including CRLF source files.
+* -text
