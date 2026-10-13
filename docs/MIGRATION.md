@@ -32,6 +32,12 @@ Historical scripts are not automatically portable:
 
 Future adapters should take explicit external engine/build/data paths, enforce source/version pins, create fresh output directories, and record new provenance without mutating the historical packages.
 
+Some preserved BRCA100 sweep-history filenames contain two full SHA-256 values
+and exceed traditional Windows path limits. On Windows, clone with
+`git -c core.longpaths=true clone ...` or set `git config core.longpaths true`
+in this repository. The original filenames are retained rather than shortened,
+because historical manifests identify them.
+
 ## Stage 3: source-repository retirement and publication
 
 Only after equivalent migrated workflows are validated should we replace source-repository benchmark folders with links or remove duplicate working copies. No deletion, SJARACNe commit/PR changes, or public visibility change is authorized by this initial migration. Rights/attribution review and a deliberate data-hosting decision precede public release.
