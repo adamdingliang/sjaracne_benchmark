@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "status": "prepared",
+  "dataset": "DREAM5 Network 3 (E. coli)",
+  "created_utc": "2026-10-15T15:25:23.442603+00:00",
+  "origin": {
+    "kind": "bundled_original_files",
+    "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3"
+  },
+  "source_files": {
+    "input data/net3_expression_data.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\input data\\net3_expression_data.tsv",
+      "sha256": "b49b67d278b27d988c68652df76d0dc9c5e316abb774e6eac30b35b2712f9e2c",
+      "bytes": 36874927
+    },
+    "input data/net3_transcription_factors.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\input data\\net3_transcription_factors.tsv",
+      "sha256": "69dff62d76c1cf5cb45ecfa4301734b8c4885bd8cdbc0d1d1a824fab7ab8cd5b",
+      "bytes": 1562
+    },
+    "gold standard/DREAM5_NetworkInference_GoldStandard_Network3.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\gold standard\\DREAM5_NetworkInference_GoldStandard_Network3.tsv",
+      "sha256": "657c9d413e24279466df6ed3219c12c42b59068b0d4d92b28ed4f1e078ba78d3",
+      "bytes": 1882207
+    },
+    "input data/net3_chip_features.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\input data\\net3_chip_features.tsv",
+      "sha256": "65801c68bda99d36236865b7f17af94a5159df97a5833906131bb224868dc765",
+      "bytes": 20982
+    },
+    "anonymization/net3_gene_ids.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\anonymization\\net3_gene_ids.tsv",
+      "sha256": "a3fa4f3690c26774492591a3fcd303b21678df333e908c10e27cd6a53a73dcd9",
+      "bytes": 49028
+    }
+  },
+  "counts": {
+    "genes": 4511,
+    "profiles": 805,
+    "TFs": 334,
+    "labelled_pairs": 152280,
+    "positive_pairs": 2066,
+    "negative_pairs": 150214,
+    "scored_sources": 141,
+    "scored_targets": 1081,
+    "full_TF_nonself_pairs": 1506340,
+    "unlabelled_pairs": 1354060
+  },
+  "outputs": {
+    "dream5_net3.exp": {
+      "sha256": "a8ea101efa68ae9f047ad5ae4d625e5ddb3b8d03eb6757407c332c46397409f9",
+      "bytes": 36904824
+    },
+    "all334_tfs.txt": {
+      "sha256": "69dff62d76c1cf5cb45ecfa4301734b8c4885bd8cdbc0d1d1a824fab7ab8cd5b",
+      "bytes": 1562
+    }
+  },
+  "preparation_script_sha256": "0035532639120119099dad4b937e489a28842c2e18cd0a356d8ebdfc5b558725",
+  "transformation": "Value-preserving transpose only: original numeric tokens retained; all expression genes, profiles and TFs retained in original order",
+  "reference_policy": "Only explicit 0/1 labelled directed pairs are assessed; unlabelled pairs are not negatives; reference labels do not select inference genes/hubs",
+  "inference_performed": false
+}

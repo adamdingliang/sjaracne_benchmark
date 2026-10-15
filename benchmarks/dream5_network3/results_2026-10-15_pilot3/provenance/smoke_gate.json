@@ -1,0 +1,389 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "plan_sha256": "1171d35773bd5ddfde81e9d1317479b247a13f9169272dd563360cfe012733fe",
+  "stage_validations": [
+    {
+      "arm": "legacy",
+      "seed": 1,
+      "validation": {
+        "status": "passed",
+        "arm": "legacy",
+        "seed": 1,
+        "stage_validation": {
+          "raw": {
+            "status": "passed",
+            "arm": "legacy",
+            "stage": "raw",
+            "source_rows_present": 334,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 805,
+            "edges_all": 1506340,
+            "minimum_emitted_MI": 7.69662e-07,
+            "expected_MI_cutoff": 0.0,
+            "serialized_MI_cutoff": 0.0,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0",
+              "MI P-value": "1",
+              "DPI tolerance": "1",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "legacy bootstrap with replacement",
+              "Sampling request": "legacy -r 1",
+              "Eligible observations": "805",
+              "Resample draws": "805"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          },
+          "nominal_pre": {
+            "status": "passed",
+            "arm": "legacy",
+            "stage": "nominal_pre",
+            "source_rows_present": 334,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 805,
+            "edges_all": 1088271,
+            "minimum_emitted_MI": 0.0307299,
+            "expected_MI_cutoff": 0.03072977561120847,
+            "serialized_MI_cutoff": 0.0307298,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0.0307298",
+              "MI P-value": "1e-07",
+              "DPI tolerance": "1",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "legacy bootstrap with replacement",
+              "Sampling request": "legacy -r 1",
+              "Eligible observations": "805",
+              "Resample draws": "805"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          },
+          "nominal_post": {
+            "status": "passed",
+            "arm": "legacy",
+            "stage": "nominal_post",
+            "source_rows_present": 334,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 805,
+            "edges_all": 31828,
+            "minimum_emitted_MI": 0.0325148,
+            "expected_MI_cutoff": 0.03072977561120847,
+            "serialized_MI_cutoff": 0.0307298,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0.0307298",
+              "MI P-value": "1e-07",
+              "DPI tolerance": "0",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "legacy bootstrap with replacement",
+              "Sampling request": "legacy -r 1",
+              "Eligible observations": "805",
+              "Resample draws": "805"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          },
+          "fixed_pre": {
+            "status": "passed",
+            "arm": "legacy",
+            "stage": "fixed_pre",
+            "source_rows_present": 334,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 805,
+            "edges_all": 1046346,
+            "minimum_emitted_MI": 0.0375943,
+            "expected_MI_cutoff": 0.03759353615996272,
+            "serialized_MI_cutoff": 0.0375935,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0.0375935",
+              "MI P-value": "1",
+              "DPI tolerance": "1",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "legacy bootstrap with replacement",
+              "Sampling request": "legacy -r 1",
+              "Eligible observations": "805",
+              "Resample draws": "805"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          },
+          "fixed_post": {
+            "status": "passed",
+            "arm": "legacy",
+            "stage": "fixed_post",
+            "source_rows_present": 334,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 805,
+            "edges_all": 31814,
+            "minimum_emitted_MI": 0.0376647,
+            "expected_MI_cutoff": 0.03759353615996272,
+            "serialized_MI_cutoff": 0.0375935,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0.0375935",
+              "MI P-value": "1",
+              "DPI tolerance": "0",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "legacy bootstrap with replacement",
+              "Sampling request": "legacy -r 1",
+              "Eligible observations": "805",
+              "Resample draws": "805"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          }
+        },
+        "exact_shared_MI_identity": true,
+        "exact_post_subset_pre": true,
+        "nominal_cutoff_membership_outside_serialization_band": true,
+        "fixed_cutoff_membership_outside_serialization_band": true
+      }
+    },
+    {
+      "arm": "u80",
+      "seed": 1,
+      "validation": {
+        "status": "passed",
+        "arm": "u80",
+        "seed": 1,
+        "stage_validation": {
+          "raw": {
+            "status": "passed",
+            "arm": "u80",
+            "stage": "raw",
+            "source_rows_present": 334,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 644,
+            "edges_all": 1488481,
+            "minimum_emitted_MI": 1.92895e-05,
+            "expected_MI_cutoff": 0.0,
+            "serialized_MI_cutoff": 0.0,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0",
+              "MI P-value": "1",
+              "DPI tolerance": "1",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "fixed-size without replacement",
+              "Sampling request": "80%",
+              "Eligible observations": "805",
+              "Sampled observations": "644"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          },
+          "nominal_pre": {
+            "status": "passed",
+            "arm": "u80",
+            "stage": "nominal_pre",
+            "source_rows_present": 306,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 644,
+            "edges_all": 740442,
+            "minimum_emitted_MI": 0.0375936,
+            "expected_MI_cutoff": 0.03759353615996272,
+            "serialized_MI_cutoff": 0.0375935,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0.0375935",
+              "MI P-value": "1e-07",
+              "DPI tolerance": "1",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "fixed-size without replacement",
+              "Sampling request": "80%",
+              "Eligible observations": "805",
+              "Sampled observations": "644"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          },
+          "nominal_post": {
+            "status": "passed",
+            "arm": "u80",
+            "stage": "nominal_post",
+            "source_rows_present": 306,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 644,
+            "edges_all": 19359,
+            "minimum_emitted_MI": 0.0391122,
+            "expected_MI_cutoff": 0.03759353615996272,
+            "serialized_MI_cutoff": 0.0375935,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0.0375935",
+              "MI P-value": "1e-07",
+              "DPI tolerance": "0",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "fixed-size without replacement",
+              "Sampling request": "80%",
+              "Eligible observations": "805",
+              "Sampled observations": "644"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          },
+          "fixed_pre": {
+            "status": "passed",
+            "arm": "u80",
+            "stage": "fixed_pre",
+            "source_rows_present": 306,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 644,
+            "edges_all": 740442,
+            "minimum_emitted_MI": 0.0375936,
+            "expected_MI_cutoff": 0.03759353615996272,
+            "serialized_MI_cutoff": 0.0375935,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0.0375935",
+              "MI P-value": "1",
+              "DPI tolerance": "1",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "fixed-size without replacement",
+              "Sampling request": "80%",
+              "Eligible observations": "805",
+              "Sampled observations": "644"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          },
+          "fixed_post": {
+            "status": "passed",
+            "arm": "u80",
+            "stage": "fixed_post",
+            "source_rows_present": 306,
+            "completed_source_traversal": 334,
+            "active_genes": 4511,
+            "sampled_observations": 644,
+            "edges_all": 19359,
+            "minimum_emitted_MI": 0.0391122,
+            "expected_MI_cutoff": 0.03759353615996272,
+            "serialized_MI_cutoff": 0.0375935,
+            "headers": {
+              "Input file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+              "MI threshold": "0.0375935",
+              "MI P-value": "1",
+              "DPI tolerance": "0",
+              "Subnetwork file": "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+              "Sampling method": "fixed-size without replacement",
+              "Sampling request": "80%",
+              "Eligible observations": "805",
+              "Sampled observations": "644"
+            },
+            "zero_policy": "Native omitted pairs have MI=0 only after caller-proven exit zero and validated complete traversal; empty source rows may be omitted"
+          }
+        },
+        "exact_shared_MI_identity": true,
+        "exact_post_subset_pre": true,
+        "nominal_cutoff_membership_outside_serialization_band": true,
+        "fixed_cutoff_membership_outside_serialization_band": true
+      }
+    }
+  ],
+  "job_records": [
+    {
+      "arm": "legacy",
+      "seed": 1,
+      "stage": "raw",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\raw\\job.json",
+        "sha256": "683e3dbcb3d5308162be45b5247b238d94e5f527477c25dbc323f06314a90372",
+        "bytes": 2688
+      }
+    },
+    {
+      "arm": "legacy",
+      "seed": 1,
+      "stage": "nominal_pre",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\nominal_pre\\job.json",
+        "sha256": "94a040cc91e8b43caf4090eb16561fc0ac97e1caaaec112d71586f6e8341b9b2",
+        "bytes": 2735
+      }
+    },
+    {
+      "arm": "legacy",
+      "seed": 1,
+      "stage": "nominal_post",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\nominal_post\\job.json",
+        "sha256": "997e0480d5c1ae7f4f7add05a49415b36feb6b5c8959b520424b56b8c47017c6",
+        "bytes": 2742
+      }
+    },
+    {
+      "arm": "legacy",
+      "seed": 1,
+      "stage": "fixed_pre",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\fixed_pre\\job.json",
+        "sha256": "4cc182b0ad3aded9f00eba25d093f8e454808b1de93a01de8a9e75e3a05e9179",
+        "bytes": 2754
+      }
+    },
+    {
+      "arm": "legacy",
+      "seed": 1,
+      "stage": "fixed_post",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\fixed_post\\job.json",
+        "sha256": "f579548913a2c4863272d41a64456823c76725f46b1e61ef3b12c2fe6ddd982f",
+        "bytes": 2760
+      }
+    },
+    {
+      "arm": "u80",
+      "seed": 1,
+      "stage": "raw",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\raw\\job.json",
+        "sha256": "17ee43dd127b6a5a4f7983e20b3590afe7c8eb1ecc7515d382b0919c6b01c93b",
+        "bytes": 2666
+      }
+    },
+    {
+      "arm": "u80",
+      "seed": 1,
+      "stage": "nominal_pre",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\nominal_pre\\job.json",
+        "sha256": "b5caef862459ec787b4b2985a52cf7f21cb1eb70b358e805a2f89097124f815c",
+        "bytes": 2713
+      }
+    },
+    {
+      "arm": "u80",
+      "seed": 1,
+      "stage": "nominal_post",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\nominal_post\\job.json",
+        "sha256": "54eac112456138260e5a2e51754885fb2cb3ef8ea27d3d734600b2db40402642",
+        "bytes": 2719
+      }
+    },
+    {
+      "arm": "u80",
+      "seed": 1,
+      "stage": "fixed_pre",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\fixed_pre\\job.json",
+        "sha256": "7ebfd0f421bee22d355aa48a077d5027b93d9837239dcbcd30c603db11575ea3",
+        "bytes": 2730
+      }
+    },
+    {
+      "arm": "u80",
+      "seed": 1,
+      "stage": "fixed_post",
+      "record": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\fixed_post\\job.json",
+        "sha256": "7596930501dafb9f2b3c41a9eaff53bac430537b23eb324b515b17be31df61e3",
+        "bytes": 2737
+      }
+    }
+  ]
+}

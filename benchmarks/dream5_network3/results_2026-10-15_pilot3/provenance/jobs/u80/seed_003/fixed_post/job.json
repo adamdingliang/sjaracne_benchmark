@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "arm": "u80",
+  "seed": 3,
+  "stage": "fixed_post",
+  "plan_sha256": "1171d35773bd5ddfde81e9d1317479b247a13f9169272dd563360cfe012733fe",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "/usr/bin/time",
+    "-f",
+    "%e\t%M",
+    "-o",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_20261015_pilot3/jobs/u80/seed_003/fixed_post/time.tsv",
+    "/mnt/d/GitHub/_datasets/DREAM5_Network1/benchmark_pr70_small/build_post/SJARACNe/bin/sjaracne.exe",
+    "-i",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/dream5_net3.exp",
+    "-l",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+    "-s",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_prepared_20261015/all334_tfs.txt",
+    "-H",
+    "/mnt/d/GitHub/_datasets/DREAM5_Network1/benchmark_pr70_small/build_post/SJARACNe/config",
+    "-a",
+    "adaptive_partitioning",
+    "-N",
+    "40",
+    "-S",
+    "3",
+    "-n",
+    "0",
+    "-f",
+    "0",
+    "0",
+    "-p",
+    "1",
+    "-t",
+    "0.03759353615996272",
+    "-e",
+    "0",
+    "-u",
+    "80%",
+    "-o",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/dream5_network3_20261015_pilot3/jobs/u80/seed_003/fixed_post/raw.adj"
+  ],
+  "native_exit_code": 0,
+  "native_wall_seconds": 15.99,
+  "native_peak_rss_kib": 112004,
+  "total_wall_seconds": 16.155616000003647,
+  "artifacts": {
+    "raw.adj": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\fixed_post\\raw.adj",
+      "sha256": "10126de1c6a7ff6e57ac9f62e3d5ed120c09aadce23df7cf4ad744c0af4373db",
+      "bytes": 288735
+    },
+    "stdout.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\fixed_post\\stdout.log",
+      "sha256": "4713df7a8345892fc01407fdfdb338fb2cafdd50e49f125d34347a8b41255116",
+      "bytes": 1338
+    },
+    "stderr.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\fixed_post\\stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "time.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\fixed_post\\time.tsv",
+      "sha256": "f77fe71648ac55784973f503ac942eedf2a945ed1f8a51109a39e5d03408b991",
+      "bytes": 13
+    },
+    "validation.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\fixed_post\\validation.json",
+      "sha256": "2ffd616a1cedc08c775e2aa7b6966d2916b0d739aeea86f0c86d97a1070f1f71",
+      "bytes": 962
+    }
+  }
+}

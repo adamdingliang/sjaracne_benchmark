@@ -1,0 +1,347 @@
+{
+  "status": "complete",
+  "matched_seeds": 3,
+  "gold_pairs": 152280,
+  "gold_positives": 2066,
+  "gold_negatives": 150214,
+  "primary_endpoint": "u80 versus legacy nominal post-DPI average precision over fixed explicit gold labels",
+  "primary_paired_AP_deltas": [
+    0.0036592090369877706,
+    0.0047313702754269715,
+    0.002568146731243469
+  ],
+  "primary_paired_AP_delta_median": 0.0036592090369877706,
+  "primary_after_higher": 3,
+  "primary_after_equal": 0,
+  "primary_after_lower": 0,
+  "medians": {
+    "legacy": {
+      "raw": {
+        "edges_all": 1506340.0,
+        "edges_explicit_labelled": 152280.0,
+        "edges_unlabelled": 1354060.0,
+        "TP": 2066.0,
+        "FP": 150214.0,
+        "precision": 0.013567113212503283,
+        "sensitivity": 1.0,
+        "specificity": 0.0,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.640041114753729,
+        "average_precision_fixed_explicit_universe": 0.06607862255229902
+      },
+      "nominal_pre": {
+        "edges_all": 1131528.0,
+        "edges_explicit_labelled": 128618.0,
+        "edges_unlabelled": 1002910.0,
+        "TP": 1893.0,
+        "FP": 126725.0,
+        "precision": 0.014764747326938115,
+        "sensitivity": 0.9162633107454018,
+        "specificity": 0.1563702451169665,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.6398087018957181,
+        "average_precision_fixed_explicit_universe": 0.06602960933622597
+      },
+      "nominal_post": {
+        "edges_all": 31828.0,
+        "edges_explicit_labelled": 3448.0,
+        "edges_unlabelled": 28380.0,
+        "TP": 206.0,
+        "FP": 3242.0,
+        "precision": 0.05974477958236659,
+        "sensitivity": 0.09970958373668926,
+        "specificity": 0.978417457760262,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.5395615469203916,
+        "average_precision_fixed_explicit_universe": 0.042116946507881135
+      },
+      "fixed_pre": {
+        "edges_all": 1094663.0,
+        "edges_explicit_labelled": 125082.0,
+        "edges_unlabelled": 969581.0,
+        "TP": 1865.0,
+        "FP": 123217.0,
+        "precision": 0.014961858805917857,
+        "sensitivity": 0.9027105517909003,
+        "specificity": 0.1797235943387434,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.6396661817652572,
+        "average_precision_fixed_explicit_universe": 0.06601183707432126
+      },
+      "fixed_post": {
+        "edges_all": 31814.0,
+        "edges_explicit_labelled": 3448.0,
+        "edges_unlabelled": 28366.0,
+        "TP": 206.0,
+        "FP": 3242.0,
+        "precision": 0.05974477958236659,
+        "sensitivity": 0.09970958373668926,
+        "specificity": 0.978417457760262,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.5395615469203916,
+        "average_precision_fixed_explicit_universe": 0.042116946507881135
+      }
+    },
+    "u64": {
+      "raw": {
+        "edges_all": 1483825.0,
+        "edges_explicit_labelled": 151094.0,
+        "edges_unlabelled": 1332676.0,
+        "TP": 2055.0,
+        "FP": 149040.0,
+        "precision": 0.01359585574499335,
+        "sensitivity": 0.994675701839303,
+        "specificity": 0.007815516529750877,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.6383972612109853,
+        "average_precision_fixed_explicit_universe": 0.07591838289772838
+      },
+      "nominal_pre": {
+        "edges_all": 597611.0,
+        "edges_explicit_labelled": 66146.0,
+        "edges_unlabelled": 531465.0,
+        "TP": 1274.0,
+        "FP": 64872.0,
+        "precision": 0.019428571428571427,
+        "sensitivity": 0.616650532429816,
+        "specificity": 0.5681361257938674,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.6315799720440143,
+        "average_precision_fixed_explicit_universe": 0.07494224176119599
+      },
+      "nominal_post": {
+        "edges_all": 21145.0,
+        "edges_explicit_labelled": 2447.0,
+        "edges_unlabelled": 18700.0,
+        "TP": 217.0,
+        "FP": 2233.0,
+        "precision": 0.08745402533714752,
+        "sensitivity": 0.10503388189738626,
+        "specificity": 0.9851345413876204,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.5454069103425998,
+        "average_precision_fixed_explicit_universe": 0.04729607307635189
+      },
+      "fixed_pre": {
+        "edges_all": 672906.0,
+        "edges_explicit_labelled": 75389.0,
+        "edges_unlabelled": 597517.0,
+        "TP": 1387.0,
+        "FP": 74002.0,
+        "precision": 0.01831334373151186,
+        "sensitivity": 0.6713455953533398,
+        "specificity": 0.5073561718614776,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.63459204300606,
+        "average_precision_fixed_explicit_universe": 0.07523267542347407
+      },
+      "fixed_post": {
+        "edges_all": 21167.0,
+        "edges_explicit_labelled": 2447.0,
+        "edges_unlabelled": 18722.0,
+        "TP": 217.0,
+        "FP": 2233.0,
+        "precision": 0.08745402533714752,
+        "sensitivity": 0.10503388189738626,
+        "specificity": 0.9851345413876204,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.5454069103425998,
+        "average_precision_fixed_explicit_universe": 0.04729607307635189
+      }
+    },
+    "u80": {
+      "raw": {
+        "edges_all": 1488024.0,
+        "edges_explicit_labelled": 151488.0,
+        "edges_unlabelled": 1336546.0,
+        "TP": 2061.0,
+        "FP": 149427.0,
+        "precision": 0.013605038022813688,
+        "sensitivity": 0.9975798644724104,
+        "specificity": 0.005239192085957356,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.6409263394098572,
+        "average_precision_fixed_explicit_universe": 0.07364173472407924
+      },
+      "nominal_pre": {
+        "edges_all": 721784.0,
+        "edges_explicit_labelled": 82207.0,
+        "edges_unlabelled": 639577.0,
+        "TP": 1472.0,
+        "FP": 80735.0,
+        "precision": 0.017906017735715936,
+        "sensitivity": 0.712487899322362,
+        "specificity": 0.46253345227475473,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.6383148167149878,
+        "average_precision_fixed_explicit_universe": 0.07311325802085891
+      },
+      "nominal_post": {
+        "edges_all": 19539.0,
+        "edges_explicit_labelled": 2354.0,
+        "edges_unlabelled": 17177.0,
+        "TP": 200.0,
+        "FP": 2134.0,
+        "precision": 0.08785871964679912,
+        "sensitivity": 0.0968054211035818,
+        "specificity": 0.9857936011290559,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.5415702913085688,
+        "average_precision_fixed_explicit_universe": 0.045776155544868906
+      },
+      "fixed_pre": {
+        "edges_all": 721784.0,
+        "edges_explicit_labelled": 82207.0,
+        "edges_unlabelled": 639577.0,
+        "TP": 1472.0,
+        "FP": 80735.0,
+        "precision": 0.017906017735715936,
+        "sensitivity": 0.712487899322362,
+        "specificity": 0.46253345227475473,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.6383148167149878,
+        "average_precision_fixed_explicit_universe": 0.07311325802085891
+      },
+      "fixed_post": {
+        "edges_all": 19539.0,
+        "edges_explicit_labelled": 2354.0,
+        "edges_unlabelled": 17177.0,
+        "TP": 200.0,
+        "FP": 2134.0,
+        "precision": 0.08785871964679912,
+        "sensitivity": 0.0968054211035818,
+        "specificity": 0.9857936011290559,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.5415702913085688,
+        "average_precision_fixed_explicit_universe": 0.045776155544868906
+      }
+    },
+    "u90": {
+      "raw": {
+        "edges_all": 1506340.0,
+        "edges_explicit_labelled": 152280.0,
+        "edges_unlabelled": 1354060.0,
+        "TP": 2066.0,
+        "FP": 150214.0,
+        "precision": 0.013567113212503283,
+        "sensitivity": 1.0,
+        "specificity": 0.0,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.645688203448656,
+        "average_precision_fixed_explicit_universe": 0.07544018450072808
+      },
+      "nominal_pre": {
+        "edges_all": 787660.0,
+        "edges_explicit_labelled": 90119.0,
+        "edges_unlabelled": 697541.0,
+        "TP": 1578.0,
+        "FP": 88541.0,
+        "precision": 0.017381748043151592,
+        "sensitivity": 0.7637947725072604,
+        "specificity": 0.4105675902379272,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.6450888326716485,
+        "average_precision_fixed_explicit_universe": 0.07498845571481291
+      },
+      "nominal_post": {
+        "edges_all": 19299.0,
+        "edges_explicit_labelled": 2267.0,
+        "edges_unlabelled": 17034.0,
+        "TP": 203.0,
+        "FP": 2064.0,
+        "precision": 0.08874172185430464,
+        "sensitivity": 0.09825750242013553,
+        "specificity": 0.9862596029664346,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.5424427655202876,
+        "average_precision_fixed_explicit_universe": 0.04549785668181912
+      },
+      "fixed_pre": {
+        "edges_all": 747535.0,
+        "edges_explicit_labelled": 85266.0,
+        "edges_unlabelled": 662269.0,
+        "TP": 1526.0,
+        "FP": 83740.0,
+        "precision": 0.017769295510852427,
+        "sensitivity": 0.7386253630203291,
+        "specificity": 0.44252865911299877,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.644499236590905,
+        "average_precision_fixed_explicit_universe": 0.07489014350595019
+      },
+      "fixed_post": {
+        "edges_all": 19299.0,
+        "edges_explicit_labelled": 2267.0,
+        "edges_unlabelled": 17034.0,
+        "TP": 203.0,
+        "FP": 2064.0,
+        "precision": 0.08874172185430464,
+        "sensitivity": 0.09825750242013553,
+        "specificity": 0.9862596029664346,
+        "AUROC_fixed_explicit_universe_MI_ties": 0.5424427655202876,
+        "average_precision_fixed_explicit_universe": 0.04549785668181912
+      }
+    }
+  },
+  "median_DPI_pruning": {
+    "legacy": {
+      "nominal": {
+        "global_pruning_fraction": 0.9710577201801458,
+        "labelled_pruning_fraction": 0.9722653453559736,
+        "TP_pruned": 1681.0,
+        "FP_pruned": 123186.0,
+        "TP_pruning_fraction": 0.8897216274089936,
+        "FP_pruning_fraction": 0.9735245359444031
+      },
+      "fixed": {
+        "global_pruning_fraction": 0.9700848571660867,
+        "labelled_pruning_fraction": 0.9712824613129446,
+        "TP_pruned": 1653.0,
+        "FP_pruned": 119678.0,
+        "TP_pruning_fraction": 0.8877384196185286,
+        "FP_pruning_fraction": 0.9725791036191862
+      }
+    },
+    "u64": {
+      "nominal": {
+        "global_pruning_fraction": 0.9646174518206659,
+        "labelled_pruning_fraction": 0.9625090012103755,
+        "TP_pruned": 1059.0,
+        "FP_pruned": 62644.0,
+        "TP_pruning_fraction": 0.8304953560371517,
+        "FP_pruning_fraction": 0.9651071941996374
+      },
+      "fixed": {
+        "global_pruning_fraction": 0.9685438976617834,
+        "labelled_pruning_fraction": 0.9670978325176142,
+        "TP_pruned": 1170.0,
+        "FP_pruned": 71774.0,
+        "TP_pruning_fraction": 0.8428781204111601,
+        "FP_pruning_fraction": 0.9694151486097795
+      }
+    },
+    "u80": {
+      "nominal": {
+        "global_pruning_fraction": 0.97242942486949,
+        "labelled_pruning_fraction": 0.9713649689199216,
+        "TP_pruned": 1252.0,
+        "FP_pruned": 78601.0,
+        "TP_pruning_fraction": 0.861207494795281,
+        "FP_pruning_fraction": 0.9735678454202019
+      },
+      "fixed": {
+        "global_pruning_fraction": 0.97242942486949,
+        "labelled_pruning_fraction": 0.9713649689199216,
+        "TP_pruned": 1252.0,
+        "FP_pruned": 78601.0,
+        "TP_pruning_fraction": 0.861207494795281,
+        "FP_pruning_fraction": 0.9735678454202019
+      }
+    },
+    "u90": {
+      "nominal": {
+        "global_pruning_fraction": 0.9755906679301964,
+        "labelled_pruning_fraction": 0.9748443724408837,
+        "TP_pruned": 1374.0,
+        "FP_pruned": 86478.0,
+        "TP_pruning_fraction": 0.870722433460076,
+        "FP_pruning_fraction": 0.9767000598592742
+      },
+      "fixed": {
+        "global_pruning_fraction": 0.9742680947214722,
+        "labelled_pruning_fraction": 0.9734126146412404,
+        "TP_pruned": 1322.0,
+        "FP_pruned": 81677.0,
+        "TP_pruning_fraction": 0.8663171690694627,
+        "FP_pruning_fraction": 0.9753642225937426
+      }
+    }
+  },
+  "limitations": [
+    "Three exploratory computational resamples, not independent biological replicates or confidence intervals",
+    "Only explicitly labelled directed pairs scored; unlabelled predictions are not false positives",
+    "Undirected MI associations are evaluated against directed gold labels; this is not the official DREAM5 probability-density score",
+    "Stage/control analyses are supporting diagnostics, not evidence selected to guarantee improvement"
+  ]
+}

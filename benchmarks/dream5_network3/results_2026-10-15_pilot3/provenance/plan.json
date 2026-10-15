@@ -1,0 +1,205 @@
+{
+  "schema": 1,
+  "dataset_name": "DREAM5 Network3 E. coli",
+  "created_utc": "2026-10-15T17:01:27Z",
+  "dataset": {
+    "genes": 4511,
+    "profiles": 805,
+    "TFs": 334,
+    "labelled_pairs": 152280,
+    "positive_pairs": 2066,
+    "negative_pairs": 150214,
+    "scored_sources": 141,
+    "scored_targets": 1081,
+    "full_TF_nonself_pairs": 1506340,
+    "unlabelled_pairs": 1354060
+  },
+  "inputs": {
+    "expression": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_prepared_20261015\\dream5_net3.exp",
+      "sha256": "a8ea101efa68ae9f047ad5ae4d625e5ddb3b8d03eb6757407c332c46397409f9",
+      "bytes": 36904824
+    },
+    "hubs": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_prepared_20261015\\all334_tfs.txt",
+      "sha256": "69dff62d76c1cf5cb45ecfa4301734b8c4885bd8cdbc0d1d1a824fab7ab8cd5b",
+      "bytes": 1562
+    },
+    "preparation": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_prepared_20261015\\provenance.json",
+      "sha256": "2301bfb85931ace4d66bae83ddd6a755be125a5c1713c81652c0effceb32ce82",
+      "bytes": 2847
+    }
+  },
+  "source_files": {
+    "input data/net3_expression_data.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\input data\\net3_expression_data.tsv",
+      "sha256": "b49b67d278b27d988c68652df76d0dc9c5e316abb774e6eac30b35b2712f9e2c",
+      "bytes": 36874927
+    },
+    "input data/net3_transcription_factors.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\input data\\net3_transcription_factors.tsv",
+      "sha256": "69dff62d76c1cf5cb45ecfa4301734b8c4885bd8cdbc0d1d1a824fab7ab8cd5b",
+      "bytes": 1562
+    },
+    "gold standard/DREAM5_NetworkInference_GoldStandard_Network3.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\gold standard\\DREAM5_NetworkInference_GoldStandard_Network3.tsv",
+      "sha256": "657c9d413e24279466df6ed3219c12c42b59068b0d4d92b28ed4f1e078ba78d3",
+      "bytes": 1882207
+    },
+    "input data/net3_chip_features.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\input data\\net3_chip_features.tsv",
+      "sha256": "65801c68bda99d36236865b7f17af94a5159df97a5833906131bb224868dc765",
+      "bytes": 20982
+    },
+    "anonymization/net3_gene_ids.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\data\\Network3\\anonymization\\net3_gene_ids.tsv",
+      "sha256": "a3fa4f3690c26774492591a3fcd303b21678df333e908c10e27cd6a53a73dcd9",
+      "bytes": 49028
+    }
+  },
+  "component": {
+    "source_commit": "8c5f26c4fb5e05c7b280bcaa7d5a6461125a6aa3",
+    "binary": {
+      "path": "D:\\GitHub\\_datasets\\DREAM5_Network1\\benchmark_pr70_small\\build_post\\SJARACNe\\bin\\sjaracne.exe",
+      "sha256": "8264118ea83b8c37b16000ce0c36087e3fe03a28cb1687eba5329370abb8c33e",
+      "bytes": 2713736
+    },
+    "config_dir": "D:\\GitHub\\_datasets\\DREAM5_Network1\\benchmark_pr70_small\\build_post\\SJARACNe\\config",
+    "config": {
+      "config_threshold.txt": {
+        "path": "D:\\GitHub\\_datasets\\DREAM5_Network1\\benchmark_pr70_small\\build_post\\SJARACNe\\config\\config_threshold.txt",
+        "sha256": "bc37e881c828d3098def89e1f5e465367e8ea900fef2fbb723fbb054aeb086cc",
+        "bytes": 32
+      },
+      "config_kernel.txt": {
+        "path": "D:\\GitHub\\_datasets\\DREAM5_Network1\\benchmark_pr70_small\\build_post\\SJARACNe\\config\\config_kernel.txt",
+        "sha256": "4a7d155ac4a1fc5ed835af5b64b58323c3fe2a3ed76084d129b4f362199f0041",
+        "bytes": 29
+      }
+    }
+  },
+  "code": {
+    "run_benchmark.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\run_benchmark.py",
+      "sha256": "b15f5f70b1097ba761982d5955130d7e74b9cdcfb32b44d60e768eccf7144505",
+      "bytes": 24433
+    },
+    "metrics.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\metrics.py",
+      "sha256": "2362e8dbc56c478793fa2a7eb585cf80d3d62f07c4b911702626dcdee88cfaf7",
+      "bytes": 26703
+    },
+    "prepare.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\prepare.py",
+      "sha256": "0035532639120119099dad4b937e489a28842c2e18cd0a356d8ebdfc5b558725",
+      "bytes": 13138
+    }
+  },
+  "approved_protocol": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\PLAN_2026-10-15.md",
+    "sha256": "74d519d70a6cdf8a07026a6b48a82faabd8fe388d525bc271ae2ef7cfe12b5f5",
+    "bytes": 7380
+  },
+  "out": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3",
+  "arms": [
+    "legacy",
+    "u64",
+    "u80",
+    "u90"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "stages": [
+    "raw",
+    "nominal_pre",
+    "nominal_post",
+    "fixed_pre",
+    "fixed_post"
+  ],
+  "sampling": {
+    "legacy": {
+      "flag": "-r",
+      "value": "1",
+      "draws": 805,
+      "population": 805,
+      "method": "legacy bootstrap with replacement"
+    },
+    "u64": {
+      "flag": "-u",
+      "value": "64%",
+      "draws": 516,
+      "population": 805,
+      "method": "fixed-size without replacement"
+    },
+    "u80": {
+      "flag": "-u",
+      "value": "80%",
+      "draws": 644,
+      "population": 805,
+      "method": "fixed-size without replacement"
+    },
+    "u90": {
+      "flag": "-u",
+      "value": "90%",
+      "draws": 725,
+      "population": 805,
+      "method": "fixed-size without replacement"
+    }
+  },
+  "parameters": {
+    "npar": 40,
+    "nominal_p": 1e-07,
+    "fixed_mi": 0.03759353615996272,
+    "nominal_cutoffs": {
+      "legacy": 0.03072977561120847,
+      "u64": 0.04571070883387342,
+      "u80": 0.03759353615996272,
+      "u90": 0.033795801418232164
+    },
+    "measurement_noise": 0,
+    "filter_mean": 0,
+    "filter_cv": 0,
+    "consensus": "none"
+  },
+  "primary": {
+    "contrast": [
+      "legacy",
+      "u80"
+    ],
+    "stage": "nominal_post",
+    "endpoint": "average_precision"
+  },
+  "execution": {
+    "distro": "Ubuntu",
+    "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "design": "Same pinned Net1 PR70 binary for legacy and all without-replacement arms; all334 TFs, all4511 genes; direct native inference for every stage",
+  "reference_policy": "Only 152280 explicitly labelled directed nonself pairs; all other pairs are unlabelled, not negatives",
+  "smoke": {
+    "seed": 1,
+    "arms": [
+      "legacy",
+      "u80"
+    ],
+    "stages": [
+      "raw",
+      "nominal_pre",
+      "nominal_post",
+      "fixed_pre",
+      "fixed_post"
+    ],
+    "jobs": 10
+  },
+  "limitations": [
+    "Three computational seed IDs are not independent biological datasets.",
+    "Protocols differ in draw count, selected observations and tie-noise RNG consumption.",
+    "Nominal affine p-to-MI thresholds differ with sample count; common numeric MI is a separately fixed control.",
+    "Biological reference is incomplete; zero labels are operational negatives.",
+    "No PR71 calibration, consensus or downstream activity assessment."
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "status": "complete",
+  "schema": 1,
+  "report_script": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\report.py",
+    "sha256": "8b5136af84a545954064edcc8553699a7eb543c913c0880f3dafe1d85b8d794b",
+    "bytes": 26262
+  },
+  "environment": {
+    "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.4.4",
+    "matplotlib": "3.10.9"
+  },
+  "input_metrics": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\scoring_20261015\\metrics.json",
+    "sha256": "0c3c62d61342bc5fba80b8911605ab925b1ccc00634ea6e4e17967d9ab19ed45",
+    "bytes": 3868569
+  },
+  "source_copies": {
+    "metrics.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\scoring_20261015\\metrics.json",
+      "sha256": "0c3c62d61342bc5fba80b8911605ab925b1ccc00634ea6e4e17967d9ab19ed45",
+      "bytes": 3868569
+    },
+    "provenance/plan.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\plan.json",
+      "sha256": "1171d35773bd5ddfde81e9d1317479b247a13f9169272dd563360cfe012733fe",
+      "bytes": 7178
+    },
+    "provenance/status.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\status.json",
+      "sha256": "29197dfb1cbadd5a1dc4c829d6d4df54d65dbebbdce69507646ddf02c2c67963",
+      "bytes": 260693
+    },
+    "provenance/smoke_gate.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\smoke_gate.json",
+      "sha256": "c55b0b2d51d20ba741089364cc3827e1274d57c8a67f048788fcf94e34b10b74",
+      "bytes": 16717
+    },
+    "provenance/preparation.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_prepared_20261015\\provenance.json",
+      "sha256": "2301bfb85931ace4d66bae83ddd6a755be125a5c1713c81652c0effceb32ce82",
+      "bytes": 2847
+    },
+    "provenance/PLAN_2026-10-15.md": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\PLAN_2026-10-15.md",
+      "sha256": "74d519d70a6cdf8a07026a6b48a82faabd8fe388d525bc271ae2ef7cfe12b5f5",
+      "bytes": 7380
+    },
+    "provenance/jobs/legacy/seed_001/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\raw\\job.json",
+      "sha256": "683e3dbcb3d5308162be45b5247b238d94e5f527477c25dbc323f06314a90372",
+      "bytes": 2688
+    },
+    "provenance/jobs/legacy/seed_001/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\nominal_pre\\job.json",
+      "sha256": "94a040cc91e8b43caf4090eb16561fc0ac97e1caaaec112d71586f6e8341b9b2",
+      "bytes": 2735
+    },
+    "provenance/jobs/legacy/seed_001/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\nominal_post\\job.json",
+      "sha256": "997e0480d5c1ae7f4f7add05a49415b36feb6b5c8959b520424b56b8c47017c6",
+      "bytes": 2742
+    },
+    "provenance/jobs/legacy/seed_001/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\fixed_pre\\job.json",
+      "sha256": "4cc182b0ad3aded9f00eba25d093f8e454808b1de93a01de8a9e75e3a05e9179",
+      "bytes": 2754
+    },
+    "provenance/jobs/legacy/seed_001/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_001\\fixed_post\\job.json",
+      "sha256": "f579548913a2c4863272d41a64456823c76725f46b1e61ef3b12c2fe6ddd982f",
+      "bytes": 2760
+    },
+    "provenance/jobs/u64/seed_001/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_001\\raw\\job.json",
+      "sha256": "e4789dfbf9ca3f78a828a660f4fa9056d3d69608d0ad9422d7cb35c8279edbe9",
+      "bytes": 2665
+    },
+    "provenance/jobs/u64/seed_001/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_001\\nominal_pre\\job.json",
+      "sha256": "7e4baf6034ea31f428fe64fa7d4311d8131dd59ff409c13605ce60cc9e0e767b",
+      "bytes": 2713
+    },
+    "provenance/jobs/u64/seed_001/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_001\\nominal_post\\job.json",
+      "sha256": "db5aa2e42780b2ba68c44a56ca5ce0e419520f4d63372283752007fc196bed45",
+      "bytes": 2719
+    },
+    "provenance/jobs/u64/seed_001/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_001\\fixed_pre\\job.json",
+      "sha256": "a69634c03da77a936b21ad43a3e0f4dd3e473314f6bf519ef719a7516f8a2b31",
+      "bytes": 2732
+    },
+    "provenance/jobs/u64/seed_001/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_001\\fixed_post\\job.json",
+      "sha256": "1c8a41730c0924df9a6fac285a9e86516dcb4663fe6e5d7735bdd2533d710c5c",
+      "bytes": 2737
+    },
+    "provenance/jobs/u80/seed_001/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\raw\\job.json",
+      "sha256": "17ee43dd127b6a5a4f7983e20b3590afe7c8eb1ecc7515d382b0919c6b01c93b",
+      "bytes": 2666
+    },
+    "provenance/jobs/u80/seed_001/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\nominal_pre\\job.json",
+      "sha256": "b5caef862459ec787b4b2985a52cf7f21cb1eb70b358e805a2f89097124f815c",
+      "bytes": 2713
+    },
+    "provenance/jobs/u80/seed_001/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\nominal_post\\job.json",
+      "sha256": "54eac112456138260e5a2e51754885fb2cb3ef8ea27d3d734600b2db40402642",
+      "bytes": 2719
+    },
+    "provenance/jobs/u80/seed_001/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\fixed_pre\\job.json",
+      "sha256": "7ebfd0f421bee22d355aa48a077d5027b93d9837239dcbcd30c603db11575ea3",
+      "bytes": 2730
+    },
+    "provenance/jobs/u80/seed_001/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_001\\fixed_post\\job.json",
+      "sha256": "7596930501dafb9f2b3c41a9eaff53bac430537b23eb324b515b17be31df61e3",
+      "bytes": 2737
+    },
+    "provenance/jobs/u90/seed_001/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_001\\raw\\job.json",
+      "sha256": "0f6f33355aa4fbf7d1909448163a38a7d7171141bed99e3bbcf2f103f7ac9f27",
+      "bytes": 2665
+    },
+    "provenance/jobs/u90/seed_001/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_001\\nominal_pre\\job.json",
+      "sha256": "f807d1d2e06914b08b661a14325efb7e43f0a97d2595abaa0d7eab988874d29d",
+      "bytes": 2714
+    },
+    "provenance/jobs/u90/seed_001/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_001\\nominal_post\\job.json",
+      "sha256": "2113ca2520143c4a63675c9d5be46ecd8deaac20601d57f5df57467b0ceca756",
+      "bytes": 2719
+    },
+    "provenance/jobs/u90/seed_001/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_001\\fixed_pre\\job.json",
+      "sha256": "0f37f61e6e6757d9b4c1fcf806b89ba61f09fe2f13630556096921e59bfcdc6f",
+      "bytes": 2732
+    },
+    "provenance/jobs/u90/seed_001/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_001\\fixed_post\\job.json",
+      "sha256": "6f3372201861d7ced2c74b1f66cfe0e42ea2a8aac163b9177c9badb1dddd312d",
+      "bytes": 2738
+    },
+    "provenance/jobs/legacy/seed_002/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_002\\raw\\job.json",
+      "sha256": "fab7f14063a4b014374a2267c6bd2a14389df0a62f0bd490594aeb3fd869d350",
+      "bytes": 2686
+    },
+    "provenance/jobs/legacy/seed_002/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_002\\nominal_pre\\job.json",
+      "sha256": "04c80d75dc0bdce5dc7dba1d6927fdd331f8183888ea3885bb6010bacff2c0af",
+      "bytes": 2736
+    },
+    "provenance/jobs/legacy/seed_002/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_002\\nominal_post\\job.json",
+      "sha256": "43999f00e42b24635ea9d19fcd367faa83094079077ed3c01948eb3817e9a4c6",
+      "bytes": 2742
+    },
+    "provenance/jobs/legacy/seed_002/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_002\\fixed_pre\\job.json",
+      "sha256": "bbfe1fc613163fd03115484429183ac5ed5623a403e480bd8ccca62e4559244e",
+      "bytes": 2754
+    },
+    "provenance/jobs/legacy/seed_002/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_002\\fixed_post\\job.json",
+      "sha256": "876376c7e6782d5044dfbdb0530f03846c8ca85bd20c4a040d0ac11d5fa2b194",
+      "bytes": 2759
+    },
+    "provenance/jobs/u64/seed_002/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_002\\raw\\job.json",
+      "sha256": "509e956df5e928cfdcf594d96ae2fe86022670b46081ec6a28198da6f3f83fca",
+      "bytes": 2665
+    },
+    "provenance/jobs/u64/seed_002/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_002\\nominal_pre\\job.json",
+      "sha256": "442e0da4cb6a4d13fe825a030a956df2677138d71361bae2b16824c9d0229018",
+      "bytes": 2712
+    },
+    "provenance/jobs/u64/seed_002/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_002\\nominal_post\\job.json",
+      "sha256": "0b8f6390d1f88e49e61ad0e5cd0766ecf007797431645d7e815ec0addeed6c1e",
+      "bytes": 2720
+    },
+    "provenance/jobs/u64/seed_002/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_002\\fixed_pre\\job.json",
+      "sha256": "76fc6830ba92e899db47b9ab32896d74aca65c1134e556575db9dd85ba8f7dbe",
+      "bytes": 2731
+    },
+    "provenance/jobs/u64/seed_002/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_002\\fixed_post\\job.json",
+      "sha256": "53257bd9e91dd5bef8551fa4592eebe9a9a1afcff07b61d41b3d6dd33547dd63",
+      "bytes": 2738
+    },
+    "provenance/jobs/u80/seed_002/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_002\\raw\\job.json",
+      "sha256": "daff8ba34861d9d0b2605bd277768e04962881557961f049a03c4d879f955ed1",
+      "bytes": 2665
+    },
+    "provenance/jobs/u80/seed_002/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_002\\nominal_pre\\job.json",
+      "sha256": "c6562e730ffdb7a5859b17483636d649a47e85fd3bda986be708f188ab60703a",
+      "bytes": 2714
+    },
+    "provenance/jobs/u80/seed_002/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_002\\nominal_post\\job.json",
+      "sha256": "7b3aa4c00adb01cd02035dd3e1e0525493b5240556a8eafec623ebd881c169a0",
+      "bytes": 2719
+    },
+    "provenance/jobs/u80/seed_002/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_002\\fixed_pre\\job.json",
+      "sha256": "91bc22b62dd0a8abc74f058cc2a67410a64e79e25868d4b83b0836406d7722a6",
+      "bytes": 2732
+    },
+    "provenance/jobs/u80/seed_002/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_002\\fixed_post\\job.json",
+      "sha256": "d3ef65e08e14d8a3344e04aac4f4a6b583ec24994e6d8351773916fca37e4de3",
+      "bytes": 2737
+    },
+    "provenance/jobs/u90/seed_002/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_002\\raw\\job.json",
+      "sha256": "a918a2fc3e5401a6378a0f65ea49b5e71afebda053ee657bf2fc7c54f3be5add",
+      "bytes": 2665
+    },
+    "provenance/jobs/u90/seed_002/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_002\\nominal_pre\\job.json",
+      "sha256": "53076b5904735405456a50e838e5936c9461ef50683918adfc776b70965b57bc",
+      "bytes": 2714
+    },
+    "provenance/jobs/u90/seed_002/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_002\\nominal_post\\job.json",
+      "sha256": "3aa1703f90f70bc994fe9d464219b06c879356a32debb1cc39b1b3a01baa035a",
+      "bytes": 2719
+    },
+    "provenance/jobs/u90/seed_002/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_002\\fixed_pre\\job.json",
+      "sha256": "15983e842fa8b6fce01bc045bfa46e2b0c1a3e3a8d6e4708314ca40239fce750",
+      "bytes": 2731
+    },
+    "provenance/jobs/u90/seed_002/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_002\\fixed_post\\job.json",
+      "sha256": "86ec63aa2bae3effcb682bd5b92b73f090ec5b0730a97ef5c6b2ed74949c6963",
+      "bytes": 2737
+    },
+    "provenance/jobs/legacy/seed_003/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_003\\raw\\job.json",
+      "sha256": "fac90844f467b8bd12712f20b70439799399d33fe9b4b7ee49eb6455a72fad45",
+      "bytes": 2687
+    },
+    "provenance/jobs/legacy/seed_003/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_003\\nominal_pre\\job.json",
+      "sha256": "c51527fd887da4eef3d6f912b0c9d74bc93b80e94484190c055f8112aed966fd",
+      "bytes": 2735
+    },
+    "provenance/jobs/legacy/seed_003/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_003\\nominal_post\\job.json",
+      "sha256": "e0d77bf28c36164ea498f3e404541d2e90d9325c6cf1db6bfee4d1f573368078",
+      "bytes": 2742
+    },
+    "provenance/jobs/legacy/seed_003/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_003\\fixed_pre\\job.json",
+      "sha256": "083e5a80148e38d2a8acf0076bcf69884d585e7a9379ed4dd3f245081f4cce31",
+      "bytes": 2754
+    },
+    "provenance/jobs/legacy/seed_003/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\legacy\\seed_003\\fixed_post\\job.json",
+      "sha256": "f646f270691e4cc5486d65d20fd05584e7beb70f9be76d892db07fd066261d1e",
+      "bytes": 2760
+    },
+    "provenance/jobs/u64/seed_003/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_003\\raw\\job.json",
+      "sha256": "55d1ae043055069e5c67fce81e51e02233c069c9be78352dfec8bc0826ee4a94",
+      "bytes": 2666
+    },
+    "provenance/jobs/u64/seed_003/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_003\\nominal_pre\\job.json",
+      "sha256": "369cd2d05180c5734c349ffa2252a57dc7b912288e5bb88a61519c7aba370a72",
+      "bytes": 2713
+    },
+    "provenance/jobs/u64/seed_003/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_003\\nominal_post\\job.json",
+      "sha256": "40bca2caaa762aa824e1e9732ccc953d96e142058ee3e9df65983f63fa25e612",
+      "bytes": 2720
+    },
+    "provenance/jobs/u64/seed_003/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_003\\fixed_pre\\job.json",
+      "sha256": "73d41827a6219b3d18b037ac651d3606206d82133cfb03ced8cbabd84abc7ab8",
+      "bytes": 2731
+    },
+    "provenance/jobs/u64/seed_003/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u64\\seed_003\\fixed_post\\job.json",
+      "sha256": "6a9cf3a926768aeb30c11c4d3c6936c395769ce671b327747e41510d0f7acdf4",
+      "bytes": 2738
+    },
+    "provenance/jobs/u80/seed_003/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\raw\\job.json",
+      "sha256": "c9c038c516c369ecee0b5d01941532a627acfe5fadca8e36d25e7ed28b2b0e89",
+      "bytes": 2666
+    },
+    "provenance/jobs/u80/seed_003/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\nominal_pre\\job.json",
+      "sha256": "9869b6a1aace472fe7b3480ee2582d3a2487efedfcafb62e63702eec66ec117e",
+      "bytes": 2714
+    },
+    "provenance/jobs/u80/seed_003/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\nominal_post\\job.json",
+      "sha256": "5c57e67cd74f3796f65e545a0633760382ff2a2d37ccb48cca3aaa4b7367c00b",
+      "bytes": 2719
+    },
+    "provenance/jobs/u80/seed_003/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\fixed_pre\\job.json",
+      "sha256": "576658002597dffbd7762dc81f747092b945d3423d6f6ed432eeaa2267ce87fb",
+      "bytes": 2732
+    },
+    "provenance/jobs/u80/seed_003/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u80\\seed_003\\fixed_post\\job.json",
+      "sha256": "01fd39e2370df213de11c25beefefe34462e081168a2d93f3ed1cd804f3d15f6",
+      "bytes": 2738
+    },
+    "provenance/jobs/u90/seed_003/raw/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_003\\raw\\job.json",
+      "sha256": "8168c93a3df7212115a2fcf0aa12726bb80fbde3902db65ce0a0a41d60630d26",
+      "bytes": 2665
+    },
+    "provenance/jobs/u90/seed_003/nominal_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_003\\nominal_pre\\job.json",
+      "sha256": "5ef8fc9a427ebfafcf470dc2d317aab3ef35c68b35d9c10a2f7e93be2dac9edd",
+      "bytes": 2713
+    },
+    "provenance/jobs/u90/seed_003/nominal_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_003\\nominal_post\\job.json",
+      "sha256": "f55b72a39b45496b50d19eeebcc40ef262f686f210faabdc374e17bc5875a680",
+      "bytes": 2719
+    },
+    "provenance/jobs/u90/seed_003/fixed_pre/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_003\\fixed_pre\\job.json",
+      "sha256": "3aa0d484fa8df257c8bb84ce476a19bed970b678885d53350406437483978017",
+      "bytes": 2731
+    },
+    "provenance/jobs/u90/seed_003/fixed_post/job.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\jobs\\u90\\seed_003\\fixed_post\\job.json",
+      "sha256": "9d97903f3c859b06befe8ac222e7be5116d942cc30730ca5e49f759a550d4b54",
+      "bytes": 2738
+    },
+    "provenance/generated_score_REPORT.md": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\scoring_20261015\\REPORT.md",
+      "sha256": "d683d6acda1160213d1ca93f9ed5bcc0e039f6d4163ba0e8d35c93450513b0f3",
+      "bytes": 1209
+    },
+    "provenance/generated_score_summary.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\scoring_20261015\\summary.json",
+      "sha256": "33d56e071b54a32e02bcdf0c4adb8a0dffc10831b740ddc789dda6d29e5e212e",
+      "bytes": 13015
+    },
+    "per_seed_stage_metrics.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\dream5_network3_20261015_pilot3\\scoring_20261015\\per_seed_stage_metrics.tsv",
+      "sha256": "026008acb371820e738f36f19cb07b3ab869e01f69d6cdb085cd1f85e07aca11",
+      "bytes": 11710
+    }
+  },
+  "copied_sha256": {
+    "metrics.json": "0c3c62d61342bc5fba80b8911605ab925b1ccc00634ea6e4e17967d9ab19ed45",
+    "provenance/plan.json": "1171d35773bd5ddfde81e9d1317479b247a13f9169272dd563360cfe012733fe",
+    "provenance/status.json": "29197dfb1cbadd5a1dc4c829d6d4df54d65dbebbdce69507646ddf02c2c67963",
+    "provenance/smoke_gate.json": "c55b0b2d51d20ba741089364cc3827e1274d57c8a67f048788fcf94e34b10b74",
+    "provenance/preparation.json": "2301bfb85931ace4d66bae83ddd6a755be125a5c1713c81652c0effceb32ce82",
+    "provenance/PLAN_2026-10-15.md": "74d519d70a6cdf8a07026a6b48a82faabd8fe388d525bc271ae2ef7cfe12b5f5",
+    "provenance/jobs/legacy/seed_001/raw/job.json": "683e3dbcb3d5308162be45b5247b238d94e5f527477c25dbc323f06314a90372",
+    "provenance/jobs/legacy/seed_001/nominal_pre/job.json": "94a040cc91e8b43caf4090eb16561fc0ac97e1caaaec112d71586f6e8341b9b2",
+    "provenance/jobs/legacy/seed_001/nominal_post/job.json": "997e0480d5c1ae7f4f7add05a49415b36feb6b5c8959b520424b56b8c47017c6",
+    "provenance/jobs/legacy/seed_001/fixed_pre/job.json": "4cc182b0ad3aded9f00eba25d093f8e454808b1de93a01de8a9e75e3a05e9179",
+    "provenance/jobs/legacy/seed_001/fixed_post/job.json": "f579548913a2c4863272d41a64456823c76725f46b1e61ef3b12c2fe6ddd982f",
+    "provenance/jobs/u64/seed_001/raw/job.json": "e4789dfbf9ca3f78a828a660f4fa9056d3d69608d0ad9422d7cb35c8279edbe9",
+    "provenance/jobs/u64/seed_001/nominal_pre/job.json": "7e4baf6034ea31f428fe64fa7d4311d8131dd59ff409c13605ce60cc9e0e767b",
+    "provenance/jobs/u64/seed_001/nominal_post/job.json": "db5aa2e42780b2ba68c44a56ca5ce0e419520f4d63372283752007fc196bed45",
+    "provenance/jobs/u64/seed_001/fixed_pre/job.json": "a69634c03da77a936b21ad43a3e0f4dd3e473314f6bf519ef719a7516f8a2b31",
+    "provenance/jobs/u64/seed_001/fixed_post/job.json": "1c8a41730c0924df9a6fac285a9e86516dcb4663fe6e5d7735bdd2533d710c5c",
+    "provenance/jobs/u80/seed_001/raw/job.json": "17ee43dd127b6a5a4f7983e20b3590afe7c8eb1ecc7515d382b0919c6b01c93b",
+    "provenance/jobs/u80/seed_001/nominal_pre/job.json": "b5caef862459ec787b4b2985a52cf7f21cb1eb70b358e805a2f89097124f815c",
+    "provenance/jobs/u80/seed_001/nominal_post/job.json": "54eac112456138260e5a2e51754885fb2cb3ef8ea27d3d734600b2db40402642",
+    "provenance/jobs/u80/seed_001/fixed_pre/job.json": "7ebfd0f421bee22d355aa48a077d5027b93d9837239dcbcd30c603db11575ea3",
+    "provenance/jobs/u80/seed_001/fixed_post/job.json": "7596930501dafb9f2b3c41a9eaff53bac430537b23eb324b515b17be31df61e3",
+    "provenance/jobs/u90/seed_001/raw/job.json": "0f6f33355aa4fbf7d1909448163a38a7d7171141bed99e3bbcf2f103f7ac9f27",
+    "provenance/jobs/u90/seed_001/nominal_pre/job.json": "f807d1d2e06914b08b661a14325efb7e43f0a97d2595abaa0d7eab988874d29d",
+    "provenance/jobs/u90/seed_001/nominal_post/job.json": "2113ca2520143c4a63675c9d5be46ecd8deaac20601d57f5df57467b0ceca756",
+    "provenance/jobs/u90/seed_001/fixed_pre/job.json": "0f37f61e6e6757d9b4c1fcf806b89ba61f09fe2f13630556096921e59bfcdc6f",
+    "provenance/jobs/u90/seed_001/fixed_post/job.json": "6f3372201861d7ced2c74b1f66cfe0e42ea2a8aac163b9177c9badb1dddd312d",
+    "provenance/jobs/legacy/seed_002/raw/job.json": "fab7f14063a4b014374a2267c6bd2a14389df0a62f0bd490594aeb3fd869d350",
+    "provenance/jobs/legacy/seed_002/nominal_pre/job.json": "04c80d75dc0bdce5dc7dba1d6927fdd331f8183888ea3885bb6010bacff2c0af",
+    "provenance/jobs/legacy/seed_002/nominal_post/job.json": "43999f00e42b24635ea9d19fcd367faa83094079077ed3c01948eb3817e9a4c6",
+    "provenance/jobs/legacy/seed_002/fixed_pre/job.json": "bbfe1fc613163fd03115484429183ac5ed5623a403e480bd8ccca62e4559244e",
+    "provenance/jobs/legacy/seed_002/fixed_post/job.json": "876376c7e6782d5044dfbdb0530f03846c8ca85bd20c4a040d0ac11d5fa2b194",
+    "provenance/jobs/u64/seed_002/raw/job.json": "509e956df5e928cfdcf594d96ae2fe86022670b46081ec6a28198da6f3f83fca",
+    "provenance/jobs/u64/seed_002/nominal_pre/job.json": "442e0da4cb6a4d13fe825a030a956df2677138d71361bae2b16824c9d0229018",
+    "provenance/jobs/u64/seed_002/nominal_post/job.json": "0b8f6390d1f88e49e61ad0e5cd0766ecf007797431645d7e815ec0addeed6c1e",
+    "provenance/jobs/u64/seed_002/fixed_pre/job.json": "76fc6830ba92e899db47b9ab32896d74aca65c1134e556575db9dd85ba8f7dbe",
+    "provenance/jobs/u64/seed_002/fixed_post/job.json": "53257bd9e91dd5bef8551fa4592eebe9a9a1afcff07b61d41b3d6dd33547dd63",
+    "provenance/jobs/u80/seed_002/raw/job.json": "daff8ba34861d9d0b2605bd277768e04962881557961f049a03c4d879f955ed1",
+    "provenance/jobs/u80/seed_002/nominal_pre/job.json": "c6562e730ffdb7a5859b17483636d649a47e85fd3bda986be708f188ab60703a",
+    "provenance/jobs/u80/seed_002/nominal_post/job.json": "7b3aa4c00adb01cd02035dd3e1e0525493b5240556a8eafec623ebd881c169a0",
+    "provenance/jobs/u80/seed_002/fixed_pre/job.json": "91bc22b62dd0a8abc74f058cc2a67410a64e79e25868d4b83b0836406d7722a6",
+    "provenance/jobs/u80/seed_002/fixed_post/job.json": "d3ef65e08e14d8a3344e04aac4f4a6b583ec24994e6d8351773916fca37e4de3",
+    "provenance/jobs/u90/seed_002/raw/job.json": "a918a2fc3e5401a6378a0f65ea49b5e71afebda053ee657bf2fc7c54f3be5add",
+    "provenance/jobs/u90/seed_002/nominal_pre/job.json": "53076b5904735405456a50e838e5936c9461ef50683918adfc776b70965b57bc",
+    "provenance/jobs/u90/seed_002/nominal_post/job.json": "3aa1703f90f70bc994fe9d464219b06c879356a32debb1cc39b1b3a01baa035a",
+    "provenance/jobs/u90/seed_002/fixed_pre/job.json": "15983e842fa8b6fce01bc045bfa46e2b0c1a3e3a8d6e4708314ca40239fce750",
+    "provenance/jobs/u90/seed_002/fixed_post/job.json": "86ec63aa2bae3effcb682bd5b92b73f090ec5b0730a97ef5c6b2ed74949c6963",
+    "provenance/jobs/legacy/seed_003/raw/job.json": "fac90844f467b8bd12712f20b70439799399d33fe9b4b7ee49eb6455a72fad45",
+    "provenance/jobs/legacy/seed_003/nominal_pre/job.json": "c51527fd887da4eef3d6f912b0c9d74bc93b80e94484190c055f8112aed966fd",
+    "provenance/jobs/legacy/seed_003/nominal_post/job.json": "e0d77bf28c36164ea498f3e404541d2e90d9325c6cf1db6bfee4d1f573368078",
+    "provenance/jobs/legacy/seed_003/fixed_pre/job.json": "083e5a80148e38d2a8acf0076bcf69884d585e7a9379ed4dd3f245081f4cce31",
+    "provenance/jobs/legacy/seed_003/fixed_post/job.json": "f646f270691e4cc5486d65d20fd05584e7beb70f9be76d892db07fd066261d1e",
+    "provenance/jobs/u64/seed_003/raw/job.json": "55d1ae043055069e5c67fce81e51e02233c069c9be78352dfec8bc0826ee4a94",
+    "provenance/jobs/u64/seed_003/nominal_pre/job.json": "369cd2d05180c5734c349ffa2252a57dc7b912288e5bb88a61519c7aba370a72",
+    "provenance/jobs/u64/seed_003/nominal_post/job.json": "40bca2caaa762aa824e1e9732ccc953d96e142058ee3e9df65983f63fa25e612",
+    "provenance/jobs/u64/seed_003/fixed_pre/job.json": "73d41827a6219b3d18b037ac651d3606206d82133cfb03ced8cbabd84abc7ab8",
+    "provenance/jobs/u64/seed_003/fixed_post/job.json": "6a9cf3a926768aeb30c11c4d3c6936c395769ce671b327747e41510d0f7acdf4",
+    "provenance/jobs/u80/seed_003/raw/job.json": "c9c038c516c369ecee0b5d01941532a627acfe5fadca8e36d25e7ed28b2b0e89",
+    "provenance/jobs/u80/seed_003/nominal_pre/job.json": "9869b6a1aace472fe7b3480ee2582d3a2487efedfcafb62e63702eec66ec117e",
+    "provenance/jobs/u80/seed_003/nominal_post/job.json": "5c57e67cd74f3796f65e545a0633760382ff2a2d37ccb48cca3aaa4b7367c00b",
+    "provenance/jobs/u80/seed_003/fixed_pre/job.json": "576658002597dffbd7762dc81f747092b945d3423d6f6ed432eeaa2267ce87fb",
+    "provenance/jobs/u80/seed_003/fixed_post/job.json": "01fd39e2370df213de11c25beefefe34462e081168a2d93f3ed1cd804f3d15f6",
+    "provenance/jobs/u90/seed_003/raw/job.json": "8168c93a3df7212115a2fcf0aa12726bb80fbde3902db65ce0a0a41d60630d26",
+    "provenance/jobs/u90/seed_003/nominal_pre/job.json": "5ef8fc9a427ebfafcf470dc2d317aab3ef35c68b35d9c10a2f7e93be2dac9edd",
+    "provenance/jobs/u90/seed_003/nominal_post/job.json": "f55b72a39b45496b50d19eeebcc40ef262f686f210faabdc374e17bc5875a680",
+    "provenance/jobs/u90/seed_003/fixed_pre/job.json": "3aa0d484fa8df257c8bb84ce476a19bed970b678885d53350406437483978017",
+    "provenance/jobs/u90/seed_003/fixed_post/job.json": "9d97903f3c859b06befe8ac222e7be5116d942cc30730ca5e49f759a550d4b54",
+    "provenance/generated_score_REPORT.md": "d683d6acda1160213d1ca93f9ed5bcc0e039f6d4163ba0e8d35c93450513b0f3",
+    "provenance/generated_score_summary.json": "33d56e071b54a32e02bcdf0c4adb8a0dffc10831b740ddc789dda6d29e5e212e",
+    "per_seed_stage_metrics.tsv": "026008acb371820e738f36f19cb07b3ab869e01f69d6cdb085cd1f85e07aca11"
+  },
+  "generated_outputs": {
+    "all_arm_stage_medians.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\results_2026-10-15_pilot3\\all_arm_stage_medians.tsv",
+      "sha256": "ae5a54dbcd132569a50f06445e46027371d3ab3234245fb0c582d30f65dc431f",
+      "bytes": 3025
+    },
+    "DPI_pruning_medians.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\results_2026-10-15_pilot3\\DPI_pruning_medians.tsv",
+      "sha256": "13115b7b68beec13b9b4c3d1410279b4530229f6192b917cb1266ecd3b84e7a2",
+      "bytes": 1113
+    },
+    "paired_primary_AP.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\results_2026-10-15_pilot3\\paired_primary_AP.tsv",
+      "sha256": "4ad3f17f0b183ed008d2293c05ec1a136f75021691fd864551b3f4328ec82d6f",
+      "bytes": 319
+    },
+    "analysis_summary.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\results_2026-10-15_pilot3\\analysis_summary.json",
+      "sha256": "86424400ecaeed913ec18b05a0b5efeb590fc0a821248ca2e1b21708561f4244",
+      "bytes": 15865
+    },
+    "REPORT.md": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\results_2026-10-15_pilot3\\REPORT.md",
+      "sha256": "3c51743b1ca2586046b529d292bcc3a301cc0c1a0fc8d0b5c410f425513742bf",
+      "bytes": 7502
+    },
+    "network3_comparison.png": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\dream5_network3\\results_2026-10-15_pilot3\\network3_comparison.png",
+      "sha256": "a484218c81b43bdaf927c26c5064b30f303a3b308de93b2ee6e460d4447b86cc",
+      "bytes": 241272
+    }
+  },
+  "excluded_large_artifacts": [
+    "raw.adj",
+    "stdout.log",
+    "stderr.log",
+    "time.tsv",
+    "native executable",
+    "expression"
+  ],
+  "native_inference_performed_by_report": false
+}

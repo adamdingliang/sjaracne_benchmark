@@ -7,7 +7,7 @@ Dedicated research benchmarks and analysis evidence for [SJARACNe](https://githu
 | Network data | Question | Reference | Benchmark process and results |
 | --- | --- | --- | --- |
 | DREAM5 Network 1 | How does sampling affect recovery of known directed edges? | [DREAM5 challenge](https://zenodo.org/records/17854236), Marbach et al. (2012): simulated expression and a supplied gold-standard network. [Input provenance](benchmarks/dream5_network1/DATA_LICENSE.md). | [Process](benchmarks/dream5_network1/README.md) · [Results](benchmarks/dream5_network1/RESULTS.md) |
-| DREAM5 Network 3 — E. coli | Does the sampling improvement extend to real expression data? | [DREAM5 challenge](https://zenodo.org/records/17854236): real microarrays and a strong-evidence RegulonDB reference. The reference is incomplete. [Input provenance](benchmarks/dream5_network3/DATA_LICENSE.md). | [Process](benchmarks/dream5_network3/README.md) · [Results](benchmarks/dream5_network3/RESULTS.md) (dataset validated; inference pending) |
+| DREAM5 Network 3 — E. coli | How does sampling affect reference-edge recovery from real expression data? | [DREAM5 challenge](https://zenodo.org/records/17854236): real microarrays and a strong-evidence RegulonDB reference. The reference is incomplete. [Input provenance](benchmarks/dream5_network3/DATA_LICENSE.md). | [Process](benchmarks/dream5_network3/README.md) · [Results](benchmarks/dream5_network3/RESULTS.md) (three seeds, four arms; raw MI and DPI) |
 | THP-1 Perturb-seq | Does sampling improve raw-MI ranking of perturbation-responsive targets? | Yao et al. conventional CRISPRi screen, [GSM6858449](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6858449): inference from non-targeting-cell metacells; a reconstructed response reference, not direct-edge truth or exact Fig. 6a reproduction. | [Process](benchmarks/thp1_perturbseq/raw_mi/README.md) · [Results](benchmarks/thp1_perturbseq/raw_mi/results_2026-10-15_full100/REPORT.md) (primary, 100 matched pairs) |
 | BRCA100 (TF/SIG) | How do bootstrap MI thresholds affect density, driver coverage and topology? | SJARACNe's bundled `BRCA100.exp` and TF/SIG lists; inferred networks with no independent edge-level reference. [Input provenance](benchmarks/brca100_consensus_recurrence_sweep/results_2026-08-20/provenance/design.json). | [Process](benchmarks/brca100_pr67_threshold_sweep/README.md) · [Results](benchmarks/brca100_pr67_threshold_sweep/COMBINED_RESULTS.md) |
 | BRCA100 (TF/SIG) | What changes when consensus uses minimum recurrence, including K=6? | Same BRCA100 expression and hub lists; reuses fixed post-DPI bootstrap networks. No independent edge-level reference. | [Process](benchmarks/brca100_consensus_recurrence_sweep/README.md#matched-design) · [Results](benchmarks/brca100_consensus_recurrence_sweep/results_2026-08-20/RESULTS.md) |
@@ -18,6 +18,13 @@ Dedicated research benchmarks and analysis evidence for [SJARACNe](https://githu
 **Reference** identifies the input-data source and, where available, the edge or
 perturbation-response reference used for evaluation. It does not imply that
 every dataset has a gold-standard network.
+
+The [E. coli pilot](benchmarks/dream5_network3/RESULTS.md) completed all 60
+prospectively specified native jobs. At 80% sampling, median post-DPI AP
+increased from 0.042117 to 0.045776 and labeled FPs decreased from 3,242 to
+2,134, but TPs decreased slightly from 206 to 200. Raw-MI AUROC barely changed
+(0.6400 to 0.6409). This is a small exploratory precision/coverage tradeoff,
+not uniform improvement or evidence for a new default.
 
 The primary THP-1 result is the **100-pair raw-MI comparison before filtering,
 DPI or consensus**. Median TP@5,000 increased from 2,487.50 to 2,624.25 and
@@ -68,4 +75,5 @@ The initial migration checks collected 353 distinct tests: 346 passed, six were 
 
 No new scientific runs were part of the original migration. The subsequent
 THP-1 raw-MI pilot and its completed 100-pair extension are linked above;
-MI-cutoff tuning remains deferred.
+the later DREAM5 E. coli pilot is also linked above. MI-cutoff tuning remains
+deferred.
