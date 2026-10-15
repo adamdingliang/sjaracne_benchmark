@@ -24,7 +24,12 @@ The reference contains **152,280 explicitly labeled directed non-self pairs**:
 E. coli interactions using RegulonDB's strong-evidence annotations. Strong
 evidence concerns experimental support, not MI magnitude, effect size or a
 benchmark p-value. The reference is incomplete and does not establish that
-every zero-labeled pair is biologically absent. See the
+every zero-labeled pair is biologically absent. Consequently, **fewer
+benchmark-defined FPs does not prove that the removed edges were biologically
+false**. Unrecorded true interactions can affect precision and comparisons
+between sampling configurations. See the
+[explicit interpretation limit in the results](RESULTS.md#important-limitation-the-biological-reference-is-incomplete)
+and the
 [DREAM5 paper, Online Methods](https://compbio.csail.mit.edu/marbach/papers/Marbach2012b.pdf).
 
 **Inference scope and scoring scope differ.** The labeled universe is

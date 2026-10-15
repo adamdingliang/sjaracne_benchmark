@@ -12,6 +12,40 @@ See the [full report and plots](results_2026-10-15_pilot3/REPORT.md),
 These are local, explicitly defined Average Precision and AUROC metrics, not
 official DREAM5 leaderboard scores.
 
+## Important limitation: the biological reference is incomplete
+
+**A benchmark false positive is not necessarily a biologically false edge.**
+The reference is a catalog of known, strongly supported interactions, not a
+complete inventory of E. coli regulation. Its labels mean:
+
+- **2,066 positive pairs:** interactions included using RegulonDB's
+  strong-evidence annotations.
+- **150,214 zero-labeled pairs:** negatives under the benchmark's scoring
+  rules, not 150,214 experimentally disproven regulatory interactions. Some
+  could be real interactions that were undiscovered or lacked sufficient
+  evidence for inclusion in the positive reference.
+- **1,354,060 other candidate TF-to-gene pairs:** outside the labeled
+  evaluation universe and excluded from scoring, not counted as FPs.
+
+This distinction is acknowledged by the original study: novel predictions
+outside the known interaction reference could be errors or newly discovered
+true interactions. Its experiments supported 23 of 53 novel predictions;
+that result is not an estimate of the true-edge fraction among our own FPs.
+See the [DREAM5 paper, Online Methods and experimental validation](https://compbio.csail.mit.edu/marbach/papers/Marbach2012b.pdf).
+
+**Interpretation of our result:** fewer benchmark-defined FPs and higher
+benchmark precision show better agreement with this fixed reference. They
+do **not** establish that every removed edge was biologically false, or that
+biological precision improved by the same amount. The unknown fraction of
+missing true interactions could differ between the predictions retained or
+removed by each sampling configuration. Using one fixed reference makes the
+comparison consistent, but does not eliminate the potential for annotation
+bias. Its size and effect on our comparisons have not been measured here.
+
+Unlike Network 1's known simulated graph, Network 3's complete underlying
+biological graph is unknown. This limitation concerns biological completeness,
+not missing rows or failed downloads of the released benchmark files.
+
 ## What Average Precision measures
 
 **Average Precision** summarizes how well the MI-ranked edge list places
@@ -92,9 +126,11 @@ reference-based tuning or a verdict on individual removed edges.
 This E. coli pilot supports fewer labeled FPs and higher post-DPI Average
 Precision and emitted-edge precision with fixed-size sampling, but **does not
 demonstrate uniformly improved recall, raw AUROC or full-workflow performance**.
-Three computational seeds
-cannot establish a best fraction, statistical significance or a new default.
-The reference is incomplete; expression profiles span heterogeneous and
+**These gains are relative to an incomplete reference, not proof that removed
+edges were biologically false or that biological precision improved by the
+same amount.** See the [reference limitation](#important-limitation-the-biological-reference-is-incomplete)
+above. Three computational seeds cannot establish a best fraction, statistical
+significance or a new default. Expression profiles span heterogeneous and
 potentially correlated experiments; sampling changes draw count, selected
 profiles and RNG consumption as well as replacement. No cutoff/DPI tuning,
 consensus test or automatic extension to more seeds was performed.

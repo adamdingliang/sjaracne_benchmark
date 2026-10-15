@@ -25,6 +25,9 @@ Precision increased from 0.042117 to 0.045776 and labeled FPs decreased from 3,2
 2,134, but TPs decreased slightly from 206 to 200. Raw-MI AUROC barely changed
 (0.6400 to 0.6409). This is a small exploratory precision/coverage tradeoff,
 not uniform improvement or evidence for a new default.
+The [E. coli reference is incomplete](benchmarks/dream5_network3/RESULTS.md#important-limitation-the-biological-reference-is-incomplete):
+fewer benchmark-defined FPs does not prove that the removed edges were
+biologically false, and the effect on biological precision is not established.
 
 The primary THP-1 result is the **100-pair raw-MI comparison before filtering,
 DPI or consensus**. Median TP@5,000 increased from 2,487.50 to 2,624.25 and
