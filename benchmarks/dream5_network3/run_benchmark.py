@@ -62,7 +62,7 @@ PARAMETERS = {"npar": 40, "nominal_p": 1e-7, "fixed_mi": FIXED_MI,
               "measurement_noise": 0, "filter_mean": 0, "filter_cv": 0, "consensus": "none"}
 PRIMARY = {"contrast": ["legacy", "u80"], "stage": "nominal_post", "endpoint": "average_precision"}
 ARTIFACTS = ("raw.adj", "stdout.log", "stderr.log", "time.tsv", "validation.json")
-CODE_NAMES = ("run_benchmark.py", "metrics.py")
+CODE_NAMES = ("run_benchmark.py", "metrics.py", "prepare.py")
 _METRICS_IMPORT_LOCK = threading.Lock()
 
 

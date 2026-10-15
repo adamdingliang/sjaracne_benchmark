@@ -252,6 +252,7 @@ class RunnerTests(unittest.TestCase):
             plan = runner.create_plan(prepared, binary, config, out)
             self.assertEqual(runner.verify_plan(out / "plan.json"), plan)
             self.assertEqual(set(plan["code"]), set(runner.CODE_NAMES))
+            self.assertIn("prepare.py", plan["code"])
             self.assertEqual(plan["component"]["source_commit"], runner.ENGINE_COMMIT)
             self.assertEqual(plan["primary"], runner.PRIMARY)
             original = copy.deepcopy(plan)
@@ -266,9 +267,12 @@ class RunnerTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     runner.verify_plan(out / "plan.json")
             (out / "plan.json").write_text(json.dumps(original))
-            (here / "metrics.py").write_text("changed code")
-            with self.assertRaises(ValueError):
-                runner.verify_plan(out / "plan.json")
+            for name in ("metrics.py", "prepare.py"):
+                original_code = (here / name).read_bytes()
+                (here / name).write_text("changed code")
+                with self.subTest(changed_runtime_module=name), self.assertRaises(ValueError):
+                    runner.verify_plan(out / "plan.json")
+                (here / name).write_bytes(original_code)
 
     def test_smoke_gate_requires_stage_comparisons(self):
         plan = self.plan()
