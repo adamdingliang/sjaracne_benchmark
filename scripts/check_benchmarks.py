@@ -14,7 +14,7 @@ GROUPS = {
     "migration": ("scripts", ["test_verify_migration", "test_verify_engine_archive"]),
     "engine_performance": ("engine_performance/tests", ["test_rank_benchmark_generator"]),
     "dream5": ("benchmarks/dream5_network1", ["test_benchmark"]),
-    "dream5_network3": ("benchmarks/dream5_network3", ["test_prepare", "test_run_benchmark", "test_metrics"]),
+    "dream5_network3": ("benchmarks/dream5_network3", ["test_prepare", "test_run_benchmark", "test_metrics", "test_report"]),
     "thp1": ("benchmarks/thp1_perturbseq", ["test_metrics", "test_prepare", "test_benchmark", "test_scanpy_notebook"]),
     "thp1_raw_mi": ("benchmarks/thp1_perturbseq/raw_mi", [
         "test_score", "test_run_pilot", "test_smoke", "test_report", "test_extend_pilot",
