@@ -31,16 +31,18 @@ recorded in the import manifest.
 - Kept the engine checkout on `feat/estimator-matched-apmi-null` at
   `7633ebb4a0d966dbda15a4e32d0efa492fb71aeb`.
 
-## Prepared develop cleanup
+## Completed develop cleanup
 
-The separate local engine branch `chore/separate-research-benchmarks` starts
-from `develop` at `1638e8f4eb3d7ffe5057922fa9f9bd1043d466ac`. It removes only
+The engine branch `chore/separate-research-benchmarks` was based on
+`develop` at `1638e8f4eb3d7ffe5057922fa9f9bd1043d466ac`. Its cleanup removes only
 the 11 migrated files under `benchmarks/dream5_network1/`, removes their
 obsolete `.gitattributes`/`.gitignore` rules, and replaces the engine README's
 local DREAM5 link with a link to this private repository.
-Preparing this branch does not merge it into `develop` or rewrite old PRs.
-The prepared local cleanup commit is
-`edf7a2fdf3c5ff866f4fea30fe1ca010c00e6a3a`; it has not been pushed or merged.
+At the user's explicit request on 2026-10-14, the branch was pushed and
+fast-forward merged into `adamdingliang/SJARACNe:develop` at
+`edf7a2fdf3c5ff866f4fea30fe1ca010c00e6a3a`. Both remote branch heads were
+verified at that commit. No force-push, branch-protection bypass, old-PR
+rewrite, or change to `master` was performed. The cleanup branch is retained.
 Original DREAM5 files remain recoverable from both this repository and the
 engine's existing Git history/worktree.
 

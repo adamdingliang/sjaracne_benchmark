@@ -52,7 +52,9 @@ Only after equivalent migrated workflows are validated should we replace source-
 On 2026-10-14 the user separately authorized bounded source cleanup. The
 standalone duplicate LUAD utility was removed from the active engine checkout;
 the path-bound THP-1 archive remains in place and is locally excluded from Git
-status. A separate engine cleanup branch prepares removal of the already
-migrated DREAM5 package from `develop`, with a README link here. No legacy PR
+status. At the user's subsequent explicit request, engine cleanup commit
+`edf7a2f` was pushed and fast-forward merged into `develop`, removing the
+already migrated DREAM5 package and replacing its README link with a link
+here. No legacy PR
 branch or worktree is retired, no scientific result is recomputed, and this
 does not assert end-to-end portability. See [source cleanup](SOURCE_CLEANUP.md).
