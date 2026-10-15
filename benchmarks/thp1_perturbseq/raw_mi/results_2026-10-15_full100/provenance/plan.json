@@ -1,0 +1,298 @@
+{
+  "schema": 1,
+  "label": "THP-1 full 100-resample raw-MI sampling comparison; reconstructed response reference",
+  "created_utc": "2026-10-15T14:49:43Z",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100
+  ],
+  "arms": [
+    "before",
+    "after"
+  ],
+  "selection": {
+    "pool_start": 1,
+    "pool_end": 100,
+    "count": 100,
+    "random_seed": 20261015,
+    "algorithm": "python.random.Random.sample",
+    "interpretation": "All original seeds 1 through 100; no further result-dependent selection"
+  },
+  "source_scope": "eligible",
+  "evaluated_source_count": 272,
+  "evaluated_sources": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015_full100\\inputs\\evaluated_sources.txt",
+    "sha256": "3d466aaf6da07fd25683f5a4c3a49d07f89eab27e2f41b17b2aed2a0b63d4b4c",
+    "bytes": 1652
+  },
+  "out": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015_full100",
+  "inputs": {
+    "expression": {
+      "path": "D:\\GitHub\\SJARACNe\\benchmarks\\thp1_perturbseq\\results\\author_reconstruction_20261011\\prepared\\expression.exp",
+      "sha256": "d2e27058034efe096ddf7417da566fa2657386a8dee19b2cc27e8b433e34421e",
+      "bytes": 23339703
+    },
+    "full_sig_hubs": {
+      "path": "D:\\GitHub\\SJARACNe\\benchmarks\\thp1_perturbseq\\results\\author_reconstruction_20261011\\prepared\\hubs.txt",
+      "sha256": "1b43bc91288b705ea24dc33ae12f679e72ac926647c9011e81409af3286fa5d1",
+      "bytes": 43085
+    },
+    "prepare_manifest": {
+      "path": "D:\\GitHub\\SJARACNe\\benchmarks\\thp1_perturbseq\\results\\author_reconstruction_20261011\\prepared\\prepare_manifest.json",
+      "sha256": "85489a966f18e91bd6ac4b4a8d5a5584447ac984bc0c5e18739d6965d9f26b6b",
+      "bytes": 48908
+    },
+    "gene_selection": {
+      "path": "D:\\GitHub\\SJARACNe\\benchmarks\\thp1_perturbseq\\results\\author_reconstruction_20261011\\prepared\\gene_selection.tsv",
+      "sha256": "ec335455b238ff8b5019eee7347fcbb1b7d5958334a69c964d60d291e9469d0b",
+      "bytes": 791735
+    },
+    "eligible_sources": {
+      "path": "D:\\GitHub\\SJARACNe\\benchmarks\\thp1_perturbseq\\results\\author_reconstruction_20261011\\prepared\\reference_eligible_sources.tsv",
+      "sha256": "6669fb653b2494e4c422d3f4d26526eb25b15dd66f895fcb9acda8e65b871d02",
+      "bytes": 7563
+    },
+    "positive_edges": {
+      "path": "D:\\GitHub\\SJARACNe\\benchmarks\\thp1_perturbseq\\results\\author_reconstruction_20261011\\prepared\\reference_positive_edges.tsv",
+      "sha256": "e901dc5827739563bec8f7e1308643a20adc12f6b84bbd58019b3ccb603d2720",
+      "bytes": 36423264
+    }
+  },
+  "labels": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015_full100\\inputs\\labels.npy",
+    "sha256": "e50ebbae1e16710ddb89775a98c02fed9a94d1daae37b401aa4dd38a5c7c0329",
+    "bytes": 4887968
+  },
+  "universe_file": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015_full100\\inputs\\universe.json",
+    "sha256": "765ff473c21acb426321dc5df79ffe2063a3d807ca8d6698542b83692fa0c91b",
+    "bytes": 259960
+  },
+  "universe": {
+    "candidate_pairs": 4887840,
+    "reference_positive_pairs": 1177495,
+    "reference_negative_pairs": 3710345,
+    "random_positive_fraction": 0.24090293462961143,
+    "definition_sha256": "22705ef6ee9ab66230368c91c159376b51e8a66e5b135af72a74db4fe725ab95"
+  },
+  "components": {
+    "before": {
+      "historical_run": {
+        "path": "D:\\GitHub\\SJARACNe\\benchmarks\\thp1_perturbseq\\results\\author_reconstruction_20261011\\legacy\\run_manifest.json",
+        "sha256": "8ef66f9193ba7ec0bec7914206044085631b80a5c0d5d517dd0483ad6fb668c7",
+        "bytes": 249090
+      },
+      "binary": {
+        "path": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1\\SJARACNe\\bin\\sjaracne.exe",
+        "sha256": "7c358c4553f75f0ccfe5b035e97aebb72473b0e5d9c69c1336c1181ffd084ed5",
+        "bytes": 1907400
+      },
+      "config_dir": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1\\SJARACNe\\config",
+      "config": {
+        "config_threshold.txt": {
+          "path": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1\\SJARACNe\\config\\config_threshold.txt",
+          "sha256": "fb1694b1d4c9d9965a6ab2f3ee036e6387bebd94d2d8624102fd290b5e9f551e",
+          "bytes": 31
+        },
+        "config_kernel.txt": {
+          "path": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1\\SJARACNe\\config\\config_kernel.txt",
+          "sha256": "311b5be2f9939f4de920237de6bb50576cca4a0bb43440caebb98a4b32d2ec2c",
+          "bytes": 27
+        }
+      },
+      "build_record": {
+        "path": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1\\build_record.json",
+        "sha256": "d9cfc011e17779b30a472456dbbfa7891779b05a6ae67927b3505470533c7b62",
+        "bytes": 5476
+      }
+    },
+    "after": {
+      "historical_run": {
+        "path": "D:\\GitHub\\SJARACNe\\benchmarks\\thp1_perturbseq\\results\\author_reconstruction_20261011\\sampling_after_80pct_20261012\\run_manifest.json",
+        "sha256": "a666b4ae9b02e90281cfd1d59412a9ee0760e89ae92f248b8055624e4b1a36d5",
+        "bytes": 310428
+      },
+      "binary": {
+        "path": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1-pr70-sampling\\SJARACNe\\bin\\sjaracne.exe",
+        "sha256": "664be6122128c6919a82f71aca4c7fa6f21cd095029513969b0e8ff88fb4af86",
+        "bytes": 2066632
+      },
+      "config_dir": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1-pr70-sampling\\SJARACNe\\config",
+      "config": {
+        "config_threshold.txt": {
+          "path": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1-pr70-sampling\\SJARACNe\\config\\config_threshold.txt",
+          "sha256": "fb1694b1d4c9d9965a6ab2f3ee036e6387bebd94d2d8624102fd290b5e9f551e",
+          "bytes": 31
+        },
+        "config_kernel.txt": {
+          "path": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1-pr70-sampling\\SJARACNe\\config\\config_kernel.txt",
+          "sha256": "311b5be2f9939f4de920237de6bb50576cca4a0bb43440caebb98a4b32d2ec2c",
+          "bytes": 27
+        }
+      },
+      "build_record": {
+        "path": "D:\\GitHub\\_datasets\\THP1_reconstruction\\sources\\SJARACNe-v0.2.1-pr70-sampling\\build_record.json",
+        "sha256": "20ff7c4458b628d89d7f5403bd77f23adedb90c7294ba8a060d46fd1b0d4af8d",
+        "bytes": 7498
+      }
+    }
+  },
+  "smoke_proof": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015_smoke_retry_lf\\proof.json",
+    "sha256": "0113726f10023a82e134fbe25d75eafc6a4dc310232a3169a3dc7206cc1908c5",
+    "bytes": 77550
+  },
+  "code": {
+    "run_pilot.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\thp1_perturbseq\\raw_mi\\run_pilot.py",
+      "sha256": "f5f79c8f6ae8084ae0555ba758c8eea6dbfed20b4a98a31fd463f361d2d18d0b",
+      "bytes": 20655
+    },
+    "score.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\thp1_perturbseq\\raw_mi\\score.py",
+      "sha256": "d746f8f1e47fae23d6a8affcbfb397ee21173e148c7f1c38850444c24d5abd5f",
+      "bytes": 17228
+    },
+    "extend_pilot.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\thp1_perturbseq\\raw_mi\\extend_pilot.py",
+      "sha256": "a62fc46da9da9bce89a6539a058173fa1b54d93a91ce36576a7702c2b712e7d7",
+      "bytes": 15993
+    },
+    "report.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\thp1_perturbseq\\raw_mi\\report.py",
+      "sha256": "d08dfef6a00eb168fd83a70d841e000206bedc39ed545b1d00d61c8d079b24d0",
+      "bytes": 21822
+    }
+  },
+  "parameters": {
+    "p_value": 1,
+    "mi_threshold": 0,
+    "dpi_tolerance": 1,
+    "npar": 40,
+    "ks": [
+      1000,
+      5000,
+      10000,
+      50000,
+      100000
+    ],
+    "primary_k": 5000,
+    "consensus": "none",
+    "before_sampling": "121 draws with replacement",
+    "after_sampling": "97 distinct metacells; ceil(0.8*121)",
+    "native_MI_serialization": "six significant digits; MI ties retained"
+  },
+  "execution": {
+    "wsl_distro": "Ubuntu",
+    "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.4",
+    "benchmark_git_commit": "5a97ed9e91975cbd7e87d908bfae9aefc1fa4cc5"
+  },
+  "limitations": [
+    "One hundred computational resamples are not independent biological replicates.",
+    "Same seed IDs do not imply identical selected cells or tie-noise realizations.",
+    "Reconstructed perturbation-response positives, not direct regulatory truth.",
+    "This compares operational sampling protocols with different draw counts.",
+    "No MI cutoff, DPI, recurrence filter, or probability-based consensus.",
+    "Native exact/nonpositive MI zero omissions join the MI=0 tie only after validated completion."
+  ]
+}

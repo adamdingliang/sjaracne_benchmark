@@ -1,5 +1,11 @@
 # THP-1 raw-MI comparison: extension to all 100 seed IDs
 
+**Completed:** all 100 matched pairs, 200 jobs, zero failures. The
+[canonical full report](results_2026-10-15_full100/REPORT.md) is now the primary
+THP-1 benchmark result; the original pilot and older filtered-workflow evidence
+remain visible. The protocol and the post-pilot decision history below are
+retained, not restated as if the full extension had been planned beforehand.
+
 ## Decision and unchanged objective
 
 After reviewing the completed [20-pair pilot](results_2026-10-15_pilot20/README.md),
@@ -69,8 +75,8 @@ on D:. The completed pilot suggests approximately 30–45 minutes for the
 
 The reporting step must require all 100 matched pairs and consume the 40
 original and 160 new metric artifacts explicitly. It must not launch inference
-or silently omit failed/missing seeds. Final compact reports will be linked
-here after completion and checking; the pilot report is not replaced.
+or silently omit failed/missing seeds. The completed report is linked above;
+the pilot report is not rewritten or removed.
 
 ## What the extension can and cannot establish
 

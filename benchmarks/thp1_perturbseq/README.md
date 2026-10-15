@@ -6,7 +6,39 @@ data, native builds and the full historical run archive were not moved here.
 The [migration record](../../docs/MIGRATION.md) explains the imported files
 and the limits of historical path portability.
 
-## Latest completed evidence
+## Primary result: raw-MI ranking, 100 matched pairs
+
+The primary THP-1 benchmark is now the
+[full 100-pair raw-MI comparison](raw_mi/results_2026-10-15_full100/REPORT.md),
+before MI significance filtering, DPI or consensus. See the
+[process and scoring definitions](raw_mi/README.md) and
+[TP/EPR/ROC plot](raw_mi/results_2026-10-15_full100/raw_mi_comparison.png).
+
+Across 100 resamples per arm, median TP@5,000 increased from **2,487.50 to
+2,624.25**, median FP@5,000 decreased from **2,512.50 to 2,375.75**, and
+full-ranking AUROC increased from **0.6201 to 0.6659**. TP@5,000 improved in
+96/100 pairs and worsened in four; AUROC improved in 100/100. The report includes
+10k/20k/30k/50k/100k budgets and a complete 1k-to-100k summary grid.
+
+The matched inputs are 121 NT-cell metacells, 17,971 genes, the original SIG
+annotation and the same reconstructed response labels. Before uses 121 draws
+with replacement; after uses 97 distinct metacells (80%) in a sampling-only
+backport. Thus sample count and RNG consumption also change. Only the 272
+eligible source rows are computed, using the verified no-DPI equivalence;
+this is not a new full-6,951-source run. Scores are evaluated on one fixed
+4,887,840-pair universe, not just emitted predictions.
+
+This is a **perturbation-response ranking benchmark**, not direct-edge
+biological truth, an exact Fig. 6a reproduction, or an end-to-end improvement
+claim. Responses may be indirect, making this pre-DPI analysis a useful
+primary question for these labels; that does not make association equivalent
+to perturbation causality. The 100-pair run is a post-pilot extension that
+includes the original 20 pairs, not independent confirmation. The endpoint
+TP@5,000 remains primary within this analysis; extra display budgets do not
+replace it. The user designated this analysis as the primary THP-1 result on
+2026-10-15, after the results were observed.
+
+## Complementary results: MI filtering, DPI and consensus
 
 Both matched 100-bootstrap arms and their original probability-based
 consensuses completed before this migration. The after arm is a sampling-only
@@ -14,14 +46,18 @@ PR70 backport to the paper-era baseline, not PR71 or minimum-recurrence
 consensus. The reference is a reconstructed perturbation-response reference,
 not direct-edge biological ground truth or an exact Fig. 6a reproduction.
 
-- [Before/after consensus comparison](evidence/author_reconstruction_20261011/sampling_comparison_20261013/REPORT.md): eligible-source emitted predictions are primary; full emitted predictions and the fixed eligible universe are secondary. Precision improves modestly, while overall response-positive coverage falls and AUROC/EPR do not improve.
+- [Before/after consensus comparison](evidence/author_reconstruction_20261011/sampling_comparison_20261013/REPORT.md): eligible-source emitted predictions remain the preferred population **within that historical analysis**; full emitted predictions and the fixed eligible universe are alternative populations. The workflow comparison is now complementary to the primary raw-MI benchmark. Precision improves modestly, while overall response-positive coverage falls and AUROC/EPR do not improve.
 - [Individual post-DPI bootstrap diagnostic](evidence/author_reconstruction_20261011/bootstrap_tp_fp_20261013/REPORT.md): median precision increases from 27.78% to 37.35%, but median TP falls 50.50% and FP falls 68.34%. TP loss is already present before consensus.
 - [Historical baseline versus Fig. 6a](AUTHOR_RECONSTRUCTION.md): the reconstruction does not reproduce the paper's numerical performance. That limitation remains unchanged by migration or the after-arm comparison.
 
 The operational arms also differ in sample count and affine MI cutoff:
 121 replacement draws / MI 0.136987 versus 97 distinct metacells / MI
 0.155902, both at nominal bootstrap p=1e-7. They do not isolate replacement
-alone. MI-cutoff tuning and new pre-DPI inference remain deferred.
+alone. These findings remain part of the evidence and are not superseded by
+the favorable raw-MI result. MI-cutoff tuning remains deferred; the raw-MI
+analysis above is complete. Old emitted-pool AUROC/EPR and the new fixed-universe
+raw-MI metrics use different populations/random baselines, so their absolute
+values are not directly comparable as one metric.
 
 ## Exploratory notebooks
 
@@ -152,10 +188,11 @@ full-emitted author-style baseline AUROC is 0.573906 versus the paper's
 approximately 0.75; this is not the eligible-source AUROC. On 2026-10-12 the
 user authorized the sampling-only after arm as a reconstructed benchmark
 despite that mismatch. Its 100 bootstraps, both consensuses and scoring are
-complete; the latest evidence is linked above. No inference was rerun during
+complete; this complementary evidence and the new primary result are linked
+above. No inference was rerun during
 repository migration.
 
-## Matched PR70 sampling pilot
+## Historical three-seed individual-cell sampling pilot
 
 `prepare.py`, `benchmark.py`, and `metrics.py` implement a separate, opt-in
 public-data benchmark of the three Figure 6a metric families: cumulative

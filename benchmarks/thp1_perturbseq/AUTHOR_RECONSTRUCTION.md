@@ -1,4 +1,12 @@
-# THP-1 author-style reconstruction and matched sampling evidence
+# THP-1 historical reconstruction and complementary workflow evidence
+
+The current **primary THP-1 result** is the
+[100-pair raw-MI response-ranking comparison](raw_mi/results_2026-10-15_full100/REPORT.md),
+before MI filtering, DPI or consensus. This page preserves the author-style
+baseline and the mixed/unfavorable filtered-workflow evidence as complementary
+results. Original metrics and dated evidence files are not rewritten.
+Here, historical uses of "primary" refer to the population or operating point
+within the older analysis, not the current hierarchy of benchmark results.
 
 The metacell and response-reference preparation, all 100 legacy bootstraps,
 both original consensuses, and TP/EPR/AUROC scoring are complete. The durable
@@ -6,17 +14,18 @@ coordinator finished at 12:03 EDT on 2026-10-12.
 **This reconstruction does not reproduce Fig. 6a's numerical performance.**
 The preserved full-emitted author-style baseline AUROC is 0.573906 versus
 the paper's rounded 0.75; EPR@5,000 is 1.10101 versus the published 18.
-These are historical all-source scores, not the current eligible-source
-primary scores. The numerical-agreement gate was not satisfied. On
+These are historical all-source scores, not the eligible-source scores used
+elsewhere in that reconstruction or the new primary raw-MI scores.
+The numerical-agreement gate was not satisfied. On
 2026-10-12 the user explicitly authorized proceeding with the unchanged
 reconstructed reference rather than claiming publication reproduction.
 The sampling-only after arm, both consensuses and subsequent scoring are now
 complete. No scientific runs were performed as part of repository migration.
 
-## Latest matched comparison
+## Complementary matched DPI/consensus comparison
 
 The [completed consensus comparison](evidence/author_reconstruction_20261011/sampling_comparison_20261013/REPORT.md)
-uses eligible-source emitted predictions as the primary population.
+uses eligible-source emitted predictions as its preferred scoring population.
 Both arms retain full SIG inference/DPI hubs, the same metacells and response
 reference, and the original probability-based consensus. The after arm
 applies only PR70's native sampling changes to the same paper-era baseline;
@@ -40,7 +49,9 @@ Sample count, sampling/tie-noise RNG consumption and affine MI cutoff
 change together: 121 replacement draws / MI 0.136987 versus 97 distinct
 metacells / MI 0.155902 at nominal p_b=1e-7. Saved networks are post-DPI only;
 this evidence cannot separate sampling, MI filtering and DPI contributions.
-MI-cutoff tuning and a new pre-DPI benchmark remain deferred.
+MI-cutoff tuning remains deferred. A separate raw-MI benchmark has since been
+completed and is linked above; it does not resolve or remove this workflow's
+response-positive coverage loss.
 
 The execution history and legacy-versus-publication tables below are
 retained to explain the reconstruction. They do not describe the after arm.

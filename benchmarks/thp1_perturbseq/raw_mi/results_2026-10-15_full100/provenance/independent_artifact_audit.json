@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": "Publication artifact integrity and independent primary-k numeric validation of all 200 completed raw-MI jobs; no native inference or complete independent scorer rerun",
+  "completed_utc": "2026-10-15T16:05:05.088427+00:00",
+  "plan": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015_full100\\plan.json",
+    "sha256": "e4689c944f25bdf45420dcd6e663c876b5e83cd442eb5432071d3a5fb26ffa65"
+  },
+  "extension": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015_full100\\extension.json",
+    "sha256": "0b315c545a5213d1d0bba6b55e6e7598021a7702ebeff4b7cd0df3ace45d2e09"
+  },
+  "completion": {
+    "status": "complete",
+    "unique_arm_seed_jobs": 200,
+    "matched_seeds": 100,
+    "before_jobs": 100,
+    "after_jobs": 100,
+    "reused_pilot_jobs": 40,
+    "new_native_jobs": 160,
+    "failed_jobs": 0
+  },
+  "artifact_integrity": {
+    "sha256_and_size_records_verified": 1200,
+    "total_artifact_bytes_read_for_hashing": 20021611228,
+    "records_per_artifact": {
+      "metrics.json": 200,
+      "raw.adj": 200,
+      "scores.npz": 200,
+      "stderr.log": 200,
+      "stdout.log": 200,
+      "time.tsv": 200
+    },
+    "exact_original_artifact_paths_verified": 200,
+    "exact_frozen_plan_commands_verified": 200,
+    "job_records_equal_completion_manifest": 200,
+    "additional_plan_input_code_and_reuse_binding_records_verified": 94
+  },
+  "frozen_protocol_checks": {
+    "reference_label_array_pairs": 4887840,
+    "reference_label_array_positives": 1177495,
+    "reference_label_array_negatives": 3710345,
+    "full_and_pilot_label_arrays_identical": true,
+    "all_metric_class_counts_match_frozen_universe": 200,
+    "all_stored_parser_source_row_counts": 272,
+    "all_stored_parser_emitted_pair_counts": 4887840,
+    "all_reported_zero_MI_pair_counts": 0,
+    "native_raw_headers_verified": 200,
+    "native_source_completion_and_all_gene_sample_logs_verified": 200,
+    "DPI_or_affine_filter_execution_messages": 0,
+    "nonempty_stderr_files": 0,
+    "dense_score_array_headers_verified": 200,
+    "all_dense_array_shapes": [
+      4887840
+    ],
+    "before_observation_draws": 121,
+    "after_distinct_observations": 97
+  },
+  "pilot_preservation": {
+    "original_plan_and_status_match_published_pilot_provenance": true,
+    "all_40_reused_job_records_and_240_artifact_records_match_extension": true,
+    "reused_commands_remain_bound_to_original_pilot_plan": true,
+    "reused_native_reruns_recorded": 0
+  },
+  "report_integrity": {
+    "report_metric_SHA256_records_verified": 200,
+    "matched_unique_arm_seed_metric_files": 200,
+    "paired_TSV_rows_checked_against_metrics": 500,
+    "plan_extension_original_pilot_bindings_verified": true,
+    "report_script_hash_verified": true
+  },
+  "limitations": [
+    "The 1200 stored artifact SHA256 values and byte sizes were independently recomputed; all 200 primary-k results were independently recalculated, but this is not a complete independent correctness proof of the original scorer.",
+    "All raw adjacency bytes were read for hashing and raw headers were independently checked; the approximately 978 million source-target entries were not independently reparsed for pair uniqueness or MI values. Stored parser-validation counts were checked against the fixed plan.",
+    "All 200 dense score arrays were independently loaded and checked for shape, finite nonnegative values and primary-k metrics; they were not compared element-by-element to the original adjacencies.",
+    "Independent sklearn AUROC sorting covered four newly run jobs (seeds 1 and 100, both arms), not all 200. All 200 reported AUROC values were checked for finiteness and agreement with their existing scorer integral checks.",
+    "The fixed label vector was checked for shape, class counts and byte identity to the prior pilot, not reconstructed anew from the response TSV in this audit.",
+    "One hundred computational resamples are not independent biological replicates; perturbation-response labels do not prove direct regulation."
+  ],
+  "artifact_integrity_wall_seconds": 49.185,
+  "independent_numeric_validation": {
+    "status": "passed",
+    "completed_utc": "2026-10-15T16:05:05.088427+00:00",
+    "wall_seconds": 33.97,
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0",
+    "primary_at_5000": {
+      "method": "Independent numpy.partition kth-score boundary, greater-than/equal-to Boolean counts and uniform boundary-tie expectation; no calls to benchmark score_arrays or metric helpers",
+      "jobs_checked": 200,
+      "candidate_scores_per_job": 4887840,
+      "reference_label_positives": 1177495,
+      "reference_label_operational_negatives": 3710345,
+      "metrics_checked": [
+        "TP",
+        "FP",
+        "precision",
+        "sensitivity",
+        "specificity",
+        "EPR",
+        "TP_min",
+        "TP_max"
+      ],
+      "maximum_absolute_differences": {
+        "TP": 0,
+        "FP": 0,
+        "precision": 0,
+        "sensitivity": 0,
+        "specificity": 0,
+        "EPR": 0,
+        "TP_min": 0,
+        "TP_max": 0
+      },
+      "all_scores_finite_and_nonnegative_jobs": 200,
+      "all_zero_score_pairs": 0,
+      "independently_recovered_TP_direction_counts": {
+        "higher": 96,
+        "lower": 4,
+        "unchanged": 0
+      }
+    },
+    "AUROC_independent_crosscheck": {
+      "method": "sklearn.metrics.roc_auc_score on saved scores and the fixed Boolean label vector",
+      "jobs_checked": 4,
+      "seeds_checked": [
+        1,
+        100
+      ],
+      "arms_checked": [
+        "before",
+        "after"
+      ],
+      "maximum_absolute_difference": 2.220446049250313e-16,
+      "checks": [
+        {
+          "arm": "after",
+          "seed": 1,
+          "independent_sklearn_AUROC": 0.6590582530099773,
+          "reported_AUROC": 0.6590582530099774,
+          "absolute_difference": 1.1102230246251565e-16
+        },
+        {
+          "arm": "before",
+          "seed": 1,
+          "independent_sklearn_AUROC": 0.6367004096204676,
+          "reported_AUROC": 0.6367004096204677,
+          "absolute_difference": 1.1102230246251565e-16
+        },
+        {
+          "arm": "after",
+          "seed": 100,
+          "independent_sklearn_AUROC": 0.6735853355345719,
+          "reported_AUROC": 0.6735853355345717,
+          "absolute_difference": 2.220446049250313e-16
+        },
+        {
+          "arm": "before",
+          "seed": 100,
+          "independent_sklearn_AUROC": 0.6199127793901121,
+          "reported_AUROC": 0.6199127793901121,
+          "absolute_difference": 0
+        }
+      ]
+    },
+    "limitations": [
+      "The fixed label vector was checked for shape/class counts and byte identity to the prior pilot, not reconstructed anew from the response TSV in this numeric stage.",
+      "Independent sklearn AUROC sorting covered four newly run jobs (seeds 1 and 100, both arms), not all 200.",
+      "Primary-k metrics were independently recalculated for all 200 saved score arrays; the full per-pair adjacency-to-array conversion was not independently repeated."
+    ]
+  }
+}

@@ -1,6 +1,31 @@
-# THP-1 raw-MI sampling pilot: 20 matched seed IDs
+# THP-1 primary benchmark: raw-MI response ranking
 
-## Objective and frozen design
+## Current primary result: 100 matched pairs
+
+The [full 100-pair report](results_2026-10-15_full100/REPORT.md) is the primary
+THP-1 result. All 200 jobs completed: 40 reused pilot jobs plus 160 new jobs.
+Median TP@5,000 increased from 2,487.50 to 2,624.25; full-ranking AUROC increased
+from 0.6201 to 0.6659. TP@5,000 improved in 96/100 pairs (four worsened), and
+AUROC improved in 100/100. See the
+[plot](results_2026-10-15_full100/raw_mi_comparison.png) and
+[all-budget table](results_2026-10-15_full100/budget_summary.tsv).
+
+The original 20-pair pilot was declared before its scoring. The user requested
+the [extension to all 100 seeds](EXTENSION_100.md) after reviewing that pilot,
+then designated the completed raw-MI analysis as the primary THP-1 result on
+2026-10-15. This does not retroactively make the full study preregistered or
+the 100-pair result independent of its pilot. The original pilot snapshot is
+preserved unchanged, including its statements about decisions as of that time.
+
+"Primary analysis" here means the raw-MI benchmark rather than the
+[complementary DPI/consensus comparison](../evidence/author_reconstruction_20261011/sampling_comparison_20261013/REPORT.md).
+Within this analysis, **TP@5,000 remains the primary endpoint**; AUROC and other
+budgets are supporting summaries. The 20k/30k points were already saved on the
+curve grid and are additional descriptive displays, not newly substituted
+primary endpoints. The favorable raw-MI result does not cancel the older
+workflow's response-positive coverage loss.
+
+## Objective and frozen protocol
 
 This exploratory comparison asks whether changing the resampling strategy
 improves the ranking of perturbation-responsive source-target pairs **before
@@ -9,7 +34,9 @@ reproduction, a direct-regulatory-edge gold-standard test, or an end-to-end
 SJARACNe improvement claim. The earlier unfavorable/mixed post-DPI/consensus
 results remain available in the original evidence package.
 
-The protocol and seed selection are declared before scoring:
+The estimator, inputs and scoring rules below apply to both the pilot and
+the extension. The random 20-seed selection and endpoint declaration were
+made before **pilot** scoring; the extension then included all seed IDs 1–100:
 
 - Original frozen expression: 17,971 genes and 121 NT metacells.
 - Before: unmodified paper-era proxy at
@@ -32,15 +59,18 @@ Each seed is scored independently. Curves and metrics are summarized across
 resamples; no averaging of MI, recurrence cutoff or consensus network is used.
 The same integer seed IDs do not mean identical observations or jitter between
 the two protocols. These overlapping resamples are not biological replicates,
-and a 20-resample pilot is not sufficient for a broad significance claim.
+and neither 20 nor 100 overlapping resamples establish biological replication
+or justify a broad significance claim.
 
 ## Verified source-row optimization
 
 The user explicitly approved computing only the 272 scored source rows, while
 retaining the **entire expression matrix and original 6,951-SIG annotation**.
 Without DPI, each MI calculation uses only its two gene vectors and the sampled
-observations; source-list selection occurs after sampling/global jitter and
-does not alter either. There is no per-pair RNG or cross-pair estimator state.
+observations. Source IDs are parsed earlier, but the selected list does not
+affect sampling or global jitter; it only determines which pairwise row
+calculations execute afterward. There is no per-pair RNG or cross-pair
+estimator state.
 Computing all 6,951 source rows would therefore add unscored work, not change
 the requested pair scores. This argument does not apply when DPI is enabled.
 
@@ -100,13 +130,23 @@ artifacts and executes the remaining jobs. An incomplete job directory is
 never silently overwritten. `report.py` requires every declared seed in both
 arms before producing the final paired report and three-panel plot.
 
+`package_full100.py` validates the completed 200-job metric population and
+exports exact 1k-to-100k summaries without new inference or re-ranking. It
+preserves original generated prose under `provenance/`; the canonical
+`REPORT.md` is separately authored to state the post-pilot decision history
+accurately. To recreate the numerical package in a fresh directory:
+
+```powershell
+python benchmarks/thp1_perturbseq/raw_mi/package_full100.py --run-root runs/thp1_raw_mi_20261015_full100 --out runs/thp1_raw_mi_full100_repack
+```
+
 Large outputs remain under ignored `runs/thp1_raw_mi_20261015/`: one immutable
 plan, per-job raw adjacencies, dense score arrays, logs, timing/RSS, compact
 metrics and a completion record. Historical runs and the external raw data
 are unchanged. Only code, the declared protocol and compact final evidence
 belong in Git.
 
-## Completed pilot
+## Historical completed 20-pair pilot
 
 All 40 jobs (20 matched seed IDs, two arms) completed. See the
 [results overview](results_2026-10-15_pilot20/README.md),
@@ -130,4 +170,5 @@ The user subsequently requested all 100 seed IDs using 12 workers. The
 [extension protocol](EXTENSION_100.md) retains the pilot and its verified
 outputs, computes only the other 80 matched pairs, and keeps the scientific
 settings and scoring rules fixed. It is a post-pilot expansion, not independent
-confirmation or a replacement for the pilot evidence.
+confirmation or a rewrite of the pilot evidence. The extension is now complete;
+its results are linked at the top of this page.
