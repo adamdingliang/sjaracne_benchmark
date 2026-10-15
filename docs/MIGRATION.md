@@ -69,3 +69,8 @@ engine-owned with the six fixtures relocated under `tests/fixtures/rank_cache/`.
 This separates historical evidence from required test support without making
 the engine depend on this repository. Historical native timing runners remain
 version-bound snapshots, not newly validated portable workflows.
+
+The archive was published at `984f48b` before engine cleanup commit `9f4959c`
+was fast-forward merged into `adamdingliang/SJARACNe:develop`. The tracked
+engine root `benchmarks/` tree is now retired; old feature branches and local
+run archives retain their original layouts.

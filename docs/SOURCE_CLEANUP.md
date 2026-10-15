@@ -81,6 +81,12 @@ tools here, retaining only engine correctness support in SJARACNe, and removing
 the engine's root `benchmarks/` directory. The separate branch is
 `chore/archive-engine-benchmarks`, based on `edf7a2f`.
 The engine cleanup commit is `9f4959c5a0a083bc13c9dede62d9ba49be5c8dfa`.
+After the verified archive was published here at `984f48b`, the branch was
+pushed and fast-forward merged into `adamdingliang/SJARACNe:develop` on
+2026-10-14. Both remote branch heads were verified at that engine commit.
+There is no tracked root `benchmarks/` tree on `develop`; no force-push or
+history rewrite was used. Other working branches and their local archives
+are deliberately unaffected.
 
 All 60 remaining benchmark files (nine folders; 2,004,300 bytes) are preserved
 byte for byte from pinned Git objects under `engine_performance/`. The original
