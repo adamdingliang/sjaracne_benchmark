@@ -16,7 +16,7 @@ GROUPS = {
     "dream5": ("benchmarks/dream5_network1", ["test_benchmark"]),
     "thp1": ("benchmarks/thp1_perturbseq", ["test_metrics", "test_prepare", "test_benchmark", "test_scanpy_notebook"]),
     "thp1_raw_mi": ("benchmarks/thp1_perturbseq/raw_mi", [
-        "test_score", "test_run_pilot", "test_smoke", "test_report"]),
+        "test_score", "test_run_pilot", "test_smoke", "test_report", "test_extend_pilot"]),
     "thp1_scoring": ("benchmarks/thp1_perturbseq/author_reconstruction", [
         "test_score_bootstrap_counts", "test_score_fixed_universe", "test_score_sampling_after",
         "test_score_three_populations", "test_plot_sampling_comparison", "test_plot_eligible_fig6a"]),

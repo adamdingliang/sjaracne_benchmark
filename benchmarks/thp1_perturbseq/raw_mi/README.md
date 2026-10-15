@@ -123,3 +123,11 @@ This pilot's final status was recovered by verification of all existing
 outputs, without rerunning native inference; details are in the results
 overview and independent audit. The frozen runner was not rewritten after
 observing results.
+
+## Extension to 100 pairs
+
+The user subsequently requested all 100 seed IDs using 12 workers. The
+[extension protocol](EXTENSION_100.md) retains the pilot and its verified
+outputs, computes only the other 80 matched pairs, and keeps the scientific
+settings and scoring rules fixed. It is a post-pilot expansion, not independent
+confirmation or a replacement for the pilot evidence.

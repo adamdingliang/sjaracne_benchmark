@@ -23,6 +23,8 @@ The completed exploratory **THP-1 raw-MI sampling pilot** is reported separately
 [Results](benchmarks/thp1_perturbseq/raw_mi/results_2026-10-15_pilot20/README.md). It
 compares 20 fixed, randomly selected seed IDs before thresholding, DPI or
 consensus; the earlier full-workflow comparison above is retained unchanged.
+The subsequent [100-pair extension protocol](benchmarks/thp1_perturbseq/raw_mi/EXTENSION_100.md)
+retains those 20 pairs and computes the remaining 80 with unchanged settings.
 
 ## Engineering evidence
 
