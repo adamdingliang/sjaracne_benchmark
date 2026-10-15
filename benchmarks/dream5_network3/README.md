@@ -2,8 +2,9 @@
 
 This adds a **real-expression, experimentally supported TF-target reference**
 alongside the simulated DREAM5 Network 1 benchmark. Data preparation and
-validation are implemented here; a before/after SJARACNe comparison has **not**
-yet been run. This is an external benchmark dataset, not an engine dependency
+validation are implemented here. The [approved three-seed pilot](PLAN_2026-10-15.md)
+compares the retained legacy sampler with 64%, 80% and 90% fixed-size sampling.
+This is an external benchmark dataset, not an engine dependency
 or a unit-test fixture containing native inference outputs.
 
 ## Inputs and reference
@@ -72,13 +73,35 @@ expression values, the TF list, binary/unique/non-self reference pairs and the
 fixed labeled universe. The original matrix, not the gold file, determines
 which genes are retained.
 
-## Benchmark status and next comparison
+## Matched sampling and DPI pilot
 
-[Results](RESULTS.md) currently reports **dataset-readiness checks only**.
-No TP/FP, AUROC, AP or sampling-improvement result exists for Network 3 yet.
-When a comparison is authorized, freeze the engine/sampling protocols and use
-the same labeled universe in both arms. Report raw-MI ranking separately from
-threshold/DPI/consensus results. Custom full-ranking AUROC/AP is not
-automatically interchangeable with the original DREAM5 top-100,000 ranked-list
-evaluation. Do not tune against this reference and describe the same results
-as independent validation.
+The [prospective protocol](PLAN_2026-10-15.md) fixes three seeds, four sampling
+arms and five stages: raw MI, nominal affine filtering before/after DPI, and a
+common numerical MI cutoff before/after DPI. Every stage runs directly from
+expression; serialized adjacencies are not replayed through DPI. The primary
+comparison is **80% without replacement versus legacy, post-DPI AP at nominal
+p=1e-7**. No PR71 calibration or consensus is included. Read the protocol for
+the explicit-label universe, tie handling and limitations.
+
+Use the same historical PR70 binary/configuration as Network 1, not an arbitrary
+new build. The planner rejects a different executable, configuration, input or
+source hash. Preparation uses only Python's standard library; inference
+validation/scoring additionally requires NumPy. From the repository root:
+
+```powershell
+python benchmarks/dream5_network3/run_benchmark.py plan --prepared-root runs/dream5_network3_prepared_20261015 --binary PATH_TO_PINNED_BINARY --config PATH_TO_PINNED_CONFIG --out runs/dream5_network3_20261015_pilot3 --distro Ubuntu
+python benchmarks/dream5_network3/run_benchmark.py run --plan runs/dream5_network3_20261015_pilot3/plan.json --workers 2 --smoke
+python benchmarks/dream5_network3/run_benchmark.py run --plan runs/dream5_network3_20261015_pilot3/plan.json --workers 12
+python benchmarks/dream5_network3/metrics.py score --run-root runs/dream5_network3_20261015_pilot3 --out runs/dream5_network3_20261015_pilot3/scoring_20261015
+```
+
+The full batch requires a successful ten-job engineering smoke gate. It verifies
+and reuses those jobs rather than running them again. Native failures and partial
+directories are retained for inspection, never silently overwritten. Concurrent
+coordinators are rejected. Commands, timings, process status, output hashes,
+sample counts, thresholds and exact shared MI/subset relationships are recorded.
+
+[Results](RESULTS.md) initially contains dataset-readiness evidence; the pilot
+report is added after execution. Custom AP/AUROC here is not the official DREAM5
+leaderboard score. Do not tune against this reference and describe the same
+results as independent validation.
