@@ -4,7 +4,7 @@ Dedicated research benchmarks and analysis evidence for [SJARACNe](https://githu
 
 ## Benchmark index
 
-| Network data | Question | Reference | Entry point |
+| Network data | Question | Reference | Benchmark process and results |
 | --- | --- | --- | --- |
 | DREAM5 Network 1 | How does sampling affect recovery of known directed edges? | [DREAM5 challenge](https://zenodo.org/records/17854236), Marbach et al. (2012): simulated expression and a supplied gold-standard network. [Input provenance](benchmarks/dream5_network1/DATA_LICENSE.md). | [Workflow and results](benchmarks/dream5_network1/README.md) |
 | THP-1 Perturb-seq | Does sampling improve recovery of perturbation-responsive targets? | Yao et al. conventional CRISPRi screen, [GSM6858449](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6858449): networks inferred from non-targeting-cell metacells; response labels reconstructed following scMINER, not direct-edge truth or exact Fig. 6a reproduction. | [Workflow, notebooks and latest evidence](benchmarks/thp1_perturbseq/README.md) |
