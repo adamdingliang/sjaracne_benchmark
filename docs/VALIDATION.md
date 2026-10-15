@@ -2,6 +2,12 @@
 
 This validates the copied artifacts and synthetic checks, not a new end-to-end scientific benchmark run. No inference, download, calibration, R execution, package installation or native build was performed.
 
+This is the historical initial-migration report. On 2026-10-14 the redundant
+LUAD archive was consolidated into the current benchmark; the active tree no
+longer includes that archived test suite. See [LUAD consolidation and current
+checks](LUAD_CONSOLIDATION.md) for the follow-up status. The initial counts
+below are not rewritten as if those later changes had already occurred.
+
 ## Artifact integrity
 
 - 602 imported files were checked against the originals using SHA-256 and byte size; the originals remain unchanged.

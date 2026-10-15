@@ -19,8 +19,9 @@ TRACKED = (
     ("SJARACNe-hub-dpi-analysis", "benchmarks/brca100_hub_size_dpi_pilot", "benchmarks/brca100_hub_size_dpi_pilot"),
     ("SJARACNe-hub-dpi-analysis", "benchmarks/brca100_kdpi_witness_screen", "benchmarks/brca100_kdpi_witness_screen"),
     ("SJARACNe-hub-dpi-analysis", "benchmarks/brca100_hub_size_dpi_analysis", "benchmarks/brca100_hub_size_dpi_analysis"),
-    ("SJARACNe-luad-gdc", "benchmarks/tcga_luad_gdc", "archive/tcga_luad_gdc"),
 )
+# LUAD is now one canonical current utility below. The earlier downloader is
+# recoverable from the initial repository import and is not re-created here.
 EVIDENCE = (
     "bootstrap_tp_fp_20261013", "sampling_comparison_20261013", "three_populations_20261012",
     "eligible_epr_20261012", "fixed_universe_20261012_verified", "eligible_fig6a_20261012",

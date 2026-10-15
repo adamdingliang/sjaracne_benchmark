@@ -11,7 +11,7 @@ The first stage is an additive migration of scientific workflows and compact evi
 | BRCA100 recurrence evidence | `SJARACNe-min-recurrence-develop`, `c7cdd45bda7bb2cba1fef3f6e7953d474382a06e` |
 | BRCA100 hub-size and witness evidence | `SJARACNe-hub-dpi-analysis`, `b3f9a83a27c994370c2b54eef48dcb5d4e735fa9` |
 | Current THP-1 and validated LUAD utility | Previously untracked files in the active `SJARACNe` checkout, recorded individually |
-| Earlier LUAD utility | `SJARACNe-luad-gdc`, `11554e3df24a9cf4730f5eecf797133efeb26c0c`; kept explicitly as an archive, not interchangeable with the current utility |
+| Earlier LUAD utility | `SJARACNe-luad-gdc`, `11554e3df24a9cf4730f5eecf797133efeb26c0c`; original import retained in Git history, now consolidated into the current LUAD benchmark |
 
 The package-source commits above identify the imported presentation/code snapshots. Historical run manifests may identify earlier inference commits; those original values remain authoritative for the historical results.
 
@@ -20,6 +20,13 @@ The package-source commits above identify the imported presentation/code snapsho
 Import the selected packages, preserve original result manifests/checksums, distinguish THP-1 pilot from full reconstructed baseline/after comparison, reconcile stale navigation documentation, and verify imported bytes plus lightweight synthetic tests. No inference, downloads, or rescoring of the scientific evidence is performed.
 
 Dated result folders and `evidence/` are historical snapshots. Root documentation and workflow navigation may be adapted for the new repository; every adaptation is marked in the import manifest. Do not edit frozen result JSON to make old paths appear portable.
+
+On 2026-10-14 the duplicate LUAD archive was consolidated into
+`benchmarks/tcga_luad_download`. Its three original import records are retained
+as explicitly retired entries, verified against their immutable initial Git
+snapshot. Active files and retired records are reported separately. See
+[LUAD consolidation](LUAD_CONSOLIDATION.md). No historical scientific result
+was retired or edited.
 
 ## Stage 2: operational portability
 

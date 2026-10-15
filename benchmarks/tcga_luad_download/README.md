@@ -1,4 +1,4 @@
-# Validated TCGA-LUAD expression acquisition
+# TCGA-LUAD expression acquisition benchmark
 
 `download_tcga_luad.py` downloads released, open-access TCGA-LUAD primary-tumor
 RNA-seq expression quantification files from GDC's **STAR - Counts** workflow.
@@ -9,6 +9,12 @@ expression matrix, choose one file per patient, or invoke SJARACNe.
 The script and its synthetic tests were imported from the original SJARACNe
 workspace; source-file hashes are recorded in the repository's
 [import manifest](../../provenance/import_manifest.json).
+
+This is the **single LUAD benchmark entry point**. The formerly separate
+`archive/tcga_luad_gdc` copy has been consolidated here: overlapping tests are
+covered by the current suite, snapshot-reuse/tamper checks are in
+`test_query_snapshot.py`, and the older implementation remains recoverable
+from Git history rather than appearing as another recommended downloader.
 
 ## Commands
 
@@ -78,14 +84,26 @@ a benchmark input matrix. STAR summary rows are not expression genes.
 Normalization, duplicate-gene handling and benchmarking parameters require
 separate documented preparation.
 
-## Older downloader archive
+## Consolidation and older download snapshots
 
-The distinct older implementation is preserved at
-[archive/tcga_luad_gdc](../../archive/tcga_luad_gdc/README.md), originating from
-commit `11554e3df24a9cf4730f5eecf797133efeb26c0c` in the SJARACNe LUAD worktree.
-It has a different snapshot/layout and reuse contract. Do not treat these
-scripts or their output directories as interchangeable, and do not use both
-on the same existing cohort directory.
+The older utility originated from SJARACNe commit
+`11554e3df24a9cf4730f5eecf797133efeb26c0c`. Its original code, tests and README
+are recoverable from this repository's initial import commit
+`55f974555cb02eef53d7b1802c3b4e2e8c7d9b9e`; original hashes remain in the import
+manifest, marked retired with their current counterparts. There is no second
+active LUAD implementation or archive test group.
+
+Older `query.json` / `metadata.tsv` output directories are **not compatible**
+with the current `query_snapshot.json` protocol. Use a fresh `--outdir`; do
+not point the current utility at a legacy download directory. This cleanup
+does not convert, overwrite or move existing downloads. Offline verification
+requires a valid current snapshot.
+
+The current protocol deliberately selects primary tumors; it does not retain
+the older utility's general `--sample-type` option. Corrupt-file handling also
+follows the current validated-replacement contract described above, not the
+older fail-immediately behavior. No downloader runtime behavior was changed
+by this consolidation. See [consolidation record](../../docs/LUAD_CONSOLIDATION.md).
 
 Run the current utility's offline synthetic tests without downloads:
 

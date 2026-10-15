@@ -6340,7 +6340,15 @@
       "kind": "tracked benchmark package",
       "adapted_for_new_repo": false,
       "source_git_mode": "100644",
-      "source_git_blob": "cdea6c172eedd09411ce8ef28e8ce33f65670da9"
+      "source_git_blob": "cdea6c172eedd09411ce8ef28e8ce33f65670da9",
+      "lifecycle": "retired",
+      "retirement": {
+        "date": "2026-10-14",
+        "reason": "Consolidated LUAD acquisition into one benchmark entry point",
+        "replacement": "benchmarks/tcga_luad_download/README.md",
+        "recovery_commit": "55f974555cb02eef53d7b1802c3b4e2e8c7d9b9e",
+        "recovery_path": "archive/tcga_luad_gdc/README.md"
+      }
     },
     {
       "destination": "archive/tcga_luad_gdc/download_luad_star_counts.py",
@@ -6353,7 +6361,15 @@
       "kind": "tracked benchmark package",
       "adapted_for_new_repo": false,
       "source_git_mode": "100644",
-      "source_git_blob": "5ec78e24ec370d4dff1572d454a1beda2c67703a"
+      "source_git_blob": "5ec78e24ec370d4dff1572d454a1beda2c67703a",
+      "lifecycle": "retired",
+      "retirement": {
+        "date": "2026-10-14",
+        "reason": "Consolidated LUAD acquisition into one benchmark entry point",
+        "replacement": "benchmarks/tcga_luad_download/download_tcga_luad.py",
+        "recovery_commit": "55f974555cb02eef53d7b1802c3b4e2e8c7d9b9e",
+        "recovery_path": "archive/tcga_luad_gdc/download_luad_star_counts.py"
+      }
     },
     {
       "destination": "archive/tcga_luad_gdc/test_download_luad_star_counts.py",
@@ -6366,7 +6382,15 @@
       "kind": "tracked benchmark package",
       "adapted_for_new_repo": false,
       "source_git_mode": "100644",
-      "source_git_blob": "9999ed8b46b471554ff96effef9b1d80011aa795"
+      "source_git_blob": "9999ed8b46b471554ff96effef9b1d80011aa795",
+      "lifecycle": "retired",
+      "retirement": {
+        "date": "2026-10-14",
+        "reason": "Consolidated LUAD acquisition into one benchmark entry point",
+        "replacement": "benchmarks/tcga_luad_download/test_download_tcga_luad.py",
+        "recovery_commit": "55f974555cb02eef53d7b1802c3b4e2e8c7d9b9e",
+        "recovery_path": "archive/tcga_luad_gdc/test_download_luad_star_counts.py"
+      }
     },
     {
       "destination": "benchmarks/thp1_perturbseq/.gitignore",

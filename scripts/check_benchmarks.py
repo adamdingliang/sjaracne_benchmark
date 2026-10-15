@@ -17,8 +17,7 @@ GROUPS = {
     "thp1_scoring": ("benchmarks/thp1_perturbseq/author_reconstruction", [
         "test_score_bootstrap_counts", "test_score_fixed_universe", "test_score_sampling_after",
         "test_score_three_populations", "test_plot_sampling_comparison", "test_plot_eligible_fig6a"]),
-    "luad": ("benchmarks/tcga_luad_download", ["test_download_tcga_luad"]),
-    "luad_archive": ("archive/tcga_luad_gdc", ["test_download_luad_star_counts"]),
+    "luad": ("benchmarks/tcga_luad_download", ["test_download_tcga_luad", "test_query_snapshot"]),
     "hub_dpi": ("benchmarks/brca100_hub_size_dpi_pilot", ["test_pilot"]),
     "kdpi": ("benchmarks/brca100_kdpi_witness_screen", ["test_screen"]),
     "threshold": ("benchmarks/brca100_pr67_threshold_sweep", [

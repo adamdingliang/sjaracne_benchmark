@@ -12,7 +12,7 @@ Dedicated research benchmarks and analysis evidence for [SJARACNe](https://githu
 | BRCA100 consensus recurrence | Evidence for an explicit minimum recurrence rule, including K=6 | [Recurrence analysis](benchmarks/brca100_consensus_recurrence_sweep/README.md) |
 | BRCA100 hub-size / DPI | Technical dependence of pruning on the available hub list | [Mechanism and limitations](benchmarks/brca100_hub_size_dpi_analysis/README.md) |
 | BRCA100 matched network QC | Matched workflow and NetBID2 summaries | [QC package](benchmarks/brca100_netbid_qc/README.md) |
-| TCGA LUAD | Validated public-expression acquisition utilities; no completed LUAD network benchmark yet | [Current downloader](benchmarks/tcga_luad_download/README.md) |
+| TCGA LUAD | One public-expression acquisition workflow; no completed LUAD network benchmark yet | [Downloader and tests](benchmarks/tcga_luad_download/README.md) |
 
 ## What moved, and what did not
 
@@ -33,6 +33,6 @@ python scripts/check_benchmarks.py
 
 The source import is recorded per file in [provenance/import_manifest.json](provenance/import_manifest.json). The report of checks performed during this migration is in [docs/VALIDATION.md](docs/VALIDATION.md).
 
-Migration checks collected 353 distinct tests: 346 passed, six were skipped for compiler/symlink prerequisites, and one pre-existing LUAD parser test fails in both the original and migrated copies. The root check command reports that failure; it is not hidden or treated as a successful validation.
+The initial migration checks collected 353 distinct tests: 346 passed, six were skipped for compiler/symlink prerequisites, and one pre-existing LUAD parser test fails in both the original and migrated copies. The root check command reports that failure; it is not hidden or treated as a successful validation. LUAD has since been consolidated into one benchmark folder; see the [consolidation and current checks](docs/LUAD_CONSOLIDATION.md).
 
 MI-cutoff tuning and a new THP-1 pre-DPI comparison remain deferred. No new scientific benchmark runs are part of this migration.
