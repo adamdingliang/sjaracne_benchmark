@@ -16,6 +16,15 @@ covered by the current suite, snapshot-reuse/tamper checks are in
 `test_query_snapshot.py`, and the older implementation remains recoverable
 from Git history rather than appearing as another recommended downloader.
 
+## Benchmark results
+
+**Pending:** no LUAD network inference or edge-recovery benchmark has been
+completed. There are no LUAD network TP/FP, precision, recall or AUROC results
+to report yet. Current outputs are acquisition metadata and file-validation
+reports, not network-performance results. The existing offline utility-test
+results and known parser limitation are documented in the
+[consolidation record](../../docs/LUAD_CONSOLIDATION.md#checks-performed).
+
 ## Commands
 
 Use Python 3.9+ and `requests` from the new repository root. Keep downloads
