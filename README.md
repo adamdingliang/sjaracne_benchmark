@@ -4,15 +4,19 @@ Dedicated research benchmarks and analysis evidence for [SJARACNe](https://githu
 
 ## Benchmark index
 
-| Work | Question / reference | Entry point |
-| --- | --- | --- |
-| DREAM5 Network 1 | Direct-edge recovery on a simulated network; sampling with versus without replacement | [Workflow and results](benchmarks/dream5_network1/README.md) |
-| THP-1 Perturb-seq | Recovery of reconstructed perturbation responses; not direct-edge ground truth or an exact Fig. 6a reproduction | [Workflow, notebooks and latest evidence](benchmarks/thp1_perturbseq/README.md) |
-| BRCA100 threshold sweep | Density, driver coverage and topology across bootstrap MI thresholds | [Combined sweep](benchmarks/brca100_pr67_threshold_sweep/COMBINED_RESULTS.md) |
-| BRCA100 consensus recurrence | Evidence for an explicit minimum recurrence rule, including K=6 | [Recurrence analysis](benchmarks/brca100_consensus_recurrence_sweep/README.md) |
-| BRCA100 hub-size / DPI | Technical dependence of pruning on the available hub list | [Mechanism and limitations](benchmarks/brca100_hub_size_dpi_analysis/README.md) |
-| BRCA100 matched network QC | Matched workflow and NetBID2 summaries | [QC package](benchmarks/brca100_netbid_qc/README.md) |
-| TCGA LUAD | One public-expression acquisition workflow; no completed LUAD network benchmark yet | [Downloader and tests](benchmarks/tcga_luad_download/README.md) |
+| Network data | Question | Reference | Entry point |
+| --- | --- | --- | --- |
+| DREAM5 Network 1 | How does sampling affect recovery of known directed edges? | [DREAM5 challenge](https://zenodo.org/records/17854236), Marbach et al. (2012): simulated expression and a supplied gold-standard network. [Input provenance](benchmarks/dream5_network1/DATA_LICENSE.md). | [Workflow and results](benchmarks/dream5_network1/README.md) |
+| THP-1 Perturb-seq | Does sampling improve recovery of perturbation-responsive targets? | Yao et al. conventional CRISPRi screen, [GSM6858449](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6858449): networks inferred from non-targeting-cell metacells; response labels reconstructed following scMINER, not direct-edge truth or exact Fig. 6a reproduction. | [Workflow, notebooks and latest evidence](benchmarks/thp1_perturbseq/README.md) |
+| BRCA100 (TF/SIG) | How do bootstrap MI thresholds affect density, driver coverage and topology? | SJARACNe's bundled `BRCA100.exp` and TF/SIG lists; inferred networks with no independent edge-level reference. [Input provenance](benchmarks/brca100_consensus_recurrence_sweep/results_2026-08-20/provenance/design.json). | [Combined sweep](benchmarks/brca100_pr67_threshold_sweep/COMBINED_RESULTS.md) |
+| BRCA100 (TF/SIG) | What changes when consensus uses minimum recurrence, including K=6? | Same BRCA100 expression and hub lists; reuses fixed post-DPI bootstrap networks. No independent edge-level reference. | [Recurrence analysis](benchmarks/brca100_consensus_recurrence_sweep/README.md) |
+| BRCA100 (TF/SIG) | How does hub-list size affect DPI pruning? | Same BRCA100 expression; TF/SIG hub-list sizes varied. No independent edge-level reference. | [Mechanism and limitations](benchmarks/brca100_hub_size_dpi_analysis/README.md) |
+| BRCA100 (TF/SIG) | How do matched workflow versions differ in network QC? | Same BRCA100 inputs; inferred networks compared using NetBID2 summaries, not biological ground truth. | [QC package](benchmarks/brca100_netbid_qc/README.md) |
+| TCGA-LUAD | Acquire validated expression inputs for a future network benchmark. | GDC TCGA-LUAD primary-tumor bulk RNA-seq, STAR - Counts. Expression acquisition only; no network or edge-reference benchmark completed yet. | [Downloader and tests](benchmarks/tcga_luad_download/README.md) |
+
+**Reference** identifies the input-data source and, where available, the edge or
+perturbation-response reference used for evaluation. It does not imply that
+every dataset has a gold-standard network.
 
 ## What moved, and what did not
 
