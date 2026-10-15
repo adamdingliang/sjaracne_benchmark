@@ -1,7 +1,7 @@
 # DREAM5 Network 3: sampling and DPI benchmark results
 
 The [prospectively specified three-seed pilot](PLAN_2026-10-15.md) is complete:
-four sampling arms, five direct native stages per arm/seed, **60 jobs**, no
+four sampling configurations, five direct native stages per configuration/seed, **60 jobs**, no
 PR71 calibration or consensus. The same pinned PR70 executable retains the
 legacy with-replacement baseline. All 334 supplied TFs and 4,511 genes were
 used for inference/DPI; only the supplied explicit labels are scored.
@@ -11,6 +11,15 @@ See the [full report and plots](results_2026-10-15_pilot3/REPORT.md),
 [compact provenance manifest](results_2026-10-15_pilot3/package_manifest.json).
 These are local, explicitly defined AP/AUROC metrics, not official DREAM5
 leaderboard scores.
+
+**AP means average precision.** It summarizes how well reference-positive
+edges rank near the top as the MI-score threshold is lowered. It is a weighted
+average of precision across score thresholds, weighted by the corresponding
+increase in recall, with equal-MI edges grouped together. Higher is better.
+Unlike the precision column, which evaluates only emitted labeled edges, AP
+uses the entire fixed labeled universe; omitted post-DPI pairs share a bottom
+score of zero. Here AP is a ranking metric, not the adaptive partitioning in
+the AP-MI estimator.
 
 ## Main result: nominal p=1e-7, after DPI
 
@@ -42,7 +51,7 @@ unqualified precision-and-recall improvement seen in the Network 1 pilot.
 | 80% | 0.640926 | 0.073642 | 327 |
 | 90% | 0.645688 | 0.075440 | 330 |
 
-Raw-MI AP improved in the arm medians, but overall AUROC did not uniformly
+Raw-MI AP improved in the configuration medians, but overall AUROC did not uniformly
 improve: the 80% change is very small and 64% is slightly lower. Top-ranked
 recovery improved more visibly than the global ranking statistic. All eight
 fixed budgets, with boundary-tie handling, are saved in
@@ -50,7 +59,7 @@ fixed budgets, with boundary-tie handling, are saved in
 
 The fixed numerical MI control, **0.03759353615996272**, was declared before
 E. coli scoring. Its post-DPI **labeled edge sets and MI weights are identical**
-to the nominal-cutoff results in all 12 arm/seed groups, not just equal in
+to the nominal-cutoff results in all 12 configuration/seed groups, not just equal in
 median counts. Small differences in the full networks involve only unlabeled
 pairs. It does not isolate sample-count or RNG differences.
 

@@ -3,7 +3,8 @@
 This adds a **real-expression, experimentally supported TF-target reference**
 alongside the simulated DREAM5 Network 1 benchmark. Data preparation and
 validation are implemented here. The [approved three-seed pilot](PLAN_2026-10-15.md)
-compares the retained legacy sampler with 64%, 80% and 90% fixed-size sampling.
+compares four sampling configurations: the retained legacy sampler, and 64%,
+80% and 90% fixed-size sampling without replacement.
 The [completed results](RESULTS.md) show higher post-DPI AP/precision but not
 uniformly improved recall or raw AUROC.
 This is an external benchmark dataset, not an engine dependency
@@ -78,7 +79,7 @@ which genes are retained.
 ## Matched sampling and DPI pilot
 
 The [prospective protocol](PLAN_2026-10-15.md) fixes three seeds, four sampling
-arms and five stages: raw MI, nominal affine filtering before/after DPI, and a
+configurations and five stages: raw MI, nominal affine filtering before/after DPI, and a
 common numerical MI cutoff before/after DPI. Every stage runs directly from
 expression; serialized adjacencies are not replayed through DPI. The primary
 comparison is **80% without replacement versus legacy, post-DPI AP at nominal
@@ -107,7 +108,8 @@ sample counts, thresholds and exact shared MI/subset relationships are recorded.
 
 [Results](RESULTS.md) summarizes the completed pilot; the
 [full compact evidence package](results_2026-10-15_pilot3/REPORT.md) includes
-all arms/stages, paired primary AP, DPI/TP-retention diagnostics and plots.
+all sampling configurations/stages, paired primary average precision (AP),
+DPI/TP-retention diagnostics and plots.
 Use fresh output paths when reproducing; published evidence is never overwritten.
 Native adjacencies/logs remain local in `runs/dream5_network3_20261015_pilot3/`.
 Custom AP/AUROC here is not the official DREAM5
