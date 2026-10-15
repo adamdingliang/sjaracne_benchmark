@@ -18,6 +18,11 @@ Dedicated research benchmarks and analysis evidence for [SJARACNe](https://githu
 perturbation-response reference used for evaluation. It does not imply that
 every dataset has a gold-standard network.
 
+The new exploratory **THP-1 raw-MI sampling pilot** is declared separately:
+[Process](benchmarks/thp1_perturbseq/raw_mi/README.md), results pending. It
+compares 20 fixed, randomly selected seed IDs before thresholding, DPI or
+consensus; the earlier full-workflow comparison above is retained unchanged.
+
 ## Engineering evidence
 
 Historical engine timing studies, reusable performance tools and the original
