@@ -2,7 +2,7 @@
 
 Keep code, tests, compact tables/reports, plots and provenance in Git. Keep raw or large data, derived expression/reference matrices, bootstrap/consensus edge files, native builds and environments outside Git. New run outputs go under ignored `runs/` or an explicit external directory.
 
-The existing small DREAM5 Network 1 bundle is the exception retained from the original benchmark: approximately 28.4 MiB including its expression-format conversion. See its `DATA_LICENSE.md`; bundled status is not a general permission to redistribute other datasets.
+The DREAM5 source-data bundles are explicit exceptions. Network 1 retains approximately 28.4 MiB including its historical expression-format conversion. Network 3 adds approximately 37 MiB of unmodified source files and metadata; its expression-format conversion is generated locally rather than duplicated in Git. See each benchmark's `DATA_LICENSE.md`; bundled status is not a general permission to redistribute other datasets.
 
 ## Existing local archives (unchanged)
 

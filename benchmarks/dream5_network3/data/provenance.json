@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "dataset": "DREAM5 Network 3",
+  "organism": "Escherichia coli",
+  "source": {
+    "record_url": "https://zenodo.org/records/17854236",
+    "doi": "10.5281/zenodo.17854236",
+    "version": "v1",
+    "license_as_listed_by_host": "CC BY-ND 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nd/4.0/",
+    "archive_name": "1_Challenge_Data_Supplement.zip",
+    "archive_bytes": 37957055,
+    "archive_md5": "fabfb9cbba5761d29d681e752a45df75",
+    "archive_sha256": "7c2210916af5c7047ef504187220c163efd6c0a39529420c2f8c342e185de93b",
+    "copied_on": "2026-10-15",
+    "acquisition_note": "Copied from an existing checksum-verified local archive; original download date is not asserted."
+  },
+  "destination_root": "Network3",
+  "copy_policy": "All listed files are byte-identical source members; no normalization, identifier filtering or newline conversion.",
+  "files": [
+    {
+      "path": "input data/net3_expression_data.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network3/input data/net3_expression_data.tsv",
+      "bytes": 36874927,
+      "sha256": "b49b67d278b27d988c68652df76d0dc9c5e316abb774e6eac30b35b2712f9e2c"
+    },
+    {
+      "path": "input data/net3_transcription_factors.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network3/input data/net3_transcription_factors.tsv",
+      "bytes": 1562,
+      "sha256": "69dff62d76c1cf5cb45ecfa4301734b8c4885bd8cdbc0d1d1a824fab7ab8cd5b"
+    },
+    {
+      "path": "gold standard/DREAM5_NetworkInference_GoldStandard_Network3.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network3/gold standard/DREAM5_NetworkInference_GoldStandard_Network3.tsv",
+      "bytes": 1882207,
+      "sha256": "657c9d413e24279466df6ed3219c12c42b59068b0d4d92b28ed4f1e078ba78d3"
+    },
+    {
+      "path": "input data/net3_chip_features.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network3/input data/net3_chip_features.tsv",
+      "bytes": 20982,
+      "sha256": "65801c68bda99d36236865b7f17af94a5159df97a5833906131bb224868dc765"
+    },
+    {
+      "path": "anonymization/net3_gene_ids.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network3/anonymization/net3_gene_ids.tsv",
+      "bytes": 49028,
+      "sha256": "a3fa4f3690c26774492591a3fcd303b21678df333e908c10e27cd6a53a73dcd9"
+    },
+    {
+      "path": "SOURCE_CHALLENGE_README.txt",
+      "archive_member": "DREAM5_network_inference_challenge/README.txt",
+      "bytes": 954,
+      "sha256": "8c9cd616e542f94d247ae85c5dba55426ee57ab0dab62f8baa91747ddcb3b84d"
+    },
+    {
+      "path": "gold standard/SOURCE_GOLD_STANDARD_README.txt",
+      "archive_member": "DREAM5_network_inference_challenge/Evaluation scripts/INPUT/gold_standard_complete/README.txt",
+      "bytes": 345,
+      "sha256": "4201d8e7fa475f45516eb454b6e5b8b9cd15504c4ab58263850f9d44fbf9b574"
+    }
+  ],
+  "dimensions": {
+    "genes": 4511,
+    "profiles": 805,
+    "candidate_tfs": 334,
+    "labeled_pairs": 152280,
+    "positive_pairs": 2066,
+    "operational_negative_pairs": 150214,
+    "scored_sources": 141,
+    "scored_targets": 1081,
+    "unlabeled_candidate_pairs": 1354060
+  },
+  "scoring_policy": "Use only explicit binary labels from the supplied gold-standard file. Preserve all supplied candidate TFs for inference; do not turn unlabeled pairs into negatives.",
+  "inference_status": "not_run"
+}
