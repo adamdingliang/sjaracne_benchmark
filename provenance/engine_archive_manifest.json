@@ -1,0 +1,504 @@
+{
+  "schema": 1,
+  "migration_date": "2026-10-14",
+  "source_repository": "https://github.com/adamdingliang/SJARACNe",
+  "source_commit": "edf7a2fdf3c5ff866f4fea30fe1ca010c00e6a3a",
+  "notes": [
+    "Exact Git blob bytes, not checkout line-ending conversions.",
+    "Historical native runners retain their original paths and assumptions.",
+    "The mixed source test module is retained as text; runnable generator tests are split separately.",
+    "Engine numerical regression fixtures remain independently in engine tests."
+  ],
+  "files": [
+    {
+      "source_path": "benchmarks/adjacency_lookup/README.md",
+      "destination": "engine_performance/adjacency_lookup/README.md",
+      "git_mode": "100644",
+      "git_blob": "7749dc9631f3ad6d9a90b0c8beb53ef0ab8674b8",
+      "bytes": 2585,
+      "sha256": "64e1ae11545da502ab8b57f2a725e7f4a9375b7c669c16b2291c501c188530b5"
+    },
+    {
+      "source_path": "benchmarks/adjacency_lookup/generate_dense_adjacency.py",
+      "destination": "engine_performance/adjacency_lookup/generate_dense_adjacency.py",
+      "git_mode": "100644",
+      "git_blob": "aafb9ffe5f4a1208284cbc95ce2d6e03f1ccefc2",
+      "bytes": 1643,
+      "sha256": "036de42c494efe1933f5c5e7cd3a27a39f993870f7bfff2037eefa40c44123ca"
+    },
+    {
+      "source_path": "benchmarks/adjacency_lookup/raw_timings.csv",
+      "destination": "engine_performance/adjacency_lookup/raw_timings.csv",
+      "git_mode": "100644",
+      "git_blob": "511a4fa09343083e6ed894ecc93ded59b835d959",
+      "bytes": 2115,
+      "sha256": "2aa9aa147f948240d8ef78971669d2f30c22c61dd639b5b31db3bb7cca418064"
+    },
+    {
+      "source_path": "benchmarks/adjacency_lookup/run_benchmark.py",
+      "destination": "engine_performance/adjacency_lookup/run_benchmark.py",
+      "git_mode": "100644",
+      "git_blob": "816b997df36a5d3e322576066c83f5a16d54a4a0",
+      "bytes": 4053,
+      "sha256": "bb47c9c0af7946174c0705d35b97d7635abad3275b98968f9e8e6ac82daf96b5"
+    },
+    {
+      "source_path": "benchmarks/ap_quadrant_scatter/RESULTS_2026-08-08.md",
+      "destination": "engine_performance/ap_quadrant_scatter/RESULTS_2026-08-08.md",
+      "git_mode": "100644",
+      "git_blob": "e913ecd7e4ae87b0e87396d7d58341d9bba6d0ad",
+      "bytes": 6055,
+      "sha256": "def53fcce0711a3e9a535054932fd3fb4951241106ed972a709a0bb54d2f0448"
+    },
+    {
+      "source_path": "benchmarks/ap_quadrant_scatter/raw_timings_2026-08-08.csv",
+      "destination": "engine_performance/ap_quadrant_scatter/raw_timings_2026-08-08.csv",
+      "git_mode": "100644",
+      "git_blob": "f22b5cd309ca7748b340ce0148ba177502d78576",
+      "bytes": 3404,
+      "sha256": "cbe5f6c847f94d3d0bfadb33d88b8ec42f0e29c8587bb8825de21922ebbd4c5b"
+    },
+    {
+      "source_path": "benchmarks/ap_quadrant_scatter/summary_2026-08-08.csv",
+      "destination": "engine_performance/ap_quadrant_scatter/summary_2026-08-08.csv",
+      "git_mode": "100644",
+      "git_blob": "5a599c31c84caacc9c316b2d276ae0b07e274d6c",
+      "bytes": 909,
+      "sha256": "83416a0abf43b717906f4623b121b286a61915ac1b3d4f0556f588f842c59088"
+    },
+    {
+      "source_path": "benchmarks/ap_workspace/RESULTS_2026-08-08.md",
+      "destination": "engine_performance/ap_workspace/RESULTS_2026-08-08.md",
+      "git_mode": "100644",
+      "git_blob": "261a0548dd3ace295b09ef257bd7b2014f3dafa4",
+      "bytes": 4901,
+      "sha256": "a3181932c1c1bea68efae2bb79cdf96bfabd5a05d5b2192d02fdd5f4fdc82470"
+    },
+    {
+      "source_path": "benchmarks/ap_workspace/raw_timings_2026-08-08.csv",
+      "destination": "engine_performance/ap_workspace/raw_timings_2026-08-08.csv",
+      "git_mode": "100644",
+      "git_blob": "728c80c3c6aa2851cc9a9349bc770c503f58fb83",
+      "bytes": 3403,
+      "sha256": "737c0854d805bfa6fbebe1265b58c195ff8ca1a87cc2a68e8bbacb8ac40b52f6"
+    },
+    {
+      "source_path": "benchmarks/ap_workspace/summary_2026-08-08.csv",
+      "destination": "engine_performance/ap_workspace/summary_2026-08-08.csv",
+      "git_mode": "100644",
+      "git_blob": "dcf5660d3489ab4a464162b996d00d8c14527e1d",
+      "bytes": 762,
+      "sha256": "b9343def627f67bc0c38f448d8c07e87a9ed19bbe189081f26d44259b42eddb5"
+    },
+    {
+      "source_path": "benchmarks/compact_adjacency/README.md",
+      "destination": "engine_performance/compact_adjacency/README.md",
+      "git_mode": "100644",
+      "git_blob": "04c934fa49606c53f5cd746d4bdc759987d06f8d",
+      "bytes": 4211,
+      "sha256": "0fc08c5c56c4e8c57223a30fc038c16aec9ada3085e85360c493de21564569e1"
+    },
+    {
+      "source_path": "benchmarks/compact_adjacency/RESULTS_2026-08-08.md",
+      "destination": "engine_performance/compact_adjacency/RESULTS_2026-08-08.md",
+      "git_mode": "100644",
+      "git_blob": "7db78f2ec57704ba7bb109c75f1952ccb10432c6",
+      "bytes": 5545,
+      "sha256": "4f509433d6f533dbc4dddd5d5c32e95fd9090afb05471bf468df7fcce62e8705"
+    },
+    {
+      "source_path": "benchmarks/compact_adjacency/raw_timings.csv",
+      "destination": "engine_performance/compact_adjacency/raw_timings.csv",
+      "git_mode": "100644",
+      "git_blob": "73e30bd3ecde11464e4d0f2c02b2452c65dc0095",
+      "bytes": 31035,
+      "sha256": "351a09c227a93b292325e4c62be98465e9095d03d0b4f94f41bc91df11201ab4"
+    },
+    {
+      "source_path": "benchmarks/compact_adjacency/run_benchmark.py",
+      "destination": "engine_performance/compact_adjacency/run_benchmark.py",
+      "git_mode": "100644",
+      "git_blob": "1573ffe38984dc2962ed802212ad747d61135824",
+      "bytes": 15613,
+      "sha256": "c74faf480e86c41acb0bb4ad0a0cf4e237b1408b22b019b22700e122b4ac4e38"
+    },
+    {
+      "source_path": "benchmarks/compact_adjacency/run_metadata.json",
+      "destination": "engine_performance/compact_adjacency/run_metadata.json",
+      "git_mode": "100644",
+      "git_blob": "e8124f9db818024ab17a66a9127c734fd134a034",
+      "bytes": 980,
+      "sha256": "b7f5765bac688e061d49dbfd85d874cbecf2c8d54c934bca8d22fb4f8b13e5f4"
+    },
+    {
+      "source_path": "benchmarks/compact_adjacency/summary.csv",
+      "destination": "engine_performance/compact_adjacency/summary.csv",
+      "git_mode": "100644",
+      "git_blob": "b2b24c195f8c82b196d290500252d40e3ca4ce8c",
+      "bytes": 2071,
+      "sha256": "8407293d9ace592dbf335ef8c67c665aa926be1e303117ce0428b2bd6a33f9e8"
+    },
+    {
+      "source_path": "benchmarks/dpi_intersection/README.md",
+      "destination": "engine_performance/dpi_intersection/README.md",
+      "git_mode": "100644",
+      "git_blob": "61c5940109549adae5e551cd35fddf4824b895ff",
+      "bytes": 5143,
+      "sha256": "6c4352392c608ec1cd5eb31a5bae2f2d64ef8a356ac1518efdc20fda62685437"
+    },
+    {
+      "source_path": "benchmarks/dpi_intersection/differential_fuzz.py",
+      "destination": "engine_performance/dpi_intersection/differential_fuzz.py",
+      "git_mode": "100644",
+      "git_blob": "7f17282000e5780db03f32b4b1905288c4a286ac",
+      "bytes": 6099,
+      "sha256": "e10673c32053f053b6277e134fccb03d3bb1fea5d41b9eb145f240c78aa2523f"
+    },
+    {
+      "source_path": "benchmarks/dpi_intersection/generate_benchmarks.py",
+      "destination": "engine_performance/dpi_intersection/generate_benchmarks.py",
+      "git_mode": "100644",
+      "git_blob": "2aff876866529dd09d4c2f88aae87f54f944177a",
+      "bytes": 5011,
+      "sha256": "363d15b8c513cdb5801abd3446ddb074b8f8b12f20a2d9537826f632af0b64a1"
+    },
+    {
+      "source_path": "benchmarks/dpi_intersection/raw_timings.csv",
+      "destination": "engine_performance/dpi_intersection/raw_timings.csv",
+      "git_mode": "100644",
+      "git_blob": "aeb625ef77766d1b614536bcb56d76099a284340",
+      "bytes": 5190,
+      "sha256": "699959ed8482ac776d963f455c1411e2bdfdb9f6663ae556d28a1fc4210a3197"
+    },
+    {
+      "source_path": "benchmarks/dpi_intersection/run_benchmark.py",
+      "destination": "engine_performance/dpi_intersection/run_benchmark.py",
+      "git_mode": "100644",
+      "git_blob": "ec306e987e3d877dda3e187aa317ad0ff8884093",
+      "bytes": 4970,
+      "sha256": "d4918222571118a6ede5316d2fe5bccd8875d5f1bfa50c5c951a28fd598d9698"
+    },
+    {
+      "source_path": "benchmarks/dpi_intersection/summary.csv",
+      "destination": "engine_performance/dpi_intersection/summary.csv",
+      "git_mode": "100644",
+      "git_blob": "2730954d9d5daac3aabdb96b065b67ffe6ae6f26",
+      "bytes": 680,
+      "sha256": "5c6af8b7cb08991437d6b68d284b4d60fc036eb79c6b0e2175f42b8bb504dfbf"
+    },
+    {
+      "source_path": "benchmarks/dpi_skip/README.md",
+      "destination": "engine_performance/dpi_skip/README.md",
+      "git_mode": "100644",
+      "git_blob": "a202f6c220214908d7abbf49531df230cf8d3850",
+      "bytes": 1523,
+      "sha256": "f7e8e9e5d19aa5299578bf9dcebc52b758936e2f6db70018d8738c319609c55c"
+    },
+    {
+      "source_path": "benchmarks/dpi_skip/generate_single_source_adjacency.py",
+      "destination": "engine_performance/dpi_skip/generate_single_source_adjacency.py",
+      "git_mode": "100644",
+      "git_blob": "2e2d4308e30a48ed35a7de71e64bb127b81ca361",
+      "bytes": 1611,
+      "sha256": "6c11e91e8c9f4cadf439ed4a3e5f573391fef7bb9867d7ab80cdbf2be4143a62"
+    },
+    {
+      "source_path": "benchmarks/dpi_skip/raw_timings.csv",
+      "destination": "engine_performance/dpi_skip/raw_timings.csv",
+      "git_mode": "100644",
+      "git_blob": "a90531cf46b7a453526563052529b3be8ce91a2b",
+      "bytes": 275,
+      "sha256": "f47b49936f157e26129de6867979cfd4268a65bded4a91d4ad18a318977e4846"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/README.md",
+      "destination": "engine_performance/rank_cache/README.md",
+      "git_mode": "100644",
+      "git_blob": "4a4e9ee014836867d843252275e29cdaf7f06964",
+      "bytes": 5647,
+      "sha256": "a9b21852a4d5169c1cc995b4479a705c1eda0e9cacf4c2c26dda4cab15de4e43"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/RESULTS_2026-08-07.md",
+      "destination": "engine_performance/rank_cache/RESULTS_2026-08-07.md",
+      "git_mode": "100644",
+      "git_blob": "47fcd074bc65ee53695cfc5fd3dc64f3ded6cbf7",
+      "bytes": 6315,
+      "sha256": "834f466576e18aa3248d7d95a39ba14391bcff825b7f751b8e30d50bc27b9433"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/figures/rank_cache_memory_overhead.png",
+      "destination": "engine_performance/rank_cache/figures/rank_cache_memory_overhead.png",
+      "git_mode": "100644",
+      "git_blob": "578583b3779c79de37b5f5a677ba45f208834dba",
+      "bytes": 242441,
+      "sha256": "d1b896a1b3b78258aacabeaef15b85dc7d571a6ea24b0f9ad2e2bd3df8804524"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/figures/rank_cache_memory_overhead.svg",
+      "destination": "engine_performance/rank_cache/figures/rank_cache_memory_overhead.svg",
+      "git_mode": "100644",
+      "git_blob": "9d8b32550bf0211dc05be49abc31ccbeeb2f70ef",
+      "bytes": 33215,
+      "sha256": "770e850c0947ba1bd8719de24754c1a2ef4712cc964de41de856e425041d0808"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/figures/rank_cache_runtime_sweeps.png",
+      "destination": "engine_performance/rank_cache/figures/rank_cache_runtime_sweeps.png",
+      "git_mode": "100644",
+      "git_blob": "1ce45885445c8e43522f8e035829cd98f5f22cdb",
+      "bytes": 288913,
+      "sha256": "8080d23a5ba3ca514f2d1d365a1a4bf83680eed7e378883770c4e4e6a3cd7501"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/figures/rank_cache_runtime_sweeps.svg",
+      "destination": "engine_performance/rank_cache/figures/rank_cache_runtime_sweeps.svg",
+      "git_mode": "100644",
+      "git_blob": "e8539e7ae02e5c9d470763f87c40ba37c33191cd",
+      "bytes": 56055,
+      "sha256": "dbd04555bc8ed3392936df39064a1c9280bd58fd89bc85852ef4fb944c099a70"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/figures/rank_cache_speedup_sweeps.png",
+      "destination": "engine_performance/rank_cache/figures/rank_cache_speedup_sweeps.png",
+      "git_mode": "100644",
+      "git_blob": "8bdedcae6ddea2697d205510eec5d64e09ab6870",
+      "bytes": 231222,
+      "sha256": "d3a6e73a6fe5299cd91c8c1d4b45e52b4cab7e5a0275ae4ac82faf528fb965d5"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/figures/rank_cache_speedup_sweeps.svg",
+      "destination": "engine_performance/rank_cache/figures/rank_cache_speedup_sweeps.svg",
+      "git_mode": "100644",
+      "git_blob": "8f681fa6ffc590ce7eeebab6f9700a08d169030f",
+      "bytes": 25552,
+      "sha256": "3f49a174ae2570513c53ccb1286d5c2b60a330183ea1e972cb0153e91e2f93eb"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/fixtures/mixed_quadrant_counts.exp",
+      "destination": "engine_performance/rank_cache/fixtures/mixed_quadrant_counts.exp",
+      "git_mode": "100644",
+      "git_blob": "a41e9947a2fead0fd51ecc98f43be695d5f61970",
+      "bytes": 134,
+      "sha256": "7e69ae215ea6cfc3ea234f2e08c13b60b79ec3e58c44859cda97308e23431468"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/fixtures/mixed_quadrant_hub.txt",
+      "destination": "engine_performance/rank_cache/fixtures/mixed_quadrant_hub.txt",
+      "git_mode": "100644",
+      "git_blob": "a9edc74f3848050ab04b488787d715349bb9b215",
+      "bytes": 2,
+      "sha256": "d98c786cff70da9d10a2c49cf9d849025d3669b95dd56cc7c27c1ebf4cbabc2c"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/fixtures/tied_conditional_bootstrap_seed17_reference.tsv",
+      "destination": "engine_performance/rank_cache/fixtures/tied_conditional_bootstrap_seed17_reference.tsv",
+      "git_mode": "100644",
+      "git_blob": "7f1e02e992ab7c77510ba2c360ac0cc4d1d8e381",
+      "bytes": 373,
+      "sha256": "806a85e235e9970ff5cd45acab4fa99e034f0c8904165de0ca72bdad47d1f30f"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/fixtures/tied_counts.exp",
+      "destination": "engine_performance/rank_cache/fixtures/tied_counts.exp",
+      "git_mode": "100644",
+      "git_blob": "f71252a332bf9425904cc31e6666717be7c7d50f",
+      "bytes": 623,
+      "sha256": "55e28e650efaee8e84c65da678af59dbd6f69f626db4c739eef053f7d7699543"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/fixtures/tied_hubs.txt",
+      "destination": "engine_performance/rank_cache/fixtures/tied_hubs.txt",
+      "git_mode": "100644",
+      "git_blob": "069a6c564f300804bbdfb7fb2ed6b7d517245c67",
+      "bytes": 16,
+      "sha256": "fcc3748c49594dea9dc6d7c7e7b3eaf3cb1d7b66b30e02b15467bdde7080b7c2"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/fixtures/tied_seed17_reference.tsv",
+      "destination": "engine_performance/rank_cache/fixtures/tied_seed17_reference.tsv",
+      "git_mode": "100644",
+      "git_blob": "93235f1b00a59a78ec246da3f0f0228f76f0dc50",
+      "bytes": 619,
+      "sha256": "5b81d28431c687cdc97e44df4806c3051089fc7bceec08c7ffcbcb5159437c23"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/plot_rank_cache_results.py",
+      "destination": "engine_performance/rank_cache/plot_rank_cache_results.py",
+      "git_mode": "100644",
+      "git_blob": "4b08e63ecc4e6ab31ad4ad62d271cdf12958593d",
+      "bytes": 18664,
+      "sha256": "4b05d8d8ca0a3f14180c404c10cd7e7f2e30517215d078300dc9757b416a9f36"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/prepare_rank_benchmarks.py",
+      "destination": "engine_performance/rank_cache/prepare_rank_benchmarks.py",
+      "git_mode": "100644",
+      "git_blob": "dcbe6aac5e7a1369d7a73087af718f3cacc9c075",
+      "bytes": 22260,
+      "sha256": "4caae9bee7727c4739ef4f421522465093ea6ae8747db4f0d7777445084829ab"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/raw_timings_2026-08-07.csv",
+      "destination": "engine_performance/rank_cache/raw_timings_2026-08-07.csv",
+      "git_mode": "100644",
+      "git_blob": "dfa3408da5d4f14d6b91da381ef08042e70fb072",
+      "bytes": 3002,
+      "sha256": "8dc5fd3b980a25042461f3b58dadff7ec08ee82991c499fd697069f4ea8e0656"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/results_2026-08-07.csv",
+      "destination": "engine_performance/rank_cache/results_2026-08-07.csv",
+      "git_mode": "100644",
+      "git_blob": "58ba1676215f3a2ee0845075923ddd980b7a19a3",
+      "bytes": 1142,
+      "sha256": "a3be87f98f5b9b890b54d91cb70853767dd692db2ce543f34725e31bde2415d6"
+    },
+    {
+      "source_path": "benchmarks/rank_cache/spec.json",
+      "destination": "engine_performance/rank_cache/spec.json",
+      "git_mode": "100644",
+      "git_blob": "638f39a4f851b9c6f0e8000f0782ed529872d965",
+      "bytes": 1006,
+      "sha256": "eb70143d7db5a9f7f21fca1182d4ebf13139da7a66ed09d8050d3c837e6171b0"
+    },
+    {
+      "source_path": "benchmarks/unused_bandwidth/README.md",
+      "destination": "engine_performance/unused_bandwidth/README.md",
+      "git_mode": "100644",
+      "git_blob": "2ca01d32829b00bb27033ace6675f0c5ed440995",
+      "bytes": 4629,
+      "sha256": "0835b282419c7fb18cf08f948b9be4837adaefd346622b55799ccd7fcac9fc2e"
+    },
+    {
+      "source_path": "benchmarks/unused_bandwidth/raw_timings_2026-08-08.csv",
+      "destination": "engine_performance/unused_bandwidth/raw_timings_2026-08-08.csv",
+      "git_mode": "100644",
+      "git_blob": "e7436b1948bdd66940ed3e1059a9c9a9bd6f4d3a",
+      "bytes": 5188,
+      "sha256": "0ff700f402468cf5a104c92855088472b178f2fbd76b6a7d828db6d07bf47953"
+    },
+    {
+      "source_path": "benchmarks/unused_bandwidth/results_2026-08-08.csv",
+      "destination": "engine_performance/unused_bandwidth/results_2026-08-08.csv",
+      "git_mode": "100644",
+      "git_blob": "dd03e0b9d90686833b93cca84cb855694b9712e0",
+      "bytes": 1337,
+      "sha256": "c588c4803016fb055e42e6210d4ae188663be37de228192d1881e9680721ca1e"
+    },
+    {
+      "source_path": "benchmarks/unused_bandwidth/run_benchmark.py",
+      "destination": "engine_performance/unused_bandwidth/run_benchmark.py",
+      "git_mode": "100644",
+      "git_blob": "83cf607370e913d4cd5a600f2d1afba319428221",
+      "bytes": 7498,
+      "sha256": "1a5af2021d64a1a7feb452444d52e32360e217ab0ae8f1cfdc216be869be72a6"
+    },
+    {
+      "source_path": "benchmarks/unused_bandwidth/validate_outputs.py",
+      "destination": "engine_performance/unused_bandwidth/validate_outputs.py",
+      "git_mode": "100644",
+      "git_blob": "d60b42acc58f943d0836614f6ce0ed5a00cf0160",
+      "bytes": 2877,
+      "sha256": "2f4209e0c5d0bf95b170f1b6ffa01e01cad7048c5389d3fb85c6f8adbe04bfc1"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/README.md",
+      "destination": "engine_performance/without_replacement_sampling/README.md",
+      "git_mode": "100644",
+      "git_blob": "1e93530fa4c37b6370eb058e6dd95832079ae90a",
+      "bytes": 8605,
+      "sha256": "f9568f9fd0c6b58c05090a87a6e3a4c5b26fde1906296d9da09fb33ac083b126"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/apmi_duplicate_partition_comparison.png",
+      "destination": "engine_performance/without_replacement_sampling/apmi_duplicate_partition_comparison.png",
+      "git_mode": "100644",
+      "git_blob": "bbe8efe001c14e6cbc437966d151da1a69f76af8",
+      "bytes": 217366,
+      "sha256": "eae3f73d5c4128424ec6662b39b7b4907a3e82c187001bf8a12917c932d2c734"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/brca100_duplicate_permuted_null_summary.json",
+      "destination": "engine_performance/without_replacement_sampling/brca100_duplicate_permuted_null_summary.json",
+      "git_mode": "100644",
+      "git_blob": "f1507647c26c83123039489f375cd023b21c3325",
+      "bytes": 12882,
+      "sha256": "c4503a06fa28409ee9c3a9ff7cafa1367ec43ac639a1bb88dae12df2f1d0ea34"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/brca100_duplicate_real_summary.json",
+      "destination": "engine_performance/without_replacement_sampling/brca100_duplicate_real_summary.json",
+      "git_mode": "100644",
+      "git_blob": "de1608104d294bd5c4ff725c22155e36e8180d2e",
+      "bytes": 12800,
+      "sha256": "d26670a9828bfec7d01eba604fe5723b1262a0efcf5b04bd9493a33b43faec28"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/brca100_null_apmi_results.json",
+      "destination": "engine_performance/without_replacement_sampling/brca100_null_apmi_results.json",
+      "git_mode": "100644",
+      "git_blob": "ee1d2d825b3b83ae49cd9050a3146ff9c89d1f03",
+      "bytes": 2568,
+      "sha256": "fb5a96859c037f225707afc97c4ae95901cdf892c1801a6c9c0883aa18ed1c33"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/brca100_null_apmi_summary.csv",
+      "destination": "engine_performance/without_replacement_sampling/brca100_null_apmi_summary.csv",
+      "git_mode": "100644",
+      "git_blob": "b5713e4359d46944734a40ab42f5a53f3ed41dba",
+      "bytes": 992,
+      "sha256": "3b3951d6a87fce2647b06cb037ec0e3ce4044450fd3f8efafe749402714d6582"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/brca100_null_apmi_vs_m.png",
+      "destination": "engine_performance/without_replacement_sampling/brca100_null_apmi_vs_m.png",
+      "git_mode": "100644",
+      "git_blob": "57019aa405d4e71afd97cfa3089496e03ad01eeb",
+      "bytes": 108336,
+      "sha256": "ba89a3ca473ca411c27cef4cd69aa75fa2f8d57294d3f82e5252616e413a40a8"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/brca100_subsample_per_run_metrics.csv",
+      "destination": "engine_performance/without_replacement_sampling/brca100_subsample_per_run_metrics.csv",
+      "git_mode": "100644",
+      "git_blob": "d0a2c7d2ab406035b16a115eea949d7978cf7a81",
+      "bytes": 40794,
+      "sha256": "1a87fb494650b4efff7fac1047e1390c8b59d60aadfd105c60e1c96e9a808424"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/brca100_subsample_size_results.json",
+      "destination": "engine_performance/without_replacement_sampling/brca100_subsample_size_results.json",
+      "git_mode": "100644",
+      "git_blob": "2092179a72557d1e60e3ff999376c931483bb22b",
+      "bytes": 21909,
+      "sha256": "550105598bf1ea6cb4bb5e8d869bf726e67da605641ca12e28ad610fbaaf16fb"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/brca100_subsample_size_summary.csv",
+      "destination": "engine_performance/without_replacement_sampling/brca100_subsample_size_summary.csv",
+      "git_mode": "100644",
+      "git_blob": "2354c9c60ee8d45826ed8bbf0d36e11410944e39",
+      "bytes": 6340,
+      "sha256": "5325e35de2406724137d6136999a2c1c60e8b2caefc407f2a6c2f761fd56af69"
+    },
+    {
+      "source_path": "benchmarks/without_replacement_sampling/brca100_subsample_size_tradeoff.png",
+      "destination": "engine_performance/without_replacement_sampling/brca100_subsample_size_tradeoff.png",
+      "git_mode": "100644",
+      "git_blob": "abd649b342be327e0c39c6be095ef75e416bff19",
+      "bytes": 493191,
+      "sha256": "5596ba163768034e9562972713f44eaa9dc711ab73a9c15579aba3902b790f63"
+    }
+  ],
+  "source_tests": [
+    {
+      "source_path": "tests/test_rank_benchmark_generator.py",
+      "destination": "engine_performance/provenance/test_rank_benchmark_generator.py.txt",
+      "git_mode": "100644",
+      "git_blob": "82b09b2101b79e78cc3a5520a6a556b288d06f1a",
+      "bytes": 9656,
+      "sha256": "b7ef63c97a6680dcb88b4aaf103ce3961ec9da2c8a9c70fd8f80ab26a01251c5"
+    }
+  ]
+}

@@ -4,6 +4,11 @@ This initial repository is private. No blanket MIT, BSD, GPL or other new licens
 
 The SJARACNe source repository carries a Columbia software-evaluation license, preserved as `provenance/licenses/SJARACNe_LICENSE.md`. The native engine, original consensus implementation, binaries and native sampling patch are not vendored here. Keeping an engine external does not establish unrestricted rights to every imported benchmark file; provenance and rights review remain necessary before public release.
 
+The later `engine_performance/` archive copies engineering tools, historical
+reports and synthetic fixtures from pinned SJARACNe Git objects. Its separate
+`provenance/engine_archive_manifest.json` records their source identities; it
+does not assign them a new license or change this repository's private status.
+
 Dataset and third-party terms are separate:
 
 - DREAM5 attribution/source-data terms remain in `benchmarks/dream5_network1/DATA_LICENSE.md`; original source files and their checksums are retained.

@@ -11,7 +11,8 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 # Engine-coupled/native compilation/R tests remain explicitly separate.
 GROUPS = {
-    "migration": ("scripts", ["test_verify_migration"]),
+    "migration": ("scripts", ["test_verify_migration", "test_verify_engine_archive"]),
+    "engine_performance": ("engine_performance/tests", ["test_rank_benchmark_generator"]),
     "dream5": ("benchmarks/dream5_network1", ["test_benchmark"]),
     "thp1": ("benchmarks/thp1_perturbseq", ["test_metrics", "test_prepare", "test_benchmark", "test_scanpy_notebook"]),
     "thp1_scoring": ("benchmarks/thp1_perturbseq/author_reconstruction", [

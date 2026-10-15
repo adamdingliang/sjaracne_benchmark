@@ -58,3 +58,14 @@ already migrated DREAM5 package and replacing its README link with a link
 here. No legacy PR
 branch or worktree is retired, no scientific result is recomputed, and this
 does not assert end-to-end portability. See [source cleanup](SOURCE_CLEANUP.md).
+
+The same day, the user authorized a second cleanup to retire the remaining
+engine `benchmarks/` tree. Its 60 files are preserved from pinned Git objects
+under `engine_performance/`, with a separate
+`provenance/engine_archive_manifest.json` and strict integrity verifier. The
+original mixed test module is retained as source text; its generator-only test
+moves with the tool, while all five native numerical regression tests remain
+engine-owned with the six fixtures relocated under `tests/fixtures/rank_cache/`.
+This separates historical evidence from required test support without making
+the engine depend on this repository. Historical native timing runners remain
+version-bound snapshots, not newly validated portable workflows.
