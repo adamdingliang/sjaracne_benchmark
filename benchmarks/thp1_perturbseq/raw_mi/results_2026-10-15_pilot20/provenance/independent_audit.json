@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "scope": "Independent audit of all 40 completed raw-MI pilot jobs; not a statistical significance analysis",
+  "plan_sha256": "806bc4bd4a23ca586668f6b6d05409ac7f1434eee508200843bc705470094288",
+  "audited_job_count": 40,
+  "matched_resample_count": 20,
+  "native_commands_launched_by_audit": 0,
+  "reference_label_audit": {
+    "method": "Read original reference_positive_edges.tsv into a source-by-target Boolean matrix, exclude self-pairs, flatten in frozen source/target order; did not call benchmark load_universe or pair_index",
+    "mismatch_count": 0,
+    "candidate_pairs": 4887840,
+    "reference_positive_pairs": 1177495,
+    "operational_reference_negative_pairs": 3710345,
+    "reference_prevalence": 0.24090293462961143
+  },
+  "primary_at_5000_audit": {
+    "method": "Independent numpy.partition kth-score boundary followed by greater-than/equal-to Boolean counts and uniform boundary-tie expectation; did not call score_arrays",
+    "jobs_checked": 40,
+    "metrics_checked": ["TP", "FP", "precision", "sensitivity", "specificity", "EPR", "attainable minimum TP", "attainable maximum TP"],
+    "maximum_absolute_difference_from_reported": 0.0
+  },
+  "artifact_and_native_protocol_audit": {
+    "artifact_sha256_and_size_records_verified": 240,
+    "artifact_names_per_job": ["raw.adj", "stdout.log", "stderr.log", "time.tsv", "metrics.json", "scores.npz"],
+    "jobs_with_matching_complete_arm_seed_records": 40,
+    "jobs_with_verified_p1_t0_e1_headers": 40,
+    "jobs_with_verified_272_source_rows": 40,
+    "jobs_with_verified_active_gene_and_sample_counts": 40,
+    "jobs_with_verified_completion_log_markers_and_no_DPI_or_affine_filter_messages": 40,
+    "jobs_with_matching_fixed_class_counts": 40,
+    "jobs_with_finite_nonnegative_scores": 40,
+    "jobs_with_zero_MI_count_matching_report": 40,
+    "zero_MI_pairs_in_each_job": 0
+  },
+  "AUROC_independent_crosscheck": {
+    "method": "sklearn.metrics.roc_auc_score on saved raw score arrays and independently verified labels",
+    "jobs_checked": 4,
+    "maximum_absolute_difference_from_reported": 1.1102230246251565e-16,
+    "checks": [
+      {"arm": "before", "seed": 2, "AUROC": 0.6284798958366979, "absolute_difference": 1.1102230246251565e-16},
+      {"arm": "after", "seed": 2, "AUROC": 0.6666240646584051, "absolute_difference": 1.1102230246251565e-16},
+      {"arm": "before", "seed": 89, "AUROC": 0.6242407595993678, "absolute_difference": 0.0},
+      {"arm": "after", "seed": 89, "AUROC": 0.6742170813920676, "absolute_difference": 0.0}
+    ]
+  },
+  "coordinator_checkpoint_incident": {
+    "scope": "Coordination/checkpoint finalization only; not a failed native scientific job",
+    "reported_incident": "Windows PermissionError during replacement of status.json after 38 completed futures had been recorded, although all 40 per-job completion records already existed",
+    "recovery": "Coordinator reran the same frozen runner with one worker; all 40 existing jobs were hash-verified and status was finalized complete without native reruns",
+    "status_independently_observed_after_recovery": "complete",
+    "completed_jobs_independently_observed_after_recovery": 40,
+    "native_outputs_or_scientific_inputs_changed": false
+  },
+  "limitations": [
+    "All 40 primary top-k results were audited; independent scikit-learn AUROC sorting was limited to seeds 2 and 89 in each arm",
+    "Twenty resamples are not independent biological replicates",
+    "Reference positives are reconstructed perturbation responses, not proof of direct regulatory interactions",
+    "No significance or general biological superiority claim is made by this audit"
+  ]
+}

@@ -18,8 +18,9 @@ Dedicated research benchmarks and analysis evidence for [SJARACNe](https://githu
 perturbation-response reference used for evaluation. It does not imply that
 every dataset has a gold-standard network.
 
-The new exploratory **THP-1 raw-MI sampling pilot** is declared separately:
-[Process](benchmarks/thp1_perturbseq/raw_mi/README.md), results pending. It
+The completed exploratory **THP-1 raw-MI sampling pilot** is reported separately:
+[Process](benchmarks/thp1_perturbseq/raw_mi/README.md) and
+[Results](benchmarks/thp1_perturbseq/raw_mi/results_2026-10-15_pilot20/README.md). It
 compares 20 fixed, randomly selected seed IDs before thresholding, DPI or
 consensus; the earlier full-workflow comparison above is retained unchanged.
 
@@ -59,4 +60,5 @@ it does not rewrite the initial scientific migration's frozen records.
 
 The initial migration checks collected 353 distinct tests: 346 passed, six were skipped for compiler/symlink prerequisites, and one pre-existing LUAD parser test fails in both the original and migrated copies. The root check command reports that failure; it is not hidden or treated as a successful validation. LUAD has since been consolidated into one benchmark folder; see the [consolidation and current checks](docs/LUAD_CONSOLIDATION.md).
 
-MI-cutoff tuning and a new THP-1 pre-DPI comparison remain deferred. No new scientific benchmark runs are part of this migration.
+No new scientific runs were part of the original migration. The subsequent
+20-pair THP-1 raw-MI pilot is linked above; MI-cutoff tuning remains deferred.

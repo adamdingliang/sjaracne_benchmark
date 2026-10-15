@@ -104,4 +104,22 @@ Large outputs remain under ignored `runs/thp1_raw_mi_20261015/`: one immutable
 plan, per-job raw adjacencies, dense score arrays, logs, timing/RSS, compact
 metrics and a completion record. Historical runs and the external raw data
 are unchanged. Only code, the declared protocol and compact final evidence
-belong in Git. Results will be linked here when the pilot is complete.
+belong in Git.
+
+## Completed pilot
+
+All 40 jobs (20 matched seed IDs, two arms) completed. See the
+[results overview](results_2026-10-15_pilot20/README.md),
+[full report](results_2026-10-15_pilot20/REPORT.md) and
+[three-panel plot](results_2026-10-15_pilot20/raw_mi_comparison.png).
+TP@5,000 improved in 18/20 pairs; full-ranking AUROC improved in 20/20.
+These descriptive results concern this frozen response reference and raw-MI
+ranking, not biological replicates or the complete inference workflow.
+
+Operational note: on Windows, reading `status.json` while the coordinator
+atomically replaces it can produce a sharing/access error. During execution,
+monitor per-job completion files without holding the status file open.
+This pilot's final status was recovered by verification of all existing
+outputs, without rerunning native inference; details are in the results
+overview and independent audit. The frozen runner was not rewritten after
+observing results.

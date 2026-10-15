@@ -1,0 +1,169 @@
+{
+  "plan": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\plan.json",
+    "sha256": "806bc4bd4a23ca586668f6b6d05409ac7f1434eee508200843bc705470094288"
+  },
+  "score_results": [
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_002\\metrics.json",
+      "sha256": "6bb298bf07f8c71b3137f93a5582ae46f7c060b9556a2da75f757b5744269604"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_004\\metrics.json",
+      "sha256": "7ff4542bb67aeb32a82ea292ce6c8dd08a699d20c184f3f2e63f780b624cf152"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_006\\metrics.json",
+      "sha256": "fdd9cf04f50c8c7fd2c9bb8ea99ac2ef9a5f330634bc043d1950a2fd0eb4db2a"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_008\\metrics.json",
+      "sha256": "bdc9a7adba7c9ad5acd0454ebb37b43e82d08951345f1fc040179ec927f03fc8"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_025\\metrics.json",
+      "sha256": "e45f430b15e3683f54ea54f8969e655e023f6dc3b2309351b4d7ad0fd0f611c9"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_026\\metrics.json",
+      "sha256": "51c9476c2e0a23dc61651c87a8c58d53443df732207e4877d79e4a0ebaf8024b"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_028\\metrics.json",
+      "sha256": "b3ee1c74813122da3cc13d13c832e87ad382de5d68a3cde1ebd64e13a6f2ca1c"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_030\\metrics.json",
+      "sha256": "72104aef374635df45e7a31b571377f84a26e23f535eddf386f8153d901581ad"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_051\\metrics.json",
+      "sha256": "fafcd3123bc567907173f305941466ef3cf96ed9eec7c716a17128955c56528b"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_055\\metrics.json",
+      "sha256": "78ef201d1f8494a2b04ffad7f9ee5299809b87887f296c26c39cc740aa2459d3"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_057\\metrics.json",
+      "sha256": "a4720666efe82f25696ae2b7bd95048b4625323fc642deea534f14a37b19b208"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_062\\metrics.json",
+      "sha256": "169e1a6e6c5f224a9ad0e2282cc6dc5b7c2efe5621a5f7b1976be3642a637a41"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_064\\metrics.json",
+      "sha256": "d9f3809dd5c5f96c6016aa8a2f8dc260c1d80f0a7b655265ac3d35abf03f1e60"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_068\\metrics.json",
+      "sha256": "d8500ff6461aa1f3053db3aa210d6819495a8439d7d164598781746d4d544e72"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_074\\metrics.json",
+      "sha256": "770839d813c3031fb3426159c7c43e7d3c2637666a2f889f7085fce60f3a1cec"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_079\\metrics.json",
+      "sha256": "8295a1330fd120bb40bcf1f8e1f286c301c037d210812b27f59d24c59ec696c8"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_081\\metrics.json",
+      "sha256": "95d9ce032bb4b0fec1274dfaa6653adea9aab5e789ed861dd7fdd615f3b55c3f"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_084\\metrics.json",
+      "sha256": "75e9285f6256b8095c47703fc962ae902822e0edacc729c1cdc6c70d57100475"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_088\\metrics.json",
+      "sha256": "45d60a66b1d76c7995b5df4b8511ee308ab3597786e534652a0207c6e3dbd536"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\after\\seed_089\\metrics.json",
+      "sha256": "05f9b893175f8e0f428ebf0def99cff38040cee925fa238e040ff5a72770b1eb"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_002\\metrics.json",
+      "sha256": "6a95b2d4fedc70adcf6b142be04abcf0838182b83e2ea69b6a86fb6b3daf537f"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_004\\metrics.json",
+      "sha256": "b46992510b66268502f70a91351fcd72ebd663da9305f1bf571f220a7b24550d"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_006\\metrics.json",
+      "sha256": "43ac7c14cd0a32ffcc9f421428144925700da2dc8ff8aad4c1c20a940a4915f4"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_008\\metrics.json",
+      "sha256": "e1fa71151ce41937a1b7e11aa0dcaeb05737322d7c0bc8d02483556fd32b4820"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_025\\metrics.json",
+      "sha256": "90b0bfbbcd33c64f6bf280ab26f7c7b85ba59898ee3d9cd652b5631e9e74f9a3"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_026\\metrics.json",
+      "sha256": "fad4429380e15f093dc5a8489384e3fae2a93cf890441d7cab699ce86bb715c8"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_028\\metrics.json",
+      "sha256": "473fc2f3f8da19bda9cddb5e13a03fd39d88314335abb997fbb77898f643a3ab"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_030\\metrics.json",
+      "sha256": "74b2a239df9560452bfcd3f9b869857337eb47417c1541a40413b75b0c2d7441"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_051\\metrics.json",
+      "sha256": "92d9e9b4f30fb961aa8a2961d0c70b86c4f3f5faddd74d4179c0eb7654b2a5f1"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_055\\metrics.json",
+      "sha256": "a25fbcf880ac4400df9c5fc2383d460f20b15ea92eda373b741515ff16a07c74"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_057\\metrics.json",
+      "sha256": "a2bf51f3f58a72387f997e4663bfea73b7f293eaac0eae945c18601ea333e5ce"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_062\\metrics.json",
+      "sha256": "3808b3cfa0eca85577f9d9b59097ae32d2d1816b416529258b24aceb8ee274c8"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_064\\metrics.json",
+      "sha256": "472442344a2c75889a9a702f488f238d092eb65ca1a2f0b6a0be92db3f7d1fcf"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_068\\metrics.json",
+      "sha256": "b3f5a01f7241b177a5882e2967a91e8aaf2b6fb230c03bd7d4272b826cfa74d8"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_074\\metrics.json",
+      "sha256": "983a06aee0ceb9c2327d732d1d8a0d39267e6b9d1d28461d17d752ad878e1266"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_079\\metrics.json",
+      "sha256": "181e4d3a9e8ee5427fe2831f9dc6601710189f32af9ca990dc235be8695b2b1f"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_081\\metrics.json",
+      "sha256": "75f06e93a06864f3615ad7d6140bf7c33bd52b806697e40b63d3d5b5cc7e1a18"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_084\\metrics.json",
+      "sha256": "1863a7e54318eedf505d892e3e2c490ddf013afc69e7df99e5bca9f5318bc73c"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_088\\metrics.json",
+      "sha256": "37d15f1989283442490c16ff8df47f1c600d011bd800bc793b227f108c4832ce"
+    },
+    {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\thp1_raw_mi_20261015\\jobs\\before\\seed_089\\metrics.json",
+      "sha256": "bde6b093ca071b1dddd4ea46123ad246ced9365fe4cd9c04fc3b9e3c1b4b1a63"
+    }
+  ],
+  "report_script_sha256": "d08dfef6a00eb168fd83a70d841e000206bedc39ed545b1d00d61c8d079b24d0"
+}

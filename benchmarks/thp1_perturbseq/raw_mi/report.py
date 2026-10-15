@@ -250,6 +250,11 @@ def plot_comparison(
         axis.set_xlabel("Top-ranked eligible pairs, k (log scale)")
         axis.axvline(summary["primary_k"], color=".45", ls=":", lw=.8)
         axis.grid(alpha=.15)
+    baseline_grid = [row["k"] for row in results[0]["curve"]
+                     if 0 < row["k"] <= max_rank_budget]
+    axes[0].plot(baseline_grid,
+                 [k * summary["universe"]["random_positive_fraction"] for k in baseline_grid],
+                 color=".45", ls="--", lw=.9, label="Uniform random ranking")
     axes[0].set_ylabel("Response-positive TP (tie-expected)")
     axes[0].set_title("TP at equal prediction budgets")
     axes[1].set_ylabel("EPR (fixed reference prevalence)")
@@ -281,7 +286,11 @@ def report_markdown(summary: dict[str, Any]) -> str:
         f"- {n} seed IDs selected before scoring: {', '.join(map(str, summary['seeds']))}.",
         "- Before: 121 draws with replacement from 121 NT-cell metacells. "
         "After: 97 distinct metacells (80% fixed-size sampling without replacement).",
-        "- Same metacell matrix, genes, full SIG hub list and eligible-source response reference.",
+        "- Same metacell matrix, genes, original full SIG annotation and eligible-source response reference.",
+        "- Only the 272 scored source rows are computed, retaining all 17,971 genes. "
+        "Code inspection and engineering subset/expanded/reordered-source checks verify "
+        "that other source rows cannot affect these pairwise MI values when DPI is disabled. "
+        "This is not a full-6,951-source empirical run or a DPI-compatible shortcut.",
         "- No MI thresholding, DPI pruning or consensus construction in either arm; "
         "raw MI is ranked separately for each resample, never averaged across resamples.",
         f"- Fixed scoring universe: {universe['candidate_pairs']:,} non-self eligible pairs; "
@@ -323,6 +332,9 @@ def report_markdown(summary: dict[str, Any]) -> str:
         "are individual resamples (common-FPR interpolation when available, "
         "otherwise common rank budgets), not an averaged "
         "ROC. AUROC values use all MI tie groups, not sparse plotted coordinates.", "",
+        "The dashed TP reference is the analytic expectation under uniform ranking "
+        "of the same fixed pairs, k times reference-positive prevalence; it is not "
+        "a separately generated network.", "",
         "TP/EPR panels stop at the largest prespecified top-k budget; the ROC "
         "panel and AUROC cover the entire eligible universe.", "",
         "## Limits and defensible interpretation", "",
