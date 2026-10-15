@@ -5,8 +5,10 @@ alongside the simulated DREAM5 Network 1 benchmark. Data preparation and
 validation are implemented here. The [approved three-seed pilot](PLAN_2026-10-15.md)
 compares four sampling configurations: the retained legacy sampler, and 64%,
 80% and 90% fixed-size sampling without replacement.
-The [completed results](RESULTS.md) show higher post-DPI AP/precision but not
-uniformly improved recall or raw AUROC.
+The [completed results](RESULTS.md) show higher post-DPI Average Precision and
+emitted-edge precision, but not uniformly improved recall or raw AUROC.
+See [what Average Precision measures](RESULTS.md#what-average-precision-measures)
+for its definition and distinction from precision at one cutoff.
 This is an external benchmark dataset, not an engine dependency
 or a unit-test fixture containing native inference outputs.
 
@@ -82,9 +84,9 @@ The [prospective protocol](PLAN_2026-10-15.md) fixes three seeds, four sampling
 configurations and five stages: raw MI, nominal affine filtering before/after DPI, and a
 common numerical MI cutoff before/after DPI. Every stage runs directly from
 expression; serialized adjacencies are not replayed through DPI. The primary
-comparison is **80% without replacement versus legacy, post-DPI AP at nominal
-p=1e-7**. No PR71 calibration or consensus is included. Read the protocol for
-the explicit-label universe, tie handling and limitations.
+comparison is **80% without replacement versus legacy, post-DPI Average Precision
+at nominal p=1e-7**. No PR71 calibration or consensus is included. Read the
+protocol for the explicit-label universe, tie handling and limitations.
 
 Use the same historical PR70 binary/configuration as Network 1, not an arbitrary
 new build. The planner rejects a different executable, configuration, input or
@@ -108,10 +110,10 @@ sample counts, thresholds and exact shared MI/subset relationships are recorded.
 
 [Results](RESULTS.md) summarizes the completed pilot; the
 [full compact evidence package](results_2026-10-15_pilot3/REPORT.md) includes
-all sampling configurations/stages, paired primary average precision (AP),
+all sampling configurations/stages, paired primary Average Precision,
 DPI/TP-retention diagnostics and plots.
 Use fresh output paths when reproducing; published evidence is never overwritten.
 Native adjacencies/logs remain local in `runs/dream5_network3_20261015_pilot3/`.
-Custom AP/AUROC here is not the official DREAM5
-leaderboard score. Do not tune against this reference and describe the same
+Custom Average Precision and AUROC here are not official DREAM5
+leaderboard scores. Do not tune against this reference and describe the same
 results as independent validation.

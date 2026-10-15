@@ -9,17 +9,33 @@ used for inference/DPI; only the supplied explicit labels are scored.
 See the [full report and plots](results_2026-10-15_pilot3/REPORT.md),
 [per-seed metrics](results_2026-10-15_pilot3/per_seed_stage_metrics.tsv), and
 [compact provenance manifest](results_2026-10-15_pilot3/package_manifest.json).
-These are local, explicitly defined AP/AUROC metrics, not official DREAM5
-leaderboard scores.
+These are local, explicitly defined Average Precision and AUROC metrics, not
+official DREAM5 leaderboard scores.
 
-**AP means average precision.** It summarizes how well reference-positive
-edges rank near the top as the MI-score threshold is lowered. It is a weighted
-average of precision across score thresholds, weighted by the corresponding
-increase in recall, with equal-MI edges grouped together. Higher is better.
-Unlike the precision column, which evaluates only emitted labeled edges, AP
-uses the entire fixed labeled universe; omitted post-DPI pairs share a bottom
-score of zero. Here AP is a ranking metric, not the adaptive partitioning in
-the AP-MI estimator.
+## What Average Precision measures
+
+**Average Precision** summarizes how well the MI-ranked edge list places
+reference-positive pairs near the top. Sort the explicitly labeled pairs by
+decreasing MI, then calculate precision and recall as the score threshold is
+lowered. Average Precision weights each threshold's precision by the increase
+in recall at that threshold:
+
+$$
+\mathrm{Average\ Precision}=\sum_j (R_j-R_{j-1})\,P_j
+$$
+
+Here `P_j` is precision at threshold `j`, `R_j` is recall at that threshold,
+and the starting recall is zero. Equal-MI pairs enter together as one group;
+larger increases in recovered reference positives receive more weight. Higher
+is better, with 1 representing a perfect ranking. This is a stepwise summary,
+not trapezoidal integration of the precision-recall curve.
+
+The **Precision** column evaluates only emitted labeled edges at the selected
+filtering/DPI stage. **Average Precision** instead evaluates ranking over all
+152,280 explicitly labeled pairs, including all 2,066 reference positives;
+omitted post-DPI pairs share a bottom score of zero. It is calculated separately
+for each sampling configuration and seed, then summarized by the median. It is
+not accuracy: a value of 0.0458 does not mean 4.58% of predictions are correct.
 
 ## Main result: nominal p=1e-7, after DPI
 
@@ -28,15 +44,15 @@ summarized independently; they need not add up to, or equal ratios of, other
 table medians. FP means an **explicit reference-negative**, not a proven
 biologically false edge. Unlabeled predictions are excluded.
 
-| Sampling | TP | FP | Precision | Sensitivity | Specificity | AUROC | AP |
+| Sampling | TP | FP | Precision | Sensitivity | Specificity | AUROC | Average Precision |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Legacy, 805 replacement draws | 206 | 3,242 | 5.97% | 9.97% | 97.84% | 0.539562 | 0.042117 |
 | 64%, 516 distinct profiles | 217 | 2,233 | 8.75% | 10.50% | 98.51% | 0.545407 | 0.047296 |
 | 80%, 644 distinct profiles | 200 | 2,134 | 8.79% | 9.68% | 98.58% | 0.541570 | 0.045776 |
 | 90%, 725 distinct profiles | 203 | 2,064 | 8.87% | 9.83% | 98.63% | 0.542443 | 0.045498 |
 
-The declared primary comparison, **80% versus legacy post-DPI AP**, increased
-in all three seeds: paired differences +0.003659, +0.004731 and +0.002568
+The declared primary comparison, **80% versus legacy post-DPI Average Precision**,
+increased in all three seeds: paired differences +0.003659, +0.004731 and +0.002568
 (median +0.003659). Median labeled FP count decreased by about 34%, while
 median TP count decreased from 206 to 200. Paired TP changes were **-7, +8,
 -5**, not uniformly positive. This is a precision/coverage tradeoff, not the
@@ -44,16 +60,16 @@ unqualified precision-and-recall improvement seen in the Network 1 pilot.
 
 ## Raw MI and stage controls
 
-| Sampling | Raw-MI AUROC | Raw-MI AP | Raw TP@5,000 |
+| Sampling | Raw-MI AUROC | Raw-MI Average Precision | Raw TP@5,000 |
 | --- | ---: | ---: | ---: |
 | Legacy | 0.640041 | 0.066079 | 311 |
 | 64% | 0.638397 | 0.075918 | 329 |
 | 80% | 0.640926 | 0.073642 | 327 |
 | 90% | 0.645688 | 0.075440 | 330 |
 
-Raw-MI AP improved in the configuration medians, but overall AUROC did not uniformly
-improve: the 80% change is very small and 64% is slightly lower. Top-ranked
-recovery improved more visibly than the global ranking statistic. All eight
+Raw-MI Average Precision improved in the configuration medians, but overall
+AUROC did not uniformly improve: the 80% change is very small and 64% is slightly
+lower. Top-ranked recovery improved more visibly than the global ranking statistic. All eight
 fixed budgets, with boundary-tie handling, are saved in
 [metrics.json](results_2026-10-15_pilot3/metrics.json).
 
@@ -73,9 +89,10 @@ reference-based tuning or a verdict on individual removed edges.
 
 ## Defensible conclusion and scope
 
-This E. coli pilot supports fewer labeled FPs and higher post-DPI AP/precision
-with fixed-size sampling, but **does not demonstrate uniformly improved
-recall, raw AUROC or full-workflow performance**. Three computational seeds
+This E. coli pilot supports fewer labeled FPs and higher post-DPI Average
+Precision and emitted-edge precision with fixed-size sampling, but **does not
+demonstrate uniformly improved recall, raw AUROC or full-workflow performance**.
+Three computational seeds
 cannot establish a best fraction, statistical significance or a new default.
 The reference is incomplete; expression profiles span heterogeneous and
 potentially correlated experiments; sampling changes draw count, selected

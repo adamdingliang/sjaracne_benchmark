@@ -20,8 +20,8 @@ perturbation-response reference used for evaluation. It does not imply that
 every dataset has a gold-standard network.
 
 The [E. coli pilot](benchmarks/dream5_network3/RESULTS.md) completed all 60
-prospectively specified native jobs. At 80% sampling, median post-DPI AP
-increased from 0.042117 to 0.045776 and labeled FPs decreased from 3,242 to
+prospectively specified native jobs. At 80% sampling, median post-DPI Average
+Precision increased from 0.042117 to 0.045776 and labeled FPs decreased from 3,242 to
 2,134, but TPs decreased slightly from 206 to 200. Raw-MI AUROC barely changed
 (0.6400 to 0.6409). This is a small exploratory precision/coverage tradeoff,
 not uniform improvement or evidence for a new default.
