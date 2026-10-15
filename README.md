@@ -20,7 +20,7 @@ every dataset has a gold-standard network.
 
 ## What moved, and what did not
 
-The first migration copies benchmark code, tests, notebooks, compact reports, plots and provenance. The original repositories/worktrees and local run archives remain intact. Small DREAM5 inputs already bundled with the original benchmark are retained with their separate source-data terms. Large THP-1/TCGA data, expression/reference matrices, native networks, native builds and R environments are not uploaded.
+The first migration copies benchmark code, tests, notebooks, compact reports, plots and provenance. Original PR branches/worktrees and local run archives are retained; subsequent source-repository housekeeping is recorded in [source cleanup](docs/SOURCE_CLEANUP.md). Small DREAM5 inputs already bundled with the original benchmark are retained with their separate source-data terms. Large THP-1/TCGA data, expression/reference matrices, native networks, native builds and R environments are not uploaded.
 
 The engine, consensus implementation, calibration implementation, native regression tests and performance microbenchmarks remain in SJARACNe. This is not a second implementation of SJARACNe.
 

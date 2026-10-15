@@ -48,3 +48,11 @@ because historical manifests identify them.
 ## Stage 3: source-repository retirement and publication
 
 Only after equivalent migrated workflows are validated should we replace source-repository benchmark folders with links or remove duplicate working copies. No deletion, SJARACNe commit/PR changes, or public visibility change is authorized by this initial migration. Rights/attribution review and a deliberate data-hosting decision precede public release.
+
+On 2026-10-14 the user separately authorized bounded source cleanup. The
+standalone duplicate LUAD utility was removed from the active engine checkout;
+the path-bound THP-1 archive remains in place and is locally excluded from Git
+status. A separate engine cleanup branch prepares removal of the already
+migrated DREAM5 package from `develop`, with a README link here. No legacy PR
+branch or worktree is retired, no scientific result is recomputed, and this
+does not assert end-to-end portability. See [source cleanup](SOURCE_CLEANUP.md).
