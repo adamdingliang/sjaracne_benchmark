@@ -5,6 +5,11 @@ validation null distributions. It compares leave-entire-size-out smooth GPD
 parameters with direct empirical quantile surfaces. It does not run the proposed
 200-size sweep, install models, change engine defaults or claim fresh validation.
 
+The [completed results](RESULTS.md) took 29.69 seconds of computation. The
+quadratic empirical surface stayed within 10% observed null-rate error in all
+34 main interior checks, but failed some wider-p interpolation checks. This
+is promising limited-scope feasibility, not a generally validated function.
+
 [Frozen analysis design](PLAN.md) specifies six candidates, endpoint handling,
 eight probability knots, eight additional probability probes, exact tie counts
 and all unavailable/invalid predictions. The GPD candidates reuse every existing
@@ -22,6 +27,7 @@ at one each, and refuses overwrites. Only sorted copies are written locally.
 ```powershell
 python scripts/check_benchmarks.py --group apmi_smooth_feasibility
 python benchmarks/apmi_null_m_sweep/smooth_feasibility/analyze.py --source-run runs/apmi_null_m_sweep_10m_20261015 --out runs/FRESH_SMOOTH_FEASIBILITY --workers 12
+python benchmarks/apmi_null_m_sweep/smooth_feasibility/package.py --run runs/FRESH_SMOOTH_FEASIBILITY --out benchmarks/apmi_null_m_sweep/smooth_feasibility/FRESH_COMPACT_RESULTS
 ```
 
 The evaluation table distinguishes fitting and validation streams, interior

@@ -11,7 +11,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 # Engine-coupled/native compilation/R tests remain explicitly separate.
 GROUPS = {
-    "apmi_smooth_feasibility": ("benchmarks/apmi_null_m_sweep/smooth_feasibility", ["test_models", "test_extract", "test_analyze"]),
+    "apmi_smooth_feasibility": ("benchmarks/apmi_null_m_sweep/smooth_feasibility", ["test_models", "test_extract", "test_analyze", "test_package"]),
     "apmi_null_capacity": ("benchmarks/apmi_null_m_sweep/broad_grid_10m", ["test_time_capacity"]),
     "apmi_null_m_sweep_10m": ("benchmarks/apmi_null_m_sweep/expanded_10m", ["test_run_staged", "test_summarize", "test_compare"]),
     "apmi_null_m_sweep": ("benchmarks/apmi_null_m_sweep", ["test_run_staged", "test_summarize"]),

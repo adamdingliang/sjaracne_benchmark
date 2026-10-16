@@ -1,0 +1,75 @@
+{
+  "format": "apmi-smooth-feasibility-v1",
+  "started_utc": "2026-10-16T01:27:10.007117+00:00",
+  "command": [
+    "benchmarks/apmi_null_m_sweep/smooth_feasibility/analyze.py",
+    "--source-run",
+    "runs/apmi_null_m_sweep_10m_20261015",
+    "--out",
+    "runs/apmi_null_smooth_feasibility_20261015",
+    "--workers",
+    "12"
+  ],
+  "source_run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+  "out": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015",
+  "workers": 12,
+  "new_null_draws": 0,
+  "m": [
+    30,
+    50,
+    80,
+    90,
+    100,
+    150,
+    200,
+    250,
+    300,
+    400,
+    500,
+    516,
+    600,
+    644,
+    700,
+    725,
+    800,
+    900,
+    1000
+  ],
+  "knot_p": [
+    0.05,
+    0.01,
+    0.001,
+    0.0005,
+    0.0001,
+    1e-05,
+    1e-06,
+    1e-07
+  ],
+  "probe_p": [
+    0.02,
+    0.005,
+    0.002,
+    0.00075,
+    0.0002,
+    5e-05,
+    5e-06,
+    5e-07
+  ],
+  "source_plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+  "code_sha256": {
+    "analyze.py": "bdce4451262dded28dc0c88259e6d7089a4620c798568db49c8112a627b85632",
+    "extract.py": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+    "models.py": "ac0f86cf4abb0025dc21d7fd34e66411cf342f098773e03d837c04be88f7e21a",
+    "test_analyze.py": "641d285f723de94a1d8a57477064d0b16587ff54de8a233dda75d94f6b59d138",
+    "test_extract.py": "9b280b1b5276e913c7aa1949a4a718429e8bf71096e9c0db3ce38a62782ab01a",
+    "test_models.py": "c6338c8d12a039d8c02c04318be82babdaab45ec7d4d4dec705275b91f804169",
+    "PLAN.md": "c8a1af1e0f5a323ce78662a10b34b8b37099fb56edb8abd20c5b770850b48ddc"
+  },
+  "environment": {
+    "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "numerical_threads": 1
+  }
+}

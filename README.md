@@ -50,6 +50,13 @@ The [earlier 5M study](benchmarks/apmi_null_m_sweep/RESULTS.md) is preserved.
 This is estimator calibration, not another biological
 network benchmark or a change to SJARACNe defaults.
 
+The [smooth-cutoff feasibility process](benchmarks/apmi_null_m_sweep/smooth_feasibility/README.md)
+and [results](benchmarks/apmi_null_m_sweep/smooth_feasibility/RESULTS.md) reuse the
+19-size data, with no new simulations. A quadratic empirical surface stayed
+within 10% observed null-rate error in all 34 main interior-size checks, but
+failed some wider-probability checks. This is exploratory feasibility, not a
+validated general replacement function.
+
 The [broader m=50..10000 protocol and timing](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md)
 are planning evidence only: the full 200-size sweep was **not launched**, per
 the user's stop-after-timing instruction. Measured throughput projects to

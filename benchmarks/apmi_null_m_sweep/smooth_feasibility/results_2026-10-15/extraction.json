@@ -1,0 +1,5346 @@
+[
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:23.575848+00:00",
+    "m": 30,
+    "stage": "anchors",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.11323200914184461,
+        "fit_ge": 642680,
+        "fit_gt": 409338,
+        "fit_ties": 233342,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.18825094615528082,
+        "fit_ge": 233952,
+        "fit_gt": 190455,
+        "fit_ties": 43497,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.20502406025364683,
+        "fit_ge": 112095,
+        "fit_gt": 98717,
+        "fit_ties": 13378,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.2312716540122728,
+        "fit_ge": 51056,
+        "fit_gt": 45285,
+        "fit_ties": 5771,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.2891668559015743,
+        "fit_ge": 21749,
+        "fit_gt": 19697,
+        "fit_ties": 2052,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.3311598761380732,
+        "fit_ge": 10015,
+        "fit_gt": 9980,
+        "fit_ties": 35,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.3462222083499933,
+        "fit_ge": 7500,
+        "fit_gt": 7492,
+        "fit_ties": 8,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.3663409137733207,
+        "fit_ge": 5048,
+        "fit_gt": 4959,
+        "fit_ties": 89,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.38612417403304367,
+        "fit_ge": 2009,
+        "fit_gt": 1996,
+        "fit_ties": 13,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.4309166024778657,
+        "fit_ge": 1000,
+        "fit_gt": 977,
+        "fit_ties": 23,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.4592161009162212,
+        "fit_ge": 503,
+        "fit_gt": 497,
+        "fit_ties": 6,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.5355384592384271,
+        "fit_ge": 101,
+        "fit_gt": 99,
+        "fit_ties": 2,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.5626814464226326,
+        "fit_ge": 52,
+        "fit_gt": 49,
+        "fit_ties": 3,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.6246375562988198,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.700087428767787,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.762192673900405,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.2312716540122728,
+      "tail_count": 45285,
+      "tail_probability": 0.004528599547140045,
+      "shape": -0.07308323522622842,
+      "scale": 0.06305228655969514,
+      "endpoint": 1.0940178962184013,
+      "cutoff_at_stability_probability": 0.3596006530507734
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "1f2b21a7385ab9556368c90d4e8ee3d20a2696e3d4d37007942184f0dd35c7b5",
+        "draws": 10000000,
+        "seed": 20261047,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "30",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261047",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "119e0e24fa991f1ef0d64242a6c4c17fcbe65648753b9e099a6b3ea10c04841f",
+        "draws": 10000000,
+        "seed": 1020261048,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "30",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261048",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00030/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "1285948a1a1d84571fd81995eb0a162567ba6588fbdb2f1bac76097fe2f31397",
+      "report_sha256": "be7dacf5ea943a196b9d67354acaa8b527afcae3d75727a537fbb4b50bdcd1c1",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "be7dacf5ea943a196b9d67354acaa8b527afcae3d75727a537fbb4b50bdcd1c1",
+        "calibration/calibration_summary.csv": "79a321b5f01008602e9ff2a9ccd3479922ee7f76e3010e42fb28e1974eef05b4",
+        "calibration/raw/m00030_npar040_fit.f64": "1f2b21a7385ab9556368c90d4e8ee3d20a2696e3d4d37007942184f0dd35c7b5",
+        "calibration/raw/m00030_npar040_fit.f64.meta": "5bf55605e94a58141c7904ae331b48d6d0549f48eee3c4e249cb8037d6a517a5",
+        "calibration/raw/m00030_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00030_npar040_validation.f64": "119e0e24fa991f1ef0d64242a6c4c17fcbe65648753b9e099a6b3ea10c04841f",
+        "calibration/raw/m00030_npar040_validation.f64.meta": "db821fecf6a390c2c1f67d38cf4684677628749feeab5bf167d14859fe5055e4",
+        "calibration/raw/m00030_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "a42c2fe46ef231f34767eb7f5e6a1bfe8320c2d28be85f7363400a8a4b1066c1",
+        "launch.json": "c63cdfc952401b5cd336ce1bc72311296777c8e9e8ea7775f5e3ff7770acf329",
+        "request.json": "edec24ba08fa6a335da63c50d3554da16a4459b840c1246ce9d86c086c16df40",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "9cfb0d7e3f9bb2012ee1a1688cbb1ec28eacf2144993d6f8e5cc1925468b35ef",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "60ef85ab6355b821d3e62be478c543474429f1c0797198b861d06ef29a8fe5ab"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00030\\fit_sorted.npy",
+        "sha256": "0b24ad0d9fd06f78ceaa73243580166f59c12439655bcbe12c4b4ba4e2f78fb1",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.002223871246127107,
+        "maximum": 0.762192673900405,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00030\\validation_sorted.npy",
+        "sha256": "f369c21360f8f93e0f9a5ca16f30e4e4e29f963236ae52480a9bd18b993b7f3f",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.002223871246127107,
+        "maximum": 0.8026585557692134,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:26.904700+00:00",
+    "m": 50,
+    "stage": "anchors",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.06627772298751955,
+        "fit_ge": 549712,
+        "fit_gt": 460469,
+        "fit_ties": 89243,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.11507335342195857,
+        "fit_ge": 214634,
+        "fit_gt": 199883,
+        "fit_ties": 14751,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.13765273621012275,
+        "fit_ge": 100394,
+        "fit_gt": 99953,
+        "fit_ties": 441,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.16589711762636083,
+        "fit_ge": 50755,
+        "fit_gt": 49491,
+        "fit_ties": 1264,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.19376727047750864,
+        "fit_ge": 20043,
+        "fit_gt": 19937,
+        "fit_ties": 106,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.22035866390204095,
+        "fit_ge": 10001,
+        "fit_gt": 9999,
+        "fit_ties": 2,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.23068173470972653,
+        "fit_ge": 7502,
+        "fit_gt": 7499,
+        "fit_ties": 3,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.24498407938584332,
+        "fit_ge": 5009,
+        "fit_gt": 4998,
+        "fit_ties": 11,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.27367618748682077,
+        "fit_ge": 2000,
+        "fit_gt": 1996,
+        "fit_ties": 4,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.2978108707568361,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.32072896547982266,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.38043238657752676,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.4026201637100857,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.4459843729980042,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.4667911320383511,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.5608933133416967,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.16589711762636083,
+      "tail_count": 49491,
+      "tail_probability": 0.0049491995050800494,
+      "shape": 0.1152858866249098,
+      "scale": 0.028428808990162015,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.24048948077566748
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "3bab948258c799ee03f5f3587da8771e5e241e0f483779146a267a57d0e1973f",
+        "draws": 10000000,
+        "seed": 20261067,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "50",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261067",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "11fc3e18c6e7e01637dfd647b538a22f8d3fb3c8c611449da6eec057fdc460dd",
+        "draws": 10000000,
+        "seed": 1020261068,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "50",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261068",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00050/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "7cf0c2ece6866c7dd93995be755d7543d36de4d5a6a5a3478f7be519e27cc03c",
+      "report_sha256": "539575135763743d306e00146a308d294d1e4d301f588d472e6e1c1833395e54",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "539575135763743d306e00146a308d294d1e4d301f588d472e6e1c1833395e54",
+        "calibration/calibration_summary.csv": "751e9d6edab67aa8fc9024edd97824649f7f268fa6bed2883dabc0d99106a6b4",
+        "calibration/raw/m00050_npar040_fit.f64": "3bab948258c799ee03f5f3587da8771e5e241e0f483779146a267a57d0e1973f",
+        "calibration/raw/m00050_npar040_fit.f64.meta": "09fde615ca26550eeb9d784bb84e22e76b881cfdcc09418b202737f6cfef1766",
+        "calibration/raw/m00050_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00050_npar040_validation.f64": "11fc3e18c6e7e01637dfd647b538a22f8d3fb3c8c611449da6eec057fdc460dd",
+        "calibration/raw/m00050_npar040_validation.f64.meta": "07552d9578bedf85afec16f9d89d2d37742145fecae49759b39de730c0468a5a",
+        "calibration/raw/m00050_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "77801b10b2cb159ad5b4fe1aa92fc10c45494de3df911c8bf10defa6715e8841",
+        "launch.json": "23cb9ea1020b668a6b8247a0c90b5f792c9d56e433938cf755cd0bc6577653a7",
+        "request.json": "0dc98f68fa8a985a366b1c0e889524d68de7430dd8d8c56e619e1ae9b31accf1",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "61f8126839b16c60fda7788ee17eeceeac171deddadc147fc5971f06daa35496",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "224b50cf4bd2f454b3da5d36c81195328964550a8f8e63b8ea73b9a66fb3846c"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00050\\fit_sorted.npy",
+        "sha256": "4d217f55a2f6ecc4cf777858ade6f8c096eb299d491a44e1d620c1d3edec2022",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0008002134699833796,
+        "maximum": 0.5608933133416967,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00050\\validation_sorted.npy",
+        "sha256": "b5c5e1c799435a777645f67c43ebd861ff8e1fd254033e98b46cd65024bba1c7",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0008002134699833796,
+        "maximum": 0.4974695432009475,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:23.406047+00:00",
+    "m": 80,
+    "stage": "anchors",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.045700541525312666,
+        "fit_ge": 526707,
+        "fit_gt": 431858,
+        "fit_ties": 94849,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.07083773856090225,
+        "fit_ge": 200580,
+        "fit_gt": 199289,
+        "fit_ties": 1291,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.08854876806115008,
+        "fit_ge": 100117,
+        "fit_gt": 99985,
+        "fit_ties": 132,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.10450028394950817,
+        "fit_ge": 50003,
+        "fit_gt": 49987,
+        "fit_ties": 16,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.1301044993685858,
+        "fit_ge": 20001,
+        "fit_gt": 19984,
+        "fit_ties": 17,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.14766935243190726,
+        "fit_ge": 10020,
+        "fit_gt": 9997,
+        "fit_ties": 23,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.1544513922166031,
+        "fit_ge": 7506,
+        "fit_gt": 7489,
+        "fit_ties": 17,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.16407152235861844,
+        "fit_ge": 5002,
+        "fit_gt": 4994,
+        "fit_ties": 8,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.18607059776362522,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.20365310409630943,
+        "fit_ge": 1001,
+        "fit_gt": 999,
+        "fit_ties": 2,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.2204437739630496,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.25638882306059774,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.27358156571104253,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.31148583375162087,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.3309995182024368,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.36670289355178376,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.10450028394950817,
+      "tail_count": 49987,
+      "tail_probability": 0.00499879950012005,
+      "shape": -0.05697732005969798,
+      "scale": 0.028213347381047665,
+      "endpoint": 0.5996683148693045,
+      "cutoff_at_stability_probability": 0.16537692438330115
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "d82a1dd04441cea3bfe60dd72f2e7ae75ce0b0334949fa80d7a0ccacee5a6392",
+        "draws": 10000000,
+        "seed": 20261097,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "80",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261097",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "2500d222d49b38f53956fd65f6e1e137976642814fe56948c0eaadab7f7b8518",
+        "draws": 10000000,
+        "seed": 1020261098,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "80",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261098",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00080/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "3fbf8ae0c2897d8262118c028e8fff557ac2d6ae189dda22ffeb1d6322e2046b",
+      "report_sha256": "de6cb91b145fcbef24b0756fa105ff25c3e92de8b256d9db8cfbb79aaf9f815b",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "de6cb91b145fcbef24b0756fa105ff25c3e92de8b256d9db8cfbb79aaf9f815b",
+        "calibration/calibration_summary.csv": "ec93b7475e188bbf357dfc88f7f091e8e17120f38ae028fe4f67573d1cab5d48",
+        "calibration/raw/m00080_npar040_fit.f64": "d82a1dd04441cea3bfe60dd72f2e7ae75ce0b0334949fa80d7a0ccacee5a6392",
+        "calibration/raw/m00080_npar040_fit.f64.meta": "dd95767b67cbd4b24a45c792809ddcf27eaba01919e06d3e0b383998e5f4652c",
+        "calibration/raw/m00080_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00080_npar040_validation.f64": "2500d222d49b38f53956fd65f6e1e137976642814fe56948c0eaadab7f7b8518",
+        "calibration/raw/m00080_npar040_validation.f64.meta": "4b724533e5c88f93ea834f7012e31895adc5309b4084f9e2b80807e1b73d4af9",
+        "calibration/raw/m00080_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "6cc36805586a6d5cd629af061f9edd97e94b92602183082033bf8e1d42266a1b",
+        "launch.json": "7bda08bd625d4f9e82e8047ebd626a55dfd1f7c2610c1bb37a4137079a74793a",
+        "request.json": "3884b0fce1f4d46d9596fd5cb9d7aa7707349f2b5bda96cfca2de94fb29f9bef",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "f1606401894e0ca161288d220a150b97d03f2876b26e682eae8289b8cbec15ec",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "3df83ca2bf3dfac3954dcec5d8f2f47d651eff5ce70dc80b703d9211eeea5949"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00080\\fit_sorted.npy",
+        "sha256": "fd841685c8bfec8c1e140c7e911ed64705483303f913c395b4a7cd008e767572",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.36670289355178376,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00080\\validation_sorted.npy",
+        "sha256": "337603b6dc61cc8b226c6ebaf83ed922bb9a395ed4e5c4bcebda7bc64f7c53b2",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.37067196314911843,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:27.308039+00:00",
+    "m": 90,
+    "stage": "anchors",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.042329104688386465,
+        "fit_ge": 513772,
+        "fit_gt": 437511,
+        "fit_ties": 76261,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.06271754658241324,
+        "fit_ge": 200176,
+        "fit_gt": 199902,
+        "fit_ties": 274,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.07855715432811117,
+        "fit_ge": 100039,
+        "fit_gt": 99994,
+        "fit_ties": 45,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.09579079432332183,
+        "fit_ge": 50004,
+        "fit_gt": 49992,
+        "fit_ties": 12,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.11776608900727759,
+        "fit_ge": 20000,
+        "fit_gt": 19992,
+        "fit_ties": 8,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.13366651594015977,
+        "fit_ge": 10000,
+        "fit_gt": 9998,
+        "fit_ties": 2,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.13988790001579776,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.14865385374494178,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.16889698670934017,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.18527949098649898,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.1998902476867972,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.23482595069303525,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.24590708344765133,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.26900925460093195,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.2728694260127522,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.3185295968136739,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.09579079432332183,
+      "tail_count": 49992,
+      "tail_probability": 0.00499929950007005,
+      "shape": -0.04509514357404108,
+      "scale": 0.024572748159477464,
+      "endpoint": 0.6406997626057227,
+      "cutoff_at_stability_probability": 0.14953007553006373
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "2f308dc9e24530a8331105fcf607a67497e2b553fcd661cbc85d433bf5f76636",
+        "draws": 10000000,
+        "seed": 20261107,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "90",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261107",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "f2161f29048a9065a8c4bc50f719bbdb517724649cb851130ae59d590b3fe572",
+        "draws": 10000000,
+        "seed": 1020261108,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "90",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261108",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00090/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "6062f2c8ec4fb349af50145a35de44fbca4cf558cd9f5d54441a3c5a8aede105",
+      "report_sha256": "e8b13e20c0d79b26642dfca69be692e582f1dac47e431ff032fbc16796a49e16",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "e8b13e20c0d79b26642dfca69be692e582f1dac47e431ff032fbc16796a49e16",
+        "calibration/calibration_summary.csv": "35399f544e5310b9495da340b9dbd4073d528be60c6492e9d517bce40de85602",
+        "calibration/raw/m00090_npar040_fit.f64": "2f308dc9e24530a8331105fcf607a67497e2b553fcd661cbc85d433bf5f76636",
+        "calibration/raw/m00090_npar040_fit.f64.meta": "fb2e7088fc077fa76ea33fdc29e05ce3754beda0ac747ffc2a1cf394eae0f1e2",
+        "calibration/raw/m00090_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00090_npar040_validation.f64": "f2161f29048a9065a8c4bc50f719bbdb517724649cb851130ae59d590b3fe572",
+        "calibration/raw/m00090_npar040_validation.f64.meta": "49f8c90f1eb9505749acc8458ef0b7d0bb103bda2608d82c656834e6ccee1339",
+        "calibration/raw/m00090_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "99bcc6cda5d9d957c455e23b7ba6cde4e5ac0f850c2c147b24bec837a5d6c2e0",
+        "launch.json": "90e7d40dd4e2190862465f14844e7627bcf86cd580192dcd3369c1aa69a3571d",
+        "request.json": "aad5139b836f1236068bebcb3f99864b197c74f506a95bf2492182f3e5bcc51f",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "1e3447c1119bd0ae8ffcc367a48ee849bef17027da505a0ecd703127c4e337a2",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "0bb79b1d144fcc6197dd27488dbf3dd401e381225fa766603c82c55b32bd3d3c"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00090\\fit_sorted.npy",
+        "sha256": "ecfa4eebb84e4e84532c318d37364a12d023babb11534b5d942da8e373e2b051",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0002469339063679854,
+        "maximum": 0.3185295968136739,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00090\\validation_sorted.npy",
+        "sha256": "4214059cf3ba4bd186485a22b754d473e369425e0810baebea322a1dc146aadf",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0002469339063679854,
+        "maximum": 0.37607190474561936,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:26.920279+00:00",
+    "m": 100,
+    "stage": "anchors",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.03947947929602158,
+        "fit_ge": 500587,
+        "fit_gt": 499746,
+        "fit_ties": 841,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.0567265831661361,
+        "fit_ge": 200187,
+        "fit_gt": 199513,
+        "fit_ties": 674,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.07106508832342051,
+        "fit_ge": 100277,
+        "fit_gt": 99969,
+        "fit_ties": 308,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.08766362790279647,
+        "fit_ge": 50025,
+        "fit_gt": 49815,
+        "fit_ties": 210,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.10694536304444568,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.12109901109557963,
+        "fit_ge": 10000,
+        "fit_gt": 9996,
+        "fit_ties": 4,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.1275265315987344,
+        "fit_ge": 7500,
+        "fit_gt": 7498,
+        "fit_ties": 2,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.13562553866678861,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.15345799601784815,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.16736612341540447,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.18138555103916154,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.2148582339327607,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.22654061293822547,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.2537014396293005,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.2618442476693099,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.32364109011758657,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.08766362790279647,
+      "tail_count": 49815,
+      "tail_probability": 0.00498159950184005,
+      "shape": -0.03635076702862536,
+      "scale": 0.02185865642500988,
+      "endpoint": 0.6889894928507551,
+      "cutoff_at_stability_probability": 0.13587209089520758
+    },
+    "original_gpd_status": "accepted",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "2026f2139d0ed18187c676729f1b8f94a42e5bbfd4b0145ca8281aff141e90a7",
+        "draws": 10000000,
+        "seed": 20261117,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "100",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261117",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "4bc53d0de9173131039634faa7ff4c83b9236084f96edf17f7602651eaa63bb5",
+        "draws": 10000000,
+        "seed": 1020261118,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "100",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261118",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00100/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "84c547f10bfae6f6fda7499c7831dec30a81e436df5d1d67f593409738c946ab",
+      "report_sha256": "79e0106c559a7fea86c5f90b4ec8dfbd50df99a058aa521bba71947977cb6e4c",
+      "artifact_sha256": {
+        "calibration/apmi_null_m00100_npar040.model": "369596afe6d1aaf578e9d950b1eba5171e2ed1b7904294c9f4a1279a6a68346c",
+        "calibration/calibration_report.json": "79e0106c559a7fea86c5f90b4ec8dfbd50df99a058aa521bba71947977cb6e4c",
+        "calibration/calibration_summary.csv": "54f99a2bd4602350ed5b8fb23580d9a2c4ba31491a6d5415cde109ce4c0d632f",
+        "calibration/raw/m00100_npar040_fit.f64": "2026f2139d0ed18187c676729f1b8f94a42e5bbfd4b0145ca8281aff141e90a7",
+        "calibration/raw/m00100_npar040_fit.f64.meta": "9d1bcc576b837975cca984bd422374ce506872d3c27395023dbdd6160b5fe04b",
+        "calibration/raw/m00100_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00100_npar040_validation.f64": "4bc53d0de9173131039634faa7ff4c83b9236084f96edf17f7602651eaa63bb5",
+        "calibration/raw/m00100_npar040_validation.f64.meta": "ecccd1cf26931f239a6b4438ea603a5734a3de3884883e176948cdd0763110a8",
+        "calibration/raw/m00100_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "33f65dd0577fa5f5c68375b0baee8e08a9001b1767a8ffd16293d669680c0251",
+        "launch.json": "54e8c721dcf86ec0cde0f83a88e7ca827288c13e039982b5be681455b3132236",
+        "request.json": "3e40d0f4f9cb9a0ebad7f9267c6866e609839c2cc400f78649cb7083c2676d8c",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "3180b99faf821cef73783f30def5a317ea58505e844f908b03cc1c9e360238a0",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "2d0136b8752724f6c53b3e8b43ba4832ab319eb561c4d3dd240315c643056b55"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00100\\fit_sorted.npy",
+        "sha256": "beeb71729288103e18615bbf6324fba6d2bfc801b7390c936035f122ebca5409",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 8.881784197001252e-16,
+        "maximum": 0.32364109011758657,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00100\\validation_sorted.npy",
+        "sha256": "77a6cd063f60aff63c899138ed954e39e769604cb4f165857b18341938c23f56",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 8.881784197001252e-16,
+        "maximum": 0.3195867132625061,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:27.854251+00:00",
+    "m": 150,
+    "stage": "anchors",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.025913511131716582,
+        "fit_ge": 535380,
+        "fit_gt": 482209,
+        "fit_ties": 53171,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.038192295576051194,
+        "fit_ge": 200005,
+        "fit_gt": 199968,
+        "fit_ties": 37,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.04747422995640793,
+        "fit_ge": 100021,
+        "fit_gt": 99990,
+        "fit_ties": 31,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.06116342986193857,
+        "fit_ge": 50001,
+        "fit_gt": 49993,
+        "fit_ties": 8,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.07397397919017834,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.08419581784116215,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.08877997929088632,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.09534633996415476,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.10821365694881013,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.11817137564085733,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.12842532103934534,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.15422693024394896,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.16279658623232063,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.18662754240207757,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.19167776281722482,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.2017744609997525,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.06116342986193857,
+      "tail_count": 49993,
+      "tail_probability": 0.00499939950006005,
+      "shape": 0.007263182189223449,
+      "scale": 0.014385212337935977,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.09456337655689437
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "d27cd030258db3719cf936e8298d42dd49015f769814e8361b51b757ca12b11b",
+        "draws": 10000000,
+        "seed": 20261167,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "150",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261167",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "e325531583b629378a1f0f748db6fa51e4f4d33833f328cc579c8afd55c115b7",
+        "draws": 10000000,
+        "seed": 1020261168,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "150",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261168",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00150/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "6980b3287c26d9d48be27f5c8ef9ddc8c0f61c01b911c20687c046b7eba1a9dd",
+      "report_sha256": "e24b567ff9fe657ded010706d0920cfcc27343736382cebed84cfdc738723650",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "e24b567ff9fe657ded010706d0920cfcc27343736382cebed84cfdc738723650",
+        "calibration/calibration_summary.csv": "42e6fffb0b6dbe3b673138d3fd858d57993e1709b0605d556a2127b1e9938af2",
+        "calibration/raw/m00150_npar040_fit.f64": "d27cd030258db3719cf936e8298d42dd49015f769814e8361b51b757ca12b11b",
+        "calibration/raw/m00150_npar040_fit.f64.meta": "613aaf14dbe0b63e14427e646d106c3eef01ee0f739b23bfe450d1215800b32c",
+        "calibration/raw/m00150_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00150_npar040_validation.f64": "e325531583b629378a1f0f748db6fa51e4f4d33833f328cc579c8afd55c115b7",
+        "calibration/raw/m00150_npar040_validation.f64.meta": "32fe5e9697efbd9924f7c44cccb2061d77a972548d264e3d8464224b62009641",
+        "calibration/raw/m00150_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "71ec8d8832e192d291c985c3c21f72fc7a390ecddf35ab30c0e047be33ebfb59",
+        "launch.json": "3523f50eb38a3542404d9b9c49ce9e4fe957f2cbd4c195f6bc3323a192523fca",
+        "request.json": "f833fec41dccd1b81791cc6f100771973800d9aa15d041160b2a35fdbeda5ce0",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "9a4804958ba7037c07301116669f014cf5ded2ac5e9cecb0f34f078313200d3d",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "0a6c0d20b16f95d3c4ac8dfa4ef0cc39404fdcb80681e0f04a1a02813cd14ce6"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00150\\fit_sorted.npy",
+        "sha256": "80e3f194c9ed160f7e5f18668e36369a47d5133a14f57e07454395dd00f3d891",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 8.889152282076651e-05,
+        "maximum": 0.2017744609997525,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00150\\validation_sorted.npy",
+        "sha256": "a7a8f64760b2226a24369727991d175c2c4ebafb0f49287ff92c04c2fda99c17",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 8.889152282076651e-05,
+        "maximum": 0.23709822176278283,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:27.858062+00:00",
+    "m": 200,
+    "stage": "expanded",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.020135513550688877,
+        "fit_ge": 506873,
+        "fit_gt": 467066,
+        "fit_ties": 39807,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.028134205001783208,
+        "fit_ge": 200078,
+        "fit_gt": 199740,
+        "fit_ties": 338,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.034683745916909814,
+        "fit_ge": 100004,
+        "fit_gt": 99990,
+        "fit_ties": 14,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.04635887484685686,
+        "fit_ge": 50000,
+        "fit_gt": 49998,
+        "fit_ties": 2,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.0563518309458777,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.06421623026569101,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.06795105837312221,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.07322014198795923,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.08345716993634245,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.0916455882842433,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.0999541831019144,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.11761018637584542,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.12477246595935032,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.14420786712057865,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.1534084466775436,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.16752005150462956,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.04635887484685686,
+      "tail_count": 49998,
+      "tail_probability": 0.00499989950001005,
+      "shape": 0.0056192670204063665,
+      "scale": 0.01133432542961223,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.07262646393178798
+    },
+    "original_gpd_status": "accepted",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "f5e21bf0bfc4e8120503f355e19f62c606a60696ca81c92be3bafa814ca91bc5",
+        "draws": 10000000,
+        "seed": 20261217,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "200",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261217",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "479937b809b8e5737ff7ca91aef4473fa4ef4b8bda299ea2a281ad1764894198",
+        "draws": 10000000,
+        "seed": 1020261218,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "200",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261218",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00200/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "52a26b40aebe41547687d98c9d850987d67281e2d6a1a8519c1ebc4a14dafad2",
+      "report_sha256": "63e239f51380fede7dc2266b8547cb9fbffea99c087535cea2a53ca7490ca64c",
+      "artifact_sha256": {
+        "calibration/apmi_null_m00200_npar040.model": "4a6e92727b06faf588af32ec1c73274c9a72ba0bce7716446bc7781eadf9fe6d",
+        "calibration/calibration_report.json": "63e239f51380fede7dc2266b8547cb9fbffea99c087535cea2a53ca7490ca64c",
+        "calibration/calibration_summary.csv": "9b813e8feb15631ceb75e1902f36cd6d7503bf8f9c8bde4492d48efd517ec5a7",
+        "calibration/raw/m00200_npar040_fit.f64": "f5e21bf0bfc4e8120503f355e19f62c606a60696ca81c92be3bafa814ca91bc5",
+        "calibration/raw/m00200_npar040_fit.f64.meta": "0ca50d242b68d60472e0e58b70ed7a274b51589e3cdf432a505948d39ad5f366",
+        "calibration/raw/m00200_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00200_npar040_validation.f64": "479937b809b8e5737ff7ca91aef4473fa4ef4b8bda299ea2a281ad1764894198",
+        "calibration/raw/m00200_npar040_validation.f64.meta": "10c5b0548115ad5c685bd8fc4d3ce086e2553a5bde8270bd1c4436ea55260ec8",
+        "calibration/raw/m00200_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "446821ac1702a58a17ac4b33fd6cababfb7cb717c15108ff5795c74adedb9477",
+        "launch.json": "da722ccaaeeb30c57f8eb4f78f58d862b5fc38e51897d7ff0e98fefc7a60a2ae",
+        "request.json": "e5c2dbd808bd6a01867e99dcbd7b3acd5d69b3c98937500d3cf500d4db999e6c",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "f3a9c7ab5b995b39a31e5956424bf937c667f4c77912fbeaa3c75ad1cb554f04",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "0f1b4d01735c65529b93e86b8eca7521e55c3b0f412d238be10a376f55e46416"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00200\\fit_sorted.npy",
+        "sha256": "b574867e0a953569e15f548abb1d87ee8fb780c3e555123adc04974201695c3f",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.16752005150462956,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00200\\validation_sorted.npy",
+        "sha256": "db89a9ad62fa2f883291da26651affb5249f66bf457d516ba790bbb09e229915",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.2306562989700085,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:26.579241+00:00",
+    "m": 250,
+    "stage": "expanded",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.016068669404420532,
+        "fit_ge": 500093,
+        "fit_gt": 499884,
+        "fit_ties": 209,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.02249423890594837,
+        "fit_ge": 200047,
+        "fit_gt": 199963,
+        "fit_ties": 84,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.027915749869712236,
+        "fit_ge": 100008,
+        "fit_gt": 99993,
+        "fit_ties": 15,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.03729884807351702,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.04568048675389935,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.0525572336501714,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.05569997907893942,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.05986126085573229,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.06865298693252964,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.07478349572476972,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.08117994582094301,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.09588364783750869,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.10275313597167646,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.1213119012603272,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.12928899498121815,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.14881218258468376,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.03729884807351702,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.007183786953642111,
+      "scale": 0.009486908143073689,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.059324927953397805
+    },
+    "original_gpd_status": "accepted",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "c7da59883dc7ff7186e39f2635780ecaaec3d19dc85b070e7351510cd5578588",
+        "draws": 10000000,
+        "seed": 20261267,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "250",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261267",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "edc6ed31f1130494349354012c5430c48010501ccdf8f01d57998243ca5dd61a",
+        "draws": 10000000,
+        "seed": 1020261268,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "250",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261268",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00250/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "a2709b7663af1b9fcecca8ad5a90d287dbb899b112e53dd24c4dab4358206349",
+      "report_sha256": "89588d0fbeab62e7c2ef60559046349c9cd2f6ea3ad57987b025771b4f891ee9",
+      "artifact_sha256": {
+        "calibration/apmi_null_m00250_npar040.model": "101812a8729c44a4ba909a88bc87ddeebe9feab7461891653c9521effd4c2a7c",
+        "calibration/calibration_report.json": "89588d0fbeab62e7c2ef60559046349c9cd2f6ea3ad57987b025771b4f891ee9",
+        "calibration/calibration_summary.csv": "419b35c041513fb93de5bd9efca7d76546c9824250a1405f909b7825fbac9cee",
+        "calibration/raw/m00250_npar040_fit.f64": "c7da59883dc7ff7186e39f2635780ecaaec3d19dc85b070e7351510cd5578588",
+        "calibration/raw/m00250_npar040_fit.f64.meta": "7de2f84aa11e5d0e57bfe61830b8c0bf9dce4db8ef182a0062904bd78cc422bd",
+        "calibration/raw/m00250_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00250_npar040_validation.f64": "edc6ed31f1130494349354012c5430c48010501ccdf8f01d57998243ca5dd61a",
+        "calibration/raw/m00250_npar040_validation.f64.meta": "d9573535f05a75102d933aa8a5c6e12457cdca65bfe61327e07bb3e2646dff8d",
+        "calibration/raw/m00250_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "a9426b7bcf360cb9af646b755866afef77788f27e8f6a5a8e68842fbed69833f",
+        "launch.json": "294a1b84543b9953743a949e5ba0e9e8ebdb60e7b7d937db0e5d27bcc8ab8801",
+        "request.json": "9a7d7adea568edeefdc17d4dcf72adafd1e75f8448fa5e917928c244603aa8d4",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "faad395c2e29b64bdb9f1e4d2e57572198df27ff50838c8f53712a5c28b28933",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "167eab2b072150469ecbe9a4cdb77f33064e114f684e6ffa30e1b827e02c93f1"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00250\\fit_sorted.npy",
+        "sha256": "4a8f0c57d314638dba356894cc523af4d066fbf3db2a4c3159772f194dc51af0",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 3.200034134209773e-05,
+        "maximum": 0.14881218258468376,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00250\\validation_sorted.npy",
+        "sha256": "02a5e8f27c4f819c72372b874d151689fe13efad68aeeb5e21e6c0b9c106ee9d",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 3.200034134209773e-05,
+        "maximum": 0.1420534265539537,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:27.775768+00:00",
+    "m": 300,
+    "stage": "anchors",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.012969316226486782,
+        "fit_ge": 500141,
+        "fit_gt": 499783,
+        "fit_ties": 358,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.01872077204998135,
+        "fit_ge": 200017,
+        "fit_gt": 199979,
+        "fit_ties": 38,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.023384124384084437,
+        "fit_ge": 100003,
+        "fit_gt": 99985,
+        "fit_ties": 18,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.03126191501497111,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.03841823399034183,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.04452253212401658,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.04712344175846184,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.050619709765135745,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.0580314322991109,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.06367447267998472,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.06990765763604134,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.08268426568845477,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.088286362967672,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.10128874443945168,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.10886808250827773,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.1251899774294536,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.03126191501497111,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.023746872918292507,
+      "scale": 0.007968012363941509,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.05011980970933543
+    },
+    "original_gpd_status": "accepted",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "053d928bfa550c54b773ee8c153bd5593aa0323e2a54b9a2b902e66dc0faeea1",
+        "draws": 10000000,
+        "seed": 20261317,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "300",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261317",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "6b537e035224552248b45d246a78061ac7b6eee93cf0550083e612a1772dff85",
+        "draws": 10000000,
+        "seed": 1020261318,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "300",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261318",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00300/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "19051017c5d0a0197a7739d589d9ca3f437f324587e0428ee11069ea740b8506",
+      "report_sha256": "fcebf3c1589ca323167a791d2fbb206ba762a630788be0df3adf5e90f75171f7",
+      "artifact_sha256": {
+        "calibration/apmi_null_m00300_npar040.model": "accf8596401465b4956929767d77405e37336fde8e9094eac0e4c3a44d72591d",
+        "calibration/calibration_report.json": "fcebf3c1589ca323167a791d2fbb206ba762a630788be0df3adf5e90f75171f7",
+        "calibration/calibration_summary.csv": "485887bdc30696109297d2832b20a17fb8d64bbbf3041b29970a1ed1ae61148f",
+        "calibration/raw/m00300_npar040_fit.f64": "053d928bfa550c54b773ee8c153bd5593aa0323e2a54b9a2b902e66dc0faeea1",
+        "calibration/raw/m00300_npar040_fit.f64.meta": "2e928456536acde172f5ca51e0ee9260e4c7a12b6dd81530ec8eb37eb78e23b1",
+        "calibration/raw/m00300_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00300_npar040_validation.f64": "6b537e035224552248b45d246a78061ac7b6eee93cf0550083e612a1772dff85",
+        "calibration/raw/m00300_npar040_validation.f64.meta": "c0f52ca607c6374f19733db8470c23320c0aaebb190ea770271c16f0c8a41915",
+        "calibration/raw/m00300_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "39656b34f97bef9992730f18479ec8af1cb07c0ad90e95ce1404b31aa8689dc8",
+        "launch.json": "0fbdd417425e576e4a2f2ee0942b832c511e33b4af981586d1f839e938892858",
+        "request.json": "6fe50d552e27b97ad6fa3fa574071e23892ea3afb9202d3560bf3a8929323f02",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "71dc74cfd8d6a4e64a9df1a17d596313e830fa12ebda5a363663b94c9a253630",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "c949922a67d83ce5e6f787185f5bb029b75ae606334fe8149d160da7e62184a7"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00300\\fit_sorted.npy",
+        "sha256": "bba3084cf4945709d08583d696c4463de2f7c110b4a16208c20a428368b3c562",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.1251899774294536,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00300\\validation_sorted.npy",
+        "sha256": "2cb81ab7d1a4f18678d75c98fbafab75201683984444944689831a1828a98c3f",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.13468463650047902,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:27.062776+00:00",
+    "m": 400,
+    "stage": "expanded",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.009832266985779547,
+        "fit_ge": 515947,
+        "fit_gt": 485825,
+        "fit_ties": 30122,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.013944192921997,
+        "fit_ge": 200003,
+        "fit_gt": 199924,
+        "fit_ties": 79,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.01735449008824652,
+        "fit_ge": 100000,
+        "fit_gt": 99995,
+        "fit_ties": 5,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.02319874231295671,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.028853041849965066,
+        "fit_ge": 20000,
+        "fit_gt": 19998,
+        "fit_ties": 2,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.03377793999550871,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.035801041776506004,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.03838348546825898,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.04449709139930569,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.049010535376562636,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.053078178833599665,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.06307306582980132,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.06756326283615977,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.07730869107874483,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.08357695694070344,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.09140882859891164,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.02319874231295671,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.015844271209142585,
+      "scale": 0.006361988927028031,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.0381182605222706
+    },
+    "original_gpd_status": "accepted",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "1e8c440ff0f929c7bd9e4f80e7b0904bce5baac5f52e1183d7bf1b7761ea6a23",
+        "draws": 10000000,
+        "seed": 20261417,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "400",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261417",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "d4fe2e8c2b9c4fbea68b5d76add318c4eb3e61c1a5a1c06d649b897cdffecb7a",
+        "draws": 10000000,
+        "seed": 1020261418,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "400",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261418",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00400/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "60224fe3fbd3380b5d882c16c206cb8c2b200a7a5975086ff8a3639c2f0d2e9e",
+      "report_sha256": "5a93db359b36b59636a078511eec35ae7bcd84405449c256c5d079500d121b8b",
+      "artifact_sha256": {
+        "calibration/apmi_null_m00400_npar040.model": "d09244000a514121bddf10a68a1303925cc947ef34a260f7b81934785e32433c",
+        "calibration/calibration_report.json": "5a93db359b36b59636a078511eec35ae7bcd84405449c256c5d079500d121b8b",
+        "calibration/calibration_summary.csv": "272e7581b16d091083f02253abe130ebed9a1ee7e3ea135bbcb97820af52fafb",
+        "calibration/raw/m00400_npar040_fit.f64": "1e8c440ff0f929c7bd9e4f80e7b0904bce5baac5f52e1183d7bf1b7761ea6a23",
+        "calibration/raw/m00400_npar040_fit.f64.meta": "3e4d56d88142d78366463185606cd4aa6c1def7e13dd7de601892931d38b3f3e",
+        "calibration/raw/m00400_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00400_npar040_validation.f64": "d4fe2e8c2b9c4fbea68b5d76add318c4eb3e61c1a5a1c06d649b897cdffecb7a",
+        "calibration/raw/m00400_npar040_validation.f64.meta": "7b4ce10b1934a429eb9659230dffa861fb20e3c845a05ed5dee99aad975650ee",
+        "calibration/raw/m00400_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "b6ebced94728e0186552429dc3e28fb0927886a43d26b19ac5b6bf4d1b22d4f1",
+        "launch.json": "7f9f293e39d0c7926fc32f163679542250e4cc09eb477f714225dc2411c1ad39",
+        "request.json": "d8d097c693607c294a6211c68c6485e67a2d5ae73ef09b0ae2200a989215c12a",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "58ad2e568089bc76aad774118b29f60d196512c9c6eaea39411d247aa96b2c5c",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "878fb76a89843d3dc2206dd5a0195e0e5d3ffdb738961f85ef54ac88118b7e39"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00400\\fit_sorted.npy",
+        "sha256": "95a85975ca238944c12f5824d129ffa2e46c984c0f89a04c229eae72486359b9",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.09140882859891164,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00400\\validation_sorted.npy",
+        "sha256": "40003338c0c78da63de28dc2bf7643ae382895ec7d99c378836c4ce72db9e013",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.0935361749112511,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:27.578790+00:00",
+    "m": 500,
+    "stage": "expanded",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.008026585156239996,
+        "fit_ge": 500049,
+        "fit_gt": 499690,
+        "fit_ties": 359,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.011137606626902219,
+        "fit_ge": 200027,
+        "fit_gt": 199991,
+        "fit_ties": 36,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.014016211869021689,
+        "fit_ge": 100011,
+        "fit_gt": 99987,
+        "fit_ties": 24,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.01869440002601319,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.023241293343606806,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.02745225779467475,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.029019041821467084,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.031216619621996955,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.036160319805254026,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.0400750209332541,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.043659446855112805,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.052140074261268765,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.05544166822568464,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.06275310817041557,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.06484649316043356,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.08690427509253418,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.01869440002601319,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.04368234703440667,
+      "scale": 0.0050244671169795575,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.03086550210642483
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "6caf78a610fe5d4e3f3f3719ad33154cbcd1b1f6fbf307098d9648da59dca1bd",
+        "draws": 10000000,
+        "seed": 20261517,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "500",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261517",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "6321fa089fd6a6b7448c98f166a4b075aa6038e579f3a97b63af6cecc4f09136",
+        "draws": 10000000,
+        "seed": 1020261518,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "500",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261518",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00500/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "fbadf2d20967010b8c8fbe5e06e717e120e4b0f5514625d46ae5a0e86affe7db",
+      "report_sha256": "1a93b32a0604a8d58f434a200740de6a4a44f46aafd1ba2faf8e2228bbc492ac",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "1a93b32a0604a8d58f434a200740de6a4a44f46aafd1ba2faf8e2228bbc492ac",
+        "calibration/calibration_summary.csv": "c7f8ceac5dd3164dfd50081f22002fac71694246cdd85230f0de388f994e64f5",
+        "calibration/raw/m00500_npar040_fit.f64": "6caf78a610fe5d4e3f3f3719ad33154cbcd1b1f6fbf307098d9648da59dca1bd",
+        "calibration/raw/m00500_npar040_fit.f64.meta": "c925a2c9140cfcdd5a865a3e05c4d2d17392ba40aa4458081050d4388ab8898a",
+        "calibration/raw/m00500_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00500_npar040_validation.f64": "6321fa089fd6a6b7448c98f166a4b075aa6038e579f3a97b63af6cecc4f09136",
+        "calibration/raw/m00500_npar040_validation.f64.meta": "fafe11b1067e0f31eb443f198674a224b52c1cc525a6d2e275d6be877a8d3742",
+        "calibration/raw/m00500_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "d24f1f0ba07d59862646815e32f4c420363f2d3b52b7f4b6316da01636a9804f",
+        "launch.json": "59f14883ec5e06d1bec87df79e6613494b96f0cd39f805900d924aff2911ccdf",
+        "request.json": "756f2d9a8055f3352d831e94e8dffaeb2b315dc069e4c860c06a58a27bbb87c6",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "a7fe1dff73d01cbf7522f8fde5082350192962d914560372ac55234eb0d8d741",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "4b954f2f5b5100a49d41c80724ee4f5a362cea6131e6920266a9c4282184e590"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00500\\fit_sorted.npy",
+        "sha256": "2c28747e7adfe893cdc8767d2af9049de28fce6dcfa65f705aea265d64064efc",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.08690427509253418,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00500\\validation_sorted.npy",
+        "sha256": "915af4c069d9b82ad833a5b781958f0780b464bef19331f1ae95cb50c15d3c8a",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.08565584379397251,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:27.728134+00:00",
+    "m": 516,
+    "stage": "dream",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.007711689302970726,
+        "fit_ge": 510464,
+        "fit_gt": 485033,
+        "fit_ties": 25431,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.01084110345659628,
+        "fit_ge": 200014,
+        "fit_gt": 199983,
+        "fit_ties": 31,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.013488404518719577,
+        "fit_ge": 100000,
+        "fit_gt": 99998,
+        "fit_ties": 2,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.018072231497106017,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.022397250852959516,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.026561039033671463,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.028079680775505267,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.030125283558815497,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.034783215840169746,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.03851318898160283,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.04215850518305331,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.05059903032937374,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.053846473243881476,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.061911031689875884,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.06369939891705023,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.07076023731968739,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.018072231497106017,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.048891690074829894,
+      "scale": 0.00479880615913472,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.02976787264043495
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "a14db0b2cd192e307c1fbc1e7d28700c1d0c2eeb5c9104ea74638baa16a7afc4",
+        "draws": 10000000,
+        "seed": 20261533,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "516",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261533",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "66ce4a707fa067682184ff935deff8221ad24d7b4919e9660bb632a43a7d3526",
+        "draws": 10000000,
+        "seed": 1020261534,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "516",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261534",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00516/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "bb586972e4a187a1ddf5b72a69248a1b7df5ef3af2129cd987634d61f0d4bc4d",
+      "report_sha256": "344255d1c98b0c7af841afccb4f696b1da5d82e6cca21f817de088b1ab3afcfe",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "344255d1c98b0c7af841afccb4f696b1da5d82e6cca21f817de088b1ab3afcfe",
+        "calibration/calibration_summary.csv": "39d2bc879139d5b4ce5ce9e6023bbd9e9c6b1a183827a422bfe6c42e47799719",
+        "calibration/raw/m00516_npar040_fit.f64": "a14db0b2cd192e307c1fbc1e7d28700c1d0c2eeb5c9104ea74638baa16a7afc4",
+        "calibration/raw/m00516_npar040_fit.f64.meta": "794bfafaf0cf7cf0d85edf1e28af317a945a060f8607847f3cc5aba611274d97",
+        "calibration/raw/m00516_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00516_npar040_validation.f64": "66ce4a707fa067682184ff935deff8221ad24d7b4919e9660bb632a43a7d3526",
+        "calibration/raw/m00516_npar040_validation.f64.meta": "fd91b3a5e98fe4217a1e62ae06d0f96824badedd5ea40efc41fc534ce4c648ea",
+        "calibration/raw/m00516_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "2b7b53b6e4a6e9d7b5aceb4c0d4d6d766559252b88601b1c37e03103dabf5ebd",
+        "launch.json": "dacf5036bad39852e38f582f650ffb8a7bb04cc82cd0031ccc8ba41023e7e3be",
+        "request.json": "3eabdba1ead15b8d50e9ec7000fbb4e833f750ddabf22c9f788106effc48f64e",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "3504b96f406a44e92caced2c62c6d73109a9f4b3652f713550a1de3a5b98b84b",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "ad48246c5382af41a2fcd84d05c4b115e975e2ed195501afde52f837722c60d7"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00516\\fit_sorted.npy",
+        "sha256": "b7bf7c967021db77e02d285de85243e11c24ae52a954cdab112ab9413cd45ab1",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.07076023731968739,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00516\\validation_sorted.npy",
+        "sha256": "9cfe905102273110fd4f92d9e3a78fbbc3855adf00cc83b5b07ae33f2d4aa731",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.07495074149539693,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:34.065881+00:00",
+    "m": 600,
+    "stage": "expanded",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.006535538167625532,
+        "fit_ge": 500000,
+        "fit_gt": 499746,
+        "fit_ties": 254,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.009283298991555,
+        "fit_ge": 200010,
+        "fit_gt": 199996,
+        "fit_ties": 14,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.011739630309081761,
+        "fit_ge": 100005,
+        "fit_gt": 99991,
+        "fit_ties": 14,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.015617117080918952,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.019335160799077933,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.022993939246355843,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.02436390626923135,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.026105791283128177,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.03029366487369245,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.03350914685818118,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.03648174086591016,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.04344192465346719,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.04667123816391516,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.05551708831651325,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.058554157675125396,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.06942255046992418,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.015617117080918952,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.062317112323166446,
+      "scale": 0.004100196713361199,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.025769112976430107
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "136939c98aec1cf8b65584fb30a1ae1067062c050499487fa91c3e435ad397ca",
+        "draws": 10000000,
+        "seed": 20261617,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "600",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261617",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "99babe08c45b2ad08fef978a2805e9c027a1e93d5cc0730114e1df3c6d992108",
+        "draws": 10000000,
+        "seed": 1020261618,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "600",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261618",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00600/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "e7e98365cf950ea23469f23115e5b85478cde327d6c6f75caa4f3f20c6ba459f",
+      "report_sha256": "26b6bb1efaffa7757af9330f866ae9af8b6bfebd148ec0e25ca513467c167cc3",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "26b6bb1efaffa7757af9330f866ae9af8b6bfebd148ec0e25ca513467c167cc3",
+        "calibration/calibration_summary.csv": "4ef0034168ea0f9d01a5dae5fe09f3389cf1c8e1461ed1b4256c109a853f21f1",
+        "calibration/raw/m00600_npar040_fit.f64": "136939c98aec1cf8b65584fb30a1ae1067062c050499487fa91c3e435ad397ca",
+        "calibration/raw/m00600_npar040_fit.f64.meta": "318e457229872b80b9670ccd4ad71f4b605782a7aa77a2d947d9974157319946",
+        "calibration/raw/m00600_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00600_npar040_validation.f64": "99babe08c45b2ad08fef978a2805e9c027a1e93d5cc0730114e1df3c6d992108",
+        "calibration/raw/m00600_npar040_validation.f64.meta": "9a88f45ccc384d9e2157009d71b12609e1917b24656507d278a8b226f8a324e1",
+        "calibration/raw/m00600_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "eee24951352e343ac83b928943df498785e648e2477abaa7f1bac725e569e4f7",
+        "launch.json": "a3112dc7279e9ae4fc2910ed2f0649a04e1a6234c2c9705fedf9783cb41cea37",
+        "request.json": "4d4b058fde36bc17b5aa47ce397fdacc23d87a5f884e1474e4bd0bd09f26816e",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "74645407eadb4cf69ed0ee47b4bd569a92988d5702219269f011003f7f7fccfa",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "8f8ca2f49a41b7114b1ef22220a6ad03577c9873c60b5c4d093624d6456d6fb8"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00600\\fit_sorted.npy",
+        "sha256": "4635918aed50ddca4e10c308f4db1e719775aab5c372194d35a7d60625b9a427",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.06942255046992418,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00600\\validation_sorted.npy",
+        "sha256": "dc141545cc3c604d8a527adb7a557f0e4e282928b7df25677c54b2218794e826",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.06462980118630046,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:33.968500+00:00",
+    "m": 644,
+    "stage": "dream",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.00626284424740664,
+        "fit_ge": 503583,
+        "fit_gt": 482153,
+        "fit_ties": 21430,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.00863513605722055,
+        "fit_ge": 200005,
+        "fit_gt": 199995,
+        "fit_ties": 10,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.010925194150892992,
+        "fit_ge": 100000,
+        "fit_gt": 99994,
+        "fit_ties": 6,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.014530237942708801,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.01800829670454096,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.021485281918263155,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.022712097576599533,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.024343510442720095,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.02845091411556222,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.03146338744995969,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.03464211452286836,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.04115306696719223,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.0442729466757088,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.05229420412854857,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.05355008700079367,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.06697571316039674,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.014530237942708801,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.07059468692403839,
+      "scale": 0.0038263264275010147,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.024097178081901323
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "5a1f789773b71057874433127b66dcd4064fc42b40941fb08bfb3c1bd66c95bd",
+        "draws": 10000000,
+        "seed": 20261661,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "644",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261661",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "2b7ce082fa4eb6ecfea1f432272fe53945de971dbf20f924b03d2d0ddfde995b",
+        "draws": 10000000,
+        "seed": 1020261662,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "644",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261662",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00644/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "6ed6498f0fed95d9c011d8e833a2d3a63d51f7e667ef47477b99b64013fe3b40",
+      "report_sha256": "d60d8adcee8b68b99f5c44334156b8f1f7290a1dd7e5f71db6e9440631668a35",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "d60d8adcee8b68b99f5c44334156b8f1f7290a1dd7e5f71db6e9440631668a35",
+        "calibration/calibration_summary.csv": "2329a02850a0fecb5409daef23e3eb8ef70ae4a854cafef9dda18c6920b52c62",
+        "calibration/raw/m00644_npar040_fit.f64": "5a1f789773b71057874433127b66dcd4064fc42b40941fb08bfb3c1bd66c95bd",
+        "calibration/raw/m00644_npar040_fit.f64.meta": "ad6181319db26d4b1a2550c8cee496204a0dda1f7248084d6ee45a11f7dc0ece",
+        "calibration/raw/m00644_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00644_npar040_validation.f64": "2b7ce082fa4eb6ecfea1f432272fe53945de971dbf20f924b03d2d0ddfde995b",
+        "calibration/raw/m00644_npar040_validation.f64.meta": "a66288703a2fc2452708c6079844c8b8a2d4ee8ce4fe215b3da5c42039953e21",
+        "calibration/raw/m00644_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "95d34e80bd1ca5340e563d64f24e89275e64b57cbc805e31d25f971519484058",
+        "launch.json": "3978d7cff67d000f59c47347f47bae1c9a6406d267243c92725b1a9fb022a724",
+        "request.json": "849e30466912311b729e9b37d0e40e99568cda09c48d727674c2ee384681b9f3",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "b23733c3ecc0ae412cad96faa59747881bef213a1edc45d0fdbe5dd0599d174e",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "8f130bf5b2237337ae69bc5d7c0e345827e249571de9bea979d5b05e437a5eb1"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00644\\fit_sorted.npy",
+        "sha256": "e6836fab59f90e25d696dd75063a86eacd2987b43b2b1b81c72d71089d743da5",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.06697571316039674,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00644\\validation_sorted.npy",
+        "sha256": "1625092125ee2afd07ee08f2c52fcb921387ef491872b34cb4687f9b5d02810f",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.06380999412079547,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:35.517811+00:00",
+    "m": 700,
+    "stage": "expanded",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.005721032833179152,
+        "fit_ge": 500044,
+        "fit_gt": 499858,
+        "fit_ties": 186,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.007928969789090523,
+        "fit_ge": 200004,
+        "fit_gt": 199988,
+        "fit_ties": 16,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.010032705722510471,
+        "fit_ge": 100007,
+        "fit_gt": 99999,
+        "fit_ties": 8,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.013381029985569448,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.016554661705421303,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.019755869633482526,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.020916593691242547,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.022447266416394385,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.026187259557257647,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.02886689272232612,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.031488892631208465,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.03772676184362833,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.04052822496807451,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.04666641167710761,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.04897506399411178,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.05528869745083487,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.013381029985569448,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.06955797109759898,
+      "scale": 0.0035095452465699803,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.022145175772177544
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "59e388a8d3b61925241d0d81a513a7c219d1d47d67d76d6741c5d9bb0dc27b02",
+        "draws": 10000000,
+        "seed": 20261717,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "700",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261717",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "fb619bb658aa49b03fbc68f633bc0aaeb3550f4f2642ee98405c1a71e3694c1a",
+        "draws": 10000000,
+        "seed": 1020261718,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "700",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261718",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00700/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "665440e6e6b54a27cfb34485feaaf735b4a81b255fb27acdea1221fb9d97ec24",
+      "report_sha256": "223787920ef81226026a35527a6ddb7a3dca38f77d07d1173843281437a45adc",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "223787920ef81226026a35527a6ddb7a3dca38f77d07d1173843281437a45adc",
+        "calibration/calibration_summary.csv": "5313715c37081f9131901f6695f95e33483002136362f20a600e57ead210096c",
+        "calibration/raw/m00700_npar040_fit.f64": "59e388a8d3b61925241d0d81a513a7c219d1d47d67d76d6741c5d9bb0dc27b02",
+        "calibration/raw/m00700_npar040_fit.f64.meta": "10530503539acb5c1cdb4409055dfcb1bb1682d225c4fbc3b8ee01b4ad1ded96",
+        "calibration/raw/m00700_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00700_npar040_validation.f64": "fb619bb658aa49b03fbc68f633bc0aaeb3550f4f2642ee98405c1a71e3694c1a",
+        "calibration/raw/m00700_npar040_validation.f64.meta": "4f4f542929bf580b7dc67e6b146ec31e6be328e950588bfb9e4d0b844de81825",
+        "calibration/raw/m00700_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "8c53b80057ee298f6d7a204d8d5c94a3b4d66ca015ce8584c160f833a2cbbc1b",
+        "launch.json": "7ecb832d974a64ca43eb675d26999a7df1f33526a5a9bb4df0324c76790041e2",
+        "request.json": "c9f6051f8655dcc5f0c5698ac8b284839f656b62ee43dd1ca6d8fab9e2b30dc5",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "5d0dfa6a386accf27d42419362bf89426375ab54ff155488183aa236f44b5f07",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "9a57dd69fc67193d062898c1e75a0089a8fbc9c60be1150683d50a0bb11c403e"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00700\\fit_sorted.npy",
+        "sha256": "6a35d2209f4d2776b5bc423b3dbffbb876184091dc98f204cbadb35292140cc2",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.05528869745083487,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00700\\validation_sorted.npy",
+        "sha256": "cc90600dacaa84fa02d60d4653bd88e5f63ccc1c13ea97463103f414275f97dd",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.05512646539468591,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:36.354879+00:00",
+    "m": 725,
+    "stage": "dream",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.0054970117668524665,
+        "fit_ge": 500011,
+        "fit_gt": 499970,
+        "fit_ties": 41,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.0076656935401064885,
+        "fit_ge": 200000,
+        "fit_gt": 199997,
+        "fit_ties": 3,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.009674710140431309,
+        "fit_ge": 100000,
+        "fit_gt": 99999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.012916268803197184,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.015993992536279755,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.01915391972425695,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.02027665752847163,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.021720224218272577,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.02532697591888944,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.02812412964142119,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.03073915304871999,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.03691278107517526,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.03985132362294852,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.0454549390056167,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.047529622327374454,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.05158631591310847,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.012916268803197184,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.07560614535242784,
+      "scale": 0.0033940854643595662,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.02145296454596564
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "d35069d07c1fb6548c83b85717db0b71115e2ede88ecb7e2493f9de48da6c7c0",
+        "draws": 10000000,
+        "seed": 20261742,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "725",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261742",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "33481a1ccbfbee1f1c74ecc4ffee56016bd1947f1e6061fb4d841fba7a46e07f",
+        "draws": 10000000,
+        "seed": 1020261743,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "725",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261743",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00725/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "70a90970f7252e824251cefb912d6f569a2ed7f5662794b7a31311c6e5ef13ea",
+      "report_sha256": "59b5abb3bd67c2075a2ae0dd8dd3af03ea00d8569ab625a75c4e454d22587996",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "59b5abb3bd67c2075a2ae0dd8dd3af03ea00d8569ab625a75c4e454d22587996",
+        "calibration/calibration_summary.csv": "e5c0bf8335a4abda088e3bdc01e77d1351f54bf1b49c051a066ae9875885d06e",
+        "calibration/raw/m00725_npar040_fit.f64": "d35069d07c1fb6548c83b85717db0b71115e2ede88ecb7e2493f9de48da6c7c0",
+        "calibration/raw/m00725_npar040_fit.f64.meta": "3fa87440b494e6750113090a2e1b14713abcb5f48ea2b94c58b0f12badffcdf6",
+        "calibration/raw/m00725_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00725_npar040_validation.f64": "33481a1ccbfbee1f1c74ecc4ffee56016bd1947f1e6061fb4d841fba7a46e07f",
+        "calibration/raw/m00725_npar040_validation.f64.meta": "ea69ca82cd236de618c686d94a59b21395d2f10caa41b1a673fbdec0a8f53eb6",
+        "calibration/raw/m00725_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "3d1f4be8738e8a11ec3db411dad8fe198358a9773d75a6c0a9f1ddb8a51ea049",
+        "launch.json": "712bba108a75985ed2367c0888baa7a9b49885ad4129e63c475de1da50f1c91c",
+        "request.json": "061bd9bafa071caa28f48b5383716724376cba19e92c2fb8d499cfafdbf5be6b",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "679ed9dfffdf9c3fffecdbd2758a22930dcd71ed34e6a386aa2eeb157243da8e",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "dc41695b0e371eeeb6b5c21703befb59b0caa1f46097ca44865239355f2e48b2"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00725\\fit_sorted.npy",
+        "sha256": "0c8e8b27a372017d8abe12bd58a1ade180af5d9f5885d385a342f1f5de6fc933",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 9.486300953653881e-07,
+        "maximum": 0.05158631591310847,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00725\\validation_sorted.npy",
+        "sha256": "0dd4bbeb22d074e2e7177761459599d021557117e088ff6db83fc7eb7a7cff3e",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 9.486300953653881e-07,
+        "maximum": 0.05683600140551803,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:36.350209+00:00",
+    "m": 800,
+    "stage": "expanded",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.005008366846356971,
+        "fit_ge": 508026,
+        "fit_gt": 487864,
+        "fit_ties": 20162,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.006955283708454552,
+        "fit_ge": 200006,
+        "fit_gt": 199988,
+        "fit_ties": 18,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.00876444961064049,
+        "fit_ge": 100005,
+        "fit_gt": 99999,
+        "fit_ties": 6,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.011691401587290429,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.014513319154024984,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.01738903264011693,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.018444680800004498,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.019782581109655695,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.023160173613598012,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.025586956338896627,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.027995901499413556,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.03354464176868355,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.03529520859111468,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.04126446292666497,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.04427390216502758,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.048717358021617585,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.011691401587290429,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.08171265677745986,
+      "scale": 0.0030852836342403836,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.01950781456914156
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "e9a3973b4cde942bf57405a0c13ead40df3df4e2e3fdc4af5a1bce3a8b4f4305",
+        "draws": 10000000,
+        "seed": 20261817,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "800",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261817",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "35806f4323037d35f95252f6ec65c456f5ee6e004d269e8e0ea14b092573999d",
+        "draws": 10000000,
+        "seed": 1020261818,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "800",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261818",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00800/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "b62e8d887e560a588417afc9e1506406f4b67f0b97e224e1510561ec14ec6c07",
+      "report_sha256": "2941ebc7647d73c1e58d2771541c6609e566097f6e733a3c9e3e1c58068f786c",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "2941ebc7647d73c1e58d2771541c6609e566097f6e733a3c9e3e1c58068f786c",
+        "calibration/calibration_summary.csv": "fab2a27abf9859f13db0774157a171eef1c0c6cb94c5941142a3726958d60ec8",
+        "calibration/raw/m00800_npar040_fit.f64": "e9a3973b4cde942bf57405a0c13ead40df3df4e2e3fdc4af5a1bce3a8b4f4305",
+        "calibration/raw/m00800_npar040_fit.f64.meta": "330f1bf54dc7cc556df16560ca9d109731e667daf32725dfcecf1bae957b1a89",
+        "calibration/raw/m00800_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00800_npar040_validation.f64": "35806f4323037d35f95252f6ec65c456f5ee6e004d269e8e0ea14b092573999d",
+        "calibration/raw/m00800_npar040_validation.f64.meta": "582a39631b617362b8064933ceb334b83cc8725b219c61a53d85938ca759363a",
+        "calibration/raw/m00800_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "528005fb32b662f3edd3da2fb7a79539339358a221a68b18f290f6da52e20755",
+        "launch.json": "c98c4585578fb5053000553298842fd821d17b06301c0409c1da5532db771ebc",
+        "request.json": "7d2f851e26dc05800a824dbec9db85caada04331fe0a7782505946ed42616196",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "e27910985c7049c67e7d8e3b2d44c91932cf30b0db5fc5ccdcb664ab3619cb69",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "dc798c3bc7ec7cd5e689cf3ea7a714972c3b5f846c4b1c23e8aabda8122bc2be"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00800\\fit_sorted.npy",
+        "sha256": "0745983dd3694aab24a16b002994f57042e486ed20e754adf68d10dfebc90263",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.048717358021617585,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00800\\validation_sorted.npy",
+        "sha256": "dd7729bf3c539f1912a81bc01c9e0445f62d31434c35c6cbe162be6267f5df89",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.04672281792071775,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:36.409427+00:00",
+    "m": 900,
+    "stage": "expanded",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.004363285223173641,
+        "fit_ge": 500038,
+        "fit_gt": 499993,
+        "fit_ties": 45,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.006185603962622466,
+        "fit_ge": 201737,
+        "fit_gt": 197805,
+        "fit_ties": 3932,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.007784527067841829,
+        "fit_ge": 100000,
+        "fit_gt": 99996,
+        "fit_ties": 4,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.010396941057653208,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.01286181970869027,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.015466395501603003,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.01640266857311179,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.01764979492604457,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.020806597186617815,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.02312982095070648,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.025319170919518186,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.030426368140036963,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.03290570170105056,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.037677294500500835,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.04039021177460089,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.04670144973477797,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.010396941057653208,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.10601987009345784,
+      "scale": 0.0026827814712139433,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.01739356872996759
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "0be37dc9323c69ed7aed0de4f381fa67e68b9af111591575935ab7266347da01",
+        "draws": 10000000,
+        "seed": 20261917,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "900",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20261917",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "d131d74973d058d50474e11b38064b48568a9bb4d8dd2548d8f31c3df23d0ee6",
+        "draws": 10000000,
+        "seed": 1020261918,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "900",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020261918",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m00900/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "e0dda1820da2f00a4c5a751e849395bee726a13a055584047f4ffb2163bf3802",
+      "report_sha256": "acbb92b02aba10c51fc3c446483ffc4b05fad70b6715469db02bc5c2b8a30e96",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "acbb92b02aba10c51fc3c446483ffc4b05fad70b6715469db02bc5c2b8a30e96",
+        "calibration/calibration_summary.csv": "dd9f5004c9292d150b15af569f3a2ca20468469e98c03518a29df4a49a28da57",
+        "calibration/raw/m00900_npar040_fit.f64": "0be37dc9323c69ed7aed0de4f381fa67e68b9af111591575935ab7266347da01",
+        "calibration/raw/m00900_npar040_fit.f64.meta": "e0568f35ff000cdab8e0a88506aefc1356652b7bb4b220202e5582124b2d3ce8",
+        "calibration/raw/m00900_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m00900_npar040_validation.f64": "d131d74973d058d50474e11b38064b48568a9bb4d8dd2548d8f31c3df23d0ee6",
+        "calibration/raw/m00900_npar040_validation.f64.meta": "53a98d2c25bdc318cf3e39f695d47fe34c0135ab81f3616492d619044d3e0653",
+        "calibration/raw/m00900_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "71809d3391a9e5f7c684aaf8f0ad8d8b0da1918ee94b6fcf913e01fc6286d357",
+        "launch.json": "4d30d1352ab71374475c98615714063463c917603db43f0774aa62d17235014e",
+        "request.json": "6f517015519d9382b6078056dc910f56c1173b26d79c879c0d5779ea83e77e50",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "d7c3080a223f5e3fb51b210436f6f4f2a2c03745b56f9e3859b9e30a7f35135f",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "74d589f87be7574d9624a1b9f2af306c4a3d6a8ea03d14b110f3d140122940b4"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00900\\fit_sorted.npy",
+        "sha256": "9f58753b8f7001583b213090267c7d15e194db832cc9815d5d10b3a3b6102a76",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.04670144973477797,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m00900\\validation_sorted.npy",
+        "sha256": "f987463c070a9fd5a721953b1c8320d67a1b798a2d85d4eb88e63485720a1125",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.05034554714648021,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  },
+  {
+    "format": "sjaracne-apmi-smooth-feasibility-extraction-v1",
+    "created_utc": "2026-10-16T01:27:36.416918+00:00",
+    "m": 1000,
+    "stage": "anchors",
+    "npar": 40,
+    "probabilities": [
+      0.05,
+      0.02,
+      0.01,
+      0.005,
+      0.002,
+      0.001,
+      0.00075,
+      0.0005,
+      0.0002,
+      0.0001,
+      5e-05,
+      1e-05,
+      5e-06,
+      1e-06,
+      5e-07,
+      1e-07
+    ],
+    "quantiles": [
+      {
+        "nominal_p": 0.05,
+        "cutoff": 0.003967721867249807,
+        "fit_ge": 500032,
+        "fit_gt": 499982,
+        "fit_ties": 50,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.02,
+        "cutoff": 0.005550217704440641,
+        "fit_ge": 200003,
+        "fit_gt": 199999,
+        "fit_ties": 4,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.01,
+        "cutoff": 0.0070142253616234385,
+        "fit_ge": 100000,
+        "fit_gt": 99999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.005,
+        "cutoff": 0.009354705694463838,
+        "fit_ge": 50000,
+        "fit_gt": 49999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.002,
+        "cutoff": 0.011592560790210094,
+        "fit_ge": 20000,
+        "fit_gt": 19999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.001,
+        "cutoff": 0.013940641735511683,
+        "fit_ge": 10000,
+        "fit_gt": 9999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.00075,
+        "cutoff": 0.014758448311991579,
+        "fit_ge": 7500,
+        "fit_gt": 7499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0005,
+        "cutoff": 0.015868488437730477,
+        "fit_ge": 5000,
+        "fit_gt": 4999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0002,
+        "cutoff": 0.018716825837428175,
+        "fit_ge": 2000,
+        "fit_gt": 1999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 0.0001,
+        "cutoff": 0.02075700993275209,
+        "fit_ge": 1000,
+        "fit_gt": 999,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-05,
+        "cutoff": 0.022729129125359293,
+        "fit_ge": 500,
+        "fit_gt": 499,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-05,
+        "cutoff": 0.027447016499243304,
+        "fit_ge": 100,
+        "fit_gt": 99,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-06,
+        "cutoff": 0.030133876486481803,
+        "fit_ge": 50,
+        "fit_gt": 49,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-06,
+        "cutoff": 0.03290365586904187,
+        "fit_ge": 10,
+        "fit_gt": 9,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 5e-07,
+        "cutoff": 0.03355336714172896,
+        "fit_ge": 5,
+        "fit_gt": 4,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      },
+      {
+        "nominal_p": 1e-07,
+        "cutoff": 0.0396969462246215,
+        "fit_ge": 1,
+        "fit_gt": 0,
+        "fit_ties": 1,
+        "fit_draws": 10000000,
+        "method": "fit-only empirical higher quantile"
+      }
+    ],
+    "primary_fit": {
+      "threshold_quantile": 0.995,
+      "threshold": 0.009354705694463838,
+      "tail_count": 49999,
+      "tail_probability": 0.00499999950000005,
+      "shape": 0.09894069523345644,
+      "scale": 0.0024388158686077864,
+      "endpoint": null,
+      "cutoff_at_stability_probability": 0.01566142952041633
+    },
+    "original_gpd_status": "rejected",
+    "original_validation_point_confidence": 0.999,
+    "raw_provenance": {
+      "fit": {
+        "sha256": "99c3a2db20cec7a5f693fcf9baf1988880a5042f0fa9434fddd2600600cb253a",
+        "draws": 10000000,
+        "seed": 20262017,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "1000",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "20262017",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      },
+      "validation": {
+        "sha256": "e2d51bd1ca5d9bcc1f55130c5ab9b896e83f23d686c6585f2ff3ac5ca988c7ee",
+        "draws": 10000000,
+        "seed": 1020262018,
+        "bytes": 80000000,
+        "metadata": {
+          "format": "sjaracne-apmi-null-binary-v1",
+          "kernel_schema": "sjaracne-apmi-v1",
+          "estimator": "sjaracne-adaptive-partitioning",
+          "rng": "mt19937-rejection-fisher-yates-v1",
+          "m": "1000",
+          "draws": "10000000",
+          "npar_limit": "40",
+          "seed": "1020262018",
+          "dtype": "float64",
+          "byte_order": "little",
+          "record_bytes": "8",
+          "draw_index": "implicit-zero-based"
+        }
+      }
+    },
+    "source": {
+      "run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_10m_20261015",
+      "attempt": "jobs/m01000/attempt_0001",
+      "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+      "result_sha256": "16d7a6b228b49d75ad9b91221ef7557ba0e808f63ff87300e271544727968a07",
+      "report_sha256": "a63ee58cb539e7aff7ef1ce427c545bf39065e54c369dcca53aa1029bd147960",
+      "artifact_sha256": {
+        "calibration/calibration_report.json": "a63ee58cb539e7aff7ef1ce427c545bf39065e54c369dcca53aa1029bd147960",
+        "calibration/calibration_summary.csv": "cb7ca724561b49990d9bcdf6fdbba20254776f939a89a0f0c7d727b10805dedb",
+        "calibration/raw/m01000_npar040_fit.f64": "99c3a2db20cec7a5f693fcf9baf1988880a5042f0fa9434fddd2600600cb253a",
+        "calibration/raw/m01000_npar040_fit.f64.meta": "1e5c9c57d955624bf1fc17cdf02e769e64394ed2cb0d3d66e69ed05d28bb0511",
+        "calibration/raw/m01000_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "calibration/raw/m01000_npar040_validation.f64": "e2d51bd1ca5d9bcc1f55130c5ab9b896e83f23d686c6585f2ff3ac5ca988c7ee",
+        "calibration/raw/m01000_npar040_validation.f64.meta": "707c0a41558729d3d8b764f4093b174bae1296fff41b052192c4979d9b46df4b",
+        "calibration/raw/m01000_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+        "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fit_time.txt": "3be23a8797e490e232375fcf001e935cb63650c949d784c75cbbaee208a9acc0",
+        "launch.json": "8912f8bc0a5b8ff6d95e1919fc51ff0bad6a0435f322da34bb9e48597ef8cc0c",
+        "request.json": "2d6a8390ef7c78bf599cd556db430684686f5df3f22eb1546cc4fbd0263b7e5f",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "e3843aa28861e63d6e9f626730b10645828c4f11afeec2fc5f234075c3f0da2f",
+        "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "validation_time.txt": "d53e787a0122da543a02fde33d33842891b34bb33deeeadefe7e9a76e9650486"
+      },
+      "verification_helper_sha256": "b740a0213e2db098d03297a4f8d7219d78d2770cd660c90a56363ec55ef65d3e",
+      "extractor_sha256": "52ceb82bb6a651afc316fecf47a4a0ed9967901ff27d35cda0a3fab572a3f3a9",
+      "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+      "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6"
+    },
+    "sorted_cache": {
+      "fit": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m01000\\fit_sorted.npy",
+        "sha256": "8b72b019650f6163752c13229ff87519ee5d2b8e743ace8ade603a18af4db140",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.0396969462246215,
+        "sort": "ascending independent copy"
+      },
+      "validation": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_smooth_feasibility_20261015\\m01000\\validation_sorted.npy",
+        "sha256": "cb678da948e20e4ae4aa276a0a028d62dc6be9a080d46e98f9be275b0cf5beff",
+        "draws": 10000000,
+        "bytes": 80000128,
+        "dtype": "<f8",
+        "minimum": 0.0,
+        "maximum": 0.03665219372013073,
+        "sort": "ascending independent copy"
+      }
+    },
+    "exceedance_rule": "APMI >= cutoff",
+    "tie_policy": "exact counts; no randomization",
+    "scope": "exploratory reuse; no new draws, refits, or runtime models"
+  }
+]

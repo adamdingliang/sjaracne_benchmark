@@ -1,5 +1,11 @@
 # Staged AP-MI null calibration across sample counts
 
+The later [cheap smooth-cutoff feasibility analysis](smooth_feasibility/README.md)
+and [results](smooth_feasibility/RESULTS.md) reuse the completed 19-size nulls
+without new simulations. A quadratic empirical surface was promising at the
+two main p values, but did not meet a uniform broad-p accuracy claim. No engine
+function or default was replaced.
+
 The later [19-size 10M + 10M extension](expanded_10m/README.md) and its
 [results](expanded_10m/RESULTS.md) are separate from the original experiment
 below; original code, plans and result packages remain unchanged.
