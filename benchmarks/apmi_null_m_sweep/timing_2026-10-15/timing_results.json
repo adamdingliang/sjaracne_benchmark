@@ -1,0 +1,209 @@
+{
+  "status": "complete",
+  "purpose": "timing only, not scientific calibration",
+  "generator": {
+    "path": "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+    "bytes": 387824,
+    "sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18"
+  },
+  "script": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+    "bytes": 5082,
+    "sha256": "a95244e545accdcadf65391c9eb7240f7a4706899d7feb46e84e84c34b99bd88"
+  },
+  "draws": 200000,
+  "m": [
+    30,
+    300,
+    1000
+  ],
+  "npar": 40,
+  "jobs": [
+    {
+      "m": 30,
+      "draws": 200000,
+      "seed": 22261045,
+      "native_exit_code": 0,
+      "native_wall_seconds": 0.11,
+      "user_seconds": 0.09,
+      "system_seconds": 0.0,
+      "peak_rss_kib": 3968,
+      "total_wall_seconds": 0.17458150000311434,
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu",
+        "--",
+        "/usr/bin/time",
+        "-f",
+        "%e\t%U\t%S\t%M",
+        "-o",
+        "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m00030/time.tsv",
+        "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+        "--m",
+        "30",
+        "--draws",
+        "200000",
+        "--npar",
+        "40",
+        "--seed",
+        "22261045",
+        "--format",
+        "binary",
+        "--output",
+        "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m00030/timing.f64"
+      ],
+      "artifacts": {
+        "stderr.log": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout.log": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "time.tsv": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\time.tsv",
+          "bytes": 20,
+          "sha256": "8307e3d78791fd3f0aa429880c30cc485bcab9ee2c6afbd8311702729bebfb90"
+        },
+        "timing.f64": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\timing.f64",
+          "bytes": 1600000,
+          "sha256": "42f7bfa1da086ae3660ecf6db11814bb1051151f1dfa65ad55b8e39b99972fed"
+        },
+        "timing.f64.meta": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\timing.f64.meta",
+          "bytes": 270,
+          "sha256": "44f1b0556a2ac3bcdbccecfd0ac8108f4c0a8698099bcfdd1c2661ce74a92ba8"
+        }
+      }
+    },
+    {
+      "m": 300,
+      "draws": 200000,
+      "seed": 22261315,
+      "native_exit_code": 0,
+      "native_wall_seconds": 0.71,
+      "user_seconds": 0.69,
+      "system_seconds": 0.0,
+      "peak_rss_kib": 3968,
+      "total_wall_seconds": 0.7826255999971181,
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu",
+        "--",
+        "/usr/bin/time",
+        "-f",
+        "%e\t%U\t%S\t%M",
+        "-o",
+        "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m00300/time.tsv",
+        "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+        "--m",
+        "300",
+        "--draws",
+        "200000",
+        "--npar",
+        "40",
+        "--seed",
+        "22261315",
+        "--format",
+        "binary",
+        "--output",
+        "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m00300/timing.f64"
+      ],
+      "artifacts": {
+        "stderr.log": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout.log": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "time.tsv": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\time.tsv",
+          "bytes": 20,
+          "sha256": "0252fdabdbd9c65121bf5c7fc48592631290688c9d836ed3498fb5d2876b3016"
+        },
+        "timing.f64": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\timing.f64",
+          "bytes": 1600000,
+          "sha256": "ac9aff9b7f91c05b7604d7c232aa3aa29ed07789e241bf42e9cbfe6be5022a7c"
+        },
+        "timing.f64.meta": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\timing.f64.meta",
+          "bytes": 271,
+          "sha256": "ec8deaff691d3e1915ad3d5e829747baca133d1ce9aec10978a5686acb1c0ad3"
+        }
+      }
+    },
+    {
+      "m": 1000,
+      "draws": 200000,
+      "seed": 22262015,
+      "native_exit_code": 0,
+      "native_wall_seconds": 2.22,
+      "user_seconds": 2.2,
+      "system_seconds": 0.0,
+      "peak_rss_kib": 3840,
+      "total_wall_seconds": 2.293996700027492,
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu",
+        "--",
+        "/usr/bin/time",
+        "-f",
+        "%e\t%U\t%S\t%M",
+        "-o",
+        "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m01000/time.tsv",
+        "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+        "--m",
+        "1000",
+        "--draws",
+        "200000",
+        "--npar",
+        "40",
+        "--seed",
+        "22262015",
+        "--format",
+        "binary",
+        "--output",
+        "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m01000/timing.f64"
+      ],
+      "artifacts": {
+        "stderr.log": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout.log": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "time.tsv": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\time.tsv",
+          "bytes": 20,
+          "sha256": "9fd4360a2f479e981b5f208cc1cc72a77b2ecfb348a7b2cba53b3e794b92be22"
+        },
+        "timing.f64": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\timing.f64",
+          "bytes": 1600000,
+          "sha256": "04211017dbbea491a5c953faeca6bbc44af9a1fa8ab7784356b76a2d2b19a6cd"
+        },
+        "timing.f64.meta": {
+          "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\timing.f64.meta",
+          "bytes": 272,
+          "sha256": "43ff8045266690f789c3a37ae52546b88e38ebd249f0e321299f3e08c76dd40c"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "m": 30,
+  "draws": 200000,
+  "seed": 22261045,
+  "native_exit_code": 0,
+  "native_wall_seconds": 0.11,
+  "user_seconds": 0.09,
+  "system_seconds": 0.0,
+  "peak_rss_kib": 3968,
+  "total_wall_seconds": 0.17458150000311434,
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "/usr/bin/time",
+    "-f",
+    "%e\t%U\t%S\t%M",
+    "-o",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m00030/time.tsv",
+    "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+    "--m",
+    "30",
+    "--draws",
+    "200000",
+    "--npar",
+    "40",
+    "--seed",
+    "22261045",
+    "--format",
+    "binary",
+    "--output",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m00030/timing.f64"
+  ],
+  "artifacts": {
+    "stderr.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "time.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\time.tsv",
+      "bytes": 20,
+      "sha256": "8307e3d78791fd3f0aa429880c30cc485bcab9ee2c6afbd8311702729bebfb90"
+    },
+    "timing.f64": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\timing.f64",
+      "bytes": 1600000,
+      "sha256": "42f7bfa1da086ae3660ecf6db11814bb1051151f1dfa65ad55b8e39b99972fed"
+    },
+    "timing.f64.meta": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00030\\timing.f64.meta",
+      "bytes": 270,
+      "sha256": "44f1b0556a2ac3bcdbccecfd0ac8108f4c0a8698099bcfdd1c2661ce74a92ba8"
+    }
+  }
+}

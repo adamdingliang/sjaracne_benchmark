@@ -1,0 +1,62 @@
+{
+  "m": 300,
+  "draws": 200000,
+  "seed": 22261315,
+  "native_exit_code": 0,
+  "native_wall_seconds": 0.71,
+  "user_seconds": 0.69,
+  "system_seconds": 0.0,
+  "peak_rss_kib": 3968,
+  "total_wall_seconds": 0.7826255999971181,
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "/usr/bin/time",
+    "-f",
+    "%e\t%U\t%S\t%M",
+    "-o",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m00300/time.tsv",
+    "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+    "--m",
+    "300",
+    "--draws",
+    "200000",
+    "--npar",
+    "40",
+    "--seed",
+    "22261315",
+    "--format",
+    "binary",
+    "--output",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m00300/timing.f64"
+  ],
+  "artifacts": {
+    "stderr.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "time.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\time.tsv",
+      "bytes": 20,
+      "sha256": "0252fdabdbd9c65121bf5c7fc48592631290688c9d836ed3498fb5d2876b3016"
+    },
+    "timing.f64": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\timing.f64",
+      "bytes": 1600000,
+      "sha256": "ac9aff9b7f91c05b7604d7c232aa3aa29ed07789e241bf42e9cbfe6be5022a7c"
+    },
+    "timing.f64.meta": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m00300\\timing.f64.meta",
+      "bytes": 271,
+      "sha256": "ec8deaff691d3e1915ad3d5e829747baca133d1ce9aec10978a5686acb1c0ad3"
+    }
+  }
+}

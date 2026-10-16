@@ -1,0 +1,62 @@
+{
+  "m": 1000,
+  "draws": 200000,
+  "seed": 22262015,
+  "native_exit_code": 0,
+  "native_wall_seconds": 2.22,
+  "user_seconds": 2.2,
+  "system_seconds": 0.0,
+  "peak_rss_kib": 3840,
+  "total_wall_seconds": 2.293996700027492,
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "/usr/bin/time",
+    "-f",
+    "%e\t%U\t%S\t%M",
+    "-o",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m01000/time.tsv",
+    "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+    "--m",
+    "1000",
+    "--draws",
+    "200000",
+    "--npar",
+    "40",
+    "--seed",
+    "22262015",
+    "--format",
+    "binary",
+    "--output",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_timing_20261015/m01000/timing.f64"
+  ],
+  "artifacts": {
+    "stderr.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "time.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\time.tsv",
+      "bytes": 20,
+      "sha256": "9fd4360a2f479e981b5f208cc1cc72a77b2ecfb348a7b2cba53b3e794b92be22"
+    },
+    "timing.f64": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\timing.f64",
+      "bytes": 1600000,
+      "sha256": "04211017dbbea491a5c953faeca6bbc44af9a1fa8ab7784356b76a2d2b19a6cd"
+    },
+    "timing.f64.meta": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_timing_20261015\\m01000\\timing.f64.meta",
+      "bytes": 272,
+      "sha256": "43ff8045266690f789c3a37ae52546b88e38ebd249f0e321299f3e08c76dd40c"
+    }
+  }
+}
