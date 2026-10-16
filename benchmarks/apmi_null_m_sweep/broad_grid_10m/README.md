@@ -1,6 +1,8 @@
 # Broad-grid calibration: execution, planning and timing
 
-**Authorized October 16, 2026: 12-worker generation.** The new
+**Launched October 16, 2026 at 2:07 PM EDT with 12 workers.** See the
+[launch record and status commands](LAUNCH_2026-10-16.md), not a final-result
+or continuously updated status report. The new
 [execution amendment](EXECUTION_2026-10-16.md) and
 [frozen analysis choices](ANALYSIS_SPEC_2026-10-16.md) govern the launch.
 Generation is checkpointed and separate from model fitting; validation stays

@@ -1,0 +1,93 @@
+{
+  "format": "sjaracne-broad-grid-generation-v1",
+  "status": "complete",
+  "plan_sha256": "003c3feb92d425fea56ef40edab4f747b3201a6e9176b7971a228c9bba5538b3",
+  "task": {
+    "id": "m00050_validation",
+    "m": 50,
+    "stream": "validation",
+    "seed": 1020261070,
+    "draws": 10000000,
+    "m_group": "training",
+    "command": [
+      "wsl.exe",
+      "--distribution",
+      "Ubuntu",
+      "--exec",
+      "/usr/bin/env",
+      "OMP_NUM_THREADS=1",
+      "OPENBLAS_NUM_THREADS=1",
+      "MKL_NUM_THREADS=1",
+      "NUMEXPR_NUM_THREADS=1",
+      "LC_ALL=C",
+      "/usr/bin/time",
+      "-f",
+      "%e\t%U\t%S\t%M",
+      "-o",
+      "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_broad_grid_10m_20261016/streams/m00050_validation/time.tsv",
+      "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+      "--m",
+      "50",
+      "--draws",
+      "10000000",
+      "--npar",
+      "40",
+      "--seed",
+      "1020261070",
+      "--format",
+      "binary",
+      "--output",
+      "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_broad_grid_10m_20261016/streams/m00050_validation/null.f64"
+    ]
+  },
+  "returncode": 0,
+  "started_utc": "2026-10-16T18:06:55.111513+00:00",
+  "finished_utc": "2026-10-16T18:07:06.496015+00:00",
+  "elapsed_seconds": 11.384510100004263,
+  "native_wall_seconds": 7.18,
+  "native_user_seconds": 6.73,
+  "native_system_seconds": 0.02,
+  "peak_rss_kib": 3968,
+  "artifacts": {
+    "null.f64": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_grid_10m_20261016\\streams\\m00050_validation\\null.f64",
+      "bytes": 80000000,
+      "sha256": "7fbd2d2d2c9c8d00cc5d0fcedda2725cf50108f8a792dc22e469dc0f817c7354"
+    },
+    "null.f64.meta": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_grid_10m_20261016\\streams\\m00050_validation\\null.f64.meta",
+      "bytes": 274,
+      "sha256": "d8738d0a38acf48a9041467d7252e01e137757afc2b9139f0b07f50577f857a0"
+    },
+    "null.f64.provenance.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_grid_10m_20261016\\streams\\m00050_validation\\null.f64.provenance.json",
+      "bytes": 1361,
+      "sha256": "df192efbb98dc56dd7d4ad50640603486d6aaac4d1a882526e0d7e8962966402"
+    },
+    "process.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_grid_10m_20261016\\streams\\m00050_validation\\process.json",
+      "bytes": 889,
+      "sha256": "497dfa7cb11fedd09166db7621dda9240636ddd3cb63f09ecbdabc6ab8fcc383"
+    },
+    "request.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_grid_10m_20261016\\streams\\m00050_validation\\request.json",
+      "bytes": 1361,
+      "sha256": "df192efbb98dc56dd7d4ad50640603486d6aaac4d1a882526e0d7e8962966402"
+    },
+    "stderr.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_grid_10m_20261016\\streams\\m00050_validation\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_grid_10m_20261016\\streams\\m00050_validation\\stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "time.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_grid_10m_20261016\\streams\\m00050_validation\\time.tsv",
+      "bytes": 20,
+      "sha256": "75b220c3bd9425d1fc5cc84db7938eb067bf02dcf08654a110d2a0afa1ef8511"
+    }
+  }
+}

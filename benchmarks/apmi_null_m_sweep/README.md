@@ -2,8 +2,10 @@
 
 The [denser probability-axis refinement](p_axis_refinement/README.md) and
 [results](p_axis_refinement/RESULTS.md) reuse existing draws and improve most
-off-knot checks. They retain large small-m failures and a numerical/tie caveat;
-the expensive broad-grid sweep remains stopped.
+off-knot checks. They retain large small-m failures and a numerical/tie caveat.
+The separate [broad-grid generation launch](broad_grid_10m/LAUNCH_2026-10-16.md)
+was authorized and started on October 16 with twelve workers; it is not a
+claim of successful calibration or a new default.
 
 The later [cheap smooth-cutoff feasibility analysis](smooth_feasibility/README.md)
 and [results](smooth_feasibility/RESULTS.md) reuse the completed 19-size nulls
@@ -15,10 +17,10 @@ The later [19-size 10M + 10M extension](expanded_10m/README.md) and its
 [results](expanded_10m/RESULTS.md) are separate from the original experiment
 below; original code, plans and result packages remain unchanged.
 
-The proposed [m=50..10000 broad-grid study](broad_grid_10m/README.md) has a
-detailed protocol and bounded timing measurements only. The user chose not
-to launch the full sweep; its generation cost projects to roughly 9-10 hours
-with the subsequently requested 12 workers, plus analysis.
+The [m=50..10000 broad-grid study](broad_grid_10m/README.md) was launched on
+October 16 after the user superseded the earlier stop-after-timing choice.
+Generation is checkpointed and separate from sealed statistical analysis;
+its cost projects to roughly 9-10 hours with twelve workers, plus analysis.
 
 This study fits SJARACNe's independence-null GPD tail at exact selected
 observation counts, using the production-shared AP-MI kernel. It focuses on
