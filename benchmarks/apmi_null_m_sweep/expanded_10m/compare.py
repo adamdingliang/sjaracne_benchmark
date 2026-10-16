@@ -37,7 +37,7 @@ CAUTION = (
     "Descriptive comparison only. The previous package used 5M fitting plus 5M held-out draws "
     "per m (base seeds 20261015/20261016); the expanded package used 10M plus 10M draws "
     "and fresh base seeds 20261017/20261018. Both simulation count and random streams changed: "
-    "this is not a matched causal test of sample-size effects, precision improvement, or why "
+    "this is not a matched causal test of simulation-count effects, precision improvement, or why "
     "acceptance changed. A status transition is not proof of improvement or regression. "
     "Recorded accepted/rejected/failed/incomplete statuses are preserved, never selected by "
     "this comparison. No threshold refitting, held-out tuning, empirical fallback, interpolation, "
