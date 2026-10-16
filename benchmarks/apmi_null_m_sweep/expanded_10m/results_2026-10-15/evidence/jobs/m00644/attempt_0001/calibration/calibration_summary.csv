@@ -1,0 +1,2 @@
+m,npar_limit,accepted,fit_draws,validation_draws,shape,scale,tail_threshold,tail_probability,cutoff_p1e-7,relative_stability_range,validation_pass,validated_p_min,validated_p_max
+644,40,False,10000000,10000000,0.07059468692403839,0.0038263264275010147,0.014530237942708801,0.00499999950000005,0.024097178081901323,0.012752597490690628,False,,

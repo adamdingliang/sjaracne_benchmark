@@ -6,6 +6,11 @@ results. Both original code and evidence are preserved. The expanded scripts
 are versioned copies with an explicit new schema, larger fixed draw counts,
 fresh seed namespace and a larger grid, not edits to the earlier frozen run.
 
+The [completed results](RESULTS.md) include all nineteen sizes and the
+[descriptive 5M/10M comparison](comparison_5m_10m_2026-10-15/REPORT.md).
+Five exact-m GPD models passed; fourteen were rejected. Engine defaults
+remain unchanged.
+
 The [protocol](PLAN_2026-10-15.md) fixes nineteen exact observation counts:
 30, 50, 80, 90, 100, 150, 200, 250, 300, 400, 500, 516, 600, 644, 700,
 725, 800, 900 and 1000. Every size uses **10 million fitting draws and

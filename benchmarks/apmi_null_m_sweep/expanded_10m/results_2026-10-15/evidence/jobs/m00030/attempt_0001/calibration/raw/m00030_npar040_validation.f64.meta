@@ -1,0 +1,12 @@
+format=sjaracne-apmi-null-binary-v1
+kernel_schema=sjaracne-apmi-v1
+estimator=sjaracne-adaptive-partitioning
+rng=mt19937-rejection-fisher-yates-v1
+m=30
+draws=10000000
+npar_limit=40
+seed=1020261048
+dtype=float64
+byte_order=little
+record_bytes=8
+draw_index=implicit-zero-based

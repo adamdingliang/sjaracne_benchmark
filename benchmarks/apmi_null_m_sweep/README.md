@@ -1,5 +1,9 @@
 # Staged AP-MI null calibration across sample counts
 
+The later [19-size 10M + 10M extension](expanded_10m/README.md) and its
+[results](expanded_10m/RESULTS.md) are separate from the original experiment
+below; original code, plans and result packages remain unchanged.
+
 This study fits SJARACNe's independence-null GPD tail at exact selected
 observation counts, using the production-shared AP-MI kernel. It focuses on
 the provisional TF probability 0.001 and SIG probability 0.0005. These are

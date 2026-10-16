@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-16T00:26:40.487686+00:00",
+  "plan_sha256": "0b897c8c29470c844a54e4da1b07fb2083852914db033661e79fdbe95c67f3e8",
+  "requested_m": [
+    644,
+    516,
+    725
+  ],
+  "pending_m": [
+    644,
+    516,
+    725
+  ],
+  "reused_m": [],
+  "workers": 3,
+  "retry_failed": false,
+  "command": [
+    "benchmarks/apmi_null_m_sweep/expanded_10m/run_staged.py",
+    "run",
+    "--plan",
+    "runs/apmi_null_m_sweep_10m_20261015/plan.json",
+    "--stage",
+    "dream",
+    "--workers",
+    "3"
+  ]
+}
