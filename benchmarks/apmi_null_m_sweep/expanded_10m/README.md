@@ -31,6 +31,7 @@ python benchmarks/apmi_null_m_sweep/expanded_10m/run_staged.py run --plan runs/F
 python benchmarks/apmi_null_m_sweep/expanded_10m/run_staged.py run --plan runs/FRESH_10M_RUN/plan.json --stage expanded --workers 8
 python benchmarks/apmi_null_m_sweep/expanded_10m/run_staged.py run --plan runs/FRESH_10M_RUN/plan.json --stage dream --workers 3
 python benchmarks/apmi_null_m_sweep/expanded_10m/summarize.py --run runs/FRESH_10M_RUN --out benchmarks/apmi_null_m_sweep/expanded_10m/FRESH_RESULTS
+python benchmarks/apmi_null_m_sweep/expanded_10m/compare.py --previous benchmarks/apmi_null_m_sweep/results_2026-10-15 --current benchmarks/apmi_null_m_sweep/expanded_10m/FRESH_RESULTS --out benchmarks/apmi_null_m_sweep/expanded_10m/FRESH_COMPARISON
 python scripts/check_benchmarks.py --group apmi_null_m_sweep_10m
 ```
 
