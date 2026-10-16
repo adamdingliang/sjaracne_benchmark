@@ -1,0 +1,3 @@
+START timing m=10000 draws=100000
+DONE timing m=10000: native=18.80s; rate=5319.1 draws/s
+{"status": "complete", "out": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity12_20261015\\worker_005\\helper"}

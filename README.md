@@ -53,7 +53,8 @@ network benchmark or a change to SJARACNe defaults.
 The [broader m=50..10000 protocol and timing](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md)
 are planning evidence only: the full 200-size sweep was **not launched**, per
 the user's stop-after-timing instruction. Measured throughput projects to
-roughly 11-14 hours of generation, with analysis additional.
+roughly 9-10 hours of generation with the requested 12 workers, with analysis
+additional. The earlier eight-worker timing remains available for comparison.
 
 Historical engine timing studies, reusable performance tools and the original
 sampling-method evidence are preserved separately in

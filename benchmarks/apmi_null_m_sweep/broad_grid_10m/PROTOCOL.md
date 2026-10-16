@@ -213,7 +213,10 @@ without a separate policy decision.
 ## 7. Checkpointed execution, if subsequently authorized
 
 - Use a new run directory and a generation phase separate from statistical
-  analysis. Up to eight active CPU workers initially; no nested BLAS threads.
+  analysis. Use **12 workers**, as subsequently requested by the user, with
+  at most twelve active CPU tasks across generation/analysis combined and no
+  nested BLAS threads. This concurrency choice does not authorize launching
+  the full sweep; the stop-after-timing instruction remains in force.
   Schedule large m values early to avoid a long final tail of expensive jobs.
 - Complete and verify each (m,stream) separately with raw/meta/provenance hashes,
   native exit status, commands, timing/RSS and a last-written completion record.

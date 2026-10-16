@@ -19,7 +19,7 @@ All native exit codes were zero. The helper checked raw lengths, metadata,
 finite MI support and hashes. These draws are not production calibration data.
 [Original compact sequential records](timing_2026-10-15/sequential/timing_results.json).
 
-## Measured eight-worker capacity
+## Measured eight-worker capacity (reference)
 
 Eight concurrent workers each generated 100,000 draws at m=10000. Every worker
 invoked the same existing helper, with numerical-library thread limits set to
@@ -42,6 +42,26 @@ retain commands, source/executable hashes, start/finish times, per-worker
 return codes, native timing/RSS, raw metadata and hashes. Raw payloads are
 excluded from this compact copy.
 
+## Measured twelve-worker capacity (requested configuration)
+
+The user subsequently requested **12 workers**, without revoking the instruction
+to stop after timing. A second bounded pilot ran twelve concurrent workers,
+each with 100,000 draws at m=10000. It did not launch any full calibration.
+
+- Batch elapsed: **21.2264 seconds**, including startup and evidence checks.
+- Native worker wall times: min **18.70**, median **18.88**, max **19.20 seconds**.
+- All twelve worker return codes: **0**; total timing draws: 1,200,000.
+- Aggregate whole-batch throughput: **56,533.37 draws/second**, compared with
+  **40,069.60** in the eight-worker pilot: approximately **41.1% higher** in
+  this short test. That is not a guarantee of the same improvement over a
+  many-hour scientific run. Individual workers slow down under contention;
+  the comparison is aggregate completed work, not per-worker speed.
+
+The same timing-only repeated-seed restriction applies. The
+[12-worker request](timing_2026-10-15/parallel12/capacity_request.json) and
+[12-worker results](timing_2026-10-15/parallel12/capacity_results.json) preserve
+the exact records. Earlier eight-worker evidence remains unchanged.
+
 ## Projected full-grid cost, not a completion guarantee
 
 For m=50,100,...,10000, sum(m)=1,005,000. At 20M draws per m, the rough
@@ -56,9 +76,17 @@ The parallel pilot performs 8*100000*10000 = 8,000,000,000 such units:
     native-max projection = 2512.5 * 16.20 / 3600 = 11.31 hours
     whole-batch projection = 2512.5 * 19.9653 / 3600 = 13.93 hours
 
-Thus **roughly 11-14 hours for generation** is a useful planning estimate
-under these measured conditions. It is not a confidence interval or guaranteed
-runtime. Scaling the whole small-batch time repeats startup overhead that
+Those are the **eight-worker reference** projections. For the requested twelve
+workers, the timing batch performs 12*100000*10000 = 12,000,000,000 units:
+
+    workload ratio = 20,100,000,000,000 / 12,000,000,000 = 1675
+    native-max projection = 1675 * 19.20 / 3600 = 8.93 hours
+    whole-batch projection = 1675 * 21.2264 / 3600 = 9.88 hours
+
+Thus **roughly 9-10 hours for generation with 12 workers** is the updated
+planning estimate, versus roughly 11-14 hours in the eight-worker reference.
+Neither range is a confidence interval or guaranteed runtime. Scaling the
+whole small-batch time repeats startup overhead that
 long streams would amortize; thermal behavior, actual concurrency, other
 workloads and the unmeasured long-run schedule can also change throughput.
 GPD fitting across threshold candidates, quantile summaries, integrity scans,
@@ -74,7 +102,8 @@ snapshot, not reserved capacity or a claim about physical core count.
 
 ```powershell
 python benchmarks/apmi_null_m_sweep/time_generator.py --generator D:/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe --out runs/FRESH_DENSE_TIMING --draws 200000 --m 2000 5000 10000
-python benchmarks/apmi_null_m_sweep/broad_grid_10m/time_capacity.py --generator D:/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe --out runs/FRESH_DENSE_CAPACITY --workers 8 --draws 100000 --m 10000
+python benchmarks/apmi_null_m_sweep/broad_grid_10m/time_capacity.py --generator D:/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe --out runs/FRESH_DENSE_CAPACITY8 --workers 8 --draws 100000 --m 10000
+python benchmarks/apmi_null_m_sweep/broad_grid_10m/time_capacity.py --generator D:/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe --out runs/FRESH_DENSE_CAPACITY12 --workers 12 --draws 100000 --m 10000
 python -m unittest discover -s benchmarks/apmi_null_m_sweep/broad_grid_10m -p test_time_capacity.py
 ```
 
@@ -82,6 +111,7 @@ Replace local paths with verified equivalents; output directories must be new
 children of ignored runs/. The pinned generator SHA256 is
 `08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18`.
 The full study remains a [prospective protocol](PROTOCOL.md), not an active job.
-All pilot raw streams (1.4M draws, 11.2 MB total) remain local under
+All pilot raw streams (2.6M draws, 20.8 MB total) remain local under
 `runs/apmi_null_dense_timing_20261015/` and
-`runs/apmi_null_dense_capacity_20261015/`.
+`runs/apmi_null_dense_capacity_20261015/`, plus
+`runs/apmi_null_dense_capacity12_20261015/`.

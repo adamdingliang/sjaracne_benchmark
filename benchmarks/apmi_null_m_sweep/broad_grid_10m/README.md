@@ -3,6 +3,10 @@
 **Not launched.** On October 15, 2026, the user requested a prospective grid
 of m=50..10000 in steps of 50 with 10M fitting plus 10M validation draws,
 then explicitly chose to stop after timing and the detailed protocol.
+The subsequent worker-count choice is **12 workers**; this changes the planned
+concurrency, not the instruction to keep the full sweep stopped.
+Measured twelve-worker throughput projects to roughly **9-10 hours of
+generation**, with fitting and analysis additional; this is not a guarantee.
 
 - [Detailed prospective protocol](PROTOCOL.md): 200 sizes, eight probability
   levels through 1e-7, user-approved 10% relative null-rate error target,

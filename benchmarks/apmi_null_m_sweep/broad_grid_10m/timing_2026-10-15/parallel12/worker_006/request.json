@@ -1,0 +1,18 @@
+{
+  "worker": 6,
+  "directory": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity12_20261015\\worker_006",
+  "argv": [
+    "C:\\Users\\adamd\\miniconda3\\python.exe",
+    "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+    "--generator",
+    "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+    "--out",
+    "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity12_20261015\\worker_006\\helper",
+    "--draws",
+    "100000",
+    "--m",
+    "10000",
+    "--distro",
+    "Ubuntu"
+  ]
+}

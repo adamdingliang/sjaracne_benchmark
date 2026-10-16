@@ -6,7 +6,8 @@ below; original code, plans and result packages remain unchanged.
 
 The proposed [m=50..10000 broad-grid study](broad_grid_10m/README.md) has a
 detailed protocol and bounded timing measurements only. The user chose not
-to launch the full sweep; its generation cost projects to roughly 11-14 hours.
+to launch the full sweep; its generation cost projects to roughly 9-10 hours
+with the subsequently requested 12 workers, plus analysis.
 
 This study fits SJARACNe's independence-null GPD tail at exact selected
 observation counts, using the production-shared AP-MI kernel. It focuses on

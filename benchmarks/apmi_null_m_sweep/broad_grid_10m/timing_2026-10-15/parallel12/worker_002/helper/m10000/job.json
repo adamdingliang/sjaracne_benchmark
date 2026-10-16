@@ -1,0 +1,62 @@
+{
+  "m": 10000,
+  "draws": 100000,
+  "seed": 22271015,
+  "native_exit_code": 0,
+  "native_wall_seconds": 18.88,
+  "user_seconds": 18.84,
+  "system_seconds": 0.0,
+  "peak_rss_kib": 4096,
+  "total_wall_seconds": 20.552245800034143,
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "/usr/bin/time",
+    "-f",
+    "%e\t%U\t%S\t%M",
+    "-o",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_dense_capacity12_20261015/worker_002/helper/m10000/time.tsv",
+    "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+    "--m",
+    "10000",
+    "--draws",
+    "100000",
+    "--npar",
+    "40",
+    "--seed",
+    "22271015",
+    "--format",
+    "binary",
+    "--output",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_dense_capacity12_20261015/worker_002/helper/m10000/timing.f64"
+  ],
+  "artifacts": {
+    "stderr.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity12_20261015\\worker_002\\helper\\m10000\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity12_20261015\\worker_002\\helper\\m10000\\stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "time.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity12_20261015\\worker_002\\helper\\m10000\\time.tsv",
+      "bytes": 22,
+      "sha256": "a6b4913a00e11ac3f754def4f2e31163a8a417ff2f6facf15059af2ef869d724"
+    },
+    "timing.f64": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity12_20261015\\worker_002\\helper\\m10000\\timing.f64",
+      "bytes": 800000,
+      "sha256": "c166f1ef5a82a49be4b0c3eb3c55ffd77dd39c25a5e842e30ee84cd3a322a204"
+    },
+    "timing.f64.meta": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity12_20261015\\worker_002\\helper\\m10000\\timing.f64.meta",
+      "bytes": 273,
+      "sha256": "5293a8df633ae4a20f1e23a36bf68ac8d4f9334db9994101167b6c4e9e37429d"
+    }
+  }
+}
