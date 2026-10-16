@@ -10,6 +10,10 @@ The [completed results](RESULTS.md) include all nineteen sizes and the
 [descriptive 5M/10M comparison](comparison_5m_10m_2026-10-15/REPORT.md).
 Five exact-m GPD models passed; fourteen were rejected. Engine defaults
 remain unchanged.
+The additional [GPD-or-empirical cutoff table](RESULTS.md#additional-mi-cutoff-table-gpd-or-empirical)
+and [full-precision CSV](cutoffs_gpd_or_empirical.csv) retain accepted GPD
+cutoffs and substitute fit-only empirical quantiles for rejected models,
+explicitly labeled as a retrospective display rather than a validated fallback.
 
 The [protocol](PLAN_2026-10-15.md) fixes nineteen exact observation counts:
 30, 50, 80, 90, 100, 150, 200, 250, 300, 400, 500, 516, 600, 644, 700,

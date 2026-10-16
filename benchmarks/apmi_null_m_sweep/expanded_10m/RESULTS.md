@@ -111,6 +111,55 @@ Error bars show 99.9% pointwise held-out intervals scaled by nominal p.
 The smooth cutoff trajectory in the upper panels does not establish accurate
 probability calibration in the lower panels. Markers do not imply interpolation.
 
+## Additional MI cutoff table: GPD or empirical
+
+This additional table follows the requested display rule: retain GPD cutoffs
+only for the five accepted exact-m models; replace **both** cutoff columns
+with fitting-stream empirical quantiles for each of the fourteen rejected
+models. There is no per-probability cherry-picking: m=80, 150 and 500 also
+use empirical cutoffs for both probabilities, despite passing one GPD check.
+The original GPD table and all rejection labels above remain unchanged.
+
+`GPD` means an accepted GPD model. `Empirical` means the fitting-stream
+`higher` quantile at 1-p, substituted for a rejected GPD; it does **not** mean
+an accepted empirical runtime model. Values below are rounded to eight decimal
+places. The [full-precision CSV](cutoffs_gpd_or_empirical.csv) includes each
+row's original GPD status, cutoff source and held-out actual/nominal ratios
+for the selected method, derived from the unchanged
+[source summary](results_2026-10-15/summary.json).
+
+| Exact m | Cutoff source | MI cutoff p=0.001 | MI cutoff p=0.0005 |
+| ---: | --- | ---: | ---: |
+| 30 | Empirical | 0.33115988 | 0.36634091 |
+| 50 | Empirical | 0.22035866 | 0.24498408 |
+| 80 | Empirical | 0.14766935 | 0.16407152 |
+| 90 | Empirical | 0.13366652 | 0.14865385 |
+| 100 | GPD | 0.12175845 | 0.13587209 |
+| 150 | Empirical | 0.08419582 | 0.09534634 |
+| 200 | GPD | 0.06468328 | 0.07262646 |
+| 250 | GPD | 0.05265604 | 0.05932493 |
+| 300 | GPD | 0.04433415 | 0.05011981 |
+| 400 | GPD | 0.03356964 | 0.03811826 |
+| 500 | Empirical | 0.02745226 | 0.03121662 |
+| 516 | Empirical | 0.02656104 | 0.03012528 |
+| 600 | Empirical | 0.02299394 | 0.02610579 |
+| 644 | Empirical | 0.02148528 | 0.02434351 |
+| 700 | Empirical | 0.01975587 | 0.02244727 |
+| 725 | Empirical | 0.01915392 | 0.02172022 |
+| 800 | Empirical | 0.01738903 | 0.01978258 |
+| 900 | Empirical | 0.01546640 | 0.01764979 |
+| 1000 | Empirical | 0.01394064 | 0.01586849 |
+
+This is a retrospective, user-requested **presentation rule**, chosen after
+reviewing the held-out results, not a prospectively validated hybrid calibration
+policy. The empirical quantiles themselves were predeclared fit-only
+diagnostics; their existing held-out intervals remain diagnostic evidence.
+Selecting methods this way does not establish a new confidence guarantee for
+the combined table. No new models, engine fallbacks, defaults or biological
+FDR claims are introduced. A supported hybrid policy would require separately
+frozen rules and fresh confirmation. Exact-m use only; no interpolation or
+extrapolation to p=1e-7.
+
 ## Comparison with the 5M + 5M experiment
 
 The [hash-verified descriptive comparison](comparison_5m_10m_2026-10-15/REPORT.md)
