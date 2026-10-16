@@ -1,5 +1,10 @@
 # Staged AP-MI null calibration across sample counts
 
+The [denser probability-axis refinement](p_axis_refinement/README.md) and
+[results](p_axis_refinement/RESULTS.md) reuse existing draws and improve most
+off-knot checks. They retain large small-m failures and a numerical/tie caveat;
+the expensive broad-grid sweep remains stopped.
+
 The later [cheap smooth-cutoff feasibility analysis](smooth_feasibility/README.md)
 and [results](smooth_feasibility/RESULTS.md) reuse the completed 19-size nulls
 without new simulations. A quadratic empirical surface was promising at the

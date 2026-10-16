@@ -1,5 +1,9 @@
 # Smooth AP-MI cutoff feasibility (no new simulations)
 
+The later [denser-p refinement](../p_axis_refinement/README.md) and its
+[results](../p_axis_refinement/RESULTS.md) improve most off-knot checks while
+retaining small-m failures. The original evidence below remains unchanged.
+
 This exploratory analysis reuses the nineteen completed 10M fitting + 10M
 validation null distributions. It compares leave-entire-size-out smooth GPD
 parameters with direct empirical quantile surfaces. It does not run the proposed

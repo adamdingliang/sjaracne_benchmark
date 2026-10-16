@@ -57,6 +57,12 @@ within 10% observed null-rate error in all 34 main interior-size checks, but
 failed some wider-probability checks. This is exploratory feasibility, not a
 validated general replacement function.
 
+The subsequent [denser-p refinement process](benchmarks/apmi_null_m_sweep/p_axis_refinement/README.md)
+and [results](benchmarks/apmi_null_m_sweep/p_axis_refinement/RESULTS.md) improved
+the quadratic surface from 187/272 to 261/272 observed errors within 10% on
+new off-knot probes. Some small-m errors remained large, and numerical/tie
+behavior needs attention. No new draws or engine/default changes were made.
+
 The [broader m=50..10000 protocol and timing](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md)
 are planning evidence only: the full 200-size sweep was **not launched**, per
 the user's stop-after-timing instruction. Measured throughput projects to
