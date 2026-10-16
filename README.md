@@ -42,6 +42,12 @@ was requested after reviewing it, not an independent validation set.
 
 ## Engineering evidence
 
+The [staged AP-MI null calibration process](benchmarks/apmi_null_m_sweep/README.md)
+and [results](benchmarks/apmi_null_m_sweep/RESULTS.md) examine synthetic
+independent-rank nulls at exact sample counts and the provisional probabilities
+0.001 and 0.0005. This is estimator calibration, not another biological
+network benchmark or a change to SJARACNe defaults.
+
 Historical engine timing studies, reusable performance tools and the original
 sampling-method evidence are preserved separately in
 [Engineering performance and sampling-method archive](engine_performance/README.md).

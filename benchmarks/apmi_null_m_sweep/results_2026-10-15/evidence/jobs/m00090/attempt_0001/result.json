@@ -1,0 +1,98 @@
+{
+  "format": "sjaracne-staged-apmi-calibration-v1",
+  "m": 90,
+  "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001",
+  "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000048_cc77f37a",
+  "started_utc": "2026-10-16T00:00:49.177846+00:00",
+  "finished_utc": "2026-10-16T00:01:18.235937+00:00",
+  "elapsed_seconds": 29.056587699975353,
+  "returncode": 0,
+  "error": null,
+  "status": "accepted",
+  "accepted": true,
+  "default_p": 0.0005,
+  "cutoff_at_default_p_5e_4": 0.14931100941291361,
+  "stability_pass": true,
+  "validation_pass": true,
+  "relative_stability_range": 0.0023499970044672473,
+  "model_path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001\\calibration\\apmi_null_m00090_npar040.model",
+  "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001\\calibration\\calibration_report.json",
+  "resources": {
+    "calibration_peak_working_set_bytes": 227241984,
+    "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+  },
+  "raw_streams": {
+    "fit": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001\\calibration\\raw\\m00090_npar040_fit.f64",
+      "sha256": "77b08171aa3fb53253200e7284f514b940b571b4532f69034660842f34ae189b",
+      "metadata": {
+        "format": "sjaracne-apmi-null-binary-v1",
+        "kernel_schema": "sjaracne-apmi-v1",
+        "estimator": "sjaracne-adaptive-partitioning",
+        "rng": "mt19937-rejection-fisher-yates-v1",
+        "m": "90",
+        "draws": "5000000",
+        "npar_limit": "40",
+        "seed": "20261105",
+        "dtype": "float64",
+        "byte_order": "little",
+        "record_bytes": "8",
+        "draw_index": "implicit-zero-based"
+      },
+      "seed": 20261105,
+      "generation_elapsed_seconds": 12.127732699969783,
+      "resources": {
+        "maximum_resident_set_kbytes": 3712,
+        "time_log_present": true,
+        "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+      }
+    },
+    "validation": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001\\calibration\\raw\\m00090_npar040_validation.f64",
+      "sha256": "4e9deb21ce8dbd0c08b5d478a4abad98faf8130b3f329fe70d467513d1a9d5a9",
+      "metadata": {
+        "format": "sjaracne-apmi-null-binary-v1",
+        "kernel_schema": "sjaracne-apmi-v1",
+        "estimator": "sjaracne-adaptive-partitioning",
+        "rng": "mt19937-rejection-fisher-yates-v1",
+        "m": "90",
+        "draws": "5000000",
+        "npar_limit": "40",
+        "seed": "1020261106",
+        "dtype": "float64",
+        "byte_order": "little",
+        "record_bytes": "8",
+        "draw_index": "implicit-zero-based"
+      },
+      "seed": 1020261106,
+      "generation_elapsed_seconds": 10.577189399977215,
+      "resources": {
+        "maximum_resident_set_kbytes": 3968,
+        "time_log_present": true,
+        "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+      }
+    }
+  },
+  "unverified_model_artifacts": [],
+  "artifacts_sha256": {
+    "calibration/apmi_null_m00090_npar040.model": "8eb304f1eef88aceef8db2fcab41a949168dbc1253f2fec85d834096d54e29cc",
+    "calibration/calibration_report.json": "8172b7b6bf5dbcf880605cd0b5321e106c437a877c41ce401b0b5745a92f3f3c",
+    "calibration/calibration_summary.csv": "e9d1f864526f29fc8f7af6e8b674b020bf36a9f84a4f3acd3f261e859f5cea71",
+    "calibration/raw/m00090_npar040_fit.f64": "77b08171aa3fb53253200e7284f514b940b571b4532f69034660842f34ae189b",
+    "calibration/raw/m00090_npar040_fit.f64.meta": "67144d257b7167839ce933a85c2bada90c7cd130562f1d06a556c8dacd69c07f",
+    "calibration/raw/m00090_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+    "calibration/raw/m00090_npar040_validation.f64": "4e9deb21ce8dbd0c08b5d478a4abad98faf8130b3f329fe70d467513d1a9d5a9",
+    "calibration/raw/m00090_npar040_validation.f64.meta": "cc9461545ca26aabf7e40863bfa05025892a7d21eba93bbb8948bd5e8eb3c546",
+    "calibration/raw/m00090_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+    "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fit_time.txt": "82b948316d1c7f5748be406daf6a7a4b320c66a76e9a026882c8be034e688105",
+    "launch.json": "671f135063d6e3e5f0dfd123c530c715637c1d795fe16da2b8402998b5ba4b2d",
+    "request.json": "507f491f7cb55873d4f1a8f0fe0c97a39072c461d8d8d41d8fe6b5777a8a9598",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "d026df619bef52ea4baa8413e385e86acf86526638a5da175ea60be534633ab5",
+    "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation_time.txt": "802c2fadb9510bb202f57a62c517d1a2693d2c395b79619f31c76b11f9ba3713"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "C:\\Users\\adamd\\miniconda3\\python.exe",
+    "-c",
+    "import sys,json,hashlib,numpy,scipy; print(json.dumps({'python':sys.version,'executable':sys.executable,'python_sha256':hashlib.sha256(open(sys.executable,'rb').read()).hexdigest(),'numpy':numpy.__version__,'scipy':scipy.__version__},sort_keys=True))"
+  ],
+  "returncode": 0,
+  "stdout": "{\"executable\": \"C:\\\\Users\\\\adamd\\\\miniconda3\\\\python.exe\", \"numpy\": \"2.4.4\", \"python\": \"3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]\", \"python_sha256\": \"d28425da17099ddde0ea3cdde0128fa7b50fad87ec8843bdd5fe855e479f5dc4\", \"scipy\": \"1.17.1\"}\n",
+  "stderr": ""
+}

@@ -1,0 +1,23 @@
+	Command being timed: "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe --m 1000 --draws 5000000 --npar 40 --seed 20262015 --format binary --output /mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_m_sweep_20261015/jobs/m01000/attempt_0001/calibration/raw/m01000_npar040_fit.f64"
+	User time (seconds): 81.53
+	System time (seconds): 0.04
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:22.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3584
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 165
+	Voluntary context switches: 1264
+	Involuntary context switches: 53
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

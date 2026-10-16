@@ -9,6 +9,10 @@ The [prospective protocol](PLAN_2026-10-15.md) fixes the design and safeguards.
 The existing engine/calibrator is an external, hash-pinned dependency; this
 benchmark does not modify the shared engine checkout or install new defaults.
 
+The [completed 2026-10-15 results](RESULTS.md) include all eleven sizes,
+accepted and rejected fits, runtime, held-out checks and empirical diagnostics.
+Only m=90, 100, 150 passed both gates; all three DREAM5-size GPDs were rejected.
+
 ## Stages
 
 1. Measure native generation time at m=30, 300 and 1000 using 200,000 draws

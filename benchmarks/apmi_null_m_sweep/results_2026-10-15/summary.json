@@ -1,0 +1,3061 @@
+{
+  "format": "sjaracne-exact-m-moderate-tail-summary-v1",
+  "created_utc": "2026-10-16T00:05:29.339403+00:00",
+  "source_run": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015",
+  "plan_sha256": "1ac96a953f1335876fb2e0c2edcaf0c9b006677afd178c95ee14fac3a124a64f",
+  "summarizer_sha256": "d64d416246f5f410a695084ccc9b647c53ad7e6f4d626b2cd52f782a5aece2fc",
+  "config": {
+    "npar": 40,
+    "fit_draws": 5000000,
+    "validation_draws": 5000000,
+    "fit_seed": 20261015,
+    "validation_seed": 20261016,
+    "tail_quantile": 0.995,
+    "min_tail_count": 20000,
+    "p_min": 0.0005,
+    "p_max": 0.001,
+    "default_p": 0.0005,
+    "validation_p": [
+      0.001,
+      0.0005
+    ],
+    "stability_relative_tolerance": 0.1,
+    "min_stability_fits": 3,
+    "validation_family_confidence": 0.99,
+    "validation_family_comparisons": 10
+  },
+  "probabilities": [
+    0.001,
+    0.0005
+  ],
+  "limitations": "Synthetic independent uniform rank-permutation nulls only; Npar=40 and unique ordinal ranks. Exact m only: no interpolation or nearest-neighbor lookup. Acceptance does not establish biological accuracy, biological FDR, or an optimal network setting. Confidence is the predeclared 99% family setting per model with ten comparisons (99.9% per point), not simultaneous 99% coverage across all m. Empirical thresholds are fit-stream diagnostics evaluated on held-out draws, not replacement runtime models or a model-selection rule.",
+  "tail_design": "Recorded q=0.995 GPD fits; default/minimum p=0.0005, supported through p=0.001; independent 5M fitting and 5M validation draws per exact m.",
+  "legacy_label_correction": "Original engine CSV cutoff_p1e-7 and report p=1e-7 prose are stale labels. Original evidence remains unchanged; corrected cutoffs here are explicitly p=0.0005 and p=0.001.",
+  "counts": {
+    "accepted": 3,
+    "rejected": 8,
+    "failed": 0,
+    "incomplete": 0,
+    "not_started": 0
+  },
+  "results": [
+    {
+      "m": 30,
+      "stage": "anchors",
+      "status": "rejected",
+      "accepted": false,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.3209540116510405,
+          "exceedances": 5556,
+          "draws": 5000000,
+          "observed_p": 0.0011112,
+          "ratio_observed_to_nominal": 1.1112,
+          "interval_lower": 0.001062825596568703,
+          "interval_upper": 0.0011610857583779191,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.31953838009546576,
+              "tail_count": 37034
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.3209540116510405,
+              "tail_count": 22575
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.3248970167372736,
+              "tail_count": 12120
+            }
+          ],
+          "stability_relative_range": 0.016695964054919098,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.35905605521630624,
+          "exceedances": 2924,
+          "draws": 5000000,
+          "observed_p": 0.0005848,
+          "ratio_observed_to_nominal": 1.1696,
+          "interval_lower": 0.0005498769887948613,
+          "interval_upper": 0.0006212375955819305,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.3564598361024656,
+              "tail_count": 37034
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.35905605521630624,
+              "tail_count": 22575
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.3582086330841688,
+              "tail_count": 12120
+            }
+          ],
+          "stability_relative_range": 0.007247784877453182,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.3311598761380732,
+          "exceedances": 5036,
+          "draws": 5000000,
+          "observed_p": 0.0010072,
+          "ratio_observed_to_nominal": 1.0071999999999999,
+          "interval_lower": 0.0009611739030489057,
+          "interval_upper": 0.0010547379848971263,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.3663409137733207,
+          "exceedances": 2483,
+          "draws": 5000000,
+          "observed_p": 0.0004966,
+          "ratio_observed_to_nominal": 0.9932000000000001,
+          "interval_lower": 0.00046446794524702435,
+          "interval_upper": 0.0005302474117434832,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00030/attempt_0001",
+      "runner_status": "rejected",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 30,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00030\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000048_cc77f37a",
+        "started_utc": "2026-10-16T00:00:49.176621+00:00",
+        "finished_utc": "2026-10-16T00:01:06.734634+00:00",
+        "elapsed_seconds": 17.557206400029827,
+        "returncode": 0,
+        "error": null,
+        "status": "rejected",
+        "accepted": false,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.35905605521630624,
+        "stability_pass": true,
+        "validation_pass": false,
+        "relative_stability_range": 0.007247784877453182,
+        "model_path": null,
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00030\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 228356096,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00030\\attempt_0001\\calibration\\raw\\m00030_npar040_fit.f64",
+            "sha256": "3ba0fb59efeaa4875b481bd3fecddc27a8aba070f18bb3cb5df2a12f9f118123",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "30",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261045",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261045,
+            "generation_elapsed_seconds": 5.277213399996981,
+            "resources": {
+              "maximum_resident_set_kbytes": 3968,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00030\\attempt_0001\\calibration\\raw\\m00030_npar040_validation.f64",
+            "sha256": "18c97a7f10d09e494d424339097caa95767843aaf78cebbf0c52f2b2d8339cd9",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "30",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261046",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261046,
+            "generation_elapsed_seconds": 6.560530700022355,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/calibration_report.json": "efd1643d46e587a09aabf2eca4684c977e118bfe19f8a3dcf844e3f5666fba04",
+          "calibration/calibration_summary.csv": "bd71c62869f0b27d3472f48ca8cae50f0c3ac5be58cfb1857f7ae89af9a2a6be",
+          "calibration/raw/m00030_npar040_fit.f64": "3ba0fb59efeaa4875b481bd3fecddc27a8aba070f18bb3cb5df2a12f9f118123",
+          "calibration/raw/m00030_npar040_fit.f64.meta": "6f54b386a2d3fd8cae8d3a29e78cafdfccfdfcd0b413a7f9045cee9ded68cdca",
+          "calibration/raw/m00030_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00030_npar040_validation.f64": "18c97a7f10d09e494d424339097caa95767843aaf78cebbf0c52f2b2d8339cd9",
+          "calibration/raw/m00030_npar040_validation.f64.meta": "eb60dc382f9d9840efc898adef0ab6aeab6b867c690cc9ffae95397ad3eb05a1",
+          "calibration/raw/m00030_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "a61a5e8f211c83244aac5f07d9fa6100130a40a07b3d6dc34411dd3ddf023296",
+          "launch.json": "4ab5d97e2c4ecd1cf0a1fbb7f01c74d0112bc77468d69b8a106041d30ce82621",
+          "request.json": "e87883065299f8e9a72bdb4b65cceb5ac97445e2a651775ebb79a06c61fb449e",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "5f4c7193deec7203edc0827c90f61cb4e79ac633e58beb975bc3bf04736a78d6",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "011daef7ee94d466d28b3f7fc9c0f38931d15ad67f4abca4b625f44c07234a9c"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.2312716540122728,
+        "tail_count": 22575,
+        "tail_probability": 0.0045151990969601805,
+        "shape": -0.07151911935355458,
+        "scale": 0.06275740174521541,
+        "endpoint": 1.1087629082735893,
+        "cutoff_at_stability_probability": 0.35905605521630624
+      },
+      "stability_pass": true,
+      "validation_pass": false,
+      "recorded_stability_relative_range_at_5e_4": 0.007247784877453182,
+      "fit_summary": {
+        "minimum": 0.002223871246127107,
+        "maximum": 0.8007845381806291,
+        "mean": 0.024199011567814042,
+        "zero_fraction": 0.0,
+        "unique_values": 905
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "3ba0fb59efeaa4875b481bd3fecddc27a8aba070f18bb3cb5df2a12f9f118123",
+          "draws": 5000000,
+          "seed": 20261045,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "30",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261045",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "18c97a7f10d09e494d424339097caa95767843aaf78cebbf0c52f2b2d8339cd9",
+          "draws": 5000000,
+          "seed": 1020261046,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "30",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261046",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 50,
+      "stage": "anchors",
+      "status": "rejected",
+      "accepted": false,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.21575008220354389,
+          "exceedances": 5741,
+          "draws": 5000000,
+          "observed_p": 0.0011482,
+          "ratio_observed_to_nominal": 1.1482,
+          "interval_lower": 0.0010990169300857165,
+          "interval_upper": 0.0011988942424560186,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.223228411669231,
+              "tail_count": 36584
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.21575008220354389,
+              "tail_count": 24792
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.2198598403079693,
+              "tail_count": 12489
+            }
+          ],
+          "stability_relative_range": 0.034014076673629046,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.24007331042671337,
+          "exceedances": 2965,
+          "draws": 5000000,
+          "observed_p": 0.000593,
+          "ratio_observed_to_nominal": 1.186,
+          "interval_lower": 0.0005578285799769518,
+          "interval_upper": 0.0006296859383494134,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.24664812899799343,
+              "tail_count": 36584
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.24007331042671337,
+              "tail_count": 24792
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.2453170327968612,
+              "tail_count": 12489
+            }
+          ],
+          "stability_relative_range": 0.026801312963557845,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.2201031196201293,
+          "exceedances": 5233,
+          "draws": 5000000,
+          "observed_p": 0.0010466,
+          "ratio_observed_to_nominal": 1.0466,
+          "interval_lower": 0.0009996705620442413,
+          "interval_upper": 0.0010950411201724375,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.24373217603525,
+          "exceedances": 2657,
+          "draws": 5000000,
+          "observed_p": 0.0005314,
+          "ratio_observed_to_nominal": 1.0628,
+          "interval_lower": 0.0004981392512341517,
+          "interval_upper": 0.0005661757860318247,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00050/attempt_0001",
+      "runner_status": "rejected",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 50,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00050\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000048_cc77f37a",
+        "started_utc": "2026-10-16T00:00:49.177156+00:00",
+        "finished_utc": "2026-10-16T00:01:09.885243+00:00",
+        "elapsed_seconds": 20.70594319998054,
+        "returncode": 0,
+        "error": null,
+        "status": "rejected",
+        "accepted": false,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.24007331042671337,
+        "stability_pass": true,
+        "validation_pass": false,
+        "relative_stability_range": 0.026801312963557845,
+        "model_path": null,
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00050\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 227180544,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00050\\attempt_0001\\calibration\\raw\\m00050_npar040_fit.f64",
+            "sha256": "494eefd693652bff7fa3cd6704534693afbc79e5c7359dbdc0f084a50d9f3303",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "50",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261065",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261065,
+            "generation_elapsed_seconds": 7.1683499999926426,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00050\\attempt_0001\\calibration\\raw\\m00050_npar040_validation.f64",
+            "sha256": "b53b8a4f145b2a7e2b5a2c93bf33c28b6953ecf1ec7deb9e708f14a795701245",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "50",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261066",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261066,
+            "generation_elapsed_seconds": 7.321735899953637,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/calibration_report.json": "2b521a88bec640d6c692906125dfa34965cdf361ebd04a580c54d8380cc29e8b",
+          "calibration/calibration_summary.csv": "ed148dfd77726019bbbc84faee7fe16a34b5aba6df62e8698e7b6fe3d89d9967",
+          "calibration/raw/m00050_npar040_fit.f64": "494eefd693652bff7fa3cd6704534693afbc79e5c7359dbdc0f084a50d9f3303",
+          "calibration/raw/m00050_npar040_fit.f64.meta": "12f97bfaa094d2638ea7753f57b13a5211a8eb60a8878da66de4ddf822923442",
+          "calibration/raw/m00050_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00050_npar040_validation.f64": "b53b8a4f145b2a7e2b5a2c93bf33c28b6953ecf1ec7deb9e708f14a795701245",
+          "calibration/raw/m00050_npar040_validation.f64.meta": "1330cf1d2027c9ca214331ee2cb5ce7fe1b26a384b761f0be9f7a5f42ddd34d5",
+          "calibration/raw/m00050_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "8b812dd0135d18302409d20b460c4c9316f4d1fb4e1f5614078d0734afa643ea",
+          "launch.json": "c2bec63378ea1a36f614f197aab7f00a7059c7953cd45096df8045571055588c",
+          "request.json": "9ba1c830021268dd5710cb2bbc0a6bea226be583177da9f5be57f4353cb9b455",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "271da02e692e623cca8ffebfd8f2d8516a3391b92b09556cbaf7ee95b5e0f992",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "9b76d7a99e81a5bfaee4f1ab6a4db1e4bf8ba88feeb0741f2b878e4d7a06bdf0"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.16589711762636083,
+        "tail_count": 24792,
+        "tail_probability": 0.004958599008280199,
+        "shape": 0.10507053902280829,
+        "scale": 0.028590604710322313,
+        "endpoint": null,
+        "cutoff_at_stability_probability": 0.24007331042671337
+      },
+      "stability_pass": true,
+      "validation_pass": false,
+      "recorded_stability_relative_range_at_5e_4": 0.026801312963557845,
+      "fit_summary": {
+        "minimum": 0.0008002134699833796,
+        "maximum": 0.45361245064529143,
+        "mean": 0.015094713359906914,
+        "zero_fraction": 0.0,
+        "unique_values": 5256
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "494eefd693652bff7fa3cd6704534693afbc79e5c7359dbdc0f084a50d9f3303",
+          "draws": 5000000,
+          "seed": 20261065,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "50",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261065",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "b53b8a4f145b2a7e2b5a2c93bf33c28b6953ecf1ec7deb9e708f14a795701245",
+          "draws": 5000000,
+          "seed": 1020261066,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "50",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261066",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 80,
+      "stage": "anchors",
+      "status": "rejected",
+      "accepted": false,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.14770599361481912,
+          "exceedances": 4860,
+          "draws": 5000000,
+          "observed_p": 0.000972,
+          "ratio_observed_to_nominal": 0.972,
+          "interval_lower": 0.000926796056822459,
+          "interval_upper": 0.001018716019308736,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.14793710469597413,
+              "tail_count": 37414
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.14770599361481912,
+              "tail_count": 24998
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.14713940473045745,
+              "tail_count": 12493
+            }
+          ],
+          "stability_relative_range": 0.005400593070020466,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.16519963525121134,
+          "exceedances": 2286,
+          "draws": 5000000,
+          "observed_p": 0.0004572,
+          "ratio_observed_to_nominal": 0.9144,
+          "interval_lower": 0.0004263947697967632,
+          "interval_upper": 0.0004895209778880386,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.16520588824083798,
+              "tail_count": 37414
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.16519963525121134,
+              "tail_count": 24998
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.16414676868730416,
+              "tail_count": 12493
+            }
+          ],
+          "stability_relative_range": 0.006411149467268942,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.14754650304377215,
+          "exceedances": 4925,
+          "draws": 5000000,
+          "observed_p": 0.000985,
+          "ratio_observed_to_nominal": 0.985,
+          "interval_lower": 0.0009394907086369449,
+          "interval_upper": 0.001032021297487048,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.16392092481224196,
+          "exceedances": 2442,
+          "draws": 5000000,
+          "observed_p": 0.0004884,
+          "ratio_observed_to_nominal": 0.9768000000000001,
+          "interval_lower": 0.0004565396163774513,
+          "interval_upper": 0.0005217758192301053,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00080/attempt_0001",
+      "runner_status": "rejected",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 80,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00080\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000019_68dcfdce",
+        "started_utc": "2026-10-16T00:00:19.632806+00:00",
+        "finished_utc": "2026-10-16T00:00:38.665242+00:00",
+        "elapsed_seconds": 19.032102000026498,
+        "returncode": 0,
+        "error": null,
+        "status": "rejected",
+        "accepted": false,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.16519963525121134,
+        "stability_pass": true,
+        "validation_pass": false,
+        "relative_stability_range": 0.006411149467268942,
+        "model_path": null,
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00080\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 228077568,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00080\\attempt_0001\\calibration\\raw\\m00080_npar040_fit.f64",
+            "sha256": "c84851da8462c0ce8b993cb19f6810dbb88193053b5ed6f0eeec06b6e17cc22c",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "80",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261095",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261095,
+            "generation_elapsed_seconds": 9.23667650000425,
+            "resources": {
+              "maximum_resident_set_kbytes": 3584,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00080\\attempt_0001\\calibration\\raw\\m00080_npar040_validation.f64",
+            "sha256": "4ac3ae1e19cd4a7f12ccd8d344a7e32ac10ee8a65318f56675009c20127f0277",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "80",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261096",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261096,
+            "generation_elapsed_seconds": 6.186761499964632,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/calibration_report.json": "09227f21e54d1d7c6c6f88206e192af2b3f0f5a4b7fa2143a5734124e8e94541",
+          "calibration/calibration_summary.csv": "65e7e9f74831bedc67ad0b0557378bc4470d83848c698566e6d382110236832a",
+          "calibration/raw/m00080_npar040_fit.f64": "c84851da8462c0ce8b993cb19f6810dbb88193053b5ed6f0eeec06b6e17cc22c",
+          "calibration/raw/m00080_npar040_fit.f64.meta": "11fb3852d7f72d0f9c7b9b4a9ce81aeadaf3b13908919d99cf81c3fed591835f",
+          "calibration/raw/m00080_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00080_npar040_validation.f64": "4ac3ae1e19cd4a7f12ccd8d344a7e32ac10ee8a65318f56675009c20127f0277",
+          "calibration/raw/m00080_npar040_validation.f64.meta": "60ccd864c3d336a5f5ec14f1e9ee88f449ff161692c4bab3d86e8fc111223e78",
+          "calibration/raw/m00080_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "fc44439a2b2d892a59ead2f08db58495d27d1fa362525478cdcd393aae170769",
+          "launch.json": "ef7f2a1c48fb8db2a93d5da36ccab3a97ae882c29c07424d6497d615e11da81f",
+          "request.json": "74509e944fa59562c44612697e8f50361bd276f0ac24902ebe583de2ffd4888b",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "a9a19bd6e33d728976888c072621d7d52b01af008193f33d37b9909b1950f986",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "6a7b15a351b82fd758cfef41b3ebcbabda830487f87ffadceefd0fd6edbe9e25"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.1046750426543328,
+        "tail_count": 24998,
+        "tail_probability": 0.0049997990000402,
+        "shape": -0.04993608910480164,
+        "scale": 0.02782608913780843,
+        "endpoint": 0.6619090919490099,
+        "cutoff_at_stability_probability": 0.16519963525121134
+      },
+      "stability_pass": true,
+      "validation_pass": false,
+      "recorded_stability_relative_range_at_5e_4": 0.006411149467268942,
+      "fit_summary": {
+        "minimum": 0.0,
+        "maximum": 0.39439549215963643,
+        "mean": 0.009241756914399137,
+        "zero_fraction": 0.1698806,
+        "unique_values": 5367
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "c84851da8462c0ce8b993cb19f6810dbb88193053b5ed6f0eeec06b6e17cc22c",
+          "draws": 5000000,
+          "seed": 20261095,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "80",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261095",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "4ac3ae1e19cd4a7f12ccd8d344a7e32ac10ee8a65318f56675009c20127f0277",
+          "draws": 5000000,
+          "seed": 1020261096,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "80",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261096",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 90,
+      "stage": "anchors",
+      "status": "accepted",
+      "accepted": true,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.1336901736175567,
+          "exceedances": 4895,
+          "draws": 5000000,
+          "observed_p": 0.000979,
+          "ratio_observed_to_nominal": 0.979,
+          "interval_lower": 0.000933631385871079,
+          "interval_upper": 0.0010258806524883867,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.13350894206081326,
+              "tail_count": 37496
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.1336901736175567,
+              "tail_count": 24982
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.13323962464162728,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.00337467265469148,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.14931100941291361,
+          "exceedances": 2404,
+          "draws": 5000000,
+          "observed_p": 0.0004808,
+          "ratio_observed_to_nominal": 0.9615999999999999,
+          "interval_lower": 0.0004491934556865385,
+          "interval_upper": 0.0005139220539991306,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.14909246058283548,
+              "tail_count": 37496
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.14931100941291361,
+              "tail_count": 24982
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.1489606425771553,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.0023499970044672473,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.13342737482528833,
+          "exceedances": 4948,
+          "draws": 5000000,
+          "observed_p": 0.0009896,
+          "ratio_observed_to_nominal": 0.9895999999999999,
+          "interval_lower": 0.0009439831468437201,
+          "interval_upper": 0.0010367288346528182,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.14867315765107225,
+          "exceedances": 2471,
+          "draws": 5000000,
+          "observed_p": 0.0004942,
+          "ratio_observed_to_nominal": 0.9884,
+          "interval_lower": 0.00046214722473481804,
+          "interval_upper": 0.0005277681551280421,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00090/attempt_0001",
+      "runner_status": "accepted",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 90,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000048_cc77f37a",
+        "started_utc": "2026-10-16T00:00:49.177846+00:00",
+        "finished_utc": "2026-10-16T00:01:18.235937+00:00",
+        "elapsed_seconds": 29.056587699975353,
+        "returncode": 0,
+        "error": null,
+        "status": "accepted",
+        "accepted": true,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.14931100941291361,
+        "stability_pass": true,
+        "validation_pass": true,
+        "relative_stability_range": 0.0023499970044672473,
+        "model_path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001\\calibration\\apmi_null_m00090_npar040.model",
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 227241984,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001\\calibration\\raw\\m00090_npar040_fit.f64",
+            "sha256": "77b08171aa3fb53253200e7284f514b940b571b4532f69034660842f34ae189b",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "90",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261105",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261105,
+            "generation_elapsed_seconds": 12.127732699969783,
+            "resources": {
+              "maximum_resident_set_kbytes": 3712,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00090\\attempt_0001\\calibration\\raw\\m00090_npar040_validation.f64",
+            "sha256": "4e9deb21ce8dbd0c08b5d478a4abad98faf8130b3f329fe70d467513d1a9d5a9",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "90",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261106",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261106,
+            "generation_elapsed_seconds": 10.577189399977215,
+            "resources": {
+              "maximum_resident_set_kbytes": 3968,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/apmi_null_m00090_npar040.model": "8eb304f1eef88aceef8db2fcab41a949168dbc1253f2fec85d834096d54e29cc",
+          "calibration/calibration_report.json": "8172b7b6bf5dbcf880605cd0b5321e106c437a877c41ce401b0b5745a92f3f3c",
+          "calibration/calibration_summary.csv": "e9d1f864526f29fc8f7af6e8b674b020bf36a9f84a4f3acd3f261e859f5cea71",
+          "calibration/raw/m00090_npar040_fit.f64": "77b08171aa3fb53253200e7284f514b940b571b4532f69034660842f34ae189b",
+          "calibration/raw/m00090_npar040_fit.f64.meta": "67144d257b7167839ce933a85c2bada90c7cd130562f1d06a556c8dacd69c07f",
+          "calibration/raw/m00090_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00090_npar040_validation.f64": "4e9deb21ce8dbd0c08b5d478a4abad98faf8130b3f329fe70d467513d1a9d5a9",
+          "calibration/raw/m00090_npar040_validation.f64.meta": "cc9461545ca26aabf7e40863bfa05025892a7d21eba93bbb8948bd5e8eb3c546",
+          "calibration/raw/m00090_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "82b948316d1c7f5748be406daf6a7a4b320c66a76e9a026882c8be034e688105",
+          "launch.json": "671f135063d6e3e5f0dfd123c530c715637c1d795fe16da2b8402998b5ba4b2d",
+          "request.json": "507f491f7cb55873d4f1a8f0fe0c97a39072c461d8d8d41d8fe6b5777a8a9598",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "d026df619bef52ea4baa8413e385e86acf86526638a5da175ea60be534633ab5",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "802c2fadb9510bb202f57a62c517d1a2693d2c395b79619f31c76b11f9ba3713"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.0955196645900882,
+        "tail_count": 24982,
+        "tail_probability": 0.0049965990006802,
+        "shape": -0.04457872791728926,
+        "scale": 0.024587666635919714,
+        "endpoint": 0.6470757045367489,
+        "cutoff_at_stability_probability": 0.14931100941291361
+      },
+      "stability_pass": true,
+      "validation_pass": true,
+      "recorded_stability_relative_range_at_5e_4": 0.0023499970044672473,
+      "fit_summary": {
+        "minimum": 0.0002469339063679854,
+        "maximum": 0.32079987057841564,
+        "mean": 0.00831841770661096,
+        "zero_fraction": 0.0,
+        "unique_values": 16905
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "77b08171aa3fb53253200e7284f514b940b571b4532f69034660842f34ae189b",
+          "draws": 5000000,
+          "seed": 20261105,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "90",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261105",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "4e9deb21ce8dbd0c08b5d478a4abad98faf8130b3f329fe70d467513d1a9d5a9",
+          "draws": 5000000,
+          "seed": 1020261106,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "90",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261106",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 100,
+      "stage": "anchors",
+      "status": "accepted",
+      "accepted": true,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.1212906415619601,
+          "exceedances": 5009,
+          "draws": 5000000,
+          "observed_p": 0.0010018,
+          "ratio_observed_to_nominal": 1.0018,
+          "interval_lower": 0.0009558990824418824,
+          "interval_upper": 0.0010492128340947044,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.12164273119542846,
+              "tail_count": 37470
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.1212906415619601,
+              "tail_count": 24962
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.12050772288859145,
+              "tail_count": 12494
+            }
+          ],
+          "stability_relative_range": 0.009357756643221311,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.13522802474615458,
+          "exceedances": 2555,
+          "draws": 5000000,
+          "observed_p": 0.000511,
+          "ratio_observed_to_nominal": 1.0219999999999998,
+          "interval_lower": 0.00047839624423079343,
+          "interval_upper": 0.0005451189778276759,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.1355689758474906,
+              "tail_count": 37470
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.13522802474615458,
+              "tail_count": 24962
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.13428465220923846,
+              "tail_count": 12494
+            }
+          ],
+          "stability_relative_range": 0.009497466524879275,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.1205703440379029,
+          "exceedances": 5147,
+          "draws": 5000000,
+          "observed_p": 0.0010294,
+          "ratio_observed_to_nominal": 1.0293999999999999,
+          "interval_lower": 0.0009828627787357856,
+          "interval_upper": 0.0010774489926834159,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.13493742127575725,
+          "exceedances": 2583,
+          "draws": 5000000,
+          "observed_p": 0.0005166,
+          "ratio_observed_to_nominal": 1.0332,
+          "interval_lower": 0.0004838146052907365,
+          "interval_upper": 0.0005509005653215491,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00100/attempt_0001",
+      "runner_status": "accepted",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 100,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00100\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000048_cc77f37a",
+        "started_utc": "2026-10-16T00:00:49.178355+00:00",
+        "finished_utc": "2026-10-16T00:01:19.161840+00:00",
+        "elapsed_seconds": 29.982429900032002,
+        "returncode": 0,
+        "error": null,
+        "status": "accepted",
+        "accepted": true,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.13522802474615458,
+        "stability_pass": true,
+        "validation_pass": true,
+        "relative_stability_range": 0.009497466524879275,
+        "model_path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00100\\attempt_0001\\calibration\\apmi_null_m00100_npar040.model",
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00100\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 227291136,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00100\\attempt_0001\\calibration\\raw\\m00100_npar040_fit.f64",
+            "sha256": "fe37ee09c4811100c5085dd8d31f8c6608315557877ec1f7bfd0ccf5eefccc8c",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "100",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261115",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261115,
+            "generation_elapsed_seconds": 12.46386600000551,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00100\\attempt_0001\\calibration\\raw\\m00100_npar040_validation.f64",
+            "sha256": "638250f5f5f73482bb1b0f36071a1b9a8db52bd6fcd993031bb274edb3e69b0e",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "100",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261116",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261116,
+            "generation_elapsed_seconds": 11.937199200037867,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/apmi_null_m00100_npar040.model": "0da3d144f3c84fa684b26c116f72d669adf645307ecd07ca18b399f82d481879",
+          "calibration/calibration_report.json": "66cd7b21693a069d24576de366a93e076170625e40f7cd2335d677e2432c65cb",
+          "calibration/calibration_summary.csv": "f86224e40d09b7e348c43218dec37a9ed6fbee3931b74b22c2bde69da913e1f4",
+          "calibration/raw/m00100_npar040_fit.f64": "fe37ee09c4811100c5085dd8d31f8c6608315557877ec1f7bfd0ccf5eefccc8c",
+          "calibration/raw/m00100_npar040_fit.f64.meta": "0df00c2efab00f45a5f9536407985c0b93d2fbe40874a7ef0a2b51a4f2437b71",
+          "calibration/raw/m00100_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00100_npar040_validation.f64": "638250f5f5f73482bb1b0f36071a1b9a8db52bd6fcd993031bb274edb3e69b0e",
+          "calibration/raw/m00100_npar040_validation.f64.meta": "74102941229deddca85dd825b06cec563aabecd691632483aa3500dd180f3c30",
+          "calibration/raw/m00100_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "b573db7948338e4f940d9d6f82413e60f6352f140828748c864d0627bf59d4de",
+          "launch.json": "0396bc7dfe42cee9f33300f576e970a75d0ee04fced84a80bb737b1b1b2259f3",
+          "request.json": "7d1b1674cd9cabe9291be8fe0b4e349c7492eaf768a2f1abdeb34cdfc67bdaaf",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "ab505f4b092f60f2de60d39282fb5304703479d323d6694060160fa10440ed3d",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "2b9d3debf3dfefe018ae67ab34b0011eb3d1069bba574e71bb0068a70c59c461"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.0876067649016079,
+        "tail_count": 24962,
+        "tail_probability": 0.0049925990014802,
+        "shape": -0.035510701886984505,
+        "scale": 0.021552010006847963,
+        "endpoint": 0.694522676489018,
+        "cutoff_at_stability_probability": 0.13522802474615458
+      },
+      "stability_pass": true,
+      "validation_pass": true,
+      "recorded_stability_relative_range_at_5e_4": 0.009497466524879275,
+      "fit_summary": {
+        "minimum": 8.881784197001252e-16,
+        "maximum": 0.26933192759449565,
+        "mean": 0.007490231547053237,
+        "zero_fraction": 0.0,
+        "unique_values": 11889
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "fe37ee09c4811100c5085dd8d31f8c6608315557877ec1f7bfd0ccf5eefccc8c",
+          "draws": 5000000,
+          "seed": 20261115,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "100",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261115",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "638250f5f5f73482bb1b0f36071a1b9a8db52bd6fcd993031bb274edb3e69b0e",
+          "draws": 5000000,
+          "seed": 1020261116,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "100",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261116",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 150,
+      "stage": "anchors",
+      "status": "accepted",
+      "accepted": true,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.0845820547308119,
+          "exceedances": 4824,
+          "draws": 5000000,
+          "observed_p": 0.0009648,
+          "ratio_observed_to_nominal": 0.9648,
+          "interval_lower": 0.0009197660541949782,
+          "interval_upper": 0.0010113460609742198,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.08628388995663896,
+              "tail_count": 37498
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.0845820547308119,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.08416457143948101,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.025056361232921386,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.09484120754257408,
+          "exceedances": 2553,
+          "draws": 5000000,
+          "observed_p": 0.0005106,
+          "ratio_observed_to_nominal": 1.0212,
+          "interval_lower": 0.00047800925649001217,
+          "interval_upper": 0.0005447059692647002,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.09664927211062285,
+              "tail_count": 37498
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.09484120754257408,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.09442726173847257,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.02342874399983596,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.08411506751632558,
+          "exceedances": 4963,
+          "draws": 5000000,
+          "observed_p": 0.0009926,
+          "ratio_observed_to_nominal": 0.9925999999999999,
+          "interval_lower": 0.0009469131328698894,
+          "interval_upper": 0.00103979883260521,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.09569146317808563,
+          "exceedances": 2421,
+          "draws": 5000000,
+          "observed_p": 0.0004842,
+          "ratio_observed_to_nominal": 0.9684,
+          "interval_lower": 0.0004524796495138844,
+          "interval_upper": 0.000517435826884209,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00150/attempt_0001",
+      "runner_status": "accepted",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 150,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00150\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000048_cc77f37a",
+        "started_utc": "2026-10-16T00:00:49.178804+00:00",
+        "finished_utc": "2026-10-16T00:01:24.841898+00:00",
+        "elapsed_seconds": 35.66161599999759,
+        "returncode": 0,
+        "error": null,
+        "status": "accepted",
+        "accepted": true,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.09484120754257408,
+        "stability_pass": true,
+        "validation_pass": true,
+        "relative_stability_range": 0.02342874399983596,
+        "model_path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00150\\attempt_0001\\calibration\\apmi_null_m00150_npar040.model",
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00150\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 227127296,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00150\\attempt_0001\\calibration\\raw\\m00150_npar040_fit.f64",
+            "sha256": "4b4ffd94f51dfeefd2656a24582804f58e1b31442f4bfb6a68b15bd8b09a54c7",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "150",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261165",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261165,
+            "generation_elapsed_seconds": 16.036855799960904,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00150\\attempt_0001\\calibration\\raw\\m00150_npar040_validation.f64",
+            "sha256": "4e9ffdfe4cfaeada52351a789453dc08a0156217a39f339b505ce4fa2735b9a5",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "150",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261166",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261166,
+            "generation_elapsed_seconds": 15.271628300019074,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/apmi_null_m00150_npar040.model": "561967c3a6f519012eb6cc608bd364fa19e9069cec909da8a4b4ce6af2474a11",
+          "calibration/calibration_report.json": "1942ac6380a27f064022fe73cb0b3296a34da3a4cd33e7fc0c8c2e2bc1dc0b55",
+          "calibration/calibration_summary.csv": "286a8171c548bbe63fa25de0f1b5e4825470997d627e20a4e18173cea472eeb2",
+          "calibration/raw/m00150_npar040_fit.f64": "4b4ffd94f51dfeefd2656a24582804f58e1b31442f4bfb6a68b15bd8b09a54c7",
+          "calibration/raw/m00150_npar040_fit.f64.meta": "74ba1f9c33af54a7f0062bc3d0ffaf88e5314cbf64fb7b92d33b1fd08d6cf8ae",
+          "calibration/raw/m00150_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00150_npar040_validation.f64": "4e9ffdfe4cfaeada52351a789453dc08a0156217a39f339b505ce4fa2735b9a5",
+          "calibration/raw/m00150_npar040_validation.f64.meta": "14ea84eeac74400a3a12af30e286ce31c67b6b540dc2a84965e521eeb6c3743a",
+          "calibration/raw/m00150_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "bc3466f7084283d14936b02c725f2533e621caef3f16c9792ec4df1041122f3b",
+          "launch.json": "2a2ef3e4adfa72dcfb451c69c799f4c598e0ddc8ff570409e1f9809dafc0c64b",
+          "request.json": "84e3cab691dfd67ad980745931c62771f211a1bf311077715f9325e440bac5cc",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "1abf1ade951c638215c0a07731ee2f03400aa5e6c670c1b803f49d1690b4c0ec",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "f6bbaf8f683874a77f7a9408f6dc94d17c0aee2856a93200e81933fc5f5c00be"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.06122997024007848,
+        "tail_count": 24999,
+        "tail_probability": 0.0049999990000002,
+        "shape": 0.017291948939265334,
+        "scale": 0.01430850265069038,
+        "endpoint": null,
+        "cutoff_at_stability_probability": 0.09484120754257408
+      },
+      "stability_pass": true,
+      "validation_pass": true,
+      "recorded_stability_relative_range_at_5e_4": 0.02342874399983596,
+      "fit_summary": {
+        "minimum": 8.889152282076651e-05,
+        "maximum": 0.23463971330178612,
+        "mean": 0.00511136601239152,
+        "zero_fraction": 0.0,
+        "unique_values": 36277
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "4b4ffd94f51dfeefd2656a24582804f58e1b31442f4bfb6a68b15bd8b09a54c7",
+          "draws": 5000000,
+          "seed": 20261165,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "150",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261165",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "4e9ffdfe4cfaeada52351a789453dc08a0156217a39f339b505ce4fa2735b9a5",
+          "draws": 5000000,
+          "seed": 1020261166,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "150",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261166",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 300,
+      "stage": "anchors",
+      "status": "rejected",
+      "accepted": false,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.044291504264555234,
+          "exceedances": 5104,
+          "draws": 5000000,
+          "observed_p": 0.0010208,
+          "ratio_observed_to_nominal": 1.0208000000000002,
+          "interval_lower": 0.0009744601195813631,
+          "interval_upper": 0.0010686516967886477,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.045295812146524866,
+              "tail_count": 37499
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.044291504264555234,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.044306083353162086,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.02266749407670122,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.049954694747233866,
+          "exceedances": 2701,
+          "draws": 5000000,
+          "observed_p": 0.0005402,
+          "ratio_observed_to_nominal": 1.0804,
+          "interval_lower": 0.0005066597471024906,
+          "interval_upper": 0.0005752552125967667,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.050982582267872195,
+              "tail_count": 37499
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.049954694747233866,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.05004528623660845,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.020539147598808673,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.04435283571951665,
+          "exceedances": 5076,
+          "draws": 5000000,
+          "observed_p": 0.0010152,
+          "ratio_observed_to_nominal": 1.0151999999999999,
+          "interval_lower": 0.0009689890690962996,
+          "interval_upper": 0.0010629227766724867,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.050513837725898014,
+          "exceedances": 2527,
+          "draws": 5000000,
+          "observed_p": 0.0005054,
+          "ratio_observed_to_nominal": 1.0108000000000001,
+          "interval_lower": 0.0004729788826083537,
+          "interval_upper": 0.000539336391463353,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00300/attempt_0001",
+      "runner_status": "rejected",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 300,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00300\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000048_cc77f37a",
+        "started_utc": "2026-10-16T00:00:49.180171+00:00",
+        "finished_utc": "2026-10-16T00:01:52.679747+00:00",
+        "elapsed_seconds": 63.49888580001425,
+        "returncode": 0,
+        "error": null,
+        "status": "rejected",
+        "accepted": false,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.049954694747233866,
+        "stability_pass": true,
+        "validation_pass": false,
+        "relative_stability_range": 0.020539147598808673,
+        "model_path": null,
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00300\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 227328000,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00300\\attempt_0001\\calibration\\raw\\m00300_npar040_fit.f64",
+            "sha256": "7b374362de889b7aa898c433cc9becebefad677336d16e052dee59787da39e37",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "300",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261315",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261315,
+            "generation_elapsed_seconds": 27.871424600016326,
+            "resources": {
+              "maximum_resident_set_kbytes": 3712,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00300\\attempt_0001\\calibration\\raw\\m00300_npar040_validation.f64",
+            "sha256": "b40fb7de2de73b57a5f5fad7f5ff904ecde7598b34e838fc926548dc424caed4",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "300",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261316",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261316,
+            "generation_elapsed_seconds": 30.198197000019718,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/calibration_report.json": "6cb42048ab574bfec1fe82b2dffd3c81847174e243a0c6bbb3f64dfce5bfca7a",
+          "calibration/calibration_summary.csv": "5e39e19e7c28417104e863fef61fa1b6d1002161c4bd570dbbf9cc3990ad4388",
+          "calibration/raw/m00300_npar040_fit.f64": "7b374362de889b7aa898c433cc9becebefad677336d16e052dee59787da39e37",
+          "calibration/raw/m00300_npar040_fit.f64.meta": "f01aab959d3996fbfa80b7edde8c818c269ccd1f352a2aa8874aba5ee556c26e",
+          "calibration/raw/m00300_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00300_npar040_validation.f64": "b40fb7de2de73b57a5f5fad7f5ff904ecde7598b34e838fc926548dc424caed4",
+          "calibration/raw/m00300_npar040_validation.f64.meta": "9bac80c3021d8a4e81475179b3b4fbbe07dedafee2eb6a06137f759353b71f70",
+          "calibration/raw/m00300_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "1146995c024e5ce7739e30bc6d74967154a3c01a8bf44e9b37f1e3d495ca6063",
+          "launch.json": "b4cd059eeb79f822b250aac1b4e14708c3e2f9dbe796427f573aa0beb8a7d5e4",
+          "request.json": "c6d6ab59cb526d6f05cc3c361f542e9c4464249bf557d8ccdf90479f36bb557f",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "2712ad27dfba375b9e45a3f1bbf9d264c9196e745dc41be154a13dcedbeca34d",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "2d748b94a26b00723f1b6f8502a9e9b1ac5ff566cfdebabd2b8192def220e3bb"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.03125444789744147,
+        "tail_count": 24999,
+        "tail_probability": 0.0049999990000002,
+        "shape": 0.007464933068548568,
+        "scale": 0.008051816631580586,
+        "endpoint": null,
+        "cutoff_at_stability_probability": 0.049954694747233866
+      },
+      "stability_pass": true,
+      "validation_pass": false,
+      "recorded_stability_relative_range_at_5e_4": 0.020539147598808673,
+      "fit_summary": {
+        "minimum": 0.0,
+        "maximum": 0.10622333720222432,
+        "mean": 0.0025486781118095707,
+        "zero_fraction": 0.0878014,
+        "unique_values": 40943
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "7b374362de889b7aa898c433cc9becebefad677336d16e052dee59787da39e37",
+          "draws": 5000000,
+          "seed": 20261315,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "300",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261315",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "b40fb7de2de73b57a5f5fad7f5ff904ecde7598b34e838fc926548dc424caed4",
+          "draws": 5000000,
+          "seed": 1020261316,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "300",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261316",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 1000,
+      "stage": "anchors",
+      "status": "rejected",
+      "accepted": false,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.013571394852046082,
+          "exceedances": 5761,
+          "draws": 5000000,
+          "observed_p": 0.0011522,
+          "ratio_observed_to_nominal": 1.1522,
+          "interval_lower": 0.001102930294721964,
+          "interval_upper": 0.0012029808583034246,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.013788666227188908,
+              "tail_count": 37499
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.013571394852046082,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.01374445612254424,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.01580792817159557,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.015595652614113612,
+          "exceedances": 2854,
+          "draws": 5000000,
+          "observed_p": 0.0005708,
+          "ratio_observed_to_nominal": 1.1416,
+          "interval_lower": 0.0005363051676839273,
+          "interval_upper": 0.0006068095314890618,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.015756694354657538,
+              "tail_count": 37499
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.015595652614113612,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.015827060081357727,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.014686295363450544,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.013908260963428454,
+          "exceedances": 5170,
+          "draws": 5000000,
+          "observed_p": 0.001034,
+          "ratio_observed_to_nominal": 1.034,
+          "interval_lower": 0.0009873575636718409,
+          "interval_upper": 0.001082154183800529,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.015808641267925694,
+          "exceedances": 2651,
+          "draws": 5000000,
+          "observed_p": 0.0005302,
+          "ratio_observed_to_nominal": 1.0604,
+          "interval_lower": 0.0004969775444726763,
+          "interval_upper": 0.0005649375034678692,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m01000/attempt_0001",
+      "runner_status": "rejected",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 1000,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m01000\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000048_cc77f37a",
+        "started_utc": "2026-10-16T00:00:49.180713+00:00",
+        "finished_utc": "2026-10-16T00:03:18.788417+00:00",
+        "elapsed_seconds": 149.60690219997196,
+        "returncode": 0,
+        "error": null,
+        "status": "rejected",
+        "accepted": false,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.015595652614113612,
+        "stability_pass": true,
+        "validation_pass": false,
+        "relative_stability_range": 0.014686295363450544,
+        "model_path": null,
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m01000\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 227020800,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m01000\\attempt_0001\\calibration\\raw\\m01000_npar040_fit.f64",
+            "sha256": "bcdbfed32820de1c697ac52f6d0430bcc0937175b4528b8e9ab9d4ce17723d0b",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "1000",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20262015",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20262015,
+            "generation_elapsed_seconds": 82.75239000003785,
+            "resources": {
+              "maximum_resident_set_kbytes": 3584,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m01000\\attempt_0001\\calibration\\raw\\m01000_npar040_validation.f64",
+            "sha256": "1b5f3cd916d8c8322a8c8c0951955d2661ca54b03a3bfb8e0369b27cfb924410",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "1000",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020262016",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020262016,
+            "generation_elapsed_seconds": 62.6211503999657,
+            "resources": {
+              "maximum_resident_set_kbytes": 3968,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/calibration_report.json": "412daa8b90f28eebec7561b7c3f1b12e353b4a8fa841f13ad65a5708ab342121",
+          "calibration/calibration_summary.csv": "a611e446a50a40861ed06fef6cb1312e9f344d55f8833c75d15314a550be54e2",
+          "calibration/raw/m01000_npar040_fit.f64": "bcdbfed32820de1c697ac52f6d0430bcc0937175b4528b8e9ab9d4ce17723d0b",
+          "calibration/raw/m01000_npar040_fit.f64.meta": "8193066af0a1adfc1c91c5e8a6d7ddb64f52c69c02247ed72d2d5584b9c99cd8",
+          "calibration/raw/m01000_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m01000_npar040_validation.f64": "1b5f3cd916d8c8322a8c8c0951955d2661ca54b03a3bfb8e0369b27cfb924410",
+          "calibration/raw/m01000_npar040_validation.f64.meta": "0d83cee3515da72d3a99aa9bc03dbd8982112e65ebaf05185acea629bf48e9ab",
+          "calibration/raw/m01000_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "e8c15daba13cddfd4e99c343dc238e164174bbdd7931aef3722c33390905a640",
+          "launch.json": "ab4dc764f1f35ca622595760790f43e498d01a0567aea0e5a4635a981b30e28e",
+          "request.json": "7ae86a1f82719bf62c83de2aa87da39131355bb93fbf58896ffc692423378e54",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "b6e985098364428e04e974ddce7c008c5c7273c8012fa444c7354538231df103",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "12811482b1640982c219f3ab851f7a1b616582ac10cbaa04fbf889f865617c45"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.00935637121275601,
+        "tail_count": 24999,
+        "tail_probability": 0.0049999990000002,
+        "shape": 0.09532268545047816,
+        "scale": 0.00242318277750587,
+        "endpoint": null,
+        "cutoff_at_stability_probability": 0.015595652614113612
+      },
+      "stability_pass": true,
+      "validation_pass": false,
+      "recorded_stability_relative_range_at_5e_4": 0.014686295363450544,
+      "fit_summary": {
+        "minimum": 0.0,
+        "maximum": 0.03997807937079223,
+        "mean": 0.0007631060687080306,
+        "zero_fraction": 0.0480154,
+        "unique_values": 92604
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "bcdbfed32820de1c697ac52f6d0430bcc0937175b4528b8e9ab9d4ce17723d0b",
+          "draws": 5000000,
+          "seed": 20262015,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "1000",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20262015",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "1b5f3cd916d8c8322a8c8c0951955d2661ca54b03a3bfb8e0369b27cfb924410",
+          "draws": 5000000,
+          "seed": 1020262016,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "1000",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020262016",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 644,
+      "stage": "dream",
+      "status": "rejected",
+      "accepted": false,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.02107614287138484,
+          "exceedances": 5615,
+          "draws": 5000000,
+          "observed_p": 0.001123,
+          "ratio_observed_to_nominal": 1.123,
+          "interval_lower": 0.0010743662502095662,
+          "interval_upper": 0.0011731450461885014,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.021389362250844618,
+              "tail_count": 37498
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.02107614287138484,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.021305909254192585,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.014701056675069811,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.02409743098235921,
+          "exceedances": 2726,
+          "draws": 5000000,
+          "observed_p": 0.0005452,
+          "ratio_observed_to_nominal": 1.0904,
+          "interval_lower": 0.0005115019531455184,
+          "interval_upper": 0.0005804129630283814,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.02434741886926487,
+              "tail_count": 37498
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.02409743098235921,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.02441727911541855,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.013136839464453513,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.021547737741542505,
+          "exceedances": 5097,
+          "draws": 5000000,
+          "observed_p": 0.0010194,
+          "ratio_observed_to_nominal": 1.0193999999999999,
+          "interval_lower": 0.0009730923236340762,
+          "interval_upper": 0.0010672195000760503,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.02421550270441397,
+          "exceedances": 2646,
+          "draws": 5000000,
+          "observed_p": 0.0005292,
+          "ratio_observed_to_nominal": 1.0584,
+          "interval_lower": 0.0004960094886683436,
+          "interval_upper": 0.0005639055681858192,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00644/attempt_0001",
+      "runner_status": "rejected",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 644,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00644\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000329_eac5cd5a",
+        "started_utc": "2026-10-16T00:03:30.007054+00:00",
+        "finished_utc": "2026-10-16T00:05:00.732256+00:00",
+        "elapsed_seconds": 90.72466900001746,
+        "returncode": 0,
+        "error": null,
+        "status": "rejected",
+        "accepted": false,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.02409743098235921,
+        "stability_pass": true,
+        "validation_pass": false,
+        "relative_stability_range": 0.013136839464453513,
+        "model_path": null,
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00644\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 227344384,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00644\\attempt_0001\\calibration\\raw\\m00644_npar040_fit.f64",
+            "sha256": "1bc61d31b661adf2121657da7b51fc5171cc174531e1d19cfb2dd56c033aaf06",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "644",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261659",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261659,
+            "generation_elapsed_seconds": 43.77180849999422,
+            "resources": {
+              "maximum_resident_set_kbytes": 3584,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00644\\attempt_0001\\calibration\\raw\\m00644_npar040_validation.f64",
+            "sha256": "e438f0c63196f275c6e8d2648618ff76b19597be7546d778ce9e6c5d2bc38379",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "644",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261660",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261660,
+            "generation_elapsed_seconds": 42.90304020000622,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/calibration_report.json": "60069a6d85ad7e15cf225c8321ec4fd4198d768d36a9d6fc3979f2eeee1532bc",
+          "calibration/calibration_summary.csv": "97034aa06f52699cc66e660e50111afed7e643c2f064fc66055d0a70d0bc660b",
+          "calibration/raw/m00644_npar040_fit.f64": "1bc61d31b661adf2121657da7b51fc5171cc174531e1d19cfb2dd56c033aaf06",
+          "calibration/raw/m00644_npar040_fit.f64.meta": "4e3d225f5e62806233aa6357d07912bc661bc83dc1cfadb1bdb31f5df8b62f35",
+          "calibration/raw/m00644_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00644_npar040_validation.f64": "e438f0c63196f275c6e8d2648618ff76b19597be7546d778ce9e6c5d2bc38379",
+          "calibration/raw/m00644_npar040_validation.f64.meta": "b93550e39f5dafa02c2186906db51f8bf358b246c49cb6093dcc44d62ca2e5ed",
+          "calibration/raw/m00644_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "555391356de8caa56b484ff061b9b8b73c5a3a8490e281b503b74108d80c9d5c",
+          "launch.json": "a172fc8a122a9e43f6a998d48ccfca0b201325af06e021ff1c4b93e08f2d91be",
+          "request.json": "c7f46fb3353a12d4b4fe3a70d81192934180f00fa7fb5fbac1220fd969685f4d",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "b5872ea4b3f6b0ee7422f47afd5d7aa6fd608578b9eabc9f4c7478c21c7104e2",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "91127cc63ae2d14bddf80481a4525f39bdf847f01d9cabd9a8696b3de937f30a"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.01456356709922968,
+        "tail_count": 24999,
+        "tail_probability": 0.0049999990000002,
+        "shape": 0.06489769674799917,
+        "scale": 0.0038388438755323044,
+        "endpoint": null,
+        "cutoff_at_stability_probability": 0.02409743098235921
+      },
+      "stability_pass": true,
+      "validation_pass": false,
+      "recorded_stability_relative_range_at_5e_4": 0.013136839464453513,
+      "fit_summary": {
+        "minimum": 0.0,
+        "maximum": 0.056666262250897326,
+        "mean": 0.0011855330863827817,
+        "zero_fraction": 0.0598932,
+        "unique_values": 63604
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "1bc61d31b661adf2121657da7b51fc5171cc174531e1d19cfb2dd56c033aaf06",
+          "draws": 5000000,
+          "seed": 20261659,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "644",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261659",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "e438f0c63196f275c6e8d2648618ff76b19597be7546d778ce9e6c5d2bc38379",
+          "draws": 5000000,
+          "seed": 1020261660,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "644",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261660",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 516,
+      "stage": "dream",
+      "status": "rejected",
+      "accepted": false,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.026220957639526983,
+          "exceedances": 5240,
+          "draws": 5000000,
+          "observed_p": 0.001048,
+          "ratio_observed_to_nominal": 1.048,
+          "interval_lower": 0.001001038780191142,
+          "interval_upper": 0.0010964728948050044,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.026639596772100455,
+              "tail_count": 37499
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.026220957639526983,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.02644493051894364,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.015830600586134353,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.02990629930110426,
+          "exceedances": 2570,
+          "draws": 5000000,
+          "observed_p": 0.000514,
+          "ratio_observed_to_nominal": 1.028,
+          "interval_lower": 0.00048129881440493966,
+          "interval_upper": 0.000548216380023531,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.030254272937220668,
+              "tail_count": 37499
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.02990629930110426,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.030211311554353158,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.011517991712818169,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.026579122737776295,
+          "exceedances": 4905,
+          "draws": 5000000,
+          "observed_p": 0.000981,
+          "ratio_observed_to_nominal": 0.9810000000000001,
+          "interval_lower": 0.0009355844455475814,
+          "interval_upper": 0.001027927582052447,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.03026082108067829,
+          "exceedances": 2398,
+          "draws": 5000000,
+          "observed_p": 0.0004796,
+          "ratio_observed_to_nominal": 0.9591999999999999,
+          "interval_lower": 0.0004480337187199679,
+          "interval_upper": 0.0005126818027720868,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00516/attempt_0001",
+      "runner_status": "rejected",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 516,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00516\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000329_eac5cd5a",
+        "started_utc": "2026-10-16T00:03:30.007154+00:00",
+        "finished_utc": "2026-10-16T00:04:45.036202+00:00",
+        "elapsed_seconds": 75.02857429999858,
+        "returncode": 0,
+        "error": null,
+        "status": "rejected",
+        "accepted": false,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.02990629930110426,
+        "stability_pass": true,
+        "validation_pass": false,
+        "relative_stability_range": 0.011517991712818169,
+        "model_path": null,
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00516\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 227368960,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00516\\attempt_0001\\calibration\\raw\\m00516_npar040_fit.f64",
+            "sha256": "11993ab1d6c51d1b56be89884878fc2cbb0fe84ffff61fe48b6447b377a571e6",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "516",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261531",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261531,
+            "generation_elapsed_seconds": 35.781871300016064,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00516\\attempt_0001\\calibration\\raw\\m00516_npar040_validation.f64",
+            "sha256": "47aa2270a8ee12f395e7f41db68d4ec95460d0afb5d6197b29d663be50002c94",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "516",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261532",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261532,
+            "generation_elapsed_seconds": 35.10066739999456,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/calibration_report.json": "8b5d055aa856b4491262f6e25459b705be586f259ce94951cb00bad110ca428f",
+          "calibration/calibration_summary.csv": "ed8288f5f7c4773a0a3421e327d4ff68cfb8dc0fb5546c3aec320b8272930a56",
+          "calibration/raw/m00516_npar040_fit.f64": "11993ab1d6c51d1b56be89884878fc2cbb0fe84ffff61fe48b6447b377a571e6",
+          "calibration/raw/m00516_npar040_fit.f64.meta": "8d07897ae1028e930ca58052a12fc93e310ddabe0e2a58cd9ca7a40690a276ca",
+          "calibration/raw/m00516_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00516_npar040_validation.f64": "47aa2270a8ee12f395e7f41db68d4ec95460d0afb5d6197b29d663be50002c94",
+          "calibration/raw/m00516_npar040_validation.f64.meta": "f3653a66373b18719aeea63682312ad1d7e7b16ea388d932dd07f9efae9649d0",
+          "calibration/raw/m00516_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "3b0d42c5c58b2cc10938b225e6969d5ace8b6118bff81f23090f764ce11e6727",
+          "launch.json": "4a0b569af60b22515ded9a0223fb9a33694de132e702b80f62751fa820e580ca",
+          "request.json": "d4d10aef6ae94d0ee16c1691156e6787e95722961d366a37f4cd8c7d6b16a4eb",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "6ec42ba488f9ecec973686b8c3bc9dbe44d59eda6dba3e305494efed0abe024c",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "17354bb552b2e6d395090a21208da3aa7107c31cc8669260713d523a5b5449ec"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.01810554417038812,
+        "tail_count": 24999,
+        "tail_probability": 0.0049999990000002,
+        "shape": 0.046194572988473626,
+        "scale": 0.004857268938719595,
+        "endpoint": null,
+        "cutoff_at_stability_probability": 0.02990629930110426
+      },
+      "stability_pass": true,
+      "validation_pass": false,
+      "recorded_stability_relative_range_at_5e_4": 0.011517991712818169,
+      "fit_summary": {
+        "minimum": 0.0,
+        "maximum": 0.08365424454565051,
+        "mean": 0.0014771489339077655,
+        "zero_fraction": 0.0666808,
+        "unique_values": 57703
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "11993ab1d6c51d1b56be89884878fc2cbb0fe84ffff61fe48b6447b377a571e6",
+          "draws": 5000000,
+          "seed": 20261531,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "516",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261531",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "47aa2270a8ee12f395e7f41db68d4ec95460d0afb5d6197b29d663be50002c94",
+          "draws": 5000000,
+          "seed": 1020261532,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "516",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261532",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    },
+    {
+      "m": 725,
+      "stage": "dream",
+      "status": "rejected",
+      "accepted": false,
+      "gpd": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.018806798370963298,
+          "exceedances": 5306,
+          "draws": 5000000,
+          "observed_p": 0.0010612,
+          "ratio_observed_to_nominal": 1.0612,
+          "interval_lower": 0.0010139401633588075,
+          "interval_upper": 0.0011099714438477031,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": false,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.019144272929207902,
+              "tail_count": 37499
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.018806798370963298,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.019034117178905543,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.017729982172149727,
+          "stability_evaluation": "diagnostic only"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.021628317872084135,
+          "exceedances": 2550,
+          "draws": 5000000,
+          "observed_p": 0.00051,
+          "ratio_observed_to_nominal": 1.02,
+          "interval_lower": 0.00047742878445253414,
+          "interval_upper": 0.0005440864468519795,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "GPD",
+          "stability_fits": [
+            {
+              "threshold_quantile": 0.9925,
+              "cutoff": 0.021891199566507348,
+              "tail_count": 37499
+            },
+            {
+              "threshold_quantile": 0.995,
+              "cutoff": 0.021628317872084135,
+              "tail_count": 24999
+            },
+            {
+              "threshold_quantile": 0.9975,
+              "cutoff": 0.021932430391299877,
+              "tail_count": 12499
+            }
+          ],
+          "stability_relative_range": 0.01389199885058021,
+          "stability_evaluation": "acceptance gate"
+        }
+      ],
+      "empirical_diagnostic": [
+        {
+          "nominal_p": 0.001,
+          "cutoff": 0.01921309564553564,
+          "exceedances": 4775,
+          "draws": 5000000,
+          "observed_p": 0.000955,
+          "ratio_observed_to_nominal": 0.955,
+          "interval_lower": 0.0009101984649308046,
+          "interval_upper": 0.0010013137036846377,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.999,
+          "fit_quantile_rule": "higher"
+        },
+        {
+          "nominal_p": 0.0005,
+          "cutoff": 0.021897588963222248,
+          "exceedances": 2360,
+          "draws": 5000000,
+          "observed_p": 0.000472,
+          "ratio_observed_to_nominal": 0.944,
+          "interval_lower": 0.0004406898978006923,
+          "interval_upper": 0.0005048256991807327,
+          "interval_confidence": 0.999,
+          "nominal_in_interval": true,
+          "exceedance_rule": "APMI >= cutoff",
+          "method": "empirical-fit-higher-quantile",
+          "diagnostic_only": true,
+          "fit_quantile": 0.9995,
+          "fit_quantile_rule": "higher"
+        }
+      ],
+      "warnings": [],
+      "attempt_count": 1,
+      "attempt_history": [],
+      "attempt": "jobs/m00725/attempt_0001",
+      "runner_status": "rejected",
+      "job": {
+        "format": "sjaracne-staged-apmi-calibration-v1",
+        "m": 725,
+        "attempt": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00725\\attempt_0001",
+        "invocation": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\invocations\\20261016T000329_eac5cd5a",
+        "started_utc": "2026-10-16T00:03:30.007271+00:00",
+        "finished_utc": "2026-10-16T00:05:09.717036+00:00",
+        "elapsed_seconds": 99.70928389998153,
+        "returncode": 0,
+        "error": null,
+        "status": "rejected",
+        "accepted": false,
+        "default_p": 0.0005,
+        "cutoff_at_default_p_5e_4": 0.021628317872084135,
+        "stability_pass": true,
+        "validation_pass": false,
+        "relative_stability_range": 0.01389199885058021,
+        "model_path": null,
+        "legacy_report": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00725\\attempt_0001\\calibration\\calibration_report.json",
+        "resources": {
+          "calibration_peak_working_set_bytes": 227545088,
+          "rss_definition": "Windows calibration process PeakWorkingSetSize; native stream GNU time RSS recorded separately"
+        },
+        "raw_streams": {
+          "fit": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00725\\attempt_0001\\calibration\\raw\\m00725_npar040_fit.f64",
+            "sha256": "99d4fe21a4e58e56c82a55b1392881d100e307c3474a79e022078a164882cd5f",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "725",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "20261740",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 20261740,
+            "generation_elapsed_seconds": 48.75825040001655,
+            "resources": {
+              "maximum_resident_set_kbytes": 3840,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          },
+          "validation": {
+            "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015\\jobs\\m00725\\attempt_0001\\calibration\\raw\\m00725_npar040_validation.f64",
+            "sha256": "4faf4ee2f662c689b86078ca612685b5b04511c12a857215c101fad8519a67cf",
+            "metadata": {
+              "format": "sjaracne-apmi-null-binary-v1",
+              "kernel_schema": "sjaracne-apmi-v1",
+              "estimator": "sjaracne-adaptive-partitioning",
+              "rng": "mt19937-rejection-fisher-yates-v1",
+              "m": "725",
+              "draws": "5000000",
+              "npar_limit": "40",
+              "seed": "1020261741",
+              "dtype": "float64",
+              "byte_order": "little",
+              "record_bytes": "8",
+              "draw_index": "implicit-zero-based"
+            },
+            "seed": 1020261741,
+            "generation_elapsed_seconds": 47.177366200019605,
+            "resources": {
+              "maximum_resident_set_kbytes": 3968,
+              "time_log_present": true,
+              "rss_definition": "GNU time maximum resident set size; not aggregate concurrent-worker RSS"
+            }
+          }
+        },
+        "unverified_model_artifacts": [],
+        "artifacts_sha256": {
+          "calibration/calibration_report.json": "5815886ebdfc741cede34d8068eca9317d89bd01b7011d568d96303f739db0c5",
+          "calibration/calibration_summary.csv": "836ec7e03eddc6c7706306d15eeb9258464f980a543d895d08d7773b676bc514",
+          "calibration/raw/m00725_npar040_fit.f64": "99d4fe21a4e58e56c82a55b1392881d100e307c3474a79e022078a164882cd5f",
+          "calibration/raw/m00725_npar040_fit.f64.meta": "6501de53f0ac9dfb085ee343419f76bcd32cc9bfbd0d9f33bc39fa1fe0797a46",
+          "calibration/raw/m00725_npar040_fit.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "calibration/raw/m00725_npar040_validation.f64": "4faf4ee2f662c689b86078ca612685b5b04511c12a857215c101fad8519a67cf",
+          "calibration/raw/m00725_npar040_validation.f64.meta": "c71b21c3b829e5a03946e6d1459adacba77c87a9e501246bba45f5a0f6543b5a",
+          "calibration/raw/m00725_npar040_validation.f64.provenance.json": "3652606c59bb6012da5074cbc15ee61499d5b8cc2e153a560fb7d2273cc33e36",
+          "fit_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "fit_time.txt": "f8ae65c1ec7323e7c89654bc48165d239a22689c0a08760c52e786cd25825059",
+          "launch.json": "f45412acd7d3315691e7abcec515845ce56350a2c409fc5af14ed238ca5ea387",
+          "request.json": "4a2ed0204696b6ae05f004e6232b03ffa39e1b66ec42ff4b43d02b0e536ebb36",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "cc042cabf70dea62fb6d9f83a48207e99d6bd55f0e21f874c3a0c4572008f13d",
+          "validation_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "validation_time.txt": "6b8a96b935e242e7247bb1349768bd95603cc31e7e0885152ac78107b1a4e546"
+        }
+      },
+      "primary_fit": {
+        "threshold_quantile": 0.995,
+        "threshold": 0.012910986940375402,
+        "tail_count": 24999,
+        "tail_probability": 0.0049999990000002,
+        "shape": 0.0922256998004285,
+        "scale": 0.0033981246742130784,
+        "endpoint": null,
+        "cutoff_at_stability_probability": 0.021628317872084135
+      },
+      "stability_pass": true,
+      "validation_pass": false,
+      "recorded_stability_relative_range_at_5e_4": 0.01389199885058021,
+      "fit_summary": {
+        "minimum": 9.486300953653881e-07,
+        "maximum": 0.052331962939851095,
+        "mean": 0.001052647094266105,
+        "zero_fraction": 0.0,
+        "unique_values": 131213
+      },
+      "raw_provenance": {
+        "fit": {
+          "sha256": "99d4fe21a4e58e56c82a55b1392881d100e307c3474a79e022078a164882cd5f",
+          "draws": 5000000,
+          "seed": 20261740,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "725",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "20261740",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        },
+        "validation": {
+          "sha256": "4faf4ee2f662c689b86078ca612685b5b04511c12a857215c101fad8519a67cf",
+          "draws": 5000000,
+          "seed": 1020261741,
+          "bytes": 40000000,
+          "metadata": {
+            "format": "sjaracne-apmi-null-binary-v1",
+            "kernel_schema": "sjaracne-apmi-v1",
+            "estimator": "sjaracne-adaptive-partitioning",
+            "rng": "mt19937-rejection-fisher-yates-v1",
+            "m": "725",
+            "draws": "5000000",
+            "npar_limit": "40",
+            "seed": "1020261741",
+            "dtype": "float64",
+            "byte_order": "little",
+            "record_bytes": "8",
+            "draw_index": "implicit-zero-based"
+          }
+        }
+      }
+    }
+  ],
+  "warnings": []
+}

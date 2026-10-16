@@ -1,0 +1,123 @@
+{
+  "format": "sjaracne-staged-apmi-calibration-v1",
+  "created_utc": "2026-10-16T00:00:12.945642+00:00",
+  "output_dir": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_m_sweep_20261015",
+  "stages": {
+    "anchors": [
+      30,
+      50,
+      80,
+      90,
+      100,
+      150,
+      300,
+      1000
+    ],
+    "dream": [
+      644,
+      516,
+      725
+    ]
+  },
+  "m": [
+    30,
+    50,
+    80,
+    90,
+    100,
+    150,
+    300,
+    1000,
+    644,
+    516,
+    725
+  ],
+  "config": {
+    "npar": 40,
+    "fit_draws": 5000000,
+    "validation_draws": 5000000,
+    "fit_seed": 20261015,
+    "validation_seed": 20261016,
+    "tail_quantile": 0.995,
+    "min_tail_count": 20000,
+    "p_min": 0.0005,
+    "p_max": 0.001,
+    "default_p": 0.0005,
+    "validation_p": [
+      0.001,
+      0.0005
+    ],
+    "stability_relative_tolerance": 0.1,
+    "min_stability_fits": 3,
+    "validation_family_confidence": 0.99,
+    "validation_family_comparisons": 10
+  },
+  "engine_root": "D:\\GitHub\\SJARACNe",
+  "engine_commit": "7633ebb4a0d966dbda15a4e32d0efa492fb71aeb",
+  "engine_source_sha256": {
+    "SJARACNe/Makefile": "3996ec874b1d9db292dfcdfedd2990adab07099d80c4618ce123f406bb00c31b",
+    "SJARACNe/__init__.py": "2e7cfd318ad777522930334f5b453180657a5e8ae6c87258073714e58810bed7",
+    "SJARACNe/bin/QC_input.py": "54bf617313f15aa289ba5f2707cc23ed2ead894f26d0689bf122bfd9052d4fa4",
+    "SJARACNe/bin/__init__.py": "8e1d7711cf41942bca2ed07c9672be01a5ff6798fdd54a2cba68e699c6f54b7c",
+    "SJARACNe/bin/ch_line_ending.py": "e47d18187f83ba1db41309d299169234dfc3c54b794a44d7a9a21f9d76e80178",
+    "SJARACNe/bin/create_consensus_network.py": "eede0a73c4582deddd084f9495f5d362244f3a2bf8f1f3e28d3bea966a64d9b7",
+    "SJARACNe/calibrate_apmi_null.py": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6",
+    "SJARACNe/sjaracne.py": "f41b889f5ba686b39f5653f768cf89a94ab7c64f522da78cd59370d65fb92fd5",
+    "SJARACNe/src/apmi.cpp": "109747ecb5e4edc9a3e0e870c70b3e1853ba3d946b6c35fe24d28cb3b1800d4a",
+    "SJARACNe/src/apmi.h": "878479e337193e768982d0f2cdc20c1f1c638494c3f5173f23147ae7768c708b",
+    "SJARACNe/src/apmi_null_model.cpp": "e61cd7ebaf5d865d683eb360ec3e8aa107040847535eee8ddedd569cce4ba09d",
+    "SJARACNe/src/apmi_null_model.h": "ac54178e4e5d9943580ef5f1d9bddc0b3329559f3452222a28b95bfb30b0db3e",
+    "SJARACNe/src/main.cpp": "2f44e04659a233427b0417307ece06ee0cdb60ef166952a8ff1e81ff6d5f62a0",
+    "SJARACNe/src/matrix.cpp": "005201420b2e90259bcc25fa2342374b8aef311402a30be60622b98f3698add3",
+    "SJARACNe/src/matrix.h": "05ee77bf7e1ebe99a4f828481a5b3a29c5cba58ff14e52b613e5ed243490c2d3",
+    "SJARACNe/src/param.cpp": "6ff12a67182d27f8992c92cd046f9c370b4a39e177d520e3b52143423f2f7348",
+    "SJARACNe/src/param.h": "6fa39f51ab07d725448a585c22065a68e3dc9028630c6486b4c193abe383bf20",
+    "SJARACNe/src/parseargs.h": "674dbc710e92657c6c5aa5da5d33e2b49ef1a887376856530dcf69a19b0991b3",
+    "SJARACNe/src/util.cpp": "48a98a72731a1af11e22c884f2a05ef84db3d261a2f124eb89fc99cfc28e109e",
+    "SJARACNe/src/util.h": "bc9b5c2569b361a459b23312b2dfa8243996bc307d8ac4f9714450271df749b5",
+    "tools/apmi_null_generator.cpp": "453d257d54110aac6f71842ef9e2abbba3bb5d6b5f300c3049629df7fcdc10ed"
+  },
+  "generator": "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+  "generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+  "calibrator": "D:\\GitHub\\SJARACNe\\SJARACNe\\calibrate_apmi_null.py",
+  "calibrator_sha256": "e23fac03e386b8773ceecd7b1406b37e08a2fa5e5281836a727f9d07c2fa94b6",
+  "runner": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\run_staged.py",
+  "runner_sha256": "50726a8d81cbeb800d39a89f10475cf9bf0b95c4f94cc180a32e723d51f8df89",
+  "runner_tests": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\test_run_staged.py",
+  "runner_tests_sha256": "80ee2fd6d3de52e63062cbd874b1cad5aabfad5c3d6f4c089bafad0764f521e6",
+  "execution": {
+    "distro": "Ubuntu",
+    "python": "C:\\Users\\adamd\\miniconda3\\python.exe",
+    "python_sha256": "d28425da17099ddde0ea3cdde0128fa7b50fad87ec8843bdd5fe855e479f5dc4",
+    "environment_controls": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "LC_ALL": "C"
+    },
+    "time_program": "/usr/bin/time",
+    "max_workers": 12
+  },
+  "seed_derivation": {
+    "fit": "fit_seed + m",
+    "validation": "validation_seed + 1000000000 + m"
+  },
+  "stability_quantiles": [
+    0.9925,
+    0.995,
+    0.9975
+  ],
+  "legacy_label_warning": "Engine CSV cutoff_p1e-7 and report prose are legacy labels; actual configured default_p is 0.0005.",
+  "protocol": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\PLAN_2026-10-15.md",
+    "sha256": "36a4dd37edf1f6d8117208933a447f2fcb3837f2da60515aeb4611fc50891fa1"
+  },
+  "environment": {
+    "executable": "C:\\Users\\adamd\\miniconda3\\python.exe",
+    "numpy": "2.4.4",
+    "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+    "python_sha256": "d28425da17099ddde0ea3cdde0128fa7b50fad87ec8843bdd5fe855e479f5dc4",
+    "scipy": "1.17.1"
+  }
+}
