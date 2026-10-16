@@ -1,0 +1,88 @@
+{
+  "format": "sjaracne-apmi-timing-capacity-v1",
+  "purpose": "Timing/capacity only; not scientific calibration; no models or inference.",
+  "worker": 8,
+  "started_utc": "2026-10-16T01:12:26.339615+00:00",
+  "finished_utc": "2026-10-16T01:12:45.888737+00:00",
+  "elapsed_seconds": 19.549126900034025,
+  "returncode": 0,
+  "status": "complete",
+  "error": null,
+  "helper_timing_results_sha256": "0e75e46315a472d033b139a5f2f33d9ed45d74d10e47a2a467bc12b34cdd97cc",
+  "job": {
+    "m": 10000,
+    "draws": 100000,
+    "seed": 22271015,
+    "native_exit_code": 0,
+    "native_wall_seconds": 15.8,
+    "user_seconds": 15.83,
+    "system_seconds": 0.01,
+    "peak_rss_kib": 4096,
+    "total_wall_seconds": 19.187815100012813,
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--",
+      "/usr/bin/time",
+      "-f",
+      "%e\t%U\t%S\t%M",
+      "-o",
+      "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_dense_capacity_20261015/worker_008/helper/m10000/time.tsv",
+      "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+      "--m",
+      "10000",
+      "--draws",
+      "100000",
+      "--npar",
+      "40",
+      "--seed",
+      "22271015",
+      "--format",
+      "binary",
+      "--output",
+      "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_dense_capacity_20261015/worker_008/helper/m10000/timing.f64"
+    ],
+    "artifacts": {
+      "stderr.log": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_008\\helper\\m10000\\stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout.log": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_008\\helper\\m10000\\stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "time.tsv": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_008\\helper\\m10000\\time.tsv",
+        "bytes": 22,
+        "sha256": "685cb8a3f835f3dc49d5fefbfcd84895d000fe2ae77dfbe1727741e3294082d6"
+      },
+      "timing.f64": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_008\\helper\\m10000\\timing.f64",
+        "bytes": 800000,
+        "sha256": "c166f1ef5a82a49be4b0c3eb3c55ffd77dd39c25a5e842e30ee84cd3a322a204"
+      },
+      "timing.f64.meta": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_008\\helper\\m10000\\timing.f64.meta",
+        "bytes": 273,
+        "sha256": "5293a8df633ae4a20f1e23a36bf68ac8d4f9334db9994101167b6c4e9e37429d"
+      }
+    }
+  },
+  "artifacts_sha256": {
+    "helper/m10000/job.json": "4028d8b671541e6750ddf50ef16a0dc2ae04c7db0c2ce5dc7e845f6aa1fd98f9",
+    "helper/m10000/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "helper/m10000/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "helper/m10000/time.tsv": "685cb8a3f835f3dc49d5fefbfcd84895d000fe2ae77dfbe1727741e3294082d6",
+    "helper/m10000/timing.f64": "c166f1ef5a82a49be4b0c3eb3c55ffd77dd39c25a5e842e30ee84cd3a322a204",
+    "helper/m10000/timing.f64.meta": "5293a8df633ae4a20f1e23a36bf68ac8d4f9334db9994101167b6c4e9e37429d",
+    "helper/timing_plan.json": "2dc8978b0ca121aa123c760e030f05fc0e211246e5bdadd407097b3fb259d65f",
+    "helper/timing_results.json": "0e75e46315a472d033b139a5f2f33d9ed45d74d10e47a2a467bc12b34cdd97cc",
+    "request.json": "8f1d3a00a34f58cc4f330e65a550326e05bef77ff47381d8aeeab5382bd1fef0",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "fa6930ccecf512d56416e705238f91436a29f8162ab0199bef7bc4d3e4f2f007"
+  },
+  "worker_result_persisted": true
+}

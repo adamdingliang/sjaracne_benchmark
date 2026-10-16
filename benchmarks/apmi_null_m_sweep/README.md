@@ -4,6 +4,10 @@ The later [19-size 10M + 10M extension](expanded_10m/README.md) and its
 [results](expanded_10m/RESULTS.md) are separate from the original experiment
 below; original code, plans and result packages remain unchanged.
 
+The proposed [m=50..10000 broad-grid study](broad_grid_10m/README.md) has a
+detailed protocol and bounded timing measurements only. The user chose not
+to launch the full sweep; its generation cost projects to roughly 11-14 hours.
+
 This study fits SJARACNe's independence-null GPD tail at exact selected
 observation counts, using the production-shared AP-MI kernel. It focuses on
 the provisional TF probability 0.001 and SIG probability 0.0005. These are

@@ -50,6 +50,11 @@ The [earlier 5M study](benchmarks/apmi_null_m_sweep/RESULTS.md) is preserved.
 This is estimator calibration, not another biological
 network benchmark or a change to SJARACNe defaults.
 
+The [broader m=50..10000 protocol and timing](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md)
+are planning evidence only: the full 200-size sweep was **not launched**, per
+the user's stop-after-timing instruction. Measured throughput projects to
+roughly 11-14 hours of generation, with analysis additional.
+
 Historical engine timing studies, reusable performance tools and the original
 sampling-method evidence are preserved separately in
 [Engineering performance and sampling-method archive](engine_performance/README.md).

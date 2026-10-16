@@ -1,0 +1,62 @@
+{
+  "m": 2000,
+  "draws": 200000,
+  "seed": 22263015,
+  "native_exit_code": 0,
+  "native_wall_seconds": 4.16,
+  "user_seconds": 4.12,
+  "system_seconds": 0.01,
+  "peak_rss_kib": 3840,
+  "total_wall_seconds": 5.699198700021952,
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "/usr/bin/time",
+    "-f",
+    "%e\t%U\t%S\t%M",
+    "-o",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_dense_timing_20261015/m02000/time.tsv",
+    "/mnt/d/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+    "--m",
+    "2000",
+    "--draws",
+    "200000",
+    "--npar",
+    "40",
+    "--seed",
+    "22263015",
+    "--format",
+    "binary",
+    "--output",
+    "/mnt/d/GitHub/sjaracne_benchmark/runs/apmi_null_dense_timing_20261015/m02000/timing.f64"
+  ],
+  "artifacts": {
+    "stderr.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_timing_20261015\\m02000\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.log": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_timing_20261015\\m02000\\stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "time.tsv": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_timing_20261015\\m02000\\time.tsv",
+      "bytes": 20,
+      "sha256": "b4f937f5e4310f8072782188328ccb67e28ad0795796f48225d2405ecaa8a8dd"
+    },
+    "timing.f64": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_timing_20261015\\m02000\\timing.f64",
+      "bytes": 1600000,
+      "sha256": "fb9d0f8dc4130c843001efb34420bce69c4b4af4a5be4c52cd247cab4119d819"
+    },
+    "timing.f64.meta": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_timing_20261015\\m02000\\timing.f64.meta",
+      "bytes": 272,
+      "sha256": "013b88557f620b15663e5c6a4ab190de128079e5273f4d970c12345ddda11e61"
+    }
+  }
+}

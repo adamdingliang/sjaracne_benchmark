@@ -1,0 +1,204 @@
+{
+  "format": "sjaracne-apmi-timing-capacity-v1",
+  "purpose": "Timing/capacity only; not scientific calibration; no models or inference.",
+  "created_utc": "2026-10-16T01:12:26.325243+00:00",
+  "script_argv": [
+    "benchmarks/apmi_null_m_sweep/broad_grid_10m/time_capacity.py",
+    "--generator",
+    "D:/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe",
+    "--out",
+    "runs/apmi_null_dense_capacity_20261015",
+    "--workers",
+    "8",
+    "--draws",
+    "100000",
+    "--m",
+    "10000"
+  ],
+  "workers": 8,
+  "draws": 100000,
+  "m": 10000,
+  "npar": 40,
+  "total_requested_timing_draws": 800000,
+  "out": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015",
+  "generator": {
+    "path": "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+    "bytes": 387824,
+    "sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18"
+  },
+  "expected_generator_sha256": "08224b6b20e29628be6d89d22eb7e355f8c6a05623e06f801fae5347a70a7f18",
+  "script": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\time_capacity.py",
+    "bytes": 13336,
+    "sha256": "5b3c75785e979cc468d53d908ff4ec6833faf38d2301d0240c602af8615abd4a"
+  },
+  "helper": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+    "bytes": 5082,
+    "sha256": "a95244e545accdcadf65391c9eb7240f7a4706899d7feb46e84e84c34b99bd88"
+  },
+  "python": {
+    "path": "C:\\Users\\adamd\\miniconda3\\python.exe",
+    "bytes": 93184,
+    "sha256": "d28425da17099ddde0ea3cdde0128fa7b50fad87ec8843bdd5fe855e479f5dc4"
+  },
+  "python_version": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+  "cwd": "D:\\GitHub\\sjaracne_benchmark",
+  "environment_controls": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "LC_ALL": "C"
+  },
+  "wslenv": "OMP_NUM_THREADS/u:OPENBLAS_NUM_THREADS/u:MKL_NUM_THREADS/u:NUMEXPR_NUM_THREADS/u:LC_ALL/u",
+  "helper_seed": 22271015,
+  "seed_warning": "The unchanged helper repeats this timing-only seed across workers. These are contention replicates, not independent scientific streams, and must never be reused for calibration/confirmation.",
+  "worker_requests": [
+    {
+      "worker": 1,
+      "directory": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_001",
+      "argv": [
+        "C:\\Users\\adamd\\miniconda3\\python.exe",
+        "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+        "--generator",
+        "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+        "--out",
+        "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_001\\helper",
+        "--draws",
+        "100000",
+        "--m",
+        "10000",
+        "--distro",
+        "Ubuntu"
+      ]
+    },
+    {
+      "worker": 2,
+      "directory": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_002",
+      "argv": [
+        "C:\\Users\\adamd\\miniconda3\\python.exe",
+        "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+        "--generator",
+        "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+        "--out",
+        "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_002\\helper",
+        "--draws",
+        "100000",
+        "--m",
+        "10000",
+        "--distro",
+        "Ubuntu"
+      ]
+    },
+    {
+      "worker": 3,
+      "directory": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_003",
+      "argv": [
+        "C:\\Users\\adamd\\miniconda3\\python.exe",
+        "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+        "--generator",
+        "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+        "--out",
+        "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_003\\helper",
+        "--draws",
+        "100000",
+        "--m",
+        "10000",
+        "--distro",
+        "Ubuntu"
+      ]
+    },
+    {
+      "worker": 4,
+      "directory": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_004",
+      "argv": [
+        "C:\\Users\\adamd\\miniconda3\\python.exe",
+        "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+        "--generator",
+        "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+        "--out",
+        "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_004\\helper",
+        "--draws",
+        "100000",
+        "--m",
+        "10000",
+        "--distro",
+        "Ubuntu"
+      ]
+    },
+    {
+      "worker": 5,
+      "directory": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_005",
+      "argv": [
+        "C:\\Users\\adamd\\miniconda3\\python.exe",
+        "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+        "--generator",
+        "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+        "--out",
+        "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_005\\helper",
+        "--draws",
+        "100000",
+        "--m",
+        "10000",
+        "--distro",
+        "Ubuntu"
+      ]
+    },
+    {
+      "worker": 6,
+      "directory": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_006",
+      "argv": [
+        "C:\\Users\\adamd\\miniconda3\\python.exe",
+        "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+        "--generator",
+        "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+        "--out",
+        "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_006\\helper",
+        "--draws",
+        "100000",
+        "--m",
+        "10000",
+        "--distro",
+        "Ubuntu"
+      ]
+    },
+    {
+      "worker": 7,
+      "directory": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_007",
+      "argv": [
+        "C:\\Users\\adamd\\miniconda3\\python.exe",
+        "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+        "--generator",
+        "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+        "--out",
+        "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_007\\helper",
+        "--draws",
+        "100000",
+        "--m",
+        "10000",
+        "--distro",
+        "Ubuntu"
+      ]
+    },
+    {
+      "worker": 8,
+      "directory": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_008",
+      "argv": [
+        "C:\\Users\\adamd\\miniconda3\\python.exe",
+        "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\time_generator.py",
+        "--generator",
+        "D:\\GitHub\\SJARACNe\\SJARACNe\\bin\\apmi_null_generator.exe",
+        "--out",
+        "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_dense_capacity_20261015\\worker_008\\helper",
+        "--draws",
+        "100000",
+        "--m",
+        "10000",
+        "--distro",
+        "Ubuntu"
+      ]
+    }
+  ],
+  "retry_policy": "none; fresh output required for any new batch"
+}
