@@ -86,6 +86,22 @@ class AnalyzeTests(unittest.TestCase):
         self.assertEqual((summary["total_checks"],summary["valid_checks"],summary["unavailable_checks"]),(2,1,1))
         self.assertEqual(summary["observed_within_10pct"],1)
 
+    def test_no_binomial_interval_for_in_sample_exact_m_baseline(self):
+        prediction = {"m":100, "method":"empirical_exact_m", "family":"empirical_exact_m",
+            "smoother":None, "fold_kind":"interior_interpolation", "nominal_p":.5,
+            "p_role":"knot", "cutoff":.2, "empirical_cutoff":.2, "status":"valid",
+            "invalid_reason":None, "train_m":[100], "predicted_parameters":None}
+        items = [{"m":100,"sorted_cache":{s:{"path":"synthetic"} for s in ("fit","validation")}}]
+        with patch.object(analyze,"GRID",[100]), patch.object(analyze.np,"load",return_value=np.array([0.,.1,.2,.3])):
+            rows = analyze.score_predictions([prediction], items)
+        fit = next(row for row in rows if row["stream"] == "fit")
+        validation = next(row for row in rows if row["stream"] == "validation")
+        self.assertEqual(fit["ge"],2)
+        self.assertIsNone(fit["cp_lower"])
+        self.assertIsNone(fit["cp_confidence"])
+        self.assertEqual(fit["interval_role"],"not_applicable_in_sample_baseline")
+        self.assertIsNotNone(validation["cp_lower"])
+
     def test_finite_physical_support_no_clipping(self):
         for value in (-.1,math.log(100)+.1,float("nan"),float("inf")):
             with self.assertRaises(ValueError):

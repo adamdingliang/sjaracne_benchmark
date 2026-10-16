@@ -71,6 +71,9 @@ rate/nominal p, relative null-rate error, cutoff error relative to the exact-m
 empirical fitting quantile, and 99.9% pointwise Clopper-Pearson intervals.
 Intervals describe fixed-prediction binomial uncertainty only, not uncertainty
 in the whole fitted function, simultaneous coverage or post-selection validity.
+Do not compute binomial intervals for exact-m baselines evaluated on their own
+fitting stream: their cutoffs depend on those same observations. Retain their
+counts as in-sample diagnostics with the interval marked not applicable.
 
 Primary comparisons are p=0.001 and 0.0005 over seventeen interior m (34
 checks per candidate). Report all candidates' valid/invalid counts, median,

@@ -170,17 +170,21 @@ def score_predictions(predictions, items):
                     draws=int(values.size), expected_count=float(values.size*p), ge=None, gt=None,
                     ties=None, observed_p=None, actual_nominal=None, relative_null_rate_error=None,
                     relative_cutoff_error=None, cp_lower=None, cp_upper=None,
-                    cp_confidence=CONFIDENCE, pointwise_classification=None)
+                    cp_confidence=None, pointwise_classification=None,
+                    interval_role="unavailable_prediction" if row["status"] != "valid" else
+                    ("not_applicable_in_sample_baseline" if stream == "fit" and not prediction["smoother"] else
+                     "descriptive_fixed_prediction_pointwise"))
                 if row["status"] == "valid":
                     counts = extract.count_sorted(values, row["cutoff"])
                     row.update(counts)
-                    low, high = cp_interval(counts["ge"], len(values))
                     rate = counts["ge"] / len(values)
                     row.update(observed_p=rate, actual_nominal=rate/p,
                         relative_null_rate_error=rate/p-1,
-                        relative_cutoff_error=row["cutoff"]/row["empirical_cutoff"]-1,
-                        cp_lower=low, cp_upper=high,
-                        pointwise_classification=classify_interval(low, high, p))
+                        relative_cutoff_error=row["cutoff"]/row["empirical_cutoff"]-1)
+                    if row["interval_role"] == "descriptive_fixed_prediction_pointwise":
+                        low, high = cp_interval(counts["ge"], len(values))
+                        row.update(cp_lower=low, cp_upper=high, cp_confidence=CONFIDENCE,
+                            pointwise_classification=classify_interval(low, high, p))
                 rows.append(row)
     return rows
 
