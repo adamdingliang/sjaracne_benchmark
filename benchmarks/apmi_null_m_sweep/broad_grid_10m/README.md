@@ -1,5 +1,28 @@
 # Broad-grid calibration: execution, planning and timing
 
+**Focused fitting/selection/final evaluation launched October 17 at 9:46 AM
+EDT with 12 workers.** All400 generation streams completed. The
+[prospective focused-analysis amendment](AMENDMENT_2026-10-17.md) replaces the
+104-candidate selection with empirical quadratic versus PCHIP for this pass;
+the broader GPD/hybrid/spline analysis is deferred. Code was frozen at
+`481ac20` before statistical access; all132 tests passed (90 new fitting tests).
+This is not a claim that either function has passed final calibration.
+
+The automatic pipeline constructs from160 sizes, selects on20 development
+sizes, refits once on180 sizes, freezes its primary and only then opens the
+200 independent validation streams and20 held-out-size fitting streams.
+No runner-up fallback or engine/default change is allowed. Local artifacts:
+`runs/apmi_null_broad_fits_20261017/`; request SHA256:
+`1a0a8af9927d9f0b0735f2470b58701e163e1c75f2d649b2824c3a8b1bf2b313`.
+`status.json`, `stdout.log`, `stderr.log` and (if needed) `failure.json` record
+execution. Raw data and sorted caches remain ignored, outside Git history.
+
+For a new authorized analysis directory, the implementation entry points are
+`fit_pipeline.py freeze --plan <generation-plan> --out <fresh-run-directory>`
+then `fit_pipeline.py run --request <fresh-run-directory>/request.json`.
+The controller refuses a second run of an already-started request. Do not
+rerun final evaluation to select a favorable result.
+
 **Launched October 16, 2026 at 2:07 PM EDT with 12 workers.** See the
 [launch record and status commands](LAUNCH_2026-10-16.md), not a final-result
 or continuously updated status report. The new
