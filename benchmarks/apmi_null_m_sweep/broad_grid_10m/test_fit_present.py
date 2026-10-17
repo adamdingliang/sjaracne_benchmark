@@ -80,6 +80,20 @@ class PresentationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "identities disagree"):
             present.render_results(self.summary, self.selection, {"selected_model": "quadratic"}, self.rows, [])
 
+    def test_case_notes_use_supplied_rows_without_revising_thresholds(self):
+        row = {"method": "pchip", "phase": "final_validation", "m": 50, "p": 0.05,
+               "classification": "unresolved", "available": True, "relative_error": 0.11,
+               "actual": 0.0555, "ties": 90, "count": 555, "plus_ulp_ge": 465}
+        before = dict(row)
+        text = present._primary_case_notes([row], "pchip")
+        self.assertIn("1 unresolved core cases", text)
+        self.assertIn("1 at p=0.05", text)
+        self.assertIn("90 validation values", text)
+        self.assertIn("from 555 to 465", text)
+        self.assertIn("not** a post-hoc change", text)
+        self.assertEqual(row, before)
+        self.assertEqual(present._primary_case_notes([row], "quadratic"), "")
+
     def test_missing_summary_group_rejected(self):
         broken = {"final_summary": [row for row in self.summary["final_summary"]
                                     if not (row["method"] == "pchip" and row["m_group"] == "all"

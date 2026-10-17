@@ -53,46 +53,25 @@ All 49 query probabilities, the exact-m empirical diagnostic and the untouched
 legacy-affine comparator are included in the full report. Rare-tail summaries
 are not evidence for 10% accuracy at 1e-7: 10M draws yield only one expected event.
 
-## What is and is not confirmed
+## PCHIP rate trajectories
 
-For the selected PCHIP primary, the 99% Bonferroni study-family intervals over
-1600 comparisons classify the 800 core evaluation cases as **784 confirmed, 16 unresolved,
-0 inconsistent, 0 invalid**. All 800 had to be confirmed; the study therefore
-does **not** confirm the whole proposed core grid. Unresolved is not the same
-as a demonstrated accuracy violation, but it is not a pass either.
+![PCHIP observed/requested null rates versus sample size at four core probabilities](summary_plots/pchip_null_rate_vs_m.png)
 
-Of the 16 unresolved core cases, 15 are at p=0.0005, where the simultaneous
-intervals extend beyond the 10% band despite observed errors below 10%. The
-remaining case is m=50, p=0.05: observed rate 0.0550346, a 10.0692% relative excess.
-Its interval also crosses the target-band boundary, rather than lying wholly
-outside it. This same case is the sole PCHIP observed-rate miss among the 6600
-moderate checks.
+Each panel shows the selected PCHIP cutoff's observed null exceedance rate
+divided by the requested probability p, across all 200 sample sizes. A ratio
+of 1 is ideal; the shaded band is 0.9–1.1, not a confidence interval. Open
+circles mark the 20 untouched interpolation-test sizes. The axes do not clip
+unfavorable results. These are **rate-validation plots**, not MI-cutoff curves.
+[SVG](summary_plots/pchip_null_rate_vs_m.svg) ·
+[Plotting code](plot_pchip_summary.py).
 
-The m=50 cutoff is an MI atom: 89,062 validation values equal it exactly.
-Changing the cutoff by one upward binary64 step would change its exceedance
-count from 550,346 to 461,284. This is a diagnostic of discreteness/comparator
-sensitivity, **not** a post-hoc change to the frozen threshold.
+## Conditional conclusion
 
-The defensible conclusion is that PCHIP is a promising empirical interpolation
-candidate with lower observed moderate-grid error than quadratic. This study
-does not establish arbitrary off-grid m/p accuracy, a universally 10%-accurate
-function, biological false-positive control or new defaults.
-
-## Numerical correction and operational history
-
-The user-approved [roundoff correction](CORRECTION_2026-10-17.md) maps only
-MI in [-64 binary64 epsilon,0) to positive zero in analysis copies; raw files
-and all positive values are unchanged. All 4000 initial quantile hex values and
-both initial-model files were identical before and after normalization.
-
-A subsequent Windows progress-file replacement error interrupted bookkeeping
-after all validation/test caches were complete. The [scoring-only continuation](CORRECTION_STATUS_IO_2026-10-17.md)
-used the same frozen models and cached data, with no repeated extraction,
-selection or refitting. Both failure records are preserved locally. It is the
-same evaluation, not a new independent study. The complete test suite passed
-175/175 tests before this continuation. An independent read-only audit verified
-all 39,200 score rows, all 1600 primary interval calculations/classifications,
-all 64 summary records and all 430 continuation input pins.
-
-Raw simulations and caches stay local under ignored `runs/`. The committed
-compact evidence contains no raw draws or native network-run artifacts.
+**For the same independent-rank AP-MI estimator and the tested m=50–10000,
+p=0.0005–0.05 grid, PCHIP is a promising experimental cutoff interpolator:**
+6599/6600 observed-rate checks were within 10%, including 660/660 at untouched
+test sizes. However, simultaneous intervals confirmed only 784/800 core cases
+(16 unresolved, none inconsistent), so uniform ±10% accuracy is **not
+established**. Arbitrary off-grid accuracy, rarer tails, biological FDR and new
+SJARACNe defaults are not validated here. The [full report and plots](results_2026-10-17/RESULTS.md)
+retain the interval, numerical-correction, operational-history and audit details.

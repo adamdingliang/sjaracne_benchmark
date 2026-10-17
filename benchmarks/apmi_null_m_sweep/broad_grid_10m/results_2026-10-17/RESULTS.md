@@ -18,6 +18,7 @@ This is the focused two-empirical-surface pass authorized in the
 - Probability interpolation is a separately scoped log-p/log-cutoff PCHIP above and below p=0.0001, with one shared literal boundary cutoff. No rounding, crossing repair, clipping or extrapolation is used.
 - Exact binary64 cutoffs are scored with MI>=T. Strict counts, ties and adjacent-ULP counts remain in the CSVs.
 - Under the [explicit numerical-zero correction](../CORRECTION_2026-10-17.md), only raw MI in [-64 binary64 epsilon,0) is treated as positive zero. Every positive MI bit is preserved; material negatives remain errors. Original raw files and the failed pre-selection run were not overwritten. Fresh corrected code was frozen before selection or final-data access.
+- All 4000 initial quantile hex values and both initial-model files were identical before and after this normalization.
 - Cache provenance records original full-stream negative counts/minima. CSV `source_stream_corrected_negative_count` and `source_stream_raw_minimum` expose that provenance; `roundoff_negative_count` describes any additional corrections to the already-normalized scoring input, not the original raw stream. Zero/unique-count diagnostics use normalized values.
 - The analysis used at most 12 workers with one numerical thread per worker; no new null draws were generated during fitting.
 
@@ -26,7 +27,7 @@ Opening/selection records are preserved byte-for-byte: [request](request.json),
 [final access lock](access_final.json), and [both refitted models](refit_models.json).
 The implementation and original raw distributions are identified by their pinned hashes.
 
-Final scoring was completed by a separately hash-frozen continuation after a Windows progress-file replacement failure. It reused the same cached validation data and frozen models, without extraction, fitting or selection. See the [continuation declaration](../CORRECTION_STATUS_IO_2026-10-17.md) and [continuation request](recovery_request.json).
+Final scoring was completed by a separately hash-frozen continuation after a Windows progress-file replacement failure. It reused the same cached validation data and frozen models, without extraction, fitting or selection. See the [continuation declaration](../CORRECTION_STATUS_IO_2026-10-17.md) and [continuation request](recovery_request.json). Both failed-run records remain preserved locally; this is the same evaluation, not a new independent study. The complete test suite passed 175/175 tests before continuation. An independent read-only audit verified all 39,200 score rows, all 1600 primary interval calculations/classifications, all 64 summary records and all 430 continuation input pins.
 
 ## Development selection
 
@@ -120,6 +121,10 @@ The proposed core grid is **not confirmed**: not all 800 evaluation cases meet t
 off-grid integer m or arbitrary p. The proposed m range [50,10000] and p range
 [0.0005,0.05] were not narrowed after evaluation to hide failures. No fully
 general runtime replacement is promoted by this presentation.
+
+The 16 unresolved core cases comprise 15 at p=0.0005, 1 at p=0.05. Unresolved means the interval crosses a target-band boundary; it is neither confirmation nor a demonstrated disjoint-interval violation.
+
+At m=50, p=0.05, the observed rate is 0.0550346 (10.069% relative error). The cutoff is an MI atom: 89,062 validation values equal it exactly. One upward binary64 step would change the exceedance count from 550,346 to 461,284. This is a discreteness/comparator diagnostic, **not** a post-hoc change to the frozen threshold.
 
 ## Rate trajectories and largest moderate-domain discrepancies
 

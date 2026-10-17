@@ -96,6 +96,29 @@ def _percent(value):
     return "unavailable" if value is None else f"{100 * value:.3f}%"
 
 
+def _primary_case_notes(rows, winner):
+    """Explain unresolved core cases and tied cutoffs from completed rows only."""
+    core_rows = [row for row in rows if row["method"] == winner
+                 and row["phase"] == "final_validation" and row["p"] in CORE_P]
+    unresolved = [row for row in core_rows if row["classification"] == "unresolved"]
+    notes = []
+    if unresolved:
+        by_p = Counter(row["p"] for row in unresolved)
+        breakdown = ", ".join(f"{count} at p={p:g}" for p, count in sorted(by_p.items()))
+        notes.append(f"The {len(unresolved)} unresolved core cases comprise {breakdown}. "
+                     "Unresolved means the interval crosses a target-band boundary; "
+                     "it is neither confirmation nor a demonstrated disjoint-interval violation.")
+    for row in core_rows:
+        if row["available"] and row["relative_error"] > 0.1 and row.get("ties", 0) > 0:
+            notes.append(f"At m={int(row['m'])}, p={row['p']:g}, the observed rate is {row['actual']:.7g} "
+                         f"({_percent(row['relative_error'])} relative error). The cutoff is an MI atom: "
+                         f"{int(row['ties']):,} validation values equal it exactly. One upward binary64 "
+                         f"step would change the exceedance count from {int(row['count']):,} to "
+                         f"{int(row['plus_ulp_ge']):,}. This is a discreteness/comparator diagnostic, "
+                         "**not** a post-hoc change to the frozen threshold.")
+    return "\n\n".join(notes)
+
+
 def _summary_table(summaries, scope, group="all"):
     lines = ["| Method | Within 10% / planned evaluation cases | Available | Median error | Worst error |",
              "| --- | ---: | ---: | ---: | ---: |"]
@@ -182,7 +205,11 @@ def render_results(summary, selection, primary, rows, artifact_records):
                      "progress-file replacement failure. It reused the same cached validation data and frozen "
                      "models, without extraction, fitting or selection. See the "
                      "[continuation declaration](../CORRECTION_STATUS_IO_2026-10-17.md) and "
-                     "[continuation request](recovery_request.json)."
+                     "[continuation request](recovery_request.json). Both failed-run records remain "
+                     "preserved locally; this is the same evaluation, not a new independent study. "
+                     "The complete test suite passed 175/175 tests before continuation. An independent "
+                     "read-only audit verified all 39,200 score rows, all 1600 primary interval "
+                     "calculations/classifications, all 64 summary records and all 430 continuation input pins."
                      if any(record["name"] == "recovery_request.json" for record in artifact_records) else "")
     artifacts = "\n".join(f"- [{record['name']}]({record['name']}) ({record['bytes']:,} bytes; SHA256 in [manifest.json](manifest.json))."
                           for record in artifact_records if record["name"].endswith(".csv"))
@@ -206,6 +233,7 @@ This is the focused two-empirical-surface pass authorized in the
 - Probability interpolation is a separately scoped log-p/log-cutoff PCHIP above and below p=0.0001, with one shared literal boundary cutoff. No rounding, crossing repair, clipping or extrapolation is used.
 - Exact binary64 cutoffs are scored with MI>=T. Strict counts, ties and adjacent-ULP counts remain in the CSVs.
 - Under the [explicit numerical-zero correction](../CORRECTION_2026-10-17.md), only raw MI in [-64 binary64 epsilon,0) is treated as positive zero. Every positive MI bit is preserved; material negatives remain errors. Original raw files and the failed pre-selection run were not overwritten. Fresh corrected code was frozen before selection or final-data access.
+- All 4000 initial quantile hex values and both initial-model files were identical before and after this normalization.
 - Cache provenance records original full-stream negative counts/minima. CSV `source_stream_corrected_negative_count` and `source_stream_raw_minimum` expose that provenance; `roundoff_negative_count` describes any additional corrections to the already-normalized scoring input, not the original raw stream. Zero/unique-count diagnostics use normalized values.
 - The analysis used at most 12 workers with one numerical thread per worker; no new null draws were generated during fitting.
 
@@ -277,6 +305,8 @@ models and all extra p probes have descriptive 99.9% pointwise intervals only.
 off-grid integer m or arbitrary p. The proposed m range [50,10000] and p range
 [0.0005,0.05] were not narrowed after evaluation to hide failures. No fully
 general runtime replacement is promoted by this presentation.
+
+{_primary_case_notes(rows, winner)}
 
 ## Rate trajectories and largest moderate-domain discrepancies
 

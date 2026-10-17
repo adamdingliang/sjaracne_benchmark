@@ -13,6 +13,35 @@ four probabilities. These are not biological cells or 80 individual samples.
 The historical, hash-frozen specifications use "cell" for the same table entry;
 their original wording is preserved to keep provenance hashes unchanged.
 
+## Benchmark process
+
+The goal is to map an actual sample count m and requested independence-null
+tail probability p to an MI cutoff, then measure whether independent null
+draws exceed that cutoff at the requested rate. No expression dataset or
+biological edge reference supplies the calibration labels.
+
+1. Simulate independent rank pairs with the production-shared AP-MI estimator:
+   200 sizes m=50,100,...,10000, with 10M fitting and 10M validation draws each.
+2. Construct empirical quadratic and PCHIP cutoff surfaces from 160 sizes;
+   select between them on 20 development sizes at four fixed probabilities.
+3. Refit the selected procedure once on 180 sizes, freeze it, then evaluate
+   independent validation draws at all 200 sizes. Twenty sizes never train
+   the final surfaces and test sample-size interpolation.
+4. Report observed null-rate errors separately from simultaneous-interval
+   confirmation; retain all planned cases, including unfavorable ones.
+
+These are empirical-cutoff surfaces, not fitted GPD parameter functions.
+The [summary results](RESULTS.md) show PCHIP-only rate trajectories; the
+[full report and plots](results_2026-10-17/RESULTS.md) preserve both models,
+comparators, diagnostic probabilities, numerical corrections and audit details.
+
+To regenerate only the PCHIP presentation plots from the committed score table
+(no raw draws, fitting or selection), use a fresh output directory:
+
+```powershell
+python benchmarks/apmi_null_m_sweep/broad_grid_10m/plot_pchip_summary.py --csv benchmarks/apmi_null_m_sweep/broad_grid_10m/results_2026-10-17/final_scores.csv --out runs/FRESH_PCHIP_SUMMARY_PLOTS
+```
+
 ## Corrected numerical-zero analysis
 
 The first October17 attempt stopped at09:50 EDT during internal scoring,
