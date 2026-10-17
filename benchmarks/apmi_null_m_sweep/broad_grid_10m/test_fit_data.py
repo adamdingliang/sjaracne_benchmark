@@ -244,6 +244,52 @@ class SyntheticStreams(unittest.TestCase):
         with self.assertRaises(ValueError):
             data.extract_training(self.plan_path, 50, self.out(), [.1], self.initial)
 
+    def test_raw_roundoff_is_audited_normalized_and_never_overwritten(self):
+        tiny = -data.SUPPORT_TOLERANCE
+        self.values = np.array([tiny, 0., .1, .2, .3, .4, .5, .6, tiny / 2, .8], dtype="<f8")
+        self.values.tofile(self.raw)
+        before = self.raw.read_bytes()
+        self.identity["raw"] = data.generate.record(self.raw)
+        result = data.extract_training(self.plan_path, 50, self.out(), [.1, .25], self.initial)
+        audit = result["source"]["normalization"]
+        self.assertEqual(audit["negative_count"], 2)
+        self.assertEqual(audit["normalized_to_positive_zero_count"], 2)
+        self.assertEqual(audit["raw_minimum"], tiny)
+        self.assertEqual(audit["tolerance"], data.SUPPORT_TOLERANCE)
+        values = data.load_array(result, "internal")
+        np.testing.assert_array_equal(values, [0., .8])
+        self.assertFalse(np.signbit(values[0]))
+        self.assertEqual(result["arrays"]["internal"]["summary"]["zero_count"], 1)
+        self.assertEqual(result["arrays"]["internal"]["summary"]["unique_count"], 2)
+        expected = np.quantile(self.values[:8], 1 - np.array([.1, .25]), method="higher")
+        np.testing.assert_array_equal([q["cutoff"] for q in result["quantiles"]], expected)
+        self.assertEqual(self.raw.read_bytes(), before)
+
+    def test_hash_is_verified_before_normalization(self):
+        self.raw.write_bytes(np.array([.2] * 10, dtype="<f8").tobytes())
+        with patch.object(data, "normalize_roundoff") as normalizer:
+            with self.assertRaises(ValueError):
+                data.extract_training(self.plan_path, 50, self.out(), [.1], self.initial)
+            normalizer.assert_not_called()
+
+    def test_old_cache_original_hash_and_summary_checked_before_normalization(self):
+        output = self.out()
+        output.mkdir(parents=True)
+        original = np.array([-data.SUPPORT_TOLERANCE, 0., .8])
+        result = data._write_cache(output, self.identity, data.generate.record(self.initial),
+                                   "synthetic_older_cache", {"score": (original, True)})
+        artifact = Path(result["arrays"]["score"]["artifact"]["path"])
+        before = artifact.read_bytes()
+        values = data.load_array(result, "score")
+        np.testing.assert_array_equal(values, [0., 0., .8])
+        self.assertFalse(values.flags.writeable)
+        self.assertEqual(artifact.read_bytes(), before)
+        result["arrays"]["score"]["summary"]["zero_count"] += 1
+        with patch.object(data, "normalize_roundoff") as normalizer:
+            with self.assertRaises(ValueError):
+                data.load_array(result, "score")
+            normalizer.assert_not_called()
+
     def test_caches_open_read_only(self):
         result = data.extract_training(self.plan_path, 50, self.out(), [.1], self.initial)
         values = data.load_array(result, "internal")
@@ -310,6 +356,54 @@ class CountPolicy(unittest.TestCase):
         for threshold in (True, np.nan, np.inf, -np.inf):
             with self.subTest(threshold=threshold), self.assertRaises(ValueError):
                 data.count_sorted(np.array([0., 1.]), threshold)
+
+
+class RoundoffPolicy(unittest.TestCase):
+    def test_exact_tolerance_and_tiny_negatives_become_positive_zero(self):
+        original = np.array([-data.SUPPORT_TOLERANCE, -np.finfo(float).eps,
+                             np.nextafter(0., -np.inf), 0., .1], dtype=float)
+        before = original.tobytes()
+        normalized = data.normalize_roundoff(original)
+        np.testing.assert_array_equal(normalized, [0., 0., 0., 0., .1])
+        self.assertFalse(np.any(np.signbit(normalized[:3])))
+        self.assertFalse(normalized.flags.writeable)
+        self.assertTrue(original.flags.writeable)
+        self.assertEqual(original.tobytes(), before)
+        self.assertFalse(np.shares_memory(original, normalized))
+
+    def test_material_negative_just_below_tolerance_is_rejected(self):
+        values = np.array([np.nextafter(-data.SUPPORT_TOLERANCE, -np.inf), 0.])
+        before = values.tobytes()
+        with self.assertRaises(ValueError):
+            data.normalize_roundoff(values)
+        self.assertEqual(values.tobytes(), before)
+
+    def test_nonfinite_nonbinary64_and_nonvector_values_rejected(self):
+        for values in (np.array([np.nan]), np.array([np.inf]), np.array([-np.inf]),
+                       np.array([0], dtype=np.float32), np.array([0], dtype=int),
+                       np.array([[0.]]), np.array([], dtype=float)):
+            with self.subTest(values=values), self.assertRaises(ValueError):
+                data.normalize_roundoff(values)
+
+    def test_no_negatives_returns_readonly_view_without_changing_input_flags(self):
+        values = np.array([0., .1, .2])
+        before = values.tobytes()
+        normalized = data.normalize_roundoff(values)
+        self.assertTrue(np.shares_memory(values, normalized))
+        self.assertFalse(normalized.flags.writeable)
+        self.assertTrue(values.flags.writeable)
+        self.assertEqual(values.tobytes(), before)
+
+    def test_positive_quantiles_and_counts_are_exactly_unchanged(self):
+        original = np.array([-data.SUPPORT_TOLERANCE, -np.finfo(float).eps, 0., .1, .2, .3, .4])
+        normalized = data.normalize_roundoff(original)
+        probabilities = np.array([.1, .25, .5])
+        np.testing.assert_array_equal(np.quantile(original, 1 - probabilities, method="higher"),
+                                      np.quantile(normalized, 1 - probabilities, method="higher"))
+        for threshold in (.1, .2, .3):
+            self.assertEqual(data.count_sorted(original, threshold), data.count_sorted(normalized, threshold))
+        self.assertEqual(data.sorted_summary(normalized)["zero_count"], 3)
+        self.assertEqual(data.sorted_summary(normalized)["unique_count"], 5)
 
 
 if __name__ == "__main__":

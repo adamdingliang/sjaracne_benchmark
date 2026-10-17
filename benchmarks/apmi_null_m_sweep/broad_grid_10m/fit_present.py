@@ -199,6 +199,8 @@ This is the focused two-empirical-surface pass authorized in the
 - Both use the frozen 25 empirical `higher` quantile knots. Quadratic fits log-cutoff on {{1,x,x²}} globally across m; PCHIP interpolates log-cutoff locally across x, where x is normalized log(m).
 - Probability interpolation is a separately scoped log-p/log-cutoff PCHIP above and below p=0.0001, with one shared literal boundary cutoff. No rounding, crossing repair, clipping or extrapolation is used.
 - Exact binary64 cutoffs are scored with MI>=T. Strict counts, ties and adjacent-ULP counts remain in the CSVs.
+- Under the [explicit numerical-zero correction](../CORRECTION_2026-10-17.md), only raw MI in [-64 binary64 epsilon,0) is treated as positive zero. Every positive MI bit is preserved; material negatives remain errors. Original raw files and the failed pre-selection run were not overwritten. Fresh corrected code was frozen before selection or final-data access.
+- Cache provenance records original full-stream negative counts/minima. CSV `source_stream_corrected_negative_count` and `source_stream_raw_minimum` expose that provenance; `roundoff_negative_count` describes any additional corrections to the already-normalized scoring input, not the original raw stream. Zero/unique-count diagnostics use normalized values.
 - The analysis used at most 12 workers with one numerical thread per worker; no new null draws were generated during fitting.
 
 Opening/selection records are preserved byte-for-byte: [request](request.json),

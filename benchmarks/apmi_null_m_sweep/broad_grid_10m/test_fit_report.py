@@ -87,6 +87,57 @@ class ScoringTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 report.score_predictions(values, [prediction()], "pchip", "development")
 
+    def test_roundoff_negative_is_zero_without_mutating_input(self):
+        tolerance = report.fit_data.SUPPORT_TOLERANCE
+        values = np.asarray([-tolerance, -np.finfo(float).eps, 0.0, 0.1, 0.2], dtype=np.float64)
+        original = values.tobytes()
+        row = report.score_predictions(values, [prediction(cutoff=0.0)], "pchip", "development")[0]
+        self.assertEqual(values.tobytes(), original)
+        self.assertEqual(row["roundoff_negative_count"], 2)
+        self.assertEqual(row["roundoff_tolerance"], tolerance)
+        self.assertEqual(row["raw_minimum"], -tolerance)
+        self.assertEqual(row["zero_count"], 3)
+        self.assertEqual(row["unique_count"], 3)
+        self.assertEqual((row["count"], row["gt"], row["ties"]), (5, 2, 3))
+        self.assertEqual(row["engine_zero_omission_count"], 2)
+
+    def test_roundoff_boundary_and_material_negative(self):
+        tolerance = report.fit_data.SUPPORT_TOLERANCE
+        for negative in (-tolerance, np.nextafter(-tolerance, 0), -np.nextafter(0.0, 1.0)):
+            values = np.asarray([negative, 0.0, 0.1], dtype=np.float64)
+            row = report.score_predictions(values, [prediction(cutoff=0.0)], "pchip", "development")[0]
+            self.assertEqual(row["zero_count"], 2)
+            self.assertEqual(row["roundoff_negative_count"], 1)
+        for negative in (np.nextafter(-tolerance, -np.inf), -1e-10, -0.1):
+            with self.assertRaises(ValueError):
+                report.score_predictions(np.asarray([negative, 0.0]), [prediction()], "pchip", "development")
+
+    def test_positive_cutoff_rates_and_intervals_equal_zeroed_reference(self):
+        values = np.asarray([-report.fit_data.SUPPORT_TOLERANCE, -np.finfo(float).eps,
+                             0.0, 0.01, 0.1, 0.1, 0.2], dtype=np.float64)
+        zeroed = values.copy()
+        zeroed[zeroed < 0] = 0.0
+        predictions = [prediction(p=0.05, cutoff=0.01), prediction(cutoff=0.1),
+                       prediction(p=0.0001, cutoff=0.2), prediction(p=1e-7, cutoff=1.0)]
+        actual = report.score_predictions(values, predictions, "pchip", "final_validation", primary=True)
+        expected = report.score_predictions(zeroed, predictions, "pchip", "final_validation", primary=True)
+        for left, right in zip(actual, expected):
+            for field in ("count", "gt", "ties", "minus_ulp_ge", "plus_ulp_ge", "actual", "ratio",
+                          "relative_error", "point_lower", "point_upper", "simultaneous_lower",
+                          "simultaneous_upper", "classification", "zero_count", "unique_count"):
+                self.assertEqual(left[field], right[field], field)
+
+    def test_readonly_input_roundoff_and_zero_omission_consistent(self):
+        values = np.asarray([-np.finfo(float).eps, 0.0, np.nextafter(0.0, 1.0), 0.1], dtype=np.float64)
+        values.flags.writeable = False
+        rows = report.score_predictions(values, [prediction(cutoff=0.0),
+                                                 prediction(cutoff=np.nextafter(0.0, 1.0))],
+                                        "pchip", "development")
+        self.assertEqual(rows[0]["engine_zero_omission_count"], rows[1]["count"])
+        self.assertEqual(rows[0]["count"], 4)
+        self.assertEqual(rows[1]["count"], 2)
+        self.assertLess(values[0], 0)
+
     def test_empty_predictions(self):
         self.assertEqual(report.score_predictions(np.asarray([0.0]), [], "pchip", "development"), [])
 

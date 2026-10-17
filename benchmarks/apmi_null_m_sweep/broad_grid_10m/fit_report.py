@@ -63,15 +63,20 @@ def score_predictions(values, predictions, method, phase, primary=False):
     simultaneous intervals at the eight primary probabilities. Other rows
     receive descriptive pointwise intervals only. ``relative_error`` is the
     absolute relative error; ``signed_relative_error`` retains its direction.
+    The shared data-layer roundoff policy maps only [-64eps,0) to positive
+    zero in a read-only analysis copy. Raw inputs are never modified. The
+    roundoff fields audit this caller-supplied vector before normalization;
+    generation-byte normalization provenance is separately retained by caches.
     """
     if not isinstance(method, str) or not method or not isinstance(phase, str) or not phase:
         raise ValueError("nonempty method and phase labels required")
     if not isinstance(primary, bool):
         raise ValueError("primary must be a boolean")
-    values = np.asarray(values)
+    supplied_values = np.asarray(values)
+    values = fit_data.normalize_roundoff(supplied_values)
     array_summary = fit_data.sorted_summary(values)
-    if values[0] < 0:
-        raise ValueError("MI draws must be nonnegative")
+    raw_minimum = float(np.min(supplied_values))
+    roundoff_negative_count = int(np.count_nonzero(supplied_values < 0))
     n = int(values.size)
     rows, available_indices = [], []
     for prediction in predictions:
@@ -84,6 +89,9 @@ def score_predictions(values, predictions, method, phase, primary=False):
                    simultaneous_lower=None, simultaneous_upper=None,
                    classification=None, simultaneous_applicable=False,
                    zero_count=array_summary["zero_count"], unique_count=array_summary["unique_count"],
+                   roundoff_negative_count=roundoff_negative_count,
+                   roundoff_tolerance=fit_data.SUPPORT_TOLERANCE,
+                   raw_minimum=raw_minimum,
                    engine_zero_omission_count=None)
         reason = row.get("reason")
         if not _real(p) or not 0 < float(p) < 1:

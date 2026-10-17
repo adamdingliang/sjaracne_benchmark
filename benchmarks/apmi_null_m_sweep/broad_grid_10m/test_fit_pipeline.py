@@ -147,6 +147,72 @@ class ControllerTests(unittest.TestCase):
             self.assertFalse((root / "primary.json").exists())
             self.assertFalse((root / "access_final.json").exists())
             self.assertTrue((root / "failure.json").exists())
+            self.assertEqual(pipe.generate.read_json(root / "status.json")["phase"], "failed")
+
+    def test_score_rows_preserve_source_stream_roundoff_provenance(self):
+        cache = {50: {"source": {"normalization": {"negative_count": 3, "raw_minimum": -8.88e-16}}}}
+        row = {"m": 50, "p": .01}
+        with patch.object(pipe.fit_data, "load_array", return_value=np.zeros(2_000_000)), \
+                patch.object(pipe.fit_models, "predict_surface", return_value=[]), \
+                patch.object(pipe.fit_report, "score_predictions", return_value=[row]):
+            result = pipe.score_cache(cache, {"quadratic": {}}, "internal")
+        self.assertEqual(result[0]["source_stream_corrected_negative_count"], 3)
+        self.assertEqual(result[0]["source_stream_raw_minimum"], -8.88e-16)
+
+
+class RestartEvidenceTests(unittest.TestCase):
+    def setUp(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        self.repo = Path(temporary.name)
+        self.root = self.repo / "runs" / "failed"
+        self.root.mkdir(parents=True)
+        patcher = patch.object(pipe.generate, "repo_root", return_value=self.repo)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        pipe.locked_write(self.root / "request.json", {
+            "format": "apmi-two-surface-analysis-request-v1", "plan_sha256": pipe.GENERATION_HASH,
+            "groups": pipe.groups()})
+        pipe.generate.write_new(self.root / "failure.json", {
+            "error": "ValueError('MI draws must be nonnegative')"})
+        pipe.locked_write(self.root / "initial_models.json", {"synthetic": True})
+        cache = self.root / "synthetic-cache.json"
+        pipe.generate.write_new(cache, {"synthetic": True})
+        self.cache = cache
+        for phase in ("training", "development"):
+            pipe.locked_write(self.root / (phase + "_index.json"), {
+                "records": [{"m": m, "cache": pipe.generate.record(cache)} for m in pipe.groups()[phase]]})
+
+    def test_acknowledges_earlier_access_not_pristine_analysis(self):
+        evidence = pipe.restart_evidence(self.root)
+        self.assertFalse(evidence["selection_recorded"])
+        self.assertFalse(evidence["final_statistical_access"])
+        self.assertIn("partial internal scoring", evidence["earlier_statistical_access"])
+        self.assertEqual(len(evidence["evidence"]), 5)
+
+    def test_rejects_final_or_selection_artifacts(self):
+        for name in ("selection.json", "access_final.json", "cache/validation", "cache/test_fit"):
+            path = self.root / name
+            path.parent.mkdir(exist_ok=True)
+            path.write_text("{}")
+            with self.assertRaisesRegex(ValueError, "prior selection or final access"):
+                pipe.restart_evidence(self.root)
+            path.unlink()
+
+    def test_rejects_unrelated_failure(self):
+        (self.root / "failure.json").write_text('{"error":"unrelated failure"}')
+        with self.assertRaisesRegex(ValueError, "roundoff-guard failure"):
+            pipe.restart_evidence(self.root)
+
+    def test_rejects_changed_old_quantiles(self):
+        (self.root / "initial_models.json").write_text('{"changed":true}')
+        with self.assertRaisesRegex(ValueError, "hash mismatch"):
+            pipe.restart_evidence(self.root)
+
+    def test_rejects_changed_old_cache_metadata(self):
+        self.cache.write_text('{"changed":true}')
+        with self.assertRaisesRegex(ValueError, "pinned artifact changed"):
+            pipe.restart_evidence(self.root)
 
 
 if __name__ == "__main__":

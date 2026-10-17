@@ -23,6 +23,41 @@ SCHEMA = "sjaracne-broad-grid-fit-cache-v1"
 GATE_SCHEMA = "sjaracne-broad-grid-analysis-access-v1"
 N_DRAWS = 10_000_000
 N_CONSTRUCTION = 8_000_000
+SUPPORT_TOLERANCE = 64 * sys.float_info.epsilon
+NORMALIZATION_POLICY = "negative AP-MI in [-64*float64_epsilon,0) becomes literal positive zero; original raw bytes unchanged"
+
+
+def _roundoff_audit(values):
+    values = np.asarray(values)
+    if (values.ndim != 1 or not len(values) or values.dtype != np.dtype("float64")
+            or not np.all(np.isfinite(values))):
+        raise ValueError("nonempty finite one-dimensional binary64 values required")
+    negative_count = int(np.count_nonzero(values < 0))
+    return {"policy": NORMALIZATION_POLICY, "tolerance": SUPPORT_TOLERANCE,
+            "negative_count": negative_count, "raw_minimum": float(np.min(values)),
+            "normalized_to_positive_zero_count": negative_count}
+
+
+def normalize_roundoff(values):
+    """Return readonly binary64 values, replacing only tolerated negatives.
+
+    This is a numerical-support convention, not threshold clipping. Values in
+    [-64*epsilon,0) become literal +0.0. More negative or nonfinite values fail.
+    Input bytes and writeability flags are never modified. A payload copy is
+    made only when a tolerated negative is present; otherwise return a readonly
+    view. Positive observations retain their exact original binary64 values.
+    """
+    values = np.asarray(values)
+    audit = _roundoff_audit(values)
+    if audit["raw_minimum"] < -SUPPORT_TOLERANCE:
+        raise ValueError("materially negative AP-MI below numerical support tolerance")
+    if audit["negative_count"]:
+        normalized = values.copy()
+        normalized[normalized < 0] = 0.0
+    else:
+        normalized = values.view()
+    normalized.flags.writeable = False
+    return normalized
 
 
 def m_group(m):
@@ -182,8 +217,10 @@ def _read_verified(identity, expected=None):
     digest = hashlib.sha256(memoryview(values).cast("B")).hexdigest()
     if digest != identity["raw"]["sha256"]:
         raise ValueError("statistical bytes differ from completed generation checkpoint")
-    values.flags.writeable = False
-    return values
+    # Verify the unmodified native bytes above before applying the explicit
+    # user-authorized floating-point support convention in analysis memory.
+    identity["normalization"] = _roundoff_audit(values)
+    return normalize_roundoff(values)
 
 
 def _p_knots(pknots):
@@ -327,10 +364,11 @@ def load_array(cache, name, mmap_mode="r"):
     if values.ndim != 1 or values.dtype != np.dtype("float64") or len(values) != item["draws"]:
         raise ValueError("cache dtype, shape or draw count mismatch")
     m = cache["source"]["task"]["m"]
-    tolerance = 64 * sys.float_info.epsilon
-    if np.any(~np.isfinite(values)) or np.any(values < -tolerance) or np.any(values > math.log(m) + tolerance):
+    if (np.any(~np.isfinite(values)) or np.any(values < -SUPPORT_TOLERANCE)
+            or np.any(values > math.log(m) + SUPPORT_TOLERANCE)):
         raise ValueError("cache outside AP-MI support")
     if item["sorted"] and sorted_summary(values) != item["summary"]:
         raise ValueError("sorted cache summary changed")
-    values.flags.writeable = False
-    return values
+    # Validate the pinned original cache and its literal summary before an
+    # optional readonly in-memory normalization, including for an older cache.
+    return normalize_roundoff(values)

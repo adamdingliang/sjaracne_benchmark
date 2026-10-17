@@ -1,5 +1,31 @@
 # Broad-grid calibration: execution, planning and timing
 
+## Corrected numerical-zero analysis
+
+The first October17 attempt stopped at09:50 EDT during internal scoring,
+before selection or final access: reporting rejected tiny negatives that the
+original integrity checker already permitted. See the explicit
+[numerical-zero correction and restart history](CORRECTION_2026-10-17.md).
+The corrected analysis treats only MI in [-64 binary64 epsilon,0) as positive
+zero, preserves every positive value and all original raw files, and retains
+material-negative errors. All161 tests pass, including regression and
+restart/sealing tests.
+
+The fresh corrected run uses12 workers and the same existing simulations:
+`runs/apmi_null_broad_fits_20261017_zero_corrected/`. The first failed run is
+preserved unchanged. No new draws or model/selection/default changes are made.
+Check the corrected run's `status.json`, `stdout.log` and `stderr.log` rather
+than interpreting the failed run's last progress heartbeat as a live process.
+
+The corrected freeze command requires
+`--restart-from runs/apmi_null_broad_fits_20261017` to pin the failed-run evidence
+and acknowledge prior training/development access. A new request is frozen
+before selection/refitting/final evaluation; the untouched final streams stay
+sealed until primary freeze. The historical launch description below refers
+to the original attempt, not successful completion.
+
+## Original October17 attempt (failed, preserved)
+
 **Focused fitting/selection/final evaluation launched October 17 at 9:46 AM
 EDT with 12 workers.** All400 generation streams completed. The
 [prospective focused-analysis amendment](AMENDMENT_2026-10-17.md) replaces the
@@ -18,7 +44,7 @@ No runner-up fallback or engine/default change is allowed. Local artifacts:
 execution. Raw data and sorted caches remain ignored, outside Git history.
 
 For a new authorized analysis directory, the implementation entry points are
-`fit_pipeline.py freeze --plan <generation-plan> --out <fresh-run-directory>`
+`fit_pipeline.py freeze --plan <generation-plan> --out <fresh-run-directory> --restart-from <failed-run-directory>`
 then `fit_pipeline.py run --request <fresh-run-directory>/request.json`.
 The controller refuses a second run of an already-started request. Do not
 rerun final evaluation to select a favorable result.

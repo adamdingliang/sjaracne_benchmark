@@ -73,6 +73,42 @@ def shape_check(model):
             "moderate_failures": moderate, "rare_failures": [r for r in failures if r["p"] < 0.0001]}
 
 
+def restart_evidence(path):
+    """Audit the failed pre-selection attempt without opening scientific arrays."""
+    root = Path(path).resolve(strict=True)
+    fit_data._reject_links(root)
+    boundary = (generate.repo_root() / "runs").resolve(strict=True)
+    if root == boundary or not root.is_relative_to(boundary):
+        raise ValueError("restart evidence must be an existing ignored analysis run")
+    old = read_locked(root / "request.json")
+    if (old.get("format") != "apmi-two-surface-analysis-request-v1"
+            or old.get("plan_sha256") != GENERATION_HASH
+            or old.get("groups") != groups()):
+        raise ValueError("restart evidence belongs to a different analysis protocol")
+    failure = generate.read_json(root / "failure.json")
+    if failure.get("error") != "ValueError('MI draws must be nonnegative')":
+        raise ValueError("this correction applies only to the recorded roundoff-guard failure")
+    sealed_artifacts = ("selection.json", "primary.json", "access_selected.json", "access_final.json",
+                        "refit_models.json", "final_scores.csv", "summary.json", "validation_index.json",
+                        "test_fit_index.json", "cache/validation", "cache/test_fit")
+    if any((root / name).exists() for name in sealed_artifacts):
+        raise ValueError("prior selection or final access prevents this pre-selection restart")
+    training = read_locked(root / "training_index.json")
+    development = read_locked(root / "development_index.json")
+    read_locked(root / "initial_models.json")
+    for phase, index in (("training", training), ("development", development)):
+        if sorted(row["m"] for row in index["records"]) != groups()[phase]:
+            raise ValueError("failed-run extraction coverage changed")
+        for row in index["records"]:
+            fit_data._check_record(row["cache"])
+    evidence = {name: generate.record(root / name) for name in
+                ("request.json", "failure.json", "initial_models.json", "training_index.json", "development_index.json")}
+    return {"failed_run": str(root), "evidence": evidence,
+            "earlier_statistical_access": "160 training and20 development fitting streams; initial surfaces and partial internal scoring",
+            "selection_recorded": False, "final_statistical_access": False,
+            "authorization": "Explicit user-approved numerical-zero correction and restart; no new draws"}
+
+
 def make_request(args):
     plan, digest = generate.load_plan(args.plan)
     if digest != GENERATION_HASH:
@@ -82,12 +118,14 @@ def make_request(args):
     fit_data._reject_links(out)
     if out.exists() or not out.resolve().is_relative_to(boundary) or out.resolve() == boundary:
         raise ValueError("analysis output must be a fresh ignored runs/ child")
+    history = restart_evidence(args.restart_from)
     sources = ["fit_pipeline.py", "test_fit_pipeline.py", "fit_models.py", "test_fit_models.py",
                "fit_data.py", "test_fit_data.py", "fit_report.py", "test_fit_report.py",
-               "AMENDMENT_2026-10-17.md", "ANALYSIS_SPEC_2026-10-16.md"]
+               "AMENDMENT_2026-10-17.md", "ANALYSIS_SPEC_2026-10-16.md", "CORRECTION_2026-10-17.md"]
     pins = {name: generate.record(HERE / name) for name in sources}
     pins["probability_grid"] = generate.record(HERE.parent / "p_axis_refinement" / "grid.py")
     pins["generation_controller"] = generate.record(HERE / "generate.py")
+    pins.update({"restart_" + name: record for name, record in history["evidence"].items()})
     pins["legacy_config"] = generate.record(Path(plan["engine_root"]) / "SJARACNe/config/config_threshold.txt")
     config_text = Path(pins["legacy_config"]["path"]).read_text().splitlines()
     values = [line for line in config_text if line.strip() and not line.startswith(">")]
@@ -105,7 +143,11 @@ def make_request(args):
                "versions": {"python": sys.version, "numpy": np.__version__, "scipy": scipy.__version__,
                             "platform": platform.platform()},
                "code_commit": generate.git_output(generate.repo_root(), "rev-parse", "HEAD"),
-               "no_statistical_access_before_this_record": True,
+               "restart_history": history,
+               "no_final_statistical_access_before_this_record": True,
+               "numerical_zero_policy": {"lower_inclusive": -fit_data.SUPPORT_TOLERANCE,
+                                         "upper_exclusive": 0, "replacement": "+0.0",
+                                         "preserve_original_raw_bytes": True},
                "amendment": "Focused empirical quadratic/PCHIP selection; full104-candidate analysis deferred.",
                "no_fallback": True}
     request_record = locked_write(out / "request.json", request)
@@ -200,6 +242,9 @@ def score_cache(cache_map, models, phase, primary_method=None, legacy=False, emp
             rows.extend(fit_report.score_predictions(values, predictions, "exact_m_empirical", phase))
     for row in rows:
         row["m_group"] = fit_data.m_group(int(row["m"]))
+        audit = cache_map[int(row["m"])]["source"].get("normalization", {})
+        row["source_stream_corrected_negative_count"] = audit.get("negative_count")
+        row["source_stream_raw_minimum"] = audit.get("raw_minimum")
     return rows
 
 
@@ -298,6 +343,8 @@ def run(args):
     except BaseException as error:
         generate.write_new(root / "failure.json", {"utc": generate.utc_now(), "error": repr(error),
                                                    "no_automatic_retry": True})
+        generate.atomic_status(root / "status.json", {"phase": "failed", "error": repr(error),
+                                                      "updated_utc": generate.utc_now()})
         raise
 
 
@@ -307,6 +354,7 @@ def main():
     freeze = sub.add_parser("freeze")
     freeze.add_argument("--plan", type=Path, required=True)
     freeze.add_argument("--out", type=Path, required=True)
+    freeze.add_argument("--restart-from", type=Path, required=True)
     launch = sub.add_parser("run")
     launch.add_argument("--request", type=Path, required=True)
     args = parser.parse_args()
