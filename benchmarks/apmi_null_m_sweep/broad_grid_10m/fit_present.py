@@ -97,13 +97,13 @@ def _percent(value):
 
 
 def _summary_table(summaries, scope, group="all"):
-    lines = ["| Method | Within 10% / planned cells | Available | Median error | Worst error |",
+    lines = ["| Method | Within 10% / planned evaluation cases | Available | Median error | Worst error |",
              "| --- | ---: | ---: | ---: | ---: |"]
     for method in METHODS:
         matches = [row for row in summaries if row["method"] == method and row["phase"] == "final_validation"
                    and row["pscope"] == scope and row["m_group"] == group]
         if len(matches) != 1:
-            raise ValueError("missing or duplicate frozen summary cell")
+            raise ValueError("missing or duplicate frozen summary entry")
         row = matches[0]
         lines.append(f"| {LABELS[method]} | {row['within10_count']}/{row['total']} | "
                      f"{row['available']}/{row['total']} | {_percent(row['median_absolute_relative_error'])} | "
@@ -155,17 +155,17 @@ def render_results(summary, selection, primary, rows, artifact_records):
     core = _core_classes(rows, winner, CORE_P)
     full = _core_classes(rows, winner, COARSE_P)
     accepted = core.get("confirmed", 0) == 800
-    verdict = ("All 800 tested core cells are confirmed under the planned simultaneous interval criterion."
-               if accepted else "The proposed core grid is **not confirmed**: not all 800 cells meet the planned simultaneous interval criterion.")
+    verdict = ("All 800 tested core evaluation cases are confirmed under the planned simultaneous interval criterion."
+               if accepted else "The proposed core grid is **not confirmed**: not all 800 evaluation cases meet the planned simultaneous interval criterion.")
     candidates = selection["candidates"]
-    selection_lines = ["| Candidate | Eligible | Development loss | Median absolute rate error | Worst error |",
+    selection_lines = ["| Candidate | Eligible | Development selection score (loss; lower is better) | Median absolute rate error | Worst error |",
                        "| --- | --- | ---: | ---: | ---: |"]
     for candidate in candidates:
         loss = "unavailable" if candidate["loss"] is None else f"{candidate['loss']:.12g}"
         selection_lines.append(f"| {LABELS[candidate['method']]} | {candidate['eligible']} | {loss} | "
                                f"{_percent(candidate.get('median_absolute_relative_error'))} | "
                                f"{_percent(candidate.get('worst_absolute_relative_error'))} |")
-    interval_lines = ["| Primary domain | Planned cells | Confirmed | Inconsistent | Unresolved | Invalid |",
+    interval_lines = ["| Primary domain | Planned evaluation cases | Confirmed | Inconsistent | Unresolved | Invalid |",
                       "| --- | ---: | ---: | ---: | ---: | ---: |"]
     for label, expected, counts in (("Four core p levels", 800, core), ("All eight primary p levels", 1600, full)):
         interval_lines.append(f"| {label} | {expected} | {counts.get('confirmed', 0)} | "
@@ -199,7 +199,7 @@ This is the focused two-empirical-surface pass authorized in the
 
 - 200 sizes: m=50,100,...,10000; 10M fitting plus 10M independent validation draws per size.
 - Initial construction: 160 training sizes, first 8M fitting draws. Their last 2M draws are diagnostics only.
-- Selection: 20 development sizes (m=450,950,...,9950), using four p levels {{0.05,0.01,0.001,0.0005}} and all 80 equally weighted cells.
+- Selection: 20 development sample counts (m=450,950,...,9950), crossed with four p levels {{0.05,0.01,0.001,0.0005}}: all 80 equally weighted evaluation cases. Each case is one sample-count/probability pair, not a biological cell.
 - The 20 final interpolation-test sizes (m=350,850,...,9850) did not train either final surface. Their fitting distributions and every validation distribution stayed sealed until primary freeze.
 - Both procedures were refitted once on full 10M fitting draws at the same 180 non-test sizes. The nonwinner is descriptive, never a fallback.
 - Both use the frozen 25 empirical `higher` quantile knots. Quadratic fits log-cutoff on {{1,x,x²}} globally across m; PCHIP interpolates log-cutoff locally across x, where x is normalized log(m).
@@ -218,10 +218,20 @@ The implementation and original raw distributions are identified by their pinned
 
 ## Development selection
 
-The objective is the mean of squared log(((c+0.5)/(n+1))/p) across all 80
-development cells. The pseudocount is only for this loss; reported actual rates
-are c/n. Invalid cells make a candidate ineligible. Ties within absolute 1e-12
-prefer quadratic. Final validation did not select or revise the winner.
+The **80 development evaluation cases** are 20 development sample counts
+m=450,950,...,9950 (held out from initial fitting), crossed with four nominal
+probabilities p={{0.05,0.01,0.001,0.0005}}. An evaluation case is one (m,p)
+setting, **not a biological cell or an 80-sample dataset**.
+
+For each evaluation case, c counts MI>=T among n=10,000,000 development null
+draws. Define the regularized actual rate `r_tilde=(c+0.5)/(10,000,000+1)`.
+The **development loss** is the equally weighted mean of
+`[log(r_tilde/p)]^2` across all 80 evaluation cases, using the natural logarithm.
+Lower is better; zero is ideal. This is a dimensionless score, **not a
+percentage**. The pseudocount is only for this loss; reported actual rates are
+c/n. An invalid evaluation case makes a candidate ineligible. Ties within
+absolute 1e-12 prefer quadratic. Final validation did not select or revise the
+winner.
 
 {chr(10).join(selection_lines)}
 
@@ -229,8 +239,8 @@ prefer quadratic. Final validation did not select or revise the winner.
 
 “Within 10%” means the observed c/n is within 10% of nominal p. This is **not**
 the simultaneous interval acceptance criterion below. Denominators include
-every planned cell; unavailable cells are not passes. Median/worst errors
-describe available cells only; full available/invalid/missing counts are retained
+every planned evaluation case; unavailable cases are not passes. Median/worst
+errors describe available evaluation cases only; full available/invalid/missing counts are retained
 in [summary.json](summary.json).
 
 ### Four core p levels, all 200 sizes
@@ -256,14 +266,14 @@ in [summary.json](summary.json).
 ## Primary simultaneous interval assessment
 
 Only the selected frozen primary receives the prospective 99% Bonferroni
-study-family intervals across 200x8=1600 comparisons. A cell is confirmed when
+study-family intervals across 200x8=1600 evaluation cases. An evaluation case is confirmed when
 its entire interval is inside [0.9p,1.1p], inconsistent when disjoint, and
-otherwise unresolved. Invalid or unresolved cells are not passes. The other
+otherwise unresolved. Invalid or unresolved evaluation cases are not passes. The other
 models and all extra p probes have descriptive 99.9% pointwise intervals only.
 
 {chr(10).join(interval_lines)}
 
-{verdict} Even universal success on these grid cells would not establish every
+{verdict} Even universal success on these grid evaluation cases would not establish every
 off-grid integer m or arbitrary p. The proposed m range [50,10000] and p range
 [0.0005,0.05] were not narrowed after evaluation to hide failures. No fully
 general runtime replacement is promoted by this presentation.
@@ -282,7 +292,7 @@ surfaces are shown, with primary identity stated; y limits do not hide failures.
 
 - **Exact-m empirical diagnostic:** each of all 49 cutoffs is calculated directly from the corresponding fitting stream, then scored on independent validation. It is not an interpolated function and is not a selected fallback. Final-test fitting streams supplied this diagnostic only after primary freeze.
 - **Untouched legacy-affine comparator:** original coefficients and formula were pinned without tuning. Its nominal p label is not itself a probability guarantee.
-- The 49-query summaries are diagnostics, not an additional simultaneous-coverage claim over 9800 cells. The unselected surface cannot inherit the winner's primary claim.
+- The 49-query summaries are diagnostics, not an additional simultaneous-coverage claim over 9800 evaluation cases. The unselected surface cannot inherit the winner's primary claim.
 - At 10M validation draws, expected exceedances at p=1e-5,1e-6,1e-7 are only 100,10,1. In particular, a fitted cutoff at 1e-7 is not evidence for +/-10% tail accuracy. Interpolation does not create missing tail information.
 - The experiment calibrates SJARACNe's independent-rank AP-MI null, not biological false-positive rates, direct regulatory edges or downstream network quality.
 - This pass does not evaluate the deferred GPD/hybrid/spline model families, off-grid sample sizes, or every probability in a continuous interval.

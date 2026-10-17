@@ -20,14 +20,25 @@ for internal diagnostics. Select on 20 other sizes and four probabilities
 {0.05,0.01,0.001,0.0005}, then refit once on 180 sizes. Twenty interpolation-test
 sizes never train the final surfaces. Freeze the primary before final access.
 
-PCHIP's 80-cell development loss was 0.0001292240 versus 0.0004035071 for
-quadratic; both had all 80 valid cells. No final result selected the winner.
+The development selection score was 0.0001292240 for PCHIP versus
+0.0004035071 for quadratic; lower is better. Both were evaluated on all
+**80 development evaluation cases: 20 sample sizes × four probabilities**.
+Each evaluation case is one (m,p) pair in a table, not a biological cell or
+an individual sample.
+
+For each case, the fitted curve predicts an MI cutoff. Of n=10 million
+development null values, c are at or above that cutoff. The score averages
+the squared natural logarithm of ((c+0.5)/(n+1))/p across all 80 cases, with
+equal weights. The pseudocount keeps the logarithm finite; reported observed
+rates remain c/n. A score of zero means perfect agreement with nominal p;
+the score is dimensionless, not a probability or an error percentage.
+Only these development cases selected the winner, not final validation.
 
 ## Independent final validation
 
 Absolute relative error is abs((observed null exceedance rate / nominal p)-1).
 The following rates use the same frozen MI>=cutoff comparator and all planned
-cells, without excluding unfavorable sizes or probabilities.
+evaluation cases, without excluding unfavorable sizes or probabilities.
 
 | Evaluation scope | Method | Observed error within 10% | Median error | Worst error |
 | --- | --- | ---: | ---: | ---: |
@@ -45,16 +56,16 @@ are not evidence for 10% accuracy at 1e-7: 10M draws yield only one expected eve
 ## What is and is not confirmed
 
 For the selected PCHIP primary, the 99% Bonferroni study-family intervals over
-1600 comparisons classify the 800 core cells as **784 confirmed, 16 unresolved,
+1600 comparisons classify the 800 core evaluation cases as **784 confirmed, 16 unresolved,
 0 inconsistent, 0 invalid**. All 800 had to be confirmed; the study therefore
 does **not** confirm the whole proposed core grid. Unresolved is not the same
 as a demonstrated accuracy violation, but it is not a pass either.
 
-Of the 16 unresolved core cells, 15 are at p=0.0005, where the simultaneous
+Of the 16 unresolved core cases, 15 are at p=0.0005, where the simultaneous
 intervals extend beyond the 10% band despite observed errors below 10%. The
-remaining cell is m=50, p=0.05: observed rate 0.0550346, a 10.0692% relative excess.
+remaining case is m=50, p=0.05: observed rate 0.0550346, a 10.0692% relative excess.
 Its interval also crosses the target-band boundary, rather than lying wholly
-outside it. This same cell is the sole PCHIP observed-rate miss among the 6600
+outside it. This same case is the sole PCHIP observed-rate miss among the 6600
 moderate checks.
 
 The m=50 cutoff is an MI atom: 89,062 validation values equal it exactly.

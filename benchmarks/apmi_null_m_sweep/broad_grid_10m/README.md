@@ -7,6 +7,12 @@ were within 10%. The complete core grid was not confirmed under the stricter
 simultaneous-interval rule. No engine/default change was made. The execution
 history below preserves both interruptions and the final-scoring continuation.
 
+**Terminology:** one evaluation case is one sample-size/probability pair (m,p).
+The development selection score uses 80 cases: 20 development sample sizes ×
+four probabilities. These are not biological cells or 80 individual samples.
+The historical, hash-frozen specifications use "cell" for the same table entry;
+their original wording is preserved to keep provenance hashes unchanged.
+
 ## Corrected numerical-zero analysis
 
 The first October17 attempt stopped at09:50 EDT during internal scoring,

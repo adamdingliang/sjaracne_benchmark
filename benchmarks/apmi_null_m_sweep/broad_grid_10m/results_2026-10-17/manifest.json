@@ -128,9 +128,9 @@
       "sha256": "12e37dee622c3b65ab3b109dec21ebd1ff3513ef4b5cbe4ffa924b374d4dd2e3"
     },
     {
-      "bytes": 10369,
+      "bytes": 11242,
       "name": "RESULTS.md",
-      "sha256": "75c11f519fc75e955eb7c73fd3d14b1e3816b3dba656db01277539b8837499cc"
+      "sha256": "ba07a880f2ed0a73fe7fda20b00f3537a0573bc6d45ae858cb2db3b360b943d7"
     },
     {
       "bytes": 1171,
@@ -187,7 +187,12 @@
   "no_raw_draws_read_or_copied": true,
   "presentation_code": {
     "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\fit_present.py",
-    "sha256": "2f218eede3ef0cc1cfea148d285cbc7c8aa73053cee662fbfeb41b348f6214be"
+    "sha256": "dec9765761f54ba87412950359dc84d8f53116d8c1d37eb7b3e48967808afa75"
+  },
+  "presentation_wording_revision": {
+    "date": "2026-10-17",
+    "previous_manifest_sha256": "ae978bf0ae9d328fed2b4e8d7c1b93d4a3bbf0a1cfd0c8db2c7a94eb0daedd5c",
+    "scope": "Terminology and development-score explanation only; numerical artifacts unchanged."
   },
   "selected_primary": "pchip",
   "source_artifacts": [

@@ -47,7 +47,7 @@ class PresentationTests(unittest.TestCase):
     def test_render_matches_actual_summary_schema(self):
         text = present.render_results(self.summary, self.selection, self.primary, self.rows, [])
         self.assertIn("selected primary is **PCHIP**", text)
-        self.assertIn("All 800 tested core cells are confirmed", text)
+        self.assertIn("All 800 tested core evaluation cases are confirmed", text)
         self.assertIn("| Four core p levels | 800 | 800 | 0 | 0 | 0 |", text)
         self.assertIn("| All eight primary p levels | 1600 | 800 | 0 | 800 | 0 |", text)
         self.assertIn("9800/9800", text)
@@ -84,8 +84,25 @@ class PresentationTests(unittest.TestCase):
         broken = {"final_summary": [row for row in self.summary["final_summary"]
                                     if not (row["method"] == "pchip" and row["m_group"] == "all"
                                             and row["pscope"] == "core_four")]}
-        with self.assertRaisesRegex(ValueError, "summary cell"):
+        with self.assertRaisesRegex(ValueError, "summary entry"):
             present.render_results(broken, self.selection, self.primary, self.rows, [])
+
+    def test_evaluation_case_and_development_loss_wording(self):
+        text = present.render_results(self.summary, self.selection, self.primary, self.rows, [])
+        self.assertIn("80 development evaluation cases", text)
+        self.assertIn("20 development sample counts", text)
+        self.assertIn("p={0.05,0.01,0.001,0.0005}", text)
+        self.assertIn("not a biological cell or an 80-sample dataset", text)
+        self.assertIn("r_tilde=(c+0.5)/(10,000,000+1)", text)
+        self.assertIn("equally weighted mean", text)
+        self.assertIn("[log(r_tilde/p)]^2", text)
+        self.assertIn("using the natural logarithm", text)
+        self.assertIn("Lower is better; zero is ideal", text)
+        self.assertIn("not a\npercentage", text)
+        self.assertIn("pseudocount is only for this loss", text)
+        self.assertIn("Planned evaluation cases", text)
+        for ambiguous in ("development cells", "planned cells", "grid cells", "core cells", "9800 cells"):
+            self.assertNotIn(ambiguous, text)
 
     def test_package_refuses_missing_completion_before_csv_read(self):
         with tempfile.TemporaryDirectory() as directory:
