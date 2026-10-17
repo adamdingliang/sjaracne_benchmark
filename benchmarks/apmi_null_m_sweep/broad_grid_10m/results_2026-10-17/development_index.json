@@ -1,0 +1,165 @@
+{
+  "phase": "development",
+  "records": [
+    {
+      "m": 450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m00450\\cache.json",
+        "bytes": 3279,
+        "sha256": "57c05ee5d86c1ef20d02cbcf4c680f8482f26a4c59c4edc48011afbeaa0bc0fc"
+      }
+    },
+    {
+      "m": 950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m00950\\cache.json",
+        "bytes": 3279,
+        "sha256": "453704a215e2ae60f526e34114ddb84d90bea980a831112c4e978d52768cd4ab"
+      }
+    },
+    {
+      "m": 1450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m01450\\cache.json",
+        "bytes": 3282,
+        "sha256": "2f85dd9fc2ee63c38efe43dcdc9225f846c96bb939313dbb3e1582be03d79dda"
+      }
+    },
+    {
+      "m": 1950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m01950\\cache.json",
+        "bytes": 3281,
+        "sha256": "1d428b9e5abfbeaf7ac1cd6f4aaa3e9453c9ddf6c4b8342f7b1f4732ff2d42a4"
+      }
+    },
+    {
+      "m": 2450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m02450\\cache.json",
+        "bytes": 3284,
+        "sha256": "fb921aee32dd42e184780e0e2c23bdefd4917fd789ecbb3917f564608b251ecd"
+      }
+    },
+    {
+      "m": 2950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m02950\\cache.json",
+        "bytes": 3284,
+        "sha256": "8b12d7cdc57884b6b956ddd1fa829bf02279628d15446f8ba6a26bd9f2597ecc"
+      }
+    },
+    {
+      "m": 3450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m03450\\cache.json",
+        "bytes": 3284,
+        "sha256": "d408ded14a365d14d92c344ccbbc80e769d50d9e37641a90158a23141b03aeba"
+      }
+    },
+    {
+      "m": 3950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m03950\\cache.json",
+        "bytes": 3284,
+        "sha256": "a3f81579ebe4c188d44d090e757e8915eca39991426c16d51d25c821b6bf05ca"
+      }
+    },
+    {
+      "m": 4450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m04450\\cache.json",
+        "bytes": 3284,
+        "sha256": "a233855defa205e4d398c17ef9dd873e7dc6c15740dfdc6f106e6b01d6f8f5fd"
+      }
+    },
+    {
+      "m": 4950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m04950\\cache.json",
+        "bytes": 3280,
+        "sha256": "aa1e545498e060ac69183bf865a023d6f00f03561091d0490b2075ec651abee4"
+      }
+    },
+    {
+      "m": 5450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m05450\\cache.json",
+        "bytes": 3282,
+        "sha256": "0267c2f3ba1e65388caae28912d2a9a0c4e3d0a8ab6e057fca1758e3dfda4fcb"
+      }
+    },
+    {
+      "m": 5950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m05950\\cache.json",
+        "bytes": 3283,
+        "sha256": "bbf176c1f167f4c2ccb0477cfd7e7a6319d7b43c9772ff133a9e7385765d9770"
+      }
+    },
+    {
+      "m": 6450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m06450\\cache.json",
+        "bytes": 3284,
+        "sha256": "9557570cfe33ea5fc37f40338edcdd8807ad19c6e3355cd15b5217d35aed3abd"
+      }
+    },
+    {
+      "m": 6950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m06950\\cache.json",
+        "bytes": 3282,
+        "sha256": "9748bd59c61d72d623922531a5d9496c5b86aac115a54fc88cefedf441b0012e"
+      }
+    },
+    {
+      "m": 7450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m07450\\cache.json",
+        "bytes": 3282,
+        "sha256": "fd969bde30c998af074fc0f624b393e1a0fff40784f76a7f794785986a442d8d"
+      }
+    },
+    {
+      "m": 7950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m07950\\cache.json",
+        "bytes": 3282,
+        "sha256": "6a31e48b9f3bfb023e8cb5bb63a4b7dfc9dff9ba966f8dd1888329d256acf2e0"
+      }
+    },
+    {
+      "m": 8450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m08450\\cache.json",
+        "bytes": 3284,
+        "sha256": "0220a1af258efff6d0a13e03724f446366e84f4526c68cbc3e874c3786be043a"
+      }
+    },
+    {
+      "m": 8950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m08950\\cache.json",
+        "bytes": 3285,
+        "sha256": "7dbf477d2632975937a37e75e287830bb9b09ab6ce3f14f8af6f155b5a125acf"
+      }
+    },
+    {
+      "m": 9450,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m09450\\cache.json",
+        "bytes": 3284,
+        "sha256": "36ba83e11aeaa229620f585b4728bed1e6d348e35874e529b621e446f9e12924"
+      }
+    },
+    {
+      "m": 9950,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\development\\m09950\\cache.json",
+        "bytes": 3284,
+        "sha256": "83eab7f1f5497c7f24c1737df207cd61802a562be78153a86846916b35dd7f25"
+      }
+    }
+  ]
+}

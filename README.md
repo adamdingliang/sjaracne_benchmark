@@ -63,12 +63,13 @@ the quadratic surface from 187/272 to 261/272 observed errors within 10% on
 new off-knot probes. Some small-m errors remained large, and numerical/tie
 behavior needs attention. No new draws or engine/default changes were made.
 
-The [broader m=50..10000 study](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md)
-was explicitly authorized and [launched October 16 with twelve workers](benchmarks/apmi_null_m_sweep/broad_grid_10m/LAUNCH_2026-10-16.md).
-The earlier stop-after-timing choice was superseded. Measured throughput
-projects to roughly 9-10 hours of generation, with fitting and analysis
-additional. Checkpointed generation does not open statistical validation or
-promote a new cutoff function/default. Earlier timing evidence is preserved.
+The broader 200-size, 10M+10M [calibration process](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md)
+and [completed results](benchmarks/apmi_null_m_sweep/broad_grid_10m/RESULTS.md)
+compare quadratic and PCHIP empirical cutoff surfaces. PCHIP was selected before
+final evaluation and had 6599/6600 moderate observed-rate checks within 10%; the
+full core grid was not confirmed by the stricter simultaneous intervals.
+No general replacement or default change is promoted. Raw draws remain local;
+the compact evidence and numerical/operational corrections are documented.
 
 Historical engine timing studies, reusable performance tools and the original
 sampling-method evidence are preserved separately in

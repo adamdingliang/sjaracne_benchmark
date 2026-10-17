@@ -1,0 +1,39 @@
+{
+  "format": "apmi-two-surface-selection-v1",
+  "stage": "selected",
+  "plan_sha256": "003c3feb92d425fea56ef40edab4f747b3201a6e9176b7971a228c9bba5538b3",
+  "analysis_plan_sha256": "56e082988bb9ed4d03acadbb5f4be50852e250ae372ae3ef15d570c049ab430b",
+  "selected_model": "pchip",
+  "eligible": true,
+  "no_fallback": true,
+  "created_utc": "2026-10-17T15:04:44.094304+00:00",
+  "candidates": [
+    {
+      "method": "quadratic",
+      "eligible": true,
+      "loss": 0.0004035071130052922,
+      "cells_expected": 80,
+      "cells_valid": 80,
+      "median_absolute_relative_error": 0.004857999999999918,
+      "worst_absolute_relative_error": 0.09939999999999993,
+      "failures": []
+    },
+    {
+      "method": "pchip",
+      "eligible": true,
+      "loss": 0.00012922404111763718,
+      "cells_expected": 80,
+      "cells_valid": 80,
+      "median_absolute_relative_error": 0.004610000000000003,
+      "worst_absolute_relative_error": 0.042200000000000015,
+      "failures": []
+    }
+  ],
+  "selected_method": "pchip",
+  "selected_loss": 0.00012922404111763718,
+  "minimum_loss": 0.00012922404111763718,
+  "tie_tolerance": 1e-12,
+  "tied_methods": [
+    "pchip"
+  ]
+}

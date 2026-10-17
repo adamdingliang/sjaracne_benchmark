@@ -1,4 +1,11 @@
-# Broad-grid calibration: execution, planning and timing
+# Broad-grid AP-MI calibration: process and results
+
+**Completed October 17, 2026.** See the [results and defensible conclusion](RESULTS.md)
+and [full evidence package with plots](results_2026-10-17/RESULTS.md).
+PCHIP was selected on development data; 6599/6600 moderate observed-rate checks
+were within 10%. The complete core grid was not confirmed under the stricter
+simultaneous-interval rule. No engine/default change was made. The execution
+history below preserves both interruptions and the final-scoring continuation.
 
 ## Corrected numerical-zero analysis
 

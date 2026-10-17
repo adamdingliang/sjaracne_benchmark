@@ -1,0 +1,393 @@
+{
+  "analysis_root": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery",
+  "format": "apmi-broad-grid-completed-presentation-v1",
+  "generated_artifacts": [
+    {
+      "bytes": 6060,
+      "name": "access_final.json",
+      "sha256": "8b3b7571931bd22fcd5ea30d1ae24c229334dd716c05d7694ba576af9d5ce715"
+    },
+    {
+      "bytes": 66,
+      "name": "access_final.sha256",
+      "sha256": "188181f99104554d2caf504a17fcb1c2fc2a01e1fc565caf490bff8975838605"
+    },
+    {
+      "bytes": 5283,
+      "name": "access_initial.json",
+      "sha256": "17413cb8ccca2163023825753c35bec19459b830bd82a27c9220e505bb3aaaf7"
+    },
+    {
+      "bytes": 66,
+      "name": "access_initial.sha256",
+      "sha256": "be8d1c33cd99a8ecf103812fa3f8000c4d7956fba9a393f57661721a394891ec"
+    },
+    {
+      "bytes": 5517,
+      "name": "access_selected.json",
+      "sha256": "a442696f40603d74de2f99ccc0cea65ce0825d884ab942cb06393dc0ae8484d3"
+    },
+    {
+      "bytes": 66,
+      "name": "access_selected.sha256",
+      "sha256": "45ef0c8d52ebc5f59baf5c86be113a8c3579f13aa56e81a63491afd071152160"
+    },
+    {
+      "bytes": 6146,
+      "name": "development_index.json",
+      "sha256": "d6d1a0af797ef0248d503a80eb841bac2b139b5d0df3a80c6140e7f43da07972"
+    },
+    {
+      "bytes": 66,
+      "name": "development_index.sha256",
+      "sha256": "e0d2c5793b2e6f9de97b812d888200ce545341e9e1bfc9b5dce834bd1aab93a1"
+    },
+    {
+      "bytes": 678097,
+      "name": "development_scores.csv",
+      "sha256": "6e709044af63eb808ec2d35925b68b961a9d56bf1e02c7d793b107eb2fc43518"
+    },
+    {
+      "bytes": 13458534,
+      "name": "final_scores.csv",
+      "sha256": "c6a3226cd1d730a087bdf8156081b587275efc3398f76e0a72a87d3c3ab52fd8"
+    },
+    {
+      "bytes": 718988,
+      "name": "initial_models.json",
+      "sha256": "af6d858ddcd7cf5f932d07148280f224f163819bef42a2d4afda797f8abfd910"
+    },
+    {
+      "bytes": 66,
+      "name": "initial_models.sha256",
+      "sha256": "ea787fd3913f3ae2d89445f0c25119ecc39f5c97c567d2e7feb85746dfd51485"
+    },
+    {
+      "bytes": 4907706,
+      "name": "internal_scores.csv",
+      "sha256": "3a8934e0077b3b033fb66ecb2e7de7a3db30aa14bfe45e61e1f1df01b1509e8d"
+    },
+    {
+      "bytes": 307417,
+      "name": "null_rate_vs_m.png",
+      "sha256": "e75c0d1d7cbcea095244f8a76aa48b754acf9685dc51fa130bccb187f86a2e47"
+    },
+    {
+      "bytes": 199992,
+      "name": "null_rate_vs_m.svg",
+      "sha256": "51ef6b6d164e1ad5b6c342f7a764d543407f7b060ad6596768a58541732c32a8"
+    },
+    {
+      "bytes": 473690,
+      "name": "primary.json",
+      "sha256": "8b4104be3f3ffe0a476a4dd7c8f7f6d95f00f1a51fa467c7194edf3806d427f5"
+    },
+    {
+      "bytes": 66,
+      "name": "primary.sha256",
+      "sha256": "6d0cd3fee8b1e164168ed444d3e603337b1edfc354607e6b65b56faa8457b915"
+    },
+    {
+      "bytes": 246428,
+      "name": "recovery_request.json",
+      "sha256": "7bc85f0fbd2e8e3e5049fc6f6b0c97ac3f9abb53f500b43a1ed987a4aa4933b9"
+    },
+    {
+      "bytes": 66,
+      "name": "recovery_request.sha256",
+      "sha256": "6fd8cec633bb486d434ec1eff9c6f2237582064c089b52f7b96fbecc6450849f"
+    },
+    {
+      "bytes": 53845,
+      "name": "refit_index.json",
+      "sha256": "8ea208e72c54d97d7236d8b48e577ccab68b9077a00b82f9d6f5097087441ee1"
+    },
+    {
+      "bytes": 66,
+      "name": "refit_index.sha256",
+      "sha256": "b23beed35434ab917882e4370a60da8de3c5112f8b0424e71b90b41bbba78be8"
+    },
+    {
+      "bytes": 806487,
+      "name": "refit_models.json",
+      "sha256": "77221984e7bc5bcceae220243a333090a0b643a9438e5a5896cf68a6ee479e79"
+    },
+    {
+      "bytes": 66,
+      "name": "refit_models.sha256",
+      "sha256": "d7cfb587a684be2c573c744c7fd88f71d1026c7bbc7f7bdb4cade0e789e27576"
+    },
+    {
+      "bytes": 11704,
+      "name": "request.json",
+      "sha256": "56e082988bb9ed4d03acadbb5f4be50852e250ae372ae3ef15d570c049ab430b"
+    },
+    {
+      "bytes": 66,
+      "name": "request.sha256",
+      "sha256": "12e37dee622c3b65ab3b109dec21ebd1ff3513ef4b5cbe4ffa924b374d4dd2e3"
+    },
+    {
+      "bytes": 10369,
+      "name": "RESULTS.md",
+      "sha256": "75c11f519fc75e955eb7c73fd3d14b1e3816b3dba656db01277539b8837499cc"
+    },
+    {
+      "bytes": 1171,
+      "name": "selection.json",
+      "sha256": "81b8727dded490710116612149f89c248d3fb864c04eba34683a2ae5be9c0dc2"
+    },
+    {
+      "bytes": 66,
+      "name": "selection.sha256",
+      "sha256": "a90a9ec2fc01c02abb00297cee39ad905e5aa8827f7edbbbd1ce6d74facc3b43"
+    },
+    {
+      "bytes": 545173,
+      "name": "summary.json",
+      "sha256": "4c931d81dddca83d23e5481e0802c0b5c986883fc06bc27f9cb0c376d68590f1"
+    },
+    {
+      "bytes": 66,
+      "name": "summary.sha256",
+      "sha256": "7ddffb310343d01049e8027a2ea1d84f48e4ab2532aac7ddc6e1a7a6da830efd"
+    },
+    {
+      "bytes": 6083,
+      "name": "test_fit_index.json",
+      "sha256": "12765bb4486c2a0c49ee10f80bb0cafe4c948365a8e8db2b6a4da26cb12e0fca"
+    },
+    {
+      "bytes": 66,
+      "name": "test_fit_index.sha256",
+      "sha256": "3646b04addc6d24fe94f2ecf5ae745f75f4fbfe3686c6467aab94e4f742bf38a"
+    },
+    {
+      "bytes": 48350,
+      "name": "training_index.json",
+      "sha256": "494ce85cdaebebd814569fb2e787b7575711e8c04ae55a4ceb8e3e57bc775086"
+    },
+    {
+      "bytes": 66,
+      "name": "training_index.sha256",
+      "sha256": "9c86b9b7c568f7f5b7ff8f322c55e159820b0bb379c3694d281fda5977a28ef3"
+    },
+    {
+      "bytes": 60828,
+      "name": "validation_index.json",
+      "sha256": "b4741b56e60dcc4a6a1bd968bda7a51dfdf68e2f5505d7bac0d97a1365391dfe"
+    },
+    {
+      "bytes": 66,
+      "name": "validation_index.sha256",
+      "sha256": "5665e1812a4bc3917fd2db480828ecd163f66ca799089ec76ad998c93cf21543"
+    }
+  ],
+  "no_model_fits_or_selection": true,
+  "no_raw_draws_read_or_copied": true,
+  "presentation_code": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\fit_present.py",
+    "sha256": "2f218eede3ef0cc1cfea148d285cbc7c8aa73053cee662fbfeb41b348f6214be"
+  },
+  "selected_primary": "pchip",
+  "source_artifacts": [
+    {
+      "bytes": 11704,
+      "name": "request.json",
+      "sha256": "56e082988bb9ed4d03acadbb5f4be50852e250ae372ae3ef15d570c049ab430b",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\request.json"
+    },
+    {
+      "bytes": 66,
+      "name": "request.sha256",
+      "sha256": "12e37dee622c3b65ab3b109dec21ebd1ff3513ef4b5cbe4ffa924b374d4dd2e3",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\request.sha256"
+    },
+    {
+      "bytes": 5283,
+      "name": "access_initial.json",
+      "sha256": "17413cb8ccca2163023825753c35bec19459b830bd82a27c9220e505bb3aaaf7",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\access_initial.json"
+    },
+    {
+      "bytes": 66,
+      "name": "access_initial.sha256",
+      "sha256": "be8d1c33cd99a8ecf103812fa3f8000c4d7956fba9a393f57661721a394891ec",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\access_initial.sha256"
+    },
+    {
+      "bytes": 718988,
+      "name": "initial_models.json",
+      "sha256": "af6d858ddcd7cf5f932d07148280f224f163819bef42a2d4afda797f8abfd910",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\initial_models.json"
+    },
+    {
+      "bytes": 66,
+      "name": "initial_models.sha256",
+      "sha256": "ea787fd3913f3ae2d89445f0c25119ecc39f5c97c567d2e7feb85746dfd51485",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\initial_models.sha256"
+    },
+    {
+      "bytes": 1171,
+      "name": "selection.json",
+      "sha256": "81b8727dded490710116612149f89c248d3fb864c04eba34683a2ae5be9c0dc2",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\selection.json"
+    },
+    {
+      "bytes": 66,
+      "name": "selection.sha256",
+      "sha256": "a90a9ec2fc01c02abb00297cee39ad905e5aa8827f7edbbbd1ce6d74facc3b43",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\selection.sha256"
+    },
+    {
+      "bytes": 5517,
+      "name": "access_selected.json",
+      "sha256": "a442696f40603d74de2f99ccc0cea65ce0825d884ab942cb06393dc0ae8484d3",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\access_selected.json"
+    },
+    {
+      "bytes": 66,
+      "name": "access_selected.sha256",
+      "sha256": "45ef0c8d52ebc5f59baf5c86be113a8c3579f13aa56e81a63491afd071152160",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\access_selected.sha256"
+    },
+    {
+      "bytes": 806487,
+      "name": "refit_models.json",
+      "sha256": "77221984e7bc5bcceae220243a333090a0b643a9438e5a5896cf68a6ee479e79",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\refit_models.json"
+    },
+    {
+      "bytes": 66,
+      "name": "refit_models.sha256",
+      "sha256": "d7cfb587a684be2c573c744c7fd88f71d1026c7bbc7f7bdb4cade0e789e27576",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\refit_models.sha256"
+    },
+    {
+      "bytes": 473690,
+      "name": "primary.json",
+      "sha256": "8b4104be3f3ffe0a476a4dd7c8f7f6d95f00f1a51fa467c7194edf3806d427f5",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\primary.json"
+    },
+    {
+      "bytes": 66,
+      "name": "primary.sha256",
+      "sha256": "6d0cd3fee8b1e164168ed444d3e603337b1edfc354607e6b65b56faa8457b915",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\primary.sha256"
+    },
+    {
+      "bytes": 6060,
+      "name": "access_final.json",
+      "sha256": "8b3b7571931bd22fcd5ea30d1ae24c229334dd716c05d7694ba576af9d5ce715",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\access_final.json"
+    },
+    {
+      "bytes": 66,
+      "name": "access_final.sha256",
+      "sha256": "188181f99104554d2caf504a17fcb1c2fc2a01e1fc565caf490bff8975838605",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\access_final.sha256"
+    },
+    {
+      "bytes": 545173,
+      "name": "summary.json",
+      "sha256": "4c931d81dddca83d23e5481e0802c0b5c986883fc06bc27f9cb0c376d68590f1",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\summary.json"
+    },
+    {
+      "bytes": 66,
+      "name": "summary.sha256",
+      "sha256": "7ddffb310343d01049e8027a2ea1d84f48e4ab2532aac7ddc6e1a7a6da830efd",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\summary.sha256"
+    },
+    {
+      "bytes": 48350,
+      "name": "training_index.json",
+      "sha256": "494ce85cdaebebd814569fb2e787b7575711e8c04ae55a4ceb8e3e57bc775086",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\training_index.json"
+    },
+    {
+      "bytes": 66,
+      "name": "training_index.sha256",
+      "sha256": "9c86b9b7c568f7f5b7ff8f322c55e159820b0bb379c3694d281fda5977a28ef3",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\training_index.sha256"
+    },
+    {
+      "bytes": 6146,
+      "name": "development_index.json",
+      "sha256": "d6d1a0af797ef0248d503a80eb841bac2b139b5d0df3a80c6140e7f43da07972",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\development_index.json"
+    },
+    {
+      "bytes": 66,
+      "name": "development_index.sha256",
+      "sha256": "e0d2c5793b2e6f9de97b812d888200ce545341e9e1bfc9b5dce834bd1aab93a1",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\development_index.sha256"
+    },
+    {
+      "bytes": 53845,
+      "name": "refit_index.json",
+      "sha256": "8ea208e72c54d97d7236d8b48e577ccab68b9077a00b82f9d6f5097087441ee1",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\refit_index.json"
+    },
+    {
+      "bytes": 66,
+      "name": "refit_index.sha256",
+      "sha256": "b23beed35434ab917882e4370a60da8de3c5112f8b0424e71b90b41bbba78be8",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\refit_index.sha256"
+    },
+    {
+      "bytes": 60828,
+      "name": "validation_index.json",
+      "sha256": "b4741b56e60dcc4a6a1bd968bda7a51dfdf68e2f5505d7bac0d97a1365391dfe",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\validation_index.json"
+    },
+    {
+      "bytes": 66,
+      "name": "validation_index.sha256",
+      "sha256": "5665e1812a4bc3917fd2db480828ecd163f66ca799089ec76ad998c93cf21543",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\validation_index.sha256"
+    },
+    {
+      "bytes": 6083,
+      "name": "test_fit_index.json",
+      "sha256": "12765bb4486c2a0c49ee10f80bb0cafe4c948365a8e8db2b6a4da26cb12e0fca",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\test_fit_index.json"
+    },
+    {
+      "bytes": 66,
+      "name": "test_fit_index.sha256",
+      "sha256": "3646b04addc6d24fe94f2ecf5ae745f75f4fbfe3686c6467aab94e4f742bf38a",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\test_fit_index.sha256"
+    },
+    {
+      "bytes": 246428,
+      "name": "recovery_request.json",
+      "sha256": "7bc85f0fbd2e8e3e5049fc6f6b0c97ac3f9abb53f500b43a1ed987a4aa4933b9",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\recovery_request.json"
+    },
+    {
+      "bytes": 66,
+      "name": "recovery_request.sha256",
+      "sha256": "6fd8cec633bb486d434ec1eff9c6f2237582064c089b52f7b96fbecc6450849f",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\recovery_request.sha256"
+    },
+    {
+      "bytes": 13458534,
+      "name": "final_scores.csv",
+      "sha256": "c6a3226cd1d730a087bdf8156081b587275efc3398f76e0a72a87d3c3ab52fd8",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\final_scores.csv"
+    },
+    {
+      "bytes": 678097,
+      "name": "development_scores.csv",
+      "sha256": "6e709044af63eb808ec2d35925b68b961a9d56bf1e02c7d793b107eb2fc43518",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\development_scores.csv"
+    },
+    {
+      "bytes": 4907706,
+      "name": "internal_scores.csv",
+      "sha256": "3a8934e0077b3b033fb66ecb2e7de7a3db30aa14bfe45e61e1f1df01b1509e8d",
+      "source": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected_final_recovery\\internal_scores.csv"
+    }
+  ]
+}

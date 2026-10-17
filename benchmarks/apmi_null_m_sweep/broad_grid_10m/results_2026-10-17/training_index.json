@@ -1,0 +1,1285 @@
+{
+  "phase": "training",
+  "records": [
+    {
+      "m": 50,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00050\\cache.json",
+        "bytes": 6054,
+        "sha256": "3e0a69918e010f6592b22e41a1e10d27dcdde8835ac8efc765e46c4eed91c4b8"
+      }
+    },
+    {
+      "m": 100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00100\\cache.json",
+        "bytes": 6066,
+        "sha256": "5f411ac61260a37244ce3bce803a6d4a77f492c816ef51926783471c028ea105"
+      }
+    },
+    {
+      "m": 150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00150\\cache.json",
+        "bytes": 6067,
+        "sha256": "f9ee798e8c2e5a67f5dc6aa5ba7bc921d4d47c81083e518878fc067ddf5c8ad5"
+      }
+    },
+    {
+      "m": 200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00200\\cache.json",
+        "bytes": 6042,
+        "sha256": "e03b8e3f2c5bf796406fcf31a51f90668eb78d3937813a9ce942a4fc192b8933"
+      }
+    },
+    {
+      "m": 250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00250\\cache.json",
+        "bytes": 6069,
+        "sha256": "7b74a439271ba63ccbc5d0bb8a88e30562f381adf18fb1b48cf6240730c546b8"
+      }
+    },
+    {
+      "m": 300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00300\\cache.json",
+        "bytes": 6047,
+        "sha256": "97b1e4002e29907a5044b85f7fda3288e228b14fa73ee65ca73e94b186d7f784"
+      }
+    },
+    {
+      "m": 400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00400\\cache.json",
+        "bytes": 6048,
+        "sha256": "659cb032e746e43b184d26ccc429e0f924660bbedccb3b3f8a7d6de5b82e4372"
+      }
+    },
+    {
+      "m": 500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00500\\cache.json",
+        "bytes": 6049,
+        "sha256": "88eeb9bbdab4b9004dd5d121fa8ee22a1bf81c624d4b6b4e5de75e028ae638ef"
+      }
+    },
+    {
+      "m": 550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00550\\cache.json",
+        "bytes": 6087,
+        "sha256": "b0acd5f8b2a895cd4c08e237c889f9ec410202b0651ffe5e560bdabfbfd688f6"
+      }
+    },
+    {
+      "m": 600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00600\\cache.json",
+        "bytes": 6048,
+        "sha256": "3052f8a1be86a33087bbdaa83a2018a99b70763e7a65e26b2b8fb113f279fdc5"
+      }
+    },
+    {
+      "m": 650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00650\\cache.json",
+        "bytes": 6087,
+        "sha256": "2fdea842dd11d8300bae489bb002790f378b760f33975e19a6dbb8c453b66c6e"
+      }
+    },
+    {
+      "m": 700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00700\\cache.json",
+        "bytes": 6056,
+        "sha256": "0002d2cb803e32701e06b5994e1f8a74d7441bc9646102c3eed09a82010852a9"
+      }
+    },
+    {
+      "m": 750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00750\\cache.json",
+        "bytes": 6089,
+        "sha256": "f2675fefe48247fcd2f325bfed967417d16856610884c2a68443d3dc7fae1b1f"
+      }
+    },
+    {
+      "m": 800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00800\\cache.json",
+        "bytes": 6054,
+        "sha256": "764aba751dfbf6b860520fadb9b3177cbc702b0ac52093083ba6af0e07a8882a"
+      }
+    },
+    {
+      "m": 900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m00900\\cache.json",
+        "bytes": 6057,
+        "sha256": "af4d72467f30ccf505d42ed25d95c86f0ad1c522f97b3c46f47e135c43aefe3e"
+      }
+    },
+    {
+      "m": 1000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01000\\cache.json",
+        "bytes": 6059,
+        "sha256": "6fde285a4af8d4b8b4752103c43f4d46a81897825994e9b058ef86207393e3ba"
+      }
+    },
+    {
+      "m": 1050,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01050\\cache.json",
+        "bytes": 6095,
+        "sha256": "3b5c13bf9d14833235b19d0aae294e11b53964d100a92e7949f2799c5946d40f"
+      }
+    },
+    {
+      "m": 1100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01100\\cache.json",
+        "bytes": 6062,
+        "sha256": "ed36d46bcd94fb8bbd4bfefab5957f954bef18fb327529c43670c2c02a0e4080"
+      }
+    },
+    {
+      "m": 1150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01150\\cache.json",
+        "bytes": 6094,
+        "sha256": "a1df7141564f6badb6067a1de7bf894118e2caa9116c5f5164a6fdd724dd1d39"
+      }
+    },
+    {
+      "m": 1200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01200\\cache.json",
+        "bytes": 6061,
+        "sha256": "8f2f1113f4f7d03978115208073d9ed4038618c6372841034f23b6370a34b953"
+      }
+    },
+    {
+      "m": 1250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01250\\cache.json",
+        "bytes": 6099,
+        "sha256": "7f1c3f77528b1b75a0bd164ca2c9abdbc761ff4299f5b78408fc81f473d177a6"
+      }
+    },
+    {
+      "m": 1300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01300\\cache.json",
+        "bytes": 6064,
+        "sha256": "94778cc1153bf2b19e7993dbad6f387464deefcd54bb1365f6d9b1bd8902e576"
+      }
+    },
+    {
+      "m": 1400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01400\\cache.json",
+        "bytes": 6067,
+        "sha256": "efd7911f13b4644d9f9eefb7ae786393cde804a2e90665e22222b7943c77fdd0"
+      }
+    },
+    {
+      "m": 1500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01500\\cache.json",
+        "bytes": 6091,
+        "sha256": "653af0796090c80b2797ce02002dc8a6c14dc082a6ee4d7c4f33646097a89aa5"
+      }
+    },
+    {
+      "m": 1550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01550\\cache.json",
+        "bytes": 6094,
+        "sha256": "a5adfd295f08d28ae970d7b43d7a61eaaad9d8cc6b54fa9639afc96affc5ca4a"
+      }
+    },
+    {
+      "m": 1600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01600\\cache.json",
+        "bytes": 6064,
+        "sha256": "66fe433240378cd050ad3e83e9d40ab4aeaabf24c7fb790545f87148e2b11a0d"
+      }
+    },
+    {
+      "m": 1650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01650\\cache.json",
+        "bytes": 6097,
+        "sha256": "4119f64a616431379f3d2f81f25d6e6a50ee9d5054a7a67c035ca4da9d8eb3fc"
+      }
+    },
+    {
+      "m": 1700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01700\\cache.json",
+        "bytes": 6094,
+        "sha256": "27a7aea0fde608d69ded7a495b6652388620fcaae4486e0f72b8fb92488add03"
+      }
+    },
+    {
+      "m": 1750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01750\\cache.json",
+        "bytes": 6095,
+        "sha256": "3ffd0f48481e5e155d7f65789dc3e63683398272e056e50c1d40b2b35cc7711e"
+      }
+    },
+    {
+      "m": 1800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01800\\cache.json",
+        "bytes": 6063,
+        "sha256": "30b6d02da9cb259b33237d1f7376933629e781cf75f90119d7949a626cc2f12d"
+      }
+    },
+    {
+      "m": 1900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m01900\\cache.json",
+        "bytes": 6064,
+        "sha256": "3ebbdf160b2e392d851769ce634ae416564875b894e17f47629690c888cbdd43"
+      }
+    },
+    {
+      "m": 2000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02000\\cache.json",
+        "bytes": 6067,
+        "sha256": "1f89a8aaf59af63040f4137472bf0d465f7fa8a873e7c1d19f045000ba4e880e"
+      }
+    },
+    {
+      "m": 2050,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02050\\cache.json",
+        "bytes": 6098,
+        "sha256": "6152422dd07854a71805dddb855607377c8939de9a71dd0ffe736ac679256863"
+      }
+    },
+    {
+      "m": 2100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02100\\cache.json",
+        "bytes": 6069,
+        "sha256": "776bc3c4d67143be61a3a63abcff6360755cf17850e63b4aed1ee752a7a1fd3c"
+      }
+    },
+    {
+      "m": 2150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02150\\cache.json",
+        "bytes": 6105,
+        "sha256": "c316c3db752be56693a65db8ecc6294868ebfd2e9579bc9f1e7f3c0d8555c8c6"
+      }
+    },
+    {
+      "m": 2200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02200\\cache.json",
+        "bytes": 6070,
+        "sha256": "ef8db90f19b334a352f8ff926a3f219507119f185756cf9f8900d7474d836316"
+      }
+    },
+    {
+      "m": 2250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02250\\cache.json",
+        "bytes": 6104,
+        "sha256": "b7f5f21987c138ab5df5fc7616994cf0eaeec92b04b63da232a0c44d50410fc8"
+      }
+    },
+    {
+      "m": 2300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02300\\cache.json",
+        "bytes": 6072,
+        "sha256": "0fcf6d245be6c432f75d242f25abc64c3e6b97011d7e99086be750a39bf32549"
+      }
+    },
+    {
+      "m": 2400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02400\\cache.json",
+        "bytes": 6103,
+        "sha256": "b77ec344634ac4da2cd2c6bab425428119cff07b49e6672703686e0eed91d12b"
+      }
+    },
+    {
+      "m": 2500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02500\\cache.json",
+        "bytes": 6100,
+        "sha256": "443456a1034d5e8002af91d8bc60da7baa36f5a955d7ed11e568bfdf44548cb8"
+      }
+    },
+    {
+      "m": 2550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02550\\cache.json",
+        "bytes": 6103,
+        "sha256": "554c76968cf04ee6955a7126778358740a12a66da37e318d1d6c66d40481de6e"
+      }
+    },
+    {
+      "m": 2600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02600\\cache.json",
+        "bytes": 6073,
+        "sha256": "7abd4f6f8976a2efd1bff23d2ad87aa1fa671f95ff6f9b7f763b68c3a01d9096"
+      }
+    },
+    {
+      "m": 2650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02650\\cache.json",
+        "bytes": 6105,
+        "sha256": "9dc4be54de520df7036d553df3e0d47f0dd2de27d24eb2479124e15f1f474e6f"
+      }
+    },
+    {
+      "m": 2700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02700\\cache.json",
+        "bytes": 6101,
+        "sha256": "dcdaf5e448de73fc928b1f7ebf7bbfae9c113500da7df601a50bcb02687b74fc"
+      }
+    },
+    {
+      "m": 2750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02750\\cache.json",
+        "bytes": 6103,
+        "sha256": "226ed0d71bc549cae26608adb86d5d59bd43608d96b657085ae92d82e50b18d7"
+      }
+    },
+    {
+      "m": 2800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02800\\cache.json",
+        "bytes": 6074,
+        "sha256": "11cce725967ad2269e7d2ccdccc72cabff5541ecd7cedd4d80c7c6be6fa9a376"
+      }
+    },
+    {
+      "m": 2900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m02900\\cache.json",
+        "bytes": 6074,
+        "sha256": "6435e46529e99e9b2877839259723d06229c1271fc1ad032b62396b237cdb94c"
+      }
+    },
+    {
+      "m": 3000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03000\\cache.json",
+        "bytes": 6073,
+        "sha256": "48d7de442f36e81620569ad07f4f3e6a45cd4b6833c0226a38c0d211c2596af4"
+      }
+    },
+    {
+      "m": 3050,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03050\\cache.json",
+        "bytes": 6112,
+        "sha256": "7ebf3727802d01b52015fb438d72cc7a03826a7568b12ec62c44b292f166f7d7"
+      }
+    },
+    {
+      "m": 3100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03100\\cache.json",
+        "bytes": 6075,
+        "sha256": "e2ae22153901dc16ddc045eb6b9e1e5c87b6b01f7c50f4676f4e19032a938464"
+      }
+    },
+    {
+      "m": 3150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03150\\cache.json",
+        "bytes": 6107,
+        "sha256": "92a2cebce26fa7e61c1a0173718d743766df7ae6b0c5e911ffd182e2df832b54"
+      }
+    },
+    {
+      "m": 3200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03200\\cache.json",
+        "bytes": 6109,
+        "sha256": "f3df4b8ded29cc704fed0cfc3243eab1a2eeda7c95734aeb5ff109f2864d1373"
+      }
+    },
+    {
+      "m": 3250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03250\\cache.json",
+        "bytes": 6113,
+        "sha256": "944a9d96e5d7a71bc6622198ede3511bc1e7a086f4370c5bafaf95df0dfecffb"
+      }
+    },
+    {
+      "m": 3300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03300\\cache.json",
+        "bytes": 6076,
+        "sha256": "7a5c5908ac0628ede51b504b98b9451c00538a17dc6e6151f3c4cf960a5716b1"
+      }
+    },
+    {
+      "m": 3400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03400\\cache.json",
+        "bytes": 6079,
+        "sha256": "3498604ac0a1914950a0e89cdddc625cee4c94bc28a15567be84ad4ea9048919"
+      }
+    },
+    {
+      "m": 3500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03500\\cache.json",
+        "bytes": 6073,
+        "sha256": "7012c9f3b5568411713c83144f429a7c33ffa225e9ca49d78ff860c98affa81c"
+      }
+    },
+    {
+      "m": 3550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03550\\cache.json",
+        "bytes": 6113,
+        "sha256": "7519bbcd487d362ca3a8ede53a420a654c06a945bc3fd5b8035bf179eac1375c"
+      }
+    },
+    {
+      "m": 3600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03600\\cache.json",
+        "bytes": 6079,
+        "sha256": "1d46410f5b3286951c5f9a6e6a4332a7c8d5fc5e30d7bac7c58ae5837d947e9e"
+      }
+    },
+    {
+      "m": 3650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03650\\cache.json",
+        "bytes": 6115,
+        "sha256": "c8924cc2fbc772008c00abf78c00bbe198dade3b0d11bd3d7ae83349ecec2e7d"
+      }
+    },
+    {
+      "m": 3700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03700\\cache.json",
+        "bytes": 6076,
+        "sha256": "cbdb1713aa95c84aa44edcffe721bb3adaa087f5a8dccb66e1919a86d0f1d345"
+      }
+    },
+    {
+      "m": 3750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03750\\cache.json",
+        "bytes": 6114,
+        "sha256": "9f7b8e02d621e242c0bcbdfd9a0e12269e1cae0747b0fc7764e8d13f0a816cc1"
+      }
+    },
+    {
+      "m": 3800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03800\\cache.json",
+        "bytes": 6081,
+        "sha256": "db008c17aaa2bcc5d17f5f1dde53113c1db205c12656ed40cdb2a676fa61d9dc"
+      }
+    },
+    {
+      "m": 3900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m03900\\cache.json",
+        "bytes": 6079,
+        "sha256": "ebdb9e00b314d46c68460e44b7f4fdd258ff236e28bc884f2906ef134f0e5c6a"
+      }
+    },
+    {
+      "m": 4000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04000\\cache.json",
+        "bytes": 6079,
+        "sha256": "ed5b268c35fd38d1945641eccbbc6f07196283a66c83c402c9076ba8729b5987"
+      }
+    },
+    {
+      "m": 4050,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04050\\cache.json",
+        "bytes": 6111,
+        "sha256": "ceea05d605b77013d9cbfec8b749cd2815a5278dc4c30ecfa0a528e2a592d9cb"
+      }
+    },
+    {
+      "m": 4100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04100\\cache.json",
+        "bytes": 6080,
+        "sha256": "7779bc0b597fbd7bae366d61e01dc6b4287be35e8c521b23ae746677926edc0b"
+      }
+    },
+    {
+      "m": 4150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04150\\cache.json",
+        "bytes": 6114,
+        "sha256": "375b164071b74eacd5402e475b471f42529931cbb87ad42adf2fe430e03bdb43"
+      }
+    },
+    {
+      "m": 4200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04200\\cache.json",
+        "bytes": 6084,
+        "sha256": "b8d1d89205d64c7521276be8df33c5adca7962ac11fbe0c419ece838f4271409"
+      }
+    },
+    {
+      "m": 4250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04250\\cache.json",
+        "bytes": 6118,
+        "sha256": "34e06d57e21af8bfb852e840f3ef9585cadad934c2ae2f177b0fb71e5f4bdd26"
+      }
+    },
+    {
+      "m": 4300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04300\\cache.json",
+        "bytes": 6086,
+        "sha256": "5029c71d73fc40139f17532f702509ba976a71f49078ade3324c2fe6173e29b8"
+      }
+    },
+    {
+      "m": 4400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04400\\cache.json",
+        "bytes": 6081,
+        "sha256": "72f44464e66d70e858c838a153c324e225cb14f088ea81f461a19c65a37c53e7"
+      }
+    },
+    {
+      "m": 4500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04500\\cache.json",
+        "bytes": 6084,
+        "sha256": "76d3f264b68c96b85d71ace6f76bbc6e803a65969f8dfb9ab373da113d6e6dfd"
+      }
+    },
+    {
+      "m": 4550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04550\\cache.json",
+        "bytes": 6115,
+        "sha256": "02926d3fc3fc47d6a10647505eb9e0d34e1cbe47abc3b7886ab4dc45158207fb"
+      }
+    },
+    {
+      "m": 4600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04600\\cache.json",
+        "bytes": 6083,
+        "sha256": "e7ce0ccfffbb69515213c80ad0065e71ff72cffbd9db9e60335696bf0d786b4f"
+      }
+    },
+    {
+      "m": 4650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04650\\cache.json",
+        "bytes": 6117,
+        "sha256": "ff3c89de056a781ad731389ea012d6bbb5ee70d8d6b150af5659ffa20d0e592a"
+      }
+    },
+    {
+      "m": 4700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04700\\cache.json",
+        "bytes": 6086,
+        "sha256": "9e3f37f89534a62c73b70ae21db4f4e7ed91025e6c80b00e08dc4a030f767009"
+      }
+    },
+    {
+      "m": 4750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04750\\cache.json",
+        "bytes": 6115,
+        "sha256": "eeb602c7e9046a3136c9af8851cea32179d9023e3175ad5fbd5c09afc9d4ceae"
+      }
+    },
+    {
+      "m": 4800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04800\\cache.json",
+        "bytes": 6088,
+        "sha256": "8f1bd9325cb6b21abc4994610a069a6f2951004fe065eea9d058b67e5929996a"
+      }
+    },
+    {
+      "m": 4900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m04900\\cache.json",
+        "bytes": 6086,
+        "sha256": "22772f7615864a5f5abc9e7dde7a17cef0293b1faf70181dd1663c6d717c72e0"
+      }
+    },
+    {
+      "m": 5000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05000\\cache.json",
+        "bytes": 6085,
+        "sha256": "fd7ebae22024565c1ca3dbc4b0ab0de61c850fc819df9e10038b3365369371e9"
+      }
+    },
+    {
+      "m": 5050,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05050\\cache.json",
+        "bytes": 6118,
+        "sha256": "39b3817883dc325a0faeaaae19bf2374075c8b2544dd534ddd6159151c5e90e2"
+      }
+    },
+    {
+      "m": 5100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05100\\cache.json",
+        "bytes": 6087,
+        "sha256": "a8822d16cbf158bc4a56d74ff1ece2145d6a7ac19eafa857f3a29fc0fc09c2e6"
+      }
+    },
+    {
+      "m": 5150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05150\\cache.json",
+        "bytes": 6117,
+        "sha256": "7b8927612dda3541f7db843ff8da01fe605a1d9b10071733f9e692cb5c0d944e"
+      }
+    },
+    {
+      "m": 5200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05200\\cache.json",
+        "bytes": 6088,
+        "sha256": "523830b181e928e4e78dfae425532eccb7401fef43e49aa2ca7090d820eb3767"
+      }
+    },
+    {
+      "m": 5250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05250\\cache.json",
+        "bytes": 6122,
+        "sha256": "e2c302412c92995db0919a6c60786adf1f60e2395700881be89b9b9835d43c05"
+      }
+    },
+    {
+      "m": 5300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05300\\cache.json",
+        "bytes": 6084,
+        "sha256": "bf9bf21fdf3512337a69cd39667618ce4433aab31ac1b4bae2816eaba56e3aed"
+      }
+    },
+    {
+      "m": 5400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05400\\cache.json",
+        "bytes": 6090,
+        "sha256": "9d000db189d7b037e62560a473012185029af6d34df8cbd217a3b9f8427f13a8"
+      }
+    },
+    {
+      "m": 5500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05500\\cache.json",
+        "bytes": 6093,
+        "sha256": "8e06c872ed37dfe1b6b0fa7657d1d8a778838222bdc20b383aba5ace065b3305"
+      }
+    },
+    {
+      "m": 5550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05550\\cache.json",
+        "bytes": 6123,
+        "sha256": "1d7b5949fe3b162fb286044db89478598952e74ae5dc8d9ae7b6b4fe51e12fdc"
+      }
+    },
+    {
+      "m": 5600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05600\\cache.json",
+        "bytes": 6093,
+        "sha256": "65f0d70c180b53df33b1813402561b1358d3d0389fdf85f49b1685010335b0fd"
+      }
+    },
+    {
+      "m": 5650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05650\\cache.json",
+        "bytes": 6126,
+        "sha256": "1002d49230207b6dcbe0bee60f2e6ca8d05129c6e0f496e05bc13c610ef95fad"
+      }
+    },
+    {
+      "m": 5700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05700\\cache.json",
+        "bytes": 6092,
+        "sha256": "f3e3f316d73a93a3bd53c786adf2fe5c6353472e9ce9aae17a40509ca2aebe43"
+      }
+    },
+    {
+      "m": 5750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05750\\cache.json",
+        "bytes": 6119,
+        "sha256": "4644331ca33758e33ed253979e2454ea87965253d3f9ab7d726f739bb97064f1"
+      }
+    },
+    {
+      "m": 5800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05800\\cache.json",
+        "bytes": 6090,
+        "sha256": "b719a8afbc7729d5f22409cf37bf4380874d404e3693545b780e84658034d433"
+      }
+    },
+    {
+      "m": 5900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m05900\\cache.json",
+        "bytes": 6086,
+        "sha256": "5a42f9f828535b1721d630636e1105639a672535bdc0a0f350adddd7bdd7c40d"
+      }
+    },
+    {
+      "m": 6000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06000\\cache.json",
+        "bytes": 6092,
+        "sha256": "01e0170213b85d110b424f53b1b33839827b452bf760c43ece74911f94ff972d"
+      }
+    },
+    {
+      "m": 6050,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06050\\cache.json",
+        "bytes": 6122,
+        "sha256": "1426fcb02168fa63f590104528e8ddd3c49aa6a23c6ae3c6f58dfc81f0505436"
+      }
+    },
+    {
+      "m": 6100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06100\\cache.json",
+        "bytes": 6086,
+        "sha256": "aa0baf27997f73bd3ef14e47c01baeaa1fe12ef3d0a73c27ee3ec987c28f2d63"
+      }
+    },
+    {
+      "m": 6150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06150\\cache.json",
+        "bytes": 6130,
+        "sha256": "d6a19064f3513801d898412bf31a79483ce4dcdb412e6fdf83c3f4b478fe883f"
+      }
+    },
+    {
+      "m": 6200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06200\\cache.json",
+        "bytes": 6094,
+        "sha256": "ff32d1b2907545ad8f2e551353dab014fa4a89d073d9d19415013f7a7ba86ede"
+      }
+    },
+    {
+      "m": 6250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06250\\cache.json",
+        "bytes": 6128,
+        "sha256": "db77686738561f209a966f62de5cf4abaa987a4ff88be4002fc16365fa05402e"
+      }
+    },
+    {
+      "m": 6300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06300\\cache.json",
+        "bytes": 6090,
+        "sha256": "68b4fdd7da2be2ae28869a9731b6d62986caccb229d49d54f309cf1b99f3caf4"
+      }
+    },
+    {
+      "m": 6400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06400\\cache.json",
+        "bytes": 6089,
+        "sha256": "3f38a2abf64cdb26e876ad1a1370c3c99dbeba7524c75dd4e333858ba9ff4658"
+      }
+    },
+    {
+      "m": 6500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06500\\cache.json",
+        "bytes": 6091,
+        "sha256": "d49523c0530d410ab4d23433b60a6e659ee501c0818148264ddd3baae356434d"
+      }
+    },
+    {
+      "m": 6550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06550\\cache.json",
+        "bytes": 6120,
+        "sha256": "34ef01ac7747138042d6964b18c9ad0423ebff6f081539cf89a8b1b00c3aa0d8"
+      }
+    },
+    {
+      "m": 6600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06600\\cache.json",
+        "bytes": 6090,
+        "sha256": "0a032d466cb92f5dc22f38a603baf369fbacf9469643028b586061c9994e2eb5"
+      }
+    },
+    {
+      "m": 6650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06650\\cache.json",
+        "bytes": 6126,
+        "sha256": "188ed051d28ae937ff89b0d39f51d3d4b2200a8cd028399c396062be0755edba"
+      }
+    },
+    {
+      "m": 6700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06700\\cache.json",
+        "bytes": 6094,
+        "sha256": "b88f6dc93daefca8066002b929c166b86f6ee34e02148b6467a8b5e981bab837"
+      }
+    },
+    {
+      "m": 6750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06750\\cache.json",
+        "bytes": 6123,
+        "sha256": "316e27dc42b0a3beecf570fbcc2a1f2e179cf6f38040266c12e1d704b13c6d58"
+      }
+    },
+    {
+      "m": 6800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06800\\cache.json",
+        "bytes": 6091,
+        "sha256": "ee98fb012203cddac865924e326d8ab78ba9b423bf7f3eaead01f20acddca3f7"
+      }
+    },
+    {
+      "m": 6900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m06900\\cache.json",
+        "bytes": 6096,
+        "sha256": "67a5c3b465d924c2b32d4afa32ddfcdadf599e44c3f103842013c4819e93d392"
+      }
+    },
+    {
+      "m": 7000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07000\\cache.json",
+        "bytes": 6094,
+        "sha256": "1893e9c4a38129e2175cdf724a7a8a76a5d2f73e1e525737198ea3a1fe7c4a95"
+      }
+    },
+    {
+      "m": 7050,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07050\\cache.json",
+        "bytes": 6129,
+        "sha256": "af534a61ae8b2d9124d8cf12346c2fcf7d889af838068964f80db1ed7f57f077"
+      }
+    },
+    {
+      "m": 7100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07100\\cache.json",
+        "bytes": 6091,
+        "sha256": "a2d57f5729b61a772c8f262b7c110e8f053fab88ffb2bdcacb265e1a960edad9"
+      }
+    },
+    {
+      "m": 7150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07150\\cache.json",
+        "bytes": 6128,
+        "sha256": "0d3db0334649cb7c2f8da011827fac10a2c491370a8f20b4b126a192d2cb0a8b"
+      }
+    },
+    {
+      "m": 7200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07200\\cache.json",
+        "bytes": 6098,
+        "sha256": "8b189055bb2bdf60b83798155b147feacb173c43e76fe33077d57208302145db"
+      }
+    },
+    {
+      "m": 7250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07250\\cache.json",
+        "bytes": 6131,
+        "sha256": "9f59d598460e9b69477ad34784b55718cc926ce5f6d804e98d77c47b95da6a4a"
+      }
+    },
+    {
+      "m": 7300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07300\\cache.json",
+        "bytes": 6093,
+        "sha256": "c1a27928500cfc7d0ad598b6efb674a2277f22bef03f0fa550f5179d8398ea93"
+      }
+    },
+    {
+      "m": 7400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07400\\cache.json",
+        "bytes": 6095,
+        "sha256": "be441fd7e03f55b1d2e61b681ef33ed974b836932597457159adef2905452f54"
+      }
+    },
+    {
+      "m": 7500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07500\\cache.json",
+        "bytes": 6095,
+        "sha256": "451550ce3d3d94cc97dba0e66bd91ad3ed12223833244ae7f6179b471a65f09a"
+      }
+    },
+    {
+      "m": 7550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07550\\cache.json",
+        "bytes": 6125,
+        "sha256": "6a6630dc53016713bd7084af67101f5fcd0ddf05a95a74af2f927710b7e6e151"
+      }
+    },
+    {
+      "m": 7600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07600\\cache.json",
+        "bytes": 6094,
+        "sha256": "6a09eefaf7f7a92b21543e3ec3135c8af9f4db99b3aca1f47aa0f5f4bbf8c211"
+      }
+    },
+    {
+      "m": 7650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07650\\cache.json",
+        "bytes": 6131,
+        "sha256": "9a4d8d10251d69b149148a8af8f7f50bd16b85c892dd8dbe8eee6a7d1011ec05"
+      }
+    },
+    {
+      "m": 7700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07700\\cache.json",
+        "bytes": 6094,
+        "sha256": "5dfe85c6f6a9dc64c469df4cfbb8adde73944c78d931cfd8fc229bb5507070fb"
+      }
+    },
+    {
+      "m": 7750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07750\\cache.json",
+        "bytes": 6126,
+        "sha256": "45465fe7e863980fa347e773024b18f8a7ef8df63a0f07524348b23da933c39a"
+      }
+    },
+    {
+      "m": 7800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07800\\cache.json",
+        "bytes": 6096,
+        "sha256": "7181b8dc2396bce633c1a15ed712b2b60d9504d0b35251b3ac334d402241212e"
+      }
+    },
+    {
+      "m": 7900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m07900\\cache.json",
+        "bytes": 6097,
+        "sha256": "1107217009dd3c927080cba05e2ce6077ccd72159ab095665767ac4ee9094697"
+      }
+    },
+    {
+      "m": 8000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08000\\cache.json",
+        "bytes": 6094,
+        "sha256": "56f2f1558f72142e2e7f294cb98cb26e43f9dc6931ca400706525adda648eee4"
+      }
+    },
+    {
+      "m": 8050,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08050\\cache.json",
+        "bytes": 6129,
+        "sha256": "a5a0217007360262fb818db10080dfb9c8464302a429c0ed142fc8b177dbaadc"
+      }
+    },
+    {
+      "m": 8100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08100\\cache.json",
+        "bytes": 6092,
+        "sha256": "a4c77bd666e693de663752b075e017dce11bc39566093f0c9ab4c9f46388c97d"
+      }
+    },
+    {
+      "m": 8150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08150\\cache.json",
+        "bytes": 6130,
+        "sha256": "6b5aee0c682f477d76a6a793897e406a0fb6e3d64d5220f3ebd8a5ad2bfccf82"
+      }
+    },
+    {
+      "m": 8200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08200\\cache.json",
+        "bytes": 6093,
+        "sha256": "bb599937cf49dfa52e8c3071c2128a2d331ec17c9e06f7ab553c95ca6bbd1cf7"
+      }
+    },
+    {
+      "m": 8250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08250\\cache.json",
+        "bytes": 6136,
+        "sha256": "75c57d39798de50ba90fa067dd2224f8b9aa9c6140db06a15dffdedbdd7d8a1c"
+      }
+    },
+    {
+      "m": 8300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08300\\cache.json",
+        "bytes": 6097,
+        "sha256": "8298d220987bb63ff4f557076d36aa225d1e77baa1d2f1c98f7fc188816d0f27"
+      }
+    },
+    {
+      "m": 8400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08400\\cache.json",
+        "bytes": 6101,
+        "sha256": "28838c7dd2bf887620735f330217678eb31731b641d0802b27eb6ce14caf982a"
+      }
+    },
+    {
+      "m": 8500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08500\\cache.json",
+        "bytes": 6099,
+        "sha256": "b6fdec13c6c2c19d525800cc09db9efcd889aa8ffedbf971d087b9e86b78b08e"
+      }
+    },
+    {
+      "m": 8550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08550\\cache.json",
+        "bytes": 6128,
+        "sha256": "a80b479cf7075118ae597df1b641f1442e14f1803bd0f27dabd06a0d3365ecb8"
+      }
+    },
+    {
+      "m": 8600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08600\\cache.json",
+        "bytes": 6098,
+        "sha256": "fb6aa12fbf117d06edaa9ebd857de03818dd7c055de3f82ab5ae2256806aa7cc"
+      }
+    },
+    {
+      "m": 8650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08650\\cache.json",
+        "bytes": 6136,
+        "sha256": "b6a80da598e7592831fa5a7aff40638c9fec181011a359056637257631a858e6"
+      }
+    },
+    {
+      "m": 8700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08700\\cache.json",
+        "bytes": 6099,
+        "sha256": "625b0f92f4203f2deb84e208c19c32216c30a5b6fb970676aaaa064873e90c0c"
+      }
+    },
+    {
+      "m": 8750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08750\\cache.json",
+        "bytes": 6136,
+        "sha256": "51fb5dc7f9a538184b0d41cd2ac55602e8250700a4b9d24d34f3dd29c3d88d57"
+      }
+    },
+    {
+      "m": 8800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08800\\cache.json",
+        "bytes": 6101,
+        "sha256": "4e9aa7482f08ca8024051f09d8742beb1d92341348c3ac247b7e8969710d1561"
+      }
+    },
+    {
+      "m": 8900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m08900\\cache.json",
+        "bytes": 6100,
+        "sha256": "aecc1159fcb989075bdfe59798c4b4197552523a561d35aa94d520a8a33c139c"
+      }
+    },
+    {
+      "m": 9000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09000\\cache.json",
+        "bytes": 6102,
+        "sha256": "19660d8699de3fb78ff86af4627e9cc1ff7f6539bc46411be3aa9273ae89462c"
+      }
+    },
+    {
+      "m": 9050,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09050\\cache.json",
+        "bytes": 6137,
+        "sha256": "2286a5b6e08f53284ef0b58749dadce9c89a1b785d0284f83456e8b002b9e2be"
+      }
+    },
+    {
+      "m": 9100,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09100\\cache.json",
+        "bytes": 6102,
+        "sha256": "6e08237ed7552419f21e8822346a3177a08cc116832b286c02b26406ddc49621"
+      }
+    },
+    {
+      "m": 9150,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09150\\cache.json",
+        "bytes": 6132,
+        "sha256": "ad309f618d49f111d9402d6bfcf1e767984dd171fc5eb39bafa8489a225cc313"
+      }
+    },
+    {
+      "m": 9200,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09200\\cache.json",
+        "bytes": 6091,
+        "sha256": "1d867dd9795c37800a6197b371d9678622aff639bb95dd9bbd0aa005f6d720cc"
+      }
+    },
+    {
+      "m": 9250,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09250\\cache.json",
+        "bytes": 6134,
+        "sha256": "117b0a3c560dd08a6dfef14ea1d2f527b37f5e414f088b68fde1e09e420e79ae"
+      }
+    },
+    {
+      "m": 9300,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09300\\cache.json",
+        "bytes": 6104,
+        "sha256": "eeb81ebd1eb14d195c877c4d28c0e3236139a8bc40f9406a8f7c40dc8c9d38a7"
+      }
+    },
+    {
+      "m": 9400,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09400\\cache.json",
+        "bytes": 6105,
+        "sha256": "f4fd7710aaf386dd63438cfb851a9c7071635dd0b1de3f24446d2849105b3442"
+      }
+    },
+    {
+      "m": 9500,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09500\\cache.json",
+        "bytes": 6099,
+        "sha256": "c988b4b3b0f872d9b78efb0f423543bb922afe72956725870d8bbe1ae52d6581"
+      }
+    },
+    {
+      "m": 9550,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09550\\cache.json",
+        "bytes": 6134,
+        "sha256": "db0fba1999b8448e6072c38e757425ca893ae28dadd98afa525a5a4d3e00fd65"
+      }
+    },
+    {
+      "m": 9600,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09600\\cache.json",
+        "bytes": 6100,
+        "sha256": "979e02300ae946e5edb2f7b8d2002fe3ba8077ec05a8d59f2b8504058a5ed491"
+      }
+    },
+    {
+      "m": 9650,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09650\\cache.json",
+        "bytes": 6139,
+        "sha256": "125b0415c6e5eeebe1606db5eb0e914cf0a2f7baa450242500c16db747934b2d"
+      }
+    },
+    {
+      "m": 9700,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09700\\cache.json",
+        "bytes": 6104,
+        "sha256": "f344abf5d22bbb0e5ef44d3ccab69662d84731caf8aece205962fd4c6dc730c8"
+      }
+    },
+    {
+      "m": 9750,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09750\\cache.json",
+        "bytes": 6134,
+        "sha256": "420f52c632db7a6eb0dcbffff00dc443899600b8ebf66057a857cd392aa89569"
+      }
+    },
+    {
+      "m": 9800,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09800\\cache.json",
+        "bytes": 6102,
+        "sha256": "cc691e2097a5e49638f0f99071cae1db0de1a7875279d8ca843350c209c46e07"
+      }
+    },
+    {
+      "m": 9900,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m09900\\cache.json",
+        "bytes": 6106,
+        "sha256": "dcbf13699bb36300a5468fb805dd1f867f34c2dc82b86c4e7763c749e51efd24"
+      }
+    },
+    {
+      "m": 10000,
+      "cache": {
+        "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\cache\\training\\m10000\\cache.json",
+        "bytes": 6138,
+        "sha256": "4fdf216cb364fc167bb05e080900661ca6125a4f8ae7fb3187c7d00ccbb1f2b3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "format": "sjaracne-broad-grid-analysis-access-v1",
+  "stage": "frozen",
+  "plan_sha256": "003c3feb92d425fea56ef40edab4f747b3201a6e9176b7971a228c9bba5538b3",
+  "analysis_plan_sha256": "56e082988bb9ed4d03acadbb5f4be50852e250ae372ae3ef15d570c049ab430b",
+  "pins": {
+    "fit_pipeline.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\fit_pipeline.py",
+      "bytes": 19856,
+      "sha256": "fd77cdaebbe57522077fc97c59592595d5f73ed45d7e1dfe879cc9b1062ba3a1"
+    },
+    "test_fit_pipeline.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\test_fit_pipeline.py",
+      "bytes": 11574,
+      "sha256": "4d904c04a8d0792a80ba8f6e6c75aa1ef39763481eec79d2feea96ede6f80a3c"
+    },
+    "fit_models.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\fit_models.py",
+      "bytes": 13279,
+      "sha256": "beacae3528576d0df98b5109aa67865f70d224eb1e0d5816533c0e32b0e0cf23"
+    },
+    "test_fit_models.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\test_fit_models.py",
+      "bytes": 10901,
+      "sha256": "34f3d640822d5db859348f281b3e05961d624dc9a85ceb9dbef046ae05d57d0c"
+    },
+    "fit_data.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\fit_data.py",
+      "bytes": 17955,
+      "sha256": "1804d924a8763dc11947155540639f5344caa8d56bb2065053a16129a46b30ee"
+    },
+    "test_fit_data.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\test_fit_data.py",
+      "bytes": 22104,
+      "sha256": "973c8186d5913be38149edc751491dcd1bdc5e6e4ca6c47094662526db4e358d"
+    },
+    "fit_report.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\fit_report.py",
+      "bytes": 11924,
+      "sha256": "02c761977f22da3bdf8b48bcc4cdce79d6c374d0791c5c11c1d6c7ec736056d6"
+    },
+    "test_fit_report.py": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\test_fit_report.py",
+      "bytes": 13324,
+      "sha256": "e14f91a016f5af99345a535e1e084ef3a7fffa5b4e822dd285f3803dc7af4d4c"
+    },
+    "AMENDMENT_2026-10-17.md": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\AMENDMENT_2026-10-17.md",
+      "bytes": 4618,
+      "sha256": "a486e9fe2ce823c0dd324a1257c3344cb4400ec25f0fd55376b3e19fb1779f5a"
+    },
+    "ANALYSIS_SPEC_2026-10-16.md": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\ANALYSIS_SPEC_2026-10-16.md",
+      "bytes": 18308,
+      "sha256": "eca4b8f748d80b353055c38bccd06160a55e26e0c8fab89663e58664d7154ae9"
+    },
+    "CORRECTION_2026-10-17.md": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\CORRECTION_2026-10-17.md",
+      "bytes": 2972,
+      "sha256": "aef449280f9445f261c781cafc7f673052b6b75a9330ae30f27ce8f6e987e598"
+    },
+    "probability_grid": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\p_axis_refinement\\grid.py",
+      "bytes": 4542,
+      "sha256": "940548246ce8a8ecb0394fe8c22b3b78ceed84ce84e91e75033b5e790e2594a2"
+    },
+    "generation_controller": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\benchmarks\\apmi_null_m_sweep\\broad_grid_10m\\generate.py",
+      "bytes": 25638,
+      "sha256": "b8ca8a2881db9890ddd4ae0ff071f5b3aab0f8a71d693b0de3a32dfe084e8284"
+    },
+    "restart_request.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017\\request.json",
+      "bytes": 8289,
+      "sha256": "1a0a8af9927d9f0b0735f2470b58701e163e1c75f2d649b2824c3a8b1bf2b313"
+    },
+    "restart_failure.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017\\failure.json",
+      "bytes": 135,
+      "sha256": "52b617d2afd38b9ed1070273cbf89d337c99d4cddc45c07f98cbca1cee3eb1c6"
+    },
+    "restart_initial_models.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017\\initial_models.json",
+      "bytes": 718988,
+      "sha256": "af6d858ddcd7cf5f932d07148280f224f163819bef42a2d4afda797f8abfd910"
+    },
+    "restart_training_index.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017\\training_index.json",
+      "bytes": 45950,
+      "sha256": "c004845a8cf24bd1b494da13ce0a79634adfe0928d47097a0dc4c34b240d4c1b"
+    },
+    "restart_development_index.json": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017\\development_index.json",
+      "bytes": 5846,
+      "sha256": "4e8c9773f953db7229412393a723231fc76ec905b7d86b25a66d57538ea72b38"
+    },
+    "legacy_config": {
+      "path": "D:\\GitHub\\SJARACNe\\SJARACNe\\config\\config_threshold.txt",
+      "bytes": 32,
+      "sha256": "bc37e881c828d3098def89e1f5e465367e8ea900fef2fbb723fbb054aeb086cc"
+    },
+    "request": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\request.json",
+      "bytes": 11704,
+      "sha256": "56e082988bb9ed4d03acadbb5f4be50852e250ae372ae3ef15d570c049ab430b"
+    },
+    "refit_models": {
+      "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\refit_models.json",
+      "bytes": 806487,
+      "sha256": "77221984e7bc5bcceae220243a333090a0b643a9438e5a5896cf68a6ee479e79"
+    }
+  },
+  "selection_lock": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\selection.json",
+    "bytes": 1171,
+    "sha256": "81b8727dded490710116612149f89c248d3fb864c04eba34683a2ae5be9c0dc2"
+  },
+  "primary_model": {
+    "path": "D:\\GitHub\\sjaracne_benchmark\\runs\\apmi_null_broad_fits_20261017_zero_corrected\\primary.json",
+    "bytes": 473690,
+    "sha256": "8b4104be3f3ffe0a476a4dd7c8f7f6d95f00f1a51fa467c7194edf3806d427f5"
+  },
+  "primary_eligible": true,
+  "no_fallback": true
+}
