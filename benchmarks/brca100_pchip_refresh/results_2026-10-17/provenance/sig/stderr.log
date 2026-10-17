@@ -1,0 +1,8 @@
+The output will overwrite the files in directory: "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/analysis/netbid2/sig"
+
+
+processing file: SIG_netQC.Rmd
+output file: SIG_netQC.knit.md
+
+
+Output created: SIG_netQC.html

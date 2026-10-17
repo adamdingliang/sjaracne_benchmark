@@ -1,0 +1,126 @@
+{
+  "command": [
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/builds/pchip_86f8729/source/SJARACNe/bin/sjaracne.exe",
+    "-i",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100.exp",
+    "-l",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_TF.txt",
+    "-s",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_TF.txt",
+    "-t",
+    "0.14732247558240297",
+    "-e",
+    "0",
+    "-a",
+    "adaptive_partitioning",
+    "-H",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/builds/pchip_86f8729/source/SJARACNe/config/",
+    "-N",
+    "40",
+    "-S",
+    "1",
+    "-o",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/validation/explicit_threshold_tf_seed001/explicit_threshold_tf_seed001.adj",
+    "-u",
+    "80%"
+  ],
+  "current_binary_sha256": "7058ddb283290c647282e61fe806680b127612a71741f547accea115d861b29e",
+  "current_commit": "86f8729087b3a6d22bdce128649b4e49d725fb9e",
+  "current_compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "dpi_epsilon": 0,
+  "driver": "tf",
+  "fingerprint": "7f9c735a27f0ad8573178b6119cecf13a110556a1a9c6270026cd8acbdf4b543",
+  "finished_at_utc": "2026-10-17T18:03:06.762619+00:00",
+  "gnu_time": {
+    "elapsed_s": 45.07,
+    "max_rss_kib": 70416,
+    "system_s": 0.06,
+    "user_s": 45.01
+  },
+  "historical_binary_sha256": "61180915be61455887ac261499455ac933cf976b292cab1a8180d759acc3ac2d",
+  "historical_commit": "7633ebb4a0d966dbda15a4e32d0efa492fb71aeb",
+  "input_hashes": {
+    "BRCA100.exp": "ad8a334f5f8cdf46a1000d3ee259b35258a18b3da2e314bb3a0cf7a421d98bc8",
+    "BRCA100_TF.txt": "9b1219a489b99432175e4c4ad46add7b06f25aae388ee8dd3261fa91e4c43ffd"
+  },
+  "interpretation": "One seed at an identical explicit threshold tests serialized post-DPI data equivalence in these builds. A match does not prove equivalence for every seed, threshold, dataset or environment; this run is not PCHIP calibration or a PCHIP output.",
+  "inventory": {
+    "explicit_threshold_tf_seed001.adj": {
+      "bytes": 3015629,
+      "sha256": "84680408bed4c65b37fb26acd6bc7d584c942986cc5d2ac784bad6a3a9ce334e"
+    },
+    "logs/explicit_threshold_tf_seed001.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/explicit_threshold_tf_seed001.stdout.log": {
+      "bytes": 1435,
+      "sha256": "7223cffe2db5ca36d10b3e839fcaaf91e34b89e6325245a1d2faf7149a8b0fc8"
+    },
+    "logs/explicit_threshold_tf_seed001.time.txt": {
+      "bytes": 61,
+      "sha256": "0a88ccdadbac0b6bcc7c15c762347eb61eefc2a45b6771d87cc27bacd7632147"
+    }
+  },
+  "m": 80,
+  "mi_cutoff": 0.14732247558240297,
+  "mi_cutoff_hex": "0x1.2db767f4bcc88p-3",
+  "new_adjacency": {
+    "bytes": 3015629,
+    "data_sha256": "dce2b59ccca3753059ade08531e8922f2dc0a2a1319f1b9fe93035c071479667",
+    "edges": 136178,
+    "full_sha256": "84680408bed4c65b37fb26acd6bc7d584c942986cc5d2ac784bad6a3a9ce334e",
+    "header_lines": 9,
+    "mi_max": 1.16607,
+    "mi_min": 0.147342,
+    "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/validation/explicit_threshold_tf_seed001/explicit_threshold_tf_seed001.adj",
+    "source_rows": 2608
+  },
+  "npar": 40,
+  "old_adjacency": {
+    "bytes": 3016704,
+    "data_sha256": "dce2b59ccca3753059ade08531e8922f2dc0a2a1319f1b9fe93035c071479667",
+    "edges": 136178,
+    "full_sha256": "ebf8062cfec45fe61cd3c925d696a4acb0b1f6100d49767a8f066aa4a0b7c3af",
+    "header_lines": 26,
+    "mi_max": 1.16607,
+    "mi_min": 0.147342,
+    "path": "/home/adam/sjaracne-benchmarks/brca100-pr67-threshold-sweep-20260818/results/p1e-03/tf/adjacency/TF_run_001.adj",
+    "source_rows": 2608
+  },
+  "pins": {
+    "anchor_script": {
+      "path": "/mnt/d/GitHub/sjaracne_benchmark/benchmarks/brca100_pchip_refresh/validate_anchor.py",
+      "sha256": "ffb724cd03f4f53e05af8e545e7301c5f4bd2bf72368344a00e0ca838d4988bd"
+    },
+    "current_build": {
+      "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/builds/pchip_86f8729/build_manifest.json",
+      "sha256": "903343837857d280ec644f27d857f03eed382a65d26ba17ddd1aac423dff6fc2"
+    },
+    "current_design": {
+      "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/design.json",
+      "sha256": "053afb20a3edcb54c72a563df2194566dd5d559b6934c63eed8b5a5b1f58270c"
+    },
+    "helper_script": {
+      "path": "/mnt/d/GitHub/sjaracne_benchmark/benchmarks/brca100_netbid_qc/run_workflows.py",
+      "sha256": "ede665c4f6972bfa3d9fe525ac5b09da478a292f02d484e531ef9bffe52d0b2b"
+    },
+    "historical_design": {
+      "path": "/home/adam/sjaracne-benchmarks/brca100-pr67-threshold-sweep-20260818/sweep_design.json",
+      "sha256": "2eca0f9ef388fdf48632f8292c226bac59e0e325d9641574b314689651c6a8e5"
+    },
+    "historical_seed": {
+      "path": "/home/adam/sjaracne-benchmarks/brca100-pr67-threshold-sweep-20260818/results/p1e-03/tf/seed_metadata/TF_run_001.json",
+      "sha256": "6d285750d3bde22b75e3a23db8cbaafa2a63473b296827278bd6640016452a4f"
+    },
+    "runner_script": {
+      "path": "/mnt/d/GitHub/sjaracne_benchmark/benchmarks/brca100_pchip_refresh/run.py",
+      "sha256": "1e8e7abb94a0b1b5add6587b7a8f26699cb964738a7ce976a77a1e54a0355cf1"
+    }
+  },
+  "schema": "brca100-pchip-explicit-threshold-anchor-v1",
+  "seed": 1,
+  "started_at_utc": "2026-10-17T18:02:21.538562+00:00",
+  "status": "match",
+  "threshold_mode": "explicit -t; no probability conversion or PCHIP model used"
+}

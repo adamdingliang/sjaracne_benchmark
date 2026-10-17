@@ -1,0 +1,464 @@
+{
+  "archive_sha256": "9e5772e07c8bd5959144768add5f596082365ae1da7bdc9bdd57569da0ee28ee",
+  "binary": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/builds/pchip_86f8729/source/SJARACNe/bin/sjaracne.exe",
+  "binary_sha256": "7058ddb283290c647282e61fe806680b127612a71741f547accea115d861b29e",
+  "built_at_utc": "2026-10-17T18:01:21.372733+00:00",
+  "command": [
+    "make",
+    "-C",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/builds/pchip_86f8729/source/SJARACNe",
+    "-j12",
+    "bin/sjaracne.exe"
+  ],
+  "commit": "86f8729087b3a6d22bdce128649b4e49d725fb9e",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "config": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/builds/pchip_86f8729/source/SJARACNe/config",
+  "inventory": {
+    "source.tar": {
+      "bytes": 183193600,
+      "sha256": "9e5772e07c8bd5959144768add5f596082365ae1da7bdc9bdd57569da0ee28ee"
+    },
+    "source/.gitattributes": {
+      "bytes": 155,
+      "sha256": "01261b0659916dd446c36648512ef38d91cf48606a557642cf45e72ff1e0eabc"
+    },
+    "source/.gitignore": {
+      "bytes": 1312,
+      "sha256": "ce2724ee71643b8f659e0014f802593cc78159aac68ecdd84f18c914c26d63fd"
+    },
+    "source/.travis.yml": {
+      "bytes": 724,
+      "sha256": "1ef7152ad6720bf5e74b3983166eb754afe019bb7c88aef1afb0563e85a265ee"
+    },
+    "source/LICENSE.md": {
+      "bytes": 9943,
+      "sha256": "b9a75159e2acd7d9f62eb14c7f3041216bd7cd46acfd2a98c93bd9191943804f"
+    },
+    "source/MANIFEST.in": {
+      "bytes": 238,
+      "sha256": "f5942eeb19d7c8df20643bacf5211979a6d089064b3a8fb1056bc0b1adcf8215"
+    },
+    "source/README.md": {
+      "bytes": 12839,
+      "sha256": "19ece4ba20a41ab40a87251d213c1ef705cd5f27e56ddd5749465ba59a66c85a"
+    },
+    "source/SJARACNe/Makefile": {
+      "bytes": 2401,
+      "sha256": "907e34f09b24ca398c578f153f05262913b16482d3c55985f29a2f48f679785e"
+    },
+    "source/SJARACNe/__init__.py": {
+      "bytes": 844,
+      "sha256": "f983e54de47890a70a768ae615981aa507805e8ecc634c1e348eeefd4db6289e"
+    },
+    "source/SJARACNe/apmi_cutoff.py": {
+      "bytes": 7485,
+      "sha256": "6d769991ff5e2cb270b287c460ce6514391ba6217181440e3cad2c4add09ec95"
+    },
+    "source/SJARACNe/bin/QC_input.py": {
+      "bytes": 5877,
+      "sha256": "b87d5d11b7728dd8a3fcfdb90d246e7cf2852aa8cf659dadb2b4880d98aeec5b"
+    },
+    "source/SJARACNe/bin/__init__.py": {
+      "bytes": 70,
+      "sha256": "e09565c09acaafdea69ceed27992e7bdd8946233aa0ad3de6002b01506f6e3e7"
+    },
+    "source/SJARACNe/bin/ch_line_ending.py": {
+      "bytes": 2275,
+      "sha256": "61d75ca146d8579f71bafe099116886a46cae11260ff99338482b57053157b52"
+    },
+    "source/SJARACNe/bin/create_consensus_network.py": {
+      "bytes": 12041,
+      "sha256": "65ecdd3a136708bfedf3ba2f9e1e3dbf76501608ea6f354ea9655f44b1337bc0"
+    },
+    "source/SJARACNe/bin/sjaracne.exe": {
+      "bytes": 3294648,
+      "sha256": "7058ddb283290c647282e61fe806680b127612a71741f547accea115d861b29e"
+    },
+    "source/SJARACNe/config/SIG_list.txt": {
+      "bytes": 61211,
+      "sha256": "911f10645bd6a1be37422b578a8edfef5b98b2eca41a11ccb95a5e313649a93d"
+    },
+    "source/SJARACNe/config/TF_list.txt": {
+      "bytes": 12561,
+      "sha256": "ea9e8e10e4953b6add3b00517cd6f7e3d447b29171f2322a514cf630556574e4"
+    },
+    "source/SJARACNe/config/apmi_pchip.json": {
+      "bytes": 750434,
+      "sha256": "5ae44f3ec251282b242e1e25e5695fe8c6d80a0e7a3f156170dbb72c29e09f59"
+    },
+    "source/SJARACNe/config/config_cwlexec.json": {
+      "bytes": 750,
+      "sha256": "52fa2eaaee71a188668ce5685ebc1564e85bb50decb96da30e090bbcbe8dc799"
+    },
+    "source/SJARACNe/config/config_kernel.txt": {
+      "bytes": 27,
+      "sha256": "311b5be2f9939f4de920237de6bb50576cca4a0bb43440caebb98a4b32d2ec2c"
+    },
+    "source/SJARACNe/config/config_threshold.txt": {
+      "bytes": 31,
+      "sha256": "fb1694b1d4c9d9965a6ab2f3ee036e6387bebd94d2d8624102fd290b5e9f551e"
+    },
+    "source/SJARACNe/cwl/QC_input.cwl": {
+      "bytes": 759,
+      "sha256": "9c07fa1c61a9f682be439ab45afb4f89b8fd933bcb7a338ad0168484bccb6949"
+    },
+    "source/SJARACNe/cwl/ch_line_ending.cwl": {
+      "bytes": 778,
+      "sha256": "beffdbd2521fc338565ce3471e3c8de9958635c13a1737028dac2bcf6aa8e22c"
+    },
+    "source/SJARACNe/cwl/copy_files_to_dir.cwl": {
+      "bytes": 362,
+      "sha256": "bd856028b14642fdb94272b1e7daf7d6bc6efa3e348fe25caf72adb5367bbdfe"
+    },
+    "source/SJARACNe/cwl/create_consensus_network.cwl": {
+      "bytes": 869,
+      "sha256": "a46804f94f51237a5a8e5f4f5709a0b133b82bef24ad6a5bd822a953ac5db9ea"
+    },
+    "source/SJARACNe/cwl/get_consensus_network.cwl": {
+      "bytes": 513,
+      "sha256": "610ff08532a54518b1454d2985d67e118636e7697196aafe983b66007d5f7095"
+    },
+    "source/SJARACNe/cwl/get_enhanced_consensus_network.cwl": {
+      "bytes": 679,
+      "sha256": "1772fd7c757e28a70388244846c015e06c51a4bee3765b2d4cc7541e3efc4dca"
+    },
+    "source/SJARACNe/cwl/int_to_int_array.cwl": {
+      "bytes": 376,
+      "sha256": "cb3887e92dde9591cd7e0b124a05c6ff2f1ce7829d64f2cdb250e5fdb1cc405c"
+    },
+    "source/SJARACNe/cwl/int_to_str_array.cwl": {
+      "bytes": 492,
+      "sha256": "72db467cff4acd37fb8dcacaaaf2193f7cff20781b85d18f359cb6d4da89a67d"
+    },
+    "source/SJARACNe/cwl/sjaracne.cwl": {
+      "bytes": 2410,
+      "sha256": "966f14509b2878301a2f78537e4df8618d96683aa7b92bbf3f92683da3672965"
+    },
+    "source/SJARACNe/cwl/sjaracne_workflow.cwl": {
+      "bytes": 3808,
+      "sha256": "725dc5d04ce93e226e43b29169f9881a165fbb2ee7d7cca8e3b47cd6bcc0d4c2"
+    },
+    "source/SJARACNe/sjaracne.py": {
+      "bytes": 8358,
+      "sha256": "e29c7dad2c5f4a2f7ae28862b406145bd1f6a18c0d4c87d87545fb9b6fb5d6fd"
+    },
+    "source/SJARACNe/src/apmi.cpp": {
+      "bytes": 4302,
+      "sha256": "109747ecb5e4edc9a3e0e870c70b3e1853ba3d946b6c35fe24d28cb3b1800d4a"
+    },
+    "source/SJARACNe/src/apmi.h": {
+      "bytes": 2323,
+      "sha256": "878479e337193e768982d0f2cdc20c1f1c638494c3f5173f23147ae7768c708b"
+    },
+    "source/SJARACNe/src/apmi_null_model.cpp": {
+      "bytes": 6942,
+      "sha256": "68d473f40f35095fed7202384565a7d62bfd88c254f9a0b1d47a39e32f1d9949"
+    },
+    "source/SJARACNe/src/apmi_null_model.h": {
+      "bytes": 678,
+      "sha256": "402c6df200c2af803ff0ca173c7fea53f02f251549af6b1c5e85569fa07237d8"
+    },
+    "source/SJARACNe/src/apmi_pchip_data.h": {
+      "bytes": 605284,
+      "sha256": "2bc7972429b79807015b3ea4171c1ec90d4e388b612c1fc454f27b723f4bc254"
+    },
+    "source/SJARACNe/src/main.cpp": {
+      "bytes": 19133,
+      "sha256": "0e6b9788d8bdf53b40e0afc181a91d514dbf0113bf8315c909091d0a6fe57f25"
+    },
+    "source/SJARACNe/src/matrix.cpp": {
+      "bytes": 57626,
+      "sha256": "1acb6da4a40aec897616fb94cf29a84e9b499c96f6a388a9edd0fcde8eb34a53"
+    },
+    "source/SJARACNe/src/matrix.h": {
+      "bytes": 8760,
+      "sha256": "b2c0801c982620f6feb4311f4d79cd634ec15c4f82f38ede0abde8482168847d"
+    },
+    "source/SJARACNe/src/param.cpp": {
+      "bytes": 14776,
+      "sha256": "3396ce8eced80b84fa53fef82d7d63cb71720aed90650400d6aa01c6e738b62c"
+    },
+    "source/SJARACNe/src/param.h": {
+      "bytes": 2941,
+      "sha256": "371266465d1e74be2d7825996e167ee364f15a9f1bfe760a54c5bdfef5928a84"
+    },
+    "source/SJARACNe/src/parseargs.h": {
+      "bytes": 1113,
+      "sha256": "ee5fb3418e9727758d82a5ced8bd79210b05035fe442ccb9c669b8b05e6cadd5"
+    },
+    "source/SJARACNe/src/util.cpp": {
+      "bytes": 1749,
+      "sha256": "c56198ccdc1221e32ffbb4e29de391abc7a6f30d0c9a66c4abf54db1b63a4667"
+    },
+    "source/SJARACNe/src/util.h": {
+      "bytes": 745,
+      "sha256": "1ea5abd31f1ca3e32e651b2ab33cf50c8d0bb4c8a8f73a20e15166234387490d"
+    },
+    "source/conftest.py": {
+      "bytes": 166,
+      "sha256": "2961cefea39864a556e284cc4a505dabe243f440c291965e644ca4a26b6a04d7"
+    },
+    "source/requirements.txt": {
+      "bytes": 69,
+      "sha256": "40ba690655caa396f0164e569a911f328c601829750ff8644feb5d6bde7a553e"
+    },
+    "source/setup.py": {
+      "bytes": 1178,
+      "sha256": "9e2a07cfd815a7e6ac66e8fda8e02add4871a038f368e4920772b0579a6933af"
+    },
+    "source/tests/answerkey/acceptance/README.md": {
+      "bytes": 467,
+      "sha256": "b27a24e5c3ab550b5e2cae914b56e53542e2170e01b31d99e3f5c8904b2b8bfb"
+    },
+    "source/tests/answerkey/acceptance/bootstrap_info_.txt": {
+      "bytes": 132,
+      "sha256": "8bd23479674a85971b741c752fd1c39ab509258867cf8df96ea9eb54cc503c44"
+    },
+    "source/tests/answerkey/acceptance/cnn_5.txt": {
+      "bytes": 296,
+      "sha256": "9ca87c51313d671409ef185c17013876cb39ed6cfc3ee74d0c1ddfb73a677c3c"
+    },
+    "source/tests/answerkey/acceptance/consensus_network_3col_.txt": {
+      "bytes": 2084213,
+      "sha256": "f0de0fc7e22b6dbfc2dc501f682e0ec298bf1e6ebee601e54ba73086e6331e0e"
+    },
+    "source/tests/answerkey/acceptance/consensus_network_ncol_.txt": {
+      "bytes": 2090,
+      "sha256": "e194e961b2d979f2fe6fe5e30f1fc9b7b59a3fe8138cf4de0560d7f477ea2305"
+    },
+    "source/tests/answerkey/acceptance/parameter_info_.txt": {
+      "bytes": 453,
+      "sha256": "8c9a35c4e1c017badb9a7a5f57349bbe602764803541be1dd7b54cfb2610eec0"
+    },
+    "source/tests/answerkey/acceptance/sjaracne_workflow.yml": {
+      "bytes": 443,
+      "sha256": "770ec427fc446079ac73991e7ffaa3d56b0bd6082cad478e2ce3c41c3a3ec8d0"
+    },
+    "source/tests/answerkey/bootstrap_info_.txt": {
+      "bytes": 102,
+      "sha256": "f4840bf796d2380c7da163674b9349040671525d3bec584326c17d1f62c6fd57"
+    },
+    "source/tests/answerkey/consensus_network_3col_.txt": {
+      "bytes": 32379914,
+      "sha256": "4db37d081614a508034a3512f8a9b691bd28c554bb2f6093071199152df6b555"
+    },
+    "source/tests/answerkey/consensus_network_ncol_.txt": {
+      "bytes": 73821779,
+      "sha256": "6eb04e017ae57959b812d015faad71cfdaf710db26157fe669911728e62731a1"
+    },
+    "source/tests/answerkey/parameter_info_.txt": {
+      "bytes": 293,
+      "sha256": "b665f791a0e4b6028ece8da02b89f39b19d0dfa4f7d172d82c8eb75088d89f87"
+    },
+    "source/tests/cwl/cwlexec/ch_line_ending.sh": {
+      "bytes": 282,
+      "sha256": "247f11764b4a87e1db13c4057e65e706fc48f29f53456f0ecc1656cb6d5d341f"
+    },
+    "source/tests/cwl/cwlexec/config.json": {
+      "bytes": 52,
+      "sha256": "844f6f102e025330022662a2e356b12d535b7d7f9875e8b177b925ce3c82061f"
+    },
+    "source/tests/cwl/cwlexec/create_consensus_network.sh": {
+      "bytes": 324,
+      "sha256": "755055a6df3de73312469c9ae4bf1b5e3f0ca215ff49fa3652fc868b2b282be3"
+    },
+    "source/tests/cwl/cwlexec/sjaracne.sh": {
+      "bytes": 258,
+      "sha256": "adab5aa156a3ba3a8858d12fe20b12273cd35fc64b5ccd3f7743a0ce859270f4"
+    },
+    "source/tests/cwl/cwlexec/sjaracne_workflow.sh": {
+      "bytes": 294,
+      "sha256": "d42f0e8db560a21cbfc02ac225d575e81b50f5dd217901477f9acbb7f1dc18cc"
+    },
+    "source/tests/cwl/cwltool/ch_line_ending.sh": {
+      "bytes": 222,
+      "sha256": "49fb05fa49622fb7a88460fb94b3bd83bdd7e28e6fe3966fa7ed483d2731760b"
+    },
+    "source/tests/cwl/cwltool/create_consensus_network.sh": {
+      "bytes": 264,
+      "sha256": "5903750141f4293dc29139b643ce6d22d834ccaa1e9b43462104f1ccd1be1a04"
+    },
+    "source/tests/cwl/cwltool/sjaracne.sh": {
+      "bytes": 198,
+      "sha256": "f24e43ba58864543a25ac1913e4f0eae7527b4c30f256d1d882b367e0e79a402"
+    },
+    "source/tests/cwl/cwltool/sjaracne_workflow.sh": {
+      "bytes": 245,
+      "sha256": "d00696a86c620bf2f9ceff5f84a34fea5acddda0db99b60e368c0e3a9132805f"
+    },
+    "source/tests/fixtures/rank_cache/README.md": {
+      "bytes": 1615,
+      "sha256": "d55e9fc7b7a43da554c6e98f02405dce4697cc02fa8f3a320a1b6aa616178162"
+    },
+    "source/tests/fixtures/rank_cache/mixed_quadrant_counts.exp": {
+      "bytes": 134,
+      "sha256": "7e69ae215ea6cfc3ea234f2e08c13b60b79ec3e58c44859cda97308e23431468"
+    },
+    "source/tests/fixtures/rank_cache/mixed_quadrant_hub.txt": {
+      "bytes": 2,
+      "sha256": "d98c786cff70da9d10a2c49cf9d849025d3669b95dd56cc7c27c1ebf4cbabc2c"
+    },
+    "source/tests/fixtures/rank_cache/tied_conditional_bootstrap_seed17_reference.tsv": {
+      "bytes": 373,
+      "sha256": "806a85e235e9970ff5cd45acab4fa99e034f0c8904165de0ca72bdad47d1f30f"
+    },
+    "source/tests/fixtures/rank_cache/tied_counts.exp": {
+      "bytes": 623,
+      "sha256": "55e28e650efaee8e84c65da678af59dbd6f69f626db4c739eef053f7d7699543"
+    },
+    "source/tests/fixtures/rank_cache/tied_hubs.txt": {
+      "bytes": 16,
+      "sha256": "fcc3748c49594dea9dc6d7c7e7b3eaf3cb1d7b66b30e02b15467bdde7080b7c2"
+    },
+    "source/tests/fixtures/rank_cache/tied_seed17_reference.tsv": {
+      "bytes": 619,
+      "sha256": "5b81d28431c687cdc97e44df4806c3051089fc7bceec08c7ffcbcb5159437c23"
+    },
+    "source/tests/inputs/BRCA100.exp": {
+      "bytes": 49824227,
+      "sha256": "ad8a334f5f8cdf46a1000d3ee259b35258a18b3da2e314bb3a0cf7a421d98bc8"
+    },
+    "source/tests/inputs/BRCA100_SIG.txt": {
+      "bytes": 138840,
+      "sha256": "16ca27df655f16684f880a4ad719c4e2ae3f8dc0d7e6b9eccdd24cd97c40797c"
+    },
+    "source/tests/inputs/BRCA100_TF.txt": {
+      "bytes": 33904,
+      "sha256": "9b1219a489b99432175e4c4ad46add7b06f25aae388ee8dd3261fa91e4c43ffd"
+    },
+    "source/tests/inputs/Tcell1170.exp": {
+      "bytes": 1493968,
+      "sha256": "f79afe124bc7d2f1521bd1f8647415faea6e10374d84612c0a0e7f48edc7506b"
+    },
+    "source/tests/inputs/TcellTF.txt": {
+      "bytes": 763,
+      "sha256": "1b770d0e8903010d20a9f2be14278f0ac3f248b2e5f09de51108c19245a838da"
+    },
+    "source/tests/inputs/adjmat_dir/TF_run.adj": {
+      "bytes": 21511481,
+      "sha256": "bb8046157a428971cdc1d92b3e03bbe972cbab429fcf98afcd818469feef5cc8"
+    },
+    "source/tests/inputs/cwl/brca_ch_line_ending.yml": {
+      "bytes": 49,
+      "sha256": "3e7ebd55463c5412d62df628ebe90211e352ea36ad5913cc1ce675869dfa0913"
+    },
+    "source/tests/inputs/cwl/brca_create_consensus_network.yml": {
+      "bytes": 150,
+      "sha256": "80c0bfb7a88e5fca58a7d94a6e26935515255e06695bfeff1e776a83a3fa25f3"
+    },
+    "source/tests/inputs/cwl/brca_sjaracne.yml": {
+      "bytes": 371,
+      "sha256": "584790956ff0b3cb83d1fda724852b88ccfd89bd025a9d15c80a2964de605326"
+    },
+    "source/tests/inputs/cwl/brca_sjaracne_workflow.yml": {
+      "bytes": 306,
+      "sha256": "62839ba6cc0e797dda9a3089d93587637742f63018a42286b43a014949a5157a"
+    },
+    "source/tests/logs/err.80957051.1.txt": {
+      "bytes": 14871,
+      "sha256": "95b772aadfd52bd53ca1d40df026999c9813b13c50d89122351ce5e4beb9ecb6"
+    },
+    "source/tests/logs/out.80957051.1.txt": {
+      "bytes": 5570,
+      "sha256": "dcc217d8c7acfc468ef11d9344a4785d6180a3d4f37614ddc6248a37cf44cc73"
+    },
+    "source/tests/logs/tracker_real.2019.06.17.err": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source/tests/logs/tracker_real.2019.06.17.out": {
+      "bytes": 14825,
+      "sha256": "13a798629441137374efdb72bb59edb801a2cd5066bbb85dce8c19d1e78669f4"
+    },
+    "source/tests/sjaracne_workflow.yml": {
+      "bytes": 507,
+      "sha256": "af853477af634b2e378f9a353e1b849570851791860fd16399c4ca8828b8f4d4"
+    },
+    "source/tests/test_apmi_cutoff.py": {
+      "bytes": 10282,
+      "sha256": "ef457f6f554f64e9757b34daf084eb773564a53c86073dbe9a8626c8fed21100"
+    },
+    "source/tests/test_apmi_null_generator.py": {
+      "bytes": 5460,
+      "sha256": "1cefb65409521bc6e99b6fdf23926ea7b2fbb10e4fdf0ccecf6608401569325a"
+    },
+    "source/tests/test_apmi_null_runtime.py": {
+      "bytes": 17783,
+      "sha256": "4cdd77909acc6ffd45e9c264700ec0ae8ce582bfac55b9447a2ae26cbce97bb8"
+    },
+    "source/tests/test_ch_line_ending.py": {
+      "bytes": 2488,
+      "sha256": "a4aaf4cf699b00de37ec1f1974c3dc1bd607c99bd08c630103ee5bd7a013edd9"
+    },
+    "source/tests/test_copy_files_to_dir.bats": {
+      "bytes": 909,
+      "sha256": "0cf4d232f4de1cfb8e3112401db46dfd0ed467a1b58cbb7667a58c4250f0d0c8"
+    },
+    "source/tests/test_create_consensus_network.py": {
+      "bytes": 8900,
+      "sha256": "fb7d26a48739189c70d905fd0d58bba96cc77c813a7e957c8a497f0cd30db5bf"
+    },
+    "source/tests/test_int_to_int_array.bats": {
+      "bytes": 565,
+      "sha256": "e2c70687975b87b489c02819e3b7ea28b14e529b2551cb8115515f47f3b88b98"
+    },
+    "source/tests/test_int_to_str_array.bats": {
+      "bytes": 392,
+      "sha256": "24d3c57d84baf0d2d6026df33a3cccb9f9c486afef6701058ebb81e13ac33d80"
+    },
+    "source/tests/test_qc_input.py": {
+      "bytes": 4905,
+      "sha256": "2b49a4303d708529f29db2cfadefcc79c31fe6bda644bb9bd7dce29bcb2e80aa"
+    },
+    "source/tests/test_sjaracne_acceptance.py": {
+      "bytes": 5168,
+      "sha256": "52a38d246886e725bd4900651625b3b6a746a38059eb600bf69572a166d38f39"
+    },
+    "source/tests/test_sjaracne_adaptive_partition_workspace.py": {
+      "bytes": 6118,
+      "sha256": "85ed740a321666eb3dcda8d9ecd75ff76d3631afd175ec6664202eb8279ce386"
+    },
+    "source/tests/test_sjaracne_adjacency_input.py": {
+      "bytes": 13338,
+      "sha256": "26ac9e5b559d4b3b2ddb05a486d69c8195905994d1555a58d9eaa718c317e13b"
+    },
+    "source/tests/test_sjaracne_expression_validation.py": {
+      "bytes": 5852,
+      "sha256": "ad00d7f772b93b6a3002d2b0cfbf7fbbd479e8245db9c3e51c872f6b2d0c0940"
+    },
+    "source/tests/test_sjaracne_lsf_brca_data.sh": {
+      "bytes": 188,
+      "sha256": "e4809bf4536c0f112187fe334257cb130801605b7a98d08a26edba48213ff461"
+    },
+    "source/tests/test_sjaracne_lsf_real_data.sh": {
+      "bytes": 449,
+      "sha256": "616f512f65125a5646b952a3df93609fb751de08c6233130ef09473389bfa787"
+    },
+    "source/tests/test_sjaracne_rank_cache.py": {
+      "bytes": 3517,
+      "sha256": "e7b2f37548a7ebf6924d816c4afdaf8f30defd5ce19ffc8fc26300307952f453"
+    },
+    "source/tests/test_sjaracne_sampling.py": {
+      "bytes": 16742,
+      "sha256": "f7af5986e1b07a62278017d5d3e93f17b428e1ef18fca478672c3a47aadb778b"
+    },
+    "source/tests/test_sjaracne_subnetwork_resolution.py": {
+      "bytes": 8216,
+      "sha256": "68bd4e29988101eee56a239af8a6c2b7afd13489ee54d2b2b0eaab14694682cf"
+    },
+    "source/tools/apmi_null_generator.cpp": {
+      "bytes": 11036,
+      "sha256": "453d257d54110aac6f71842ef9e2abbba3bb5d6b5f300c3049629df7fcdc10ed"
+    },
+    "source/tools/export_apmi_pchip.py": {
+      "bytes": 8530,
+      "sha256": "4e729f0115a91584cc061d3739d4d8a9d8c4b4285f6d547c7d9f9fe98cb5c957"
+    },
+    "source/version.py": {
+      "bytes": 22,
+      "sha256": "1df8d53aba539e667ec551426125665f9d045da050789b5e5071be3c3ea242cf"
+    }
+  },
+  "schema": "brca100-pchip-build-v1",
+  "source": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/builds/pchip_86f8729/source"
+}

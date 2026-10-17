@@ -367,7 +367,7 @@ def markdown(context: dict, plot: bool) -> str:
     lines = ["# BRCA100: current PCHIP end-to-end workflow and NetBID2 QC", "",
         "## Outcome", "",
         "Fresh inference completed **200/200 seed networks** (100 TF and 100 SIG), both post-DPI consensus networks, and **2/2 pinned NetBID2 QC reports**. The table reports the measured current networks beside the matched historical configurations; no probabilities were selected from these outcomes.", "",
-        "| Network / cutoff function | Per-resample p | MI cutoff | Consensus edges | Median targets | Active sources | Incident nodes | LCC | NetBID2 adjusted R-squared |",
+        "| Network / cutoff function | Per-resample p | MI cutoff | Consensus edges | Median targets | Active sources | Incident nodes | LCC | Scale-free adjusted R-squared |",
         "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"]
     for row in comparison_rows(context):
         lines.append(f"| {row['network']} / {row['function']} | {row['per_resample_p']:g} | {row['mi_cutoff']:.17g} | {row['edges']:,.0f} | {row['target_size_zero_median']:g} | {row['active_driver_fraction']:.3%} | {row['incident_nodes'] / EXPRESSION_NODES:.3%} | {row['largest_weak_component_fraction']:.3%} | {row['scale_free_adjusted_r2']:.6f} |")
@@ -378,7 +378,7 @@ def markdown(context: dict, plot: bool) -> str:
         "- Seeds 1–100; 80/100 samples without replacement, `m=80`, `Npar=40`, DPI epsilon 0. Each class uses its full source list as DPI annotation (`-l`).",
         "- Explicit TF `p_b=0.001` and SIG `p_b=0.0005`; these are provisional starting settings, not software defaults or selected optima.",
         "- Stock normal-approximation consensus at `p_c=1e-5`; **minimum recurrence K=6 is not used**. Twelve native workers, one numerical thread per worker; consensus serialized.",
-        "- Median targets include zero-target candidates. Active sources are candidates with at least one consensus edge. Incident-node coverage uses all 28,278 expression nodes. LCC is the largest weak component divided by incident nodes. NetBID2 adjusted R-squared is scale-free-fit QC, not a measure of edge correctness.", "",
+        "- Median targets include zero-target candidates. Active sources are candidates with at least one consensus edge. Incident-node coverage uses all 28,278 expression nodes. LCC is the largest weak component divided by incident nodes. Scale-free adjusted R-squared uses the unchanged historical summary-script regression alongside NetBID2 QC, not necessarily the fit label displayed in the HTML; [definition](../README.md#netbid2-qc-and-compact-results). It is not a measure of edge correctness.", "",
         "## Directed-edge and source-target-size comparison", "",
         "| Network | Shared directed edges | Historical-only | PCHIP-only | Jaccard | Historical edges retained |",
         "| --- | ---: | ---: | ---: | ---: | ---: |"]

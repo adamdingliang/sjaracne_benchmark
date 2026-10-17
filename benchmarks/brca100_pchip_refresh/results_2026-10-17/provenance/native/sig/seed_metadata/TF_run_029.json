@@ -1,0 +1,66 @@
+{
+  "adjacency": {
+    "bytes": 6046041,
+    "data_sha256": "813c0094c12de132eddbd5bc087b7be96f9229d800105637c18923c4f8e54808",
+    "edges": 269830,
+    "full_sha256": "c96140503d994e3e0f8cf5376bb75f255e074b8b3ffefdf9422ec93e68f8ee38",
+    "header_lines": 26,
+    "mi_max": 1.18568,
+    "mi_min": 0.164465,
+    "source_rows": 10680
+  },
+  "command": [
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/builds/pchip_86f8729/source/SJARACNe/bin/sjaracne.exe",
+    "-i",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100.exp",
+    "-l",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_SIG.txt",
+    "-s",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_SIG.txt",
+    "-p",
+    "0.0005",
+    "-e",
+    "0",
+    "-a",
+    "adaptive_partitioning",
+    "-H",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/builds/pchip_86f8729/source/SJARACNe/config/",
+    "-N",
+    "40",
+    "-S",
+    "29",
+    "-o",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/sig/adj/TF_run_029.adj.partial",
+    "-u",
+    "80%",
+    "-M",
+    "pchip"
+  ],
+  "driver": "sig",
+  "final_output": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/sig/adj/TF_run_029.adj",
+  "fingerprint": "66ded92535a6bdf3272840f18000d1935ec335976842143560a8e5836985543b",
+  "finished_at_utc": "2026-10-17T18:32:09.437025+00:00",
+  "gnu_time": {
+    "elapsed_s": 322.62,
+    "max_rss_kib": 77612,
+    "system_s": 0.1,
+    "user_s": 322.51
+  },
+  "log_inventory": {
+    "logs/TF_run_029.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/TF_run_029.stdout.log": {
+      "bytes": 1730,
+      "sha256": "633bd0c38405934c7c7f6aec8db8d63dc9f17ad7060bb77ef159b1f36d693c41"
+    },
+    "logs/TF_run_029.time.txt": {
+      "bytes": 63,
+      "sha256": "9c3ed1699e7420cf6cc4769ebe7f52d0a3e29add5171671f08ff063e34dad870"
+    }
+  },
+  "schema": "brca100-pchip-seed-v1",
+  "seed": 29,
+  "started_at_utc": "2026-10-17T18:26:44.303988+00:00"
+}

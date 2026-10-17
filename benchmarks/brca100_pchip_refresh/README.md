@@ -86,6 +86,12 @@ the actual package versions, and optionally packages portable HTML reports and
 compact provenance. It does not install packages or modify the existing R
 environment.
 
+For numerical continuity, the machine-readable scale-free adjusted R-squared
+uses the unchanged summary-script regression
+`lm(log10(P(k) + 1/V) ~ log10(k))`, for total graph degree `k=1..max(k)` and
+`V` incident nodes. This descriptive fit is not a formal test that the network
+is scale-free, and is not a measure of edge correctness.
+
 ```bash
 python3 "$BENCH_ROOT/benchmarks/brca100_pchip_refresh/analyze_qc.py" \
   --work-root "$WORK_DIR" \

@@ -1,0 +1,333 @@
+{
+  "arms": [
+    {
+      "command": [
+        "/mnt/d/GitHub/SJARACNe-brca100-netbid-qc/benchmarks/brca100_netbid_qc/netbid2-r",
+        "Rscript",
+        "/mnt/d/GitHub/sjaracne_benchmark/benchmarks/brca100_pr67_threshold_sweep/run_netbid_qc.R",
+        "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/tf/consensus/final_consensus_network.txt",
+        "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_TF.txt",
+        "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/analysis/netbid2/tf",
+        "TF_",
+        "true"
+      ],
+      "driver": "tf",
+      "historical_network": {
+        "bytes": 16796337,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pr67-threshold-sweep-20260818/results/p1e-03/tf/consensus/consensus_network_ncol_.txt",
+        "sha256": "04e5363da1cad3a8715c883249986dd3729c464eb483e6993d650717332ca9aa"
+      },
+      "historical_overlap": {
+        "common_edges": 221487,
+        "fraction_historical_retained": 0.9861046801538681,
+        "fraction_pchip_shared": 1.0,
+        "historical_edges": 224608,
+        "historical_only_edges": 3121,
+        "historical_point": "p1e-03",
+        "jaccard": 0.9861046801538681,
+        "network": "TF",
+        "pchip_edges": 221487,
+        "pchip_only_edges": 0
+      },
+      "historical_topology": {
+        "active_driver_fraction": 1.0,
+        "active_drivers": 2608,
+        "candidate_drivers": 2608,
+        "density": 0.00029362929254230934,
+        "edges": 224608,
+        "incident_nodes": 27658,
+        "largest_weak_component": 27658,
+        "largest_weak_component_fraction": 1.0,
+        "target_size_active_max": 817,
+        "target_size_active_mean": 86.12269938650307,
+        "target_size_active_median": 51.0,
+        "target_size_zero_max": 817,
+        "target_size_zero_mean": 86.12269938650307,
+        "target_size_zero_median": 51.0,
+        "weak_components": 1
+      },
+      "metrics": {
+        "active_driver_fraction": 1.0,
+        "active_drivers": 2608.0,
+        "candidate_drivers": 2608.0,
+        "density": 0.000290262433504509,
+        "edges": 221487.0,
+        "incident_nodes": 27624.0,
+        "largest_weak_component": 27624.0,
+        "largest_weak_component_fraction": 1.0,
+        "scale_free_adjusted_r2": 0.895697936110927,
+        "target_size_active_max": 816.0,
+        "target_size_active_mean": 84.9259969325153,
+        "target_size_active_median": 50.0,
+        "target_size_active_q25": 32.0,
+        "target_size_active_q75": 99.0,
+        "target_size_zero_max": 816.0,
+        "target_size_zero_mean": 84.9259969325153,
+        "target_size_zero_median": 50.0,
+        "target_size_zero_q25": 32.0,
+        "target_size_zero_q75": 99.0,
+        "weak_components": 1.0
+      },
+      "network": {
+        "bytes": 16561983,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/tf/consensus/final_consensus_network.txt",
+        "sha256": "4fd4385518f5645e441e9c78c3afeb253417a16aed5fad347bb934b38bed2d09"
+      }
+    },
+    {
+      "command": [
+        "/mnt/d/GitHub/SJARACNe-brca100-netbid-qc/benchmarks/brca100_netbid_qc/netbid2-r",
+        "Rscript",
+        "/mnt/d/GitHub/sjaracne_benchmark/benchmarks/brca100_pr67_threshold_sweep/run_netbid_qc.R",
+        "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/sig/consensus/final_consensus_network.txt",
+        "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_SIG.txt",
+        "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/analysis/netbid2/sig",
+        "SIG_",
+        "true"
+      ],
+      "driver": "sig",
+      "historical_network": {
+        "bytes": 28309703,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pr67-threshold-sweep-20260818/results/p5e-04/sig/consensus/consensus_network_ncol_.txt",
+        "sha256": "ef081d1b0696e2e225e788f3e84ba44a557dcb1342783f4b76169dbf7ac2a518"
+      },
+      "historical_overlap": {
+        "common_edges": 379053,
+        "fraction_historical_retained": 1.0,
+        "fraction_pchip_shared": 0.9999841713295292,
+        "historical_edges": 379053,
+        "historical_only_edges": 0,
+        "historical_point": "p5e-04",
+        "jaccard": 0.9999841713295292,
+        "network": "SIG",
+        "pchip_edges": 379059,
+        "pchip_only_edges": 6
+      },
+      "historical_topology": {
+        "active_driver_fraction": 0.9999063670411985,
+        "active_drivers": 10679,
+        "candidate_drivers": 10680,
+        "density": 0.00047826214138799286,
+        "edges": 379053,
+        "incident_nodes": 28153,
+        "largest_weak_component": 28153,
+        "largest_weak_component_fraction": 1.0,
+        "target_size_active_max": 412,
+        "target_size_active_mean": 35.495177451072195,
+        "target_size_active_median": 21,
+        "target_size_zero_max": 412,
+        "target_size_zero_mean": 35.49185393258427,
+        "target_size_zero_median": 21.0,
+        "weak_components": 1
+      },
+      "metrics": {
+        "active_driver_fraction": 0.999906367041199,
+        "active_drivers": 10679.0,
+        "candidate_drivers": 10680.0,
+        "density": 0.000478269711761657,
+        "edges": 379059.0,
+        "incident_nodes": 28153.0,
+        "largest_weak_component": 28153.0,
+        "largest_weak_component_fraction": 1.0,
+        "scale_free_adjusted_r2": 0.924687264756489,
+        "target_size_active_max": 412.0,
+        "target_size_active_mean": 35.4957393014327,
+        "target_size_active_median": 21.0,
+        "target_size_active_q25": 12.0,
+        "target_size_active_q75": 46.0,
+        "target_size_zero_max": 412.0,
+        "target_size_zero_mean": 35.4924157303371,
+        "target_size_zero_median": 21.0,
+        "target_size_zero_q25": 12.0,
+        "target_size_zero_q75": 46.0,
+        "weak_components": 1.0
+      },
+      "network": {
+        "bytes": 28310152,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/sig/consensus/final_consensus_network.txt",
+        "sha256": "f6361e2df3e9fb758a4f1b2079b0aca27e5fa41f88a6927128d1f6366fc08c63"
+      }
+    }
+  ],
+  "files": [
+    {
+      "bytes": 323,
+      "path": "historical_edge_overlap.tsv",
+      "sha256": "52169482f728cc26491edcb93773e28df938138d18e1d683392e2c7193bc2380"
+    },
+    {
+      "bytes": 10150,
+      "path": "netbid2/sig/SIG_netQC.Rmd",
+      "sha256": "195a8f51e875c1bf8d0d0a50ee9a2c9e7cdd1938ada3664dc76cae2ed70d2d60"
+    },
+    {
+      "bytes": 4998012,
+      "path": "netbid2/sig/SIG_netQC.html",
+      "sha256": "4db41cce5f35b1c16583068aeaa51ba780dea70b7a7d87b7337a6d7cbb438381"
+    },
+    {
+      "bytes": 169950,
+      "path": "netbid2/sig/driver_target_sizes.tsv",
+      "sha256": "3e2e801a0312ce49348e865c02f6494164e0b44911b7b929c5c6845cd91069b5"
+    },
+    {
+      "bytes": 136,
+      "path": "netbid2/sig/netbid_environment.tsv",
+      "sha256": "589fd14d9f877353eaf0b97e8dbc5a0b5e09bb4248ef6ee0114d709279facb9b"
+    },
+    {
+      "bytes": 572,
+      "path": "netbid2/sig/network_summary.tsv",
+      "sha256": "13a718c91c8f8263b87869a1ea5ec34669ff803a0c86bae56df9472ccb1697d0"
+    },
+    {
+      "bytes": 10150,
+      "path": "netbid2/tf/TF_netQC.Rmd",
+      "sha256": "195a8f51e875c1bf8d0d0a50ee9a2c9e7cdd1938ada3664dc76cae2ed70d2d60"
+    },
+    {
+      "bytes": 1983116,
+      "path": "netbid2/tf/TF_netQC.html",
+      "sha256": "7f9f578d042edfa58dc1e7eb533fed5a314a4a0f735eaec28435680eec4d9cc9"
+    },
+    {
+      "bytes": 42394,
+      "path": "netbid2/tf/driver_target_sizes.tsv",
+      "sha256": "356a90267fbc36f6710f0cf865a3107be8d601c2af262d87d62978c083916dbe"
+    },
+    {
+      "bytes": 136,
+      "path": "netbid2/tf/netbid_environment.tsv",
+      "sha256": "589fd14d9f877353eaf0b97e8dbc5a0b5e09bb4248ef6ee0114d709279facb9b"
+    },
+    {
+      "bytes": 554,
+      "path": "netbid2/tf/network_summary.tsv",
+      "sha256": "64e6c4cb0d077d2974e5f4411cb60eae416d326b63e210fc1b0da49ac9645f39"
+    },
+    {
+      "bytes": 770,
+      "path": "network_metrics.tsv",
+      "sha256": "2e12b013e365e8113f2eb2e8d363513929d90ece3a8888f1d22cacac1e08eb7e"
+    },
+    {
+      "bytes": 240,
+      "path": "sig.stderr.log",
+      "sha256": "e6c634f4e5a58d35feecd8be703eba943c4f04cef02262e906745230860ae839"
+    },
+    {
+      "bytes": 1779,
+      "path": "sig.stdout.log",
+      "sha256": "28ff9ed917f57ddfc452d591627a000a4ee3ba728b0a0c3aca8497a33238b73a"
+    },
+    {
+      "bytes": 201060,
+      "path": "sig_paired_target_sizes.tsv",
+      "sha256": "17329abd0e1c9093129ff1b17276d77c58b63aa2f14b7b7e3e3425b5c9dba0e4"
+    },
+    {
+      "bytes": 236,
+      "path": "tf.stderr.log",
+      "sha256": "5e423302e4dc25c2abe59d336427ff17b0e9ccbcd02b5846c54daf7923e99020"
+    },
+    {
+      "bytes": 1774,
+      "path": "tf.stdout.log",
+      "sha256": "db9521dc9e425e6de215a5ea59f8b4ad339dd8d90b4cc89bbe6922d4de96ef2d"
+    },
+    {
+      "bytes": 50898,
+      "path": "tf_paired_target_sizes.tsv",
+      "sha256": "f2a5464c5a64d129d63ab71f7f1e66c20587881b79b9e27c60f06e58e72efde9"
+    }
+  ],
+  "finished_at_utc": "2026-10-17T19:16:19.483329+00:00",
+  "interpretation": "Post-DPI consensus topology QC, not biological validation. Historical comparison matches inputs, seeds, sampling, DPI and consensus settings; the cutoff function changes. AP-MI kernel and consensus source are unchanged. Compiler/runtime equivalence is qualified by the explicit-cutoff anchor check.",
+  "schema": "sjaracne-brca100-pchip-netbid-qc-v1",
+  "signature": {
+    "expected_environment": {
+      "NetBID2": "2.2.0",
+      "NetBID2_remote_sha": "5defa454d600b94f5dd6d1f9f4428f99759a6821",
+      "R": "R version 4.4.3 (2025-02-28)",
+      "igraph": "2.3.3"
+    },
+    "inputs": [
+      {
+        "bytes": 49824227,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100.exp",
+        "sha256": "ad8a334f5f8cdf46a1000d3ee259b35258a18b3da2e314bb3a0cf7a421d98bc8"
+      },
+      {
+        "bytes": 2916,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/design.json",
+        "sha256": "053afb20a3edcb54c72a563df2194566dd5d559b6934c63eed8b5a5b1f58270c"
+      },
+      {
+        "bytes": 50676,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/run_manifest.json",
+        "sha256": "7ca556d88bc7d75924c870fdaecef6abe8775f20dfbf1bd18025eb3c0ffb2d2b"
+      },
+      {
+        "bytes": 33904,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_TF.txt",
+        "sha256": "9b1219a489b99432175e4c4ad46add7b06f25aae388ee8dd3261fa91e4c43ffd"
+      },
+      {
+        "bytes": 2256,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/tf/consensus_manifest.json",
+        "sha256": "82480fcdc50b5c746e419c9dbf667efe39b0cf0cdd4e1c1082c3b5e970bff406"
+      },
+      {
+        "bytes": 16561983,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/tf/consensus/final_consensus_network.txt",
+        "sha256": "4fd4385518f5645e441e9c78c3afeb253417a16aed5fad347bb934b38bed2d09"
+      },
+      {
+        "bytes": 16796337,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pr67-threshold-sweep-20260818/results/p1e-03/tf/consensus/consensus_network_ncol_.txt",
+        "sha256": "04e5363da1cad3a8715c883249986dd3729c464eb483e6993d650717332ca9aa"
+      },
+      {
+        "bytes": 138840,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_SIG.txt",
+        "sha256": "16ca27df655f16684f880a4ad719c4e2ae3f8dc0d7e6b9eccdd24cd97c40797c"
+      },
+      {
+        "bytes": 2261,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/sig/consensus_manifest.json",
+        "sha256": "6a959ee63a7e87d2ba18467bd40617eddaf8430cf3cedc366adc5857498f8e25"
+      },
+      {
+        "bytes": 28310152,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/sig/consensus/final_consensus_network.txt",
+        "sha256": "f6361e2df3e9fb758a4f1b2079b0aca27e5fa41f88a6927128d1f6366fc08c63"
+      },
+      {
+        "bytes": 28309703,
+        "path": "/home/adam/sjaracne-benchmarks/brca100-pr67-threshold-sweep-20260818/results/p5e-04/sig/consensus/consensus_network_ncol_.txt",
+        "sha256": "ef081d1b0696e2e225e788f3e84ba44a557dcb1342783f4b76169dbf7ac2a518"
+      }
+    ],
+    "reference_root": "/home/adam/sjaracne-benchmarks/brca100-pr67-threshold-sweep-20260818",
+    "schema": "sjaracne-brca100-pchip-netbid-qc-v1",
+    "sources": {
+      "analyzer": {
+        "bytes": 20933,
+        "path": "/mnt/d/GitHub/sjaracne_benchmark/benchmarks/brca100_pchip_refresh/analyze_qc.py",
+        "sha256": "c2a7576aa4e9d76c6c859945a9c2fab39b3a41e90d95b09d8967ef769e68bfa8"
+      },
+      "r_script": {
+        "bytes": 7192,
+        "lf_normalized_sha256": "f9485b923e278ce7883d359181819cd728402dff11fcd4172b7fd6c0c51149a4",
+        "path": "/mnt/d/GitHub/sjaracne_benchmark/benchmarks/brca100_pr67_threshold_sweep/run_netbid_qc.R",
+        "sha256": "d83832abcab259c0fddd9a029d73db91c6a61f2f8b62926e2ccf06b6fcb78c8b"
+      },
+      "wrapper": {
+        "bytes": 699,
+        "lf_normalized_sha256": "c706c7665fc2e589bf70030bb5dc0fc21935b93922b16fb256a5801752220095",
+        "path": "/mnt/d/GitHub/SJARACNe-brca100-netbid-qc/benchmarks/brca100_netbid_qc/netbid2-r",
+        "sha256": "c706c7665fc2e589bf70030bb5dc0fc21935b93922b16fb256a5801752220095"
+      }
+    }
+  }
+}

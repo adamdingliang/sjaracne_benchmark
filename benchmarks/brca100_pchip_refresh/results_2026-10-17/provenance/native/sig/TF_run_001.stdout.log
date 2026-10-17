@@ -1,0 +1,37 @@
+Displaying parameters
+
+[PARA] Input file:    /home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100.exp
+[PARA] Output file:   /home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/sig/adj/TF_run_001.adj.partial
+[PARA] MI P-value:    0.0005
+[PARA] AP-MI null model: pchip
+[PARA] DPI tolerance: 0
+[PARA] Subset of probes to reconstruct: /home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_SIG.txt (10680)
+[PARA] Subsampling:   80% without replacement
+[PARA] TF annotation list: /home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_SIG.txt (10680)
+[PARA] Npar limit:    40
+
+[READ] 0 Description lines bypassed.
+[READ] P-value columns not found.
+[SAMPLING] Fixed-size sampling without replacement: selected 80 of 100 eligible observations (request: 80%).
+Marker No: 28278 (28278 active), Array No: 80
+[THRESHOLD] WARNING: PCHIP is experimental; uniform +/-10% null-rate accuracy and biological FDR are not established.
+[THRESHOLD] WARNING: m=80 is off the tested 50-step grid; this is unvalidated interpolation.
+MI threshold determined for p=0.0005: 0.164452
+[THRESHOLD] PCHIP cutoff binary64=0.16445222440051604
+[SUBNETWORK] Requested: 10680, matched: 10680, missing: 0
+[MI] Cached ranks for 28278 genes x 80 observations in 0 seconds (8.62976 MiB).
+10%, time: 19
+20%, time: 37
+30%, time: 56
+40%, time: 74
+50%, time: 92
+60%, time: 110
+70%, time: 128
+80%, time: 145
+90%, time: 163
+100%, time: 181
+Gene: 10680 Time: 181
+[NETWORK] Applying DPI ...
+DPI running time is: 0
+Writing matrix: /home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/sig/adj/TF_run_001.adj.partial
+Maximum observed npar: 9

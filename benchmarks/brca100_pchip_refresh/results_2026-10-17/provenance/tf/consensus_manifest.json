@@ -1,0 +1,69 @@
+{
+  "command": [
+    "/mnt/d/GitHub/SJARACNe-pr67-develop/SJARACNe/build/pchip-test-env/bin/python",
+    "-m",
+    "SJARACNe.bin.create_consensus_network",
+    "-a",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/tf/adj",
+    "-p",
+    "0.00001",
+    "-e",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100.exp",
+    "-o",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/tf/consensus.partial"
+  ],
+  "consensus_p": 1e-05,
+  "driver": "tf",
+  "fingerprint": "1048c15a02872b5fcef49d8a4e93d150f9e446b693b0e534ca81d2c6195e52d4",
+  "finished_at_utc": "2026-10-17T19:05:41.259692+00:00",
+  "gnu_time": {
+    "elapsed_s": 184.83,
+    "max_rss_kib": 1428940,
+    "system_s": 1.29,
+    "user_s": 181.59
+  },
+  "inventory": {
+    "bootstrap_info_.txt": {
+      "bytes": 132,
+      "sha256": "10a654ca89ac7e1f48b8290dd5c2723f4023215b2ea32528d0c86dbc33b7d35d"
+    },
+    "consensus_network_3col_.txt": {
+      "bytes": 7309088,
+      "sha256": "e37efad096edbe9b5347c98f8a874c46c862a5fbdf53921aa16bc65cf21f9324"
+    },
+    "consensus_network_ncol_.txt": {
+      "bytes": 16561983,
+      "sha256": "4fd4385518f5645e441e9c78c3afeb253417a16aed5fad347bb934b38bed2d09"
+    },
+    "final_consensus_network.txt": {
+      "bytes": 16561983,
+      "sha256": "4fd4385518f5645e441e9c78c3afeb253417a16aed5fad347bb934b38bed2d09"
+    },
+    "parameter_info_.txt": {
+      "bytes": 1427,
+      "sha256": "c8cfedd6fea991d946f4d6d9488a400f730ba4d55a136bfc0a6667f965c003fb"
+    }
+  },
+  "log_inventory": {
+    "logs/consensus.stderr.log": {
+      "bytes": 481,
+      "sha256": "79c6f94e2c9304d68cb0ed6923ef964376815e8a00c24871108a3c0f7102ab0e"
+    },
+    "logs/consensus.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/consensus.time.txt": {
+      "bytes": 65,
+      "sha256": "42b4e03202c5edb16ea88611f74731f3fffab4bcb4df1f70dc30b80d3ba0d70c"
+    }
+  },
+  "ncol": {
+    "active_drivers": 2608,
+    "bytes": 16561983,
+    "edges": 221487,
+    "incident_nodes": 27624,
+    "sha256": "4fd4385518f5645e441e9c78c3afeb253417a16aed5fad347bb934b38bed2d09"
+  },
+  "schema": "brca100-pchip-consensus-v1"
+}
