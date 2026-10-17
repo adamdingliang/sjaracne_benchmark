@@ -100,6 +100,21 @@ HTMLs embed figures; download and open locally because GitHub does not render
 them as ordinary pages. The standard template may request MathJax online;
 offline viewing can omit mathematical typesetting, not the embedded figures.
 
+After the QC package is complete, the presentation step validates all 200 seed
+records and the consensus/QC inventories, then adds the comparison report,
+target-size plot and compact native provenance. It leaves the original QC
+manifest/checksums unchanged and adds `PRESENTATION_SHA256SUMS` covering the
+complete augmented package. Use Python 3.10+; `--plot` also needs Matplotlib
+(both are already available in the pinned NetBID2 environment):
+
+```bash
+/mnt/d/GitHub/SJARACNe-brca100-netbid-qc/benchmarks/brca100_netbid_qc/netbid2-r python \
+  "$BENCH_ROOT/benchmarks/brca100_pchip_refresh/report_results.py" \
+  --work-root "$WORK_DIR" \
+  --package-root "$BENCH_ROOT/benchmarks/brca100_pchip_refresh/results_2026-10-17" \
+  --plot
+```
+
 The current report presents final edge counts, zero-filled median targets,
 active-source and incident-node fractions, largest weak-component fraction,
 NetBID2 scale-free adjusted R-squared and historical edge overlap. These are

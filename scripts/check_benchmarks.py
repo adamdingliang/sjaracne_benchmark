@@ -34,7 +34,7 @@ GROUPS = {
     "threshold": ("benchmarks/brca100_pr67_threshold_sweep", [
         "test_analyze_sweep", "test_package_results", "test_run_netbid_qc", "test_run_sweep_extension"]),
     "brca_pchip": ("benchmarks/brca100_pchip_refresh", [
-        "test_run", "test_analyze_qc", "test_validate_anchor"]),
+        "test_run", "test_analyze_qc", "test_validate_anchor", "test_report_results"]),
     "recurrence": ("benchmarks/brca100_consensus_recurrence_sweep", [
         "test_exact_tail", "test_aggregate_recurrence", "test_generate_netbid_html"]),
 }
