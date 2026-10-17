@@ -24,6 +24,16 @@ before selection/refitting/final evaluation; the untouched final streams stay
 sealed until primary freeze. The historical launch description below refers
 to the original attempt, not successful completion.
 
+## Final-scoring continuation
+
+The corrected run subsequently selected PCHIP, froze its180-size refit and
+completed all200 validation and20 test-size extraction tasks. A Windows
+progress-file replacement failure interrupted test-size index bookkeeping,
+before final scoring. The [final-scoring continuation](CORRECTION_STATUS_IO_2026-10-17.md)
+uses the same complete caches and frozen models, with no repeated extraction,
+selection or refitting. Its fresh local output directory is
+`runs/apmi_null_broad_fits_20261017_zero_corrected_final_recovery/`.
+
 ## Original October17 attempt (failed, preserved)
 
 **Focused fitting/selection/final evaluation launched October 17 at 9:46 AM

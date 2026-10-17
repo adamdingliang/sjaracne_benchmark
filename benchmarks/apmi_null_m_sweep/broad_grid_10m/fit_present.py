@@ -30,7 +30,7 @@ LABELS = {
 LOCKS = (
     "request", "access_initial", "initial_models", "selection", "access_selected",
     "refit_models", "primary", "access_final", "summary", "training_index",
-    "development_index", "refit_index", "validation_index", "test_fit_index",
+    "development_index", "refit_index", "validation_index", "test_fit_index", "recovery_request",
 )
 REQUIRED_LOCKS = ("request", "selection", "refit_models", "primary", "access_final", "summary")
 
@@ -178,6 +178,12 @@ def render_results(summary, selection, primary, rows, artifact_records):
         worst_lines.append(f"| {int(row['m'])} | {row['p']:.8g} | {row['ratio']:.6g} | "
                            f"{_percent(row['relative_error'])} | {row.get('m_group', 'unspecified')} |")
     summaries = summary["final_summary"]
+    recovery_note = ("Final scoring was completed by a separately hash-frozen continuation after a Windows "
+                     "progress-file replacement failure. It reused the same cached validation data and frozen "
+                     "models, without extraction, fitting or selection. See the "
+                     "[continuation declaration](../CORRECTION_STATUS_IO_2026-10-17.md) and "
+                     "[continuation request](recovery_request.json)."
+                     if any(record["name"] == "recovery_request.json" for record in artifact_records) else "")
     artifacts = "\n".join(f"- [{record['name']}]({record['name']}) ({record['bytes']:,} bytes; SHA256 in [manifest.json](manifest.json))."
                           for record in artifact_records if record["name"].endswith(".csv"))
     return f"""# Broad-grid quadratic/PCHIP fitting and final evaluation
@@ -207,6 +213,8 @@ Opening/selection records are preserved byte-for-byte: [request](request.json),
 [selection](selection.json), [frozen primary](primary.json),
 [final access lock](access_final.json), and [both refitted models](refit_models.json).
 The implementation and original raw distributions are identified by their pinned hashes.
+
+{recovery_note}
 
 ## Development selection
 
