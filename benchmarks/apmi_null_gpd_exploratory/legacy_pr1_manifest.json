@@ -1,0 +1,164 @@
+{
+  "copy_policy": "preserve working-copy bytes; Git blob identities also retained",
+  "files": [
+    {
+      "bytes": 28826,
+      "git_blob": "173aafcdcd85511cab6e4c32aab1f2f935cbda23",
+      "path": "SJARACNe/calibrate_apmi_null.py",
+      "sha256": "58237dbc4421dd36e13927da0bcd3780ae5c8863b41e42fa6770d8a63eeba21a"
+    },
+    {
+      "bytes": 1536,
+      "git_blob": "d8b195d10397a3a94099fb1a65ebbd29ba05354f",
+      "path": "SJARACNe/config/apmi_null/apmi_null_m00080_npar040.model",
+      "sha256": "075205942b5d5868d3b5a9e7e0504ef37019671b0975b71429163b74c0b54b4e"
+    },
+    {
+      "bytes": 1538,
+      "git_blob": "db72c5b7ca658e737db1665ca74bb44b73669d33",
+      "path": "SJARACNe/config/apmi_null/apmi_null_m00090_npar040.model",
+      "sha256": "9d6adac1aa2a611db74cc622c6b927c36b385735e235f6ced7cb4385c2b997ee"
+    },
+    {
+      "bytes": 5892,
+      "git_blob": "7d08623506982275976211e716b083af13924f6c",
+      "path": "benchmarks/apmi_null_calibration/README.md",
+      "sha256": "ebe7e00277e66ff3b7c61bf5c7224f1d006956101c620755dbb52ba65236218c"
+    },
+    {
+      "bytes": 40289,
+      "git_blob": "905d7f8b4d81671b384ba43d1c869265c119ec7e",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation.py",
+      "sha256": "c4f8f8b56be6f0de4241f7da7ef88631a937075b8848a38be42bbfcbf4e617bf"
+    },
+    {
+      "bytes": 6374,
+      "git_blob": "1f90d088f71bdbb04d469f5667326f0f298779f5",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_README.md",
+      "sha256": "340ac549bd13e6db97fe55c00f7bf4f07049516987979e8bf15e5704f0019c09"
+    },
+    {
+      "bytes": 17899,
+      "git_blob": "a9ecb5cd205a14f7922e9e1b58bb547c7038435e",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_generator.cpp",
+      "sha256": "5e681cbd6bbd2505ea659c7a70bac305c6be6379cfac58898ed15c87e342ceeb"
+    },
+    {
+      "bytes": 84940,
+      "git_blob": "1bf2b0c24d357f896bf1d93cda10dd664ab16fff",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/brca100_model_exceedance.png",
+      "sha256": "cd498f07624acc3c54cddf0f06a513598cc5fc271101984d7c7c404faf0aed81"
+    },
+    {
+      "bytes": 50175,
+      "git_blob": "53452c1487254476651d8de4090b61a1aeb3c318",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/brca100_model_exceedance.svg",
+      "sha256": "a12805728cda7f90d25f3a29494f29b31dba047e0bfe2c9a43121e57e0bfbdfc"
+    },
+    {
+      "bytes": 88130,
+      "git_blob": "c83910cc156c0b34ceda1a168ce8f26b6cc063bd",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/brca100_null_qq.png",
+      "sha256": "d854e18adea7c8546997cb6fc12719afa482270db004e83ec6b7cf8ac5f0cf9f"
+    },
+    {
+      "bytes": 73289,
+      "git_blob": "79665c145e6704e803b6ff2eeab7a813174cc735",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/brca100_null_qq.svg",
+      "sha256": "952286bbe3fb45cfdaa0c52ac52d90ae8a5c7d937fe70121633b1b97fde9dee9"
+    },
+    {
+      "bytes": 109476,
+      "git_blob": "b57c180761fb0844f38ec33f62fcd379e3c086e3",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/brca100_null_survival.png",
+      "sha256": "55eb1ee2039f1ff5d5b14f4baba3113d204236adad65de167c44e97ecd947ab7"
+    },
+    {
+      "bytes": 73785,
+      "git_blob": "0af7be029df4128cfb9414bb47af94bfdec7fe99",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/brca100_null_survival.svg",
+      "sha256": "8ea006bcc0162d6f2bef2609e5066acf668da88d68f8b4c36d127508eec6b372"
+    },
+    {
+      "bytes": 419,
+      "git_blob": "1027f5ef7b8ed4ecef55a0bafb86fcb65af240f8",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/comparison_summary.csv",
+      "sha256": "06a86fe41814aeb2893a2b051b5137d10e3d016725a49d0f71dc09cfd1767bcf"
+    },
+    {
+      "bytes": 534,
+      "git_blob": "729c7e7e7a4dcb967fe16a3d0df669997ec767ca",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/distribution_summary.csv",
+      "sha256": "9c17c8b56829f1e7dd2a743074a8f40bf8f0936dc51ac3376d7c2a917a89538d"
+    },
+    {
+      "bytes": 1088,
+      "git_blob": "dfc73373dd497a26abf9c69d02ab17ecc148d92e",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/model_exceedance.csv",
+      "sha256": "7185b7964828cfe38fbbf8f6b8d5674d35df3c8125ed3ebf1da9680100100298"
+    },
+    {
+      "bytes": 605,
+      "git_blob": "08a9368458e17acdbc8626d2a67174c449b9c3d6",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/quantile_comparison.csv",
+      "sha256": "b26b478c375446f23ad6db592ad5c1c529b2915ab1007435a3d88a5e42988479"
+    },
+    {
+      "bytes": 16,
+      "git_blob": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/raw/.gitignore",
+      "sha256": "4bb38be6d6d9ef0d2f9bcc339850ff48d821eccfa739369402b354c9ba946ea2"
+    },
+    {
+      "bytes": 8473,
+      "git_blob": "d0ba543bff124fb9f015dfb0e0d201163ed2a0b3",
+      "path": "benchmarks/apmi_null_calibration/brca100_validation_results_2026-08-12/validation_report.json",
+      "sha256": "12df9ab6ae6f4bfcdd4d36d79979b3fc8bb094138af54d9d1b83aa197f28090f"
+    },
+    {
+      "bytes": 84708,
+      "git_blob": "27bb5712b611e90d6a3d8690bd53a1817a103c64",
+      "path": "benchmarks/apmi_null_calibration/calibration_results_2026-08-12/apmi_null_sweep.png",
+      "sha256": "2bb24401818740ec8b69b4987cbf4e1a87cff295f1d34f20f7a7d04520c3d83c"
+    },
+    {
+      "bytes": 62893,
+      "git_blob": "151f9a481042cf03915c9c0154faf12d3537fc0c",
+      "path": "benchmarks/apmi_null_calibration/calibration_results_2026-08-12/apmi_null_sweep.svg",
+      "sha256": "34d2d0c7fb06848046aa1c1d385a2b5f7bc16d333862c097fac1daa35b1e81cb"
+    },
+    {
+      "bytes": 52405,
+      "git_blob": "f11154a5445c12b7c294fac3e7465a6a5ce56cbf",
+      "path": "benchmarks/apmi_null_calibration/calibration_results_2026-08-12/calibration_report.json",
+      "sha256": "624ccb81126265bec5884de43acb6f59ada1e9ddd4bfd797d97d46edd9115f7f"
+    },
+    {
+      "bytes": 1171,
+      "git_blob": "d01ceb94fd2ede1ad0ee38a1ec69c904087dfd3c",
+      "path": "benchmarks/apmi_null_calibration/calibration_results_2026-08-12/calibration_summary.csv",
+      "sha256": "90a032b8325279b7c79a6815a1692bdef4575736d96b95ccb30ed8f1508f253a"
+    },
+    {
+      "bytes": 519,
+      "git_blob": "41aa6987df369d1a53ee9ee1613a0ffffe848af4",
+      "path": "benchmarks/apmi_null_calibration/calibration_results_2026-08-12/rejection_diagnostics.csv",
+      "sha256": "b085e05fd6f37f7b1416214cc3b4bf1d2d22f845752d4b261b7eb520b1f37ebf"
+    },
+    {
+      "bytes": 2856,
+      "git_blob": "10863af861af3d4356e7a506fe1a7e95aaa2703c",
+      "path": "benchmarks/apmi_null_calibration/plot_calibration_sweep.py",
+      "sha256": "063efd1287a2df9f357e4b960356d9eecedad94a8104c49c5272df5221c4ca40"
+    },
+    {
+      "bytes": 7836,
+      "git_blob": "0ff1ecbf39b899abb1399df03cbec7e27eb05d2f",
+      "path": "tests/test_apmi_null_calibration.py",
+      "sha256": "5d9de4aec5ee816cea4a5c347fa01e00ed4ff26308e00aadec2285b7ca244643"
+    }
+  ],
+  "raw_draws_copied": false,
+  "source_commit": "0d155367982e96744cf8c98c7752311871a06488",
+  "source_repository": "https://github.com/adamdingliang/SJARACNe"
+}
