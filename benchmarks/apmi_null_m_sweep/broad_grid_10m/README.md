@@ -35,6 +35,29 @@ The [summary results](RESULTS.md) show PCHIP-only rate trajectories; the
 [full report and plots](results_2026-10-17/RESULTS.md) preserve both models,
 comparators, diagnostic probabilities, numerical corrections and audit details.
 
+## Frozen function and provenance
+
+The [full report's design section](results_2026-10-17/RESULTS.md#design-numerical-policy-and-opening-order)
+defines the empirical quantiles, log-coordinate interpolation and probability-scope
+split. Exact training-size/probability knot queries return the stored binary64
+cutoff without a log/exp round trip. The selected [frozen primary](results_2026-10-17/primary.json)
+has SHA256 `8b4104be3f3ffe0a476a4dd7c8f7f6d95f00f1a51fa467c7194edf3806d427f5`.
+
+SJARACNe's [offline exporter](https://github.com/adamdingliang/SJARACNe/blob/fdbc69c281d57f3b6e175d2ecd4d8e9e1e2280ee/tools/export_apmi_pchip.py)
+represents this same frozen surface as bundled observations and interpolation
+coefficients; it does not refit, reselect or generate new null draws. The
+[bundled JSON](https://github.com/adamdingliang/SJARACNe/blob/fdbc69c281d57f3b6e175d2ecd4d8e9e1e2280ee/SJARACNe/config/apmi_pchip.json)
+has SHA256 `5ae44f3ec251282b242e1e25e5695fe8c6d80a0e7a3f156170dbb72c29e09f59`.
+The Python cutoff callable uses only the standard library; the corresponding
+native evaluator embeds the same data. Neither cutoff evaluator needs this
+benchmark checkout, raw simulations, SciPy interpolation or network access.
+The full workflow and consensus analysis retain their usual dependencies.
+
+The [results](RESULTS.md#evidence-and-limitations) distinguish runtime-port
+representation checks from the original statistical calibration.
+
+## Reproduce the summary plots
+
 To regenerate only the PCHIP presentation plots from the committed score table
 (no raw draws, fitting or selection), use a fresh output directory:
 

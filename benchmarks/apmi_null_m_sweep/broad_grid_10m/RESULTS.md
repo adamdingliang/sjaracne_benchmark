@@ -65,6 +65,33 @@ unfavorable results. These are **rate-validation plots**, not MI-cutoff curves.
 [SVG](summary_plots/pchip_null_rate_vs_m.svg) ·
 [Plotting code](plot_pchip_summary.py).
 
+## Evidence and limitations
+
+The study's full design, statistical results, interval assessment and rare-tail
+precision remain in the [full report](results_2026-10-17/RESULTS.md).
+The [process](README.md#frozen-function-and-provenance) identifies
+the frozen primary and its bundled SJARACNe representation.
+
+The runtime-port checks preserved all **4500 literal training knots exactly**.
+Across 9800 fixed-grid and 1274 additional off-grid representation checks,
+native-versus-original-library differences were at most 15 ULPs
+(1.78e-15 relative), with no availability mismatches. This verifies numerical
+representation, not new null-rate calibration. MI atoms can amplify tiny
+cutoff changes; the original rate tables are therefore not claimed to be
+bitwise replicated for every ported query. No refitting, reselection or
+validation-based fallback was used for this port.
+
+Probabilities below 0.0005 were included in fitting and final evaluation, but
+not in the four-probability selection objective. The 0.0005 boundary describes
+the principal assessment range, not a demonstrated failure threshold.
+The body/rare interpolation boundary is separately fixed at 0.0001, as defined
+in the full report.
+
+The null assumes exchangeable observations and unique ordinal ranks. It does
+not establish reliability for heavily tied/zero-inflated expression or
+clustered/repeated observations, biological FDR, direct regulatory edges, or
+downstream network quality.
+
 ## Conditional conclusion
 
 **For the same independent-rank AP-MI estimator and the tested m=50–10000,
