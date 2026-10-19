@@ -4,8 +4,8 @@
 and [full evidence package with plots](results_2026-10-17/RESULTS.md).
 PCHIP was selected on development data; 6599/6600 moderate observed-rate checks
 were within 10%. The complete core grid was not confirmed under the stricter
-simultaneous-interval rule. No engine/default change was made. The execution
-history below preserves both interruptions and the final-scoring continuation.
+simultaneous-interval rule. The benchmark itself made no engine/default change.
+The execution history below preserves both interruptions and the final-scoring continuation.
 
 **Terminology:** one evaluation case is one sample-size/probability pair (m,p).
 The development selection score uses 80 cases: 20 development sample sizes ×
@@ -30,7 +30,9 @@ biological edge reference supplies the calibration labels.
 4. Report observed null-rate errors separately from simultaneous-interval
    confirmation; retain all planned cases, including unfavorable ones.
 
-These are empirical-cutoff surfaces, not fitted GPD parameter functions.
+PCHIP interpolates empirical MI quantiles from independent-rank null draws
+evaluated with the shared AP-MI estimator; no parametric tail distribution
+is fitted.
 The [summary results](RESULTS.md) show PCHIP-only rate trajectories; the
 [full report and plots](results_2026-10-17/RESULTS.md) preserve both models,
 comparators, diagnostic probabilities, numerical corrections and audit details.
@@ -55,6 +57,33 @@ The full workflow and consensus analysis retain their usual dependencies.
 
 The [results](RESULTS.md#evidence-and-limitations) distinguish runtime-port
 representation checks from the original statistical calibration.
+
+## SJARACNe runtime policy
+
+The later, experimental opt-in integration at
+[SJARACNe `86f8729`](https://github.com/adamdingliang/SJARACNe/tree/86f8729087b3a6d22bdce128649b4e49d725fb9e)
+uses this frozen surface; it does not refit the model or reopen the benchmark's
+final evaluation. Legacy defaults remain unchanged.
+
+- Active PCHIP requires actual selected integer `m=50..10000`, `Npar=40`,
+  matching kernel schema and `p=1e-7..0.05`. Workflow opt-in (`-M pchip`)
+  requires explicit `-pb`; it does not select a TF/SIG probability.
+- All supported probabilities are accepted without a separate acknowledgment
+  flag. Alongside the experimental warning, `p<0.0005` warns about being outside
+  the principal assessment range; `p<=1e-5` additionally warns about limited
+  extreme-tail Monte Carlo precision. Neither warning rejects the request or
+  establishes an accuracy guarantee. See the
+  [statistical limitations](RESULTS.md#evidence-and-limitations).
+- Off-grid sample counts such as `m=80` are interpolated and produce a warning;
+  representation checks do not provide new statistical calibration at those sizes.
+- Unsupported inputs, crossed cutoff knots and estimator-configuration
+  mismatches fail rather than extrapolating, repairing knots or silently falling
+  back. Active PCHIP rejects native replacement sampling (`-r`) and adjacency
+  replay (`-j`). Explicit native `-t`, including zero, overrides probability
+  conversion; native `-p 1` also bypasses cutoff evaluation.
+- Native network headers record the primary/data/summary SHA256 hashes, kernel
+  schema, actual `m`, `Npar`, experimental and principal-range/extreme-tail/off-grid
+  status, requested probability, and round-trippable decimal/hex binary64 MI cutoff.
 
 ## Reproduce the summary plots
 

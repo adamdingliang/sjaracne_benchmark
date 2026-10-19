@@ -87,6 +87,12 @@ the principal assessment range, not a demonstrated failure threshold.
 The body/rare interpolation boundary is separately fixed at 0.0001, as defined
 in the full report.
 
+The broad-grid study tested sample counts in steps of 50. Queries such as
+`m=80` are interpolated, not statistically validated by this study; the port's
+off-grid representation checks do not change that distinction. Runtime warning
+thresholds and bypass rules are documented in the
+[process](README.md#sjaracne-runtime-policy).
+
 The null assumes exchangeable observations and unique ordinal ranks. It does
 not establish reliability for heavily tied/zero-inflated expression or
 clustered/repeated observations, biological FDR, direct regulatory edges, or
