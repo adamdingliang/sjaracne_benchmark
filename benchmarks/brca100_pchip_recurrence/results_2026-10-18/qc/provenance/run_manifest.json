@@ -1,0 +1,113 @@
+{
+  "complete": true,
+  "design_sha256": "fc48e854fa973e00222a94317d4182bea7a1d123b7126080d31806309cec6519",
+  "engine_commit": "f512ef3a29c661e7cdd7b3b2c4027285d8d19fa3",
+  "finished_at_utc": "2026-10-19T01:51:53.250194+00:00",
+  "mem_available_kib_before_jobs": 97657568,
+  "numeric_threads_per_job": 1,
+  "passed": true,
+  "per_job_budget_kib": 5242880,
+  "rows": [
+    {
+      "driver": "tf",
+      "inventory": {
+        "bootstrap_info_.txt": {
+          "bytes": 132,
+          "sha256": "10a654ca89ac7e1f48b8290dd5c2723f4023215b2ea32528d0c86dbc33b7d35d"
+        },
+        "consensus_network_3col_.txt": {
+          "bytes": 7309088,
+          "sha256": "e37efad096edbe9b5347c98f8a874c46c862a5fbdf53921aa16bc65cf21f9324"
+        },
+        "consensus_network_ncol_.txt": {
+          "bytes": 16561983,
+          "sha256": "4fd4385518f5645e441e9c78c3afeb253417a16aed5fad347bb934b38bed2d09"
+        },
+        "parameter_info_.txt": {
+          "bytes": 1414,
+          "sha256": "9dd9327cbe3b571e2327d0dfd793fe3614b68a3381035c417b77698745b14c7c"
+        }
+      },
+      "mode": "legacy_pc",
+      "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/tf/legacy_pc/consensus_manifest.json",
+      "sha256": "4884492340b0184d4406dc971fcffcb35cccad8f40e94691271867cec429a9ac"
+    },
+    {
+      "driver": "tf",
+      "inventory": {
+        "bootstrap_info_.txt": {
+          "bytes": 147,
+          "sha256": "39436a10c540f21593e21075fa6db163f67b7b595c2ea227893e20a458e17e52"
+        },
+        "consensus_network_3col_.txt": {
+          "bytes": 13528631,
+          "sha256": "279488fb76543987ce1f77479d97a288bac768f5b203e38847b9fc7ea3e52eb7"
+        },
+        "consensus_network_ncol_.txt": {
+          "bytes": 30706243,
+          "sha256": "8d1b6cdb9f7b7e605aa035a7a6143fd402f6ab464279db2ede211f3fa2a17062"
+        },
+        "parameter_info_.txt": {
+          "bytes": 1516,
+          "sha256": "c96ebbb042a566697ca31114107b9b1e53669b0582ca002c63bfe8f6544a4b87"
+        }
+      },
+      "mode": "k6",
+      "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/tf/k6/consensus_manifest.json",
+      "sha256": "675f72a2c2afbf26abab0a3cadd1a7d7f168847e2a25dd8ce1d54b2cc2a60930"
+    },
+    {
+      "driver": "sig",
+      "inventory": {
+        "bootstrap_info_.txt": {
+          "bytes": 133,
+          "sha256": "a2eebe8a36aadeb094a0e9985fe3be21b784196245288d0ba50c621bc80d4c84"
+        },
+        "consensus_network_3col_.txt": {
+          "bytes": 12508964,
+          "sha256": "eb8be36db4c3db94ef4a0848ae22825d7f99d5f3e350bd8f579d03040132f608"
+        },
+        "consensus_network_ncol_.txt": {
+          "bytes": 28310152,
+          "sha256": "f6361e2df3e9fb758a4f1b2079b0aca27e5fa41f88a6927128d1f6366fc08c63"
+        },
+        "parameter_info_.txt": {
+          "bytes": 1434,
+          "sha256": "c42c99aa195fea7f9d7cad16efc52c1d99159161716ff8c0f97bff43455050c5"
+        }
+      },
+      "mode": "legacy_pc",
+      "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/sig/legacy_pc/consensus_manifest.json",
+      "sha256": "38392e57b684988212d099f9e7b4235ec17ea4beea6b0b5db8b4e7c909322e7d"
+    },
+    {
+      "driver": "sig",
+      "inventory": {
+        "bootstrap_info_.txt": {
+          "bytes": 148,
+          "sha256": "d55a5f701230f9dacbe9343f84ff1cfb034c9dff85d3ee13c95c9fceaa5d0134"
+        },
+        "consensus_network_3col_.txt": {
+          "bytes": 24419192,
+          "sha256": "d2469b186a1b8513811f43173cb9e8ae93693b05380e8006da4873e4fe2a0654"
+        },
+        "consensus_network_ncol_.txt": {
+          "bytes": 55366982,
+          "sha256": "e2eff0a516820c0ba5345c346289782102a9d742aec0d9b73d9cc074dbd73a53"
+        },
+        "parameter_info_.txt": {
+          "bytes": 1536,
+          "sha256": "8a6c5a76972983450f89f07c0c002e1d472b3990c29abb2de1c1c51c466de14f"
+        }
+      },
+      "mode": "k6",
+      "path": "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/sig/k6/consensus_manifest.json",
+      "sha256": "fab86ab9fab1dee0c174792159357a7b1df098ac93632d350f67cad9813653da"
+    }
+  ],
+  "schema": "brca100-pchip-recurrence-run-v1",
+  "started_at_utc": "2026-10-19T01:41:45.558274+00:00",
+  "status": "complete",
+  "verification_sha256": "e434b021c48a592568615c29ff909263cc2a6e832c7ec2909d73fa38ccacd48a",
+  "workers": 4
+}

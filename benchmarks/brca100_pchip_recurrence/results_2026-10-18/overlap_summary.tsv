@@ -1,0 +1,3 @@
+driver	B	K	K_over_B	k6_edges	legacy_pc_edges	shared_edges	k6_only_edges	legacy_pc_only_edges	jaccard	edge_increase	edge_increase_fraction	legacy_minimum_eligible_support	legacy_observed_minimum_support
+tf	100	6	0.06	409958	221487	221487	188471	0	0.5402675396016178	188471	0.8509348178448396	9	9
+sig	100	6	0.06	739975	379059	379059	360916	0	0.5122591979458766	360916	0.952136738607974	9	9

@@ -1,0 +1,5 @@
+Total edge tested: 13244122
+Consensus selection: minimum recurrence
+Bootstrap networks: 100
+Minimum recurrence: 6
+Minimum recurrence fraction: 0.06

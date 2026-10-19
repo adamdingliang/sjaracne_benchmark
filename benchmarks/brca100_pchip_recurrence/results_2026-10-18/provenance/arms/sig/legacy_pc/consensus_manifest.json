@@ -1,0 +1,91 @@
+{
+  "B": 100,
+  "K": null,
+  "K_over_B": null,
+  "command": [
+    "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+    "-m",
+    "SJARACNe.bin.create_consensus_network",
+    "-a",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/adjacency/sig",
+    "-p",
+    "0.00001",
+    "-e",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/inputs/BRCA100.exp",
+    "-o",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/sig/legacy_pc"
+  ],
+  "driver": "sig",
+  "engine_commit": "f512ef3a29c661e7cdd7b3b2c4027285d8d19fa3",
+  "executed_command": [
+    "/usr/bin/time",
+    "-f",
+    "elapsed_s=%e\nuser_s=%U\nsystem_s=%S\nmax_rss_kib=%M",
+    "-o",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/sig/logs/legacy_pc.time.txt",
+    "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+    "-m",
+    "SJARACNe.bin.create_consensus_network",
+    "-a",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/adjacency/sig",
+    "-p",
+    "0.00001",
+    "-e",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/inputs/BRCA100.exp",
+    "-o",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/sig/legacy_pc"
+  ],
+  "finished_at_utc": "2026-10-19T01:48:14.295368+00:00",
+  "gnu_time": {
+    "elapsed_s": 388.65,
+    "max_rss_kib": 3793820,
+    "system_s": 3.99,
+    "user_s": 384.58
+  },
+  "inference_engine_commit": "86f8729087b3a6d22bdce128649b4e49d725fb9e",
+  "inventory": {
+    "bootstrap_info_.txt": {
+      "bytes": 133,
+      "sha256": "a2eebe8a36aadeb094a0e9985fe3be21b784196245288d0ba50c621bc80d4c84"
+    },
+    "consensus_network_3col_.txt": {
+      "bytes": 12508964,
+      "sha256": "eb8be36db4c3db94ef4a0848ae22825d7f99d5f3e350bd8f579d03040132f608"
+    },
+    "consensus_network_ncol_.txt": {
+      "bytes": 28310152,
+      "sha256": "f6361e2df3e9fb758a4f1b2079b0aca27e5fa41f88a6927128d1f6366fc08c63"
+    },
+    "parameter_info_.txt": {
+      "bytes": 1434,
+      "sha256": "c42c99aa195fea7f9d7cad16efc52c1d99159161716ff8c0f97bff43455050c5"
+    }
+  },
+  "legacy_comparison": {
+    "baseline": "/home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/arms/sig/consensus",
+    "exact_files": [
+      "consensus_network_3col_.txt",
+      "consensus_network_ncol_.txt",
+      "bootstrap_info_.txt"
+    ],
+    "parameter_info": "exact_except_output_path",
+    "passed": true
+  },
+  "log_inventory": {
+    "legacy_pc.stderr.log": {
+      "bytes": 583,
+      "sha256": "fe886de43f22477d028d7e278a95002e996b4c20e55f159818229b404b6bd041"
+    },
+    "legacy_pc.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "legacy_pc.time.txt": {
+      "bytes": 65,
+      "sha256": "9e6e9ad1ceba8b673f4f9234ef48d7f5fe4c4821285b6a57a99601b581f923dd"
+    }
+  },
+  "mode": "legacy_pc",
+  "p_value_consensus": 1e-05,
+  "schema": "brca100-pchip-recurrence-consensus-v1"
+}

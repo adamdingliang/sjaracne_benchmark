@@ -1,0 +1,82 @@
+{
+  "B": 100,
+  "K": 6,
+  "K_over_B": 0.06,
+  "command": [
+    "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+    "-m",
+    "SJARACNe.bin.create_consensus_network",
+    "-a",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/adjacency/tf",
+    "-k",
+    "6",
+    "-e",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/inputs/BRCA100.exp",
+    "-o",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/tf/k6"
+  ],
+  "driver": "tf",
+  "engine_commit": "f512ef3a29c661e7cdd7b3b2c4027285d8d19fa3",
+  "executed_command": [
+    "/usr/bin/time",
+    "-f",
+    "elapsed_s=%e\nuser_s=%U\nsystem_s=%S\nmax_rss_kib=%M",
+    "-o",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/tf/logs/k6.time.txt",
+    "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+    "-m",
+    "SJARACNe.bin.create_consensus_network",
+    "-a",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/adjacency/tf",
+    "-k",
+    "6",
+    "-e",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/inputs/BRCA100.exp",
+    "-o",
+    "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/tf/k6"
+  ],
+  "finished_at_utc": "2026-10-19T01:47:41.383284+00:00",
+  "gnu_time": {
+    "elapsed_s": 355.81,
+    "max_rss_kib": 1426364,
+    "system_s": 1.71,
+    "user_s": 354.02
+  },
+  "inference_engine_commit": "86f8729087b3a6d22bdce128649b4e49d725fb9e",
+  "inventory": {
+    "bootstrap_info_.txt": {
+      "bytes": 147,
+      "sha256": "39436a10c540f21593e21075fa6db163f67b7b595c2ea227893e20a458e17e52"
+    },
+    "consensus_network_3col_.txt": {
+      "bytes": 13528631,
+      "sha256": "279488fb76543987ce1f77479d97a288bac768f5b203e38847b9fc7ea3e52eb7"
+    },
+    "consensus_network_ncol_.txt": {
+      "bytes": 30706243,
+      "sha256": "8d1b6cdb9f7b7e605aa035a7a6143fd402f6ab464279db2ede211f3fa2a17062"
+    },
+    "parameter_info_.txt": {
+      "bytes": 1516,
+      "sha256": "c96ebbb042a566697ca31114107b9b1e53669b0582ca002c63bfe8f6544a4b87"
+    }
+  },
+  "legacy_comparison": null,
+  "log_inventory": {
+    "k6.stderr.log": {
+      "bytes": 481,
+      "sha256": "79c6f94e2c9304d68cb0ed6923ef964376815e8a00c24871108a3c0f7102ab0e"
+    },
+    "k6.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "k6.time.txt": {
+      "bytes": 65,
+      "sha256": "e8248ecb308a5cb528fd2f4f02e6dbb446a0dab553d3c18106d46b0022ed4095"
+    }
+  },
+  "mode": "k6",
+  "p_value_consensus": null,
+  "schema": "brca100-pchip-recurrence-consensus-v1"
+}

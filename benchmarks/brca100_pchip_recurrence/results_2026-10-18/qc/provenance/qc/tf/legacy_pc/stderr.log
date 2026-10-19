@@ -1,0 +1,8 @@
+The output will overwrite the files in directory: "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/analysis/netbid2/tf/legacy_pc"
+
+
+processing file: TF_legacy_pc_netQC.Rmd
+output file: TF_legacy_pc_netQC.knit.md
+
+
+Output created: TF_legacy_pc_netQC.html

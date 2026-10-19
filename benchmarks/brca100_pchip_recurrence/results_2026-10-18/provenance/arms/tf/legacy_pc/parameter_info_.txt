@@ -1,0 +1,29 @@
+>  Input file      /home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100.exp
+>  MI threshold    0.147831
+>  MI P-value      0.001
+>  MI threshold method experimental PCHIP empirical cutoff
+>  AP-MI calibration status experimental-not-uniformly-confirmed
+>  AP-MI kernel schema sjaracne-apmi-v1
+>  AP-MI rank policy unique-ordinal-ranks
+>  AP-MI PCHIP primary SHA256 8b4104be3f3ffe0a476a4dd7c8f7f6d95f00f1a51fa467c7194edf3806d427f5
+>  AP-MI PCHIP data SHA256 5ae44f3ec251282b242e1e25e5695fe8c6d80a0e7a3f156170dbb72c29e09f59
+>  AP-MI PCHIP summary SHA256 4c931d81dddca83d23e5481e0802c0b5c986883fc06bc27f9cb0c376d68590f1
+>  AP-MI actual m 80
+>  AP-MI Npar 40
+>  AP-MI computable p range [1e-7,0.05]
+>  AP-MI main assessed p range [0.0005,0.05]
+>  AP-MI outside principal p range no
+>  AP-MI extreme-tail p no
+>  AP-MI off-grid m yes
+>  MI requested p binary64 0.001
+>  MI threshold binary64 0.14783093032516142
+>  MI threshold hex 0x1.2ec1fb98abab6p-3
+>  DPI tolerance   0
+>  Subnetwork file /home/adam/sjaracne-benchmarks/brca100-pchip-refresh-20261017-full100/inputs/BRCA100_TF.txt
+>  Sampling method fixed-size without replacement
+>  Sampling request 80%
+>  Eligible observations 100
+>  Sampled observations 80
+>  Bootstrap No: 100
+>  Source: sjaracne2
+>  Output network: /home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/arms/tf/legacy_pc/consensus_network_3col_.txt

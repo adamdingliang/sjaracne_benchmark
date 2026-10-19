@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/mnt/d/GitHub/sjaracne_benchmark/benchmarks/brca100_pchip_recurrence",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "passed": true,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "source_sha256": {
+    "analyze_qc.py": "5ad03a6a45b3b19cf9012698cda35de24a37af1d7efc2dc5ebc612f078a754de",
+    "report_results.py": "0606ce3f5a75454a7205f3b54985368a2a60df089df4c078efc499d45cdd4751",
+    "run.py": "30ac0db8f730402fd5df41ba0467f7fdbf1afa00c637d9f04ab32ae41dac1223",
+    "test_analyze_qc.py": "2b3332d92886d72dda9363de6d3ef9900b36979100c6afa822cce55128f53cdf",
+    "test_report_results.py": "17afb1376d8c07d17e9612aff65a456e04519df697bcdd5b86f0aad68d45ba28",
+    "test_run.py": "98751bc300ed0c6f4ccae10ef9fc6b415c92c097ae5cb8795a1d5ea5381bad79",
+    "test_validate_support.py": "b4c05932fa8209129e50663cae7788f39ba54fe4cae41756fe15d61236199766",
+    "validate_support.py": "0f99738cb960bff4df3d620c8b309452967e69a27d2770a45d7e5003b9d3a253"
+  }
+}

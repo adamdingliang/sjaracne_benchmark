@@ -1,0 +1,54 @@
+{
+  "launch_benchmark_commit": "46c992810d09593e41d92553611ca031de047cc3",
+  "note": "Source snapshots retain actual bytes; reporting code was added after the launch commit.",
+  "production_engine": {
+    "commit": "f512ef3a29c661e7cdd7b3b2c4027285d8d19fa3",
+    "identity": {
+      "consensus_module": "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/engine_source/SJARACNe/bin/create_consensus_network.py",
+      "executable": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+      "package": "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/engine_source/SJARACNe/__init__.py",
+      "python": "3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]",
+      "versions": {
+        "numpy": "1.20.1",
+        "pandas": "1.2.3",
+        "scipy": "1.7.3"
+      }
+    },
+    "identity_command": [
+      "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+      "-c",
+      "import importlib,json,sys,hashlib;from pathlib import Path;import importlib.metadata as m;import SJARACNe;mod=importlib.import_module('SJARACNe.bin.create_consensus_network');root=Path(sys.argv[1]).resolve();assert Path(SJARACNe.__file__).resolve()==root/'SJARACNe/__init__.py';assert Path(mod.__file__).resolve()==root/'SJARACNe/bin/create_consensus_network.py';print(json.dumps({'python':sys.version,'executable':sys.executable,'package':SJARACNe.__file__,'consensus_module':mod.__file__,'versions':{x:m.version(x) for x in ['numpy','scipy','pandas']}}))",
+      "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/engine_source"
+    ],
+    "python": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+    "regression_evidence": "/mnt/d/GitHub/_validation/sjaracne_pr3_refresh_20261018_r2",
+    "regression_manifest_sha256": "c96f97b6dbe6bd4554067f03bcf71ea19ad28a33c54fc8709245569156d52dc8",
+    "source": "/home/adam/sjaracne-benchmarks/brca100-pchip-recurrence-20261018/engine_source",
+    "source_inventory": {
+      "SJARACNe/__init__.py": {
+        "bytes": 936,
+        "sha256": "23e9f4f0c7dae57de3e13e4688d038ce0b3c7fddd75ce787c99acd26de093900"
+      },
+      "SJARACNe/apmi_cutoff.py": {
+        "bytes": 7485,
+        "sha256": "6d769991ff5e2cb270b287c460ce6514391ba6217181440e3cad2c4add09ec95"
+      },
+      "SJARACNe/bin/__init__.py": {
+        "bytes": 70,
+        "sha256": "e09565c09acaafdea69ceed27992e7bdd8946233aa0ad3de6002b01506f6e3e7"
+      },
+      "SJARACNe/bin/ch_line_ending.py": {
+        "bytes": 2275,
+        "sha256": "61d75ca146d8579f71bafe099116886a46cae11260ff99338482b57053157b52"
+      },
+      "SJARACNe/bin/create_consensus_network.py": {
+        "bytes": 16799,
+        "sha256": "6ccd7cac13390d753000ac3b0a9074a12906ee151d95ecebe3d991d2488ed1e9"
+      }
+    }
+  },
+  "report_controller": {
+    "executable": "/usr/bin/python3",
+    "version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+  }
+}
