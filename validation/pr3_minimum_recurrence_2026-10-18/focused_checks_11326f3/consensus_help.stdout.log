@@ -1,0 +1,20 @@
+usage: create_consensus_network.py [-h] -a STR [-k INT | -p FLOAT] -e STR -o
+                                   STR [-s STR]
+
+Create a consensus network based on SJARACNe bootstrap networks.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -a STR, --adjmat-dir STR
+                        directory with adjacent matrix
+  -k INT, --min-recurrence INT
+                        minimum number of distinct bootstrap networks
+                        containing an edge; default: 6
+  -p FLOAT, --p-value FLOAT
+                        deprecated legacy normal-approximation p-value
+                        threshold; use --min-recurrence instead
+  -e STR, --exp-mat STR
+                        expression matrix file
+  -o STR, --out-dir STR
+                        output directory
+  -s STR, --subnet STR  file with gene symbols of interest to build a subnet

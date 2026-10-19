@@ -1,0 +1,31 @@
+test_conflicting_duplicate_mi_values_fail_closed (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_duplicate_edge_occurrences_count_once_per_bootstrap (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_equivalent_mi_text_is_an_exact_numeric_duplicate (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_nonfinite_mi_fails_closed (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_reverse_ordered_edge_is_not_treated_as_a_duplicate (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_bootstrap_info (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_consensus_network_3col (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_parameter_info (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_uprob_100 (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_uprob_2 (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_uprob_half (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_uprob_neg1 (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_default_k6_empty_networks_produce_headers_and_recurrence_metadata (test_create_consensus_network.TestEmptyConsensusNetwork) ... ok
+test_empty_bootstrap_networks_produce_headers_and_metadata (test_create_consensus_network.TestEmptyConsensusNetwork) ... ok
+test_missing_bootstrap_files_fail_clearly (test_create_consensus_network.TestEmptyConsensusNetwork) ... ok
+test_cli_value_parsers_fail_closed (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_default_and_explicit_recurrence_reject_missing_networks (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_default_k6_is_inclusive_and_skips_probability_calculation (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_duplicate_occurrences_do_not_satisfy_recurrence (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_explicit_k1_retains_every_observed_ordered_edge (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_explicit_k5_k6_and_k7_select_inclusive_support_boundaries (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_explicit_none_preserves_legacy_bonferroni_mode (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_header_only_network_counts_toward_recurrence_denominator (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_invalid_or_impossible_recurrence_fails_closed (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_probability_and_recurrence_modes_are_mutually_exclusive (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_recurrence_counts_directions_separately_and_averages_each_run_once (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 4.923s
+
+OK

@@ -1,0 +1,16 @@
+test_attributes_exception_requires_exact_baseline_plus_narrow_append (test_check_examples.TestCheckExamples) ... ok
+test_dirty_tracked_working_state_rejected (test_check_examples.TestCheckExamples) ... ok
+test_expected_contracts_are_distinct_and_cover_all_five_cases (test_check_examples.TestCheckExamples) ... ok
+test_extracts_continuations_comments_and_quoted_paths (test_check_examples.TestCheckExamples) ... ok
+test_generated_job_scalar_types_and_duplicates (test_check_examples.TestCheckExamples) ... ok
+test_missing_or_duplicate_output_rejected (test_check_examples.TestCheckExamples) ... ok
+test_non_bash_ignored_and_unclosed_rejected (test_check_examples.TestCheckExamples) ... ok
+test_output_rewrite_preserves_other_arguments (test_check_examples.TestCheckExamples) ... ok
+test_runtime_identity_allows_only_example_modifications (test_check_examples.TestCheckExamples) ... ok
+test_runtime_identity_rejects_runtime_or_tracked_path_changes (test_check_examples.TestCheckExamples) ... ok
+test_wsl_maps_windows_linked_worktree_pointer_read_only (test_check_examples.TestCheckExamples) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.006s
+
+OK

@@ -46,6 +46,11 @@ was requested after reviewing it, not an independent validation set.
 
 ## Engineering evidence
 
+The [PR #3 merge-evidence summary](validation/pr3_minimum_recurrence_2026-10-18/MERGE_EVIDENCE.md)
+links the commit-pinned regression archive, checked K6/legacy examples and current
+PCHIP BRCA100 results. It distinguishes software checks from biological validation
+and records the examples-only revision separately from the tested runtime.
+
 The [expanded AP-MI null calibration process](benchmarks/apmi_null_m_sweep/expanded_10m/README.md)
 and [results](benchmarks/apmi_null_m_sweep/expanded_10m/RESULTS.md) examine synthetic
 independent-rank nulls at exact sample counts and the provisional probabilities

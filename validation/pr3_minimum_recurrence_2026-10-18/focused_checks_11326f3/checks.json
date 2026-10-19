@@ -1,0 +1,99 @@
+{
+  "schema": "pr3-focused-checks-v1",
+  "passed": true,
+  "engine_head": "11326f324f66c201d58a76a6b25e8802218ccb22",
+  "tested_runtime_commit": "f512ef3a29c661e7cdd7b3b2c4027285d8d19fa3",
+  "unchanged_runtime_tree": "8cd43f28a3dc7006dfba324afd8cf97598eb947b",
+  "git_command_prefix": [
+    "git",
+    "-c",
+    "safe.directory=/mnt/d/GitHub/SJARACNe-min-recurrence-develop",
+    "-c",
+    "core.autocrlf=true",
+    "-c",
+    "core.fileMode=false",
+    "--git-dir=/mnt/d/GitHub/SJARACNe/.git/worktrees/SJARACNe-min-recurrence-develop",
+    "--work-tree=/mnt/d/GitHub/SJARACNe-min-recurrence-develop"
+  ],
+  "python": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+  "environment_overrides": {
+    "PYTHONPATH": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop:/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONNOUSERSITE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "tests_run": 46,
+  "jobs": [
+    {
+      "name": "consensus",
+      "command": [
+        "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+        "-m",
+        "unittest",
+        "test_create_consensus_network",
+        "-v"
+      ],
+      "cwd": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop",
+      "returncode": 0,
+      "expected_tests": 26,
+      "passed": true
+    },
+    {
+      "name": "wrapper",
+      "command": [
+        "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+        "-m",
+        "unittest",
+        "test_sjaracne_sampling.TestWorkflowSamplingConfiguration",
+        "test_apmi_null_runtime.TestApmiNullWorkflowWiring",
+        "-v"
+      ],
+      "cwd": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop",
+      "returncode": 0,
+      "expected_tests": 20,
+      "passed": true
+    },
+    {
+      "name": "wrapper_help",
+      "command": [
+        "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+        "-m",
+        "SJARACNe.sjaracne",
+        "local",
+        "--help"
+      ],
+      "cwd": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop",
+      "returncode": 0,
+      "expected_tests": null,
+      "passed": true
+    },
+    {
+      "name": "consensus_help",
+      "command": [
+        "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+        "-m",
+        "SJARACNe.bin.create_consensus_network",
+        "--help"
+      ],
+      "cwd": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop",
+      "returncode": 0,
+      "expected_tests": null,
+      "passed": true
+    },
+    {
+      "name": "lsf_syntax",
+      "command": [
+        "/bin/bash",
+        "-n",
+        "tests/test_sjaracne_lsf_brca_data.sh",
+        "tests/test_sjaracne_lsf_real_data.sh"
+      ],
+      "cwd": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop",
+      "returncode": 0,
+      "expected_tests": null,
+      "passed": true
+    }
+  ],
+  "scope": "Linux/WSL; synthetic consensus and mocked workflow tests; no native inference or live LSF submission"
+}

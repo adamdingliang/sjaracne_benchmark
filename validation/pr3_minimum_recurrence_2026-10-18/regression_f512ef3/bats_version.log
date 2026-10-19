@@ -1,0 +1,2 @@
+{"argv": ["/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/deps/bats/usr/bin/bats", "--version"], "cwd": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source", "log": "bats_version.log", "name": "bats_version", "started_at_utc": "2026-10-19T01:08:16.983860+00:00", "status": "running"}
+Bats 1.10.0

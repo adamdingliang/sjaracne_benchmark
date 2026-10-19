@@ -1,0 +1,42 @@
+usage: sjaracne.py local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                         [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                         [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e FILE, --exp-file FILE
+                        Path to an expression matrix file, row indexes are
+                        used as thenodes in the network.
+  -g FILE, --hub-genes FILE
+                        Path to a file containing a list of symbols to be
+                        considered as hub genes.
+  -k INT, --min-recurrence INT
+                        Minimum number of distinct resampled networks
+                        containing an edge; default: 6.
+  -pc FLOAT, --p-value-consensus FLOAT
+                        Deprecated legacy normal-approximation P-value
+                        threshold for the consensus network.
+  -pb FLOAT, --p-value-bootstrap FLOAT
+                        Per-resample MI probability: required explicitly with
+                        -M pchip; legacy default: 1e-7.
+  -M {pchip}, --apmi-null-model {pchip}
+                        Opt in to bundled experimental PCHIP MI cutoffs;
+                        requires depth 40. Defaults remain legacy affine.
+  -d INT, --depth INT   maximum partitioning depth.
+  -c DIR, --config-dir DIR
+                        Directory containing ARACNe configuration files. Use
+                        default configs if not provided.
+  -n INT, --bootstrap-num INT
+                        Number of resampled networks to generate (legacy
+                        option name).
+  -sf FLOAT, --subsample-fraction FLOAT
+                        Fraction of eligible observations sampled without
+                        replacement in each network; default: 0.8.
+  -sm INT, --subsample-size INT
+                        Exact number of eligible observations sampled without
+                        replacement in each network.
+  -o DIR, --output-dir DIR
+                        Path to final output directory.
+  -tmp DIR, --tmpdir-prefix DIR
+                        Specify tmp path,default is /tmp.
+  -s, --serial          run cwltool in serial mode

@@ -1,0 +1,5 @@
+PASS: five README workflows parsed by the real wrapper with execution mocked.
+PASS: two manual LSF scripts passed bash -n and argv-stub/wrapper checks.
+PASS: both real-data input guards stopped before dispatch.
+PASS: all runtime tracked engine blobs match f512ef3a29c661e7cdd7b3b2c4027285d8d19fa3; only examples and the exact checked LSF attributes append differ.
+No inference, CWL, scheduler, or NetBID2 execution occurred.

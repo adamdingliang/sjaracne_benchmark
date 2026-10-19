@@ -1,0 +1,4 @@
+{"argv": ["/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/cwltool", "--validate", "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/ch_line_ending.cwl"], "cwd": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2", "log": "validate_ch_line_ending.log", "name": "validate_ch_line_ending", "started_at_utc": "2026-10-19T01:06:50.679259+00:00", "status": "running"}
+[1;30mINFO[0m /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/cwltool 3.1.20211107152837
+[1;30mINFO[0m Resolved '/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/ch_line_ending.cwl' to 'file:///home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/ch_line_ending.cwl'
+/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/ch_line_ending.cwl is valid CWL.

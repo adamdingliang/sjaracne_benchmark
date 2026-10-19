@@ -1,0 +1,1111 @@
+{"argv": ["/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python", "/mnt/d/GitHub/_validation/sjaracne_pr3_refresh_20261018_r2/run_regression.py", "--phase", "suite", "--work-root", "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2", "--commit", "f512ef3a29c661e7cdd7b3b2c4027285d8d19fa3"], "cwd": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source", "log": "python_tests.log", "name": "python_tests", "started_at_utc": "2026-10-19T01:07:10.875694+00:00", "status": "running"}
+PINNED_COMMIT=f512ef3a29c661e7cdd7b3b2c4027285d8d19fa3
+DISCOVERED_TESTS=152
+test_all200_core_predictions_finite_positive_and_in_support (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_body_crossings_rejected_without_sorting (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_bundled_provenance_and_shared_native_data_hash (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_corrupt_data_hash_fails_closed (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_every_literal_empirical_knot_has_exact_binary64_value (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_experimental_off_grid_and_rare_warnings (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_extreme_tail_warning_at_and_below_1e5 (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_frozen_benchmark_golden_snapshots (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_full_probability_range_requires_no_acknowledgment_flag (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_legacy_star_exports_remain_available (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_pchip_linear_plateau_and_no_extrapolation (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_probability_0004_has_range_warning_not_extreme_tail_warning (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_probability_required_and_removed_flag_rejected (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_public_package_export (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_rare_only_failure_does_not_break_moderate_scope (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_shared_boundary_failure_invalidates_both_scopes (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_standalone_import_and_call_without_numpy_scipy_or_benchmark (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_strict_m_domain_and_integer_semantics (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_strict_probability_and_npar (test_apmi_cutoff.TestStandaloneApmiCutoff) ... ok
+test_binary_stream_bitwise_matches_tsv_and_has_metadata (test_apmi_null_generator.TestApmiNullGenerator) ... ok
+test_complete_m4_enumeration_matches_exact_distribution (test_apmi_null_generator.TestApmiNullGenerator) ... ok
+test_invalid_or_incomplete_requests_fail_clearly (test_apmi_null_generator.TestApmiNullGenerator) ... ok
+test_seeded_tsv_stream_is_reproducible_and_matches_golden_values (test_apmi_null_generator.TestApmiNullGenerator) ... ok
+test_absent_model_retains_legacy_affine_formula (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_active_pchip_rejects_replacement_sampling_and_adjacency_replay (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_actual_subsample_size_not_full_input_size_selects_cutoff (test_apmi_null_runtime.TestApmiNullRuntime) ... /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/tests/test_apmi_null_runtime.py:40: RuntimeWarning: The frozen AP-MI PCHIP surface is experimental and not uniformly validated; it is not a biological false-positive guarantee.
+  return module.get_mi_cutoff(m, p, npar=40)
+/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/tests/test_apmi_null_runtime.py:40: RuntimeWarning: This off-grid m was not directly confirmed in the broad-grid study.
+  return module.get_mi_cutoff(m, p, npar=40)
+ok
+test_bad_probabilities_are_rejected_without_legacy_fallback (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_bare_model_option_and_malformed_explicit_threshold_fail_cleanly (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_exact_moderate_boundary_does_not_require_acknowledgement (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_explicit_threshold_including_zero_overrides_model (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_inactive_model_does_not_reject_legacy_sampling (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_native_python_parity_at_sensitive_knots_boundary_and_endpoints (test_apmi_null_runtime.TestApmiNullRuntime) ... /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/tests/test_apmi_null_runtime.py:40: RuntimeWarning: This p is outside the principal assessment range [0.0005,0.05]; this is an evidence/reporting distinction, not a computational failure boundary.
+  return module.get_mi_cutoff(m, p, npar=40)
+/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/tests/test_apmi_null_runtime.py:40: RuntimeWarning: Extreme-tail Monte Carlo precision is limited: 10M validation draws expect 100, 10 and 1 exceedances at p=1e-5, 1e-6 and 1e-7. A returned cutoff does not establish 10%-accuracy tail calibration.
+  return module.get_mi_cutoff(m, p, npar=40)
+ok
+test_p_one_and_native_default_bypass_pchip_even_outside_model_domain (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_pchip_fails_closed_for_nonmatching_npar (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_pchip_fails_closed_outside_m_range (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_pchip_records_full_precision_cutoff_and_pinned_provenance (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_rare_tail_is_computable_without_acknowledgement_flag (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_removed_rare_acknowledgement_flag_is_an_unknown_option (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_unknown_model_and_old_gpd_file_are_rejected_explicitly (test_apmi_null_runtime.TestApmiNullRuntime) ... ok
+test_cwl_model_is_optional_literal_string_not_an_external_file (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... ok
+test_wrapper_accepts_explicit_preserve_all_probability (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpmkpo5yvt/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpmkpo5yvt/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpmkpo5yvt/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpmkpo5yvt/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpmkpo5yvt/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpmkpo5yvt/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_accepts_explicit_rare_p_without_extra_flag (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp5kiz93g_/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp5kiz93g_/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp5kiz93g_/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-7
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp5kiz93g_/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp5kiz93g_/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp5kiz93g_/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_does_not_select_probability_from_tf_or_sig_filename (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp_pxxlaae/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp_pxxlaae/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp_pxxlaae/TF_hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp_pxxlaae/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp_pxxlaae/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp_pxxlaae/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpldb_5yso/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpldb_5yso/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpldb_5yso/TF_hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 0.007
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpldb_5yso/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpldb_5yso/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpldb_5yso/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8g7m1wdc/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8g7m1wdc/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8g7m1wdc/SIG_hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8g7m1wdc/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8g7m1wdc/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8g7m1wdc/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp1z75qovf/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp1z75qovf/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp1z75qovf/SIG_hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 0.007
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp1z75qovf/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp1z75qovf/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp1z75qovf/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_forwards_pchip_without_file_staging (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpcj4lvtmj/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpcj4lvtmj/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpcj4lvtmj/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 0.001
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpcj4lvtmj/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpcj4lvtmj/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpcj4lvtmj/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_legacy_default_p_and_sampling_are_unchanged (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpaiupa59_/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpaiupa59_/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpaiupa59_/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpaiupa59_/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpaiupa59_/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpaiupa59_/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_rejects_old_model_paths_and_unknown_selectors (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -M/--apmi-null-model: invalid choice: 'old-gpd.model' (choose from 'pchip')
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -M/--apmi-null-model: invalid choice: 'unknown' (choose from 'pchip')
+ok
+test_wrapper_rejects_removed_acknowledgement_option (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: unrecognized arguments: --allow-rare-tail
+ok
+test_wrapper_requires_explicit_pchip_probability_before_launch (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: -M pchip requires an explicit -pb / --p-value-bootstrap; no PCHIP probability default is chosen
+ok
+test_first_line_is_invalid (test_ch_line_ending.TestLineEnding) ... ok
+test_infile_same_as_outfile (test_ch_line_ending.TestLineEnding) ... ok
+test_mac_ending (test_ch_line_ending.TestLineEnding) ... Mac line ending
+Done
+ok
+test_unix_ending_file (test_ch_line_ending.TestLineEnding) ... Unix line ending. No need to convert
+ok
+test_windows_ending_file (test_ch_line_ending.TestLineEnding) ... Windows line ending
+Done
+ok
+test_conflicting_duplicate_mi_values_fail_closed (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_duplicate_edge_occurrences_count_once_per_bootstrap (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_equivalent_mi_text_is_an_exact_numeric_duplicate (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_nonfinite_mi_fails_closed (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_reverse_ordered_edge_is_not_treated_as_a_duplicate (test_create_consensus_network.TestConsensusDuplicateEdges) ... ok
+test_bootstrap_info (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_consensus_network_3col (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_parameter_info (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_uprob_100 (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_uprob_2 (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_uprob_half (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_uprob_neg1 (test_create_consensus_network.TestConsensusNetwork) ... ok
+test_default_k6_empty_networks_produce_headers_and_recurrence_metadata (test_create_consensus_network.TestEmptyConsensusNetwork) ... ok
+test_empty_bootstrap_networks_produce_headers_and_metadata (test_create_consensus_network.TestEmptyConsensusNetwork) ... ok
+test_missing_bootstrap_files_fail_clearly (test_create_consensus_network.TestEmptyConsensusNetwork) ... ok
+test_cli_value_parsers_fail_closed (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_default_and_explicit_recurrence_reject_missing_networks (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_default_k6_is_inclusive_and_skips_probability_calculation (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_duplicate_occurrences_do_not_satisfy_recurrence (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_explicit_k1_retains_every_observed_ordered_edge (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_explicit_k5_k6_and_k7_select_inclusive_support_boundaries (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_explicit_none_preserves_legacy_bonferroni_mode (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_header_only_network_counts_toward_recurrence_denominator (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_invalid_or_impossible_recurrence_fails_closed (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_probability_and_recurrence_modes_are_mutually_exclusive (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_recurrence_counts_directions_separately_and_averages_each_run_once (test_create_consensus_network.TestMinimumRecurrenceConsensus) ... ok
+test_active_python_cwl_tools_do_not_depend_on_script_shebangs (test_qc_input.TestQCInput) ... ok
+test_blank_hub_file_fails_before_creating_validation_report (test_qc_input.TestQCInput) ... ok
+test_bootstrap_has_hard_dependency_on_validation_report (test_qc_input.TestQCInput) ... ok
+test_partial_overlap_passes_and_reports_normalized_unique_hubs (test_qc_input.TestQCInput) ... ok
+test_zero_overlap_fails_before_creating_validation_report (test_qc_input.TestQCInput) ... ok
+test_acceptance (test_sjaracne_acceptance.TestSJARACNe) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/tests/inputs/Tcell1170.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/tests/inputs/TcellTF.txt
+p_value_consensus: 0.01
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 5
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/output/sjaracne_workflow.yml
+[1;30mINFO[0m /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/cwltool 3.1.20211107152837
+[1;30mINFO[0m Resolved '/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl' to 'file:///home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl'
+[1;30mINFO[0m [workflow ] starting step ch_ending_exp
+[1;30mINFO[0m [workflow ] start
+[1;30mINFO[0m [step ch_ending_exp] start
+[1;30mINFO[0m [workflow ] starting step validate_files
+[1;30mINFO[0m [step validate_files] start
+[1;30mINFO[0m [job ch_ending_exp] /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpzh843udo$ python3 \
+    -m \
+    SJARACNe.bin.ch_line_ending \
+    -i \
+    Tcell1170.exp
+[1;30mINFO[0m [workflow ] starting step create_adjmat_names
+[1;30mINFO[0m [step create_adjmat_names] start
+[1;30mINFO[0m [workflow ] starting step create_seeds
+[1;30mINFO[0m [step create_seeds] start
+[1;30mINFO[0m [workflow ] starting step ch_ending_probe
+[1;30mINFO[0m [step ch_ending_probe] start
+[1;30mINFO[0m [job validate_files] /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp2wp75u_0$ python3 \
+    -m \
+    SJARACNe.bin.QC_input \
+    -e \
+    Tcell1170.exp \
+    -g \
+    TcellTF.txt \
+    -o \
+    hub_overlap_validation.txt
+[1;30mINFO[0m [job ch_ending_probe] /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpzji6mzyt$ python3 \
+    -m \
+    SJARACNe.bin.ch_line_ending \
+    -i \
+    TcellTF.txt
+[1;30mINFO[0m [step create_seeds] completed success
+[1;30mINFO[0m [step create_adjmat_names] completed success
+/home/adam/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/lib/python3.9/runpy.py:127: RuntimeWarning: 'SJARACNe.bin.ch_line_ending' found in sys.modules after import of package 'SJARACNe.bin', but prior to execution of 'SJARACNe.bin.ch_line_ending'; this may result in unpredictable behaviour
+  warn(RuntimeWarning(msg))
+/home/adam/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/lib/python3.9/runpy.py:127: RuntimeWarning: 'SJARACNe.bin.ch_line_ending' found in sys.modules after import of package 'SJARACNe.bin', but prior to execution of 'SJARACNe.bin.ch_line_ending'; this may result in unpredictable behaviour
+  warn(RuntimeWarning(msg))
+Unix line ending. No need to convert
+Unix line ending. No need to convert
+INFO:root:Number of genes in expression matrix: 1170
+INFO:root:Number of unique hub genes in probe file: 127
+INFO:root:Hub overlap: requested=127, matched=127, missing=0
+INFO:root:Hub-overlap validation passed; report: hub_overlap_validation.txt
+[1;30mINFO[0m [job ch_ending_probe] Max memory used: 80MiB
+[1;30mINFO[0m [job ch_ending_exp] Max memory used: 75MiB
+[1;30mINFO[0m [job validate_files] Max memory used: 77MiB
+[1;30mINFO[0m [job validate_files] completed success
+[1;30mINFO[0m [step validate_files] completed success
+[1;30mINFO[0m [job ch_ending_probe] completed success
+[1;30mINFO[0m [job ch_ending_exp] completed success
+[1;30mINFO[0m [step ch_ending_probe] completed success
+[1;30mINFO[0m [step ch_ending_exp] completed success
+[1;30mINFO[0m [workflow ] starting step bootstrap
+[1;30mINFO[0m [step bootstrap] start
+[1;30mINFO[0m [step bootstrap] start
+[1;30mINFO[0m [job bootstrap] /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpy96hbrn1$ sjaracne.exe \
+    -i \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpw3h_ua9c/stga634c404-712b-425f-8f7c-5cd05c0a631c/Tcell1170.exp \
+    -l \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpw3h_ua9c/stga8db9b47-9553-46be-ad37-ea2ff724bab0/TcellTF.txt \
+    -s \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpw3h_ua9c/stga8db9b47-9553-46be-ad37-ea2ff724bab0/TcellTF.txt \
+    -p \
+    1e-07 \
+    -e \
+    0 \
+    -a \
+    adaptive_partitioning \
+    -u \
+    80% \
+    -H \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpw3h_ua9c/stg66ef58a3-f9ef-4bed-8c91-97924e5ffbe6/config \
+    -N \
+    40 \
+    -o \
+    TF_run_001.adj \
+    -S \
+    1
+Displaying parameters
+
+[PARA] Input file:    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpw3h_ua9c/stga634c404-712b-425f-8f7c-5cd05c0a631c/Tcell1170.exp
+[PARA] Output file:   TF_run_001.adj
+[PARA] MI P-value:    1e-07
+[PARA] DPI tolerance: 0
+[PARA] Subset of probes to reconstruct: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpw3h_ua9c/stga8db9b47-9553-46be-ad37-ea2ff724bab0/TcellTF.txt (127)
+[PARA] Subsampling:   80% without replacement
+[PARA] TF annotation list: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpw3h_ua9c/stga8db9b47-9553-46be-ad37-ea2ff724bab0/TcellTF.txt (127)
+[PARA] Npar limit:    40
+
+[READ] 0 Description lines bypassed.
+[READ] P-value columns not found.
+[1;30mINFO[0m [step bootstrap] start
+[1;30mINFO[0m [step bootstrap] start
+[1;30mINFO[0m [job bootstrap_2] /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpr3h3zn92$ sjaracne.exe \
+    -i \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp1o1agtv4/stg062c39ca-2888-47ed-8484-c68d4ab983d6/Tcell1170.exp \
+    -l \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp1o1agtv4/stgeb4bb5ad-a506-42d4-8800-8bcde9b5c373/TcellTF.txt \
+    -s \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp1o1agtv4/stgeb4bb5ad-a506-42d4-8800-8bcde9b5c373/TcellTF.txt \
+    -p \
+    1e-07 \
+    -e \
+    0 \
+    -a \
+    adaptive_partitioning \
+    -u \
+    80% \
+    -H \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp1o1agtv4/stgaf1426fd-7cc9-4fc1-b936-78c5a1d03ada/config \
+    -N \
+    40 \
+    -o \
+    TF_run_002.adj \
+    -S \
+    2
+[1;30mINFO[0m [step bootstrap] start
+Displaying parameters
+
+[PARA] Input file:    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp1o1agtv4/stg062c39ca-2888-47ed-8484-c68d4ab983d6/Tcell1170.exp
+[PARA] Output file:   TF_run_002.adj
+[PARA] MI P-value:    1e-07
+[PARA] DPI tolerance: 0
+[PARA] Subset of probes to reconstruct: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp1o1agtv4/stgeb4bb5ad-a506-42d4-8800-8bcde9b5c373/TcellTF.txt (127)
+[PARA] Subsampling:   80% without replacement
+[PARA] TF annotation list: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp1o1agtv4/stgeb4bb5ad-a506-42d4-8800-8bcde9b5c373/TcellTF.txt (127)
+[PARA] Npar limit:    40
+
+[READ] 0 Description lines bypassed.
+[READ] P-value columns not found.
+[1;30mINFO[0m [job bootstrap_3] /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpknodpgzs$ sjaracne.exe \
+    -i \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp8fs1onbj/stg76c74736-2f06-4a97-be9f-59f5b60d8491/Tcell1170.exp \
+    -l \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp8fs1onbj/stg61b95462-ce15-46e4-9bf8-373c70e74da6/TcellTF.txt \
+    -s \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp8fs1onbj/stg61b95462-ce15-46e4-9bf8-373c70e74da6/TcellTF.txt \
+    -p \
+    1e-07 \
+    -e \
+    0 \
+    -a \
+    adaptive_partitioning \
+    -u \
+    80% \
+    -H \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp8fs1onbj/stgf31a162b-df43-4db2-b385-ce4704c6cbbb/config \
+    -N \
+    40 \
+    -o \
+    TF_run_003.adj \
+    -S \
+    3
+Displaying parameters
+
+[PARA] Input file:    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp8fs1onbj/stg76c74736-2f06-4a97-be9f-59f5b60d8491/Tcell1170.exp
+[PARA] Output file:   TF_run_003.adj
+[PARA] MI P-value:    1e-07
+[PARA] DPI tolerance: 0
+[PARA] Subset of probes to reconstruct: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp8fs1onbj/stg61b95462-ce15-46e4-9bf8-373c70e74da6/TcellTF.txt (127)
+[PARA] Subsampling:   80% without replacement
+[PARA] TF annotation list: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp8fs1onbj/stg61b95462-ce15-46e4-9bf8-373c70e74da6/TcellTF.txt (127)
+[PARA] Npar limit:    40
+
+[READ] 0 Description lines bypassed.
+[READ] P-value columns not found.
+[1;30mINFO[0m [job bootstrap_4] /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpbff6dki1$ sjaracne.exe \
+    -i \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp3auslrww/stg8f92113f-de5f-4823-9c1a-c22511779112/Tcell1170.exp \
+    -l \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp3auslrww/stgf4d7ebc8-83a9-4f03-9dde-cbaf098a63b9/TcellTF.txt \
+    -s \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp3auslrww/stgf4d7ebc8-83a9-4f03-9dde-cbaf098a63b9/TcellTF.txt \
+    -p \
+    1e-07 \
+    -e \
+    0 \
+    -a \
+    adaptive_partitioning \
+    -u \
+    80% \
+    -H \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp3auslrww/stgaa9a7e02-1101-4c41-b014-8015ca3be12b/config \
+    -N \
+    40 \
+    -o \
+    TF_run_004.adj \
+    -S \
+    4
+[1;30mINFO[0m [job bootstrap_5] /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpcaqj0jwn$ sjaracne.exe \
+    -i \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpra9qz4pt/stg66fabca0-0fa8-4be9-ac4f-f5b280285f83/Tcell1170.exp \
+    -l \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpra9qz4pt/stgc350dcbc-0156-444b-b5c6-f1fbcfd4dcb2/TcellTF.txt \
+    -s \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpra9qz4pt/stgc350dcbc-0156-444b-b5c6-f1fbcfd4dcb2/TcellTF.txt \
+    -p \
+    1e-07 \
+    -e \
+    0 \
+    -a \
+    adaptive_partitioning \
+    -u \
+    80% \
+    -H \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpra9qz4pt/stg3dce734d-4de0-4707-983d-e1da2052bc10/config \
+    -N \
+    40 \
+    -o \
+    TF_run_005.adj \
+    -S \
+    5
+Displaying parameters
+
+[PARA] Input file:    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp3auslrww/stg8f92113f-de5f-4823-9c1a-c22511779112/Tcell1170.exp
+[PARA] Output file:   TF_run_004.adj
+[PARA] MI P-value:    1e-07
+[PARA] DPI tolerance: 0
+[PARA] Subset of probes to reconstruct: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp3auslrww/stgf4d7ebc8-83a9-4f03-9dde-cbaf098a63b9/TcellTF.txt (127)
+[PARA] Subsampling:   80% without replacement
+[PARA] TF annotation list: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp3auslrww/stgf4d7ebc8-83a9-4f03-9dde-cbaf098a63b9/TcellTF.txt (127)
+[PARA] Npar limit:    40
+
+[READ] 0 Description lines bypassed.
+[READ] P-value columns not found.
+Displaying parameters
+
+[PARA] Input file:    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpra9qz4pt/stg66fabca0-0fa8-4be9-ac4f-f5b280285f83/Tcell1170.exp
+[PARA] Output file:   TF_run_005.adj
+[PARA] MI P-value:    1e-07
+[PARA] DPI tolerance: 0
+[PARA] Subset of probes to reconstruct: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpra9qz4pt/stgc350dcbc-0156-444b-b5c6-f1fbcfd4dcb2/TcellTF.txt (127)
+[PARA] Subsampling:   80% without replacement
+[PARA] TF annotation list: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmpra9qz4pt/stgc350dcbc-0156-444b-b5c6-f1fbcfd4dcb2/TcellTF.txt (127)
+[PARA] Npar limit:    40
+
+[READ] 0 Description lines bypassed.
+[READ] P-value columns not found.
+[SAMPLING] Fixed-size sampling without replacement: selected 400 of 500 eligible observations (request: 80%).
+Marker No: 1170 (1170 active), Array No: 400
+[THRESHOLD] WARNING: no estimator-matched model was supplied with '-M'; using the legacy affine threshold calibration for backward compatibility.
+MI threshold determined for p=1e-07: 0.0568313
+[SUBNETWORK] Requested: 127, matched: 127, missing: 0
+[MI] Cached ranks for 1170 genes x 400 observations in 0 seconds (1.78528 MiB).
+[SAMPLING] Fixed-size sampling without replacement: selected 400 of 500 eligible observations (request: 80%).
+Marker No: 1170 (1170 active), Array No: 400
+[THRESHOLD] WARNING: no estimator-matched model was supplied with '-M'; using the legacy affine threshold calibration for backward compatibility.
+MI threshold determined for p=1e-07: 0.0568313
+[SUBNETWORK] Requested: 127, matched: 127, missing: 0
+[SAMPLING] Fixed-size sampling without replacement: selected 400 of 500 eligible observations (request: 80%).
+Marker No: 1170 (1170 active), Array No: 400
+[THRESHOLD] WARNING: no estimator-matched model was supplied with '-M'; using the legacy affine threshold calibration for backward compatibility.
+MI threshold determined for p=1e-07: 0.0568313
+[SUBNETWORK] Requested: 127, matched: 127, missing: 0
+[SAMPLING] Fixed-size sampling without replacement: selected 400 of 500 eligible observations (request: 80%).
+Marker No: 1170 (1170 active), Array No: 400
+[THRESHOLD] WARNING: no estimator-matched model was supplied with '-M'; using the legacy affine threshold calibration for backward compatibility.
+MI threshold determined for p=1e-07: 0.0568313
+[SUBNETWORK] Requested: 127, matched: 127, missing: 0
+10%, time: 0
+[SAMPLING] Fixed-size sampling without replacement: selected 400 of 500 eligible observations (request: 80%).
+Marker No: 1170 (1170 active), Array No: 400
+[THRESHOLD] WARNING: no estimator-matched model was supplied with '-M'; using the legacy affine threshold calibration for backward compatibility.
+MI threshold determined for p=1e-07: 0.0568313
+[SUBNETWORK] Requested: 127, matched: 127, missing: 0
+[MI] Cached ranks for 1170 genes x 400 observations in 0 seconds (1.78528 MiB).
+[MI] Cached ranks for 1170 genes x 400 observations in 0 seconds (1.78528 MiB).
+[MI] Cached ranks for 1170 genes x 400 observations in 0 seconds (1.78528 MiB).
+[MI] Cached ranks for 1170 genes x 400 observations in 0 seconds (1.78528 MiB).
+20%, time: 0
+10%, time: 0
+10%, time: 0
+10%, time: 0
+30%, time: 0
+10%, time: 0
+20%, time: 0
+20%, time: 0
+20%, time: 0
+40%, time: 0
+20%, time: 0
+30%, time: 0
+30%, time: 0
+30%, time: 0
+50%, time: 0
+40%, time: 0
+40%, time: 0
+30%, time: 0
+40%, time: 0
+60%, time: 0
+50%, time: 0
+50%, time: 0
+40%, time: 0
+50%, time: 0
+70%, time: 0
+60%, time: 0
+60%, time: 0
+50%, time: 0
+60%, time: 0
+80%, time: 0
+70%, time: 0
+70%, time: 0
+60%, time: 0
+70%, time: 0
+90%, time: 0
+80%, time: 0
+80%, time: 0
+70%, time: 0
+Gene: 127 Time: 0
+[NETWORK] Applying DPI ...
+DPI running time is: 0
+Writing matrix: TF_run_001.adj
+Maximum observed npar: 12
+[1;30mINFO[0m [job bootstrap] completed success
+90%, time: 0
+90%, time: 0
+80%, time: 0
+80%, time: 0
+Gene: 127 Time: 0
+Gene: 127 Time: 0
+[NETWORK] Applying DPI ...
+[NETWORK] Applying DPI ...
+DPI running time is: 0
+Writing matrix: TF_run_004.adj
+DPI running time is: 0
+Writing matrix: TF_run_002.adj
+Maximum observed npar: 10
+Maximum observed npar: 12
+[1;30mINFO[0m [job bootstrap_2] completed success
+[1;30mINFO[0m [job bootstrap_4] completed success
+90%, time: 0
+90%, time: 0
+Gene: 127 Time: 0
+[NETWORK] Applying DPI ...
+DPI running time is: 0
+Writing matrix: TF_run_005.adj
+Maximum observed npar: 10
+[1;30mINFO[0m [job bootstrap_5] completed success
+Gene: 127 Time: 0
+[NETWORK] Applying DPI ...
+DPI running time is: 0
+Writing matrix: TF_run_003.adj
+Maximum observed npar: 11
+[1;30mINFO[0m [job bootstrap_3] completed success
+[1;30mINFO[0m [step bootstrap] completed success
+[1;30mINFO[0m [workflow ] starting step copy_to_dir
+[1;30mINFO[0m [step copy_to_dir] start
+[1;30mINFO[0m [step copy_to_dir] completed success
+[1;30mINFO[0m [workflow ] starting step consensus
+[1;30mINFO[0m [step consensus] start
+[1;30mINFO[0m [job consensus] /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp6yka4ndj$ python3 \
+    -m \
+    SJARACNe.bin.create_consensus_network \
+    -a \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp7quzrul0/stgbc6e6575-1897-439d-a4ed-0eda74d089ef/output \
+    -p \
+    0.01 \
+    -e \
+    /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/tmp7quzrul0/stg870d5991-747b-47d8-aa3b-9532e82403e7/Tcell1170.exp \
+    -o \
+    output
+/home/adam/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/lib/python3.9/runpy.py:127: RuntimeWarning: 'SJARACNe.bin.create_consensus_network' found in sys.modules after import of package 'SJARACNe.bin', but prior to execution of 'SJARACNe.bin.create_consensus_network'; this may result in unpredictable behaviour
+  warn(RuntimeWarning(msg))
+INFO:root:Create an initial consensus network ...
+WARNING:root:Legacy consensus p-value filtering uses a normal approximation; prefer --min-recurrence.
+INFO:root:Done
+INFO:root:Create an enhanced consensus network ...
+INFO:root:All done
+[1;30mINFO[0m [job consensus] completed success
+[1;30mINFO[0m [step consensus] completed success
+[1;30mINFO[0m [workflow ] completed success
+{
+    "bootstrap_info": {
+        "location": "file:///home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/output/bootstrap_info_.txt",
+        "basename": "bootstrap_info_.txt",
+        "class": "File",
+        "checksum": "sha1$ace76ee88e6358354c2d4861b4e958a1b810d30e",
+        "size": 128,
+        "path": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/output/bootstrap_info_.txt"
+    },
+    "out_dir": {
+        "location": "file:///home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/output/consensus_network_ncol_.txt",
+        "basename": "consensus_network_ncol_.txt",
+        "class": "File",
+        "checksum": "sha1$6c86768ba35552d90b48d4740f2578dca4c8df54",
+        "size": 296,
+        "path": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/output/consensus_network_ncol_.txt"
+    },
+    "parameter_info": {
+        "location": "file:///home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/output/parameter_info_.txt",
+        "basename": "parameter_info_.txt",
+        "class": "File",
+        "checksum": "sha1$7629c253003f5cd873e3de96cdd3eeb170116c03",
+        "size": 610,
+        "path": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmphns7_4nc/output/parameter_info_.txt"
+    }
+}
+[1;30mINFO[0m Final process status is success
+INFO:root:All done.
+ok
+test_consensus_selection_and_null_model_real_cwl_matrix (test_sjaracne_acceptance.TestSJARACNe) ... 
+RECURRENCE_MATRIX_PASS={"B": 6, "K": 6, "K_over_B": 1, "actual_m": 80, "consensus": "default_k6", "cutoff": 0.08016249526234295, "model": "affine", "observed_edges": 3, "p_value_consensus": null, "selected_edges": 2, "support_counts": {"H->A": 6, "H->W42": 5, "H->W49": 6}}
+
+RECURRENCE_MATRIX_PASS={"B": 6, "K": null, "K_over_B": null, "actual_m": 80, "consensus": "legacy_pc", "cutoff": 0.08016249526234295, "model": "affine", "observed_edges": 3, "p_value_consensus": 1, "selected_edges": 3, "support_counts": {"H->A": 6, "H->W42": 5, "H->W49": 6}}
+
+RECURRENCE_MATRIX_PASS={"B": 6, "K": 6, "K_over_B": 1, "actual_m": 80, "consensus": "default_k6", "cutoff": 0.14783093032516142, "model": "pchip", "observed_edges": 2, "p_value_consensus": null, "selected_edges": 1, "support_counts": {"H->A": 6, "H->W49": 3}}
+
+RECURRENCE_MATRIX_PASS={"B": 6, "K": null, "K_over_B": null, "actual_m": 80, "consensus": "legacy_pc", "cutoff": 0.14783093032516142, "model": "pchip", "observed_edges": 2, "p_value_consensus": 1, "selected_edges": 2, "support_counts": {"H->A": 6, "H->W49": 3}}
+ok
+test_direct_cwl_probability_omission_policy (test_sjaracne_acceptance.TestSJARACNe) ... ok
+test_pchip_workflow_on_tiny_synthetic_input (test_sjaracne_acceptance.TestSJARACNe) ... ok
+test_deep_shallow_deep_pairs_do_not_leak_workspace_state (test_sjaracne_adaptive_partition_workspace.TestAdaptivePartitionWorkspace) ... ok
+test_mixed_leaf_and_recursive_quadrants_match_legacy_mi (test_sjaracne_adaptive_partition_workspace.TestAdaptivePartitionWorkspace) ... ok
+test_reused_workspace_is_independent_of_hub_order (test_sjaracne_adaptive_partition_workspace.TestAdaptivePartitionWorkspace) ... ok
+test_dpi_tolerance_uses_strict_threshold (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_duplicate_accession_resolves_to_first_expression_row (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_explicit_empty_row_uses_reverse_intersection_fallback (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_explicit_source_only_row_is_a_valid_empty_row (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_imported_extra_source_row_keeps_dpi_available (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_nonempty_direct_row_prevents_reverse_fallback (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_previously_pruned_edges_still_support_later_dpi (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_protected_strongest_intermediate_does_not_hide_later_tf (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_requested_hub_appearing_only_as_target_is_still_absent (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_requested_hub_missing_as_source_row_fails_cleanly (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_selected_multi_hub_direct_intersection_prunes_triangle (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_shuffled_repeated_rows_are_merged_and_target_sorted (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_single_imported_source_row_skips_impossible_dpi (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_sparse_adjacency_is_safe_in_all_gene_mode (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_sparse_rows_without_a_triangle_remain_unchanged (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_sparse_symmetric_all_gene_intersection_prunes_weakest_edge (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_symmetric_all_gene_triangle_is_pruned_in_both_rows (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_tf_logic_also_protects_candidate_endpoint (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_tf_logic_protects_edge_from_non_tf_intermediate (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_three_gene_dpi_triangle_prunes_the_weakest_edge (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_thresholded_duplicates_preserve_last_retained_value (test_sjaracne_adjacency_input.TestAdjacencyInput) ... ok
+test_adjacency_input_rejects_malformed_mi (test_sjaracne_expression_validation.TestExpressionAndMIValidation) ... ok
+test_adjacency_input_rejects_nonfinite_mi (test_sjaracne_expression_validation.TestExpressionAndMIValidation) ... ok
+test_at_least_two_observations_are_required (test_sjaracne_expression_validation.TestExpressionAndMIValidation) ... ok
+test_conditional_selection_must_retain_two_observations (test_sjaracne_expression_validation.TestExpressionAndMIValidation) ... ok
+test_first_expression_row_observation_count_is_validated (test_sjaracne_expression_validation.TestExpressionAndMIValidation) ... ok
+test_nonfinite_noise_corrected_mi_is_rejected (test_sjaracne_expression_validation.TestExpressionAndMIValidation) ... ok
+test_conditional_bootstrap_ranks_match_reference_mi (test_sjaracne_rank_cache.TestRankBenchmarkCorrectnessFixture) ... ok
+test_tied_bootstrap_seed_17_matches_reference_mi (test_sjaracne_rank_cache.TestRankBenchmarkCorrectnessFixture) ... ok
+test_automatic_filename_distinguishes_sampling_seeds (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_conditional_population_is_sampled_before_mi (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_exact_size_is_reproducible_and_seed_dependent (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_invalid_sampling_requests_fail_closed (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_legacy_bootstrap_and_unique_sampling_are_mutually_exclusive (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_minimum_exact_sample_size_runs_end_to_end (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_p_value_threshold_is_calibrated_for_sampled_m (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_percentage_uses_ceiling_and_selects_unique_observations (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_sampled_network_matches_materialized_selected_columns (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_sampling_entire_population_matches_unsampled_network (test_sjaracne_sampling.TestWithoutReplacementSampling) ... ok
+test_cwl_defaults_and_wiring_use_unique_sampling (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... ok
+test_cwl_wires_both_consensus_selection_modes (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... ok
+test_invalid_recurrence_or_network_count_fails_before_launch_or_output (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be an integer
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be an integer
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be an integer
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 6 exceeds bootstrap count 5
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 7 exceeds bootstrap count 6
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -pc/--p-value-consensus: not allowed with argument -k/--min-recurrence
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be an integer
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be an integer
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be an integer
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 6 exceeds bootstrap count 5
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 7 exceeds bootstrap count 6
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -pc/--p-value-consensus: not allowed with argument -k/--min-recurrence
+ok
+test_wrapper_accepts_feasible_k1_with_either_mi_selection (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppsfhfo3x/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppsfhfo3x/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppsfhfo3x/hubs.txt
+min_recurrence: 1
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 2
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppsfhfo3x/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppsfhfo3x/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppsfhfo3x/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpb6rvujol/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpb6rvujol/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpb6rvujol/hubs.txt
+min_recurrence: 1
+p_value_bootstrap: 0.001
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 2
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpb6rvujol/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpb6rvujol/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpb6rvujol/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_defaults_to_eighty_percent (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqzow5zky/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqzow5zky/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqzow5zky/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqzow5zky/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqzow5zky/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqzow5zky/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_defaults_to_minimum_recurrence_six (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpic_4d5oi/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpic_4d5oi/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpic_4d5oi/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpic_4d5oi/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpic_4d5oi/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpic_4d5oi/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_keeps_mi_and_consensus_selection_independent (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpep9v9i8t/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpep9v9i8t/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpep9v9i8t/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 6
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpep9v9i8t/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpep9v9i8t/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpep9v9i8t/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpppq2vpim/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpppq2vpim/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpppq2vpim/hubs.txt
+p_value_consensus: 0.01
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 6
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpppq2vpim/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpppq2vpim/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpppq2vpim/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpzve8ra2e/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpzve8ra2e/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpzve8ra2e/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 0.001
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 6
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpzve8ra2e/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpzve8ra2e/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpzve8ra2e/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqbk5mqr8/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqbk5mqr8/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqbk5mqr8/hubs.txt
+p_value_consensus: 0.01
+p_value_bootstrap: 0.001
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 6
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqbk5mqr8/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqbk5mqr8/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpqbk5mqr8/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_preserves_explicit_brca100_bootstrap_probabilities (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp0xj95o82/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp0xj95o82/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp0xj95o82/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-3
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp0xj95o82/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp0xj95o82/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp0xj95o82/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu_t5yqi1/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu_t5yqi1/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu_t5yqi1/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 5e-4
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu_t5yqi1/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu_t5yqi1/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu_t5yqi1/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_rejects_recurrence_above_bootstrap_count_early (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 6 exceeds bootstrap count 5
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 7 exceeds bootstrap count 6
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppzk4nb4u/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppzk4nb4u/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppzk4nb4u/hubs.txt
+p_value_consensus: 0.01
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 5
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppzk4nb4u/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppzk4nb4u/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmppzk4nb4u/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_serializes_fraction_or_exact_size (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8iq22mpm/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8iq22mpm/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8iq22mpm/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "64%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8iq22mpm/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8iq22mpm/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp8iq22mpm/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp9kyd4msh/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp9kyd4msh/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp9kyd4msh/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "7"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp9kyd4msh/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp9kyd4msh/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp9kyd4msh/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_serializes_recurrence_or_explicit_legacy_probability (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu2q7v3jk/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu2q7v3jk/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu2q7v3jk/hubs.txt
+min_recurrence: 8
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu2q7v3jk/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu2q7v3jk/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmpu2q7v3jk/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp3u5wu42z/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp3u5wu42z/input.exp
+probe_file:
+  class: File
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp3u5wu42z/hubs.txt
+p_value_consensus: 0.01
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp3u5wu42z/tmp --parallel --outdir /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp3u5wu42z/output /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe/cwl/sjaracne_workflow.cwl /home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/tmp/tmp3u5wu42z/output/sjaracne_workflow.yml
+INFO:root:All done.
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -pc/--p-value-consensus: not allowed with argument -k/--min-recurrence
+ok
+test_duplicate_subnetwork_hub_matches_single_hub_output (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_duplicate_tf_annotation_hubs_are_deduplicated (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_empty_subnetwork_file_fails_instead_of_running_all_genes (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_omitted_subnetwork_retains_all_gene_mode (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_partial_subnetwork_match_continues_with_summary (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_single_computed_hub_skips_impossible_dpi (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_subnetwork_list_normalizes_bom_whitespace_blank_lines_and_endings (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_subnetwork_option_without_file_is_rejected (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_tf_annotation_list_uses_the_same_normalization (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_two_computed_hubs_still_apply_dpi (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+test_unresolved_subnetwork_fails_instead_of_running_all_genes (test_sjaracne_subnetwork_resolution.TestSubnetworkResolution) ... ok
+
+----------------------------------------------------------------------
+Ran 152 tests in 64.878s
+
+OK

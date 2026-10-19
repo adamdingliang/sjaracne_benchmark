@@ -1,0 +1,2 @@
+/home/adam/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/lib/python3.9/runpy.py:127: RuntimeWarning: 'SJARACNe.bin.create_consensus_network' found in sys.modules after import of package 'SJARACNe.bin', but prior to execution of 'SJARACNe.bin.create_consensus_network'; this may result in unpredictable behaviour
+  warn(RuntimeWarning(msg))

@@ -1,0 +1,22 @@
+{
+  "schema": "pr3-example-checker-context-v1",
+  "passed": true,
+  "tests_run": 11,
+  "command": [
+    "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/mnt/d/GitHub/sjaracne_benchmark/validation/pr3_minimum_recurrence_2026-10-18",
+    "-p",
+    "test_check_examples.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "checker_sha256": "aae9e4434368bbc14eb137a0837e6d2063c9613fd388c4874033179d358e5681",
+  "checker_tests_sha256": "d3493d55ec3a82cd850c4ee12ea9a278336a9184fb91db7cb5f988376160d3e0",
+  "engine_head": "11326f324f66c201d58a76a6b25e8802218ccb22",
+  "scope": "argument/job construction only; no inference, CWL, LSF or network QC"
+}

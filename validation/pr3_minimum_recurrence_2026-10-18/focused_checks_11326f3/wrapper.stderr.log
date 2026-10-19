@@ -1,0 +1,539 @@
+test_cwl_defaults_and_wiring_use_unique_sampling (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... ok
+test_cwl_wires_both_consensus_selection_modes (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... ok
+test_invalid_recurrence_or_network_count_fails_before_launch_or_output (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be an integer
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be an integer
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be an integer
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 6 exceeds bootstrap count 5
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 7 exceeds bootstrap count 6
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -pc/--p-value-consensus: not allowed with argument -k/--min-recurrence
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be an integer
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -k/--min-recurrence: minimum recurrence must be an integer
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be at least 1
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -n/--bootstrap-num: bootstrap count must be an integer
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 6 exceeds bootstrap count 5
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 7 exceeds bootstrap count 6
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -pc/--p-value-consensus: not allowed with argument -k/--min-recurrence
+ok
+test_wrapper_accepts_feasible_k1_with_either_mi_selection (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/tmp/tmpic6apop_/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpic6apop_/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpic6apop_/hubs.txt
+min_recurrence: 1
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 2
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpic6apop_/tmp --parallel --outdir /tmp/tmpic6apop_/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpic6apop_/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmpx7rpv0tb/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpx7rpv0tb/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpx7rpv0tb/hubs.txt
+min_recurrence: 1
+p_value_bootstrap: 0.001
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 2
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpx7rpv0tb/tmp --parallel --outdir /tmp/tmpx7rpv0tb/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpx7rpv0tb/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_defaults_to_eighty_percent (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/tmp/tmpengo734z/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpengo734z/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpengo734z/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpengo734z/tmp --parallel --outdir /tmp/tmpengo734z/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpengo734z/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_defaults_to_minimum_recurrence_six (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/tmp/tmp3jbwdu_m/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmp3jbwdu_m/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmp3jbwdu_m/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmp3jbwdu_m/tmp --parallel --outdir /tmp/tmp3jbwdu_m/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmp3jbwdu_m/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_keeps_mi_and_consensus_selection_independent (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/tmp/tmp048xk6_d/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmp048xk6_d/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmp048xk6_d/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 6
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmp048xk6_d/tmp --parallel --outdir /tmp/tmp048xk6_d/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmp048xk6_d/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmpaa71pfwn/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpaa71pfwn/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpaa71pfwn/hubs.txt
+p_value_consensus: 0.01
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 6
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpaa71pfwn/tmp --parallel --outdir /tmp/tmpaa71pfwn/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpaa71pfwn/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmp_vi5tjlr/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmp_vi5tjlr/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmp_vi5tjlr/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 0.001
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 6
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /tmp/tmp_vi5tjlr/tmp --parallel --outdir /tmp/tmp_vi5tjlr/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmp_vi5tjlr/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmpas6lj0on/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpas6lj0on/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpas6lj0on/hubs.txt
+p_value_consensus: 0.01
+p_value_bootstrap: 0.001
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 6
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpas6lj0on/tmp --parallel --outdir /tmp/tmpas6lj0on/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpas6lj0on/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_preserves_explicit_brca100_bootstrap_probabilities (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/tmp/tmpaoaihuxc/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpaoaihuxc/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpaoaihuxc/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-3
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpaoaihuxc/tmp --parallel --outdir /tmp/tmpaoaihuxc/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpaoaihuxc/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmpn8u5jo3k/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpn8u5jo3k/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpn8u5jo3k/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 5e-4
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpn8u5jo3k/tmp --parallel --outdir /tmp/tmpn8u5jo3k/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpn8u5jo3k/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_rejects_recurrence_above_bootstrap_count_early (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 6 exceeds bootstrap count 5
+usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: minimum recurrence 7 exceeds bootstrap count 6
+INFO:root:/tmp/tmpm5b40i9h/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpm5b40i9h/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpm5b40i9h/hubs.txt
+p_value_consensus: 0.01
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 5
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpm5b40i9h/tmp --parallel --outdir /tmp/tmpm5b40i9h/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpm5b40i9h/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_serializes_fraction_or_exact_size (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/tmp/tmphs2fug5g/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmphs2fug5g/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmphs2fug5g/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "64%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmphs2fug5g/tmp --parallel --outdir /tmp/tmphs2fug5g/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmphs2fug5g/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmp9oh2ojny/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmp9oh2ojny/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmp9oh2ojny/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "7"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmp9oh2ojny/tmp --parallel --outdir /tmp/tmp9oh2ojny/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmp9oh2ojny/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_serializes_recurrence_or_explicit_legacy_probability (test_sjaracne_sampling.TestWorkflowSamplingConfiguration) ... INFO:root:/tmp/tmpuhqdi4ho/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpuhqdi4ho/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpuhqdi4ho/hubs.txt
+min_recurrence: 8
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpuhqdi4ho/tmp --parallel --outdir /tmp/tmpuhqdi4ho/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpuhqdi4ho/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmpngh1fm1x/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpngh1fm1x/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpngh1fm1x/hubs.txt
+p_value_consensus: 0.01
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpngh1fm1x/tmp --parallel --outdir /tmp/tmpngh1fm1x/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpngh1fm1x/output/sjaracne_workflow.yml
+INFO:root:All done.
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -pc/--p-value-consensus: not allowed with argument -k/--min-recurrence
+ok
+test_cwl_model_is_optional_literal_string_not_an_external_file (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... ok
+test_wrapper_accepts_explicit_preserve_all_probability (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/tmp/tmpt57q1x90/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpt57q1x90/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpt57q1x90/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpt57q1x90/tmp --parallel --outdir /tmp/tmpt57q1x90/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpt57q1x90/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_accepts_explicit_rare_p_without_extra_flag (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/tmp/tmp7wdj6s8c/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmp7wdj6s8c/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmp7wdj6s8c/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-7
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /tmp/tmp7wdj6s8c/tmp --parallel --outdir /tmp/tmp7wdj6s8c/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmp7wdj6s8c/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_does_not_select_probability_from_tf_or_sig_filename (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/tmp/tmpu4uie0a4/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpu4uie0a4/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpu4uie0a4/TF_hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpu4uie0a4/tmp --parallel --outdir /tmp/tmpu4uie0a4/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpu4uie0a4/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmpas2y7qhq/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpas2y7qhq/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpas2y7qhq/TF_hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 0.007
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpas2y7qhq/tmp --parallel --outdir /tmp/tmpas2y7qhq/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpas2y7qhq/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmp3k10k8jr/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmp3k10k8jr/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmp3k10k8jr/SIG_hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmp3k10k8jr/tmp --parallel --outdir /tmp/tmp3k10k8jr/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmp3k10k8jr/output/sjaracne_workflow.yml
+INFO:root:All done.
+INFO:root:/tmp/tmpqfx21q_x/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpqfx21q_x/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpqfx21q_x/SIG_hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 0.007
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpqfx21q_x/tmp --parallel --outdir /tmp/tmpqfx21q_x/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpqfx21q_x/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_forwards_pchip_without_file_staging (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/tmp/tmp1fb6u0ak/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmp1fb6u0ak/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmp1fb6u0ak/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 0.001
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+apmi_null_model: "pchip"
+INFO:root:cwltool --tmpdir-prefix /tmp/tmp1fb6u0ak/tmp --parallel --outdir /tmp/tmp1fb6u0ak/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmp1fb6u0ak/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_legacy_default_p_and_sampling_are_unchanged (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... INFO:root:/tmp/tmpd5d7838n/output/sjaracne_workflow.yml
+INFO:root:exp_file:
+  class: File
+  path: /tmp/tmpd5d7838n/input.exp
+probe_file:
+  class: File
+  path: /tmp/tmpd5d7838n/hubs.txt
+min_recurrence: 6
+p_value_bootstrap: 1e-07
+depth: 40
+aracne_config_dir:
+  class: Directory
+  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config
+bootstrap_num: 100
+subsample_spec: "80%"
+final_out_dir_name: output
+INFO:root:cwltool --tmpdir-prefix /tmp/tmpd5d7838n/tmp --parallel --outdir /tmp/tmpd5d7838n/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/tmpd5d7838n/output/sjaracne_workflow.yml
+INFO:root:All done.
+ok
+test_wrapper_rejects_old_model_paths_and_unknown_selectors (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -M/--apmi-null-model: invalid choice: 'old-gpd.model' (choose from 'pchip')
+usage: sjaracne local [-h] -e FILE -g FILE [-k INT | -pc FLOAT] [-pb FLOAT]
+                      [-M {pchip}] [-d INT] [-c DIR] [-n INT]
+                      [-sf FLOAT | -sm INT] -o DIR -tmp DIR [-s]
+sjaracne local: error: argument -M/--apmi-null-model: invalid choice: 'unknown' (choose from 'pchip')
+ok
+test_wrapper_rejects_removed_acknowledgement_option (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: unrecognized arguments: --allow-rare-tail
+ok
+test_wrapper_requires_explicit_pchip_probability_before_launch (test_apmi_null_runtime.TestApmiNullWorkflowWiring) ... usage: sjaracne [-h] {local,lsf} ...
+sjaracne: error: -M pchip requires an explicit -pb / --p-value-bootstrap; no PCHIP probability default is chosen
+ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.395s
+
+OK

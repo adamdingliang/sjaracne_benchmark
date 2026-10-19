@@ -1,0 +1,677 @@
+{
+  "manual_lsf_scripts": [
+    {
+      "bash_n": "passed",
+      "documented_argv": [
+        "sjaracne",
+        "lsf",
+        "-j",
+        "./SJARACNe/config/config_cwlexec.json",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "5",
+        "-k",
+        "1",
+        "-pb",
+        "1e-7",
+        "--subsample-fraction",
+        "0.8",
+        "-o",
+        "./results/tf_lsf_smoke",
+        "-tmp",
+        "./results/tmp_tf_lsf_smoke/"
+      ],
+      "job": {
+        "aracne_config_dir": {
+          "class": "Directory",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config"
+        },
+        "bootstrap_num": 5,
+        "depth": 40,
+        "exp_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp"
+        },
+        "final_out_dir_name": "output",
+        "min_recurrence": 1,
+        "p_value_bootstrap": 1e-07,
+        "probe_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt"
+        },
+        "subsample_spec": "80%"
+      },
+      "missing_input_guards": [],
+      "mocked_dispatch_argv": [
+        "cwlexec",
+        "-pe",
+        "PATH",
+        "-c",
+        "./SJARACNe/config/config_cwlexec.json",
+        "--outdir",
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_0/output",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl",
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_0/output/sjaracne_workflow.yml"
+      ],
+      "script": "tests/test_sjaracne_lsf_brca_data.sh",
+      "stderr": "",
+      "stdout": "",
+      "stub_execution": "passed; no CWL or scheduler execution",
+      "tested_argv": [
+        "sjaracne",
+        "lsf",
+        "-j",
+        "./SJARACNe/config/config_cwlexec.json",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "5",
+        "-k",
+        "1",
+        "-pb",
+        "1e-7",
+        "--subsample-fraction",
+        "0.8",
+        "-o",
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_0/output",
+        "-tmp",
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_0/scratch/"
+      ],
+      "wrapper_messages": [
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_0/output/sjaracne_workflow.yml",
+        "exp_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp\nprobe_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt\nmin_recurrence: 1\np_value_bootstrap: 1e-7\ndepth: 40\naracne_config_dir:\n  class: Directory\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config\nbootstrap_num: 5\nsubsample_spec: \"80%\"\nfinal_out_dir_name: output",
+        "cwlexec -pe PATH -c ./SJARACNe/config/config_cwlexec.json --outdir /tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_0/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_0/output/sjaracne_workflow.yml",
+        "All done."
+      ]
+    },
+    {
+      "bash_n": "passed",
+      "documented_argv": [
+        "sjaracne",
+        "lsf",
+        "-j",
+        "./SJARACNe/config/config_cwlexec.json",
+        "-e",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp",
+        "-g",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "100",
+        "-k",
+        "6",
+        "-pb",
+        "1e-7",
+        "--subsample-fraction",
+        "0.8",
+        "-o",
+        "./results/lsf_real_data",
+        "-tmp",
+        "./results/tmp_lsf_real_data/"
+      ],
+      "job": {
+        "aracne_config_dir": {
+          "class": "Directory",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config"
+        },
+        "bootstrap_num": 100,
+        "depth": 40,
+        "exp_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp"
+        },
+        "final_out_dir_name": "output",
+        "min_recurrence": 6,
+        "p_value_bootstrap": 1e-07,
+        "probe_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt"
+        },
+        "subsample_spec": "80%"
+      },
+      "missing_input_guards": [
+        {
+          "exit_code": 1,
+          "provided_expression_only": false,
+          "stderr": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/test_sjaracne_lsf_real_data.sh: line 6: SJARACNE_EXPRESSION_FILE: Set SJARACNE_EXPRESSION_FILE to the expression matrix\n"
+        },
+        {
+          "exit_code": 1,
+          "provided_expression_only": true,
+          "stderr": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/test_sjaracne_lsf_real_data.sh: line 7: SJARACNE_HUB_FILE: Set SJARACNE_HUB_FILE to the hub ID list\n"
+        }
+      ],
+      "mocked_dispatch_argv": [
+        "cwlexec",
+        "-pe",
+        "PATH",
+        "-c",
+        "./SJARACNe/config/config_cwlexec.json",
+        "--outdir",
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_1/output",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl",
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_1/output/sjaracne_workflow.yml"
+      ],
+      "script": "tests/test_sjaracne_lsf_real_data.sh",
+      "stderr": "",
+      "stdout": "",
+      "stub_execution": "passed; no CWL or scheduler execution",
+      "tested_argv": [
+        "sjaracne",
+        "lsf",
+        "-j",
+        "./SJARACNe/config/config_cwlexec.json",
+        "-e",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp",
+        "-g",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "100",
+        "-k",
+        "6",
+        "-pb",
+        "1e-7",
+        "--subsample-fraction",
+        "0.8",
+        "-o",
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_1/output",
+        "-tmp",
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_1/scratch/"
+      ],
+      "wrapper_messages": [
+        "/tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_1/output/sjaracne_workflow.yml",
+        "exp_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp\nprobe_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt\nmin_recurrence: 6\np_value_bootstrap: 1e-7\ndepth: 40\naracne_config_dir:\n  class: Directory\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config\nbootstrap_num: 100\nsubsample_spec: \"80%\"\nfinal_out_dir_name: output",
+        "cwlexec -pe PATH -c ./SJARACNe/config/config_cwlexec.json --outdir /tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_1/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/sjaracne-example-check-it7sst9c/scripts/wrapper_1/output/sjaracne_workflow.yml",
+        "All done."
+      ]
+    }
+  ],
+  "native_example": {
+    "argv": [
+      "./SJARACNe/bin/sjaracne.exe",
+      "-i",
+      "./tests/inputs/BRCA100.exp",
+      "-s",
+      "./tests/inputs/BRCA100_TF.txt",
+      "-l",
+      "./tests/inputs/BRCA100_TF.txt",
+      "-N",
+      "40",
+      "-e",
+      "0",
+      "-u",
+      "80",
+      "-M",
+      "pchip",
+      "-p",
+      "0.001",
+      "-o",
+      "brca100_tf_run.adj"
+    ],
+    "check": "static argument contract only; native binary not executed"
+  },
+  "python": {
+    "executable": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/venv/bin/python",
+    "version": "3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]"
+  },
+  "readme_workflows": [
+    {
+      "case": "local_smoke",
+      "documented_argv": [
+        "sjaracne",
+        "local",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "2",
+        "-k",
+        "1",
+        "-o",
+        "./results/tf_smoke",
+        "-tmp",
+        "./results/tmp_smoke/"
+      ],
+      "job": {
+        "aracne_config_dir": {
+          "class": "Directory",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config"
+        },
+        "bootstrap_num": 2,
+        "depth": 40,
+        "exp_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp"
+        },
+        "final_out_dir_name": "output",
+        "min_recurrence": 1,
+        "p_value_bootstrap": 1e-07,
+        "probe_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt"
+        },
+        "subsample_spec": "80%"
+      },
+      "mocked_dispatch_argv": [
+        "cwltool",
+        "--tmpdir-prefix",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/0/scratch/",
+        "--parallel",
+        "--outdir",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/0/output",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/0/output/sjaracne_workflow.yml"
+      ],
+      "tested_argv": [
+        "sjaracne",
+        "local",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "2",
+        "-k",
+        "1",
+        "-o",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/0/output",
+        "-tmp",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/0/scratch/"
+      ],
+      "wrapper_messages": [
+        "/tmp/sjaracne-example-check-it7sst9c/readme/0/output/sjaracne_workflow.yml",
+        "exp_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp\nprobe_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt\nmin_recurrence: 1\np_value_bootstrap: 1e-07\ndepth: 40\naracne_config_dir:\n  class: Directory\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config\nbootstrap_num: 2\nsubsample_spec: \"80%\"\nfinal_out_dir_name: output",
+        "cwltool --tmpdir-prefix /tmp/sjaracne-example-check-it7sst9c/readme/0/scratch/ --parallel --outdir /tmp/sjaracne-example-check-it7sst9c/readme/0/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/sjaracne-example-check-it7sst9c/readme/0/output/sjaracne_workflow.yml",
+        "All done."
+      ]
+    },
+    {
+      "case": "local_tf_pchip",
+      "documented_argv": [
+        "sjaracne",
+        "local",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "100",
+        "--subsample-size",
+        "80",
+        "-M",
+        "pchip",
+        "-pb",
+        "0.001",
+        "-k",
+        "6",
+        "-o",
+        "./results/tf_pchip",
+        "-tmp",
+        "./results/tmp_tf_pchip/"
+      ],
+      "job": {
+        "apmi_null_model": "pchip",
+        "aracne_config_dir": {
+          "class": "Directory",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config"
+        },
+        "bootstrap_num": 100,
+        "depth": 40,
+        "exp_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp"
+        },
+        "final_out_dir_name": "output",
+        "min_recurrence": 6,
+        "p_value_bootstrap": 0.001,
+        "probe_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt"
+        },
+        "subsample_spec": "80"
+      },
+      "mocked_dispatch_argv": [
+        "cwltool",
+        "--tmpdir-prefix",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/1/scratch/",
+        "--parallel",
+        "--outdir",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/1/output",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/1/output/sjaracne_workflow.yml"
+      ],
+      "tested_argv": [
+        "sjaracne",
+        "local",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "100",
+        "--subsample-size",
+        "80",
+        "-M",
+        "pchip",
+        "-pb",
+        "0.001",
+        "-k",
+        "6",
+        "-o",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/1/output",
+        "-tmp",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/1/scratch/"
+      ],
+      "wrapper_messages": [
+        "/tmp/sjaracne-example-check-it7sst9c/readme/1/output/sjaracne_workflow.yml",
+        "exp_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp\nprobe_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt\nmin_recurrence: 6\np_value_bootstrap: 0.001\ndepth: 40\naracne_config_dir:\n  class: Directory\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config\nbootstrap_num: 100\nsubsample_spec: \"80\"\nfinal_out_dir_name: output\napmi_null_model: \"pchip\"",
+        "cwltool --tmpdir-prefix /tmp/sjaracne-example-check-it7sst9c/readme/1/scratch/ --parallel --outdir /tmp/sjaracne-example-check-it7sst9c/readme/1/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/sjaracne-example-check-it7sst9c/readme/1/output/sjaracne_workflow.yml",
+        "All done."
+      ]
+    },
+    {
+      "case": "local_sig_pchip",
+      "documented_argv": [
+        "sjaracne",
+        "local",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_SIG.txt",
+        "-n",
+        "100",
+        "--subsample-size",
+        "80",
+        "-M",
+        "pchip",
+        "-pb",
+        "0.0005",
+        "-k",
+        "6",
+        "-o",
+        "./results/sig_pchip",
+        "-tmp",
+        "./results/tmp_sig_pchip/"
+      ],
+      "job": {
+        "apmi_null_model": "pchip",
+        "aracne_config_dir": {
+          "class": "Directory",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config"
+        },
+        "bootstrap_num": 100,
+        "depth": 40,
+        "exp_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp"
+        },
+        "final_out_dir_name": "output",
+        "min_recurrence": 6,
+        "p_value_bootstrap": 0.0005,
+        "probe_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_SIG.txt"
+        },
+        "subsample_spec": "80"
+      },
+      "mocked_dispatch_argv": [
+        "cwltool",
+        "--tmpdir-prefix",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/2/scratch/",
+        "--parallel",
+        "--outdir",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/2/output",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/2/output/sjaracne_workflow.yml"
+      ],
+      "tested_argv": [
+        "sjaracne",
+        "local",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_SIG.txt",
+        "-n",
+        "100",
+        "--subsample-size",
+        "80",
+        "-M",
+        "pchip",
+        "-pb",
+        "0.0005",
+        "-k",
+        "6",
+        "-o",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/2/output",
+        "-tmp",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/2/scratch/"
+      ],
+      "wrapper_messages": [
+        "/tmp/sjaracne-example-check-it7sst9c/readme/2/output/sjaracne_workflow.yml",
+        "exp_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp\nprobe_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_SIG.txt\nmin_recurrence: 6\np_value_bootstrap: 0.0005\ndepth: 40\naracne_config_dir:\n  class: Directory\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config\nbootstrap_num: 100\nsubsample_spec: \"80\"\nfinal_out_dir_name: output\napmi_null_model: \"pchip\"",
+        "cwltool --tmpdir-prefix /tmp/sjaracne-example-check-it7sst9c/readme/2/scratch/ --parallel --outdir /tmp/sjaracne-example-check-it7sst9c/readme/2/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/sjaracne-example-check-it7sst9c/readme/2/output/sjaracne_workflow.yml",
+        "All done."
+      ]
+    },
+    {
+      "case": "lsf_tf_pchip",
+      "documented_argv": [
+        "sjaracne",
+        "lsf",
+        "-j",
+        "./SJARACNe/config/config_cwlexec.json",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "100",
+        "--subsample-size",
+        "80",
+        "-M",
+        "pchip",
+        "-pb",
+        "0.001",
+        "-k",
+        "6",
+        "-o",
+        "./results/tf_lsf",
+        "-tmp",
+        "./results/tmp_tf_lsf/"
+      ],
+      "job": {
+        "apmi_null_model": "pchip",
+        "aracne_config_dir": {
+          "class": "Directory",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config"
+        },
+        "bootstrap_num": 100,
+        "depth": 40,
+        "exp_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp"
+        },
+        "final_out_dir_name": "output",
+        "min_recurrence": 6,
+        "p_value_bootstrap": 0.001,
+        "probe_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt"
+        },
+        "subsample_spec": "80"
+      },
+      "mocked_dispatch_argv": [
+        "cwlexec",
+        "-pe",
+        "PATH",
+        "-c",
+        "./SJARACNe/config/config_cwlexec.json",
+        "--outdir",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/3/output",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/3/output/sjaracne_workflow.yml"
+      ],
+      "tested_argv": [
+        "sjaracne",
+        "lsf",
+        "-j",
+        "./SJARACNe/config/config_cwlexec.json",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "100",
+        "--subsample-size",
+        "80",
+        "-M",
+        "pchip",
+        "-pb",
+        "0.001",
+        "-k",
+        "6",
+        "-o",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/3/output",
+        "-tmp",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/3/scratch/"
+      ],
+      "wrapper_messages": [
+        "/tmp/sjaracne-example-check-it7sst9c/readme/3/output/sjaracne_workflow.yml",
+        "exp_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp\nprobe_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt\nmin_recurrence: 6\np_value_bootstrap: 0.001\ndepth: 40\naracne_config_dir:\n  class: Directory\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config\nbootstrap_num: 100\nsubsample_spec: \"80\"\nfinal_out_dir_name: output\napmi_null_model: \"pchip\"",
+        "cwlexec -pe PATH -c ./SJARACNe/config/config_cwlexec.json --outdir /tmp/sjaracne-example-check-it7sst9c/readme/3/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/sjaracne-example-check-it7sst9c/readme/3/output/sjaracne_workflow.yml",
+        "All done."
+      ]
+    },
+    {
+      "case": "explicit_legacy_consensus",
+      "documented_argv": [
+        "sjaracne",
+        "local",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "100",
+        "--subsample-size",
+        "80",
+        "-M",
+        "pchip",
+        "-pb",
+        "0.001",
+        "-pc",
+        "1e-5",
+        "-o",
+        "./results/tf_pchip_legacy_consensus",
+        "-tmp",
+        "./results/tmp_tf_pchip_legacy/"
+      ],
+      "job": {
+        "apmi_null_model": "pchip",
+        "aracne_config_dir": {
+          "class": "Directory",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config"
+        },
+        "bootstrap_num": 100,
+        "depth": 40,
+        "exp_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp"
+        },
+        "final_out_dir_name": "output",
+        "p_value_bootstrap": 0.001,
+        "p_value_consensus": 1e-05,
+        "probe_file": {
+          "class": "File",
+          "path": "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt"
+        },
+        "subsample_spec": "80"
+      },
+      "mocked_dispatch_argv": [
+        "cwltool",
+        "--tmpdir-prefix",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/4/scratch/",
+        "--parallel",
+        "--outdir",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/4/output",
+        "/mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/4/output/sjaracne_workflow.yml"
+      ],
+      "tested_argv": [
+        "sjaracne",
+        "local",
+        "-e",
+        "./tests/inputs/BRCA100.exp",
+        "-g",
+        "./tests/inputs/BRCA100_TF.txt",
+        "-n",
+        "100",
+        "--subsample-size",
+        "80",
+        "-M",
+        "pchip",
+        "-pb",
+        "0.001",
+        "-pc",
+        "1e-5",
+        "-o",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/4/output",
+        "-tmp",
+        "/tmp/sjaracne-example-check-it7sst9c/readme/4/scratch/"
+      ],
+      "wrapper_messages": [
+        "/tmp/sjaracne-example-check-it7sst9c/readme/4/output/sjaracne_workflow.yml",
+        "exp_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100.exp\nprobe_file:\n  class: File\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/tests/inputs/BRCA100_TF.txt\np_value_consensus: 1e-05\np_value_bootstrap: 0.001\ndepth: 40\naracne_config_dir:\n  class: Directory\n  path: /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/config\nbootstrap_num: 100\nsubsample_spec: \"80\"\nfinal_out_dir_name: output\napmi_null_model: \"pchip\"",
+        "cwltool --tmpdir-prefix /tmp/sjaracne-example-check-it7sst9c/readme/4/scratch/ --parallel --outdir /tmp/sjaracne-example-check-it7sst9c/readme/4/output /mnt/d/GitHub/SJARACNe-min-recurrence-develop/SJARACNe/cwl/sjaracne_workflow.cwl /tmp/sjaracne-example-check-it7sst9c/readme/4/output/sjaracne_workflow.yml",
+        "All done."
+      ]
+    }
+  ],
+  "runtime_identity": {
+    "allowed_documentation_and_manual_script_paths": [
+      ".gitattributes",
+      "README.md",
+      "tests/test_sjaracne_lsf_brca_data.sh",
+      "tests/test_sjaracne_lsf_real_data.sh"
+    ],
+    "baseline_engine_commit": "f512ef3a29c661e7cdd7b3b2c4027285d8d19fa3",
+    "changed_tracked_paths": [
+      ".gitattributes",
+      "README.md",
+      "tests/test_sjaracne_lsf_brca_data.sh",
+      "tests/test_sjaracne_lsf_real_data.sh"
+    ],
+    "git_normalization": {
+      "per_command_config": [
+        "core.autocrlf=true",
+        "core.fileMode=false"
+      ],
+      "scope": "per-command only; no repository or global configuration written",
+      "windows_drive_pointer_bridge": true
+    },
+    "inspected_head_commit": "11326f324f66c201d58a76a6b25e8802218ccb22",
+    "narrow_attributes_exception": {
+      "baseline_blob_sha256": "01261b0659916dd446c36648512ef38d91cf48606a557642cf45e72ff1e0eabc",
+      "checked_blob_sha256": "54d13320e9f5a428921797f76100ffe0f2cfd471dd791602ec8df2ef1d1e4001",
+      "exact_permitted_append": "\n# Keep the runnable LSF examples executable under Bash after Windows checkouts.\ntests/test_sjaracne_lsf_brca_data.sh text eol=lf\ntests/test_sjaracne_lsf_real_data.sh text eol=lf\n",
+      "path": ".gitattributes",
+      "scope": "exact baseline bytes preserved; only two manual LSF scripts receive LF rules"
+    },
+    "runtime_tree_listing_sha256": "7d4e402120b7ee426969031f1e21ef82ca29b32737b25b2e40407b7549d0bdfb",
+    "status": "all other tracked blobs identical to regression baseline",
+    "unchanged_runtime_tracked_paths": 105
+  },
+  "scope": "argument/job construction only; no inference, CWL, LSF or network QC",
+  "source_hashes": {
+    ".gitattributes": "783c44cdd81de4eeb75db56c96401f1c9c186d81d3916e6851e76c6df4ed1833",
+    "README.md": "b591b0c951a4b840f975258dd60846ce58ed4a38bdbe31886b302d7a8613363c",
+    "tests/test_sjaracne_lsf_brca_data.sh": "463f9f787915e8dff3a9fa63bbc5b6d0c7d6144a04cfbe4b5f2c545a01f013ef",
+    "tests/test_sjaracne_lsf_real_data.sh": "d3c7fd68c93cb1baf4203eee5acc3c38b213c83c793341aee79bade71babcb92"
+  },
+  "status": "passed"
+}

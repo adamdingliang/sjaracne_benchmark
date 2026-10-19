@@ -1,0 +1,91 @@
+{"argv": ["make", "-C", "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe", "-j", "12", "all"], "cwd": "/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source", "log": "build.log", "name": "build", "started_at_utc": "2026-10-19T01:06:19.598541+00:00", "status": "running"}
+make: Entering directory '/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe'
+Compiling src/apmi.cpp...
+Compiling src/matrix.cpp...
+Compiling src/apmi_null_model.cpp...
+Compiling src/main.cpp...
+Compiling src/param.cpp...
+Compiling src/util.cpp...
+Compiling ../tools/apmi_null_generator.cpp...
+g++: warning: src: linker input file unused because linking not done
+src/param.cpp: In function ‘bool equalIgnoreCase(std::string, std::string)’:
+src/param.cpp:37:19: warning: comparison of integer expressions of different signedness: ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   37 |    if (b.length() != len)
+      |        ~~~~~~~~~~~^~~~~~
+src/param.cpp: In function ‘void checkParameter(Parameter&)’:
+src/param.cpp:135:13: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const std::__cxx11::basic_string<char>::size_type’ {aka ‘const long unsigned int’} [-Wsign-compare]
+  135 |       if (b == std::string::npos || b < len - 1)
+      |           ~~^~~~~~~~~~~~~~~~~~~~
+src/param.cpp: In function ‘std::string getFileName(const std::string&)’:
+src/param.cpp:361:10: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const std::__cxx11::basic_string<char>::size_type’ {aka ‘const long unsigned int’} [-Wsign-compare]
+  361 |    if (b == std::string::npos)
+      |        ~~^~~~~~~~~~~~~~~~~~~~
+src/param.cpp:366:10: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const std::__cxx11::basic_string<char>::size_type’ {aka ‘const long unsigned int’} [-Wsign-compare]
+  366 |    if (b != std::string::npos)
+      |        ~~^~~~~~~~~~~~~~~~~~~~
+src/param.cpp:374:10: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const std::__cxx11::basic_string<char>::size_type’ {aka ‘const long unsigned int’} [-Wsign-compare]
+  374 |    if (c != std::string::npos)
+      |        ~~^~~~~~~~~~~~~~~~~~~~
+g++: warning: src: linker input file unused because linking not done
+g++: warning: src: linker input file unused because linking not done
+src/matrix.cpp:45:14: warning: ‘template<class _Arg1, class _Arg2, class _Result> struct std::binary_function’ is deprecated [-Wdeprecated-declarations]
+   45 | typedef std::binary_function<ArrayValuePair, ArrayValuePair, bool>
+      |              ^~~~~~~~~~~~~~~
+In file included from /usr/include/c++/13/string:49,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/istream:40,
+                 from /usr/include/c++/13/fstream:40,
+                 from src/matrix.cpp:15:
+/usr/include/c++/13/bits/stl_function.h:131:12: note: declared here
+  131 |     struct binary_function
+      |            ^~~~~~~~~~~~~~~
+src/matrix.cpp: In member function ‘void Matrix::writeGeneLine(std::ostream&, const Microarray_Set&, int)’:
+src/matrix.cpp:479:46: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+  479 |        (!writeEmptyGenes || !marker.isActive && !marker.isControl))
+      |                             ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+src/matrix.cpp:488:27: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+  488 |       if (writeTriangular && id <= geneId ||
+      |           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+src/matrix.cpp: In member function ‘void Matrix::writeGeneList(const Microarray_Set&, const std::string&, int)’:
+src/matrix.cpp:523:46: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+  523 |        (!writeEmptyGenes || !marker.isActive && !marker.isControl))
+      |                             ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+src/matrix.cpp: In member function ‘double Matrix::getNodeMI(int, int)’:
+src/matrix.cpp:682:19: warning: comparison of integer expressions of different signedness: ‘std::vector<std::vector<AdjacencyEdge> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  682 |    if (nmv.size() > geneId1 && nmv[geneId1].size() > 0)
+      |        ~~~~~~~~~~~^~~~~~~~~
+src/matrix.cpp:690:24: warning: comparison of integer expressions of different signedness: ‘std::vector<std::vector<AdjacencyEdge> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  690 |    else if (nmv.size() > geneId2 && nmv[geneId2].size() > 0)
+      |             ~~~~~~~~~~~^~~~~~~~~
+src/matrix.cpp: In member function ‘bool Microarray_Set::isSameGene(int, int) const’:
+src/matrix.cpp:930:63: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+  930 |    return (i == j || markerset[i].label == markerset[j].label &&
+src/matrix.cpp: In member function ‘void Microarray_Set::Set_ColHeader(int, const std::string&)’:
+src/matrix.cpp:985:13: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::__cxx11::basic_string<char> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  985 |    while (i >= header.size())
+      |           ~~^~~~~~~~~~~~~~~~
+src/matrix.cpp: In member function ‘void Microarray_Set::Set_Marker(int, const Marker&)’:
+src/matrix.cpp:995:13: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Marker>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  995 |    while (i >= markerset.size())
+      |           ~~^~~~~~~~~~~~~~~~~~~
+src/matrix.cpp: In member function ‘void Microarray_Set::Set_Probe(int, int, Probe)’:
+src/matrix.cpp:1006:13: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Probe> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 1006 |    while (i >= uarrays.size())
+      |           ~~^~~~~~~~~~~~~~~~~
+src/matrix.cpp:1009:13: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Probe>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 1009 |    while (j >= uarrays[i].size())
+      |           ~~^~~~~~~~~~~~~~~~~~~~
+src/matrix.cpp: In member function ‘void Microarray_Set::createEdgeMatrix(int, Matrix&, double, int, double, int, const std::vector<int>&, const std::vector<int>*) const’:
+src/matrix.cpp:1843:38: warning: comparison of integer expressions of different signedness: ‘std::vector<std::vector<AdjacencyEdge> >::size_type’ {aka ‘long unsigned int’} and ‘const __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type’ {aka ‘const int’} [-Wsign-compare]
+ 1843 |             while (matrix.nmv.size() <= ids[i])
+g++: warning: src: linker input file unused because linking not done
+Linking...
+		Linking bin/apmi_null_generator.exe
+g++: warning: src: linker input file unused because linking not done
+g++: warning: src: linker input file unused because linking not done
+g++: warning: src: linker input file unused because linking not done
+Linking...
+		Linking bin/sjaracne.exe
+make: Leaving directory '/home/adam/sjaracne-regression/pr3-f512ef3-20261018-r2/source/SJARACNe'
