@@ -1,0 +1,4 @@
+{"argv": ["/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python", "-m", "pip", "install", "--ignore-installed", "--no-index", "--no-deps", "--no-compile", "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/wheel/sjaracne-0.2.1-py3-none-any.whl"], "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019", "log": "wheel_install.log", "name": "wheel_install", "started_at_utc": "2026-10-20T03:21:17.542328+00:00", "status": "running"}
+Processing ./wheel/sjaracne-0.2.1-py3-none-any.whl
+Installing collected packages: sjaracne
+Successfully installed sjaracne-0.2.1

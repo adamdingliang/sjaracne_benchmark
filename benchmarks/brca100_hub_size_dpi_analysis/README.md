@@ -1,15 +1,59 @@
-# BRCA100 hub-list size and DPI pruning
+# BRCA100 hub-list size and DPI pruning: historical August 2026 study
+
+The numerical results below are the unchanged **August 25/26 historical
+benchmark**, not a run of the current PCHIP workflow. This documentation refresh
+does not rerun inference or rewrite the frozen evidence.
 
 ## Question
 
-Does the number of supplied hub genes change DPI pruning under the current
-SJARACNe workflow, even when the expression matrix, target universe,
+Did the number of supplied hub genes change DPI pruning under the recorded
+historical SJARACNe workflow, even when the expression matrix, target universe,
 per-subsample AP-MI cutoff, samples, and other inference parameters are fixed?
 
-The answer in this BRCA100 analysis is **yes**. Hub-list size is a material
-technical covariate of DPI pruning. This does not establish that the additional
-edges removed with a larger list are biologically wrong, nor does it identify
-an optimal hub count.
+The answer in this nested-panel BRCA100 analysis is **yes**. Hub-list size was a
+material technical covariate of DPI pruning. This does not establish that the
+additional edges removed with a larger list are biologically wrong, nor does it
+identify an optimal hub count.
+
+## Historical cutoffs and current scope
+
+Both analyses used base engine commit
+`32fe12c168ef80291e487dbf4045f430b9c5d90a` plus frozen **dirty diagnostic
+snapshots**, not that clean commit alone:
+
+- pilot source-tree fingerprint:
+  `3be6f0c75cf905f983d789410542adda388d07bc0231b4439371e0dd3f22169d`;
+- witness-screen source-tree fingerprint:
+  `0af71bd617b5c1d7025a648c6c9b7afcc2b50a281cd8a9028e319d773427ba6b`.
+
+The [pilot design](../brca100_hub_size_dpi_pilot/results_2026-08-25/pilot_design.json)
+and [screen design](../brca100_kdpi_witness_screen/results_2026-08-26/screen_design.json)
+record the historical estimator-matched **GPD-model** cutoffs at `m=80` and
+`Npar=40`: TF `p_b=0.001`, MI cutoff `0.14732247558240297`; SIG
+`p_b=0.0005`, MI cutoff `0.1644671599536221`. The exact-size null-model SHA256
+was `e3a8522682a8ea239821aaa10b12db72d00e07bfdcad43599d8e76a06be80944`.
+These are neither the earlier affine cutoff function nor the current empirical
+PCHIP cutoffs.
+
+The [current-PCHIP full-panel refresh](../brca100_pchip_refresh/results_2026-10-17/RESULTS.md)
+used TF `0.14783093032516142` and SIG `0.16445222440051604` at the same
+probabilities. It did not replicate this nested-panel study. PCHIP changes the
+MI cutoff, not the DPI decision rule; that calibration change does not invalidate
+the historical finding or require rerunning it merely to retain that label.
+It can change candidate networks, so none of the pruning fractions below is a
+measurement of current-PCHIP hub-size sensitivity.
+
+Fork PRs #1 (PCHIP), #2 (BRCA100 threshold-sweep evidence; formerly upstream #72), and #3
+(minimum recurrence; formerly upstream #73) are now merged into fork `develop`
+(`04ff6ae097d4c9ac1e7ea3d5060aa59f64a24eea`). They are not pending
+dependencies. Porting and testing PR #4's diagnostics on that current engine is
+engineering validation, with a separate
+test work root; it does not regenerate or replace these historical scientific
+runs.
+
+See the [current diagnostic-port software validation](../../validation/pr4_dpi_diagnostics_2026-10-19/VALIDATION.md)
+for the pinned candidate, baseline and compatibility checks. That is a separate
+engineering check, not a PCHIP replication of the pruning-rate tables below.
 
 ## Why hub-list size can create technical bias
 
@@ -29,8 +73,8 @@ I(A;C)\gt T_{AB}
 I(B;C)\gt T_{AB},
 $$
 
-and the annotation-protection rule permits $C$. The current rule is therefore
-a one-witness gate:
+and the annotation-protection rule permits $C$. The recorded native rule is
+therefore a one-witness gate:
 
 $$
 \text{prune }A-B
@@ -56,9 +100,12 @@ channels:
    that list therefore also converts more potential intermediaries into
    eligible annotated witnesses.
 
-The resulting opportunity effect is directional: when one qualifying witness
-is sufficient, a run with more available and eligible intermediaries has more
-ways to remove a fixed candidate edge.
+When the compared edge and lookup values are otherwise unchanged, an additional
+eligible qualifying intermediary supplies another way to remove that edge.
+This is not a universal monotonicity theorem for nested hub lists: adding a
+source row can change a direct-versus-reverse lookup, and the audit did not
+establish identical candidate-edge identities and MI values across panels.
+The increases below are observed effects of the recorded nested-panel design.
 
 ~~~text
 Candidate edge:        A -------- B       weaker
@@ -74,8 +121,8 @@ Larger panel:  C becomes available and eligible
 ~~~
 
 This is a technical context effect because the decision for $A-B$ can change
-when other hubs are added, without changing the samples or the pre-DPI
-$A-B$ edge. The additional witness can still be biologically meaningful.
+when other hubs are added, even if the samples and the pre-DPI $A-B$ edge are
+unchanged. The additional witness can still be biologically meaningful.
 The analysis establishes sensitivity to the supplied opportunity set, not
 edge-level biological error.
 
@@ -84,8 +131,8 @@ edge-level biological error.
 The workflow-faithful pilot held the 28,278-gene BRCA100 expression and target
 universe fixed. It used deterministic nested TF and SIG panels, the same
 80-of-100 sample indices at each matched seed, $N_{\mathrm{par}}=40$,
-$\epsilon_{\mathrm{DPI}}=0$, and the operating-point AP-MI filters from PR
-#72. The same panel was supplied to **-s** and **-l**.
+$\epsilon_{\mathrm{DPI}}=0$, and the historical estimator-matched GPD-model
+AP-MI filters specified above. The same panel was supplied to **-s** and **-l**.
 
 | Network | Small hubs | Middle hubs | Full hubs | Median pruning fraction over 100 seeds, small / middle / full | Difference of arm medians, full minus small |
 |---|---:|---:|---:|---:|---:|
@@ -215,9 +262,11 @@ topology check:
 | TF | 326 / 1,304 / 2,608 | 61,621 / 227,784 / 416,408 | 115 / 113 / 110.5 |
 | SIG | 1,335 / 5,340 / 10,680 | 127,581 / 424,006 / 739,958 | 48 / 49 / 47 |
 
-The full-size counts exactly reproduced the independent anchors used in PR
-#73: 416,408 TF edges and 739,958 SIG edges. This package used an independent
-benchmark aggregator rather than the implementation proposed in PR #73.
+The full-size counts exactly reproduced the historical independent anchors used
+for upstream PR #73 (now merged fork PR #3): 416,408 TF edges and 739,958 SIG
+edges. This package used a **historical benchmark-only direct support
+aggregator**, not the production minimum-recurrence implementation from fork
+PR #3. It is not validation of that production implementation.
 Consensus filtering cannot recover edges that DPI already removed, so
 $K_{\mathrm{edge}}$ does not correct the upstream panel-size dependence.
 
@@ -240,16 +289,17 @@ but that is a different objective.
 The observed size trajectory is systematic rather than seed noise. In the
 fixed-source audit, expanding the surrounding panel changed pruning while the
 samples, evaluated source population, and every matched source-row pre-DPI edge
-count remained fixed. Therefore hub-list size is a technical exposure of the
-current method. Because edge identities and MI values were not independently
+count remained fixed. Therefore hub-list size was a technical exposure in this
+historical design. Because edge identities and MI values were not independently
 hashed across panels, this audit should not be read as proving that the input
 candidate-edge sets were byte-identical.
 
 Calling every extra removal a biological error would overstate the evidence.
 Some added intermediaries may reveal genuine indirect relationships. The bias
-risk is that larger panels receive systematically more opportunities to find
-at least one qualifying witness, so pruning fractions and retained networks
-are not directly comparable across panels as if hub size were biologically
+risk is that changing the surrounding panel changes the opportunities and stored
+lookups used to find a qualifying witness. The observed larger panels had more
+pruning, but that is not guaranteed for every panel expansion. Pruning fractions
+and retained networks should not be compared as if hub size were biologically
 neutral.
 
 In particular, raw TF-versus-SIG pruning differences cannot be attributed only
@@ -270,13 +320,16 @@ This analysis supports the following limited conclusions:
 - do not claim an optimal hub count or extrapolate these whole-transcriptome
   BRCA100 results to Xenium 5k.
 
-The analysis identifies a technical dependency. It does not yet provide a
-validated correction. Dynamic $\epsilon_{\mathrm{DPI}}$ testing and
-edge-level biological adjudication are intentionally outside this PR.
+Under the recorded nested-panel design and historical cutoffs, hub context
+materially changed DPI pruning. This is a reason to record and match panel
+context, not a validated correction or a numerical prediction for current
+PCHIP. Dynamic $\epsilon_{\mathrm{DPI}}$ was not tested; dynamic-epsilon work,
+additional fixed-epsilon studies, and edge-level biological adjudication are
+outside this PR's scope.
 
 ## Audit instrumentation
 
-The native changes in this branch expose measurements; they do not change the
+The historical native instrumentation exposed measurements without changing the
 default DPI decision rule:
 
 - every run emits one machine-readable **DPI_STATS** record containing exact
@@ -291,10 +344,11 @@ The path-collision guard compares the path strings supplied to the CLI; it does
 not resolve lexical aliases or symbolic links. The diagnostic should therefore
 be written to a dedicated output path.
 
-All 30 witness-audit runs exactly reproduced the frozen native
+All 30 historical witness-audit runs exactly reproduced the frozen native
 $K_{\mathrm{DPI}}=1$ sample selection, DPI totals, and adjacency data. The
 sidecar is diagnostic output, not a production $K_{\mathrm{DPI}}\gt 1$ pruning
-option.
+option. Current-engine diagnostic-port tests must be reported separately; their
+success would not turn these runs into current-PCHIP scientific results.
 
 ## Evidence and provenance
 
@@ -303,8 +357,8 @@ option.
 - [Witness diagnostic and ten-seed fixed-source screen](../brca100_kdpi_witness_screen/)
 - [Compact witness-screen evidence](../brca100_kdpi_witness_screen/results_2026-08-26/)
 
-All required validation gates passed in both analyses. The pilot contains 600
-matched inference runs; the witness screen contains 30 matched candidate runs
+All required historical validation gates passed in both analyses. The pilot
+contains 600 matched inference runs; the witness screen contains 30 matched candidate runs
 and 300 source-group/threshold analysis rows. The frozen manifests record the
 exact source snapshots, binaries, panels, samples, inputs, commands, and
 artifact hashes. Large adjacency files and logs remain in the recorded external

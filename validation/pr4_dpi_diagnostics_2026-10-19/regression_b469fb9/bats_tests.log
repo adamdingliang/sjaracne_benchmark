@@ -1,0 +1,6 @@
+{"argv": ["/home/adam/sjaracne-regression/pr4-b469fb9-20261019/deps/bats/usr/bin/bats", "--formatter", "tap", "tests"], "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source", "log": "bats_tests.log", "name": "bats_tests", "started_at_utc": "2026-10-20T03:22:49.290604+00:00", "status": "running"}
+1..4
+ok 1 copy files from A to B
+ok 2 int=0 to int[]
+ok 3 int=3 to int[1, 2, 3]
+ok 4 int to string array

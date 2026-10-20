@@ -1,0 +1,2 @@
+{"argv": ["/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool", "--version"], "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019", "log": "cwltool_version.log", "name": "cwltool_version", "started_at_utc": "2026-10-20T03:21:25.321570+00:00", "status": "running"}
+/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool 3.1.20211107152837

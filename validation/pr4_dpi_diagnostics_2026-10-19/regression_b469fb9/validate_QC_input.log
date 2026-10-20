@@ -1,0 +1,4 @@
+{"argv": ["/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool", "--validate", "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/QC_input.cwl"], "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019", "log": "validate_QC_input.log", "name": "validate_QC_input", "started_at_utc": "2026-10-20T03:21:27.291260+00:00", "status": "running"}
+[1;30mINFO[0m /home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool 3.1.20211107152837
+[1;30mINFO[0m Resolved '/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/QC_input.cwl' to 'file:///home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/QC_input.cwl'
+/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/QC_input.cwl is valid CWL.

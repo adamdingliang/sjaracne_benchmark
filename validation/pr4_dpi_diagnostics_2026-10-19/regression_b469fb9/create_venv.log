@@ -1,0 +1,1 @@
+{"argv": ["/mnt/d/GitHub/SJARACNe-pr67-develop/SJARACNe/build/pchip-test-env/bin/python", "-m", "venv", "--without-pip", "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv"], "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019", "log": "create_venv.log", "name": "create_venv", "started_at_utc": "2026-10-20T03:20:24.049454+00:00", "status": "running"}

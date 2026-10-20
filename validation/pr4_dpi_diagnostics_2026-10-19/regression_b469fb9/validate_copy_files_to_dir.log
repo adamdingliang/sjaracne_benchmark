@@ -1,0 +1,4 @@
+{"argv": ["/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool", "--validate", "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/copy_files_to_dir.cwl"], "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019", "log": "validate_copy_files_to_dir.log", "name": "validate_copy_files_to_dir", "started_at_utc": "2026-10-20T03:21:31.882461+00:00", "status": "running"}
+[1;30mINFO[0m /home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool 3.1.20211107152837
+[1;30mINFO[0m Resolved '/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/copy_files_to_dir.cwl' to 'file:///home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/copy_files_to_dir.cwl'
+/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/copy_files_to_dir.cwl is valid CWL.

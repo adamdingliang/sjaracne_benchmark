@@ -1,0 +1,10 @@
+{"argv": ["/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python", "-m", "pip", "wheel", "--no-index", "--no-deps", "--no-build-isolation", "--wheel-dir", "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/wheel", "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source"], "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source", "log": "wheel_build.log", "name": "wheel_build", "started_at_utc": "2026-10-20T03:21:02.506446+00:00", "status": "running"}
+Processing /home/adam/sjaracne-regression/pr4-b469fb9-20261019/source
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: SJARACNe
+  Building wheel for SJARACNe (setup.py): started
+  Building wheel for SJARACNe (setup.py): finished with status 'done'
+  Created wheel for SJARACNe: filename=sjaracne-0.2.1-py3-none-any.whl size=2254952 sha256=7ebbc964aba25dd1fdd0acbddfe0b24838c987ce3c545795f34f84b14d83b92f
+  Stored in directory: /home/adam/sjaracne-regression/pr4-b469fb9-20261019/tmp/pip-ephem-wheel-cache-gm210zfu/wheels/6a/2c/82/8266b17e047936749bd04c32ce2adedfc0e54524cc2ce80760
+Successfully built SJARACNe

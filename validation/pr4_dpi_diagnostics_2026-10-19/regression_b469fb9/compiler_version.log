@@ -1,0 +1,6 @@
+{"argv": ["g++", "--version"], "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019", "log": "compiler_version.log", "name": "compiler_version", "started_at_utc": "2026-10-20T03:20:37.505797+00:00", "status": "running"}
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+

@@ -1,0 +1,771 @@
+{
+  "scope": "additional lightweight correlated-hub inference diagnostic differential",
+  "fixture_change": "fixed selected source indices [0,3,6]; all other inputs unchanged",
+  "baseline": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/baseline/SJARACNe/bin/sjaracne.exe",
+  "baseline_sha256": "c8477b6a0209374a1ec98d005e3723d2a887dc4b5317cde1aa02a192e1a8ddc4",
+  "candidate": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/bin/sjaracne.exe",
+  "candidate_sha256": "b2eb2e296e8d144cfd7f43e4e9dedbb0e5f13b2bb9f593817367e18d8e4f904a",
+  "harness_sha256": "bc1f4857c0a4ff4b3e8767c7adb6559dd75fd6a11fad5c4bf7a4a9034a00245d",
+  "supplementary_script_sha256": "21fa90426ec92feb58cd25a8e742279710f1c6702841c93b58b7bc182814d2f2",
+  "affine_config_sha256": "fb1694b1d4c9d9965a6ab2f3ee036e6387bebd94d2d8624102fd290b5e9f551e",
+  "total_cases": 12,
+  "cases": [
+    {
+      "name": "correlated_pchip_p0.001_seed17_e0.0",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 1,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "cf0b05833b3d9e9a2a0194b255d23d88bf70c8d1ba27916050033de89ad2acc2",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/000_correlated_pchip_p0.001_seed17_e0.0/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/000_correlated_pchip_p0.001_seed17_e0.0/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/000_correlated_pchip_p0.001_seed17_e0.0/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "1"
+      },
+      "model": "pchip"
+    },
+    {
+      "name": "correlated_pchip_p0.001_seed17_e0.15",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 1,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "a4c1356f63c285560e8132725e1cc78b597d3d9364d1999161379ee91161a7e4",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0.14999999999999999",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/001_correlated_pchip_p0.001_seed17_e0.15/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/001_correlated_pchip_p0.001_seed17_e0.15/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/001_correlated_pchip_p0.001_seed17_e0.15/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "1"
+      },
+      "model": "pchip"
+    },
+    {
+      "name": "correlated_pchip_p0.001_seed23_e0.0",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 2,
+        "post_edges": 7,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "531af1d9eb18081f21fbef977e8df6dc817a51e0f0a4097dacc62d9da981669f",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/002_correlated_pchip_p0.001_seed23_e0.0/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/002_correlated_pchip_p0.001_seed23_e0.0/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/002_correlated_pchip_p0.001_seed23_e0.0/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "2"
+      },
+      "model": "pchip"
+    },
+    {
+      "name": "correlated_pchip_p0.001_seed23_e0.15",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 1,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "9376e209315ec300b1818b7f1fbfccf939f73394f8067b4115b7423e3a7d4b78",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0.14999999999999999",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/003_correlated_pchip_p0.001_seed23_e0.15/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/003_correlated_pchip_p0.001_seed23_e0.15/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/003_correlated_pchip_p0.001_seed23_e0.15/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "1"
+      },
+      "model": "pchip"
+    },
+    {
+      "name": "correlated_pchip_p0.0005_seed17_e0.0",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 8,
+        "pruned_edges": 0,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "4d38293bcf707ef1302ef5cc9af7b5b79ed99512a4f94bd7265177792aa3a345",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 2,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/004_correlated_pchip_p0.0005_seed17_e0.0/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/004_correlated_pchip_p0.0005_seed17_e0.0/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/004_correlated_pchip_p0.0005_seed17_e0.0/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "0"
+      },
+      "model": "pchip"
+    },
+    {
+      "name": "correlated_pchip_p0.0005_seed17_e0.15",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 8,
+        "pruned_edges": 0,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "5425b0b66ff941fc9348dedb38f389e4dfcb668e5b2fa8a10ca4643aceba4fb3",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 2,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0.14999999999999999",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/005_correlated_pchip_p0.0005_seed17_e0.15/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/005_correlated_pchip_p0.0005_seed17_e0.15/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/005_correlated_pchip_p0.0005_seed17_e0.15/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "0"
+      },
+      "model": "pchip"
+    },
+    {
+      "name": "correlated_pchip_p0.0005_seed23_e0.0",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 2,
+        "post_edges": 7,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "69983827fdfbf3db81dec94a5074f508fcf59df96563d1e8465e05a0f9011364",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/006_correlated_pchip_p0.0005_seed23_e0.0/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/006_correlated_pchip_p0.0005_seed23_e0.0/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/006_correlated_pchip_p0.0005_seed23_e0.0/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "2"
+      },
+      "model": "pchip"
+    },
+    {
+      "name": "correlated_pchip_p0.0005_seed23_e0.15",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 1,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "ba9c507a9a2aa20add3e61c0301159ef6182b3fcc82170dd089ed25e1548276d",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0.14999999999999999",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/007_correlated_pchip_p0.0005_seed23_e0.15/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/007_correlated_pchip_p0.0005_seed23_e0.15/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/007_correlated_pchip_p0.0005_seed23_e0.15/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "1"
+      },
+      "model": "pchip"
+    },
+    {
+      "name": "correlated_legacy_e0.0",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 1,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "01d61f2d2d8ebf0ac30b852d0b16257132f1368eea2c3008229bc9c4a0db125f",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/008_correlated_legacy_e0.0/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/008_correlated_legacy_e0.0/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/008_correlated_legacy_e0.0/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "1"
+      },
+      "model": "legacy"
+    },
+    {
+      "name": "correlated_legacy_e0.15",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 1,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "35275a8651a63cc06f0cf4a0f492411b549398b1db81077723a3241c318b4b9d",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0.14999999999999999",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/009_correlated_legacy_e0.15/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/009_correlated_legacy_e0.15/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/009_correlated_legacy_e0.15/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "1"
+      },
+      "model": "legacy"
+    },
+    {
+      "name": "correlated_explicit_e0.0",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 1,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "aefab9b167b0c2efabbe0522b69c20c7f1f3c5e1070f0afbb722eaa27bd3da93",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/010_correlated_explicit_e0.0/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/010_correlated_explicit_e0.0/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/010_correlated_explicit_e0.0/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "1"
+      },
+      "model": "explicit"
+    },
+    {
+      "name": "correlated_explicit_e0.15",
+      "passed": true,
+      "inferred": true,
+      "statistics": {
+        "pre_edges": 9,
+        "pruned_edges": 1,
+        "post_edges": 8,
+        "dpi_applied": 1
+      },
+      "witness_checked": true,
+      "independent_triple_oracle": false,
+      "network_sha256": "dffcc8ed40e364bce871d702761d2ba33bad15f36eeede1b4a970adab34f55ba",
+      "rows": [
+        {
+          "source_index": 0,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 3,
+          "pre_edges": 3,
+          "witnesses_ge_1": 0,
+          "witnesses_ge_2": 0,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        },
+        {
+          "source_index": 6,
+          "pre_edges": 3,
+          "witnesses_ge_1": 1,
+          "witnesses_ge_2": 1,
+          "witnesses_ge_3": 0,
+          "witnesses_ge_5": 0,
+          "witnesses_ge_10": 0
+        }
+      ],
+      "metadata": {
+        "schema": "sjaracne.dpi_witness_threshold_counts.v1",
+        "graph_state": "unchanged pre-DPI edges after native K=1 marking",
+        "count_unit": "source-target edges",
+        "count_semantics": "edges having at least the indicated number of distinct eligible intermediates",
+        "source_index_basis": "zero-based expression-row index",
+        "dpi_epsilon": "0.14999999999999999",
+        "source_mode": "selected rows",
+        "source_count": "3",
+        "annotated_gene_count": "0",
+        "input_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/011_correlated_explicit_e0.15/input.exp",
+        "input_adjacency_file": "",
+        "network_output_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/011_correlated_explicit_e0.15/witness.adj",
+        "subnetwork_file": "/mnt/d/GitHub/_validation/pr4_refresh_20261019/inferred_pruning/011_correlated_explicit_e0.15/sources.txt",
+        "annotation_file": "",
+        "k1_pruned_edges": "1"
+      },
+      "model": "explicit"
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "binary_invocations": 48,
+  "elapsed_seconds": 1.0931061599999907,
+  "nonzero_pruning_cases": [
+    "correlated_pchip_p0.001_seed17_e0.0",
+    "correlated_pchip_p0.001_seed17_e0.15",
+    "correlated_pchip_p0.001_seed23_e0.0",
+    "correlated_pchip_p0.001_seed23_e0.15",
+    "correlated_pchip_p0.0005_seed23_e0.0",
+    "correlated_pchip_p0.0005_seed23_e0.15",
+    "correlated_legacy_e0.0",
+    "correlated_legacy_e0.15",
+    "correlated_explicit_e0.0",
+    "correlated_explicit_e0.15"
+  ],
+  "nonzero_pchip_pruning_cases": [
+    "correlated_pchip_p0.001_seed17_e0.0",
+    "correlated_pchip_p0.001_seed17_e0.15",
+    "correlated_pchip_p0.001_seed23_e0.0",
+    "correlated_pchip_p0.001_seed23_e0.15",
+    "correlated_pchip_p0.0005_seed23_e0.0",
+    "correlated_pchip_p0.0005_seed23_e0.15"
+  ],
+  "required_nonzero_pchip_pruning_observed": true
+}

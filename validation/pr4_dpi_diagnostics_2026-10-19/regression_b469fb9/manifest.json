@@ -1,0 +1,688 @@
+{
+  "baseline": {
+    "archive_sha256": "b2ab6311c9ea941eda1536c4747956ad47b50a1d035b65cdd0d39c669978e269",
+    "changed_tracked_paths": [
+      "README.md",
+      "SJARACNe/src/main.cpp",
+      "SJARACNe/src/matrix.cpp",
+      "SJARACNe/src/matrix.h",
+      "SJARACNe/src/param.cpp",
+      "SJARACNe/src/param.h",
+      "tests/test_sjaracne_adjacency_input.py"
+    ],
+    "commit": "04ff6ae097d4c9ac1e7ea3d5060aa59f64a24eea",
+    "native_sha256": "c8477b6a0209374a1ec98d005e3723d2a887dc4b5317cde1aa02a192e1a8ddc4",
+    "unchanged_tracked_paths": 102
+  },
+  "bats_package": {
+    "expected_sha256": "11304638193dddce946021d665a275a6c80a0c7188eb5ba38d82661ded1e8f18",
+    "path": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/deps/bats_1.10.0-1_all.deb",
+    "sha256": "11304638193dddce946021d665a275a6c80a0c7188eb5ba38d82661ded1e8f18"
+  },
+  "bats_test_summary": {
+    "expected": 4,
+    "failed": 0,
+    "passed": 4,
+    "skipped": 0
+  },
+  "binaries_after_tests": {
+    "null_generator": "b2b39255fa8f1e0bfe4d61b2c056a51e3816bcd4463a335a8f5a40be5b033304",
+    "sjaracne": "b2eb2e296e8d144cfd7f43e4e9dedbb0e5f13b2bb9f593817367e18d8e4f904a"
+  },
+  "binaries_before_tests": {
+    "null_generator": "b2b39255fa8f1e0bfe4d61b2c056a51e3816bcd4463a335a8f5a40be5b033304",
+    "sjaracne": "b2eb2e296e8d144cfd7f43e4e9dedbb0e5f13b2bb9f593817367e18d8e4f904a"
+  },
+  "cached_bats_source": "/home/adam/sjaracne-regression/pr1-86f8729-20261018-r2/deps/bats_1.10.0-1_all.deb",
+  "cached_scipy_source": "/home/adam/sjaracne-regression/pr1-86f8729-20261018-r2/scipy-wheel/scipy-1.7.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+  "commit": "b469fb93a9cbc2625eb2475f0b3d2dba74bb7353",
+  "complete": true,
+  "controller_sha256": "862d6f1407eb1b12816b7ee5d963f1fc0f54c63ab7e7c070bc56b2caa436473f",
+  "dependency_environment": {
+    "executable": "/mnt/d/GitHub/SJARACNe-pr67-develop/SJARACNe/build/pchip-test-env/bin/python",
+    "paths": [
+      "/mnt/d/GitHub/SJARACNe-pr67-develop/SJARACNe/build/pchip-test-env/lib/python3.9/site-packages",
+      "/home/adam/.venvs/aging-sjaracne/lib/python3.9/site-packages"
+    ],
+    "python": "3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]",
+    "versions": {
+      "cwltool": "3.1.20211107152837",
+      "numpy": "1.20.1",
+      "pandas": "1.2.3",
+      "pip": "23.0.1",
+      "scipy": "1.6.1",
+      "setuptools": "79.0.1",
+      "wheel": "0.48.0"
+    }
+  },
+  "differential_controller_sha256": "bc1f4857c0a4ff4b3e8767c7adb6559dd75fd6a11fad5c4bf7a4a9034a00245d",
+  "evidence_root": "/mnt/d/GitHub/_validation/pr4_refresh_20261019",
+  "finished_at_utc": "2026-10-20T03:22:59.181670+00:00",
+  "installed_test_environment": {
+    "executable": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python",
+    "hash_pairs": {
+      "__init__.py": [
+        "23e9f4f0c7dae57de3e13e4688d038ce0b3c7fddd75ce787c99acd26de093900",
+        "23e9f4f0c7dae57de3e13e4688d038ce0b3c7fddd75ce787c99acd26de093900"
+      ],
+      "apmi_cutoff.py": [
+        "6d769991ff5e2cb270b287c460ce6514391ba6217181440e3cad2c4add09ec95",
+        "6d769991ff5e2cb270b287c460ce6514391ba6217181440e3cad2c4add09ec95"
+      ],
+      "bin/apmi_null_generator.exe": [
+        "b2b39255fa8f1e0bfe4d61b2c056a51e3816bcd4463a335a8f5a40be5b033304",
+        "b2b39255fa8f1e0bfe4d61b2c056a51e3816bcd4463a335a8f5a40be5b033304"
+      ],
+      "bin/create_consensus_network.py": [
+        "6ccd7cac13390d753000ac3b0a9074a12906ee151d95ecebe3d991d2488ed1e9",
+        "6ccd7cac13390d753000ac3b0a9074a12906ee151d95ecebe3d991d2488ed1e9"
+      ],
+      "bin/sjaracne.exe": [
+        "b2eb2e296e8d144cfd7f43e4e9dedbb0e5f13b2bb9f593817367e18d8e4f904a",
+        "b2eb2e296e8d144cfd7f43e4e9dedbb0e5f13b2bb9f593817367e18d8e4f904a"
+      ],
+      "config/apmi_pchip.json": [
+        "5ae44f3ec251282b242e1e25e5695fe8c6d80a0e7a3f156170dbb72c29e09f59",
+        "5ae44f3ec251282b242e1e25e5695fe8c6d80a0e7a3f156170dbb72c29e09f59"
+      ],
+      "cwl/create_consensus_network.cwl": [
+        "02267e1b56193a202fdb4a7174fd04f219517ea62a5a31295638b18a31ddd949",
+        "02267e1b56193a202fdb4a7174fd04f219517ea62a5a31295638b18a31ddd949"
+      ],
+      "cwl/sjaracne.cwl": [
+        "966f14509b2878301a2f78537e4df8618d96683aa7b92bbf3f92683da3672965",
+        "966f14509b2878301a2f78537e4df8618d96683aa7b92bbf3f92683da3672965"
+      ],
+      "cwl/sjaracne_workflow.cwl": [
+        "f9fb5742ae89646a82702238e38443cd7521ed6e97ce67d5fe6232a98dc65e52",
+        "f9fb5742ae89646a82702238e38443cd7521ed6e97ce67d5fe6232a98dc65e52"
+      ],
+      "sjaracne.py": [
+        "aadef49ae83bba11fdc40e6f0931c6df1bb5404d97e91cf326a6757d76cd6b1c",
+        "aadef49ae83bba11fdc40e6f0931c6df1bb5404d97e91cf326a6757d76cd6b1c"
+      ]
+    },
+    "module": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/lib/python3.9/site-packages/SJARACNe/__init__.py",
+    "prefix": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv",
+    "versions": {
+      "cwltool": "3.1.20211107152837",
+      "numpy": "1.20.1",
+      "pandas": "1.2.3",
+      "scipy": "1.7.3"
+    }
+  },
+  "integration_matrix": [
+    {
+      "B": 6,
+      "K": 6,
+      "K_over_B": 1,
+      "actual_m": 80,
+      "consensus": "default_k6",
+      "cutoff": 0.08016249526234295,
+      "model": "affine",
+      "observed_edges": 3,
+      "p_value_consensus": null,
+      "selected_edges": 2,
+      "support_counts": {
+        "H->A": 6,
+        "H->W42": 5,
+        "H->W49": 6
+      }
+    },
+    {
+      "B": 6,
+      "K": null,
+      "K_over_B": null,
+      "actual_m": 80,
+      "consensus": "legacy_pc",
+      "cutoff": 0.08016249526234295,
+      "model": "affine",
+      "observed_edges": 3,
+      "p_value_consensus": 1,
+      "selected_edges": 3,
+      "support_counts": {
+        "H->A": 6,
+        "H->W42": 5,
+        "H->W49": 6
+      }
+    },
+    {
+      "B": 6,
+      "K": 6,
+      "K_over_B": 1,
+      "actual_m": 80,
+      "consensus": "default_k6",
+      "cutoff": 0.14783093032516142,
+      "model": "pchip",
+      "observed_edges": 2,
+      "p_value_consensus": null,
+      "selected_edges": 1,
+      "support_counts": {
+        "H->A": 6,
+        "H->W49": 3
+      }
+    },
+    {
+      "B": 6,
+      "K": null,
+      "K_over_B": null,
+      "actual_m": 80,
+      "consensus": "legacy_pc",
+      "cutoff": 0.14783093032516142,
+      "model": "pchip",
+      "observed_edges": 2,
+      "p_value_consensus": 1,
+      "selected_edges": 2,
+      "support_counts": {
+        "H->A": 6,
+        "H->W49": 3
+      }
+    }
+  ],
+  "integration_matrix_passed": true,
+  "isolated_scipy_wheel": {
+    "path": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/scipy-wheel/scipy-1.7.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "5d1cc2c19afe3b5a546ede7e6a44ce1ff52e443d12b231823268019f608b9b12"
+  },
+  "libc": [
+    "glibc",
+    "2.39"
+  ],
+  "passed": true,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python_test_summary": {
+    "discovered": 170,
+    "duration_seconds": 58.60342412999999,
+    "errors": [],
+    "failures": [],
+    "passed": true,
+    "skipped": [],
+    "tests_run": 170
+  },
+  "repository": "https://github.com/adamdingliang/SJARACNe",
+  "run_variant": "setup.py-compliant-scipy-1.7.3",
+  "schema": "sjaracne-pr4-pinned-regression-v1",
+  "scope": "Linux/WSL build, Python unittest, CWL validation, four Bats tests, isolated wheel import",
+  "source_archive_sha256": "084a5dfa77e8ee4692dda8fe0d4636d3821c254d5d15b75d2356ea6dbb516e31",
+  "source_root": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source",
+  "started_at_utc": "2026-10-20T03:20:21.078873+00:00",
+  "steps": [
+    {
+      "argv": [
+        "/mnt/d/GitHub/SJARACNe-pr67-develop/SJARACNe/build/pchip-test-env/bin/python",
+        "-m",
+        "venv",
+        "--without-pip",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 0.12048533700000075,
+      "finished_at_utc": "2026-10-20T03:20:24.169915+00:00",
+      "log": "create_venv.log",
+      "log_sha256": "249d27c1c95040a0a86a5a3dd775bc4d77838481a785d587c1654ff93b304f9c",
+      "name": "create_venv",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:20:24.049454+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--ignore-installed",
+        "--no-index",
+        "--no-deps",
+        "--no-compile",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/scipy-wheel/scipy-1.7.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 13.094177541,
+      "finished_at_utc": "2026-10-20T03:20:37.498578+00:00",
+      "log": "scipy_wheel_install.log",
+      "log_sha256": "9e1be426c5f41dbfebc88824772724053c3c5c067bf2a3f5156ac8c653d08f24",
+      "name": "scipy_wheel_install",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:20:24.404402+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "g++",
+        "--version"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 0.012309809000001337,
+      "finished_at_utc": "2026-10-20T03:20:37.518109+00:00",
+      "log": "compiler_version.log",
+      "log_sha256": "6f36c78ea9793599081c2284ff572fbf4a8915a537e26dc4428c64f186562462",
+      "name": "compiler_version",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:20:37.505797+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "make",
+        "-C",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe",
+        "-j",
+        "12",
+        "all"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source",
+      "duration_seconds": 4.635333562,
+      "finished_at_utc": "2026-10-20T03:20:42.159563+00:00",
+      "log": "build.log",
+      "log_sha256": "5d31e3f699627076a8a61a3a84fcee9436ffba16b702a0ac7f79c8d3523ce707",
+      "name": "build",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:20:37.524249+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "file",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/bin/sjaracne.exe",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/bin/apmi_null_generator.exe"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 0.019121147999999977,
+      "finished_at_utc": "2026-10-20T03:20:42.193948+00:00",
+      "log": "binary_format.log",
+      "log_sha256": "3e3662e10bee818846af5a1282f99712cf5d8aeede8e02c5cc9be9f92fc4cdf3",
+      "name": "binary_format",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:20:42.174826+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "make",
+        "-C",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/baseline/SJARACNe",
+        "-j",
+        "12",
+        "all"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source",
+      "duration_seconds": 4.160087329,
+      "finished_at_utc": "2026-10-20T03:20:48.425729+00:00",
+      "log": "build_baseline.log",
+      "log_sha256": "1de26a239eed451518d70b9cfbd3c2b6ac6236b74ed862a9067e4b2093426a25",
+      "name": "build_baseline",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:20:44.265664+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python",
+        "/mnt/d/GitHub/_validation/pr4_refresh_20261019/check_diagnostics.py",
+        "--baseline",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/baseline/SJARACNe/bin/sjaracne.exe",
+        "--candidate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/bin/sjaracne.exe",
+        "--config-dir",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/config",
+        "--output-dir",
+        "/mnt/d/GitHub/_validation/pr4_refresh_20261019/differential"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source",
+      "duration_seconds": 14.056686082999999,
+      "finished_at_utc": "2026-10-20T03:21:02.498812+00:00",
+      "log": "diagnostic_differential.log",
+      "log_sha256": "31888ee242407ee119f6d9e3d9515006e471d8a9bd687a4bd310edc9aabe2092",
+      "name": "diagnostic_differential",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:20:48.442196+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python",
+        "-m",
+        "pip",
+        "wheel",
+        "--no-index",
+        "--no-deps",
+        "--no-build-isolation",
+        "--wheel-dir",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/wheel",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source",
+      "duration_seconds": 15.023978305,
+      "finished_at_utc": "2026-10-20T03:21:17.530425+00:00",
+      "log": "wheel_build.log",
+      "log_sha256": "e1f0dcd942c364945d65ad0a0a6b3a85d4ae708946f6ee02b99b557eebba5df4",
+      "name": "wheel_build",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:02.506446+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--ignore-installed",
+        "--no-index",
+        "--no-deps",
+        "--no-compile",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/wheel/sjaracne-0.2.1-py3-none-any.whl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 7.771836870999991,
+      "finished_at_utc": "2026-10-20T03:21:25.314165+00:00",
+      "log": "wheel_install.log",
+      "log_sha256": "0f57e501afd44f1ea26f3421a6b11d9dac61d935993bcf38485002484a659ea0",
+      "name": "wheel_install",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:17.542328+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--version"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 1.694079852999991,
+      "finished_at_utc": "2026-10-20T03:21:27.015652+00:00",
+      "log": "cwltool_version.log",
+      "log_sha256": "e3cdb1dd9b5ff311574c6a028d9502cd8266a6c11671687782bd63ffbe6c576e",
+      "name": "cwltool_version",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:25.321570+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python",
+        "-c",
+        "import sys,json,hashlib,importlib.metadata;from pathlib import Path;import SJARACNe; p=Path(SJARACNe.__file__).resolve(); assert str(p).startswith(sys.prefix+'/'),str(p); files=['__init__.py','sjaracne.py','apmi_cutoff.py','config/apmi_pchip.json','bin/create_consensus_network.py','bin/sjaracne.exe','bin/apmi_null_generator.exe','cwl/sjaracne.cwl','cwl/sjaracne_workflow.cwl','cwl/create_consensus_network.cwl']; pairs={f:(hashlib.sha256((p.parent/f).read_bytes()).hexdigest(),hashlib.sha256((Path(sys.argv[1])/'SJARACNe'/f).read_bytes()).hexdigest()) for f in files}; assert all(a==b for a,b in pairs.values()),pairs; print(json.dumps({'module':str(p),'executable':sys.executable,'prefix':sys.prefix,'hash_pairs':pairs,'versions':{x:importlib.metadata.version(x) for x in ['numpy','scipy','pandas','cwltool']}}))",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 0.10936740500000042,
+      "finished_at_utc": "2026-10-20T03:21:27.132065+00:00",
+      "log": "installed_package_identity.log",
+      "log_sha256": "6492a78b3d929e04b622312731a2986b8af803f1581201d00f09086b77713b17",
+      "name": "installed_package_identity",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:27.022695+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python",
+        "-c",
+        "import importlib.metadata as m,json;from packaging.requirements import Requirement; items=[Requirement(x) for x in m.requires('SJARACNe')]; assert all(r.specifier.contains(m.version(r.name),prereleases=True) for r in items if r.marker is None or r.marker.evaluate()),[(str(r),m.version(r.name)) for r in items]; print(json.dumps({r.name:m.version(r.name) for r in items}))"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 0.14254106699999625,
+      "finished_at_utc": "2026-10-20T03:21:27.283683+00:00",
+      "log": "declared_dependency_contract.log",
+      "log_sha256": "0eb7b192d02463fe5d75f40ccea9e6600afa8c6670eca6b858af6e4f7279a034",
+      "name": "declared_dependency_contract",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:27.141141+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/QC_input.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 2.3331166040000113,
+      "finished_at_utc": "2026-10-20T03:21:29.624379+00:00",
+      "log": "validate_QC_input.log",
+      "log_sha256": "ed518c8de618b67146710973cd697be6fc78714a652969f6e3283dc06a984bae",
+      "name": "validate_QC_input",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:27.291260+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/ch_line_ending.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 2.2436414689999964,
+      "finished_at_utc": "2026-10-20T03:21:31.875262+00:00",
+      "log": "validate_ch_line_ending.log",
+      "log_sha256": "4f8180ccc4114c650d9dcfb86f89783e48609da986c3efc8092441ff6c7baf28",
+      "name": "validate_ch_line_ending",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:29.631619+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/copy_files_to_dir.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 2.203468063999992,
+      "finished_at_utc": "2026-10-20T03:21:34.085930+00:00",
+      "log": "validate_copy_files_to_dir.log",
+      "log_sha256": "715c3a6a2073b49b5f0b5608f205dfb0966511cb352269d3c15be82f8080458b",
+      "name": "validate_copy_files_to_dir",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:31.882461+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/create_consensus_network.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 2.022953244000007,
+      "finished_at_utc": "2026-10-20T03:21:36.116063+00:00",
+      "log": "validate_create_consensus_network.log",
+      "log_sha256": "c3a08c428c0eaf327693174c5bfdc67e1b45ae3c3ed8d79db8a5219cb84f04f6",
+      "name": "validate_create_consensus_network",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:34.093108+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/get_consensus_network.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 1.946097518000002,
+      "finished_at_utc": "2026-10-20T03:21:38.069453+00:00",
+      "log": "validate_get_consensus_network.log",
+      "log_sha256": "94823e928157ef761adfac76d0fcac23a28bd44c555941bad518fedc5dcca8c4",
+      "name": "validate_get_consensus_network",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:36.123353+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/get_enhanced_consensus_network.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 2.187416823999996,
+      "finished_at_utc": "2026-10-20T03:21:40.264535+00:00",
+      "log": "validate_get_enhanced_consensus_network.log",
+      "log_sha256": "f866615d44eee013f759d8e1a6e9663ac0bce5b4abbab2099817828423921b54",
+      "name": "validate_get_enhanced_consensus_network",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:38.077116+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/int_to_int_array.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 2.1964602760000105,
+      "finished_at_utc": "2026-10-20T03:21:42.467956+00:00",
+      "log": "validate_int_to_int_array.log",
+      "log_sha256": "3b113dba6abec31f09ed7822af0d66f211fa555486d91a05efb29d7e0ad1b303",
+      "name": "validate_int_to_int_array",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:40.271494+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/int_to_str_array.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 2.180115731000001,
+      "finished_at_utc": "2026-10-20T03:21:44.654858+00:00",
+      "log": "validate_int_to_str_array.log",
+      "log_sha256": "cd1725da06413669164a9335ab53793f7abecef176e118465c6884c478f96116",
+      "name": "validate_int_to_str_array",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:42.474740+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/sjaracne.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 1.935130758999989,
+      "finished_at_utc": "2026-10-20T03:21:46.597129+00:00",
+      "log": "validate_sjaracne.log",
+      "log_sha256": "52284a547f599ca7f951071c3ffda0b6ce4934283a4047dc8b2c52643dc72430",
+      "name": "validate_sjaracne",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:44.661996+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/cwltool",
+        "--validate",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source/SJARACNe/cwl/sjaracne_workflow.cwl"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+      "duration_seconds": 2.8027899560000122,
+      "finished_at_utc": "2026-10-20T03:21:49.412680+00:00",
+      "log": "validate_sjaracne_workflow.log",
+      "log_sha256": "2179b8bc731dee05ffc7cdc7ac1b4bee65c990a608eb9e182eb55cf8347aa38c",
+      "name": "validate_sjaracne_workflow",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:46.609888+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/venv/bin/python",
+        "/mnt/d/GitHub/_validation/pr4_refresh_20261019/run_regression.py",
+        "--phase",
+        "suite",
+        "--work-root",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019",
+        "--commit",
+        "b469fb93a9cbc2625eb2475f0b3d2dba74bb7353"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source",
+      "duration_seconds": 59.653977221000005,
+      "finished_at_utc": "2026-10-20T03:22:49.074265+00:00",
+      "log": "python_tests.log",
+      "log_sha256": "fdb5d01a80925c2bca653a730932645c1df571ee4ac47acedd2b027d4ca9b07c",
+      "name": "python_tests",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:21:49.420287+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "apt-cache",
+        "show",
+        "bats=1.10.0-1"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/deps",
+      "duration_seconds": 0.10729965499999139,
+      "finished_at_utc": "2026-10-20T03:22:49.191593+00:00",
+      "log": "bats_package_metadata.log",
+      "log_sha256": "dfd33dbb007e33d929a06cc0f012ef95b34bdddc60c77d9f061870eb50ce5279",
+      "name": "bats_package_metadata",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:22:49.084293+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "dpkg-deb",
+        "--extract",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/deps/bats_1.10.0-1_all.deb",
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/deps/bats"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/deps",
+      "duration_seconds": 0.014566259000019954,
+      "finished_at_utc": "2026-10-20T03:22:49.216090+00:00",
+      "log": "bats_package_extract.log",
+      "log_sha256": "01cd650bcb160b5396987e1c9b528d05c0afad612dd60cf9320ec6eeeac21b68",
+      "name": "bats_package_extract",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:22:49.201534+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/deps/bats/usr/bin/bats",
+        "--version"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source",
+      "duration_seconds": 0.060813260999992735,
+      "finished_at_utc": "2026-10-20T03:22:49.283942+00:00",
+      "log": "bats_version.log",
+      "log_sha256": "4a9582ee60f1f7da5fe12ec6781a421b4dc64f1ad7b90aacdf862533227fefa5",
+      "name": "bats_version",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:22:49.223153+00:00",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/deps/bats/usr/bin/bats",
+        "--formatter",
+        "tap",
+        "tests"
+      ],
+      "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/source",
+      "duration_seconds": 9.530654014999982,
+      "finished_at_utc": "2026-10-20T03:22:58.821259+00:00",
+      "log": "bats_tests.log",
+      "log_sha256": "f7766788c608dc179016f4f63b160828ad36c8f0b33f7494e2cec0fa2afd01ce",
+      "name": "bats_tests",
+      "returncode": 0,
+      "started_at_utc": "2026-10-20T03:22:49.290604+00:00",
+      "status": "passed"
+    }
+  ],
+  "tracked_source_mutations": [],
+  "wheel": {
+    "path": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/wheel/sjaracne-0.2.1-py3-none-any.whl",
+    "sha256": "7ebbc964aba25dd1fdd0acbddfe0b24838c987ce3c545795f34f84b14d83b92f"
+  },
+  "work_root": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019"
+}

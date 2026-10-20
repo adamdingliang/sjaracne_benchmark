@@ -1,0 +1,27 @@
+{"argv": ["apt-cache", "show", "bats=1.10.0-1"], "cwd": "/home/adam/sjaracne-regression/pr4-b469fb9-20261019/deps", "log": "bats_package_metadata.log", "name": "bats_package_metadata", "started_at_utc": "2026-10-20T03:22:49.084293+00:00", "status": "running"}
+Package: bats
+Architecture: all
+Version: 1.10.0-1
+Multi-Arch: foreign
+Priority: optional
+Section: universe/shells
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Bats team <team+bats@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 162
+Recommends: parallel
+Filename: pool/universe/b/bats/bats_1.10.0-1_all.deb
+Size: 45476
+MD5sum: 62735b08838d845723f250b07524e3d8
+SHA1: ad69b46b32b3645117dcd9bc023186615e02f278
+SHA256: 11304638193dddce946021d665a275a6c80a0c7188eb5ba38d82661ded1e8f18
+SHA512: 976a079d205fb64074b89ed67707d48b6eac923ad7e7d5a9d66c493927227e62e5f5c904116db263709f1d9b45993b80e975d4a8adc788a5f1c2f75250abebc5
+Homepage: https://github.com/bats-core/bats-core
+Description-en: bash automated testing system
+ Bats is a TAP-compliant testing framework for Bash. It provides a
+ simple way to verify that the UNIX programs you write behave as
+ expected.  Bats is most useful when testing software written in Bash,
+ but you can use it to test any UNIX program.
+Description-md5: 6d552fdf63d7a896150f59d788343155
+
