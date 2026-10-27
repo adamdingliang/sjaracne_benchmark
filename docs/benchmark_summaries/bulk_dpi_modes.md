@@ -26,7 +26,42 @@ For slope `s=0.05`, each doubling above the numerical anchor 479 adds 0.05 until
 
 ## Full-list endpoint comparison
 
-Values are medians over three unique matched observation pairs. Pruning is the fraction of pre-DPI common-source candidate edges removed. Raw Jaccard is retained-edge intersection divided by union between the full TF and full SIG contexts. Top-20 Jaccard compares equally sized sets of 20 highest-MI retained targets per eligible source. Neither measures biological accuracy.
+Values are medians over three unique matched observation resamples. Pruning is the fraction of pre-DPI common-source candidate edges removed. Raw Jaccard compares all retained common-source edges between the full TF and full SIG contexts, as edge-set intersection divided by union.
+
+**Top-20 Jaccard.** For each eligible common source gene or probe, take its
+20 highest-MI targets that remain after DPI in the full TF reconstruction,
+and separately take its 20 highest-MI retained targets in the full SIG
+reconstruction. "Equally sized" means 20 targets on each side, not necessarily
+the same target genes. Eligibility requires at least 20 retained targets in
+both contexts and every compared pruned strategy; short lists are not padded.
+
+Pool the selected directed source-target pairs across those eligible sources.
+Jaccard is the number of pairs shared by both contexts divided by the number
+present in either context. It is not an average of per-source Jaccards.
+For example, if one source has 20 selected targets in each context and 15
+are shared, its Jaccard is `15 / (20 + 20 - 15) = 0.60`.
+
+**Combined pruning fraction.** A candidate is an edge that passed the MI
+cutoff before DPI. For all fixed common sources, add the candidate edges
+removed in the TF and SIG reconstructions, then divide by their total
+pre-DPI candidate counts:
+
+```text
+combined pruning = (TF edges removed + SIG edges removed)
+                   / (TF candidates before DPI + SIG candidates before DPI)
+```
+
+Count each reconstruction separately, not a deduplicated edge union. This
+uses all common-source candidates, not only the selected Top-20 edges.
+"Candidate-weighted" refers to the number of candidate edges, not the number
+of TF or SIG hubs. Here the matched pre-DPI candidate counts are equal, so TF
+and SIG have equal weight within each resample. If each starts with 1,000
+candidates and removes 200 or 400, combined pruning is `600 / 2,000 = 30%`.
+Calculate this fraction for each of the three matched resamples, then take
+its median; do not average the separately displayed TF and SIG medians.
+
+Jaccard measures target-set consistency, and pruning measures edge removal.
+Neither establishes whether the retained or removed edges are biologically correct.
 
 | Dataset | Mode | TF pruning fraction | SIG pruning fraction | Combined pruning fraction | Raw Jaccard | Top-20 Jaccard |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
@@ -43,7 +78,7 @@ Values are medians over three unique matched observation pairs. Pruning is the f
 | LUAD100 | Fixed epsilon 0.25 | 0.2563 | 0.4690 | 0.3626 | 0.6792 | 0.9551 |
 | LUAD100 | Dynamic slope 0.05 | 0.4837 | 0.5307 | 0.5072 | 0.6740 | 0.8894 |
 
-Pruning fractions and Jaccard range from zero to one. Combined pruning is candidate-weighted **within each pair before the median**, not an average of the displayed endpoint medians. Top-20 uses one shared eligible-source intersection across pruned strategies and both contexts; median eligibility was 276 of 479 BRCA sources and 457 of 477 LUAD sources. Short lists are not padded, and no-DPI matched-budget scores were intentionally not evaluated.
+Pruning fractions and Jaccard range from zero to one. Median Top-20 eligibility was 276 of 479 BRCA sources and 457 of 477 LUAD sources. No-DPI matched-budget scores were intentionally not evaluated.
 
 | Dataset | No-DPI candidate edges | No-DPI median targets per source |
 | --- | ---: | ---: |
