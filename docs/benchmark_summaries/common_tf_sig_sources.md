@@ -1,87 +1,141 @@
-# Common TF/SIG sources: BRCA100 and LUAD
+# Common TF and SIG sources: BRCA100 and LUAD100
 
 ## Question and matched design
 
-When the **same evaluated source IDs** are reconstructed in separate TF and
-SIG contexts, how much do their retained targets change? Evaluation uses their
-intersection; reconstruction still uses the surrounding TF or SIG panel.
+Do the **same evaluated sources** retain consistent targets when surrounded
+by different TF or SIG hub panels? A common source is an ID present in both
+lists. Reconstruction still uses each surrounding TF or SIG panel; evaluation
+keeps only edges originating from their fixed intersection.
 
-| Dataset | Fixed evaluated sources | Full TF / SIG source lists | Fixed target-expression rows |
+| Dataset | Evaluated source IDs | Distinct source symbols | Full TF hubs | Full SIG hubs | Target-expression rows |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| BRCA100 | 479 probes | 254 | 2,608 | 10,680 | 28,278 |
+| LUAD100 | 477 Ensembl genes | 477 | 1,929 | 9,464 | 29,841 |
+
+Each dataset uses three matched observation resamples, each selecting 80 of
+100 profiles without replacement, and three nested hub-panel memberships.
+Expression, target rows, observations and the PCHIP cutoff are unchanged
+within comparisons: `p_b=0.0005` for both contexts, engine `b41c4ca`.
+Reconstruction and annotation memberships match (`-s` equals `-l`).
+Repeated baseline and full-list jobs are aliases, not independent runs.
+
+Thresholded no-DPI controls verified identical common-source candidate edges
+and serialized MI within each observation seed. The measured differences
+therefore concern subsequent DPI context sensitivity, not different MI cutoffs
+or source denominators. Serialized MI is not a full-precision fingerprint.
+
+## Definition of dynamic epsilon
+
+`H` is the number of source nodes in the reconstruction and annotation panel.
+The numerical reference stays `H_ref=479` in both datasets:
+
+```text
+epsilon(H) = min(0.30, slope * max(0, log2(H / 479)))
+```
+
+At or below 479 hubs, epsilon is zero, meaning strict DPI. Above the anchor,
+slope 0.05 adds 0.05 per doubling of H until the 0.30 cap. Larger epsilon
+relaxes pruning. Fixed epsilon stays constant across H; no DPI is the separate
+epsilon-one control. Slopes 0.025 and 0.05 were tested; 0.05 is highlighted,
+not established as optimal. LUAD's 477-gene baseline is zero-clamped, not
+retuned. These counts are computational nodes, not equivalent biological
+coverage across BRCA probes and LUAD genes. The rule used ordinary native
+`-e` runs, not an automatic dynamic-H engine option.
+
+## What target consistency measures
+
+**Jaccard** is the number of shared edges divided by the number present in
+either graph. One means identical edge sets; it does not mean correct edges.
+
+- **Raw Jaccard:** pool all retained directed edges from the common sources
+  and compare the full TF context with the full SIG context.
+- **Top-20 Jaccard:** retain exactly 20 highest-MI targets per eligible source,
+  pool these directed edges, then compare contexts. Eligibility requires
+  enough targets in every tested pruned strategy and both contexts. The
+  source intersection stays matched; short lists are not padded.
+- The primary deterministic MI-tie order is shown. Two alternative tie orders
+  and top-10 and top-50 comparisons are retained in the detailed reports.
+
+The table gives separate medians of three unique matched observation pairs,
+not pooled resamples or whole-network accuracy scores.
+
+| Dataset | Strategy | Raw Jaccard | Top-20 Jaccard |
 | --- | --- | ---: | ---: |
-| BRCA100 | 479 probe IDs, representing 254 distinct gene symbols | 2,608 / 10,680 | 28,278 |
-| LUAD100 | 477 Ensembl gene IDs, representing 477 symbols | 1,929 / 9,464 | 29,841 |
+| BRCA100 | Strict DPI | 0.7737 | 0.8042 |
+| BRCA100 | Fixed epsilon 0.10 | 0.8063 | 0.8862 |
+| BRCA100 | Fixed epsilon 0.20 | 0.8331 | 0.9514 |
+| BRCA100 | Fixed epsilon 0.25 | 0.8506 | 0.9711 |
+| BRCA100 | Dynamic slope 0.05 | 0.8626 | 0.9500 |
+| LUAD100 | Strict DPI | 0.4703 | 0.5940 |
+| LUAD100 | Fixed epsilon 0.10 | 0.5388 | 0.7732 |
+| LUAD100 | Fixed epsilon 0.20 | 0.6268 | 0.9089 |
+| LUAD100 | Fixed epsilon 0.25 | 0.6792 | 0.9551 |
+| LUAD100 | Dynamic slope 0.05 | 0.6740 | 0.8894 |
 
-Within each dataset, observations, expression values, targets and PCHIP MI
-cutoff were matched across contexts: 80 observations without replacement from
-100, three observation seeds, `p_b=0.0005` for both TF and SIG, and the same
-frozen engine (`b41c4ca`). Reconstruction and DPI annotation lists had identical
-membership (`-s` equals `-l`). Three nested panel memberships varied surrounding
-hubs. Repeated baseline/full-list jobs were deduplicated, not replication;
-the common-only TF/SIG baseline is identical by construction.
+Median eligible top-20 populations are **276 of 479** BRCA sources and
+**457 of 477** LUAD sources. No-DPI raw Jaccard is one by matched construction;
+its top-20 score was intentionally not evaluated.
 
-Thresholded no-DPI controls verified common-source candidate identities and
-serialized MI across contexts within a seed. The experiment therefore examines
-post-DPI context sensitivity at recorded precision, not different source
-denominators or MI cutoffs. Serialization is not a full-precision fingerprint.
+## Figures and retained target sizes
 
-The controls include strict DPI, fixed epsilon 0.05 to 0.25, and dynamic slopes
-0.025/0.05. The unchanged dynamic rule is
-`epsilon(H)=min(0.30,s*max(0,log2(H/479)))`. Its reference is a numerical count of
-source nodes, not equivalent biological coverage across probes and genes.
-LUAD's 477-gene baseline is zero-clamped, not retuned.
+### Figure 1. Common-source identity in full TF and full SIG contexts
 
-## Shared-source target consistency
+![Raw and Top-20 edge-set Jaccard for common BRCA100 and LUAD100 sources](figures/common_source_identity.png)
 
-The table compares the natural full TF versus full SIG contexts. All metrics
-below concern edges **from the fixed common-source population**, not whole
-networks. Values are medians over three unique matched observation pairs;
-Jaccard measures edge-identity agreement, not biological accuracy.
+The bars compare the same evaluated sources within each dataset. Strong fixed
+tolerance matches or exceeds dynamic Top-20 agreement. Dynamic does not
+uniformly improve identity at every intermediate H. Higher agreement alone
+cannot establish a better strategy because removing DPI makes raw agreement
+perfect by construction.
 
-| Dataset | Raw Jaccard: strict to dynamic slope 0.05 | Top-20/source Jaccard: strict to dynamic | Top-20/source: fixed 0.20 | Median top-20 eligible sources |
-| --- | ---: | ---: | ---: | ---: |
-| BRCA100 | 0.7737 to 0.8626 | 0.8042 to 0.9500 | 0.9514 | 276 / 479 |
-| LUAD100 | 0.4703 to 0.6740 | 0.5940 to 0.8894 | 0.9089 | 457 / 477 |
+### Figure 2. LUAD target-list sizes as surrounding panels expand
 
-Top-10/20/50 comparisons use the same eligible sources and retained-target
-budget across all strategies and both contexts, with three common deterministic
-MI-tie orders. Short lists are not padded. Stronger fixed tolerance can
-match or exceed dynamic agreement; dynamic does not uniformly improve identity
-at every intermediate hub size.
+![Median targets per common LUAD source across hub-panel sizes, separately for TF and SIG reconstruction](figures/luad_target_sizes.png)
 
-Nonempty-source coverage remained **100% under every strategy** in both
-datasets. BRCA's median target count stayed 22: its source-level effects were
-uneven and stronger among higher-degree sources. In LUAD, dynamic better
-preserved median target counts as panels expanded: the common-only post-DPI
-baseline (`H=477`, `epsilon=0`) had 111, becoming 112 in
-full TF and 103 in full SIG, versus 88 and 46 under strict DPI. These are
-displayed medians, not a claim of improved activity robustness.
+Medians describe targets per common source, not the entire hub list. The
+common-only post-DPI baseline (`H=477`, epsilon zero) has median 111 targets.
+At the full TF panel, that becomes 88 under strict DPI and 112 under dynamic
+slope 0.05. At the full SIG panel, it becomes 46 under strict DPI and 103 under
+dynamic slope 0.05. Different strategies can start at different baseline
+target counts because positive fixed epsilon also relaxes the baseline.
+Baseline and full-panel medians use three unique sample cases; intermediate
+sizes use nine panel-membership and sample-seed views, not biological replicates.
+
+Nonempty-source coverage is **100% under every strategy** in both datasets,
+so there is no improved nonempty-coverage claim. BRCA's target median stays
+22; its source-level benefits are uneven and stronger at higher pre-DPI
+degrees. Retained target sizes do not validate activity robustness.
+
+Figures are regenerated from saved tables, not new inference. The
+[plotting script](../../scripts/plot_bulk_dpi_summaries.py) and
+[selected plot data and hashes](figures/bulk_dpi_summary_figures.json)
+record the inputs and the paired-versus-group-median calculations.
 
 ## Conditional conclusion
 
-For shared TF/SIG sources, the two datasets support a **candidate engineering
-balance**: dynamic tolerance can reduce hub-context-related pruning variation
-and improve full-context target consistency versus strict DPI while retaining
-substantial pruning. It does not establish that common hubs should have
-identical targets, that their edges are more accurate, or that dynamic is
-preferable to every fixed tolerance. Some extra intermediaries may justify
-target differences, and observation-resample instability remains unresolved.
+Across these two preparations, dynamic tolerance is a **candidate engineering
+balance**: it reduces some hub-context-related pruning variation and improves
+full-context target consistency versus strict DPI while retaining substantial
+pruning. Strong fixed tolerance remains competitive, and dynamic does not
+improve every context or source. Some additional intermediaries may justify
+target differences. More agreement does not prove more accurate edges or
+that common TF and SIG sources should have identical targets.
 
-These are three overlapping computational resamples per dataset, not independent
-biological replications. LUAD reused gene filtering from all 517 prepared
-patients before selecting its fixed 100-patient cohort; this is not held-out
-feature-selection validation. Probe/gene representation and preprocessing also
-differ, so cross-dataset agreement is not a tissue-only comparison. No reference
-edges, consensus, downstream activity validation or production-default change
-is claimed. This summary and the separate DPI-strategy summary use the **same
-underlying experiments**, not additional independent evidence.
+There are only three overlapping computational resamples per dataset, not
+independent biological replications. Cross-resample edge instability remains
+unresolved. LUAD filtering used all 517 prepared patients before choosing its
+100-patient cohort, not held-out feature-selection validation. Probe and gene
+representations also differ. No reference-edge, consensus, downstream-activity
+or new-default claim is made. PR #3 summarizes these **same experiments** from
+a strategy-trade-off perspective, not additional independent evidence.
 
 ## Detailed evidence
 
-- BRCA100: [process](../../benchmarks/dpi_epsilon_summaries/evidence/brca100_fixed_grid/PROCESS.md),
-  [full results and plots](../../benchmarks/dpi_epsilon_summaries/evidence/brca100_fixed_grid/RESULTS.md),
-  [exact source-level counts](../../benchmarks/dpi_epsilon_summaries/evidence/brca100_source_benefits/SUMMARY.md).
-- LUAD100: [process](../../benchmarks/dpi_epsilon_summaries/evidence/luad100_common/PROCESS.md),
-  [full results and plots](../../benchmarks/dpi_epsilon_summaries/evidence/luad100_common/RESULTS.md),
-  [input preparation](../../benchmarks/dpi_epsilon_summaries/evidence/luad_preparation/PREPARATION.md).
+- BRCA100: [Process](../../benchmarks/dpi_epsilon_summaries/evidence/brca100_fixed_grid/PROCESS.md),
+  [Results and full plots](../../benchmarks/dpi_epsilon_summaries/evidence/brca100_fixed_grid/RESULTS.md),
+  [Exact source-level counts](../../benchmarks/dpi_epsilon_summaries/evidence/brca100_source_benefits/SUMMARY.md).
+- LUAD100: [Process](../../benchmarks/dpi_epsilon_summaries/evidence/luad100_common/PROCESS.md),
+  [Results and full plots](../../benchmarks/dpi_epsilon_summaries/evidence/luad100_common/RESULTS.md),
+  [Input preparation](../../benchmarks/dpi_epsilon_summaries/evidence/luad_preparation/PREPARATION.md).
 
 Raw expression, native networks and large run archives remain outside Git.
