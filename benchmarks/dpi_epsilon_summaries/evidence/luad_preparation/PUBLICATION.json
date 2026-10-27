@@ -1,0 +1,138 @@
+{
+  "schema": "dpi-compact-evidence-publication-v1",
+  "label": "LUAD preparation summary",
+  "published_utc": "2026-10-27T03:04:16.241393+00:00",
+  "operation": "copy tables/figures unchanged; adapt Markdown links and add explicit publication notes",
+  "source_result_directory": "LUAD",
+  "process_source_name": "PLAN.md",
+  "packager_sha256": "980abe3bf389807b46ac03182ed678f4eea73702a74aed0671f909c540022bf8",
+  "files": [
+    {
+      "source_name": "independent_validation.json",
+      "published_name": "original_independent_validation.json",
+      "original": {
+        "bytes": 1994,
+        "sha256": "45bc58bae163482489d69dbf41e7c6d2b92039088f4be6d9c6b45b6e48b673e9"
+      },
+      "published": {
+        "bytes": 1994,
+        "sha256": "45bc58bae163482489d69dbf41e7c6d2b92039088f4be6d9c6b45b6e48b673e9"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "PREPARATION.md",
+      "published_name": "PREPARATION.md",
+      "original": {
+        "bytes": 1209,
+        "sha256": "12d2f9fc994154a16e628d188d69d1efe8664d8b9c5122cad2672e7fbf4d37b0"
+      },
+      "published": {
+        "bytes": 1496,
+        "sha256": "6d78aa1a4eb7752dc8da7f75923371a7f962d175efec73cd91d145fff81798e0"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "PLAN.md",
+      "published_name": "PROCESS.md",
+      "original": {
+        "bytes": 6306,
+        "sha256": "26ff600e83aef86bd64d11ebb94af067c2c08784c72c0341eca73a77d9b5355e"
+      },
+      "published": {
+        "bytes": 6593,
+        "sha256": "be95f79c70c404b88e84226ae528cb7b49ee00d305599ccc2d147333edc69614"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    }
+  ],
+  "omitted_local_artifacts": [
+    {
+      "name": "common_TF_SIG.txt",
+      "bytes": 7632,
+      "sha256": "60c4723627764d0a423f6a4b2881fc03f09bc13ab2b0d61ef8169fcac123efdf",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "download_selection.tsv",
+      "bytes": 227928,
+      "sha256": "9fbb4749720ba034a858050219a0010300e0b50e6fee6706d94124babe28a00f",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "gene_qc.tsv",
+      "bytes": 6168009,
+      "sha256": "4065f171d80c928e62a976699885354be4640fb06f04f9551d0498fc7cd35324",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "input_validation.tsv",
+      "bytes": 385187,
+      "sha256": "290f96c0a823f79aa3656b3d01b0817691cb84261139b90efbf359e042d6dfaa",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "log2TPM_plus1.tsv.gz",
+      "bytes": 149539608,
+      "sha256": "38be13224cad89fc1b8d4e8b5047afdba7b1546617d0e78c2ca5b1ca03201e66",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "LUAD_filtered.exp",
+      "bytes": 271334062,
+      "sha256": "c8576c8e13dfd6b6fc9f4e05dc4ff9bc73de3f13644821078915247c544ec1bc",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 622900,
+      "sha256": "864200cf68aada8eda8bf8ad170f54a6d214fb7d10b24110e404592b88a520a8",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "regulator_mapping.tsv",
+      "bytes": 1319223,
+      "sha256": "ce04f59c4898f9f2052db2fd623e0794b05f33c73603b29a85c31f77bfdae497",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "samples.tsv",
+      "bytes": 208980,
+      "sha256": "d6a4b5bc53ec7481836d0a1e10d5b3051dfe4becef3d9786cb67f3a7cb85136a",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "SIG.txt",
+      "bytes": 151424,
+      "sha256": "632fe7d96066417102726689a172cac25138cfa6dc6df4b4dd7071833a008034",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "status.json",
+      "bytes": 606,
+      "sha256": "31635396c6ed0b79f814f654ae9e8f6568043eedf0e209e4ca23465e9fe3269a",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "TF.txt",
+      "bytes": 30864,
+      "sha256": "1c21a065df56bd9bbd54405c34e11ea57e5ba1411897763ad92f72cf85076a4a",
+      "reason": "Not selected for this compact publication package"
+    },
+    {
+      "name": "TPM.tsv.gz",
+      "bytes": 73511169,
+      "sha256": "296fb5802205c300fc5789e35794d28dd1b5d5fdc029b493e45ac5f7b2fe7ff0",
+      "reason": "Not selected for this compact publication package"
+    }
+  ],
+  "readme": {
+    "bytes": 2612,
+    "sha256": "565e13bd3779cfcdea825de8c660e20a3c234c6bcd3f4b6b9d91228cb9517779"
+  },
+  "new_scientific_run": false
+}

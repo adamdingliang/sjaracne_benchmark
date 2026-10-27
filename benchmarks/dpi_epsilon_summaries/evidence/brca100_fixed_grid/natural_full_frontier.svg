@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="440" viewBox="0 0 1260 440">
+<title>Natural full-list pruning and agreement trade-off</title>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial,sans-serif" font-size="12" fill="#222">
+<text x="75" y="50" font-size="15">Raw edges</text>
+<line x1="75" y1="310.00" x2="440" y2="310.00" stroke="#e5e5e5"/>
+<text x="67" y="314.00" text-anchor="end">0.70</text>
+<line x1="75" y1="261.00" x2="440" y2="261.00" stroke="#e5e5e5"/>
+<text x="67" y="265.00" text-anchor="end">0.76</text>
+<line x1="75" y1="212.00" x2="440" y2="212.00" stroke="#e5e5e5"/>
+<text x="67" y="216.00" text-anchor="end">0.82</text>
+<line x1="75" y1="163.00" x2="440" y2="163.00" stroke="#e5e5e5"/>
+<text x="67" y="167.00" text-anchor="end">0.88</text>
+<line x1="75" y1="114.00" x2="440" y2="114.00" stroke="#e5e5e5"/>
+<text x="67" y="118.00" text-anchor="end">0.94</text>
+<line x1="75" y1="65.00" x2="440" y2="65.00" stroke="#e5e5e5"/>
+<text x="67" y="69.00" text-anchor="end">1.00</text>
+<text x="75.00" y="330" text-anchor="middle">0</text>
+<text x="148.00" y="330" text-anchor="middle">0.09</text>
+<text x="221.00" y="330" text-anchor="middle">0.18</text>
+<text x="294.00" y="330" text-anchor="middle">0.27</text>
+<text x="367.00" y="330" text-anchor="middle">0.36</text>
+<text x="440.00" y="330" text-anchor="middle">0.45</text>
+<path d="M75 65 V310 H440" fill="none" stroke="#333"/>
+<text x="257.5" y="353" text-anchor="middle">Combined fraction pruned</text>
+<text transform="translate(22,187.5) rotate(-90)" text-anchor="middle">Pooled edge Jaccard</text>
+<polyline points="307.80,210.29" fill="none" stroke="#e58b20" stroke-width="2.7"/>
+<circle cx="307.80" cy="210.29" r="3.4" fill="#e58b20"/>
+<polyline points="254.83,177.25" fill="none" stroke="#c82828" stroke-width="2.7"/>
+<circle cx="254.83" cy="177.25" r="3.4" fill="#c82828"/>
+<polyline points="301.12,223.19" fill="none" stroke="#666666" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="301.12" cy="223.19" r="3.4" fill="#666666"/>
+<polyline points="328.97,236.05" fill="none" stroke="#a3a3a3" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="328.97" cy="236.05" r="3.4" fill="#a3a3a3"/>
+<polyline points="270.46,212.13" fill="none" stroke="#47889b" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="270.46" cy="212.13" r="3.4" fill="#47889b"/>
+<polyline points="241.10,201.28" fill="none" stroke="#8468a4" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="241.10" cy="201.28" r="3.4" fill="#8468a4"/>
+<polyline points="210.98,186.99" fill="none" stroke="#ad8957" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="210.98" cy="186.99" r="3.4" fill="#ad8957"/>
+<polyline points="75.00,65.00" fill="none" stroke="#b5b5b5" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="75.00" cy="65.00" r="3.4" fill="#b5b5b5"/>
+<polyline points="355.42,249.79" fill="none" stroke="#111111" stroke-width="1.4"/>
+<circle cx="355.42" cy="249.79" r="3.4" fill="#111111"/>
+<text x="550" y="50" font-size="15">Top 20 targets/source</text>
+<line x1="550" y1="310.00" x2="915" y2="310.00" stroke="#e5e5e5"/>
+<text x="542" y="314.00" text-anchor="end">0.70</text>
+<line x1="550" y1="261.00" x2="915" y2="261.00" stroke="#e5e5e5"/>
+<text x="542" y="265.00" text-anchor="end">0.76</text>
+<line x1="550" y1="212.00" x2="915" y2="212.00" stroke="#e5e5e5"/>
+<text x="542" y="216.00" text-anchor="end">0.82</text>
+<line x1="550" y1="163.00" x2="915" y2="163.00" stroke="#e5e5e5"/>
+<text x="542" y="167.00" text-anchor="end">0.88</text>
+<line x1="550" y1="114.00" x2="915" y2="114.00" stroke="#e5e5e5"/>
+<text x="542" y="118.00" text-anchor="end">0.94</text>
+<line x1="550" y1="65.00" x2="915" y2="65.00" stroke="#e5e5e5"/>
+<text x="542" y="69.00" text-anchor="end">1.00</text>
+<text x="550.00" y="330" text-anchor="middle">0</text>
+<text x="623.00" y="330" text-anchor="middle">0.09</text>
+<text x="696.00" y="330" text-anchor="middle">0.18</text>
+<text x="769.00" y="330" text-anchor="middle">0.27</text>
+<text x="842.00" y="330" text-anchor="middle">0.36</text>
+<text x="915.00" y="330" text-anchor="middle">0.45</text>
+<path d="M550 65 V310 H915" fill="none" stroke="#333"/>
+<text x="732.5" y="353" text-anchor="middle">Combined fraction pruned</text>
+<text transform="translate(497,187.5) rotate(-90)" text-anchor="middle">Pooled edge Jaccard</text>
+<polyline points="782.80,153.03" fill="none" stroke="#e58b20" stroke-width="2.7"/>
+<circle cx="782.80" cy="153.03" r="3.4" fill="#e58b20"/>
+<polyline points="729.83,105.86" fill="none" stroke="#c82828" stroke-width="2.7"/>
+<circle cx="729.83" cy="105.86" r="3.4" fill="#c82828"/>
+<polyline points="776.12,157.97" fill="none" stroke="#666666" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="776.12" cy="157.97" r="3.4" fill="#666666"/>
+<polyline points="803.97,191.47" fill="none" stroke="#a3a3a3" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="803.97" cy="191.47" r="3.4" fill="#a3a3a3"/>
+<polyline points="745.46,129.97" fill="none" stroke="#47889b" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="745.46" cy="129.97" r="3.4" fill="#47889b"/>
+<polyline points="716.10,104.69" fill="none" stroke="#8468a4" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="716.10" cy="104.69" r="3.4" fill="#8468a4"/>
+<polyline points="685.98,88.62" fill="none" stroke="#ad8957" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="685.98" cy="88.62" r="3.4" fill="#ad8957"/>
+<polyline points="830.42,224.89" fill="none" stroke="#111111" stroke-width="1.4"/>
+<circle cx="830.42" cy="224.89" r="3.4" fill="#111111"/>
+<line x1="1040" y1="70" x2="1064" y2="70" stroke="#111111" stroke-width="3"/>
+<text x="1071" y="74">strict</text>
+<line x1="1040" y1="93" x2="1064" y2="93" stroke="#a3a3a3" stroke-width="3"/>
+<text x="1071" y="97">fixed_0.05</text>
+<line x1="1040" y1="116" x2="1064" y2="116" stroke="#666666" stroke-width="3"/>
+<text x="1071" y="120">fixed</text>
+<line x1="1040" y1="139" x2="1064" y2="139" stroke="#47889b" stroke-width="3"/>
+<text x="1071" y="143">fixed_0.15</text>
+<line x1="1040" y1="162" x2="1064" y2="162" stroke="#8468a4" stroke-width="3"/>
+<text x="1071" y="166">fixed_0.2</text>
+<line x1="1040" y1="185" x2="1064" y2="185" stroke="#ad8957" stroke-width="3"/>
+<text x="1071" y="189">fixed_0.25</text>
+<line x1="1040" y1="208" x2="1064" y2="208" stroke="#e58b20" stroke-width="3"/>
+<text x="1071" y="212">dynamic_0.025</text>
+<line x1="1040" y1="231" x2="1064" y2="231" stroke="#c82828" stroke-width="3"/>
+<text x="1071" y="235">dynamic_0.05</text>
+<line x1="1040" y1="254" x2="1064" y2="254" stroke="#b5b5b5" stroke-width="3"/>
+<text x="1071" y="258">no_dpi</text>
+<text x="75" y="410">More pruning is rightward; more agreement is upward. Inspect both TF/SIG pruning rates in tables.</text>
+</g></svg>

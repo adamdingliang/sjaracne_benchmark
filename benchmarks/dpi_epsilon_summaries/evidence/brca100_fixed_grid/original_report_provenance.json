@@ -1,0 +1,76 @@
+{
+  "schema": "brca100-fixed-grid-report-provenance-v1",
+  "design_fingerprint": "e07af307b375e2355565d458f250b99a48ee124304e70526c07046adab16c574",
+  "adapter_sha256": "0995f8f9c663293b3774486acfb6baf6c7abe02bd0d7c91cdfc5a8d2062360ab",
+  "original_analyzer": {
+    "path": "/home/adam/sjaracne-benchmarks/brca100-common-sources-fixed-grid-20261026/harness/original_analyze.py",
+    "bytes": 31115,
+    "sha256": "40380c8f910f038d1ebbd532ac9475bfc0d3e3e1bd84757fabcecc47abdb5c9d"
+  },
+  "files": {
+    "agreement_summary.tsv": {
+      "bytes": 25083,
+      "sha256": "30706d68b01cbaa4b4ac5be8650f9e78720a62059c1304249936e21d8d9209f1"
+    },
+    "per_source_runs.tsv": {
+      "bytes": 24978003,
+      "sha256": "a3a44cb79908d71693ca4b51de5b6753023b14d63dd4789204c2cc24ff7a4e5f"
+    },
+    "trajectories.svg": {
+      "bytes": 16953,
+      "sha256": "912c406b7f1b9a43abfa8e8b4694d4b4d966601de6c2ffbe1b1fcd0c6db8a100"
+    },
+    "frontier_summary.tsv": {
+      "bytes": 692781,
+      "sha256": "6f7c7fba669f5626a760d836ec04fa52d0435439854d0e4cd599b4bb148352c8"
+    },
+    "matched_summary.tsv": {
+      "bytes": 381966,
+      "sha256": "07bb4955e3be4a6479ebe8b4a94b7cd15224587c8aec66d7947e070d1e7de356"
+    },
+    "fixed_dynamic_tradeoffs.tsv": {
+      "bytes": 2832603,
+      "sha256": "cc932c32df42036e3842e2b0f83758fa24a9610e36bfa532488351e033f21326"
+    },
+    "strategy_differences.tsv": {
+      "bytes": 2427334,
+      "sha256": "5e3cecf75eccc1806d8497b71171623a6a189975016e19c5ade6ca215ef8445f"
+    },
+    "runs.tsv": {
+      "bytes": 105020,
+      "sha256": "984b3cfeac8b0f18284b81aa543b206584579eb8e8e389e8eb79c87610ca6d42"
+    },
+    "RESULTS.md": {
+      "bytes": 4701,
+      "sha256": "59a0a1dc2e79dc85357c3fed4582796e84e16f4dc0938c0bc1c75e4df6a80bc0"
+    },
+    "run_summary.tsv": {
+      "bytes": 19918,
+      "sha256": "7bb57b415d40b189d66b2e20462234a64d213d58784fd1d35ffc92d40ceeb869"
+    },
+    "strategy_difference_summary.tsv": {
+      "bytes": 541871,
+      "sha256": "1c5cf6c209a3c0de410b463ef974991640dcf485ea06f1c1f3db59224836e785"
+    },
+    "frontier_points.tsv": {
+      "bytes": 2341305,
+      "sha256": "3cb807202318eba0729e03387744b06c4110cf55b212ee1860827838e016e561"
+    },
+    "matched_agreement.tsv": {
+      "bytes": 1524318,
+      "sha256": "983de7133536f88fb889e51dfb63d83f1a205c899222cf69b89e41a66107de84"
+    },
+    "agreement.tsv": {
+      "bytes": 187844,
+      "sha256": "4e257ac63edef6a855d3e0f64b82569954ce4694a1541d62cf0e7b7049f95717"
+    },
+    "analysis.json": {
+      "bytes": 98710410,
+      "sha256": "7c788feb2c7885cae6ea8b0b8e367459d9f6fce93305ad7546cfad3429a3beca"
+    },
+    "natural_full_frontier.svg": {
+      "bytes": 6816,
+      "sha256": "72ee9c1cf93dbde681f06507014d2ff3019acf1b35b1e91657035eed92f7d59d"
+    }
+  }
+}

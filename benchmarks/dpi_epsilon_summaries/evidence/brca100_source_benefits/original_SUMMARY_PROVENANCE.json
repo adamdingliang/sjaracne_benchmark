@@ -1,0 +1,90 @@
+{
+  "schema": "brca100-source-benefits-exact-count-guide-v1",
+  "created_utc": "2026-10-26T19:37:57.613943+00:00",
+  "new_native_inference": false,
+  "original_provenance": {
+    "sha256": "8c2bf9196c74447237ce2bf440d32c472b5791dc55fdb6bbbe331c7408a608c1",
+    "bytes": 2643
+  },
+  "verified_original_output_hashes": {
+    "REPORT.md": {
+      "bytes": 6771,
+      "sha256": "f303755abf2a7097eb40bcb69205f91fca0e921a3bd1c3b4dddf1112a8b81cbf"
+    },
+    "analysis.json": {
+      "bytes": 12605701,
+      "sha256": "16f049baa7994d1f01b64d2fa24ae34e94aaaf71aeb6d3b8aa3b73285487d2b9"
+    },
+    "family_source_summaries.tsv": {
+      "bytes": 1645258,
+      "sha256": "c3dc02a89171423e33e10cf7456f9a2073ba1fbd07a91320691c105a98408b29"
+    },
+    "membership_aliases_not_replicates.tsv": {
+      "bytes": 3753,
+      "sha256": "e69ed9a9483463c3f1567807542605e2c263dc820534690b61ab3bdf1657f0ac"
+    },
+    "recurrence_by_group.tsv": {
+      "bytes": 24043,
+      "sha256": "e3a3a15cfdd5110be6a49899eab162b3b9b09fb996b49bfe650748353e55c76a"
+    },
+    "recurrence_edges.tsv.gz": {
+      "bytes": 928177,
+      "sha256": "b49092e1a44b7ad010035843adde4d73d9a290a74905a1d76db0761bbd9f0914"
+    },
+    "recurrence_summary.tsv": {
+      "bytes": 25641,
+      "sha256": "347a3431428343413bcda79577e7c7deaf0550d195f0f4d424d146c63e164822"
+    },
+    "source_differences.tsv.gz": {
+      "bytes": 1336276,
+      "sha256": "71f97c12e3c3bc893facf8fa0fa4c1356e3c1a05e5ba9673b71e3753a0916fd0"
+    },
+    "source_summary.tsv": {
+      "bytes": 445263,
+      "sha256": "7d6b5dd9ba4eb9afa3ed4a7761f72dbfca7f9014ad506654dc59debf3e0b09b0"
+    }
+  },
+  "original_protocol_input": {
+    "/mnt/d/GitHub/sjaracne_benchmark-brca-common-sources/benchmarks/brca100_common_sources/fixed_grid_followup/PLAN.md": {
+      "bytes": 7458,
+      "sha256": "6879031d8c0fd432ea5f3a4c203aec571f9d0b6d5faa9db605b5921fb0da72d2"
+    }
+  },
+  "current_protocol_note": "Copied after original analysis began; added fixed-grid anchor-asymmetry caveat, unchanged source strata/support definitions.",
+  "frozen_harness": {
+    "analyze.py": {
+      "sha256": "40380c8f910f038d1ebbd532ac9475bfc0d3e3e1bd84757fabcecc47abdb5c9d",
+      "bytes": 31115
+    },
+    "derive_summary.py": {
+      "sha256": "05f17a644a93c9ed34172f0f7bacdbf8fbd93e77fa531652550b2d5054520100",
+      "bytes": 9889
+    },
+    "FIXED_GRID_PLAN.md": {
+      "sha256": "18c1f964e78dc1d3365586ba5dccf91a2b96b4ec4c3c7e9df3decde19ee6c10a",
+      "bytes": 7914
+    },
+    "source_benefits.py": {
+      "sha256": "0af4f35f53f2c9ab010ff6532191294eeaae3bcf87e779babc959115d5311537",
+      "bytes": 25839
+    },
+    "test_source_benefits.py": {
+      "sha256": "a81cfdd58b3c5e39c969d5f830cb19b0ab04c5ef55506aeed6aaeed3af013afd",
+      "bytes": 5964
+    }
+  },
+  "outputs": {
+    "SUMMARY.md": {
+      "sha256": "a88a18996680fdf76c66b2c811a22d5127fa35912fee896c2d963274d953fd38",
+      "bytes": 6009
+    },
+    "exact_source_counts.tsv": {
+      "sha256": "39f07dc6d2bf9f77efaa563592924cc0d0a83c4a9fbe38c0f5518b536c549149",
+      "bytes": 3965
+    },
+    "pooled_degree_counts.tsv": {
+      "sha256": "757b20a9ccf6d1d5ee580a054da3927234d69deac075129171cf02e7e82d8877",
+      "bytes": 1271
+    }
+  }
+}

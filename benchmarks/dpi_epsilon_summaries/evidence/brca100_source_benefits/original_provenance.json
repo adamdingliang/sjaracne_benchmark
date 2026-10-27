@@ -1,0 +1,66 @@
+{
+  "schema": "brca100-source-benefits-provenance-v1",
+  "created_utc": "2026-10-26T19:33:20.612949+00:00",
+  "inputs": {
+    "/home/adam/sjaracne-benchmarks/brca100-common-sources-20261026/analysis_inputs.json": {
+      "bytes": 18524188,
+      "sha256": "86401e93b61601540264f2752af281762e3659da97f77184472ff42f8c657d20"
+    },
+    "/mnt/d/GitHub/sjaracne_benchmark-brca-common-sources/benchmarks/brca100_common_sources/fixed_grid_followup/PLAN.md": {
+      "bytes": 7458,
+      "sha256": "6879031d8c0fd432ea5f3a4c203aec571f9d0b6d5faa9db605b5921fb0da72d2"
+    },
+    "/mnt/d/GitHub/sjaracne_benchmark-brca-common-sources/benchmarks/brca100_common_sources/source_benefits.py": {
+      "bytes": 25839,
+      "sha256": "0af4f35f53f2c9ab010ff6532191294eeaae3bcf87e779babc959115d5311537"
+    },
+    "/mnt/d/GitHub/sjaracne_benchmark-brca-common-sources/benchmarks/brca100_common_sources/analyze.py": {
+      "bytes": 31115,
+      "sha256": "40380c8f910f038d1ebbd532ac9475bfc0d3e3e1bd84757fabcecc47abdb5c9d"
+    },
+    "/mnt/d/GitHub/sjaracne_benchmark-brca-common-sources/benchmarks/brca100_common_sources/test_source_benefits.py": {
+      "bytes": 5964,
+      "sha256": "a81cfdd58b3c5e39c969d5f830cb19b0ab04c5ef55506aeed6aaeed3af013afd"
+    }
+  },
+  "no_new_native_inference": true,
+  "original_evidence_unmodified": true,
+  "outputs": {
+    "REPORT.md": {
+      "bytes": 6771,
+      "sha256": "f303755abf2a7097eb40bcb69205f91fca0e921a3bd1c3b4dddf1112a8b81cbf"
+    },
+    "analysis.json": {
+      "bytes": 12605701,
+      "sha256": "16f049baa7994d1f01b64d2fa24ae34e94aaaf71aeb6d3b8aa3b73285487d2b9"
+    },
+    "family_source_summaries.tsv": {
+      "bytes": 1645258,
+      "sha256": "c3dc02a89171423e33e10cf7456f9a2073ba1fbd07a91320691c105a98408b29"
+    },
+    "membership_aliases_not_replicates.tsv": {
+      "bytes": 3753,
+      "sha256": "e69ed9a9483463c3f1567807542605e2c263dc820534690b61ab3bdf1657f0ac"
+    },
+    "recurrence_by_group.tsv": {
+      "bytes": 24043,
+      "sha256": "e3a3a15cfdd5110be6a49899eab162b3b9b09fb996b49bfe650748353e55c76a"
+    },
+    "recurrence_edges.tsv.gz": {
+      "bytes": 928177,
+      "sha256": "b49092e1a44b7ad010035843adde4d73d9a290a74905a1d76db0761bbd9f0914"
+    },
+    "recurrence_summary.tsv": {
+      "bytes": 25641,
+      "sha256": "347a3431428343413bcda79577e7c7deaf0550d195f0f4d424d146c63e164822"
+    },
+    "source_differences.tsv.gz": {
+      "bytes": 1336276,
+      "sha256": "71f97c12e3c3bc893facf8fa0fa4c1356e3c1a05e5ba9673b71e3753a0916fd0"
+    },
+    "source_summary.tsv": {
+      "bytes": 445263,
+      "sha256": "7d6b5dd9ba4eb9afa3ed4a7761f72dbfca7f9014ad506654dc59debf3e0b09b0"
+    }
+  }
+}

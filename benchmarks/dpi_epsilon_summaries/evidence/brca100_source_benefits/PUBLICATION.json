@@ -1,0 +1,226 @@
+{
+  "schema": "dpi-compact-evidence-publication-v1",
+  "label": "BRCA100 source-level benefits",
+  "published_utc": "2026-10-27T03:04:14.175080+00:00",
+  "operation": "copy tables/figures unchanged; adapt Markdown links and add explicit publication notes",
+  "source_result_directory": "source_benefits",
+  "process_source_name": "PLAN.md",
+  "packager_sha256": "980abe3bf389807b46ac03182ed678f4eea73702a74aed0671f909c540022bf8",
+  "files": [
+    {
+      "source_name": "exact_source_counts.tsv",
+      "published_name": "exact_source_counts.tsv",
+      "original": {
+        "bytes": 3965,
+        "sha256": "39f07dc6d2bf9f77efaa563592924cc0d0a83c4a9fbe38c0f5518b536c549149"
+      },
+      "published": {
+        "bytes": 3965,
+        "sha256": "39f07dc6d2bf9f77efaa563592924cc0d0a83c4a9fbe38c0f5518b536c549149"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "family_source_summaries.tsv",
+      "published_name": "family_source_summaries.tsv",
+      "original": {
+        "bytes": 1645258,
+        "sha256": "c3dc02a89171423e33e10cf7456f9a2073ba1fbd07a91320691c105a98408b29"
+      },
+      "published": {
+        "bytes": 1645258,
+        "sha256": "c3dc02a89171423e33e10cf7456f9a2073ba1fbd07a91320691c105a98408b29"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "membership_aliases_not_replicates.tsv",
+      "published_name": "membership_aliases_not_replicates.tsv",
+      "original": {
+        "bytes": 3753,
+        "sha256": "e69ed9a9483463c3f1567807542605e2c263dc820534690b61ab3bdf1657f0ac"
+      },
+      "published": {
+        "bytes": 3753,
+        "sha256": "e69ed9a9483463c3f1567807542605e2c263dc820534690b61ab3bdf1657f0ac"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "pooled_degree_counts.tsv",
+      "published_name": "pooled_degree_counts.tsv",
+      "original": {
+        "bytes": 1271,
+        "sha256": "757b20a9ccf6d1d5ee580a054da3927234d69deac075129171cf02e7e82d8877"
+      },
+      "published": {
+        "bytes": 1271,
+        "sha256": "757b20a9ccf6d1d5ee580a054da3927234d69deac075129171cf02e7e82d8877"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "provenance.json",
+      "published_name": "original_provenance.json",
+      "original": {
+        "bytes": 2643,
+        "sha256": "8c2bf9196c74447237ce2bf440d32c472b5791dc55fdb6bbbe331c7408a608c1"
+      },
+      "published": {
+        "bytes": 2643,
+        "sha256": "8c2bf9196c74447237ce2bf440d32c472b5791dc55fdb6bbbe331c7408a608c1"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "recurrence_by_group.tsv",
+      "published_name": "recurrence_by_group.tsv",
+      "original": {
+        "bytes": 24043,
+        "sha256": "e3a3a15cfdd5110be6a49899eab162b3b9b09fb996b49bfe650748353e55c76a"
+      },
+      "published": {
+        "bytes": 24043,
+        "sha256": "e3a3a15cfdd5110be6a49899eab162b3b9b09fb996b49bfe650748353e55c76a"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "recurrence_summary.tsv",
+      "published_name": "recurrence_summary.tsv",
+      "original": {
+        "bytes": 25641,
+        "sha256": "347a3431428343413bcda79577e7c7deaf0550d195f0f4d424d146c63e164822"
+      },
+      "published": {
+        "bytes": 25641,
+        "sha256": "347a3431428343413bcda79577e7c7deaf0550d195f0f4d424d146c63e164822"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "REPORT.md",
+      "published_name": "REPORT.md",
+      "original": {
+        "bytes": 6771,
+        "sha256": "f303755abf2a7097eb40bcb69205f91fca0e921a3bd1c3b4dddf1112a8b81cbf"
+      },
+      "published": {
+        "bytes": 7069,
+        "sha256": "2ef983b383bf4b698fd640172d7f7d6556d7570f20026348b69b5f6b5ae84dbf"
+      },
+      "link_adaptations": [
+        {
+          "original_link": "source_differences.tsv.gz",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "recurrence_edges.tsv.gz",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "provenance.json",
+          "published_link": "original_provenance.json"
+        }
+      ],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "source_summary.tsv",
+      "published_name": "source_summary.tsv",
+      "original": {
+        "bytes": 445263,
+        "sha256": "7d6b5dd9ba4eb9afa3ed4a7761f72dbfca7f9014ad506654dc59debf3e0b09b0"
+      },
+      "published": {
+        "bytes": 445263,
+        "sha256": "7d6b5dd9ba4eb9afa3ed4a7761f72dbfca7f9014ad506654dc59debf3e0b09b0"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "SUMMARY.md",
+      "published_name": "SUMMARY.md",
+      "original": {
+        "bytes": 6009,
+        "sha256": "a88a18996680fdf76c66b2c811a22d5127fa35912fee896c2d963274d953fd38"
+      },
+      "published": {
+        "bytes": 6242,
+        "sha256": "131b3438d51df2a989ba4bef10dc8d7967efa1bc7e28573228f0f16a9299b00b"
+      },
+      "link_adaptations": [
+        {
+          "original_link": "recurrence_edges.tsv.gz",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "SUMMARY_PROVENANCE.json",
+          "published_link": "original_SUMMARY_PROVENANCE.json"
+        }
+      ],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "SUMMARY_PROVENANCE.json",
+      "published_name": "original_SUMMARY_PROVENANCE.json",
+      "original": {
+        "bytes": 3299,
+        "sha256": "b1df7ddb6a7eb5844c7634a479edd1272e39d8335dd6a06a9483961aab4c19eb"
+      },
+      "published": {
+        "bytes": 3299,
+        "sha256": "b1df7ddb6a7eb5844c7634a479edd1272e39d8335dd6a06a9483961aab4c19eb"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "PLAN.md",
+      "published_name": "PROCESS.md",
+      "original": {
+        "bytes": 7914,
+        "sha256": "18c1f964e78dc1d3365586ba5dccf91a2b96b4ec4c3c7e9df3decde19ee6c10a"
+      },
+      "published": {
+        "bytes": 8201,
+        "sha256": "8fb70d311fc7fda6c6c135919473d0bcfe8bd7a46f41e657bf295ab1924c10a7"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    }
+  ],
+  "omitted_local_artifacts": [
+    {
+      "name": "analysis.json",
+      "bytes": 12605701,
+      "sha256": "16f049baa7994d1f01b64d2fa24ae34e94aaaf71aeb6d3b8aa3b73285487d2b9",
+      "reason": "Large/full analysis, per-source/per-edge records, or non-report artifact kept local"
+    },
+    {
+      "name": "recurrence_edges.tsv.gz",
+      "bytes": 928177,
+      "sha256": "b49092e1a44b7ad010035843adde4d73d9a290a74905a1d76db0761bbd9f0914",
+      "reason": "Large/full analysis, per-source/per-edge records, or non-report artifact kept local"
+    },
+    {
+      "name": "source_differences.tsv.gz",
+      "bytes": 1336276,
+      "sha256": "71f97c12e3c3bc893facf8fa0fa4c1356e3c1a05e5ba9673b71e3753a0916fd0",
+      "reason": "Large/full analysis, per-source/per-edge records, or non-report artifact kept local"
+    }
+  ],
+  "readme": {
+    "bytes": 1980,
+    "sha256": "7001b8e2950c58359f51eca9a8f73927ddc558a84901bb2f7e5e5e426aed5cff"
+  },
+  "new_scientific_run": false
+}
