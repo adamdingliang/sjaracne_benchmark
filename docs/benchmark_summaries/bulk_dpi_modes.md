@@ -1,42 +1,86 @@
-# No-DPI, fixed-epsilon and dynamic-epsilon comparisons in bulk RNA data
+# Bulk RNA DPI strategies and combined conditional conclusion
 
 ## Question and matched design
 
-Can a hub-size-dependent DPI tolerance reduce panel-context sensitivity without simply abandoning pruning? This summary compares strategies in the **same common-source experiments** described in the [BRCA100 report](https://github.com/adamdingliang/sjaracne_benchmark/blob/4b7a643135ffb6e754d7c59d677aafb9c555dce2/benchmarks/dpi_epsilon_summaries/evidence/brca100_fixed_grid/RESULTS.md) and [LUAD100 report](https://github.com/adamdingliang/sjaracne_benchmark/blob/4b7a643135ffb6e754d7c59d677aafb9c555dce2/benchmarks/dpi_epsilon_summaries/evidence/luad100_common/RESULTS.md), not two additional studies.
+Can a hub-size-dependent DPI tolerance reduce context sensitivity without simply abandoning pruning? These are the **same common-source experiments** summarized in the [companion source-consistency summary](https://github.com/adamdingliang/sjaracne_benchmark/blob/81ca0bb1ce7fcb97479e24e82a155e31e45fa383/docs/benchmark_summaries/common_tf_sig_sources.md), not additional independent studies.
 
-Engine `b41c4ca637ac2bffe73617a86af65c83e75ee075` used three matched 80-of-100 observation resamples without replacement, three nested membership draws, PCHIP `p_b=0.0005` for both TF/SIG, and identical targets and samples within each comparison. Reconstruction (`-s`) and annotation (`-l`) used the same selected panel. Only edges originating from shared evaluated sources are scored: BRCA100 has 479 probe IDs representing 254 symbols; LUAD100 has 477 Ensembl genes/477 symbols. These are not whole-network summaries.
+| Dataset | Fixed evaluated sources | Common-only baseline H | Full TF H | Full SIG H |
+| --- | --- | ---: | ---: | ---: |
+| BRCA100 | 479 probe IDs representing 254 gene symbols | 479 | 2,608 | 10,680 |
+| LUAD100 | 477 Ensembl gene IDs representing 477 symbols | 477 | 1,929 | 9,464 |
 
-The frozen candidate rule was `epsilon(H)=min(0.30, 0.05*max(0,log2(H/479)))`. It was applied through ordinary native `-e` runs, with **no LUAD retuning** or native automatic-H option. Fixed epsilon is the same at every H; strict DPI is zero; no-DPI uses epsilon one. Increasing epsilon relaxes pruning.
+Engine `b41c4ca637ac2bffe73617a86af65c83e75ee075` used three matched 80-of-100 observation resamples without replacement, three nested panel-membership draws and PCHIP `p_b=0.0005` for both TF and SIG. Samples, targets and MI cutoffs were held fixed within comparisons. Reconstruction (`-s`) and annotation (`-l`) used the same selected panel. **All scores below concern edges from the fixed common-source population, not all inferred sources.** Repeated baseline and full-list native jobs are not independent replication.
+
+## What dynamic epsilon means
+
+`H` counts source nodes in the reconstruction and annotation panel. Larger epsilon relaxes DPI pruning.
+
+```text
+dynamic: epsilon(H) = min(0.30, s * max(0, log2(H / 479)))
+fixed:   the same epsilon at every H
+strict:  epsilon = 0
+no DPI:  epsilon = 1
+```
+
+For slope `s=0.05`, each doubling above the numerical anchor 479 adds 0.05 until the cap of 0.30. At or below 479, dynamic epsilon is zero. LUAD's baseline H=477 is therefore zero-clamped; the rule was transferred **without retuning**. The anchor counts computational nodes, not equivalent biological coverage across probes and genes. The table highlights slope 0.05, not an established optimum. The schedule used ordinary native `-e` runs, not an automatic dynamic-H engine option.
 
 ## Full-list endpoint comparison
 
-Values are medians of three matched observation pairs. Pruning is the fraction of pre-DPI common-source candidate edges removed. Raw Jaccard compares retained TF/SIG edge identities; Top20 compares equally sized target sets per eligible source.
+Values are medians over three unique matched observation pairs. Pruning is the fraction of pre-DPI common-source candidate edges removed. Raw Jaccard is retained-edge intersection divided by union between the full TF and full SIG contexts. Top-20 Jaccard compares equally sized sets of 20 highest-MI retained targets per eligible source. Neither measures biological accuracy.
 
-| Dataset | Mode | TF pruning | SIG pruning | Combined pruning | Raw Jaccard | Top20 Jaccard |
+| Dataset | Mode | TF pruning fraction | SIG pruning fraction | Combined pruning fraction | Raw Jaccard | Top-20 Jaccard |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| BRCA100 | No DPI | 0.0000 | 0.0000 | 0.0000 | 1.0000 | — |
-| BRCA100 | Strict | 0.2809 | 0.4131 | 0.3457 | 0.7737 | 0.8042 |
-| BRCA100 | Fixed 0.10 | 0.2187 | 0.3425 | 0.2788 | 0.8063 | 0.8862 |
-| BRCA100 | Fixed 0.20 | 0.1512 | 0.2637 | 0.2048 | 0.8331 | 0.9514 |
-| BRCA100 | Fixed 0.25 | 0.1184 | 0.2231 | 0.1676 | 0.8506 | 0.9711 |
-| BRCA100 | Dynamic 0.05 | 0.2031 | 0.2446 | 0.2217 | 0.8626 | 0.9500 |
-| LUAD100 | No DPI | 0.0000 | 0.0000 | 0.0000 | 1.0000 | — |
-| LUAD100 | Strict | 0.6081 | 0.7974 | 0.7027 | 0.4703 | 0.5940 |
-| LUAD100 | Fixed 0.10 | 0.4842 | 0.7000 | 0.5921 | 0.5388 | 0.7732 |
-| LUAD100 | Fixed 0.20 | 0.3321 | 0.5556 | 0.4439 | 0.6268 | 0.9089 |
-| LUAD100 | Fixed 0.25 | 0.2563 | 0.4690 | 0.3626 | 0.6792 | 0.9551 |
-| LUAD100 | Dynamic 0.05 | 0.4837 | 0.5307 | 0.5072 | 0.6740 | 0.8894 |
+| BRCA100 | No DPI | 0.0000 | 0.0000 | 0.0000 | 1.0000 | Not evaluated |
+| BRCA100 | Strict DPI | 0.2809 | 0.4131 | 0.3457 | 0.7737 | 0.8042 |
+| BRCA100 | Fixed epsilon 0.10 | 0.2187 | 0.3425 | 0.2788 | 0.8063 | 0.8862 |
+| BRCA100 | Fixed epsilon 0.20 | 0.1512 | 0.2637 | 0.2048 | 0.8331 | 0.9514 |
+| BRCA100 | Fixed epsilon 0.25 | 0.1184 | 0.2231 | 0.1676 | 0.8506 | 0.9711 |
+| BRCA100 | Dynamic slope 0.05 | 0.2031 | 0.2446 | 0.2217 | 0.8626 | 0.9500 |
+| LUAD100 | No DPI | 0.0000 | 0.0000 | 0.0000 | 1.0000 | Not evaluated |
+| LUAD100 | Strict DPI | 0.6081 | 0.7974 | 0.7027 | 0.4703 | 0.5940 |
+| LUAD100 | Fixed epsilon 0.10 | 0.4842 | 0.7000 | 0.5921 | 0.5388 | 0.7732 |
+| LUAD100 | Fixed epsilon 0.20 | 0.3321 | 0.5556 | 0.4439 | 0.6268 | 0.9089 |
+| LUAD100 | Fixed epsilon 0.25 | 0.2563 | 0.4690 | 0.3626 | 0.6792 | 0.9551 |
+| LUAD100 | Dynamic slope 0.05 | 0.4837 | 0.5307 | 0.5072 | 0.6740 | 0.8894 |
 
-Combined pruning is candidate-weighted within each pair before taking the median. Top20 uses the same eligible-source intersection across all tested strategies and both contexts: median 276/479 BRCA sources and 457/477 LUAD sources. No-DPI matched-budget scores were intentionally not evaluated.
+Pruning fractions and Jaccard range from zero to one. Combined pruning is candidate-weighted **within each pair before the median**, not an average of the displayed endpoint medians. Top-20 uses one shared eligible-source intersection across pruned strategies and both contexts; median eligibility was 276 of 479 BRCA sources and 457 of 477 LUAD sources. Short lists are not padded, and no-DPI matched-budget scores were intentionally not evaluated.
 
-No-DPI retains the **MI-thresholded** candidate graph: median 21,799 common-source edges and 22 targets/source in BRCA; 111,469 edges and 155 targets/source in LUAD. Its raw context Jaccard of one is guaranteed by the matched construction, not evidence of accuracy. BRCA median targets remained 22 for all strategies. In LUAD, full TF/SIG target medians were 88/46 under strict DPI, 133/97 at fixed 0.20, and 112/103 under dynamic 0.05. Nonempty-source coverage was 100% throughout.
+| Dataset | No-DPI candidate edges | No-DPI median targets per source |
+| --- | ---: | ---: |
+| BRCA100 | 21,799 | 22 |
+| LUAD100 | 111,469 | 155 |
 
-## Across-H balance and conditional conclusion
+No-DPI is still MI-thresholded. Its raw Jaccard of one is guaranteed because there is no context-dependent pruning, not evidence of accuracy. Nonempty-source coverage was 100% throughout; BRCA median targets remained 22 under every strategy. LUAD full TF target medians were 88 under strict DPI and 112 under dynamic slope 0.05; corresponding full SIG medians were 46 and 103.
 
-Panels expanded from 479 to 2,608 TF/10,680 SIG nodes in BRCA, and from 477 to 1,929/9,464 in LUAD. Dynamic 0.05 reduced the paired full-minus-baseline pruning increase from 11.57/24.89 to 3.65/7.68 percentage points in BRCA TF/SIG, and from 14.05/32.97 to 1.61/6.31 in LUAD. Identity did not improve uniformly at every H.
+## Figures and trade-offs
 
-Against fixed 0.20, BRCA dynamic achieved nearly identical Top20 agreement with more combined pruning. LUAD showed a larger cost: paired Top20 agreement was 0.0168 lower, while combined pruning was 6.33 percentage points higher. Fixed 0.25 achieved better Top20 agreement in both datasets by relinquishing still more pruning. Endpoint agreement alone therefore cannot select a strategy.
+### Figure 1. Pruning increase as the source panel expands
 
-**Combined conditional conclusion across the three benchmark summaries:** the [DREAM5 Network 1/3 comparisons](https://github.com/adamdingliang/sjaracne_benchmark/blob/f4770ff52416e5d4c95a387c8b85b07f0237a885/docs/benchmark_summaries/dream5_dpi.md) did not demonstrate a dynamic-specific precision/recall advantage over matched fixed tolerance: full-H outputs were identical by construction, and smaller-H matched-budget/matched-recall controls favored fixed tolerance. BRCA/LUAD instead support a plausible experimental engineering compromise: less hub-size-related variation while retaining substantial TF/overall pruning and LUAD target-list sizes. Together, this supports investigating an experimental policy, **not an established accuracy improvement, universal optimum or new default**.
+![Paired full-minus-common-baseline pruning increases in BRCA100 and LUAD100](https://github.com/adamdingliang/sjaracne_benchmark/blob/81ca0bb1ce7fcb97479e24e82a155e31e45fa383/docs/benchmark_summaries/figures/bulk_pruning_increase.png?raw=true)
 
-The bulk experiments have no reference edges or TP/FP labels; three overlapping resamples show low cross-resample edge stability. BRCA probes and LUAD genes are not equivalent biological units, LUAD preparation used all 517 patients for feature selection, and the independent-rank PCHIP calibration does not establish calibration for tied/zero-rich RNA-seq. The DREAM study used different anchors, so it does not validate the bulk rule's `H_ref=479`. No consensus or downstream activity was tested. Full trajectories, fixed-grid controls, provenance and adverse results remain in the linked reports.
+The increase is full-panel pruning minus common-only baseline pruning, paired before taking medians. Dynamic slope 0.05 reduces the measured increase in both contexts:
+
+| Dataset | Context | Strict-DPI increase (percentage points) | Dynamic-slope-0.05 increase (percentage points) |
+| --- | --- | ---: | ---: |
+| BRCA100 | TF | 11.57 | 3.65 |
+| BRCA100 | SIG | 24.89 | 7.68 |
+| LUAD100 | TF | 14.05 | 1.61 |
+| LUAD100 | SIG | 32.97 | 6.31 |
+
+A flatter trajectory alone does not select a strategy. Positive fixed epsilon also relaxes the baseline, while dynamic starts at zero. This anchor asymmetry affects baseline-to-full comparisons and is not evidence of superiority.
+
+### Figure 2. Agreement versus pruning at the full contexts
+
+![Full-context Top-20 target agreement versus combined pruning in both bulk datasets](https://github.com/adamdingliang/sjaracne_benchmark/blob/81ca0bb1ce7fcb97479e24e82a155e31e45fa383/docs/benchmark_summaries/figures/bulk_full_context_tradeoff.png?raw=true)
+
+Points summarize full TF versus full SIG contexts. Higher agreement and more pruning describe competing engineering objectives, not a validated accuracy score. No-DPI is omitted because its matched Top-20 score was not evaluated. Fixed epsilon 0.25 gives better Top-20 agreement than dynamic in both datasets but retains less pruning. Compared with fixed 0.20, dynamic has nearly identical BRCA agreement; in LUAD the paired Top-20 difference is -0.0168 and combined pruning is 6.33 percentage points higher. Paired differences need not equal subtraction of separately displayed medians. Identity does not improve at every H.
+
+## Combined conditional conclusion
+
+Across all three summaries, [DREAM5 Networks 1 and 3](https://github.com/adamdingliang/sjaracne_benchmark/blob/2a121d17d0e34c7d1964e05bffb36c1b1d080ccf/docs/benchmark_summaries/dream5_dpi.md) did **not** demonstrate a dynamic-specific precision or recall advantage over matched fixed tolerance. Their full-H outputs were identical by construction; smaller-H matched-budget and matched-recall controls favored fixed tolerance in the summarized groups.
+
+BRCA100 and LUAD100 instead support a **plausible experimental engineering compromise**: less hub-size-related pruning variation, substantial TF and overall pruning, and better preservation of LUAD target-list sizes versus strict DPI. Strong fixed tolerance remains competitive. Together these results support an experimental option, **not an established accuracy improvement, optimal anchor or slope, universal policy, or new default**.
+
+The bulk datasets have no reference edges or TP or FP labels. Three overlapping observation resamples show low cross-resample edge stability. BRCA probes and LUAD genes are not equivalent biological units; LUAD feature selection used all 517 prepared patients. The independent-rank PCHIP study does not establish calibration for tied or zero-rich RNA-seq. DREAM used different anchors and cannot validate the bulk anchor 479. No consensus or downstream activity was tested.
+
+Detailed process, complete trajectories, adverse results and provenance: [BRCA100](https://github.com/adamdingliang/sjaracne_benchmark/blob/4b7a643135ffb6e754d7c59d677aafb9c555dce2/benchmarks/dpi_epsilon_summaries/evidence/brca100_fixed_grid/RESULTS.md) and [LUAD100](https://github.com/adamdingliang/sjaracne_benchmark/blob/4b7a643135ffb6e754d7c59d677aafb9c555dce2/benchmarks/dpi_epsilon_summaries/evidence/luad100_common/RESULTS.md). Figures use saved results only; no inference was rerun. [Selected plot data and hashes](https://github.com/adamdingliang/sjaracne_benchmark/blob/81ca0bb1ce7fcb97479e24e82a155e31e45fa383/docs/benchmark_summaries/figures/bulk_dpi_summary_figures.json) document the calculations.
