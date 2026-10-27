@@ -1,0 +1,62 @@
+{
+  "schema": "dream5-dpi-controls-report-v1",
+  "design_fingerprint": "3247a52d286d6b74df6551bcadaec520a41a5b85d23b143b992182bcda293c1e",
+  "files": {
+    "RESULTS.md": {
+      "bytes": 38247,
+      "sha256": "67d683937c09518a7880a08ca02a33d7742fcdeaafde193fd1a0906a2e34e954"
+    },
+    "analysis.json": {
+      "bytes": 31572806,
+      "sha256": "3b806ee8076ee151dcd86abc54bde0a2ec3d4434e5fcfc3a993f9b45d100bfb9"
+    },
+    "runs.tsv": {
+      "bytes": 390422,
+      "sha256": "1ca6c645cafdd23eb4f3991bb44cbff00de07547bd98e129e642c576b28704a4"
+    },
+    "matched_budget.tsv": {
+      "bytes": 1336622,
+      "sha256": "ba97edf8dd2a37f2130a3e6dbe7574170c93394cdd571d03daa285371b1a187a"
+    },
+    "matched_recall.tsv": {
+      "bytes": 1876886,
+      "sha256": "3a10a42dc9925562c6d9499f656453dda2ac2f2d62b6ff561566e379da0f810b"
+    },
+    "paired_controls.tsv": {
+      "bytes": 49870,
+      "sha256": "973a91ff1c9fa357e16578301f088f915036597fe7500c019825a7cb97d76916"
+    },
+    "run_summary.tsv": {
+      "bytes": 36377,
+      "sha256": "1be2152196569e9762c14353da1a64edd0693f5fb518b08cb75363597ebf8050"
+    },
+    "matched_budget_summary.tsv": {
+      "bytes": 87270,
+      "sha256": "ae25be35d76c0ebc8ebc4be85f76409ea25b179403a85ce32bd7c92ce0c32398"
+    },
+    "matched_recall_summary.tsv": {
+      "bytes": 116559,
+      "sha256": "e01069c84a3cdfe82c8f72e917274289b2f287856f52b78dcbdc01f54915d5bd"
+    },
+    "paired_controls_summary.tsv": {
+      "bytes": 12016,
+      "sha256": "ac30e34b7a9e32acf3555470945e541c7c3d64802c5e4888e32fd308320f4d79"
+    },
+    "matched_budget_comparisons.tsv": {
+      "bytes": 878189,
+      "sha256": "ee1267be052f57e1c3342a2bdf6a976dc65996324c5de84426f4b544dae3e727"
+    },
+    "matched_recall_comparisons.tsv": {
+      "bytes": 753562,
+      "sha256": "9967be9ec2a26b70800c9acbfe7097db4fce4a1df9d8134f8e331530f4db218b"
+    },
+    "matched_budget_comparisons_summary.tsv": {
+      "bytes": 111510,
+      "sha256": "17cc29347caa4cc9b17e30cc4bcd91f766ec2b3f604b9ec15f8c0cbf0f08aec2"
+    },
+    "matched_recall_comparisons_summary.tsv": {
+      "bytes": 97004,
+      "sha256": "493b6b08135ec692652c0f397fe6c1d1502e853021fa9a40f7db154a44905559"
+    }
+  }
+}

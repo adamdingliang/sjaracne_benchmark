@@ -1,0 +1,239 @@
+{
+  "schema": "dpi-compact-evidence-publication-v1",
+  "label": "DREAM5 dynamic versus fixed controls",
+  "published_utc": "2026-10-27T03:04:13.883196+00:00",
+  "operation": "copy tables/figures unchanged; adapt Markdown links and add explicit publication notes",
+  "source_result_directory": "results_controls_2026-10-25",
+  "process_source_name": "CONTROLS_PLAN.md",
+  "packager_sha256": "980abe3bf389807b46ac03182ed678f4eea73702a74aed0671f909c540022bf8",
+  "files": [
+    {
+      "source_name": "matched_budget.tsv",
+      "published_name": "matched_budget.tsv",
+      "original": {
+        "bytes": 1336622,
+        "sha256": "ba97edf8dd2a37f2130a3e6dbe7574170c93394cdd571d03daa285371b1a187a"
+      },
+      "published": {
+        "bytes": 1336622,
+        "sha256": "ba97edf8dd2a37f2130a3e6dbe7574170c93394cdd571d03daa285371b1a187a"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "matched_budget_comparisons.tsv",
+      "published_name": "matched_budget_comparisons.tsv",
+      "original": {
+        "bytes": 878189,
+        "sha256": "ee1267be052f57e1c3342a2bdf6a976dc65996324c5de84426f4b544dae3e727"
+      },
+      "published": {
+        "bytes": 878189,
+        "sha256": "ee1267be052f57e1c3342a2bdf6a976dc65996324c5de84426f4b544dae3e727"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "matched_budget_comparisons_summary.tsv",
+      "published_name": "matched_budget_comparisons_summary.tsv",
+      "original": {
+        "bytes": 111510,
+        "sha256": "17cc29347caa4cc9b17e30cc4bcd91f766ec2b3f604b9ec15f8c0cbf0f08aec2"
+      },
+      "published": {
+        "bytes": 111510,
+        "sha256": "17cc29347caa4cc9b17e30cc4bcd91f766ec2b3f604b9ec15f8c0cbf0f08aec2"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "matched_budget_summary.tsv",
+      "published_name": "matched_budget_summary.tsv",
+      "original": {
+        "bytes": 87270,
+        "sha256": "ae25be35d76c0ebc8ebc4be85f76409ea25b179403a85ce32bd7c92ce0c32398"
+      },
+      "published": {
+        "bytes": 87270,
+        "sha256": "ae25be35d76c0ebc8ebc4be85f76409ea25b179403a85ce32bd7c92ce0c32398"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "matched_recall.tsv",
+      "published_name": "matched_recall.tsv",
+      "original": {
+        "bytes": 1876886,
+        "sha256": "3a10a42dc9925562c6d9499f656453dda2ac2f2d62b6ff561566e379da0f810b"
+      },
+      "published": {
+        "bytes": 1876886,
+        "sha256": "3a10a42dc9925562c6d9499f656453dda2ac2f2d62b6ff561566e379da0f810b"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "matched_recall_comparisons.tsv",
+      "published_name": "matched_recall_comparisons.tsv",
+      "original": {
+        "bytes": 753562,
+        "sha256": "9967be9ec2a26b70800c9acbfe7097db4fce4a1df9d8134f8e331530f4db218b"
+      },
+      "published": {
+        "bytes": 753562,
+        "sha256": "9967be9ec2a26b70800c9acbfe7097db4fce4a1df9d8134f8e331530f4db218b"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "matched_recall_comparisons_summary.tsv",
+      "published_name": "matched_recall_comparisons_summary.tsv",
+      "original": {
+        "bytes": 97004,
+        "sha256": "493b6b08135ec692652c0f397fe6c1d1502e853021fa9a40f7db154a44905559"
+      },
+      "published": {
+        "bytes": 97004,
+        "sha256": "493b6b08135ec692652c0f397fe6c1d1502e853021fa9a40f7db154a44905559"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "matched_recall_summary.tsv",
+      "published_name": "matched_recall_summary.tsv",
+      "original": {
+        "bytes": 116559,
+        "sha256": "e01069c84a3cdfe82c8f72e917274289b2f287856f52b78dcbdc01f54915d5bd"
+      },
+      "published": {
+        "bytes": 116559,
+        "sha256": "e01069c84a3cdfe82c8f72e917274289b2f287856f52b78dcbdc01f54915d5bd"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "paired_controls.tsv",
+      "published_name": "paired_controls.tsv",
+      "original": {
+        "bytes": 49870,
+        "sha256": "973a91ff1c9fa357e16578301f088f915036597fe7500c019825a7cb97d76916"
+      },
+      "published": {
+        "bytes": 49870,
+        "sha256": "973a91ff1c9fa357e16578301f088f915036597fe7500c019825a7cb97d76916"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "paired_controls_summary.tsv",
+      "published_name": "paired_controls_summary.tsv",
+      "original": {
+        "bytes": 12016,
+        "sha256": "ac30e34b7a9e32acf3555470945e541c7c3d64802c5e4888e32fd308320f4d79"
+      },
+      "published": {
+        "bytes": 12016,
+        "sha256": "ac30e34b7a9e32acf3555470945e541c7c3d64802c5e4888e32fd308320f4d79"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "report_provenance.json",
+      "published_name": "original_report_provenance.json",
+      "original": {
+        "bytes": 2193,
+        "sha256": "3a1cd19e2c5faa697bfd6cd71c76d706886da345be836cce6501600e5c4a0970"
+      },
+      "published": {
+        "bytes": 2193,
+        "sha256": "3a1cd19e2c5faa697bfd6cd71c76d706886da345be836cce6501600e5c4a0970"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "RESULTS.md",
+      "published_name": "RESULTS.md",
+      "original": {
+        "bytes": 38247,
+        "sha256": "67d683937c09518a7880a08ca02a33d7742fcdeaafde193fd1a0906a2e34e954"
+      },
+      "published": {
+        "bytes": 38546,
+        "sha256": "59bff96b9cc6bd60349c0bc6b1c0a56f54269ed6b769ffd7eac5b3a6a027e55c"
+      },
+      "link_adaptations": [
+        {
+          "original_link": "analysis.json",
+          "published_link": "README.md#local-artifacts"
+        }
+      ],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "run_summary.tsv",
+      "published_name": "run_summary.tsv",
+      "original": {
+        "bytes": 36377,
+        "sha256": "1be2152196569e9762c14353da1a64edd0693f5fb518b08cb75363597ebf8050"
+      },
+      "published": {
+        "bytes": 36377,
+        "sha256": "1be2152196569e9762c14353da1a64edd0693f5fb518b08cb75363597ebf8050"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "runs.tsv",
+      "published_name": "runs.tsv",
+      "original": {
+        "bytes": 390422,
+        "sha256": "1ca6c645cafdd23eb4f3991bb44cbff00de07547bd98e129e642c576b28704a4"
+      },
+      "published": {
+        "bytes": 390422,
+        "sha256": "1ca6c645cafdd23eb4f3991bb44cbff00de07547bd98e129e642c576b28704a4"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "CONTROLS_PLAN.md",
+      "published_name": "PROCESS.md",
+      "original": {
+        "bytes": 6523,
+        "sha256": "19ac76432deeb32616b17440ca7456a406b5d0cbe3d70f06561e9b33285a625d"
+      },
+      "published": {
+        "bytes": 6810,
+        "sha256": "569872cba535b9b8d463de7a3d14ad95a49bba3969165b14d6a85671aff67ba0"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    }
+  ],
+  "omitted_local_artifacts": [
+    {
+      "name": "analysis.json",
+      "bytes": 31572806,
+      "sha256": "3b806ee8076ee151dcd86abc54bde0a2ec3d4434e5fcfc3a993f9b45d100bfb9",
+      "reason": "Large/full analysis, per-source/per-edge records, or non-report artifact kept local"
+    }
+  ],
+  "readme": {
+    "bytes": 1934,
+    "sha256": "afef6e4519c1e5c30733df434c0b652def4dd3836e5df52091d93899fdbd465a"
+  },
+  "new_scientific_run": false
+}

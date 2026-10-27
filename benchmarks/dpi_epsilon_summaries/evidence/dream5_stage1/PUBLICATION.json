@@ -1,0 +1,232 @@
+{
+  "schema": "dpi-compact-evidence-publication-v1",
+  "label": "DREAM5 DPI stage 1",
+  "published_utc": "2026-10-27T03:03:55.088323+00:00",
+  "operation": "copy tables/figures unchanged; adapt Markdown links and add explicit publication notes",
+  "source_result_directory": "results_2026-10-25",
+  "process_source_name": "PLAN.md",
+  "packager_sha256": "980abe3bf389807b46ac03182ed678f4eea73702a74aed0671f909c540022bf8",
+  "files": [
+    {
+      "source_name": "comparisons_per_seed.tsv",
+      "published_name": "comparisons_per_seed.tsv",
+      "original": {
+        "bytes": 5651,
+        "sha256": "39cb0142bc6234420715c4a16700bc97d208584cdb2d09b1c454163173705bec"
+      },
+      "published": {
+        "bytes": 5651,
+        "sha256": "39cb0142bc6234420715c4a16700bc97d208584cdb2d09b1c454163173705bec"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "comparisons_summary.tsv",
+      "published_name": "comparisons_summary.tsv",
+      "original": {
+        "bytes": 6195,
+        "sha256": "f32bb0acf3de734b3e07279130e87a1a3b53148c7fa76337df426b2dd821f6a5"
+      },
+      "published": {
+        "bytes": 6195,
+        "sha256": "f32bb0acf3de734b3e07279130e87a1a3b53148c7fa76337df426b2dd821f6a5"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "metric_trajectories.svg",
+      "published_name": "metric_trajectories.svg",
+      "original": {
+        "bytes": 15176,
+        "sha256": "8197f3d8839d515cd491c4cd68932d09ee199f662d0d9ec640f172be05370296"
+      },
+      "published": {
+        "bytes": 15176,
+        "sha256": "8197f3d8839d515cd491c4cd68932d09ee199f662d0d9ec640f172be05370296"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "paired_tp_fp_tradeoff.svg",
+      "published_name": "paired_tp_fp_tradeoff.svg",
+      "original": {
+        "bytes": 6197,
+        "sha256": "5762b881a9739f140169362eca62276c548bd00a7d38124159bfb30452f73d29"
+      },
+      "published": {
+        "bytes": 6197,
+        "sha256": "5762b881a9739f140169362eca62276c548bd00a7d38124159bfb30452f73d29"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "REPORT.md",
+      "published_name": "REPORT.md",
+      "original": {
+        "bytes": 4663,
+        "sha256": "0c4898469d177dffd00ec5fd8ca258b71767e88090f2979fdfc55422d67df6d5"
+      },
+      "published": {
+        "bytes": 4950,
+        "sha256": "1a7fdaec1e366f3b757aacba0057c8e3ca4135866c5162953a66ecec1be325c6"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "report_provenance.json",
+      "published_name": "original_report_provenance.json",
+      "original": {
+        "bytes": 1558,
+        "sha256": "7c06944c31dfd4cc11fd70b0cd133f495ddd4471baca3b3b7ded5eb97d93b353"
+      },
+      "published": {
+        "bytes": 1558,
+        "sha256": "7c06944c31dfd4cc11fd70b0cd133f495ddd4471baca3b3b7ded5eb97d93b353"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "RESULTS.md",
+      "published_name": "RESULTS.md",
+      "original": {
+        "bytes": 8174,
+        "sha256": "f487e9c691b7bc1c6cf314a5cbdb9d4066f7279213d3a15df4b2fcc9385dcd70"
+      },
+      "published": {
+        "bytes": 8483,
+        "sha256": "95bb655c2085ba3aa31173633d8960486addc7913024631a647788662d1340cc"
+      },
+      "link_adaptations": [
+        {
+          "original_link": "../README.md",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "../PLAN.md",
+          "published_link": "PROCESS.md"
+        },
+        {
+          "original_link": "analysis.json",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "provenance/design.json",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "provenance/build_manifest.json",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "provenance/status.json",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "provenance/smoke.json",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "provenance/independent_audit.json",
+          "published_link": "README.md#local-artifacts"
+        }
+      ],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "runs_per_seed.tsv",
+      "published_name": "runs_per_seed.tsv",
+      "original": {
+        "bytes": 4880,
+        "sha256": "64725c25ed578c8691e8bde9d872ed54fcfc373117a4082d40fe1c357d1f4d1e"
+      },
+      "published": {
+        "bytes": 4880,
+        "sha256": "64725c25ed578c8691e8bde9d872ed54fcfc373117a4082d40fe1c357d1f4d1e"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "runs_summary.tsv",
+      "published_name": "runs_summary.tsv",
+      "original": {
+        "bytes": 4997,
+        "sha256": "a43faf1c4a1e99ce2b0386356b59c4c4f2a088652480925ac36a698b64377154"
+      },
+      "published": {
+        "bytes": 4997,
+        "sha256": "a43faf1c4a1e99ce2b0386356b59c4c4f2a088652480925ac36a698b64377154"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "VALIDATION.md",
+      "published_name": "VALIDATION.md",
+      "original": {
+        "bytes": 4611,
+        "sha256": "d0f737b39c4d458e54907ceb503cfe6b0a99ef3a0e6308c91c8664fc0c22ce66"
+      },
+      "published": {
+        "bytes": 4899,
+        "sha256": "0b284e97f8bf4f82ae32d938b98694d374b6bbbf417db9fa011fd639dfb1643d"
+      },
+      "link_adaptations": [
+        {
+          "original_link": "analysis.json",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "provenance/validation_tests.log",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "provenance/independent_check.py",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "provenance/independent_audit.json",
+          "published_link": "README.md#local-artifacts"
+        },
+        {
+          "original_link": "report_provenance.json",
+          "published_link": "original_report_provenance.json"
+        }
+      ],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "PLAN.md",
+      "published_name": "PROCESS.md",
+      "original": {
+        "bytes": 5197,
+        "sha256": "88db2a077bfd520b3a29f0ec076b6117fe5606903a7bf83189830d3794a4b579"
+      },
+      "published": {
+        "bytes": 5484,
+        "sha256": "08216a34c6ea55a387054728e01a3d6152b71f9d6886830bacd747b435b1f0fb"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    }
+  ],
+  "omitted_local_artifacts": [
+    {
+      "name": "analysis.json",
+      "bytes": 120270,
+      "sha256": "82de2cf236646fee1c14628138c1c3f029c25226fc4a056b8fd781323905a2c8",
+      "reason": "Large/full analysis, per-source/per-edge records, or non-report artifact kept local"
+    }
+  ],
+  "readme": {
+    "bytes": 1599,
+    "sha256": "17f009a5e61d863a29dfee186ae351f0ab7e55638b864622a799e7fe407d483e"
+  },
+  "new_scientific_run": false
+}

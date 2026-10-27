@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="450" viewBox="0 0 960 450" role="img">
+<title>DREAM5 Stage1: paired additional labelled TP and FP versus strict DPI</title>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="12" fill="#202020">
+<text x="480.00" y="25.00" text-anchor="middle" font-size="17">Additional labelled edges versus strict DPI (epsilon = 0)</text>
+<text x="480.00" y="48.00" text-anchor="middle" font-size="11">Small points: paired seeds; large points: coordinate-wise median paired deltas. Neither axis is pooled.</text>
+<text x="253.00" y="83.00" text-anchor="middle" font-size="14">Network 1</text>
+<polyline points="78.00,345.00 428.00,345.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="70.00" y="349.00" text-anchor="end" font-size="10">0</text>
+<text x="78.00" y="364.00" text-anchor="middle" font-size="10">0</text>
+<polyline points="78.00,285.00 428.00,285.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="70.00" y="289.00" text-anchor="end" font-size="10">70.28</text>
+<text x="165.50" y="364.00" text-anchor="middle" font-size="10">1339</text>
+<polyline points="78.00,225.00 428.00,225.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="70.00" y="229.00" text-anchor="end" font-size="10">140.6</text>
+<text x="253.00" y="364.00" text-anchor="middle" font-size="10">2678</text>
+<polyline points="78.00,165.00 428.00,165.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="70.00" y="169.00" text-anchor="end" font-size="10">210.8</text>
+<text x="340.50" y="364.00" text-anchor="middle" font-size="10">4017</text>
+<polyline points="78.00,105.00 428.00,105.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="70.00" y="109.00" text-anchor="end" font-size="10">281.1</text>
+<text x="428.00" y="364.00" text-anchor="middle" font-size="10">5356</text>
+<text x="253.00" y="388.00" text-anchor="middle" font-size="12">Additional benchmark-defined FP</text>
+<text x="78.00" y="99.00" text-anchor="start" font-size="11">Additional TP</text>
+<circle cx="162.50" cy="272.43" r="3.5" fill="#176c9c" fill-opacity="0.45"/>
+<circle cx="165.44" cy="271.58" r="3.5" fill="#176c9c" fill-opacity="0.45"/>
+<circle cx="163.74" cy="273.29" r="3.5" fill="#176c9c" fill-opacity="0.45"/>
+<circle cx="163.74" cy="272.43" r="6" fill="#176c9c" stroke="white"/>
+<text x="171.74" y="265.43" text-anchor="start" font-size="11">0.05</text>
+<circle cx="267.51" cy="199.01" r="3.5" fill="#c96e19" fill-opacity="0.45"/>
+<circle cx="269.80" cy="199.87" r="3.5" fill="#c96e19" fill-opacity="0.45"/>
+<circle cx="265.81" cy="204.13" r="3.5" fill="#c96e19" fill-opacity="0.45"/>
+<circle cx="267.51" cy="199.87" r="6" fill="#c96e19" stroke="white"/>
+<text x="275.51" y="192.87" text-anchor="start" font-size="11">0.10</text>
+<circle cx="388.80" cy="140.96" r="3.5" fill="#7b4397" fill-opacity="0.45"/>
+<circle cx="390.50" cy="135.84" r="3.5" fill="#7b4397" fill-opacity="0.45"/>
+<circle cx="386.84" cy="130.71" r="3.5" fill="#7b4397" fill-opacity="0.45"/>
+<circle cx="388.80" cy="135.84" r="6" fill="#7b4397" stroke="white"/>
+<text x="396.80" y="128.84" text-anchor="start" font-size="11">0.15</text>
+<text x="723.00" y="83.00" text-anchor="middle" font-size="14">Network 3</text>
+<polyline points="548.00,345.00 898.00,345.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="540.00" y="349.00" text-anchor="end" font-size="10">0</text>
+<text x="548.00" y="364.00" text-anchor="middle" font-size="10">0</text>
+<polyline points="548.00,285.00 898.00,285.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="540.00" y="289.00" text-anchor="end" font-size="10">36.68</text>
+<text x="635.50" y="364.00" text-anchor="middle" font-size="10">1001</text>
+<polyline points="548.00,225.00 898.00,225.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="540.00" y="229.00" text-anchor="end" font-size="10">73.36</text>
+<text x="723.00" y="364.00" text-anchor="middle" font-size="10">2001</text>
+<polyline points="548.00,165.00 898.00,165.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="540.00" y="169.00" text-anchor="end" font-size="10">110</text>
+<text x="810.50" y="364.00" text-anchor="middle" font-size="10">3002</text>
+<polyline points="548.00,105.00 898.00,105.00" fill="none" stroke="#e4e4e4" stroke-opacity="1" stroke-width="1"/>
+<text x="540.00" y="109.00" text-anchor="end" font-size="10">146.7</text>
+<text x="898.00" y="364.00" text-anchor="middle" font-size="10">4003</text>
+<text x="723.00" y="388.00" text-anchor="middle" font-size="12">Additional benchmark-defined FP</text>
+<text x="548.00" y="99.00" text-anchor="start" font-size="11">Additional TP</text>
+<circle cx="621.18" cy="277.93" r="3.5" fill="#176c9c" fill-opacity="0.45"/>
+<circle cx="620.84" cy="318.83" r="3.5" fill="#176c9c" fill-opacity="0.45"/>
+<circle cx="618.82" cy="292.66" r="3.5" fill="#176c9c" fill-opacity="0.45"/>
+<circle cx="620.84" cy="292.66" r="6" fill="#176c9c" stroke="white"/>
+<text x="628.84" y="285.66" text-anchor="start" font-size="11">0.05</text>
+<circle cx="716.40" cy="214.14" r="3.5" fill="#c96e19" fill-opacity="0.45"/>
+<circle cx="719.73" cy="253.40" r="3.5" fill="#c96e19" fill-opacity="0.45"/>
+<circle cx="720.43" cy="222.32" r="3.5" fill="#c96e19" fill-opacity="0.45"/>
+<circle cx="719.73" cy="222.32" r="6" fill="#c96e19" stroke="white"/>
+<text x="727.73" y="215.32" text-anchor="start" font-size="11">0.10</text>
+<circle cx="854.82" cy="151.98" r="3.5" fill="#7b4397" fill-opacity="0.45"/>
+<circle cx="860.50" cy="161.79" r="3.5" fill="#7b4397" fill-opacity="0.45"/>
+<circle cx="854.99" cy="130.71" r="3.5" fill="#7b4397" fill-opacity="0.45"/>
+<circle cx="854.99" cy="151.98" r="6" fill="#7b4397" stroke="white"/>
+<text x="862.99" y="144.98" text-anchor="start" font-size="11">0.15</text>
+<text x="480.00" y="431.00" text-anchor="middle" font-size="10">Network3 negatives are operational labels from an incomplete biological reference, not proven absent interactions.</text>
+</g></svg>
