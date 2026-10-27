@@ -1,8 +1,12 @@
 # SJARACNe benchmarking
 
-Dedicated research benchmarks and analysis evidence for [SJARACNe](https://github.com/adamdingliang/SJARACNe). This repository is private during the initial migration and rights/portability review.
+Dedicated research benchmarks and analysis evidence for [SJARACNe](https://github.com/adamdingliang/SJARACNe).
 
 ## Benchmark index
+
+The [three DPI tolerance summaries](docs/benchmark_summaries/README.md) cover
+DREAM5 precision/recall, common TF/SIG sources in BRCA100 and LUAD100, and the
+combined no-DPI/fixed/dynamic comparison with conditional conclusions.
 
 | Network data | Question | Reference | Benchmark process and results |
 | --- | --- | --- | --- |
@@ -17,7 +21,7 @@ Dedicated research benchmarks and analysis evidence for [SJARACNe](https://githu
 | BRCA100 (TF/SIG, historical recurrence sweep) | What changes when consensus uses minimum recurrence, including K=6? | Same BRCA100 expression and hub lists; historical, pre-PCHIP post-DPI bootstrap networks. No independent edge-level reference. | [Process](benchmarks/brca100_consensus_recurrence_sweep/README.md#matched-design) · [Results](benchmarks/brca100_consensus_recurrence_sweep/results_2026-08-20/RESULTS.md) |
 | BRCA100 (TF/SIG, historical hub-DPI study) | How did nested hub-list size affect DPI pruning at fixed historical cutoffs? | Same BRCA100 expression; August 25/26 frozen diagnostic snapshots and historical estimator-matched GPD cutoffs, not current PCHIP outcomes. No independent edge-level reference. | [Process](benchmarks/brca100_hub_size_dpi_analysis/README.md#evidence-and-provenance) · [Results](benchmarks/brca100_hub_size_dpi_analysis/README.md#matched-100-seed-pilot) (historical rates; no current-PCHIP nested-panel replication) |
 | BRCA100 (TF/SIG) | How do matched workflow versions differ in network QC? | Same BRCA100 inputs; inferred networks compared using NetBID2 summaries, not biological ground truth. | [Process](benchmarks/brca100_netbid_qc/README.md#matched-workflow) · [Results](benchmarks/brca100_netbid_qc/results_2026-08-17/RESULTS.md) |
-| TCGA-LUAD | Acquire validated expression inputs for a future network benchmark. | GDC TCGA-LUAD primary-tumor bulk RNA-seq, STAR - Counts. Expression acquisition only; no network or edge-reference benchmark completed yet. | [Process](benchmarks/tcga_luad_download/README.md#commands) · [Results](benchmarks/tcga_luad_download/README.md#benchmark-results) (pending) |
+| TCGA-LUAD | Prepare validated expression inputs and evaluate DPI hub-context sensitivity. | GDC TCGA-LUAD primary-tumor bulk RNA-seq, STAR - Counts; LUAD100 DPI analysis has no independent edge-level reference. | [Acquisition process](benchmarks/tcga_luad_download/README.md#commands) · [DPI summary and detailed results](docs/benchmark_summaries/bulk_dpi_modes.md) |
 
 **Reference** identifies the input-data source and, where available, the edge or
 perturbation-response reference used for evaluation. It does not imply that
