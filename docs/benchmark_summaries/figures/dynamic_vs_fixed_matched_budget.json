@@ -1,0 +1,456 @@
+{
+  "schema": "dream5-dpi-summary-figure-v1",
+  "new_inference_runs": false,
+  "source": "matched_budget_comparisons.tsv",
+  "source_record": {
+    "bytes": 878189,
+    "sha256": "ee1267be052f57e1c3342a2bdf6a976dc65996324c5de84426f4b544dae3e727"
+  },
+  "script_record": {
+    "bytes": 8241,
+    "sha256": "e44b1db3814e18d61ce6d9f642ed1f36fc028e9e3437cb7ec00f49fe009b582c"
+  },
+  "matplotlib_version": "3.10.9",
+  "selection": {
+    "scope": "trajectory",
+    "annotation_mode": "panel",
+    "comparison": "dynamic_vs_fixed",
+    "slope": 0.05,
+    "target_label": "strict_count"
+  },
+  "budget_definition": "Each case uses the strict-DPI emitted reference-labelled edge count.",
+  "score_definition": "Expected TP at MI-tie boundaries; paired dynamic minus fixed.",
+  "replication_note": "Overlapping source panels and reused native jobs; not biological replication.",
+  "groups": [
+    {
+      "dataset": "network1",
+      "H": 49,
+      "cases": [
+        {
+          "panel": 1,
+          "seed": 1,
+          "strict_labelled_edge_budget": 5631,
+          "TP_delta": -9.0,
+          "FP_delta": 9.0
+        },
+        {
+          "panel": 1,
+          "seed": 2,
+          "strict_labelled_edge_budget": 5550,
+          "TP_delta": -3.0,
+          "FP_delta": 3.0
+        },
+        {
+          "panel": 1,
+          "seed": 3,
+          "strict_labelled_edge_budget": 5704,
+          "TP_delta": -1.0,
+          "FP_delta": 1.0
+        },
+        {
+          "panel": 2,
+          "seed": 1,
+          "strict_labelled_edge_budget": 5314,
+          "TP_delta": -3.0,
+          "FP_delta": 3.0
+        },
+        {
+          "panel": 2,
+          "seed": 2,
+          "strict_labelled_edge_budget": 5522,
+          "TP_delta": -14.0,
+          "FP_delta": 14.0
+        },
+        {
+          "panel": 2,
+          "seed": 3,
+          "strict_labelled_edge_budget": 5423,
+          "TP_delta": -23.0,
+          "FP_delta": 23.0
+        },
+        {
+          "panel": 3,
+          "seed": 1,
+          "strict_labelled_edge_budget": 5691,
+          "TP_delta": 4.0,
+          "FP_delta": -4.0
+        },
+        {
+          "panel": 3,
+          "seed": 2,
+          "strict_labelled_edge_budget": 5932,
+          "TP_delta": -4.0,
+          "FP_delta": 4.0
+        },
+        {
+          "panel": 3,
+          "seed": 3,
+          "strict_labelled_edge_budget": 5721,
+          "TP_delta": -3.0,
+          "FP_delta": 3.0
+        }
+      ],
+      "median_TP_delta": -3.0
+    },
+    {
+      "dataset": "network1",
+      "H": 98,
+      "cases": [
+        {
+          "panel": 1,
+          "seed": 1,
+          "strict_labelled_edge_budget": 3269,
+          "TP_delta": -7.0,
+          "FP_delta": 7.0
+        },
+        {
+          "panel": 1,
+          "seed": 2,
+          "strict_labelled_edge_budget": 3412,
+          "TP_delta": -8.0,
+          "FP_delta": 8.0
+        },
+        {
+          "panel": 1,
+          "seed": 3,
+          "strict_labelled_edge_budget": 3357,
+          "TP_delta": -3.0,
+          "FP_delta": 3.0
+        },
+        {
+          "panel": 2,
+          "seed": 1,
+          "strict_labelled_edge_budget": 3822,
+          "TP_delta": -11.0,
+          "FP_delta": 11.0
+        },
+        {
+          "panel": 2,
+          "seed": 2,
+          "strict_labelled_edge_budget": 4135,
+          "TP_delta": -11.0,
+          "FP_delta": 11.0
+        },
+        {
+          "panel": 2,
+          "seed": 3,
+          "strict_labelled_edge_budget": 3874,
+          "TP_delta": -6.0,
+          "FP_delta": 6.0
+        },
+        {
+          "panel": 3,
+          "seed": 1,
+          "strict_labelled_edge_budget": 3400,
+          "TP_delta": -5.0,
+          "FP_delta": 5.0
+        },
+        {
+          "panel": 3,
+          "seed": 2,
+          "strict_labelled_edge_budget": 3666,
+          "TP_delta": -5.0,
+          "FP_delta": 5.0
+        },
+        {
+          "panel": 3,
+          "seed": 3,
+          "strict_labelled_edge_budget": 3454,
+          "TP_delta": -10.0,
+          "FP_delta": 10.0
+        }
+      ],
+      "median_TP_delta": -7.0
+    },
+    {
+      "dataset": "network1",
+      "H": 195,
+      "cases": [
+        {
+          "panel": 1,
+          "seed": 1,
+          "strict_labelled_edge_budget": 1994,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 1,
+          "seed": 2,
+          "strict_labelled_edge_budget": 2169,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 1,
+          "seed": 3,
+          "strict_labelled_edge_budget": 2078,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 2,
+          "seed": 1,
+          "strict_labelled_edge_budget": 2209,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 2,
+          "seed": 2,
+          "strict_labelled_edge_budget": 2348,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 2,
+          "seed": 3,
+          "strict_labelled_edge_budget": 2231,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 3,
+          "seed": 1,
+          "strict_labelled_edge_budget": 2026,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 3,
+          "seed": 2,
+          "strict_labelled_edge_budget": 2187,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 3,
+          "seed": 3,
+          "strict_labelled_edge_budget": 1988,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        }
+      ],
+      "median_TP_delta": 0.0
+    },
+    {
+      "dataset": "network3",
+      "H": 84,
+      "cases": [
+        {
+          "panel": 1,
+          "seed": 1,
+          "strict_labelled_edge_budget": 2112,
+          "TP_delta": -8.0,
+          "FP_delta": 8.0
+        },
+        {
+          "panel": 1,
+          "seed": 2,
+          "strict_labelled_edge_budget": 2163,
+          "TP_delta": -3.0,
+          "FP_delta": 3.0
+        },
+        {
+          "panel": 1,
+          "seed": 3,
+          "strict_labelled_edge_budget": 2192,
+          "TP_delta": -9.0,
+          "FP_delta": 9.0
+        },
+        {
+          "panel": 2,
+          "seed": 1,
+          "strict_labelled_edge_budget": 1841,
+          "TP_delta": -8.0,
+          "FP_delta": 8.0
+        },
+        {
+          "panel": 2,
+          "seed": 2,
+          "strict_labelled_edge_budget": 1853,
+          "TP_delta": 2.0,
+          "FP_delta": -2.0
+        },
+        {
+          "panel": 2,
+          "seed": 3,
+          "strict_labelled_edge_budget": 1907,
+          "TP_delta": -8.0,
+          "FP_delta": 8.0
+        },
+        {
+          "panel": 3,
+          "seed": 1,
+          "strict_labelled_edge_budget": 1662,
+          "TP_delta": -9.0,
+          "FP_delta": 9.0
+        },
+        {
+          "panel": 3,
+          "seed": 2,
+          "strict_labelled_edge_budget": 1684,
+          "TP_delta": -2.0,
+          "FP_delta": 2.0
+        },
+        {
+          "panel": 3,
+          "seed": 3,
+          "strict_labelled_edge_budget": 1706,
+          "TP_delta": -10.0,
+          "FP_delta": 10.0
+        }
+      ],
+      "median_TP_delta": -8.0
+    },
+    {
+      "dataset": "network3",
+      "H": 167,
+      "cases": [
+        {
+          "panel": 1,
+          "seed": 1,
+          "strict_labelled_edge_budget": 1024,
+          "TP_delta": -5.0,
+          "FP_delta": 5.0
+        },
+        {
+          "panel": 1,
+          "seed": 2,
+          "strict_labelled_edge_budget": 1000,
+          "TP_delta": -3.0,
+          "FP_delta": 3.0
+        },
+        {
+          "panel": 1,
+          "seed": 3,
+          "strict_labelled_edge_budget": 1074,
+          "TP_delta": -7.0,
+          "FP_delta": 7.0
+        },
+        {
+          "panel": 2,
+          "seed": 1,
+          "strict_labelled_edge_budget": 919,
+          "TP_delta": -3.0,
+          "FP_delta": 3.0
+        },
+        {
+          "panel": 2,
+          "seed": 2,
+          "strict_labelled_edge_budget": 957,
+          "TP_delta": 2.0,
+          "FP_delta": -2.0
+        },
+        {
+          "panel": 2,
+          "seed": 3,
+          "strict_labelled_edge_budget": 979,
+          "TP_delta": 2.0,
+          "FP_delta": -2.0
+        },
+        {
+          "panel": 3,
+          "seed": 1,
+          "strict_labelled_edge_budget": 1107,
+          "TP_delta": -1.0,
+          "FP_delta": 1.0
+        },
+        {
+          "panel": 3,
+          "seed": 2,
+          "strict_labelled_edge_budget": 1110,
+          "TP_delta": -1.0,
+          "FP_delta": 1.0
+        },
+        {
+          "panel": 3,
+          "seed": 3,
+          "strict_labelled_edge_budget": 1106,
+          "TP_delta": -8.0,
+          "FP_delta": 8.0
+        }
+      ],
+      "median_TP_delta": -3.0
+    },
+    {
+      "dataset": "network3",
+      "H": 334,
+      "cases": [
+        {
+          "panel": 1,
+          "seed": 1,
+          "strict_labelled_edge_budget": 461,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 1,
+          "seed": 2,
+          "strict_labelled_edge_budget": 489,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 1,
+          "seed": 3,
+          "strict_labelled_edge_budget": 483,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 2,
+          "seed": 1,
+          "strict_labelled_edge_budget": 511,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 2,
+          "seed": 2,
+          "strict_labelled_edge_budget": 524,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 2,
+          "seed": 3,
+          "strict_labelled_edge_budget": 533,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 3,
+          "seed": 1,
+          "strict_labelled_edge_budget": 565,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 3,
+          "seed": 2,
+          "strict_labelled_edge_budget": 548,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        },
+        {
+          "panel": 3,
+          "seed": 3,
+          "strict_labelled_edge_budget": 554,
+          "TP_delta": 0.0,
+          "FP_delta": 0.0
+        }
+      ],
+      "median_TP_delta": 0.0
+    }
+  ],
+  "outputs": {
+    "dynamic_vs_fixed_matched_budget.png": {
+      "bytes": 139040,
+      "sha256": "3d72d8e72770fae877d140777c455d73a593c45afb76a9bdc106c4d892f56939"
+    },
+    "dynamic_vs_fixed_matched_budget.svg": {
+      "bytes": 95732,
+      "sha256": "e0d7554d35a4925230d628bd6cdf89cc1ae6502d769154654dc260929faa5524"
+    }
+  }
+}

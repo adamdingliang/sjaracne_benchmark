@@ -13,12 +13,31 @@ Stage 1 compared no DPI, strict DPI (`epsilon=0`) and fixed tolerances 0.05, 0.1
 | Network 1 - simulated | 49, 98, 195 | 49 |
 | Network 3 - E. coli | 84, 167, 334 | 84 |
 
+### What dynamic epsilon means in this benchmark
+
+`H` is the number of source/hub nodes in the reconstruction and annotation
+panel. `H_min` is the smallest tested panel: 49 for Network 1 and 84 for
+Network 3. For the tested range `H >= H_min`, the rule is:
+
 ```text
 dynamic: epsilon(H) = min(0.30, slope * log2(H / H_min))
 fixed:   epsilon(H) = dynamic epsilon at the full hub-list size, at every H
 ```
 
-Slopes were 0.025, 0.05 and 0.10. Main runs used the panel for both reconstruction (`-s`) and annotation (`-l`); full-TF annotation was a control. These DREAM anchors do **not** test the later bulk-data anchor `H_ref=479`.
+Epsilon zero means strict DPI; increasing epsilon relaxes pruning. At the
+anchor, dynamic epsilon is zero. With slope 0.05, each doubling of H adds 0.05
+until the cap of 0.30. For example, Network 1 changes from epsilon zero at
+H=49 to 0.05 at H=98. The fixed comparator instead keeps about 0.09963 at all
+three Network 1 sizes, and about 0.09957 at all three Network 3 sizes. At full H,
+the fixed and dynamic tolerances are exactly equal. The cap is not reached in
+these DREAM tests. No DPI is a separate control with epsilon one.
+
+Slopes were 0.025, 0.05 and 0.10; the summary tables and Figure 3 highlight
+0.05, not a selected optimal slope. Main runs used the panel for both
+reconstruction (`-s`) and annotation (`-l`); full-TF annotation was a control.
+These DREAM anchors do **not** test the later bulk-data anchor `H_ref=479`.
+The schedule was applied through ordinary native `-e` runs, not an automatic
+dynamic-H engine option.
 
 ## Results
 
@@ -61,6 +80,54 @@ At smaller H, the dynamic-specific controls were less favorable. Below are paire
 | 1 | 98 | -7 | +7 | +88 |
 | 3 | 84 | -8 | +8 | +357 |
 | 3 | 167 | -3 | +3 | +86 |
+
+## Figures
+
+### Figure 1. Fixed-epsilon precision and recall trade-off
+
+![Figure 1: Network 1 and Network 3 Average Precision, emitted-edge precision and recall across fixed DPI tolerances and the separate no-DPI control](../../benchmarks/dpi_epsilon_summaries/evidence/dream5_stage1/metric_trajectories.svg)
+
+Original Stage 1 figure: thin lines show the three sample seeds and the thick
+line their separate median. Precision and recall are rates from zero to one.
+Strict DPI is epsilon zero. No DPI is a separate categorical control, not a
+numeric step after 0.15. These are literal fixed epsilons 0.05, 0.10 and 0.15,
+**not dynamic schedules**. In particular, fixed 0.10 is not exactly the later
+dynamic endpoint near 0.0996, so its numbers differ slightly from the endpoint
+table above. Higher precision and lower recall under strict DPI are both
+visible; Average Precision is a different ranking summary.
+
+### Figure 2. FP cost of recovering additional TPs
+
+![Figure 2: Additional reference-positive and reference-negative predictions relative to strict DPI, separately for each DREAM5 network](../../benchmarks/dpi_epsilon_summaries/evidence/dream5_stage1/paired_tp_fp_tradeoff.svg)
+
+Original Stage 1 fixed-epsilon figure. Differences are paired within each
+sample seed before taking medians; large points summarize the three small
+points. Relaxing DPI recovers additional TPs but retains substantially more
+benchmark-defined FPs. Axes have different ranges between networks. Network
+3's reference is incomplete, so its FP labels do not prove biological absence.
+
+### Figure 3. Dynamic versus fixed at matched prediction budgets
+
+![Figure 3: Dynamic-minus-fixed TP differences across hub sizes at the same strict-DPI labelled-edge budget](figures/dynamic_vs_fixed_matched_budget.png)
+
+New visualization of existing controls, not new inference. Each case compares
+the same H, observations, evaluated sources and reference labels at that
+case's **strict-DPI emitted reference-labelled edge count**, not a universal k
+or equal total-network size. MI-boundary ties use expected TP counts. Gray
+points are three panel memberships times three sample seeds; blue diamonds
+show medians. Negative values favor fixed tolerance. Some individual cases
+favor dynamic even though the smaller-H medians favor fixed.
+
+Each trajectory evaluates its smallest-panel sources at every H, including
+full H; this is **not the all-reference-source population of the precision
+table**. Source sets differ across memberships. Native outputs are reused,
+so the nine paired cases are not nine independent biological replicates.
+Full-H zero is guaranteed by identical epsilon and shared native outputs.
+
+Reproduce Figure 3 with `python scripts/plot_dream5_dynamic_fixed.py` (requires
+Matplotlib). Its [plot data and hashes](figures/dynamic_vs_fixed_matched_budget.json)
+record all 54 plotted cases; an [SVG version](figures/dynamic_vs_fixed_matched_budget.svg)
+is also available. Original tables, reports and Figures 1-2 are unchanged.
 
 ## Conditional conclusion
 
