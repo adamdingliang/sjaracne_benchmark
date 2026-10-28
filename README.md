@@ -1,8 +1,12 @@
 # SJARACNe benchmarking
 
-Dedicated research benchmarks and analysis evidence for [SJARACNe](https://github.com/adamdingliang/SJARACNe). This repository is private during the initial migration and rights/portability review.
+Dedicated research benchmarks and analysis evidence for [SJARACNe](https://github.com/adamdingliang/SJARACNe).
 
 ## Benchmark index
+
+The [three DPI tolerance summaries](docs/benchmark_summaries/README.md) cover
+DREAM5 precision/recall, common TF/SIG sources in BRCA100 and LUAD100, and the
+combined no-DPI/fixed/dynamic comparison with conditional conclusions.
 
 | Network data | Question | Reference | Benchmark process and results |
 | --- | --- | --- | --- |
