@@ -1,0 +1,313 @@
+{
+  "schema": "dpi-compact-evidence-publication-v1",
+  "label": "LUAD100 common-source comparison",
+  "published_utc": "2026-10-27T03:04:15.231433+00:00",
+  "operation": "copy tables/figures unchanged; adapt Markdown links and add explicit publication notes",
+  "source_result_directory": "results_2026-10-26",
+  "process_source_name": "PLAN.md",
+  "packager_sha256": "980abe3bf389807b46ac03182ed678f4eea73702a74aed0671f909c540022bf8",
+  "files": [
+    {
+      "source_name": "agreement.tsv",
+      "published_name": "agreement.tsv",
+      "original": {
+        "bytes": 192867,
+        "sha256": "8f88e106c69dab846b7a997a3ccf2efdcbccf58aba6f5bfcd8bb563d201e039e"
+      },
+      "published": {
+        "bytes": 192867,
+        "sha256": "8f88e106c69dab846b7a997a3ccf2efdcbccf58aba6f5bfcd8bb563d201e039e"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "agreement_summary.tsv",
+      "published_name": "agreement_summary.tsv",
+      "original": {
+        "bytes": 29567,
+        "sha256": "f8a10f9765e0d0a1786c32be7c0c48f28bcde05ed36b94edc13a52711bdfb127"
+      },
+      "published": {
+        "bytes": 29567,
+        "sha256": "f8a10f9765e0d0a1786c32be7c0c48f28bcde05ed36b94edc13a52711bdfb127"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "family_source_summaries.tsv",
+      "published_name": "family_source_summaries.tsv",
+      "original": {
+        "bytes": 2918934,
+        "sha256": "b1aca0a952e2d069bfb9831b9fd702e5efa5ffb3e5c14539b8a8d2cdd36585dd"
+      },
+      "published": {
+        "bytes": 2918934,
+        "sha256": "b1aca0a952e2d069bfb9831b9fd702e5efa5ffb3e5c14539b8a8d2cdd36585dd"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "fixed_dynamic_tradeoffs.tsv",
+      "published_name": "fixed_dynamic_tradeoffs.tsv",
+      "original": {
+        "bytes": 2802069,
+        "sha256": "ebea38da95b3998393516649c5a82008d9f0004dc7bf0f9fc244f871c2eff6d9"
+      },
+      "published": {
+        "bytes": 2802069,
+        "sha256": "ebea38da95b3998393516649c5a82008d9f0004dc7bf0f9fc244f871c2eff6d9"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "frontier_points.tsv",
+      "published_name": "frontier_points.tsv",
+      "original": {
+        "bytes": 2336431,
+        "sha256": "f1ba677e1203af0ed60356e7288c2dedc0173bca9c215966fad25233afe61072"
+      },
+      "published": {
+        "bytes": 2336431,
+        "sha256": "f1ba677e1203af0ed60356e7288c2dedc0173bca9c215966fad25233afe61072"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "frontier_summary.tsv",
+      "published_name": "frontier_summary.tsv",
+      "original": {
+        "bytes": 676838,
+        "sha256": "23909cd302f28c697b395d42b123cb38665bbf9068e411a789833923eb9aaddf"
+      },
+      "published": {
+        "bytes": 676838,
+        "sha256": "23909cd302f28c697b395d42b123cb38665bbf9068e411a789833923eb9aaddf"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "matched_agreement.tsv",
+      "published_name": "matched_agreement.tsv",
+      "original": {
+        "bytes": 1517497,
+        "sha256": "bc4d28f1e9493d524759dc552f3b4478bc847c641ca2dbdb42140cb20199dc36"
+      },
+      "published": {
+        "bytes": 1517497,
+        "sha256": "bc4d28f1e9493d524759dc552f3b4478bc847c641ca2dbdb42140cb20199dc36"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "matched_summary.tsv",
+      "published_name": "matched_summary.tsv",
+      "original": {
+        "bytes": 383686,
+        "sha256": "f3107e4cec4952eaa0e8935675a970e6a052dbaedfb217f7aa718662be6f4118"
+      },
+      "published": {
+        "bytes": 383686,
+        "sha256": "f3107e4cec4952eaa0e8935675a970e6a052dbaedfb217f7aa718662be6f4118"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "membership_aliases_not_replicates.tsv",
+      "published_name": "membership_aliases_not_replicates.tsv",
+      "original": {
+        "bytes": 5880,
+        "sha256": "80d2654cb1c91ec4f6c0045e939e1858870c01181c0f1ee1feaa89ed6ea29286"
+      },
+      "published": {
+        "bytes": 5880,
+        "sha256": "80d2654cb1c91ec4f6c0045e939e1858870c01181c0f1ee1feaa89ed6ea29286"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "natural_full_frontier.svg",
+      "published_name": "natural_full_frontier.svg",
+      "original": {
+        "bytes": 6794,
+        "sha256": "c14b3730dc5f2cdc26e36c6881ea54465e5c54c45cb4d9499e79e46891c55483"
+      },
+      "published": {
+        "bytes": 6794,
+        "sha256": "c14b3730dc5f2cdc26e36c6881ea54465e5c54c45cb4d9499e79e46891c55483"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "recurrence_by_group.tsv",
+      "published_name": "recurrence_by_group.tsv",
+      "original": {
+        "bytes": 54962,
+        "sha256": "02c8d1bc654e88795d54d5604e8742252b75d751db862e28e955269463b8599d"
+      },
+      "published": {
+        "bytes": 54962,
+        "sha256": "02c8d1bc654e88795d54d5604e8742252b75d751db862e28e955269463b8599d"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "report_provenance.json",
+      "published_name": "original_report_provenance.json",
+      "original": {
+        "bytes": 4292,
+        "sha256": "89587709cd2e6141e203635bfee376229806e61a3fb0bb8dc18a40acf7a97d27"
+      },
+      "published": {
+        "bytes": 4292,
+        "sha256": "89587709cd2e6141e203635bfee376229806e61a3fb0bb8dc18a40acf7a97d27"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "RESULTS.md",
+      "published_name": "RESULTS.md",
+      "original": {
+        "bytes": 8801,
+        "sha256": "fd3d99b4b919b73609bf01254631ece06dce6b7861f3008ee1aefda56e11f44f"
+      },
+      "published": {
+        "bytes": 9100,
+        "sha256": "6c7fad685b4b78dccacf7b267cfe9a1b1a5e1fd1d01717efb5fbb576c2d13091"
+      },
+      "link_adaptations": [
+        {
+          "original_link": "analysis.json",
+          "published_link": "README.md#local-artifacts"
+        }
+      ],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "run_summary.tsv",
+      "published_name": "run_summary.tsv",
+      "original": {
+        "bytes": 20967,
+        "sha256": "5a6c679724fbdc731fc2f92abfdd53a1f0b7cd2c708d20d001df3402b10d95e0"
+      },
+      "published": {
+        "bytes": 20967,
+        "sha256": "5a6c679724fbdc731fc2f92abfdd53a1f0b7cd2c708d20d001df3402b10d95e0"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "runs.tsv",
+      "published_name": "runs.tsv",
+      "original": {
+        "bytes": 107157,
+        "sha256": "f35750fd24b9808eed9c273651f2fa6a05e4da1f9715878dc07435492c094961"
+      },
+      "published": {
+        "bytes": 107157,
+        "sha256": "f35750fd24b9808eed9c273651f2fa6a05e4da1f9715878dc07435492c094961"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "strategy_difference_summary.tsv",
+      "published_name": "strategy_difference_summary.tsv",
+      "original": {
+        "bytes": 541231,
+        "sha256": "9144eee9f7c61927cd3a8306dc168e0163f097561efda18144b6c1f510502677"
+      },
+      "published": {
+        "bytes": 541231,
+        "sha256": "9144eee9f7c61927cd3a8306dc168e0163f097561efda18144b6c1f510502677"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "strategy_differences.tsv",
+      "published_name": "strategy_differences.tsv",
+      "original": {
+        "bytes": 2416212,
+        "sha256": "dbdba646c6d30fc62f30e48091ec786ff7bf8b8325127998ddd4787439384a50"
+      },
+      "published": {
+        "bytes": 2416212,
+        "sha256": "dbdba646c6d30fc62f30e48091ec786ff7bf8b8325127998ddd4787439384a50"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "trajectories.svg",
+      "published_name": "trajectories.svg",
+      "original": {
+        "bytes": 16938,
+        "sha256": "e28e07b87a89932a88e030df7e2c747dd49143cbdafa9825f5929008daeca96e"
+      },
+      "published": {
+        "bytes": 16938,
+        "sha256": "e28e07b87a89932a88e030df7e2c747dd49143cbdafa9825f5929008daeca96e"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    },
+    {
+      "source_name": "PLAN.md",
+      "published_name": "PROCESS.md",
+      "original": {
+        "bytes": 9975,
+        "sha256": "7caed4dafb1faeab13cb06234c1f4a613155a5e2ab1f3d1537510730a4356539"
+      },
+      "published": {
+        "bytes": 10262,
+        "sha256": "0a0b4abf1c94dd4c325134f6c10a2f0d37b094ab8b1ca544b2b801155983f537"
+      },
+      "link_adaptations": [],
+      "scientific_content_changed": false
+    }
+  ],
+  "omitted_local_artifacts": [
+    {
+      "name": "analysis.json",
+      "bytes": 113744067,
+      "sha256": "d8283de616fc57d06cdbf2070e66897b6a55055be8b2391d4a8176c221ede683",
+      "reason": "Large/full analysis, per-source/per-edge records, or non-report artifact kept local"
+    },
+    {
+      "name": "per_source_runs.tsv",
+      "bytes": 27314595,
+      "sha256": "817760cacaa805a54af4eb208386a8af920ca66126d5b711ce1974d2be4b145e",
+      "reason": "Large/full analysis, per-source/per-edge records, or non-report artifact kept local"
+    },
+    {
+      "name": "recurrence_details.tsv.gz",
+      "bytes": 27738916,
+      "sha256": "13873d7cf0bd6a9da295d945c521be66d1fd4f017a6ce2128400966c8a731551",
+      "reason": "Large/full analysis, per-source/per-edge records, or non-report artifact kept local"
+    },
+    {
+      "name": "source_differences.tsv.gz",
+      "bytes": 6373389,
+      "sha256": "a740893bf86bc6702ec46e178ee778dabf5968f78cfb8493827b44d62932822c",
+      "reason": "Large/full analysis, per-source/per-edge records, or non-report artifact kept local"
+    }
+  ],
+  "readme": {
+    "bytes": 2433,
+    "sha256": "bf14e2407e9e5e65c3fb37b7b24a59b74a4354e8c4151ef3111a1531acbea6f8"
+  },
+  "new_scientific_run": false
+}

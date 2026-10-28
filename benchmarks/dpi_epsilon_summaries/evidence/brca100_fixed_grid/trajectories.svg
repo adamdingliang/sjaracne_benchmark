@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="750" viewBox="0 0 1260 750">
+<title>BRCA100 complete hub-size trajectories</title>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial,sans-serif" font-size="12" fill="#222">
+<text x="75" y="45" font-size="15">TF: common-source pruning</text>
+<line x1="75" y1="285.00" x2="440" y2="285.00" stroke="#e5e5e5"/>
+<text x="67" y="289.00" text-anchor="end">0.00</text>
+<line x1="75" y1="240.00" x2="440" y2="240.00" stroke="#e5e5e5"/>
+<text x="67" y="244.00" text-anchor="end">0.10</text>
+<line x1="75" y1="195.00" x2="440" y2="195.00" stroke="#e5e5e5"/>
+<text x="67" y="199.00" text-anchor="end">0.20</text>
+<line x1="75" y1="150.00" x2="440" y2="150.00" stroke="#e5e5e5"/>
+<text x="67" y="154.00" text-anchor="end">0.30</text>
+<line x1="75" y1="105.00" x2="440" y2="105.00" stroke="#e5e5e5"/>
+<text x="67" y="109.00" text-anchor="end">0.40</text>
+<line x1="75" y1="60.00" x2="440" y2="60.00" stroke="#e5e5e5"/>
+<text x="67" y="64.00" text-anchor="end">0.50</text>
+<text x="81.94" y="305" text-anchor="middle">479</text>
+<text x="193.27" y="305" text-anchor="middle">1304</text>
+<text x="270.33" y="305" text-anchor="middle">2608</text>
+<path d="M75 60 V285 H440" fill="none" stroke="#333"/>
+<text x="257.5" y="328" text-anchor="middle">Reconstructed H (log scale)</text>
+<text transform="translate(22,172.5) rotate(-90)" text-anchor="middle">Fraction pruned</text>
+<polyline points="81.94,210.03 193.27,178.94 270.33,158.61" fill="none" stroke="#111111" stroke-width="1.4"/>
+<circle cx="193.27" cy="178.94" r="3.4" fill="#111111"/>
+<circle cx="270.33" cy="158.61" r="3.4" fill="#111111"/>
+<circle cx="81.94" cy="210.03" r="3.4" fill="#111111"/>
+<polyline points="81.94,219.79 193.27,190.64 270.33,172.23" fill="none" stroke="#a3a3a3" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="190.64" r="3.4" fill="#a3a3a3"/>
+<circle cx="270.33" cy="172.23" r="3.4" fill="#a3a3a3"/>
+<circle cx="81.94" cy="219.79" r="3.4" fill="#a3a3a3"/>
+<polyline points="81.94,229.96 193.27,203.77 270.33,186.60" fill="none" stroke="#666666" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="203.77" r="3.4" fill="#666666"/>
+<circle cx="270.33" cy="186.60" r="3.4" fill="#666666"/>
+<circle cx="81.94" cy="229.96" r="3.4" fill="#666666"/>
+<polyline points="81.94,241.20 193.27,217.66 270.33,202.75" fill="none" stroke="#47889b" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="217.66" r="3.4" fill="#47889b"/>
+<circle cx="270.33" cy="202.75" r="3.4" fill="#47889b"/>
+<circle cx="81.94" cy="241.20" r="3.4" fill="#47889b"/>
+<polyline points="81.94,251.03 193.27,231.27 270.33,216.97" fill="none" stroke="#8468a4" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="231.27" r="3.4" fill="#8468a4"/>
+<circle cx="270.33" cy="216.97" r="3.4" fill="#8468a4"/>
+<circle cx="81.94" cy="251.03" r="3.4" fill="#8468a4"/>
+<polyline points="81.94,260.22 193.27,243.32 270.33,231.70" fill="none" stroke="#ad8957" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="243.32" r="3.4" fill="#ad8957"/>
+<circle cx="270.33" cy="231.70" r="3.4" fill="#ad8957"/>
+<circle cx="81.94" cy="260.22" r="3.4" fill="#ad8957"/>
+<polyline points="81.94,210.03 193.27,187.77 270.33,174.93" fill="none" stroke="#e58b20" stroke-width="2.7"/>
+<circle cx="193.27" cy="187.77" r="3.4" fill="#e58b20"/>
+<circle cx="270.33" cy="174.93" r="3.4" fill="#e58b20"/>
+<circle cx="81.94" cy="210.03" r="3.4" fill="#e58b20"/>
+<polyline points="81.94,210.03 193.27,196.26 270.33,193.60" fill="none" stroke="#c82828" stroke-width="2.7"/>
+<circle cx="193.27" cy="196.26" r="3.4" fill="#c82828"/>
+<circle cx="270.33" cy="193.60" r="3.4" fill="#c82828"/>
+<circle cx="81.94" cy="210.03" r="3.4" fill="#c82828"/>
+<polyline points="81.94,285.00 193.27,285.00 270.33,285.00" fill="none" stroke="#b5b5b5" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="81.94" cy="285.00" r="3.4" fill="#b5b5b5"/>
+<circle cx="193.27" cy="285.00" r="3.4" fill="#b5b5b5"/>
+<circle cx="270.33" cy="285.00" r="3.4" fill="#b5b5b5"/>
+<text x="75" y="405" font-size="15">TF: agreement with H=479</text>
+<line x1="75" y1="645.00" x2="440" y2="645.00" stroke="#e5e5e5"/>
+<text x="67" y="649.00" text-anchor="end">0.60</text>
+<line x1="75" y1="600.00" x2="440" y2="600.00" stroke="#e5e5e5"/>
+<text x="67" y="604.00" text-anchor="end">0.68</text>
+<line x1="75" y1="555.00" x2="440" y2="555.00" stroke="#e5e5e5"/>
+<text x="67" y="559.00" text-anchor="end">0.76</text>
+<line x1="75" y1="510.00" x2="440" y2="510.00" stroke="#e5e5e5"/>
+<text x="67" y="514.00" text-anchor="end">0.84</text>
+<line x1="75" y1="465.00" x2="440" y2="465.00" stroke="#e5e5e5"/>
+<text x="67" y="469.00" text-anchor="end">0.92</text>
+<line x1="75" y1="420.00" x2="440" y2="420.00" stroke="#e5e5e5"/>
+<text x="67" y="424.00" text-anchor="end">1.00</text>
+<text x="193.27" y="665" text-anchor="middle">1304</text>
+<text x="270.33" y="665" text-anchor="middle">2608</text>
+<path d="M75 420 V645 H440" fill="none" stroke="#333"/>
+<text x="257.5" y="688" text-anchor="middle">Reconstructed H (log scale)</text>
+<text transform="translate(22,532.5) rotate(-90)" text-anchor="middle">Pooled edge Jaccard</text>
+<polyline points="193.27,464.80 270.33,497.72" fill="none" stroke="#111111" stroke-width="1.4"/>
+<circle cx="193.27" cy="464.80" r="3.4" fill="#111111"/>
+<circle cx="270.33" cy="497.72" r="3.4" fill="#111111"/>
+<polyline points="193.27,459.92 270.33,489.99" fill="none" stroke="#a3a3a3" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="459.92" r="3.4" fill="#a3a3a3"/>
+<circle cx="270.33" cy="489.99" r="3.4" fill="#a3a3a3"/>
+<polyline points="193.27,454.14 270.33,481.76" fill="none" stroke="#666666" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="454.14" r="3.4" fill="#666666"/>
+<circle cx="270.33" cy="481.76" r="3.4" fill="#666666"/>
+<polyline points="193.27,449.05 270.33,473.42" fill="none" stroke="#47889b" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="449.05" r="3.4" fill="#47889b"/>
+<circle cx="270.33" cy="473.42" r="3.4" fill="#47889b"/>
+<polyline points="193.27,443.66 270.33,466.05" fill="none" stroke="#8468a4" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="443.66" r="3.4" fill="#8468a4"/>
+<circle cx="270.33" cy="466.05" r="3.4" fill="#8468a4"/>
+<polyline points="193.27,438.41 270.33,457.72" fill="none" stroke="#ad8957" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="438.41" r="3.4" fill="#ad8957"/>
+<circle cx="270.33" cy="457.72" r="3.4" fill="#ad8957"/>
+<polyline points="193.27,465.54 270.33,491.47" fill="none" stroke="#e58b20" stroke-width="2.7"/>
+<circle cx="193.27" cy="465.54" r="3.4" fill="#e58b20"/>
+<circle cx="270.33" cy="491.47" r="3.4" fill="#e58b20"/>
+<polyline points="193.27,466.67 270.33,487.08" fill="none" stroke="#c82828" stroke-width="2.7"/>
+<circle cx="193.27" cy="466.67" r="3.4" fill="#c82828"/>
+<circle cx="270.33" cy="487.08" r="3.4" fill="#c82828"/>
+<polyline points="193.27,420.00 270.33,420.00" fill="none" stroke="#b5b5b5" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="193.27" cy="420.00" r="3.4" fill="#b5b5b5"/>
+<circle cx="270.33" cy="420.00" r="3.4" fill="#b5b5b5"/>
+<text x="550" y="45" font-size="15">SIG: common-source pruning</text>
+<line x1="550" y1="285.00" x2="915" y2="285.00" stroke="#e5e5e5"/>
+<text x="542" y="289.00" text-anchor="end">0.00</text>
+<line x1="550" y1="240.00" x2="915" y2="240.00" stroke="#e5e5e5"/>
+<text x="542" y="244.00" text-anchor="end">0.10</text>
+<line x1="550" y1="195.00" x2="915" y2="195.00" stroke="#e5e5e5"/>
+<text x="542" y="199.00" text-anchor="end">0.20</text>
+<line x1="550" y1="150.00" x2="915" y2="150.00" stroke="#e5e5e5"/>
+<text x="542" y="154.00" text-anchor="end">0.30</text>
+<line x1="550" y1="105.00" x2="915" y2="105.00" stroke="#e5e5e5"/>
+<text x="542" y="109.00" text-anchor="end">0.40</text>
+<line x1="550" y1="60.00" x2="915" y2="60.00" stroke="#e5e5e5"/>
+<text x="542" y="64.00" text-anchor="end">0.50</text>
+<text x="556.94" y="305" text-anchor="middle">479</text>
+<text x="668.27" y="305" text-anchor="middle">1304</text>
+<text x="745.33" y="305" text-anchor="middle">2608</text>
+<text x="902.05" y="305" text-anchor="middle">10680</text>
+<path d="M550 60 V285 H915" fill="none" stroke="#333"/>
+<text x="732.5" y="328" text-anchor="middle">Reconstructed H (log scale)</text>
+<text transform="translate(497,172.5) rotate(-90)" text-anchor="middle">Fraction pruned</text>
+<polyline points="556.94,210.03 668.27,172.39 745.33,149.87 902.05,99.09" fill="none" stroke="#111111" stroke-width="1.4"/>
+<circle cx="902.05" cy="99.09" r="3.4" fill="#111111"/>
+<circle cx="668.27" cy="172.39" r="3.4" fill="#111111"/>
+<circle cx="745.33" cy="149.87" r="3.4" fill="#111111"/>
+<circle cx="556.94" cy="210.03" r="3.4" fill="#111111"/>
+<polyline points="556.94,219.79 668.27,183.58 745.33,162.60 902.05,115.04" fill="none" stroke="#a3a3a3" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="115.04" r="3.4" fill="#a3a3a3"/>
+<circle cx="668.27" cy="183.58" r="3.4" fill="#a3a3a3"/>
+<circle cx="745.33" cy="162.60" r="3.4" fill="#a3a3a3"/>
+<circle cx="556.94" cy="219.79" r="3.4" fill="#a3a3a3"/>
+<polyline points="556.94,229.96 668.27,195.84 745.33,175.97 902.05,130.86" fill="none" stroke="#666666" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="130.86" r="3.4" fill="#666666"/>
+<circle cx="668.27" cy="195.84" r="3.4" fill="#666666"/>
+<circle cx="745.33" cy="175.97" r="3.4" fill="#666666"/>
+<circle cx="556.94" cy="229.96" r="3.4" fill="#666666"/>
+<polyline points="556.94,241.20 668.27,208.92 745.33,190.54 902.05,149.06" fill="none" stroke="#47889b" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="149.06" r="3.4" fill="#47889b"/>
+<circle cx="668.27" cy="208.92" r="3.4" fill="#47889b"/>
+<circle cx="745.33" cy="190.54" r="3.4" fill="#47889b"/>
+<circle cx="556.94" cy="241.20" r="3.4" fill="#47889b"/>
+<polyline points="556.94,251.03 668.27,222.29 745.33,204.95 902.05,166.34" fill="none" stroke="#8468a4" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="166.34" r="3.4" fill="#8468a4"/>
+<circle cx="668.27" cy="222.29" r="3.4" fill="#8468a4"/>
+<circle cx="745.33" cy="204.95" r="3.4" fill="#8468a4"/>
+<circle cx="556.94" cy="251.03" r="3.4" fill="#8468a4"/>
+<polyline points="556.94,260.22 668.27,235.31 745.33,219.73 902.05,184.61" fill="none" stroke="#ad8957" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="184.61" r="3.4" fill="#ad8957"/>
+<circle cx="668.27" cy="235.31" r="3.4" fill="#ad8957"/>
+<circle cx="745.33" cy="219.73" r="3.4" fill="#ad8957"/>
+<circle cx="556.94" cy="260.22" r="3.4" fill="#ad8957"/>
+<polyline points="556.94,210.03 668.27,180.82 745.33,165.50 902.05,135.07" fill="none" stroke="#e58b20" stroke-width="2.7"/>
+<circle cx="902.05" cy="135.07" r="3.4" fill="#e58b20"/>
+<circle cx="668.27" cy="180.82" r="3.4" fill="#e58b20"/>
+<circle cx="745.33" cy="165.50" r="3.4" fill="#e58b20"/>
+<circle cx="556.94" cy="210.03" r="3.4" fill="#e58b20"/>
+<polyline points="556.94,210.03 668.27,188.88 745.33,181.95 902.05,174.93" fill="none" stroke="#c82828" stroke-width="2.7"/>
+<circle cx="902.05" cy="174.93" r="3.4" fill="#c82828"/>
+<circle cx="668.27" cy="188.88" r="3.4" fill="#c82828"/>
+<circle cx="745.33" cy="181.95" r="3.4" fill="#c82828"/>
+<circle cx="556.94" cy="210.03" r="3.4" fill="#c82828"/>
+<polyline points="556.94,285.00 668.27,285.00 745.33,285.00 902.05,285.00" fill="none" stroke="#b5b5b5" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="556.94" cy="285.00" r="3.4" fill="#b5b5b5"/>
+<circle cx="668.27" cy="285.00" r="3.4" fill="#b5b5b5"/>
+<circle cx="745.33" cy="285.00" r="3.4" fill="#b5b5b5"/>
+<circle cx="902.05" cy="285.00" r="3.4" fill="#b5b5b5"/>
+<text x="550" y="405" font-size="15">SIG: agreement with H=479</text>
+<line x1="550" y1="645.00" x2="915" y2="645.00" stroke="#e5e5e5"/>
+<text x="542" y="649.00" text-anchor="end">0.60</text>
+<line x1="550" y1="600.00" x2="915" y2="600.00" stroke="#e5e5e5"/>
+<text x="542" y="604.00" text-anchor="end">0.68</text>
+<line x1="550" y1="555.00" x2="915" y2="555.00" stroke="#e5e5e5"/>
+<text x="542" y="559.00" text-anchor="end">0.76</text>
+<line x1="550" y1="510.00" x2="915" y2="510.00" stroke="#e5e5e5"/>
+<text x="542" y="514.00" text-anchor="end">0.84</text>
+<line x1="550" y1="465.00" x2="915" y2="465.00" stroke="#e5e5e5"/>
+<text x="542" y="469.00" text-anchor="end">0.92</text>
+<line x1="550" y1="420.00" x2="915" y2="420.00" stroke="#e5e5e5"/>
+<text x="542" y="424.00" text-anchor="end">1.00</text>
+<text x="668.27" y="665" text-anchor="middle">1304</text>
+<text x="745.33" y="665" text-anchor="middle">2608</text>
+<text x="902.05" y="665" text-anchor="middle">10680</text>
+<path d="M550 420 V645 H915" fill="none" stroke="#333"/>
+<text x="732.5" y="688" text-anchor="middle">Reconstructed H (log scale)</text>
+<text transform="translate(497,532.5) rotate(-90)" text-anchor="middle">Pooled edge Jaccard</text>
+<polyline points="668.27,476.47 745.33,510.29 902.05,588.28" fill="none" stroke="#111111" stroke-width="1.4"/>
+<circle cx="902.05" cy="588.28" r="3.4" fill="#111111"/>
+<circle cx="668.27" cy="476.47" r="3.4" fill="#111111"/>
+<circle cx="745.33" cy="510.29" r="3.4" fill="#111111"/>
+<polyline points="668.27,471.17 745.33,503.60 902.05,574.63" fill="none" stroke="#a3a3a3" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="574.63" r="3.4" fill="#a3a3a3"/>
+<circle cx="668.27" cy="471.17" r="3.4" fill="#a3a3a3"/>
+<circle cx="745.33" cy="503.60" r="3.4" fill="#a3a3a3"/>
+<polyline points="668.27,466.28 745.33,495.93 902.05,562.68" fill="none" stroke="#666666" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="562.68" r="3.4" fill="#666666"/>
+<circle cx="668.27" cy="466.28" r="3.4" fill="#666666"/>
+<circle cx="745.33" cy="495.93" r="3.4" fill="#666666"/>
+<polyline points="668.27,459.38 745.33,486.31 902.05,549.28" fill="none" stroke="#47889b" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="549.28" r="3.4" fill="#47889b"/>
+<circle cx="668.27" cy="459.38" r="3.4" fill="#47889b"/>
+<circle cx="745.33" cy="486.31" r="3.4" fill="#47889b"/>
+<polyline points="668.27,453.64 745.33,478.67 902.05,535.91" fill="none" stroke="#8468a4" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="535.91" r="3.4" fill="#8468a4"/>
+<circle cx="668.27" cy="453.64" r="3.4" fill="#8468a4"/>
+<circle cx="745.33" cy="478.67" r="3.4" fill="#8468a4"/>
+<polyline points="668.27,448.31 745.33,469.44 902.05,520.65" fill="none" stroke="#ad8957" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="902.05" cy="520.65" r="3.4" fill="#ad8957"/>
+<circle cx="668.27" cy="448.31" r="3.4" fill="#ad8957"/>
+<circle cx="745.33" cy="469.44" r="3.4" fill="#ad8957"/>
+<polyline points="668.27,473.90 745.33,499.34 902.05,544.00" fill="none" stroke="#e58b20" stroke-width="2.7"/>
+<circle cx="902.05" cy="544.00" r="3.4" fill="#e58b20"/>
+<circle cx="668.27" cy="473.90" r="3.4" fill="#e58b20"/>
+<circle cx="745.33" cy="499.34" r="3.4" fill="#e58b20"/>
+<polyline points="668.27,471.85 745.33,491.12 902.05,507.46" fill="none" stroke="#c82828" stroke-width="2.7"/>
+<circle cx="902.05" cy="507.46" r="3.4" fill="#c82828"/>
+<circle cx="668.27" cy="471.85" r="3.4" fill="#c82828"/>
+<circle cx="745.33" cy="491.12" r="3.4" fill="#c82828"/>
+<polyline points="668.27,420.00 745.33,420.00 902.05,420.00" fill="none" stroke="#b5b5b5" stroke-width="1.4" stroke-dasharray="5 3"/>
+<circle cx="668.27" cy="420.00" r="3.4" fill="#b5b5b5"/>
+<circle cx="745.33" cy="420.00" r="3.4" fill="#b5b5b5"/>
+<circle cx="902.05" cy="420.00" r="3.4" fill="#b5b5b5"/>
+<line x1="1040" y1="65" x2="1064" y2="65" stroke="#111111" stroke-width="3"/>
+<text x="1071" y="69">strict</text>
+<line x1="1040" y1="88" x2="1064" y2="88" stroke="#a3a3a3" stroke-width="3"/>
+<text x="1071" y="92">fixed_0.05</text>
+<line x1="1040" y1="111" x2="1064" y2="111" stroke="#666666" stroke-width="3"/>
+<text x="1071" y="115">fixed</text>
+<line x1="1040" y1="134" x2="1064" y2="134" stroke="#47889b" stroke-width="3"/>
+<text x="1071" y="138">fixed_0.15</text>
+<line x1="1040" y1="157" x2="1064" y2="157" stroke="#8468a4" stroke-width="3"/>
+<text x="1071" y="161">fixed_0.2</text>
+<line x1="1040" y1="180" x2="1064" y2="180" stroke="#ad8957" stroke-width="3"/>
+<text x="1071" y="184">fixed_0.25</text>
+<line x1="1040" y1="203" x2="1064" y2="203" stroke="#e58b20" stroke-width="3"/>
+<text x="1071" y="207">dynamic_0.025</text>
+<line x1="1040" y1="226" x2="1064" y2="226" stroke="#c82828" stroke-width="3"/>
+<text x="1071" y="230">dynamic_0.05</text>
+<line x1="1040" y1="249" x2="1064" y2="249" stroke="#b5b5b5" stroke-width="3"/>
+<text x="1071" y="253">no_dpi</text>
+<text x="75" y="725">Medians; 479 evaluated probes, matched m=80 and MI cutoff. These are robustness measures, not accuracy.</text>
+</g></svg>

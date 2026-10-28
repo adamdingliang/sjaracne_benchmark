@@ -1,0 +1,74 @@
+{
+  "schema": "tcga-luad-independent-validation-v1",
+  "complete": true,
+  "created_utc": "2026-10-26T23:14:08.586046+00:00",
+  "manifest": {
+    "bytes": 622900,
+    "md5": "3b1d8cf40cda3f22745f0994864f035d",
+    "sha256": "864200cf68aada8eda8bf8ad170f54a6d214fb7d10b24110e404592b88a520a8"
+  },
+  "validator": {
+    "bytes": 18418,
+    "md5": "a25b469d39beecefe92ba803481a43cf",
+    "sha256": "d3da941f16df365c5f6f2659940582c5a2eb0b19e96ff73741705693ffff5d15"
+  },
+  "raw_files_rehashed": 540,
+  "outputs_rehashed": 22,
+  "patients": 517,
+  "counts": {
+    "genes": 60660,
+    "all_zero_genes": 3285,
+    "retained_genes": 29841,
+    "retained_tf": 1929,
+    "retained_sig": 9464,
+    "retained_common": 477,
+    "q50": 0.2547149679769182,
+    "q10": 0.0,
+    "maximum_log_absolute_error": 0.0
+  },
+  "raw_column_verification": {
+    "selected_columns_checked": 3,
+    "sample_indices": [
+      0,
+      258,
+      516
+    ],
+    "selected_file_ids": [
+      "ef337612-6a73-4c29-a8b0-85557cbeaff4",
+      "63a884f4-0d20-4cb5-b485-72e066b6490f",
+      "deb2d529-5ea7-4a41-be07-f9239d7ac759"
+    ],
+    "complete_gene_models_checked": {
+      "ef337612-6a73-4c29-a8b0-85557cbeaff4": {
+        "comments": [
+          "# gene-model: GENCODE v36"
+        ],
+        "genes": 60660
+      },
+      "63a884f4-0d20-4cb5-b485-72e066b6490f": {
+        "comments": [
+          "# gene-model: GENCODE v36"
+        ],
+        "genes": 60660
+      },
+      "deb2d529-5ea7-4a41-be07-f9239d7ac759": {
+        "comments": [
+          "# gene-model: GENCODE v36"
+        ],
+        "genes": 60660
+      }
+    },
+    "raw_spot_cells_checked": 181980
+  },
+  "checks": {
+    "unique_patients": true,
+    "deterministic_selection": true,
+    "all_expression_cells_checked": true,
+    "log_transform": true,
+    "global_nonzero_gene_quantiles": true,
+    "strict_threshold_flags": true,
+    "regulator_intersections_and_order": true,
+    "filtered_float64_roundtrip": true,
+    "new_inference_launched": false
+  }
+}

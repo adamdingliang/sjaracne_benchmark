@@ -1,0 +1,113 @@
+{
+  "schema": "luad100-common-source-report-provenance-v1",
+  "design_fingerprint": "a53167d5688bf6d82d7da30dd1ac5d31da16e5581a57e7884a5594283307d200",
+  "analyzer_sha256": "d3b42349ec51c512679327ea26b020f6c188211a2a70b91eff6a44a0e4bb8a1c",
+  "dependencies": {
+    "original_analyzer": {
+      "path": "/home/adam/sjaracne-benchmarks/luad100-common-sources-20261026/harness/original_analyze.py",
+      "bytes": 31115,
+      "sha256": "40380c8f910f038d1ebbd532ac9475bfc0d3e3e1bd84757fabcecc47abdb5c9d"
+    },
+    "frontier_helper": {
+      "path": "/home/adam/sjaracne-benchmarks/luad100-common-sources-20261026/harness/frontier.py",
+      "bytes": 25561,
+      "sha256": "0995f8f9c663293b3774486acfb6baf6c7abe02bd0d7c91cdfc5a8d2062360ab"
+    },
+    "source_benefits_helper": {
+      "path": "/home/adam/sjaracne-benchmarks/luad100-common-sources-20261026/harness/source_benefits.py",
+      "bytes": 25839,
+      "sha256": "0af4f35f53f2c9ab010ff6532191294eeaae3bcf87e779babc959115d5311537"
+    }
+  },
+  "brca_reference_summary": {
+    "path": "/home/adam/sjaracne-benchmarks/luad100-common-sources-20261026/harness/brca_reference_summary.tsv",
+    "bytes": 692781,
+    "sha256": "6f7c7fba669f5626a760d836ec04fa52d0435439854d0e4cd599b4bb148352c8"
+  },
+  "files": {
+    "agreement_summary.tsv": {
+      "bytes": 29567,
+      "sha256": "f8a10f9765e0d0a1786c32be7c0c48f28bcde05ed36b94edc13a52711bdfb127"
+    },
+    "per_source_runs.tsv": {
+      "bytes": 27314595,
+      "sha256": "817760cacaa805a54af4eb208386a8af920ca66126d5b711ce1974d2be4b145e"
+    },
+    "trajectories.svg": {
+      "bytes": 16938,
+      "sha256": "e28e07b87a89932a88e030df7e2c747dd49143cbdafa9825f5929008daeca96e"
+    },
+    "family_source_summaries.tsv": {
+      "bytes": 2918934,
+      "sha256": "b1aca0a952e2d069bfb9831b9fd702e5efa5ffb3e5c14539b8a8d2cdd36585dd"
+    },
+    "recurrence_by_group.tsv": {
+      "bytes": 54962,
+      "sha256": "02c8d1bc654e88795d54d5604e8742252b75d751db862e28e955269463b8599d"
+    },
+    "frontier_summary.tsv": {
+      "bytes": 676838,
+      "sha256": "23909cd302f28c697b395d42b123cb38665bbf9068e411a789833923eb9aaddf"
+    },
+    "matched_summary.tsv": {
+      "bytes": 383686,
+      "sha256": "f3107e4cec4952eaa0e8935675a970e6a052dbaedfb217f7aa718662be6f4118"
+    },
+    "recurrence_details.tsv.gz": {
+      "bytes": 27738916,
+      "sha256": "13873d7cf0bd6a9da295d945c521be66d1fd4f017a6ce2128400966c8a731551"
+    },
+    "fixed_dynamic_tradeoffs.tsv": {
+      "bytes": 2802069,
+      "sha256": "ebea38da95b3998393516649c5a82008d9f0004dc7bf0f9fc244f871c2eff6d9"
+    },
+    "strategy_differences.tsv": {
+      "bytes": 2416212,
+      "sha256": "dbdba646c6d30fc62f30e48091ec786ff7bf8b8325127998ddd4787439384a50"
+    },
+    "runs.tsv": {
+      "bytes": 107157,
+      "sha256": "f35750fd24b9808eed9c273651f2fa6a05e4da1f9715878dc07435492c094961"
+    },
+    "RESULTS.md": {
+      "bytes": 8801,
+      "sha256": "fd3d99b4b919b73609bf01254631ece06dce6b7861f3008ee1aefda56e11f44f"
+    },
+    "run_summary.tsv": {
+      "bytes": 20967,
+      "sha256": "5a6c679724fbdc731fc2f92abfdd53a1f0b7cd2c708d20d001df3402b10d95e0"
+    },
+    "source_differences.tsv.gz": {
+      "bytes": 6373389,
+      "sha256": "a740893bf86bc6702ec46e178ee778dabf5968f78cfb8493827b44d62932822c"
+    },
+    "strategy_difference_summary.tsv": {
+      "bytes": 541231,
+      "sha256": "9144eee9f7c61927cd3a8306dc168e0163f097561efda18144b6c1f510502677"
+    },
+    "frontier_points.tsv": {
+      "bytes": 2336431,
+      "sha256": "f1ba677e1203af0ed60356e7288c2dedc0173bca9c215966fad25233afe61072"
+    },
+    "matched_agreement.tsv": {
+      "bytes": 1517497,
+      "sha256": "bc4d28f1e9493d524759dc552f3b4478bc847c641ca2dbdb42140cb20199dc36"
+    },
+    "agreement.tsv": {
+      "bytes": 192867,
+      "sha256": "8f88e106c69dab846b7a997a3ccf2efdcbccf58aba6f5bfcd8bb563d201e039e"
+    },
+    "membership_aliases_not_replicates.tsv": {
+      "bytes": 5880,
+      "sha256": "80d2654cb1c91ec4f6c0045e939e1858870c01181c0f1ee1feaa89ed6ea29286"
+    },
+    "analysis.json": {
+      "bytes": 113744067,
+      "sha256": "d8283de616fc57d06cdbf2070e66897b6a55055be8b2391d4a8176c221ede683"
+    },
+    "natural_full_frontier.svg": {
+      "bytes": 6794,
+      "sha256": "c14b3730dc5f2cdc26e36c6881ea54465e5c54c45cb4d9499e79e46891c55483"
+    }
+  }
+}
