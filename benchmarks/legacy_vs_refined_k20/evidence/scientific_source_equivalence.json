@@ -1,0 +1,15 @@
+{
+  "state": "verified",
+  "execution_current_commit": "4ef87a01698394dd020aa6e2c0b66c6cab230ec2",
+  "prepared_documentation_current_commit": "20b7dd031df73f0266a041b771ef641c9828160a",
+  "native_src_git_tree_both": "96d2353211b7ec9493acd5a547ce617c68aaf6f4",
+  "consensus_python_git_blob_both": "0af77735715e49c33557b873845a1a130860d638",
+  "native_and_consensus_source_identical": true,
+  "verification": "Read-only git rev-parse and git diff between the two pinned commits in D:/GitHub/SJARACNe-wdl13",
+  "other_changes": [
+    "Makefile build support",
+    "CLI/profile and WDL/CWL workflow support",
+    "Removal of unused config_cwlexec.json"
+  ],
+  "interpretation": "Reuse the frozen compiled scientific engine to match the existing comparison. Record its actual 4ef87a0 provenance; do not relabel it as a newly built 20b7dd0 executable or a WDL-engine validation."
+}

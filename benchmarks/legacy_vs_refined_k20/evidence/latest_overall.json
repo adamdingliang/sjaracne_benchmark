@@ -1,0 +1,27 @@
+{
+  "dataset": "BLCA406",
+  "stage": "/mnt/d/GitHub/local_runs/sjaracne_blca_legacy_vs_current_20261102/report_builds/attempt_001",
+  "blca_results_sha256": "46eba08a87bf4768f5ac6f0cfc3469d065b80f9078ac522ac42e376731c79acd",
+  "prior_overall_sha256": {
+    "OVERALL.html": "dc1496f61c4e798dc28cc3f475849b63e968b0d5aa49d2155c7bb4c34cd32a85",
+    "OVERALL.md": "b02ad0857cb4b582844e4585c9fe0b55f88bcbce880a6d49733073d5f2fa8f63",
+    "report_data.json": "50e9d8ec273767a603d019561f23230bd28960c479290a32620b1404df679b7b",
+    "overall_metrics.tsv": "deb580da46329d8b8c380d9e0ea0290fa693b13076fd17814ae5cbd354f296b4",
+    "report_finalization.json": "46a54c09c8dff628a0e726995d840a40f3e466b02bd534d243147f3e207d5b97"
+  },
+  "adapter_sha256": "c8b278fee6e91beb93cb4129b2539db50a0fb6f3c1087e264f601251ebf32c05",
+  "primary_bulk_rows": 12,
+  "primary_dream_rows": 4,
+  "matched_bulk_rows": 8,
+  "built_utc": "2026-11-03T10:55:30.043678+00:00",
+  "state": "complete",
+  "published_utc": "2026-11-03T10:55:37.916328+00:00",
+  "snapshot": "/mnt/d/GitHub/local_runs/sjaracne_blca_legacy_vs_current_20261102/snapshots/before_BLCA406_20261103T105530Z",
+  "published_sha256": {
+    "OVERALL.html": "2c19321d360729a6318bfa3e71124a7929875370b3a51b102a843aeef2cb2dd1",
+    "OVERALL.md": "ebad979473cafe975cf64d963bbc5d95ec303929869a0ccc7457af1e6087cb61",
+    "report_data.json": "8ceb974721329ab6828bff9e021f5c0c7dea07e9d9eeff8c1ccd08b95bee0015",
+    "overall_metrics.tsv": "c5e1d332ed7c84956a7cffe6d6669bdf9f8fc8bb384d2fd212e43ee369286865"
+  },
+  "prior_finalization_scope": "report_finalization.json describes the pre-BLCA snapshot"
+}
