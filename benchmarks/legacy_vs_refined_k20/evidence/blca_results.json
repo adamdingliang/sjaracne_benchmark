@@ -1,0 +1,351 @@
+{
+  "state": "complete",
+  "dataset": "BLCA406",
+  "samples": 406,
+  "selected_samples": 325,
+  "B": 100,
+  "arms": [
+    {
+      "id": "BLCA406_TF_current",
+      "dataset": "BLCA406",
+      "network": "TF",
+      "version": "current",
+      "source_commit": "4ef87a01698394dd020aa6e2c0b66c6cab230ec2",
+      "consensus_K": 20,
+      "consensus_mode": "minimum_recurrence",
+      "consensus_cutoff": 20,
+      "samples": 406,
+      "selected_samples": 325,
+      "B": 100,
+      "metrics": {
+        "median_targets": 108.0,
+        "median_targets_active_only": 108.0,
+        "scale_free_adjusted_r2": 0.872930093211284,
+        "candidate_drivers": 1920,
+        "active_drivers": 1920,
+        "active_driver_fraction": 1.0,
+        "edges_all": 264148,
+        "all_qc_metrics": {
+          "candidate_drivers": 1920.0,
+          "active_drivers": 1920.0,
+          "active_driver_fraction": 1.0,
+          "edges": 264148.0,
+          "incident_nodes": 28440.0,
+          "weak_components": 1.0,
+          "largest_weak_component": 28440.0,
+          "largest_weak_component_fraction": 1.0,
+          "density": 0.000326590399101806,
+          "target_size_zero_mean": 137.577083333333,
+          "target_size_zero_median": 108.0,
+          "target_size_zero_q25": 62.0,
+          "target_size_zero_q75": 180.25,
+          "target_size_zero_max": 966.0,
+          "target_size_active_mean": 137.577083333333,
+          "target_size_active_median": 108.0,
+          "target_size_active_q25": 62.0,
+          "target_size_active_q75": 180.25,
+          "target_size_active_max": 966.0,
+          "scale_free_adjusted_r2": 0.872930093211284
+        }
+      },
+      "figures": {
+        "target_sizes": {
+          "asset": "assets/BLCA406_TF_current__bc272be929c8__target_sizes.png",
+          "source_html": "/home/adam/sjaracne-benchmarks/blca-legacy-vs-current-20261102/workflows/BLCA406_TF_current/qc/BLCA406_TF_current_netQC.html",
+          "source_html_sha256": "bc272be929c846d8d3b002c7e2ebc3c5fb4fc8efecac6b94c74632e1f0741054",
+          "section": "part-iii-drivers-target-size-checking",
+          "image_ordinal": 1,
+          "png_sha256": "d3c9a244fd6e5df8b92bd0932867e1faa377e6af3466fdddd40ac7ece69b0a9e",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 102224
+        },
+        "scale_free": {
+          "asset": "assets/BLCA406_TF_current__bc272be929c8__scale_free.png",
+          "source_html": "/home/adam/sjaracne-benchmarks/blca-legacy-vs-current-20261102/workflows/BLCA406_TF_current/qc/BLCA406_TF_current_netQC.html",
+          "source_html_sha256": "bc272be929c846d8d3b002c7e2ebc3c5fb4fc8efecac6b94c74632e1f0741054",
+          "section": "part-iv-scale-free-distribution-checking",
+          "image_ordinal": 0,
+          "png_sha256": "6d8f5aa67df7d14c6c10a95de4c1595ac17ef58a6b66b662cc8b0df7f34c4104",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 74278
+        }
+      },
+      "consensus_copy": "results/BLCA406_TF_current/consensus_network_ncol_.txt",
+      "consensus_sha256": "0ba2263662aa90be5bf89d08c3f1ecc190dc4438c737dd7ae6c02fa14d36105b",
+      "qc_html_copy": "results/BLCA406_TF_current/qc/BLCA406_TF_current_netQC.html",
+      "qc_summary_copy": "results/BLCA406_TF_current/qc/network_summary.tsv",
+      "qc_html_sha256": "bc272be929c846d8d3b002c7e2ebc3c5fb4fc8efecac6b94c74632e1f0741054",
+      "qc_summary_sha256": "8a9defd67173b3b33908ff6c4afc34ac968aaa925d22471bf981c3222c8475fa",
+      "finished_utc": "2026-11-03T10:13:45.716088+00:00",
+      "validation": {
+        "native_networks": 100,
+        "native_sha_signatures_checked": true,
+        "consensus_metadata_checked": true,
+        "consensus_sha256": "0ba2263662aa90be5bf89d08c3f1ecc190dc4438c737dd7ae6c02fa14d36105b"
+      }
+    },
+    {
+      "id": "BLCA406_TF_legacy",
+      "dataset": "BLCA406",
+      "network": "TF",
+      "version": "legacy",
+      "source_commit": "e59973a1891672a14f06d7847545c53368f3066c",
+      "consensus_K": null,
+      "consensus_mode": "legacy_probability",
+      "consensus_cutoff": 1e-05,
+      "samples": 406,
+      "selected_samples": null,
+      "B": 100,
+      "metrics": {
+        "median_targets": 162.0,
+        "median_targets_active_only": 162.0,
+        "scale_free_adjusted_r2": 0.83348510073372,
+        "candidate_drivers": 1920,
+        "active_drivers": 1920,
+        "active_driver_fraction": 1.0,
+        "edges_all": 382365,
+        "all_qc_metrics": {
+          "candidate_drivers": 1920.0,
+          "active_drivers": 1920.0,
+          "active_driver_fraction": 1.0,
+          "edges": 382365.0,
+          "incident_nodes": 29567.0,
+          "weak_components": 1.0,
+          "largest_weak_component": 29567.0,
+          "largest_weak_component_fraction": 1.0,
+          "density": 0.000437399516022094,
+          "target_size_zero_mean": 199.1484375,
+          "target_size_zero_median": 162.0,
+          "target_size_zero_q25": 97.0,
+          "target_size_zero_q75": 266.0,
+          "target_size_zero_max": 1123.0,
+          "target_size_active_mean": 199.1484375,
+          "target_size_active_median": 162.0,
+          "target_size_active_q25": 97.0,
+          "target_size_active_q75": 266.0,
+          "target_size_active_max": 1123.0,
+          "scale_free_adjusted_r2": 0.83348510073372
+        }
+      },
+      "figures": {
+        "target_sizes": {
+          "asset": "assets/BLCA406_TF_legacy__89aec6ecb309__target_sizes.png",
+          "source_html": "/home/adam/sjaracne-benchmarks/blca-legacy-vs-current-20261102/workflows/BLCA406_TF_legacy/qc/BLCA406_TF_legacy_netQC.html",
+          "source_html_sha256": "89aec6ecb309ca6f93e6575d1b3423f6452a84641ab97eba32c25ea4fad26018",
+          "section": "part-iii-drivers-target-size-checking",
+          "image_ordinal": 1,
+          "png_sha256": "8c437388a9070b2828d31d505a92053f511f646d9af91e258be23e4b13901926",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 100054
+        },
+        "scale_free": {
+          "asset": "assets/BLCA406_TF_legacy__89aec6ecb309__scale_free.png",
+          "source_html": "/home/adam/sjaracne-benchmarks/blca-legacy-vs-current-20261102/workflows/BLCA406_TF_legacy/qc/BLCA406_TF_legacy_netQC.html",
+          "source_html_sha256": "89aec6ecb309ca6f93e6575d1b3423f6452a84641ab97eba32c25ea4fad26018",
+          "section": "part-iv-scale-free-distribution-checking",
+          "image_ordinal": 0,
+          "png_sha256": "87fe9f7cbf13adf9cf50fa890387f9ab02954d332bfec7ed1ea257651824ec9f",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 79298
+        }
+      },
+      "consensus_copy": "results/BLCA406_TF_legacy/consensus_network_ncol_.txt",
+      "consensus_sha256": "beb2c7d3bad93fddfbdeffd3a0f1d0c00954fb8ae559842d430160068d89399d",
+      "qc_html_copy": "results/BLCA406_TF_legacy/qc/BLCA406_TF_legacy_netQC.html",
+      "qc_summary_copy": "results/BLCA406_TF_legacy/qc/network_summary.tsv",
+      "qc_html_sha256": "89aec6ecb309ca6f93e6575d1b3423f6452a84641ab97eba32c25ea4fad26018",
+      "qc_summary_sha256": "a63d7043fa53aaccf2931267a646ccdfd43dea71e384e8733659d10eb17b0169",
+      "finished_utc": "2026-11-03T10:20:42.068191+00:00",
+      "validation": {
+        "native_networks": 100,
+        "native_sha_signatures_checked": true,
+        "consensus_metadata_checked": true,
+        "consensus_sha256": "beb2c7d3bad93fddfbdeffd3a0f1d0c00954fb8ae559842d430160068d89399d"
+      }
+    },
+    {
+      "id": "BLCA406_SIG_current",
+      "dataset": "BLCA406",
+      "network": "SIG",
+      "version": "current",
+      "source_commit": "4ef87a01698394dd020aa6e2c0b66c6cab230ec2",
+      "consensus_K": 20,
+      "consensus_mode": "minimum_recurrence",
+      "consensus_cutoff": 20,
+      "samples": 406,
+      "selected_samples": 325,
+      "B": 100,
+      "metrics": {
+        "median_targets": 104.0,
+        "median_targets_active_only": 105.0,
+        "scale_free_adjusted_r2": 0.907952987186558,
+        "candidate_drivers": 9428,
+        "active_drivers": 9421,
+        "active_driver_fraction": 0.99925753075944,
+        "edges_all": 1299759,
+        "all_qc_metrics": {
+          "candidate_drivers": 9428.0,
+          "active_drivers": 9421.0,
+          "active_driver_fraction": 0.99925753075944,
+          "edges": 1299759.0,
+          "incident_nodes": 29443.0,
+          "weak_components": 2.0,
+          "largest_weak_component": 29441.0,
+          "largest_weak_component_fraction": 0.999932072139388,
+          "density": 0.00149938605022131,
+          "target_size_zero_mean": 137.861582520153,
+          "target_size_zero_median": 104.0,
+          "target_size_zero_q25": 63.0,
+          "target_size_zero_q75": 172.0,
+          "target_size_zero_max": 1462.0,
+          "target_size_active_mean": 137.964016558752,
+          "target_size_active_median": 105.0,
+          "target_size_active_q25": 63.0,
+          "target_size_active_q75": 172.0,
+          "target_size_active_max": 1462.0,
+          "scale_free_adjusted_r2": 0.907952987186558
+        }
+      },
+      "figures": {
+        "target_sizes": {
+          "asset": "assets/BLCA406_SIG_current__30650e5bcd31__target_sizes.png",
+          "source_html": "/home/adam/sjaracne-benchmarks/blca-legacy-vs-current-20261102/workflows/BLCA406_SIG_current/qc/BLCA406_SIG_current_netQC.html",
+          "source_html_sha256": "30650e5bcd318919ed6de9fdd8160689405d82aba014d609c4d686e4ac0d74ee",
+          "section": "part-iii-drivers-target-size-checking",
+          "image_ordinal": 1,
+          "png_sha256": "52bc1ebc913fa7d271dc5b519243038c6831578b6d04a3ef26afd5a819aeae5c",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 97845
+        },
+        "scale_free": {
+          "asset": "assets/BLCA406_SIG_current__30650e5bcd31__scale_free.png",
+          "source_html": "/home/adam/sjaracne-benchmarks/blca-legacy-vs-current-20261102/workflows/BLCA406_SIG_current/qc/BLCA406_SIG_current_netQC.html",
+          "source_html_sha256": "30650e5bcd318919ed6de9fdd8160689405d82aba014d609c4d686e4ac0d74ee",
+          "section": "part-iv-scale-free-distribution-checking",
+          "image_ordinal": 0,
+          "png_sha256": "38975354ef4a3efe86b78c15bc73b1c0720ea572f66537341bad904b6be47e68",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 81910
+        }
+      },
+      "consensus_copy": "results/BLCA406_SIG_current/consensus_network_ncol_.txt",
+      "consensus_sha256": "e3c6204beb6d73643d1a3d094be7ff2a220920c79179bd1a5e533b3ec2e16704",
+      "qc_html_copy": "results/BLCA406_SIG_current/qc/BLCA406_SIG_current_netQC.html",
+      "qc_summary_copy": "results/BLCA406_SIG_current/qc/network_summary.tsv",
+      "qc_html_sha256": "30650e5bcd318919ed6de9fdd8160689405d82aba014d609c4d686e4ac0d74ee",
+      "qc_summary_sha256": "6951a5da2052aeda46728cbba99f943b5b2b2022d40ce65911977619fbaf6a44",
+      "finished_utc": "2026-11-03T10:42:02.050078+00:00",
+      "validation": {
+        "native_networks": 100,
+        "native_sha_signatures_checked": true,
+        "consensus_metadata_checked": true,
+        "consensus_sha256": "e3c6204beb6d73643d1a3d094be7ff2a220920c79179bd1a5e533b3ec2e16704"
+      }
+    },
+    {
+      "id": "BLCA406_SIG_legacy",
+      "dataset": "BLCA406",
+      "network": "SIG",
+      "version": "legacy",
+      "source_commit": "e59973a1891672a14f06d7847545c53368f3066c",
+      "consensus_K": null,
+      "consensus_mode": "legacy_probability",
+      "consensus_cutoff": 1e-05,
+      "samples": 406,
+      "selected_samples": null,
+      "B": 100,
+      "metrics": {
+        "median_targets": 49.0,
+        "median_targets_active_only": 49.0,
+        "scale_free_adjusted_r2": 0.896738973643071,
+        "candidate_drivers": 9428,
+        "active_drivers": 9420,
+        "active_driver_fraction": 0.9991514637250742,
+        "edges_all": 595101,
+        "all_qc_metrics": {
+          "candidate_drivers": 9428.0,
+          "active_drivers": 9420.0,
+          "active_driver_fraction": 0.999151463725074,
+          "edges": 595101.0,
+          "incident_nodes": 29624.0,
+          "weak_components": 2.0,
+          "largest_weak_component": 29622.0,
+          "largest_weak_component_fraction": 0.999932487172563,
+          "density": 0.000678137783491087,
+          "target_size_zero_mean": 63.1205982180738,
+          "target_size_zero_median": 49.0,
+          "target_size_zero_q25": 29.0,
+          "target_size_zero_q75": 80.0,
+          "target_size_zero_max": 780.0,
+          "target_size_active_mean": 63.1742038216561,
+          "target_size_active_median": 49.0,
+          "target_size_active_q25": 29.0,
+          "target_size_active_q75": 80.0,
+          "target_size_active_max": 780.0,
+          "scale_free_adjusted_r2": 0.896738973643071
+        }
+      },
+      "figures": {
+        "target_sizes": {
+          "asset": "assets/BLCA406_SIG_legacy__764e4691f3d6__target_sizes.png",
+          "source_html": "/home/adam/sjaracne-benchmarks/blca-legacy-vs-current-20261102/workflows/BLCA406_SIG_legacy/qc/BLCA406_SIG_legacy_netQC.html",
+          "source_html_sha256": "764e4691f3d69178dda31a4378d0d13c3519cc0fe308ad270f69817c5cba9d13",
+          "section": "part-iii-drivers-target-size-checking",
+          "image_ordinal": 1,
+          "png_sha256": "bde31320b8de85a600383f22a45e0b28266515f33ac6625ca70f84b91617f6b6",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 101607
+        },
+        "scale_free": {
+          "asset": "assets/BLCA406_SIG_legacy__764e4691f3d6__scale_free.png",
+          "source_html": "/home/adam/sjaracne-benchmarks/blca-legacy-vs-current-20261102/workflows/BLCA406_SIG_legacy/qc/BLCA406_SIG_legacy_netQC.html",
+          "source_html_sha256": "764e4691f3d69178dda31a4378d0d13c3519cc0fe308ad270f69817c5cba9d13",
+          "section": "part-iv-scale-free-distribution-checking",
+          "image_ordinal": 0,
+          "png_sha256": "de0a1ffb6db13639876ffb80a28598f4225e5a74ddf75807669da7af331e0e0b",
+          "dimensions": [
+            1536,
+            1536
+          ],
+          "bytes": 78958
+        }
+      },
+      "consensus_copy": "results/BLCA406_SIG_legacy/consensus_network_ncol_.txt",
+      "consensus_sha256": "ef22e5ab5ba34206f64e756694c0afaf14f58282f99de6b957a552988b6d8e1f",
+      "qc_html_copy": "results/BLCA406_SIG_legacy/qc/BLCA406_SIG_legacy_netQC.html",
+      "qc_summary_copy": "results/BLCA406_SIG_legacy/qc/network_summary.tsv",
+      "qc_html_sha256": "764e4691f3d69178dda31a4378d0d13c3519cc0fe308ad270f69817c5cba9d13",
+      "qc_summary_sha256": "f09263cbd0e0a2e92712ea67cb6b4ac80a761bf31bf2031e97c6ff59e549429a",
+      "finished_utc": "2026-11-03T10:54:54.669119+00:00",
+      "validation": {
+        "native_networks": 100,
+        "native_sha_signatures_checked": true,
+        "consensus_metadata_checked": true,
+        "consensus_sha256": "ef22e5ab5ba34206f64e756694c0afaf14f58282f99de6b957a552988b6d8e1f"
+      }
+    }
+  ],
+  "manifest_sha256": "f5c807db89a15812295287f4f52514550537aacea03ab6bf07ab42fb090622d7",
+  "finished_utc": "2026-11-03T10:54:54.767522+00:00"
+}

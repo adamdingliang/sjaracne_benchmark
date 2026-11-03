@@ -8,8 +8,16 @@ The [three DPI tolerance summaries](docs/benchmark_summaries/README.md) cover
 DREAM5 precision/recall, common TF/SIG sources in BRCA100 and LUAD100, and the
 combined no-DPI/fixed/dynamic comparison with conditional conclusions.
 
+The later [full-workflow and K20 summary](docs/benchmark_summaries/legacy_refined_k20.md)
+compares historical versus refined final networks on both DREAM5 datasets,
+BRCA100, LUAD517 and BLCA406. It proposes K=20 for the standard 100-resample
+workflow as an engineering choice, while retaining the matched-K20 controls
+and BRCA100's severe target-coverage exception. This benchmark PR does not
+change SJARACNe runtime defaults.
+
 | Network data | Question | Reference | Benchmark process and results |
 | --- | --- | --- | --- |
+| DREAM5 Networks 1/3; BRCA100, LUAD517 and BLCA406 | How do historical/refined final workflows compare, and what supports a practical K20 consensus default? | Explicit directed DREAM5 labels; bundled BRCA100 and GDC TCGA bulk-expression cohorts for descriptive NetBID2 QC. No bulk edge-level truth. | [Process](benchmarks/legacy_vs_refined_k20/README.md) · [Results](benchmarks/legacy_vs_refined_k20/RESULTS.md) (100 resamples per configuration; K1-100 sweep and matched-K20 controls) |
 | DREAM5 Network 1 | How does sampling affect recovery of known directed edges? | [DREAM5 challenge](https://zenodo.org/records/17854236), Marbach et al. (2012): simulated expression and a supplied gold-standard network. [Input provenance](benchmarks/dream5_network1/DATA_LICENSE.md). | [Process](benchmarks/dream5_network1/README.md) · [Results](benchmarks/dream5_network1/RESULTS.md) |
 | DREAM5 Network 3 — E. coli | How does sampling affect reference-edge recovery from real expression data? | [DREAM5 challenge](https://zenodo.org/records/17854236): real microarrays and a strong-evidence RegulonDB reference. The reference is incomplete. [Input provenance](benchmarks/dream5_network3/DATA_LICENSE.md). | [Process](benchmarks/dream5_network3/README.md) · [Results](benchmarks/dream5_network3/RESULTS.md) (three seeds, four sampling configurations; raw MI and DPI) |
 | THP-1 Perturb-seq | Does sampling improve raw-MI ranking of perturbation-responsive targets? | Yao et al. conventional CRISPRi screen, [GSM6858449](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6858449): inference from non-targeting-cell metacells; a reconstructed response reference, not direct-edge truth or exact Fig. 6a reproduction. | [Process](benchmarks/thp1_perturbseq/raw_mi/README.md) · [Results](benchmarks/thp1_perturbseq/raw_mi/results_2026-10-15_full100/REPORT.md) (primary, 100 matched pairs) |

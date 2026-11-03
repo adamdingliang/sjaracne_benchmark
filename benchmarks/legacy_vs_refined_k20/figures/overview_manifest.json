@@ -1,0 +1,18 @@
+{
+  "source": "evidence/report_data.json",
+  "source_sha256": "8ceb974721329ab6828bff9e021f5c0c7dea07e9d9eeff8c1ccd08b95bee0015",
+  "plot_code": "plot_overview.py",
+  "plot_code_sha256": "fd48486c7c038bd8f890c1345c6d85d7eef0577e6d0a691988d2cd9f602ddea3",
+  "matplotlib_version": "3.10.9",
+  "plots": [
+    {
+      "path": "figures/dream5_comparison.png",
+      "sha256": "ccc1d37d87482378a62895dabdc3b5257462ab7fc8f871412f35ff1f31d6175b"
+    },
+    {
+      "path": "figures/bulk_qc_comparison.png",
+      "sha256": "53ecaeb2f0fcf675066cd053f8b561eaed40d920301dcaca583662dacba15b39"
+    }
+  ],
+  "scope": "Recorded metric visualization only; no inference, fitting or biological validation."
+}
