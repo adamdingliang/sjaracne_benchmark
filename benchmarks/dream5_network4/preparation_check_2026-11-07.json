@@ -1,0 +1,30 @@
+{
+  "checked_utc": "2026-11-07T19:40:58.176697+00:00",
+  "dataset": "DREAM5 Network 4",
+  "status": "pass",
+  "synthetic_tests": {
+    "command": "python -B benchmarks/dream5_network4/test_prepare.py",
+    "passed": 9
+  },
+  "source_verification": {
+    "external_data_root": "passed",
+    "published_MD5_checked_archive_route": "passed",
+    "pinned_SHA256_and_dimensions": "passed"
+  },
+  "prepared_output": "D:\\GitHub\\sjaracne_benchmark-dream-data-20261107\\runs\\dream5_network4_prepared_check_20261107",
+  "all_numeric_tokens_compared": true,
+  "matrix_orientation": "5950 genes x536 profiles",
+  "all_candidate_hubs_preserved": 333,
+  "outputs": {
+    "dream5_net4.exp": {
+      "sha256": "076793199683197f8a93b36db8165de1f689791b13f51db48dca552195fd927e",
+      "bytes": 33393033
+    },
+    "all333_tfs.txt": {
+      "sha256": "5f5f488db34dee0e895b3eba31ee73d8aa7c0c37c297bcd2331270407196523d",
+      "bytes": 1557
+    }
+  },
+  "preparation_script_sha256": "6a726837247ace49c0b58cf0519b3e553ac7e252b9630d35b36c3f2b51d0a034",
+  "inference_performed": false
+}

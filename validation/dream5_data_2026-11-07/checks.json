@@ -1,0 +1,42 @@
+{
+  "status": "dataset_checks_passed_with_preexisting_migration_failure",
+  "new_synthetic_tests": {
+    "dream5_network4": 9,
+    "dream5_systems_genetics_a": 6,
+    "total": 15
+  },
+  "actual_data_checks": {
+    "N4_external_sources": "pass",
+    "N4_original_archive": "pass",
+    "N4_exact_token_transpose": "pass",
+    "N4_full_333_TF_list": "pass",
+    "SysGenA_15_gold_external_sources": "pass",
+    "SysGenA_original_archived_ZIP": "pass",
+    "SysGenA_independent_reference_audit": "pass"
+  },
+  "documentation": {
+    "local_links_checked": 66,
+    "missing_links": 0,
+    "categories": [
+      "DREAM",
+      "Bulk",
+      "Single-cell"
+    ],
+    "historical_THP1_evidence_retained": true
+  },
+  "migration_check": {
+    "status": "preexisting_failure",
+    "path": "benchmarks/brca100_hub_size_dpi_analysis/README.md",
+    "worktree_equals_base_HEAD": true,
+    "base_commit": "bd329ebf1ebdfb27307a81c583fe8301b62961be",
+    "actual_and_HEAD_sha256": "8b34f3a9c9ae78a9d36ec87191da79c90309f2c9e68b42082ce3c0c833d7b305",
+    "frozen_import_sha256": "532f72f3f39b6ba61ad8889075fbfaffb490b28981d492ddcc651134ae337210",
+    "action": "Historical document and frozen import manifest left unchanged."
+  },
+  "acquisition_status": {
+    "N4": "source_and_prepared_inputs_verified",
+    "SysGenA_gold": "all_15_verified",
+    "SysGenA_expression_and_genotype": "pending_authorized_Synapse_download"
+  },
+  "inference_performed": false
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "dataset": "DREAM5 Network 4",
+  "organism": "Saccharomyces cerevisiae",
+  "source": {
+    "record_url": "https://zenodo.org/records/17854236",
+    "doi": "10.5281/zenodo.17854236",
+    "version": "v1",
+    "download_url": "https://zenodo.org/api/records/17854236/files/1_Challenge_Data_Supplement.zip/content",
+    "archive_name": "1_Challenge_Data_Supplement.zip",
+    "archive_bytes": 37957055,
+    "archive_md5": "fabfb9cbba5761d29d681e752a45df75",
+    "archive_sha256": "7c2210916af5c7047ef504187220c163efd6c0a39529420c2f8c342e185de93b",
+    "copied_utc": "2026-11-07T19:28:44.683358+00:00",
+    "acquisition_note": "Copied from an existing checksum-verified archive; no duplicate download or original download date asserted.",
+    "license_as_listed_by_host": "CC BY-ND 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nd/4.0/"
+  },
+  "destination_root": "Network4",
+  "copy_policy": "All listed files are byte-identical source members; no normalization, filtering or newline conversion.",
+  "files": [
+    {
+      "path": "input data/net4_expression_data.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network4/input data/net4_expression_data.tsv",
+      "bytes": 33355847,
+      "sha256": "cdfdc5c4a73dce55195f5c1d91779e9d85653c6246712cfe31afd929efeecb27"
+    },
+    {
+      "path": "input data/net4_transcription_factors.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network4/input data/net4_transcription_factors.tsv",
+      "bytes": 1557,
+      "sha256": "5f5f488db34dee0e895b3eba31ee73d8aa7c0c37c297bcd2331270407196523d"
+    },
+    {
+      "path": "gold standard/DREAM5_NetworkInference_GoldStandard_Network4.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network4/gold standard/DREAM5_NetworkInference_GoldStandard_Network4.tsv",
+      "bytes": 2834256,
+      "sha256": "8a2dfa1278c062e73b6b4511d0d84b055f3982e467e92a48467b05574ea9a0a0"
+    },
+    {
+      "path": "input data/net4_chip_features.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network4/input data/net4_chip_features.tsv",
+      "bytes": 13881,
+      "sha256": "a95a2363428140da033694a5912853d2767d83a29bbd274ee01182c2bf7096cc"
+    },
+    {
+      "path": "anonymization/net4_gene_ids.tsv",
+      "archive_member": "DREAM5_network_inference_challenge/Network4/anonymization/net4_gene_ids.tsv",
+      "bytes": 82929,
+      "sha256": "d1dc1164385c1d5c23d0292dd87348a4b820fe460304bcc6fe620daf586236b1"
+    },
+    {
+      "path": "SOURCE_CHALLENGE_README.txt",
+      "archive_member": "DREAM5_network_inference_challenge/README.txt",
+      "bytes": 954,
+      "sha256": "8c9cd616e542f94d247ae85c5dba55426ee57ab0dab62f8baa91747ddcb3b84d"
+    },
+    {
+      "path": "gold standard/SOURCE_GOLD_STANDARD_README.txt",
+      "archive_member": "DREAM5_network_inference_challenge/Evaluation scripts/INPUT/gold_standard_complete/README.txt",
+      "bytes": 345,
+      "sha256": "4201d8e7fa475f45516eb454b6e5b8b9cd15504c4ab58263850f9d44fbf9b574"
+    }
+  ],
+  "dimensions": {
+    "profiles": 536,
+    "genes": 5950,
+    "candidate_tfs": 333,
+    "labeled_pairs": 227202,
+    "positive_pairs": 3940,
+    "operational_negative_pairs": 223262,
+    "scored_sources": 114,
+    "scored_targets": 1994,
+    "full_TF_nonself_pairs": 1981017,
+    "unlabeled_candidate_pairs": 1753815
+  },
+  "scoring_policy": "Use only explicit binary labels in the released directed non-self universe. Other source-target pairs are unlabelled and excluded, not negatives.",
+  "reference_limit": "Experimental binding/conservation reference is incomplete. Zero labels are operational benchmark negatives, not proof of biological absence.",
+  "inference_status": "not_run",
+  "storage_policy": "Original data are external. This repository contains source hashes and preparation code, not the raw Network4 files or generated expression matrices."
+}
