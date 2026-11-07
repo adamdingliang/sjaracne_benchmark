@@ -8,13 +8,19 @@ The [three DPI tolerance summaries](docs/benchmark_summaries/README.md) cover
 DREAM5 precision/recall, common TF/SIG sources in BRCA100 and LUAD100, and the
 combined no-DPI/fixed/dynamic comparison with conditional conclusions.
 
+### DREAM
+
 | Network data | Question | Reference | Benchmark process and results |
 | --- | --- | --- | --- |
 | DREAM5 Network 1 | How does sampling affect recovery of known directed edges? | [DREAM5 challenge](https://zenodo.org/records/17854236), Marbach et al. (2012): simulated expression and a supplied gold-standard network. [Input provenance](benchmarks/dream5_network1/DATA_LICENSE.md). | [Process](benchmarks/dream5_network1/README.md) · [Results](benchmarks/dream5_network1/RESULTS.md) |
 | DREAM5 Network 3 — E. coli | How does sampling affect reference-edge recovery from real expression data? | [DREAM5 challenge](https://zenodo.org/records/17854236): real microarrays and a strong-evidence RegulonDB reference. The reference is incomplete. [Input provenance](benchmarks/dream5_network3/DATA_LICENSE.md). | [Process](benchmarks/dream5_network3/README.md) · [Results](benchmarks/dream5_network3/RESULTS.md) (three seeds, four sampling configurations; raw MI and DPI) |
-| THP-1 Perturb-seq | Does sampling improve raw-MI ranking of perturbation-responsive targets? | Yao et al. conventional CRISPRi screen, [GSM6858449](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6858449): inference from non-targeting-cell metacells; a reconstructed response reference, not direct-edge truth or exact Fig. 6a reproduction. | [Process](benchmarks/thp1_perturbseq/raw_mi/README.md) · [Results](benchmarks/thp1_perturbseq/raw_mi/results_2026-10-15_full100/REPORT.md) (primary, 100 matched pairs) |
-| Synthetic AP-MI independence nulls | Can a sample-size/probability cutoff function reproduce the requested null tail rates? | Independent rank pairs simulated with SJARACNe's production-shared AP-MI estimator; 200 sample sizes, 10M fitting plus 10M independent validation draws per size. Estimator calibration, not a biological edge reference. | [Process](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md) · [Results](benchmarks/apmi_null_m_sweep/broad_grid_10m/RESULTS.md) (selected PCHIP surface and rate trajectories) |
-| Synthetic AP-MI nulls — historical GPD exploration | Could a fitted GPD tail provide reliable cutoffs across sample sizes? | Independent rank permutations; original and later exact-size calibration protocols. No biological edge reference. | [Process](benchmarks/apmi_null_gpd_exploratory/README.md#process) · [Results](benchmarks/apmi_null_gpd_exploratory/README.md#results) (exploratory history; not the current runtime proposal) |
+| DREAM5 Network 4 - yeast | Prepare a genome-scale eukaryotic reference benchmark for subsequent inference comparisons. | [DREAM5 challenge](https://zenodo.org/records/17854236): 536 profiles, 5,950 genes and 333 candidate TFs; 3,940 positive edges in an incomplete binding/conservation reference. [Input provenance](benchmarks/dream5_network4/DATA_LICENSE.md). | [Data and preparation](benchmarks/dream5_network4/README.md) (acquired and validated; inference not run) |
+| DREAM5 Systems Genetics A | Add model-defined ground truth across network densities and population sizes. | [SysGenSIM / DREAM5 D5C3](https://sysgensim.sourceforge.net/datasets.html): 1,000-gene simulations, five datasets each at 100, 300 and 999 samples; expression and genotype data. | [Acquisition and benchmark scope](benchmarks/dream5_systems_genetics_a/README.md) (15 gold networks verified; expression/genotype downloads pending; no inference results) |
+
+### Bulk
+
+| Network data | Question | Reference | Benchmark process and results |
+| --- | --- | --- | --- |
 | BRCA100 (TF/SIG, current PCHIP) | What networks result from the provisional TF/SIG probabilities using the complete current workflow? | Same bundled BRCA100 expression and full hub lists; 100 matched seeds per class, followed by DPI and unchanged consensus. Descriptive NetBID2 QC, with no independent edge-level reference. | [Process](benchmarks/brca100_pchip_refresh/README.md) · [Results](benchmarks/brca100_pchip_refresh/results_2026-10-17/RESULTS.md) |
 | BRCA100 (TF/SIG, historical threshold sweep) | How do bootstrap MI thresholds affect density, driver coverage and topology? | SJARACNe's bundled `BRCA100.exp` and TF/SIG lists; inferred networks with no independent edge-level reference. Historical cutoff function, not current PCHIP outcomes. [Input provenance](benchmarks/brca100_consensus_recurrence_sweep/results_2026-08-20/provenance/design.json). | [Process](benchmarks/brca100_pr67_threshold_sweep/README.md) · [Results](benchmarks/brca100_pr67_threshold_sweep/COMBINED_RESULTS.md) |
 | BRCA100 (TF/SIG, current PCHIP recurrence) | What changes when consensus uses K=6 instead of legacy p_c=1e-5? | Frozen current-PCHIP post-DPI networks, 100 per class; exact support audit and descriptive NetBID2 QC, not independent edge-level truth. | [Process](benchmarks/brca100_pchip_recurrence/README.md) · [Results](benchmarks/brca100_pchip_recurrence/results_2026-10-18/RESULTS.md) |
@@ -22,6 +28,16 @@ combined no-DPI/fixed/dynamic comparison with conditional conclusions.
 | BRCA100 (TF/SIG, historical hub-DPI study) | How did nested hub-list size affect DPI pruning at fixed historical cutoffs? | Same BRCA100 expression; August 25/26 frozen diagnostic snapshots and historical estimator-matched GPD cutoffs, not current PCHIP outcomes. No independent edge-level reference. | [Process](benchmarks/brca100_hub_size_dpi_analysis/README.md#evidence-and-provenance) · [Results](benchmarks/brca100_hub_size_dpi_analysis/README.md#matched-100-seed-pilot) (historical rates; no current-PCHIP nested-panel replication) |
 | BRCA100 (TF/SIG) | How do matched workflow versions differ in network QC? | Same BRCA100 inputs; inferred networks compared using NetBID2 summaries, not biological ground truth. | [Process](benchmarks/brca100_netbid_qc/README.md#matched-workflow) · [Results](benchmarks/brca100_netbid_qc/results_2026-08-17/RESULTS.md) |
 | TCGA-LUAD (LUAD100) | How do strict, fixed and dynamic DPI tolerances affect common-source target consistency and pruning? | GDC TCGA-LUAD primary-tumor bulk RNA-seq (STAR TPM); 100 patient-distinct tumors and 477 shared TF/SIG source genes. No independent edge-level reference. | [Process](https://github.com/adamdingliang/sjaracne_benchmark/blob/81ca0bb1ce7fcb97479e24e82a155e31e45fa383/benchmarks/dpi_epsilon_summaries/evidence/luad100_common/PROCESS.md) · [Results](https://github.com/adamdingliang/sjaracne_benchmark/blob/81ca0bb1ce7fcb97479e24e82a155e31e45fa383/benchmarks/dpi_epsilon_summaries/evidence/luad100_common/RESULTS.md) |
+
+### Single-cell
+
+No established scRNA-seq direct-edge gold-standard benchmark is currently included. The historical THP-1 Perturb-seq/metacell response analysis is retained below as exploratory evidence; it is not direct-edge ground truth.
+
+| Network data | Question | Reference | Benchmark process and results |
+| --- | --- | --- | --- |
+| THP-1 Perturb-seq | Does sampling improve raw-MI ranking of perturbation-responsive targets? | Yao et al. conventional CRISPRi screen, [GSM6858449](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6858449): inference from non-targeting-cell metacells; a reconstructed response reference, not direct-edge truth or exact Fig. 6a reproduction. | [Process](benchmarks/thp1_perturbseq/raw_mi/README.md) · [Results](benchmarks/thp1_perturbseq/raw_mi/results_2026-10-15_full100/REPORT.md) (primary, 100 matched pairs) |
+
+## Evidence and limitations
 
 **Reference** identifies the input-data source and, where available, the edge or
 perturbation-response reference used for evaluation. It does not imply that
@@ -49,6 +65,13 @@ is retained as a historical snapshot; the [100-pair extension](benchmarks/thp1_p
 was requested after reviewing it, not an independent validation set.
 
 ## Engineering evidence
+
+The following studies calibrate the estimator rather than evaluate a biological dataset.
+
+| Network data | Question | Reference | Benchmark process and results |
+| --- | --- | --- | --- |
+| Synthetic AP-MI independence nulls | Can a sample-size/probability cutoff function reproduce the requested null tail rates? | Independent rank pairs simulated with SJARACNe's production-shared AP-MI estimator; 200 sample sizes, 10M fitting plus 10M independent validation draws per size. Estimator calibration, not a biological edge reference. | [Process](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md) · [Results](benchmarks/apmi_null_m_sweep/broad_grid_10m/RESULTS.md) (selected PCHIP surface and rate trajectories) |
+| Synthetic AP-MI nulls — historical GPD exploration | Could a fitted GPD tail provide reliable cutoffs across sample sizes? | Independent rank permutations; original and later exact-size calibration protocols. No biological edge reference. | [Process](benchmarks/apmi_null_gpd_exploratory/README.md#process) · [Results](benchmarks/apmi_null_gpd_exploratory/README.md#results) (exploratory history; not the current runtime proposal) |
 
 The [PR #3 merge-evidence summary](validation/pr3_minimum_recurrence_2026-10-18/MERGE_EVIDENCE.md)
 links the commit-pinned regression archive, checked K6/legacy examples and current

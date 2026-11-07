@@ -1,0 +1,172 @@
+{
+  "checked_utc": "2026-11-07T19:45:54.005874+00:00",
+  "dataset": "DREAM5 Systems Genetics A",
+  "status": "GOLD_AVAILABLE_INPUTS_PENDING",
+  "gold_verification": "pass",
+  "network_count": 15,
+  "external_source_route": "pass",
+  "pinned_archive_route": "pass",
+  "source_notices_checked": true,
+  "distinct_positive_edge_counts": true,
+  "synthetic_tests": {
+    "passed": 6,
+    "command": "python -B benchmarks/dream5_systems_genetics_a/test_verify_gold.py"
+  },
+  "counts": [
+    {
+      "id": "DREAM5_SysGenA100_Network1",
+      "sha256": "bbd7e93db226a40c2673d48ebf24c00213d2644cfb6291a5c854e0deee567ce9",
+      "positive_edges": 2037,
+      "negative_edges": 996963,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 494,
+      "reference_target_genes": 806,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA100_Network2",
+      "sha256": "22cbaf225da8ecb92da90e1985f7a064b06bb1316cc613ae933a1778a60778ca",
+      "positive_edges": 3055,
+      "negative_edges": 995945,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 523,
+      "reference_target_genes": 858,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA100_Network3",
+      "sha256": "c9caff8ab44073a4715a80f57b3d31e81108a2e6274bd1f0e8de9bb4b566cb4b",
+      "positive_edges": 3784,
+      "negative_edges": 995216,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 562,
+      "reference_target_genes": 869,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA100_Network4",
+      "sha256": "8ce39058b1db63b6db43cb8cc69dbf5297d1828a161ba2070552df19505a2706",
+      "positive_edges": 4840,
+      "negative_edges": 994160,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 611,
+      "reference_target_genes": 890,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA100_Network5",
+      "sha256": "f7067e3de2360a9a0cd76434178fb0009a91a09fa3331f8438d505002eea30c9",
+      "positive_edges": 5669,
+      "negative_edges": 993331,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 650,
+      "reference_target_genes": 902,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA300_Network1",
+      "sha256": "f6e19ce5ee50ff25f18fddf011c2c1156ba319b43ae2a28c2a54c839b016f623",
+      "positive_edges": 1983,
+      "negative_edges": 997017,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 445,
+      "reference_target_genes": 822,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA300_Network2",
+      "sha256": "38cfe9419cbb76cc1af2d7d9b3cb8da902c8f596c7eaae9900d6ae324b1e23ed",
+      "positive_edges": 3106,
+      "negative_edges": 995894,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 513,
+      "reference_target_genes": 863,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA300_Network3",
+      "sha256": "8d878965fd67e2384422363890c74517cfc9acebc88cb038978ad65479f84835",
+      "positive_edges": 3825,
+      "negative_edges": 995175,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 567,
+      "reference_target_genes": 867,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA300_Network4",
+      "sha256": "baf05faff8c29b3563400cfa5b82456a47c30da47c04e468f04c376dbd0d0525",
+      "positive_edges": 4812,
+      "negative_edges": 994188,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 620,
+      "reference_target_genes": 879,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA300_Network5",
+      "sha256": "7b6ef00deb955843e1564f3e81c85edd41edf101c575147b883772565ff9a1fa",
+      "positive_edges": 5273,
+      "negative_edges": 993727,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 643,
+      "reference_target_genes": 894,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA999_Network1",
+      "sha256": "f2a2a24362d799704574c7b4410b9cac46dbb02abc93e2acfe88d82d60572b19",
+      "positive_edges": 2048,
+      "negative_edges": 996952,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 491,
+      "reference_target_genes": 794,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA999_Network2",
+      "sha256": "3bc882adc5423b9b07b0845138309316bb3bccab0d69bf74f0dc2d0097db89e8",
+      "positive_edges": 3093,
+      "negative_edges": 995907,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 541,
+      "reference_target_genes": 835,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA999_Network3",
+      "sha256": "9ebe010c13ffbef560210f3b75af13a140943d73e5b88a0e28136ef21209da16",
+      "positive_edges": 3763,
+      "negative_edges": 995237,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 576,
+      "reference_target_genes": 879,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA999_Network4",
+      "sha256": "c329c5f496345a209fc2fba7dea410d7bba1cb8be6a9529ad13fd195dfdc3aa2",
+      "positive_edges": 4740,
+      "negative_edges": 994260,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 634,
+      "reference_target_genes": 893,
+      "unique_nodes_in_gold": 1000
+    },
+    {
+      "id": "DREAM5_SysGenA999_Network5",
+      "sha256": "88cab76eb0f918400cddb91443963255f57d496967d052f351661c149e5c8e9d",
+      "positive_edges": 5545,
+      "negative_edges": 993455,
+      "full_directed_nonself_pairs": 999000,
+      "reference_source_genes": 644,
+      "reference_target_genes": 886,
+      "unique_nodes_in_gold": 1000
+    }
+  ],
+  "verifier_sha256": "f2229262b498911e738d349909514fbb5aa4364cbf6e33850936f8a832a58225",
+  "source_manifest_sha256": "2542d23ea591efe715bdc6a098cc38b846e7454b40208d297c779a2be8f3e737",
+  "expression_audited": false,
+  "genotype_audited": false,
+  "inference_performed": false
+}

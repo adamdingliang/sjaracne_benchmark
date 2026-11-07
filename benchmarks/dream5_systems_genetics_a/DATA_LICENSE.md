@@ -1,0 +1,11 @@
+# DREAM5 Systems Genetics A source provenance and terms
+
+Dataset: DREAM5 Systems Genetics In-silico Network Challenge A, generated using a preliminary SysGenSIM version. Primary resources are the [author dataset page](https://sysgensim.sourceforge.net/datasets.html), the [original challenge study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029165), and the [DREAMTools scorer](https://github.com/dreamtools/dreamtools/blob/master/dreamtools/dream5/D5C3/scoring.py).
+
+Cite Vignes M, Vandel J, Allouche D, Ramadan-Alban N, Cierco-Ayrolles C, Schiex T, Mangin B and de Givry S. *Gene Regulatory Network Reconstruction Using Bayesian Networks, the Dantzig Selector, the Lasso and Their Meta-Analysis.* PLoS ONE 6(12): e29165 (2011), [doi:10.1371/journal.pone.0029165](https://doi.org/10.1371/journal.pone.0029165). Also cite the SysGenSIM dataset-generation resource and its author-provided references when using the data.
+
+The original gold archive URL is `http://wiki.c2b2.columbia.edu/dream/data/upload/dream5/analyze/goldstandard/DREAM5_SysGenA_GoldStandard.zip`. It was retrieved byte-preserved through the Internet Archive capture `20131211103624`; SHA256 `7ea861c57a05d5dd7e504d67506076f2ed97fa0c348e3fb01efc604572c2c68f`. Exact source/capture URLs, retrieval time, member names, sizes and hashes are in [data/provenance.json](data/provenance.json); the original reference README remains unmodified in the external dataset directory.
+
+No standalone data-redistribution license was found in that source README. The PLOS article's Creative Commons license is not asserted to license separate dataset files, and an archived public download is not treated as a new blanket license. Raw gold lists and expression/genotype archives are not bundled in this repository. Review original source terms and applicable Synapse access conditions before further redistribution or reuse.
+
+This addition stores metadata, a gold-integrity verifier and documentation. It does not alter or relicense the dataset, imply endorsement by the authors/DREAM/SysGenSIM/Synapse/Internet Archive, or include native inference binaries. The expression/genotype archives remain pending authorized acquisition; no inferred network or benchmark result is distributed.
