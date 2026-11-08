@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "dataset": "DREAM5 Systems Genetics A",
-  "status": "GOLD_AVAILABLE_INPUTS_PENDING",
+  "status": "INPUTS_PREPARED",
   "ground_truth_audited": true,
-  "expression_audited": false,
-  "genotype_audited": false,
+  "expression_audited": true,
+  "genotype_audited": true,
   "inference_status": "not_run",
   "source": {
     "author_dataset_page": "https://sysgensim.sourceforge.net/datasets.html",
@@ -25,26 +25,35 @@
         "expected_profiles": 100,
         "filename": "DREAM5_SysGenA100.zip",
         "synapse_entity": "syn2867592",
-        "status": "pending_authorized_download"
+        "status": "acquired_and_validated",
+        "version": 1,
+        "bytes": 2290891,
+        "sha256": "9feb0e40aad83fcff2c33f0e41c014d67217f82fd3a05683267a77e0a430b45c"
       },
       {
         "group": "A300",
         "expected_profiles": 300,
         "filename": "DREAM5_SysGenA300.zip",
         "synapse_entity": "syn2867593",
-        "status": "pending_authorized_download"
+        "status": "acquired_and_validated",
+        "version": 1,
+        "bytes": 6808434,
+        "sha256": "b2df0a3d5b5d6de67bdb8878be7cf1bd118254dc0003dcccbbed561d826b9ffc"
       },
       {
         "group": "A999",
         "expected_profiles": 999,
         "filename": "DREAM5_SysGenA999.zip",
         "synapse_entity": "syn2867594",
-        "status": "pending_authorized_download"
+        "status": "acquired_and_validated",
+        "version": 1,
+        "bytes": 22571245,
+        "sha256": "362ba2acc4d63e7ee797597b769494e9f6b415ff13f4d62fa6be69dc9aec1bce"
       }
     ],
     "dataset_terms": "No standalone redistribution license was found in the original gold README; the publication license is not asserted to license the data."
   },
-  "storage_policy": "Raw sources stay external; this repository contains hashes, a gold verifier and documentation only.",
+  "storage_policy": "Raw sources and prepared matrices remain external; this repository contains hashes, source/input verifiers, value-preserving preparation code, tests and documentation.",
   "dimensions": {
     "networks": 15,
     "genes_per_network": 1000,
@@ -73,7 +82,7 @@
       "reference_source_genes": 494,
       "reference_target_genes": 806,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA100_Network2",
@@ -91,7 +100,7 @@
       "reference_source_genes": 523,
       "reference_target_genes": 858,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA100_Network3",
@@ -109,7 +118,7 @@
       "reference_source_genes": 562,
       "reference_target_genes": 869,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA100_Network4",
@@ -127,7 +136,7 @@
       "reference_source_genes": 611,
       "reference_target_genes": 890,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA100_Network5",
@@ -145,7 +154,7 @@
       "reference_source_genes": 650,
       "reference_target_genes": 902,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA300_Network1",
@@ -163,7 +172,7 @@
       "reference_source_genes": 445,
       "reference_target_genes": 822,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA300_Network2",
@@ -181,7 +190,7 @@
       "reference_source_genes": 513,
       "reference_target_genes": 863,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA300_Network3",
@@ -199,7 +208,7 @@
       "reference_source_genes": 567,
       "reference_target_genes": 867,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA300_Network4",
@@ -217,7 +226,7 @@
       "reference_source_genes": 620,
       "reference_target_genes": 879,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA300_Network5",
@@ -235,7 +244,7 @@
       "reference_source_genes": 643,
       "reference_target_genes": 894,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA999_Network1",
@@ -253,7 +262,7 @@
       "reference_source_genes": 491,
       "reference_target_genes": 794,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA999_Network2",
@@ -271,7 +280,7 @@
       "reference_source_genes": 541,
       "reference_target_genes": 835,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA999_Network3",
@@ -289,7 +298,7 @@
       "reference_source_genes": 576,
       "reference_target_genes": 879,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA999_Network4",
@@ -307,7 +316,7 @@
       "reference_source_genes": 634,
       "reference_target_genes": 893,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     },
     {
       "id": "DREAM5_SysGenA999_Network5",
@@ -325,9 +334,12 @@
       "reference_source_genes": 644,
       "reference_target_genes": 886,
       "unique_nodes_in_gold": 1000,
-      "input_status": "pending_authorized_download"
+      "input_status": "prepared"
     }
   ],
   "scoring_policy": "The complete generating graph is given as positive directed edges. Every other ordered non-self pair among the fixed 1000 genes is a true negative in that model; no reference-derived TF source selection.",
-  "inference_scope": "Future expression-only SJARACNe evaluation does not use the genotypes supplied to the original challenge."
+  "inference_scope": "Future expression-only SJARACNe evaluation does not use the genotypes supplied to the original challenge.",
+  "input_source_manifest": "input_provenance.json",
+  "input_preparation_record": "../input_preparation_2026-11-07.json",
+  "validated_utc": "2026-11-08T01:28:33.603856+00:00"
 }

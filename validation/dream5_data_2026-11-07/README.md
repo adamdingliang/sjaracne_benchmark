@@ -22,3 +22,5 @@ python benchmarks/dream5_systems_genetics_a/verify_gold.py --data-root D:/GitHub
 The repository-wide `python scripts/verify_migration.py` check fails on the existing `benchmarks/brca100_hub_size_dpi_analysis/README.md` frozen-import hash mismatch. Its bytes are identical to the untouched base commit `bd329ebf1ebdfb27307a81c583fe8301b62961be`; this data addition does not change that file or the historical import manifest. [checks.json](checks.json) records the base/current/expected hashes rather than rewriting old provenance to make the check pass.
 
 Systems Genetics A expression/genotype inputs remain pending authorized Synapse access. Complete gold-reference verification is not a claim that the expression benchmark is ready or that inference succeeded.
+
+Follow-up: the user subsequently supplied all three SysGenA input ZIPs. See [input validation and preparation](../sysgena_inputs_2026-11-07/README.md) for the current complete-bundle status; the checks above remain the earlier gold-only snapshot.

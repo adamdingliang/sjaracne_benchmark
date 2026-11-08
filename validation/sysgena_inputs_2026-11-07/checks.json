@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-11-08T01:29:41.383920+00:00",
+  "status": "pass",
+  "scope": "SysGenA input acquisition, validation and expression preparation; no inference",
+  "synthetic_tests": {
+    "sysgen_gold": 6,
+    "sysgen_preparation": 8,
+    "network4_regression": 9,
+    "total_passed": 23,
+    "command": "python -B scripts/check_benchmarks.py --group dream5_network4 --group dream5_systems_genetics_a"
+  },
+  "archive_and_extracted_source_routes": "pass",
+  "exact_original_expression_token_transpose": "pass",
+  "complete_source_lists_and_ordinal_sample_mappings": "pass",
+  "source_and_prepared_hashes": "pass",
+  "input_receipt_sha256": "c498fa1f2ab26ab893f1f40f9df81bf99ae40db1b75ca819aefc152a1431ecaa",
+  "independent_audits": [
+    {
+      "filename": "inputs_independent_verification.json",
+      "sha256": "fc9725caa7a8df05abf09a7b35c6c15dbeaf2b912a91989c43a2d823e09d56ff"
+    },
+    {
+      "filename": "prepared_independent_verification.json",
+      "sha256": "6d7994eaade333d93a3eb7f0071d95ac9f981e582039a149472777fc8d764ba1"
+    }
+  ],
+  "historical_import_check": {
+    "status": "pre_existing_failure_not_modified",
+    "path": "benchmarks/brca100_hub_size_dpi_analysis/README.md",
+    "actual_sha256": "8b34f3a9c9ae78a9d36ec87191da79c90309f2c9e68b42082ce3c0c833d7b305",
+    "expected_historical_sha256": "532f72f3f39b6ba61ad8889075fbfaffb490b28981d492ddcc651134ae337210"
+  },
+  "inference_performed": false,
+  "documentation_links": {
+    "files": 6,
+    "local_links": 70,
+    "broken": 0
+  },
+  "diff_whitespace_check": "pass",
+  "changed_text_files_lf_only": true
+}

@@ -31,10 +31,11 @@ class GoldTests(unittest.TestCase):
     def tearDown(self):
         self.temp.cleanup()
 
-    def test_portable_manifest_fixes_fifteen_graphs_and_pending_inputs(self):
-        metadata = json.loads((module.HERE / 'data/provenance.json').read_text())
-        self.assertEqual(metadata['status'], 'GOLD_AVAILABLE_INPUTS_PENDING')
-        self.assertFalse(metadata['expression_audited'])
+    def test_portable_manifest_fixes_fifteen_graphs_and_validated_inputs(self):
+        metadata = json.loads((module.HERE / 'data/provenance.json').read_text(encoding='utf-8'))
+        self.assertEqual(metadata['status'], 'INPUTS_PREPARED')
+        self.assertTrue(metadata['expression_audited'])
+        self.assertTrue(metadata['genotype_audited'])
         self.assertEqual(metadata['source']['gold_archive']['sha256'], module.ARCHIVE_SHA256)
         rows = metadata['files']
         self.assertEqual({(r['group'], r['network']) for r in rows},
@@ -61,7 +62,9 @@ class GoldTests(unittest.TestCase):
     def test_external_hash_and_topology_tampering_fail_closed(self):
         result = module.verify(data_root=self.root, manifest=self.metadata)
         self.assertEqual(result['gold_status'], 'verified')
-        self.assertEqual(result['status'], 'GOLD_AVAILABLE_INPUTS_PENDING')
+        self.assertEqual(result['status'], 'GOLD_VERIFIED')
+        self.assertEqual(result['expression_status'], 'not_checked')
+        self.assertEqual(result['genotype_status'], 'not_checked')
         self.assertFalse(result['inference_performed'])
         changed = copy.deepcopy(self.metadata)
         changed['files'][0]['positive_edges'] += 1
