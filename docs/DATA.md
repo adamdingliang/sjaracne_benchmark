@@ -13,7 +13,7 @@ The DREAM5 source-data bundles are explicit exceptions. Network 1 retains approx
 | THP-1 pinned sources/builds and R/toolchain environment | `D:\GitHub\_datasets\THP1_reconstruction` |
 | DREAM5 original acquisition/pilot archive | `D:\GitHub\_datasets\DREAM5_Network1` |
 | DREAM5 yeast Network 4 raw source members, prepared expression and audit | `D:\GitHub\_datasets\DREAM5_Network4` |
-| DREAM5 Systems Genetics A source archives and acquisition receipts | `D:\GitHub\_datasets\DREAM5_SysGenA` |
+| DREAM5 Systems Genetics A sources, 15 prepared expression inputs and validation receipts | `D:\GitHub\_datasets\DREAM5_SysGenA` |
 | LUAD download destination used previously | `E:\TCGA_data` (verify the intended snapshot before reuse) |
 
 These are local-location notes, not instructions to move or delete anything. Imported manifests may refer to additional original BRCA100 paths. Their recorded paths/hashes are preserved. Compact evidence has a separate import record; its existence here does not mean all dependencies of an original manifest were uploaded.
@@ -26,6 +26,6 @@ Network 4 and Systems Genetics A follow the existing source-member/provenance co
 
 Network 4 was acquired from the same checksum-verified challenge archive used for Networks 1 and 3. Its seven source files remain byte-identical, and its locally prepared expression preserves the original numeric strings. The full 333-TF candidate list is retained independently of the smaller scored reference. See [Network 4](../benchmarks/dream5_network4/README.md).
 
-Systems Genetics A is a separate DREAM5 subchallenge. Its 15 gold networks have been recovered from an archived original public ZIP, with receipts that distinguish the original URL from the archival retrieval URL. The three expression/genotype ZIPs still require an authenticated Synapse download; they are not marked acquired. Its simulated truth is complete within the specified model; expression-only SJARACNe evaluation would omit genotype information available to original challenge participants. See [Systems Genetics A](../benchmarks/dream5_systems_genetics_a/README.md) for the actual download and validation status.
+Systems Genetics A is a separate DREAM5 subchallenge. Its 15 gold networks have been recovered from an archived original public ZIP, with receipts that distinguish the original URL from the archival retrieval URL. The user supplied all three expression/genotype ZIPs through authenticated Synapse downloads. All 15 pairs and gold references have been validated, and 15 separate value-preserving gene-by-profile expression inputs have been prepared. No source sample IDs are provided: row correspondence is positional, documented in sample-order mappings. Its simulated truth is complete within the specified model; expression-only SJARACNe evaluation would omit genotype information available to original challenge participants. See [Systems Genetics A](../benchmarks/dream5_systems_genetics_a/README.md) for the actual download and validation status.
 
 The N1/N3 source-bundling exceptions above are unchanged. The two new datasets do not introduce a new raw-data redistribution exception or relicense their source materials.

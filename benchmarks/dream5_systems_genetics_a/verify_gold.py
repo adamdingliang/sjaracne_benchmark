@@ -1,7 +1,8 @@
-"""Verify external DREAM5 Systems Genetics A gold files; no input preparation.
+"""Verify external DREAM5 Systems Genetics A gold files.
 
-Expression/genotype archives remain pending. This verifier never downloads data,
-derives a candidate regulator list, runs inference, or claims a complete input bundle.
+This verifier checks only reference graphs. It never checks expression/genotype
+inputs, downloads data, derives regulators, or runs inference. Use prepare.py to
+verify the complete source bundle and prepare expression inputs.
 """
 from __future__ import annotations
 
@@ -88,7 +89,7 @@ def verify(*, data_root=None, archive=None, manifest=None):
         manifest: Optional in-memory metadata for offline synthetic tests.
 
     Returns:
-        A gold-only verification record with expression inputs still pending.
+        A gold-only verification record; expression and genotype remain unchecked.
 
     Raises:
         ValueError: Source choice, hashes, identifiers or graph counts differ.
@@ -124,9 +125,9 @@ def verify(*, data_root=None, archive=None, manifest=None):
         if any(stats[key] != record[key] for key in stats):
             raise ValueError('Gold topology counts differ from pinned source: ' + record['id'])
         results.append({'id': record['id'], 'sha256': record['sha256'], **stats})
-    return {'dataset': metadata['dataset'], 'status': 'GOLD_AVAILABLE_INPUTS_PENDING',
-            'gold_status': 'verified', 'expression_status': 'pending_authorized_download',
-            'genotype_status': 'pending_authorized_download', 'origin': origin,
+    return {'dataset': metadata['dataset'], 'status': 'GOLD_VERIFIED',
+            'gold_status': 'verified', 'expression_status': 'not_checked',
+            'genotype_status': 'not_checked', 'origin': origin,
             'networks': results, 'inference_performed': False}
 
 
