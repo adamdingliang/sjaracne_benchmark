@@ -1,0 +1,153 @@
+{
+  "schema": "consensus-before-dpi-migration-v1",
+  "migration_date": "2026-11-08",
+  "created_utc": "2026-11-09T01:33:48.640236+00:00",
+  "source_repository": "https://github.com/adamdingliang/SJARACNe2",
+  "source_commit": "e3e8d9f5e7d20881e5fc2e773f679b04936bc646",
+  "destination_repository": "https://github.com/adamdingliang/sjaracne_benchmark",
+  "destination_base_commit": "797fcb0afeae68d66e54e4704317125c6fe67e5e",
+  "hash_basis": "SHA-256 of exact Git-object file bytes at the source commit and exact destination bytes. Imported source files are LF-only; destination .gitattributes disables text conversion.",
+  "scope": "Relocation of completed historical scientific evidence and its reusable replay driver; no new inference, rescoring or numerical recomputation. Subsequent native +0.025 bulk batch results are outside this snapshot.",
+  "verified_counts": {
+    "source_files_in_original_provenance": 13,
+    "directed_result_rows": 90,
+    "weighted_summary_rows": 20,
+    "historical_bulk_qc_rows": 18,
+    "native_datasets": 18,
+    "successful_native_comparisons": 36
+  },
+  "verification": {
+    "all_exported_table_hashes_match_original_provenance": true,
+    "native_equivalence_receipt_complete": true,
+    "all_native_edge_MI_and_source_row_comparisons_exact": true,
+    "MI_jobs_for_migration": 0,
+    "inference_or_scoring_jobs_for_migration": 0,
+    "unchanged_imports": 5,
+    "adapted_imports": 2
+  },
+  "files": [
+    {
+      "source_path": "benchmarks/consensus_before_dpi/README.md",
+      "source_sha256": "bbb284663b057e9bdda2112fc441b17e0df44fdc3f3c394f63b9648cfdd4cc24",
+      "destination_path": "benchmarks/consensus_before_dpi/README.md",
+      "destination_sha256": "dc170fb150ff01f8c5b0ae97a55e682281fd0563ceba5c18fdb7c6a1f7ac0f5e",
+      "byte_identical_to_source": false,
+      "adaptation_reasons": [
+        "Added dated snapshot/migration scope and explicit separation from the subsequent native bulk batch.",
+        "Replaced the software-validation link with the pinned SJARACNe2 source URL.",
+        "Updated source-branch wording to name SJARACNe2 after relocation.",
+        "Normalized the adapted README to a single final newline."
+      ]
+    },
+    {
+      "source_path": "benchmarks/consensus_before_dpi/bulk_metrics.tsv",
+      "source_sha256": "e4481cbad044c09b4ba9a15f0c36b392a96f76309e656f7fa385ed721ea45a69",
+      "destination_path": "benchmarks/consensus_before_dpi/bulk_metrics.tsv",
+      "destination_sha256": "e4481cbad044c09b4ba9a15f0c36b392a96f76309e656f7fa385ed721ea45a69",
+      "byte_identical_to_source": true,
+      "adaptation_reasons": []
+    },
+    {
+      "source_path": "benchmarks/consensus_before_dpi/native_equivalence.json",
+      "source_sha256": "0f529c8d49f11673721700d7cb33f0276654ffd71fc54823349dfd3cc2d2b5f6",
+      "destination_path": "benchmarks/consensus_before_dpi/native_equivalence.json",
+      "destination_sha256": "0f529c8d49f11673721700d7cb33f0276654ffd71fc54823349dfd3cc2d2b5f6",
+      "byte_identical_to_source": true,
+      "adaptation_reasons": []
+    },
+    {
+      "source_path": "benchmarks/consensus_before_dpi/per_dataset.tsv",
+      "source_sha256": "e1a4a8b7d8a2a7cf31d432270766fcf6f721d83de572c43c82e95b9df5b81cb1",
+      "destination_path": "benchmarks/consensus_before_dpi/per_dataset.tsv",
+      "destination_sha256": "e1a4a8b7d8a2a7cf31d432270766fcf6f721d83de572c43c82e95b9df5b81cb1",
+      "byte_identical_to_source": true,
+      "adaptation_reasons": []
+    },
+    {
+      "source_path": "benchmarks/consensus_before_dpi/provenance.json",
+      "source_sha256": "f09d341eb000a3d28ba241e222c0171265e1ee245c7435e3cb4ff253e97c48f8",
+      "destination_path": "benchmarks/consensus_before_dpi/provenance.json",
+      "destination_sha256": "fa017eb532c70478ce8ce933b43e20fde3cdab511f50602b8d61f45da7aa2265",
+      "byte_identical_to_source": false,
+      "adaptation_reasons": [
+        "Corrected stale pending-equivalence metadata to the completed 18-dataset/36-comparison state; original source hashes, graph records, numerical metrics and table hashes are unchanged."
+      ]
+    },
+    {
+      "source_path": "benchmarks/consensus_before_dpi/validate_saved_raw.py",
+      "source_sha256": "a292b8233efa072c228974ec0e458dcb04dfbd5ff33ad2d68b0c2e8bfb810094",
+      "destination_path": "benchmarks/consensus_before_dpi/validate_saved_raw.py",
+      "destination_sha256": "a292b8233efa072c228974ec0e458dcb04dfbd5ff33ad2d68b0c2e8bfb810094",
+      "byte_identical_to_source": true,
+      "adaptation_reasons": []
+    },
+    {
+      "source_path": "benchmarks/consensus_before_dpi/weighted_summary.tsv",
+      "source_sha256": "b809bb852f010de5eb8480d28dac43b5541f0e8189348c242c99e969faccde48",
+      "destination_path": "benchmarks/consensus_before_dpi/weighted_summary.tsv",
+      "destination_sha256": "b809bb852f010de5eb8480d28dac43b5541f0e8189348c242c99e969faccde48",
+      "byte_identical_to_source": true,
+      "adaptation_reasons": []
+    }
+  ],
+  "navigation_updates": [
+    {
+      "source_repository": "https://github.com/adamdingliang/sjaracne_benchmark",
+      "source_commit": "797fcb0afeae68d66e54e4704317125c6fe67e5e",
+      "source_path": "README.md",
+      "source_sha256": "96798503a041888d495041a33e57db6592dc0d0a366ec766133bba2798543db6",
+      "destination_path": "README.md",
+      "destination_sha256": "17b6124d454febaa56fee622e197cf7f31ca7d1e3c72d3e380302995e29a9195",
+      "adaptation_reasons": [
+        "Added the later consensus-order study to the DREAM and Bulk index, corrected stale N4/SysGenA result navigation, and updated the engine repository link; Single-cell content is unchanged."
+      ]
+    },
+    {
+      "source_repository": "https://github.com/adamdingliang/sjaracne_benchmark",
+      "source_commit": "797fcb0afeae68d66e54e4704317125c6fe67e5e",
+      "source_path": "benchmarks/dream5_network4/README.md",
+      "source_sha256": "772125a896716b1886f6128075129b8150bd5d41ed4ed11e29b1cf594b7006c5",
+      "destination_path": "benchmarks/dream5_network4/README.md",
+      "destination_sha256": "da65aa6110ae72faa1e273f57b14704588ee235ef7fc8ea6ec2292bd3ec615d4",
+      "adaptation_reasons": [
+        "Added a later-study backlink while preserving the original acquisition scope and dated validation records."
+      ]
+    },
+    {
+      "source_repository": "https://github.com/adamdingliang/sjaracne_benchmark",
+      "source_commit": "797fcb0afeae68d66e54e4704317125c6fe67e5e",
+      "source_path": "benchmarks/dream5_systems_genetics_a/README.md",
+      "source_sha256": "78a67b4846269d7c6cea66804f0c482790b69bb6717bfca61605a53349150f02",
+      "destination_path": "benchmarks/dream5_systems_genetics_a/README.md",
+      "destination_sha256": "67c8e471d52b6ab08cbce437921ccb3d090c19b494e547b24ec306c21c0bb939",
+      "adaptation_reasons": [
+        "Qualified the original input-only status by date and linked the later completed study without altering acquisition receipts."
+      ]
+    },
+    {
+      "source_repository": "https://github.com/adamdingliang/sjaracne_benchmark",
+      "source_commit": "797fcb0afeae68d66e54e4704317125c6fe67e5e",
+      "source_path": "docs/benchmark_summaries/README.md",
+      "source_sha256": "affe16fc3826660ba3e7611ecc59b5b98ea1bb1f609211694249723e80a24b92",
+      "destination_path": "docs/benchmark_summaries/README.md",
+      "destination_sha256": "57b1d131df40a7c6a577f38a8cbb6384c49a2478dfd9313f1d6d8b743133acf1",
+      "adaptation_reasons": [
+        "Added a separate later-study link without changing the three historical DPI-epsilon summaries."
+      ]
+    }
+  ],
+  "external_artifacts": "Raw graphs, expression/reference matrices, native executables, environments and full execution logs remain outside Git. Original local paths and hashes in historical receipts are retained.",
+  "repository_checks": {
+    "migrated_file_and_navigation_hashes": "passed",
+    "relative_markdown_links": "passed",
+    "relocated_driver_help": "passed; no inference launched",
+    "engine_archive_verifier": "passed: 60 archive files and one source test",
+    "historical_import_verifier": {
+      "status": "pre-existing failure; no new mismatches",
+      "path": "benchmarks/brca100_hub_size_dpi_analysis/README.md",
+      "identical_to_destination_base_commit": true,
+      "historical_manifest_modified": false
+    },
+    "diff_whitespace": "Passed for prose/code/JSON; immutable TSV trailing tabs preserve empty final fields and are validated by exact source hashes."
+  }
+}

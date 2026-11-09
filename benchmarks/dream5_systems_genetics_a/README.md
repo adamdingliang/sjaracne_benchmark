@@ -1,8 +1,17 @@
 # DREAM5 Systems Genetics A: simulated network benchmark
 
-**Status: INPUTS_PREPARED.** All three user-downloaded Synapse archives, 15 expression/genotype pairs and 15 gold networks have been validated. Value-preserving SJARACNe expression inputs and an all-1,000-gene candidate-source list are prepared locally. No inference or scoring has been run.
+**Input-preparation snapshot (2026-11-07): INPUTS_PREPARED.** All three user-downloaded Synapse archives, 15 expression/genotype pairs and 15 gold networks have been validated. Value-preserving SJARACNe expression inputs and an all-1,000-gene candidate-source list are prepared locally. No inference or scoring was part of that input-preparation snapshot.
 
 This is DREAM5 Challenge 3A (SysGenA), distinct from the Network Inference challenge containing Networks 1, 3 and 4. SysGenSIM generated 15 separate 1,000-gene networks: five datasets each with 100, 300 and 999 recombinant inbred lines. Each expression dataset has its own generating graph; the five networks in a group have progressively more edges. The sample-size groups do not reuse identical graphs, so comparisons across groups also change topology. See the [author dataset page](https://sysgensim.sourceforge.net/datasets.html) and [original challenge study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029165).
+
+## Later completed consensus-order study
+
+All 15 SysGenA expression datasets were subsequently included in the completed
+[18-dataset consensus-order comparison](../consensus_before_dpi/README.md).
+That separate study reports five methods, directed recovery, regulon sizes,
+weighting sensitivity and the saved-raw native implementation check. It uses
+expression only and does not reproduce genotype-assisted challenge methods.
+The input-preparation receipts below remain the original acquisition records.
 
 ## Validated inputs
 

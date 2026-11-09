@@ -2,6 +2,15 @@
 
 This adds the released **Saccharomyces cerevisiae expression data and experimental TF-target reference** alongside DREAM5 Networks 1 and 3. Source acquisition, integrity checks and value-preserving input preparation are complete. No SJARACNe inference, DPI sweep, consensus construction or prediction scoring has been run for Network 4 in this addition.
 
+## Later completed consensus-order study
+
+The input-acquisition statement above describes the original 2026-11-07 data
+addition. Network 4 was subsequently included in the completed
+[18-dataset consensus-order comparison](../consensus_before_dpi/README.md),
+with five methods, scored recovery, regulon sizes and the saved-raw native
+implementation check. The original acquisition and validation records remain
+unchanged; the later study is a separate historical result snapshot.
+
 ## Inputs and reference
 
 The original challenge matrix contains **536 microarray profiles and 5,950 genes**. The supplied candidate list contains **333 TFs**, all present in the matrix. Keep all released genes, profiles and candidate TFs for inference; the gold labels do not select the inference universe.

@@ -9,3 +9,12 @@ These three summaries separate reference-edge recovery from engineering consiste
 | [3. Bulk strategy comparison and combined conditional conclusion](bulk_dpi_modes.md) | What balance do no DPI, fixed tolerance and dynamic tolerance offer, interpreted alongside DREAM5? | Reuses summary 2's bulk experiments; it is not independent additional replication. |
 
 Each summary links to its detailed process, results and limitations. The combined conclusion supports an experimental engineering option, not a demonstrated universal accuracy improvement or a new default.
+
+## Later consensus-order study
+
+The [completed consensus-before-DPI study](../../benchmarks/consensus_before_dpi/README.md)
+compares five methods across 18 DREAM settings and records an earlier bulk QC
+snapshot. It includes supporting-run mean MI, the +0.025 tolerance trial,
+weighting sensitivity and native implementation equivalence. It is a separate,
+later study rather than another presentation of the three DPI-epsilon summaries
+above. The subsequent native +0.025 bulk batch is outside its frozen tables.
