@@ -1,8 +1,7 @@
 # DREAM5 Network 3: E. coli benchmark dataset
 
 This adds a **real-expression, experimentally supported TF-target reference**
-alongside the simulated DREAM5 Network 1 benchmark. Data preparation and
-validation are implemented here. The [approved three-seed pilot](PLAN_2026-10-15.md)
+alongside the simulated DREAM5 Network 1 benchmark. The completed [2026-10-15 three-seed pilot](PLAN_2026-10-15.md)
 compares four sampling configurations: the retained legacy sampler, and 64%,
 80% and 90% fixed-size sampling without replacement.
 The [completed results](RESULTS.md) show higher post-DPI Average Precision and
@@ -11,6 +10,9 @@ See [what Average Precision measures](RESULTS.md#what-average-precision-measures
 for its definition and distinction from precision at one cutoff.
 This is an external benchmark dataset, not an engine dependency
 or a unit-test fixture containing native inference outputs.
+The later [consensus-order comparison](../consensus_before_dpi/README.md)
+includes Network 3 with five methods. This page retains the separate sampling
+pilot and its pinned historical engine; current software is [SJARACNe2](https://github.com/adamdingliang/SJARACNe2).
 
 ## Inputs and reference
 
@@ -19,18 +21,13 @@ genes**. It is not RNA-seq or single-cell data. The supplied candidate-regulator
 list contains **334 TFs**. Preserve all released genes, profiles and candidate
 TFs; no regulator list or inference-gene selection is derived from the reference.
 
-The reference contains **152,280 explicitly labeled directed non-self pairs**:
-2,066 positives and 150,214 operational negatives. DREAM5 selected the positive
-E. coli interactions using RegulonDB's strong-evidence annotations. Strong
-evidence concerns experimental support, not MI magnitude, effect size or a
-benchmark p-value. The reference is incomplete and does not establish that
-every zero-labeled pair is biologically absent. Consequently, **fewer
-benchmark-defined FPs does not prove that the removed edges were biologically
-false**. Unrecorded true interactions can affect precision and comparisons
-between sampling configurations. See the
-[explicit interpretation limit in the results](RESULTS.md#important-limitation-the-biological-reference-is-incomplete)
-and the
-[DREAM5 paper, Online Methods](https://compbio.csail.mit.edu/marbach/papers/Marbach2012b.pdf).
+The reference has **152,280 explicitly labeled directed non-self pairs**:
+2,066 RegulonDB strong-evidence positives and 150,214 operational negatives.
+Strong evidence means experimental support, not MI magnitude or effect size.
+The reference is incomplete: zero labels do not prove biological absence, and
+fewer benchmark-defined FPs do not establish that removed edges were false.
+See the [reference limitations](RESULTS.md#important-limitation-the-biological-reference-is-incomplete)
+and [DREAM5 Online Methods](https://compbio.csail.mit.edu/marbach/papers/Marbach2012b.pdf).
 
 **Inference scope and scoring scope differ.** The labeled universe is
 141 source TFs by 1,081 target nodes, excluding 141 self-pairs. All 334 TFs by
@@ -85,7 +82,7 @@ which genes are retained.
 
 ## Matched sampling and DPI pilot
 
-The [prospective protocol](PLAN_2026-10-15.md) fixes three seeds, four sampling
+The [2026-10-15 protocol](PLAN_2026-10-15.md) fixed three seeds, four sampling
 configurations and five stages: raw MI, nominal affine filtering before/after DPI, and a
 common numerical MI cutoff before/after DPI. Every stage runs directly from
 expression; serialized adjacencies are not replayed through DPI. The primary
@@ -107,8 +104,7 @@ python benchmarks/dream5_network3/metrics.py score --run-root runs/dream5_networ
 python benchmarks/dream5_network3/report.py --run-root runs/dream5_network3_20261015_pilot3 --out benchmarks/dream5_network3/results_2026-10-15_pilot3
 ```
 
-The full batch requires a successful ten-job engineering smoke gate. It verifies
-and reuses those jobs rather than running them again. Native failures and partial
+The runner requires a successful ten-job smoke gate and reuses those verified jobs. Native failures and partial
 directories are retained for inspection, never silently overwritten. Concurrent
 coordinators are rejected. Commands, timings, process status, output hashes,
 sample counts, thresholds and exact shared MI/subset relationships are recorded.

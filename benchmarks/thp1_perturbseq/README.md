@@ -1,14 +1,15 @@
 # THP-1 Perturb-seq walkthrough and sampling benchmark
 
-This directory was imported from `adamdingliang/SJARACNe` into the dedicated
-benchmark repository. SJARACNe remains the external inference engine; raw
-data, native builds and the full historical run archive were not moved here.
-The [migration record](../../docs/MIGRATION.md) explains the imported files
-and the limits of historical path portability.
+This guide indexes the completed **2026-10-11 to 2026-10-15** response-ranking
+studies and notebooks. They use reconstructed perturbation-response labels,
+not a direct-edge gold standard. Current software lives in
+[SJARACNe2](https://github.com/adamdingliang/SJARACNe2). Data, native builds and
+full run archives remain external; see the [migration record](../../docs/MIGRATION.md).
+Linked historical protocols retain the status and paths recorded at their dates.
 
 ## Primary result: raw-MI ranking, 100 matched pairs
 
-The primary THP-1 benchmark is now the
+The archived primary THP-1 result (2026-10-15) is the
 [full 100-pair raw-MI comparison](raw_mi/results_2026-10-15_full100/REPORT.md),
 before MI significance filtering, DPI or consensus. See the
 [process and scoring definitions](raw_mi/README.md) and
@@ -103,7 +104,7 @@ python -m jupyterlab benchmarks/thp1_perturbseq/02_scanpy_exploration.ipynb
 ```
 
 Do not install packages into an environment while its benchmark processes
-are running. The new notebook does not invoke SJARACNe or modify its frozen
+are running. The notebook does not invoke SJARACNe or modify its frozen
 inputs, raw H5AD, or publication workbook. It performs no download or
 automatic cell-type annotation.
 
@@ -314,8 +315,8 @@ than claiming the pinned source/build.
 
 On Linux, omit `--wsl-distro` and supply native paths. To build from source,
 check out PR70-only commit `8c5f26c` in an isolated clone/worktree and run
-`make -C SJARACNe -j2`; do not use the current feature-branch binary, which
-also contains PR71.
+`make -C SJARACNe -j2`; use the pinned engine rather than the current SJARACNe2 binary, which
+contains additional inference changes.
 
 Outputs include `REPORT.md`, `metrics.json`, `ranked_curves.json`, and
 `tp_epr_roc_reported.png` / `tp_epr_roc_common.png`. The plots use the analytic

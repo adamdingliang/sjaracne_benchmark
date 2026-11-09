@@ -1,18 +1,16 @@
-# BRCA100 TF/SIG: current PCHIP workflow and NetBID2 QC
+# BRCA100 PCHIP refresh (2026-10-17)
 
-This refresh runs the current empirical PCHIP MI cutoff function through the
-complete BRCA100 workflow: fixed-size subsampling without replacement, MI
-thresholding, seed-level DPI, consensus, then NetBID2 network QC.
+Historical TF/SIG comparison using PCHIP cutoffs, 80% sampling, per-resample
+DPI and probability consensus. It precedes the current K20 consensus-first
+workflow. Use the [BRCA100 study guide](../brca100_studies/README.md) for the
+latest comparison and related historical studies.
 
-- [Fixed design and interpretation constraints](PROTOCOL.md)
-- [Current results, QC HTMLs and provenance](results_2026-10-17/RESULTS.md)
-- Historical threshold sweep: [process](../brca100_pr67_threshold_sweep/README.md)
-  and [combined 13-point results](../brca100_pr67_threshold_sweep/COMBINED_RESULTS.md)
+- [Fixed design](PROTOCOL.md)
+- [Dated results, QC and provenance](results_2026-10-17/RESULTS.md)
 
-The historical sweep motivates **initial**, density-oriented probabilities
-`p_b=0.001` for TF and `p_b=0.0005` for SIG. Its old cutoff function and network
-results are not current PCHIP calibration or new PCHIP outcomes. These are
-explicit run settings, not software defaults or biologically optimal cutoffs.
+The explicit TF/SIG probabilities below were exploratory, density-oriented
+choices. Their historical threshold-sweep motivation does not make them
+biologically optimal cutoffs.
 
 ## Matched design
 
@@ -23,8 +21,8 @@ sources and DPI annotation. Every network is inferred afresh; no historical
 post-DPI adjacency is replayed or filtered to construct a new network.
 
 The engine is frozen at
-[`86f8729`](https://github.com/adamdingliang/SJARACNe/commit/86f8729087b3a6d22bdce128649b4e49d725fb9e),
-the current PCHIP PR #1. The AP-MI kernel and stock consensus source are
+[`86f8729`](https://github.com/adamdingliang/SJARACNe2/commit/86f8729087b3a6d22bdce128649b4e49d725fb9e),
+the PCHIP PR #1 revision tested at that date. The AP-MI kernel and stock consensus source are
 unchanged relative to the historical sweep. Consensus uses `p_c=1e-5`, not the
 separate minimum-recurrence `K=6` proposal. The
 [protocol](PROTOCOL.md) records exact input/model hashes and required outputs.
@@ -121,7 +119,7 @@ complete augmented package. Use Python 3.10+; `--plot` also needs Matplotlib
   --plot
 ```
 
-The current report presents final edge counts, zero-filled median targets,
+The dated report presents final edge counts, zero-filled median targets,
 active-source and incident-node fractions, largest weak-component fraction,
 NetBID2 scale-free adjusted R-squared and historical edge overlap. These are
 post-DPI, post-consensus descriptive QC—not biological edge accuracy, edge FDR

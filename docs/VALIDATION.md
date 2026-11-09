@@ -1,6 +1,9 @@
 # Initial migration validation — 2026-10-13
 
-This validates the copied artifacts and synthetic checks, not a new end-to-end scientific benchmark run. No inference, download, calibration, R execution, package installation or native build was performed.
+This records initial artifact/synthetic validation. Counts and pending-status
+labels describe the date shown; they are not live workflow status. Newer
+studies are linked from the [dataset index](../README.md#benchmark-index).
+No inference or data download was performed by these migration checks.
 
 This is the historical initial-migration report. On 2026-10-14 the redundant
 LUAD archive was consolidated into the current benchmark; the active tree no
@@ -60,4 +63,23 @@ This is a real validation-contract gap, not introduced by migration. It was not 
 
 ## Remaining limits
 
-Fresh BRCA100/THP-1 end-to-end portability is not established. Existing absolute-path/hash-bound archives remain unchanged and external; engine adapters and fresh output provenance are follow-up work. The code has not been relicensed, and public release remains subject to explicit rights/attribution review.
+Fresh BRCA100/THP-1 end-to-end portability is not established. Existing absolute-path/hash-bound archives remain unchanged and external; engine adapters and fresh output provenance are follow-up work. Imported code has not been relicensed; [source and dataset notices](LICENSING.md)
+remain applicable in this public repository.
+
+## Documentation audit (2026-11-09)
+
+The dataset index now separates datasets from reused parameter studies and
+links the completed native bulk batch. The review read all 153 pre-existing
+Markdown files; checksummed result/protocol archives were preserved. A
+pre-existing hub-DPI README checksum drift was repaired by restoring its
+recorded blob; later interpretation notes remain in the
+[study guide](../benchmarks/brca100_studies/hub_dpi_notes.md).
+
+Offline verifier tests collected 32 cases: 31 passed and one Windows symlink
+case was skipped. The LUAD utility collected 37 cases: 36 passed and the
+known missing-gene-model-comment test failed, as documented above. This
+review does not claim that the LUAD check group is fully passing.
+
+Only the three declared navigation documents received updated adapted hashes
+in the import manifest; every original source hash was retained. No inference,
+download or scientific rescoring was performed for this review.

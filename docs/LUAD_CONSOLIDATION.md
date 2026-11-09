@@ -1,6 +1,8 @@
 # One LUAD benchmark entry point — 2026-10-14
 
-Use [benchmarks/tcga_luad_download](../benchmarks/tcga_luad_download/README.md).
+This is the October 14 acquisition-utility consolidation record. Current
+network cohorts and comparisons are in [Bulk datasets](BULK_DATASETS.md#tcga-luad);
+the utility lives in [tcga_luad_download](../benchmarks/tcga_luad_download/README.md).
 The separate `archive/tcga_luad_gdc` folder and its duplicate downloader/test
 entry points have been removed from the active repository tree.
 
@@ -49,7 +51,7 @@ is documented in the benchmark README.
 | Migration/provenance tests | 16/16 passed |
 | Imported-file/source verification | 599 active files verified; three retired imports recovered and verified from Git |
 
-The remaining LUAD failure is still
+The remaining LUAD failure in this snapshot was
 `StarValidationTests.test_requires_gene_model_and_all_summary_rows`, subtest
 `removed_index=0`: a missing gene-model comment is not rejected. It predates
 this consolidation and was not fixed or hidden as part of a folder cleanup.

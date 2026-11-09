@@ -1,29 +1,25 @@
-# Denser probability-axis refinement
+# Historical probability-axis refinement (October 15, 2026)
 
-This is a separate exploratory follow-up to the
-[first smooth-cutoff feasibility analysis](../smooth_feasibility/README.md).
-It reuses the same nineteen sizes and 38 existing streams, replacing the
-sparse p knots with a frozen denser grid. No new null draws, sorting,
-GPD fitting, engine changes or broad-grid sweep are involved.
+This exploratory follow-up reused the nineteen sizes and 38 streams from the
+[first smooth-cutoff analysis](../smooth_feasibility/README.md). It added no draws,
+sorting or GPD fits. The later [broad-grid study](../broad_grid_10m/README.md)
+completed separately; the old "sweep stopped" status does not describe it.
 
-[Analysis plan](PLAN.md) fixes 25 p knots, 21 separate geometric-midpoint probes
-and 49 total queries. The main comparison leaves entire m values out and
-tests new off-knot p values. Old probes that become knots are regression
-checks, not new p-interpolation tests. Exact-m p-only baselines separate
-p-axis errors from m-axis interpolation errors.
+The [plan](PLAN.md) fixes 25 p knots, 21 geometric-midpoint probes and 49 total
+queries. It leaves whole m values out and separates exact-m p-only errors from
+m-axis interpolation. Probes promoted to knots are regression checks, not fresh
+p-interpolation tests. Previously inspected validation streams remain development
+evidence.
 
-All validation data were previously inspected. This is development evidence,
-not fresh confirmation or a generally accepted runtime cutoff function.
-
-The [completed results](RESULTS.md) improved the quadratic surface from
-187/272 to 261/272 observed errors within 10% on new off-knot probes. PCHIP
-reached 265/272, but some small-m errors remained large. Computation took
-9.89 seconds; the expensive sweep remains stopped.
+[Results](RESULTS.md): quadratic observed errors within 10% improved from
+187/272 to 261/272 on new off-knot probes; PCHIP reached 265/272. Some small-m
+failures remained large, with a numerical/tie caveat. Computation took 9.89 s.
+These results do not independently validate a general runtime cutoff function.
 
 ## Reproduce
 
-Use the same Python/NumPy/SciPy/matplotlib environment and existing local raw
-streams/caches as the first analysis. Output directories must be new.
+Use the recorded Python/NumPy/SciPy/matplotlib environment and existing raw
+streams/caches from the first analysis. Output directories must be new.
 
 ```powershell
 python scripts/check_benchmarks.py --group apmi_p_axis_refinement

@@ -1,7 +1,8 @@
 # Bounded source-repository cleanup: 2026-10-14
 
-This follow-up is separately authorized cleanup, not a scientific rerun or a
-claim that every historical workflow is portable from this repository.
+Historical cleanup record. Counts, environment failures and private-repository
+labels below describe October 14, not current project status. Current engine
+setup and CI are documented in [SJARACNe2](https://github.com/adamdingliang/SJARACNe2).
 
 ## Checks before removal
 

@@ -1,10 +1,10 @@
-# BRCA100 PCHIP consensus recurrence
+# BRCA100 PCHIP recurrence comparison (2026-10-18)
 
-Consensus-only comparison of inclusive `K=6` against explicit legacy
-`p_c=1e-5`, using the same frozen 100 TF and 100 SIG post-DPI adjacency files.
-Inference is not rerun, and the original adjacencies are neither copied nor
-modified. `K=6` means support in at least six distinct files: `6/100 = 0.06`.
-It is a stability rule, not a significance or biological-accuracy guarantee.
+Historical consensus-only comparison of K=6 against `p_c=1e-5` on the same
+100 TF and 100 SIG PCHIP post-DPI graphs. No inference or DPI was rerun.
+K=6 means presence in at least six distinct files (6/100); it is a recurrence
+rule, not a biological-accuracy guarantee. This is not the current K20
+consensus-first workflow; see the [BRCA100 study guide](../brca100_studies/README.md).
 
 The inputs retain BRCA100, 80 observations sampled without replacement,
 `Npar=40`, DPI epsilon zero, TF `p_b=0.001` and SIG `p_b=0.0005`.
@@ -23,6 +23,9 @@ Durable WSL locations:
   [four-network QC index](results_2026-10-18/qc/QC_INDEX.md).
 
 ## Reproduce
+
+The commands use the recorded workstation paths and pinned historical runtimes.
+Restore the omitted graphs and adapt paths before running them.
 
 Run in Linux/WSL with the existing tested Python and pinned NetBID2 environment.
 Preparation requires a fresh work directory. Existing/failed consensus outputs

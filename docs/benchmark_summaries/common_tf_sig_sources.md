@@ -1,5 +1,10 @@
 # Common TF and SIG sources: BRCA100 and LUAD100
 
+Historical study summary: methods, tables and conclusions below describe
+the recorded pre-consensus experiments. Current cohort definitions and
+later native results are linked in [Bulk datasets](../BULK_DATASETS.md)
+and the [summary index](README.md).
+
 ## Question and matched design
 
 Do the **same evaluated sources** retain consistent targets when surrounded

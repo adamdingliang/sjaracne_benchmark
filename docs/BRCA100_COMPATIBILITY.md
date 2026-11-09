@@ -1,4 +1,8 @@
-# BRCA100 migration compatibility
+# Historical BRCA100 runner compatibility
+
+This guide covers imported sweep runners and the October 13 migration checks.
+For the completed native workflow batch, use the
+[current bulk results](../benchmarks/native_bulk_2026-11-09/README.md).
 
 The compact BRCA100 evidence packages and their scientific definitions are
 preserved. Imported engine-version pins, paths, binary hashes, model hashes,
@@ -46,10 +50,10 @@ python scripts/check_benchmarks.py --group hub_dpi --engine-repo 'D:\GitHub\SJAR
 Without `--engine-repo`, only that real-input fixture test is explicitly
 skipped; the other synthetic panel/pruning tests still run unchanged.
 
-## Fresh-run adapters still needed
+## Portability of imported runners
 
-Before claiming a fresh BRCA100 run from this repository, introduce a
-separately tested operational layer with explicit external paths:
+Reusing these historical runners requires a tested operational layer with
+explicit external paths:
 
 - **Threshold sweep and matched NetBID2 QC:** expose the external engine Git
   checkout/build/configuration, BRCA100 input root, and pinned NetBID2 runner

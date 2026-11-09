@@ -1,5 +1,10 @@
 # DREAM5: DPI tolerance and dynamic-schedule controls
 
+Historical study summary: methods, tables and conclusions below describe
+the recorded pre-consensus experiments. Current cohort definitions and
+later native results are linked in [Bulk datasets](../BULK_DATASETS.md)
+and the [summary index](README.md).
+
 ## Design
 
 These exploratory comparisons ask whether relaxing DPI improves recovery of reference edges, and whether making the tolerance depend on hub-list size adds an advantage over a fixed positive tolerance.

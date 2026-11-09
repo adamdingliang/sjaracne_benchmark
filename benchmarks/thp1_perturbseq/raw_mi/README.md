@@ -1,9 +1,9 @@
-# THP-1 primary benchmark: raw-MI response ranking
+# THP-1 raw-MI response-ranking study (2026-10-15)
 
-## Current primary result: 100 matched pairs
+## Completed primary result: 100 matched pairs
 
-The [full 100-pair report](results_2026-10-15_full100/REPORT.md) is the primary
-THP-1 result. All 200 jobs completed: 40 reused pilot jobs plus 160 new jobs.
+The [full 100-pair report](results_2026-10-15_full100/REPORT.md) is the archived
+primary THP-1 analysis, completed on 2026-10-15. All 200 jobs completed: 40 reused pilot jobs plus 160 new jobs.
 Median TP@5,000 increased from 2,487.50 to 2,624.25; full-ranking AUROC increased
 from 0.6201 to 0.6659. TP@5,000 improved in 96/100 pairs (four worsened), and
 AUROC improved in 100/100. See the
@@ -64,8 +64,8 @@ or justify a broad significance claim.
 
 ## Verified source-row optimization
 
-The user explicitly approved computing only the 272 scored source rows, while
-retaining the **entire expression matrix and original 6,951-SIG annotation**.
+Only the 272 scored source rows were computed, retaining the **entire
+expression matrix and original 6,951-SIG annotation**.
 Without DPI, each MI calculation uses only its two gene vectors and the sampled
 observations. Source IDs are parsed earlier, but the selected list does not
 affect sampling or global jitter; it only determines which pairwise row
@@ -74,7 +74,7 @@ estimator state.
 Computing all 6,951 source rows would therefore add unscored work, not change
 the requested pair scores. This argument does not apply when DPI is enabled.
 
-Before the pilot, engineering smoke tests compare subset, expanded and
+Before the pilot, engineering smoke tests compared subset, expanded and
 reordered source lists in both pinned binaries. The actual-data check retains
 all 17,971 genes and 121 metacells: MIB2/PABPC1/ITGB2 scores are identical when
 four unrelated SIG sources are added or source order is reversed. Tiny inputs
@@ -114,8 +114,8 @@ observational NT-cell MI need not match causal perturbation responses.
 
 ## Execution and provenance
 
-Scripts here are new, separate from the frozen migrated helpers. Tests use
-only synthetic data:
+These study-specific scripts are separate from the frozen migrated helpers.
+Their tests use synthetic data:
 
 ```powershell
 python scripts/check_benchmarks.py --group thp1_raw_mi
@@ -156,13 +156,9 @@ TP@5,000 improved in 18/20 pairs; full-ranking AUROC improved in 20/20.
 These descriptive results concern this frozen response reference and raw-MI
 ranking, not biological replicates or the complete inference workflow.
 
-Operational note: on Windows, reading `status.json` while the coordinator
-atomically replaces it can produce a sharing/access error. During execution,
-monitor per-job completion files without holding the status file open.
-This pilot's final status was recovered by verification of all existing
-outputs, without rerunning native inference; details are in the results
-overview and independent audit. The frozen runner was not rewritten after
-observing results.
+The [pilot overview](results_2026-10-15_pilot20/README.md) preserves the Windows
+status-file sharing issue and its verified recovery without new inference.
+The frozen runner was not rewritten after scoring.
 
 ## Extension to 100 pairs
 
@@ -170,5 +166,5 @@ The user subsequently requested all 100 seed IDs using 12 workers. The
 [extension protocol](EXTENSION_100.md) retains the pilot and its verified
 outputs, computes only the other 80 matched pairs, and keeps the scientific
 settings and scoring rules fixed. It is a post-pilot expansion, not independent
-confirmation or a rewrite of the pilot evidence. The extension is now complete;
-its results are linked at the top of this page.
+confirmation or a rewrite of the pilot evidence. The extension completed on 2026-10-15;
+its archived results are linked at the top of this page.
