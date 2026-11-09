@@ -1,149 +1,75 @@
-# SJARACNe benchmarking
+# SJARACNe2 benchmarks
 
-Dedicated research benchmarks and analysis evidence for [SJARACNe](https://github.com/adamdingliang/SJARACNe).
+Research benchmarks, dataset preparation and analysis evidence for
+[SJARACNe2](https://github.com/adamdingliang/SJARACNe2). The engine is maintained
+separately and does not depend on this repository.
 
 ## Benchmark index
 
-The [three DPI tolerance summaries](docs/benchmark_summaries/README.md) cover
-DREAM5 precision/recall, common TF/SIG sources in BRCA100 and LUAD100, and the
-combined no-DPI/fixed/dynamic comparison with conditional conclusions.
+Rows identify datasets; linked studies describe their experiments. Reusing a
+dataset for parameter sweeps does not add independent benchmark evidence.
 
 ### DREAM
 
-| Network data | Question | Reference | Benchmark process and results |
-| --- | --- | --- | --- |
-| DREAM5 Network 1 | How does sampling affect recovery of known directed edges? | [DREAM5 challenge](https://zenodo.org/records/17854236), Marbach et al. (2012): simulated expression and a supplied gold-standard network. [Input provenance](benchmarks/dream5_network1/DATA_LICENSE.md). | [Process](benchmarks/dream5_network1/README.md) · [Results](benchmarks/dream5_network1/RESULTS.md) |
-| DREAM5 Network 3 — E. coli | How does sampling affect reference-edge recovery from real expression data? | [DREAM5 challenge](https://zenodo.org/records/17854236): real microarrays and a strong-evidence RegulonDB reference. The reference is incomplete. [Input provenance](benchmarks/dream5_network3/DATA_LICENSE.md). | [Process](benchmarks/dream5_network3/README.md) · [Results](benchmarks/dream5_network3/RESULTS.md) (three seeds, four sampling configurations; raw MI and DPI) |
-| DREAM5 Network 4 - yeast | Prepare a genome-scale eukaryotic reference benchmark for subsequent inference comparisons. | [DREAM5 challenge](https://zenodo.org/records/17854236): 536 profiles, 5,950 genes and 333 candidate TFs; 3,940 positive edges in an incomplete binding/conservation reference. [Input provenance](benchmarks/dream5_network4/DATA_LICENSE.md). | [Data and preparation](benchmarks/dream5_network4/README.md) (original input acquisition/preparation); [Later completed consensus-order study](benchmarks/consensus_before_dpi/README.md) |
-| DREAM5 Systems Genetics A | Add model-defined ground truth across network densities and population sizes. | [SysGenSIM / DREAM5 D5C3](https://sysgensim.sourceforge.net/datasets.html): 1,000-gene simulations, five datasets each at 100, 300 and 999 samples; expression and genotype data. | [Acquisition and benchmark scope](benchmarks/dream5_systems_genetics_a/README.md) (15 expression/genotype pairs and gold networks validated; expression inputs prepared); [Later completed consensus-order study](benchmarks/consensus_before_dpi/README.md) |
-| DREAM5 consensus-order comparison: N1, N3, N4 and 15 SysGenA settings | How do legacy, K20 controls, DPI-first and consensus-first methods trade reference recovery against regulon size? | Three challenge networks plus 15 distinct 1,000-gene simulations; experimental references remain incomplete where documented. | [Completed historical study and methods](benchmarks/consensus_before_dpi/README.md), including 90 scored rows, weighting sensitivity and native implementation equivalence. |
+| Dataset | Reference and scope | Guides and results |
+| --- | --- | --- |
+| DREAM5 Network 1 | Simulated expression with a supplied directed gold network. | [Data and sampling study](benchmarks/dream5_network1/README.md); [consensus-order comparison](benchmarks/consensus_before_dpi/README.md). |
+| DREAM5 Network 3 (E. coli) | Real expression; incomplete strong-evidence RegulonDB reference. | [Data and sampling study](benchmarks/dream5_network3/README.md); [consensus-order comparison](benchmarks/consensus_before_dpi/README.md). |
+| DREAM5 Network 4 (yeast) | Real expression; incomplete binding/conservation reference. | [Data preparation](benchmarks/dream5_network4/README.md); [completed consensus-order comparison](benchmarks/consensus_before_dpi/README.md). |
+| DREAM5 Systems Genetics A | Fifteen distinct 1,000-gene simulations with model-defined gold networks. | [Data and evaluation scope](benchmarks/dream5_systems_genetics_a/README.md); [completed comparison](benchmarks/consensus_before_dpi/README.md). |
 
 ### Bulk
 
-| Network data | Question | Reference | Benchmark process and results |
-| --- | --- | --- | --- |
-| BRCA100 (TF/SIG, current PCHIP) | What networks result from the provisional TF/SIG probabilities using the complete current workflow? | Same bundled BRCA100 expression and full hub lists; 100 matched seeds per class, followed by DPI and unchanged consensus. Descriptive NetBID2 QC, with no independent edge-level reference. | [Process](benchmarks/brca100_pchip_refresh/README.md) · [Results](benchmarks/brca100_pchip_refresh/results_2026-10-17/RESULTS.md) |
-| BRCA100 (TF/SIG, historical threshold sweep) | How do bootstrap MI thresholds affect density, driver coverage and topology? | SJARACNe's bundled `BRCA100.exp` and TF/SIG lists; inferred networks with no independent edge-level reference. Historical cutoff function, not current PCHIP outcomes. [Input provenance](benchmarks/brca100_consensus_recurrence_sweep/results_2026-08-20/provenance/design.json). | [Process](benchmarks/brca100_pr67_threshold_sweep/README.md) · [Results](benchmarks/brca100_pr67_threshold_sweep/COMBINED_RESULTS.md) |
-| BRCA100 (TF/SIG, current PCHIP recurrence) | What changes when consensus uses K=6 instead of legacy p_c=1e-5? | Frozen current-PCHIP post-DPI networks, 100 per class; exact support audit and descriptive NetBID2 QC, not independent edge-level truth. | [Process](benchmarks/brca100_pchip_recurrence/README.md) · [Results](benchmarks/brca100_pchip_recurrence/results_2026-10-18/RESULTS.md) |
-| BRCA100 (TF/SIG, historical recurrence sweep) | What changes when consensus uses minimum recurrence, including K=6? | Same BRCA100 expression and hub lists; historical, pre-PCHIP post-DPI bootstrap networks. No independent edge-level reference. | [Process](benchmarks/brca100_consensus_recurrence_sweep/README.md#matched-design) · [Results](benchmarks/brca100_consensus_recurrence_sweep/results_2026-08-20/RESULTS.md) |
-| BRCA100 (TF/SIG, historical hub-DPI study) | How did nested hub-list size affect DPI pruning at fixed historical cutoffs? | Same BRCA100 expression; August 25/26 frozen diagnostic snapshots and historical estimator-matched GPD cutoffs, not current PCHIP outcomes. No independent edge-level reference. | [Process](benchmarks/brca100_hub_size_dpi_analysis/README.md#evidence-and-provenance) · [Results](benchmarks/brca100_hub_size_dpi_analysis/README.md#matched-100-seed-pilot) (historical rates; no current-PCHIP nested-panel replication) |
-| BRCA100 (TF/SIG) | How do matched workflow versions differ in network QC? | Same BRCA100 inputs; inferred networks compared using NetBID2 summaries, not biological ground truth. | [Process](benchmarks/brca100_netbid_qc/README.md#matched-workflow) · [Results](benchmarks/brca100_netbid_qc/results_2026-08-17/RESULTS.md) |
-| TCGA-LUAD (LUAD100) | How do strict, fixed and dynamic DPI tolerances affect common-source target consistency and pruning? | GDC TCGA-LUAD primary-tumor bulk RNA-seq (STAR TPM); 100 patient-distinct tumors and 477 shared TF/SIG source genes. No independent edge-level reference. | [Process](https://github.com/adamdingliang/sjaracne_benchmark/blob/81ca0bb1ce7fcb97479e24e82a155e31e45fa383/benchmarks/dpi_epsilon_summaries/evidence/luad100_common/PROCESS.md) · [Results](https://github.com/adamdingliang/sjaracne_benchmark/blob/81ca0bb1ce7fcb97479e24e82a155e31e45fa383/benchmarks/dpi_epsilon_summaries/evidence/luad100_common/RESULTS.md) |
-| BRCA100, TCGA-LUAD517 and TCGA-BLCA406 (TF/SIG consensus-order snapshot) | How does processing order affect regulon sizes and topology QC? | Earlier completed bulk networks, with no independent edge-level truth; distinct from LUAD100 and BLCA MIBC372. | [Historical study and scope](benchmarks/consensus_before_dpi/README.md) and [18-row QC table](benchmarks/consensus_before_dpi/bulk_metrics.tsv). Subsequent native +0.025 batch results are outside this snapshot. |
+| Dataset | Cohorts and evaluation scope | Guides and results |
+| --- | --- | --- |
+| BRCA100 | One 100-profile dataset; TF/SIG coverage and topology QC, without edge-level truth. | [Cohort](docs/BULK_DATASETS.md#brca100); [latest native results](benchmarks/native_bulk_2026-11-09/README.md); [historical study catalog](benchmarks/brca100_studies/README.md). |
+| TCGA-LUAD | LUAD100 subset and LUAD517 full-cohort studies; descriptive network QC. | [Cohorts](docs/BULK_DATASETS.md#tcga-luad); [latest LUAD517 results](benchmarks/native_bulk_2026-11-09/README.md); [LUAD100 DPI study](docs/benchmark_summaries/common_tf_sig_sources.md). |
+| TCGA-BLCA | BLCA406 primary-tumor cohort; separate from MIBC372; descriptive network QC. | [Cohort](docs/BULK_DATASETS.md#tcga-blca); [latest BLCA406 results](benchmarks/native_bulk_2026-11-09/README.md); [earlier comparison](benchmarks/consensus_before_dpi/README.md). |
 
 ### Single-cell
 
-No established scRNA-seq direct-edge gold-standard benchmark is currently included. The historical THP-1 Perturb-seq/metacell response analysis is retained below as exploratory evidence; it is not direct-edge ground truth.
+| Dataset | Reference and scope | Guides and results |
+| --- | --- | --- |
+| THP-1 Perturb-seq | Historical non-targeting-cell metacells evaluated against a reconstructed perturbation-response reference. | [Study](benchmarks/thp1_perturbseq/raw_mi/README.md); [100-pair results](benchmarks/thp1_perturbseq/raw_mi/results_2026-10-15_full100/REPORT.md). |
 
-| Network data | Question | Reference | Benchmark process and results |
-| --- | --- | --- | --- |
-| THP-1 Perturb-seq | Does sampling improve raw-MI ranking of perturbation-responsive targets? | Yao et al. conventional CRISPRi screen, [GSM6858449](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6858449): inference from non-targeting-cell metacells; a reconstructed response reference, not direct-edge truth or exact Fig. 6a reproduction. | [Process](benchmarks/thp1_perturbseq/raw_mi/README.md) · [Results](benchmarks/thp1_perturbseq/raw_mi/results_2026-10-15_full100/REPORT.md) (primary, 100 matched pairs) |
+No established single-cell direct-edge gold-standard benchmark is included.
+THP-1 response-associated ranking is exploratory evidence for a different task.
 
-## Evidence and limitations
+## Engineering studies
 
-**Reference** identifies the input-data source and, where available, the edge or
-perturbation-response reference used for evaluation. It does not imply that
-every dataset has a gold-standard network.
+| Study | Scope | Guide |
+| --- | --- | --- |
+| AP-MI/PCHIP calibration | Independent-rank nulls; cutoff calibration, not biological edge accuracy. | [Broad-grid process and results](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md). |
+| Earlier calibration candidates | GPD, quadratic and probability-axis explorations. | [Calibration history](benchmarks/apmi_null_m_sweep/README.md); [GPD archive](benchmarks/apmi_null_gpd_exploratory/README.md). |
+| DPI context sensitivity | Historical fixed/dynamic/no-DPI comparisons and common-source consistency. | [DPI summaries](docs/benchmark_summaries/README.md). |
+| Engine performance | Historical timing, memory and sampling-method evidence. | [Archive index](engine_performance/README.md). |
 
-The [E. coli pilot](benchmarks/dream5_network3/RESULTS.md) completed all 60
-prospectively specified native jobs. At 80% sampling, median post-DPI Average
-Precision increased from 0.042117 to 0.045776 and labeled FPs decreased from 3,242 to
-2,134, but TPs decreased slightly from 206 to 200. Raw-MI AUROC barely changed
-(0.6400 to 0.6409). This is a small exploratory precision/coverage tradeoff,
-not uniform improvement or evidence for a new default.
-The [E. coli reference is incomplete](benchmarks/dream5_network3/RESULTS.md#important-limitation-the-biological-reference-is-incomplete):
-fewer benchmark-defined FPs does not prove that the removed edges were
-biologically false, and the effect on biological precision is not established.
+## Documentation
 
-The primary THP-1 result is the **100-pair raw-MI comparison before filtering,
-DPI or consensus**. Median TP@5,000 increased from 2,487.50 to 2,624.25 and
-full-ranking AUROC from 0.6201 to 0.6659. This describes response-associated
-ranking on fixed inputs, not improvement of the entire inference workflow.
-The earlier [DPI/consensus comparison](benchmarks/thp1_perturbseq/evidence/author_reconstruction_20261011/sampling_comparison_20261013/REPORT.md)
-and [post-DPI bootstrap diagnostic](benchmarks/thp1_perturbseq/evidence/author_reconstruction_20261011/bootstrap_tp_fp_20261013/REPORT.md)
-remain unchanged as complementary evidence, including their TP-coverage losses.
-The [20-pair pilot](benchmarks/thp1_perturbseq/raw_mi/results_2026-10-15_pilot20/README.md)
-is retained as a historical snapshot; the [100-pair extension](benchmarks/thp1_perturbseq/raw_mi/EXTENSION_100.md)
-was requested after reviewing it, not an independent validation set.
+| Guide | What it covers |
+| --- | --- |
+| [Bulk datasets](docs/BULK_DATASETS.md) | Cohorts, reused studies and comparison boundaries. |
+| [Data and artifacts](docs/DATA.md) | Distributed inputs, local archives and provenance. |
+| [Licensing and attribution](docs/LICENSING.md) | Source notices and dataset-specific terms. |
+| [Migration and portability](docs/MIGRATION.md) | Original imports, integrity guards and external-engine paths. |
+| [Validation](docs/VALIDATION.md) | Integrity checks, synthetic tests and known gaps. |
+| [BRCA100 compatibility](docs/BRCA100_COMPATIBILITY.md) | Historical runner assumptions and external fixtures. |
+| [LUAD utility history](docs/LUAD_CONSOLIDATION.md) | Downloader consolidation and validation limits. |
+| [Source cleanup history](docs/SOURCE_CLEANUP.md) | Dated engine/archive separation. |
 
-## Engineering evidence
+## Repository checks
 
-The following studies calibrate the estimator rather than evaluate a biological dataset.
-
-| Network data | Question | Reference | Benchmark process and results |
-| --- | --- | --- | --- |
-| Synthetic AP-MI independence nulls | Can a sample-size/probability cutoff function reproduce the requested null tail rates? | Independent rank pairs simulated with SJARACNe's production-shared AP-MI estimator; 200 sample sizes, 10M fitting plus 10M independent validation draws per size. Estimator calibration, not a biological edge reference. | [Process](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md) · [Results](benchmarks/apmi_null_m_sweep/broad_grid_10m/RESULTS.md) (selected PCHIP surface and rate trajectories) |
-| Synthetic AP-MI nulls — historical GPD exploration | Could a fitted GPD tail provide reliable cutoffs across sample sizes? | Independent rank permutations; original and later exact-size calibration protocols. No biological edge reference. | [Process](benchmarks/apmi_null_gpd_exploratory/README.md#process) · [Results](benchmarks/apmi_null_gpd_exploratory/README.md#results) (exploratory history; not the current runtime proposal) |
-
-The [PR #3 merge-evidence summary](validation/pr3_minimum_recurrence_2026-10-18/MERGE_EVIDENCE.md)
-links the commit-pinned regression archive, checked K6/legacy examples and current
-PCHIP BRCA100 results. It distinguishes software checks from biological validation
-and records the examples-only revision separately from the tested runtime.
-
-The [expanded AP-MI null calibration process](benchmarks/apmi_null_m_sweep/expanded_10m/README.md)
-and [results](benchmarks/apmi_null_m_sweep/expanded_10m/RESULTS.md) examine synthetic
-independent-rank nulls at exact sample counts and the provisional probabilities
-0.001 and 0.0005 using 10M fitting and 10M held-out draws at nineteen sizes.
-The [earlier 5M study](benchmarks/apmi_null_m_sweep/RESULTS.md) is preserved.
-This is estimator calibration, not another biological
-network benchmark or a change to SJARACNe defaults.
-
-The [smooth-cutoff feasibility process](benchmarks/apmi_null_m_sweep/smooth_feasibility/README.md)
-and [results](benchmarks/apmi_null_m_sweep/smooth_feasibility/RESULTS.md) reuse the
-19-size data, with no new simulations. A quadratic empirical surface stayed
-within 10% observed null-rate error in all 34 main interior-size checks, but
-failed some wider-probability checks. This is exploratory feasibility, not a
-validated general replacement function.
-
-The subsequent [denser-p refinement process](benchmarks/apmi_null_m_sweep/p_axis_refinement/README.md)
-and [results](benchmarks/apmi_null_m_sweep/p_axis_refinement/RESULTS.md) improved
-the quadratic surface from 187/272 to 261/272 observed errors within 10% on
-new off-knot probes. Some small-m errors remained large, and numerical/tie
-behavior needs attention. No new draws or engine/default changes were made.
-
-The broader 200-size, 10M+10M [calibration process](benchmarks/apmi_null_m_sweep/broad_grid_10m/README.md)
-and [completed results](benchmarks/apmi_null_m_sweep/broad_grid_10m/RESULTS.md)
-compare quadratic and PCHIP empirical cutoff surfaces. PCHIP was selected before
-final evaluation and had 6599/6600 moderate observed-rate checks within 10%; the
-full core grid was not confirmed by the stricter simultaneous intervals.
-No general replacement or default change is promoted. Raw draws remain local;
-the compact evidence and numerical/operational corrections are documented.
-
-Historical engine timing studies, reusable performance tools and the original
-sampling-method evidence are preserved separately in
-[Engineering performance and sampling-method archive](engine_performance/README.md).
-They are not additional biological network benchmarks. Its
-[process/results index](engine_performance/README.md#process-and-results) and
-[per-file provenance](provenance/engine_archive_manifest.json) identify the
-original measurements and source versions.
-
-## What moved, and what did not
-
-The first migration copies benchmark code, tests, notebooks, compact reports, plots and provenance. Original PR branches/worktrees and local run archives are retained; subsequent source-repository housekeeping is recorded in [source cleanup](docs/SOURCE_CLEANUP.md). Small DREAM5 inputs already bundled with the original benchmark are retained with their separate source-data terms. Large THP-1/TCGA data, expression/reference matrices, native networks, native builds and R environments are not uploaded.
-
-The engine, consensus implementation, calibration implementation and native regression tests remain in SJARACNe. Historical performance tools/evidence now live in `engine_performance/`; the engine retains only the small correctness fixtures needed by its tests. This is not a second implementation of SJARACNe, and the engine has no dependency on this repository.
-
-Historical artifacts retain the commits, paths, hashes and definitions that generated them. Importing a file here does not establish that its historical runner is portable, that the original result has been rerun, or that a missing author intermediate has been recovered. See [migration status and compatibility](docs/MIGRATION.md), [local data policy](docs/DATA.md), and [licensing/attribution status](docs/LICENSING.md).
-
-## Lightweight checks
-
-Use Python 3.11+; dataset-specific requirements remain next to their workflows. Verification and synthetic tests do not launch inference or download data.
+Verify archive preservation without launching inference:
 
 ```powershell
 python scripts/verify_migration.py
 python scripts/verify_engine_archive.py
-python scripts/check_benchmarks.py
+python scripts/check_benchmarks.py --group migration
 ```
 
-The source import is recorded per file in [provenance/import_manifest.json](provenance/import_manifest.json). The report of checks performed during this migration is in [docs/VALIDATION.md](docs/VALIDATION.md).
+The [validation guide](docs/VALIDATION.md) records full-group status and the
+known LUAD downloader test failure.
 
-The later engine archive is recorded separately in
-[provenance/engine_archive_manifest.json](provenance/engine_archive_manifest.json);
-it does not rewrite the initial scientific migration's frozen records.
-
-The initial migration checks collected 353 distinct tests: 346 passed, six were skipped for compiler/symlink prerequisites, and one pre-existing LUAD parser test fails in both the original and migrated copies. The root check command reports that failure; it is not hidden or treated as a successful validation. LUAD has since been consolidated into one benchmark folder; see the [consolidation and current checks](docs/LUAD_CONSOLIDATION.md).
-
-No new scientific runs were part of the original migration. The subsequent
-THP-1 raw-MI pilot and its completed 100-pair extension are linked above;
-the later DREAM5 E. coli pilot is also linked above. MI-cutoff tuning remains
-deferred.
+Large raw data, generated expression matrices, native graphs and environments
+remain external. Frozen reports retain their original definitions, paths and
+hashes; current guides provide navigation without rewriting those records.

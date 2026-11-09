@@ -1,10 +1,15 @@
 # Data and artifact policy
 
-Keep code, tests, compact tables/reports, plots and provenance in Git. Keep raw or large data, derived expression/reference matrices, bootstrap/consensus edge files, native builds and environments outside Git. New run outputs go under ignored `runs/` or an explicit external directory.
+Git holds code, compact reports/tables, plots and provenance. Raw data, large
+expression/reference matrices, native graphs, builds and environments remain
+external. Write new outputs under ignored `runs/` or an external directory.
 
-The DREAM5 source-data bundles are explicit exceptions. Network 1 retains approximately 28.4 MiB including its historical expression-format conversion. Network 3 adds approximately 37 MiB of unmodified source files and metadata; its expression-format conversion is generated locally rather than duplicated in Git. See each benchmark's `DATA_LICENSE.md`; bundled status is not a general permission to redistribute other datasets.
+DREAM5 Networks 1 and 3 are explicit bundling exceptions: approximately
+28.4 MiB and 37 MiB respectively. N1 includes its historical expression
+conversion; N3 conversion is generated locally. Their `DATA_LICENSE.md`
+files retain the source terms; this is not a general redistribution policy.
 
-## Existing local archives (unchanged)
+## Recorded local archives
 
 | Content | Current location |
 | --- | --- |
@@ -14,18 +19,37 @@ The DREAM5 source-data bundles are explicit exceptions. Network 1 retains approx
 | DREAM5 original acquisition/pilot archive | `D:\GitHub\_datasets\DREAM5_Network1` |
 | DREAM5 yeast Network 4 raw source members, prepared expression and audit | `D:\GitHub\_datasets\DREAM5_Network4` |
 | DREAM5 Systems Genetics A sources, 15 prepared expression inputs and validation receipts | `D:\GitHub\_datasets\DREAM5_SysGenA` |
-| LUAD download destination used previously | `E:\TCGA_data` (verify the intended snapshot before reuse) |
+| TCGA-LUAD prepared cohort root | `E:\TCGA\LUAD` |
+| TCGA-BLCA prepared cohort root | `E:\TCGA\BLCA` |
+| Historical LUAD download destination | `E:\TCGA_data` (verify the snapshot before reuse) |
 
-These are local-location notes, not instructions to move or delete anything. Imported manifests may refer to additional original BRCA100 paths. Their recorded paths/hashes are preserved. Compact evidence has a separate import record; its existence here does not mean all dependencies of an original manifest were uploaded.
+These workstation paths identify recorded archives, not public downloads or
+portable defaults. Imported manifests retain additional original paths and
+hashes. Cohort identities are summarized in [Bulk datasets](BULK_DATASETS.md).
 
-For future larger benchmark datasets, store immutable releases externally and record source URLs, accession/version, retrieval time, checksums, eligibility and preprocessing. Choose GitHub Releases, an institutional store, or a data repository only after reviewing size, license and privacy constraints. No new external data service is configured during this migration.
+For larger datasets, record source URL/accession, version, retrieval time,
+checksums, eligibility and preprocessing alongside external immutable data.
+No new data-hosting service is configured here.
 
-## New DREAM5 data additions (2026-11-07)
+## DREAM5 acquisition records (2026-11-07)
 
-Network 4 and Systems Genetics A follow the existing source-member/provenance conventions, with large raw sources and generated expression matrices stored externally. The repository contains acquisition/preparation instructions, source hashes, reference definitions and validation code or receipts; no new inference results are claimed.
+The [N4](../benchmarks/dream5_network4/README.md) and
+[Systems Genetics A](../benchmarks/dream5_systems_genetics_a/README.md) guides
+record source hashes and value-preserving preparation. Their raw sources and
+generated matrices remain external. The [later consensus-order study](../benchmarks/consensus_before_dpi/README.md)
+completed inference for both; acquisition-only status labels describe November 7.
 
-Network 4 was acquired from the same checksum-verified challenge archive used for Networks 1 and 3. Its seven source files remain byte-identical, and its locally prepared expression preserves the original numeric strings. The full 333-TF candidate list is retained independently of the smaller scored reference. See [Network 4](../benchmarks/dream5_network4/README.md).
-
-Systems Genetics A is a separate DREAM5 subchallenge. Its 15 gold networks have been recovered from an archived original public ZIP, with receipts that distinguish the original URL from the archival retrieval URL. The user supplied all three expression/genotype ZIPs through authenticated Synapse downloads. All 15 pairs and gold references have been validated, and 15 separate value-preserving gene-by-profile expression inputs have been prepared. No source sample IDs are provided: row correspondence is positional, documented in sample-order mappings. Its simulated truth is complete within the specified model; expression-only SJARACNe evaluation would omit genotype information available to original challenge participants. See [Systems Genetics A](../benchmarks/dream5_systems_genetics_a/README.md) for the actual download and validation status.
+N4 retains seven checksum-verified challenge members and the full 333-TF
+candidate panel. SysGenA retains 15 validated expression/genotype/reference
+sets, with positional sample-order mappings because source sample IDs are
+absent. Expression-only scoring omits the genotype information available in
+the original challenge. Source and archival access URLs remain distinguished.
 
 The N1/N3 source-bundling exceptions above are unchanged. The two new datasets do not introduce a new raw-data redistribution exception or relicense their source materials.
+
+## Completed native bulk batch
+
+The [November 9 summary](../benchmarks/native_bulk_2026-11-09/README.md) records all
+six BRCA100/LUAD517/BLCA406 TF/SIG outputs. Networks, raw MI and QC HTMLs remain
+in the two documented local run roots; only aggregate results and recorded
+network hashes are summarized here. Original run receipts are unchanged.

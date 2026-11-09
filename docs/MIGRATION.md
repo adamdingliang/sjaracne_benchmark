@@ -1,6 +1,9 @@
 # Migration status and compatibility
 
-The first stage is an additive migration of scientific workflows and compact evidence. Originals are not deleted, relocated or rewritten. Per-file source paths, source checkout commits, tracked/untracked status and SHA-256 values are retained in `provenance/import_manifest.json`. For previously untracked THP-1/LUAD code, the source checkout commit is context only: the recorded file hash, not that commit, identifies the imported code.
+The research archive was imported in October 2026 and is now public. The
+engine is maintained separately in [SJARACNe2](https://github.com/adamdingliang/SJARACNe2).
+This page records provenance and remaining portability limits; historical
+status labels describe their recorded dates.
 
 ## Sources
 
@@ -10,30 +13,31 @@ The first stage is an additive migration of scientific workflows and compact evi
 | BRCA100 thresholds and matched QC | `SJARACNe-pr68-develop`, `32fe12c168ef80291e487dbf4045f430b9c5d90a` |
 | BRCA100 recurrence evidence | `SJARACNe-min-recurrence-develop`, `c7cdd45bda7bb2cba1fef3f6e7953d474382a06e` |
 | BRCA100 hub-size and witness evidence | `SJARACNe-hub-dpi-analysis`, `b3f9a83a27c994370c2b54eef48dcb5d4e735fa9` |
-| Current THP-1 and validated LUAD utility | Previously untracked files in the active `SJARACNe` checkout, recorded individually |
+| Initially active THP-1 and LUAD utility | Previously untracked files in the active `SJARACNe` checkout, recorded individually |
 | Earlier LUAD utility | `SJARACNe-luad-gdc`, `11554e3df24a9cf4730f5eecf797133efeb26c0c`; original import retained in Git history, now consolidated into the current LUAD benchmark |
 
 The package-source commits above identify the imported presentation/code snapshots. Historical run manifests may identify earlier inference commits; those original values remain authoritative for the historical results.
 
 ## Stage 1: preserved archive and browseable evidence
 
-Import the selected packages, preserve original result manifests/checksums, distinguish THP-1 pilot from full reconstructed baseline/after comparison, reconcile stale navigation documentation, and verify imported bytes plus lightweight synthetic tests. No inference, downloads, or rescoring of the scientific evidence is performed.
+Per-file source paths, checkout context, tracked status and hashes are in
+`provenance/import_manifest.json`. For originally untracked files, the file
+hash identifies the import; the source checkout commit is context.
 
-Dated result folders and `evidence/` are historical snapshots. Root documentation and workflow navigation may be adapted for the new repository; every adaptation is marked in the import manifest. Do not edit frozen result JSON to make old paths appear portable.
+Imported files and dated reports remain checksum-bound. Within that import manifest, only the three
+navigation documents declared in `scripts/verify_migration.py` may be adapted;
+their original source hashes remain recorded alongside adapted hashes. New
+guides provide current navigation without rewriting frozen evidence.
 
-On 2026-10-14 the duplicate LUAD archive was consolidated into
-`benchmarks/tcga_luad_download`. Its three original import records are retained
-as explicitly retired entries, verified against their immutable initial Git
-snapshot. Active files and retired records are reported separately. See
-[LUAD consolidation](LUAD_CONSOLIDATION.md). No historical scientific result
-was retired or edited.
+Three superseded LUAD files were retired on October 14 and remain verified
+against their fixed import commit. See [LUAD consolidation](LUAD_CONSOLIDATION.md).
 
 ## Stage 2: operational portability
 
 Historical scripts are not automatically portable:
 
 - THP-1 guards bind helper files, prepared inputs, native builds and completed runs to absolute paths and hashes. Existing runs should continue using their original archive/code paths. Moving them requires a separately documented relocation strategy, not a silent manifest rewrite.
-- DREAM5 accepts explicit `--binary`, `--config`, `--data-root` and `--out`; the engine must be built in a separate SJARACNe checkout. The old README's in-repository `make -C SJARACNe` example no longer describes this repository.
+- DREAM5 accepts explicit `--binary`, `--config`, `--data-root` and `--out`; the engine must be built in a separate SJARACNe2 checkout. The old README's in-repository `make -C SJARACNe` example no longer describes this repository.
 - Some BRCA100 runners assume an engine Git checkout, its native fixtures, or the consensus Python module. They need explicit engine-checkout adapters before a fresh end-to-end run from this repository can be claimed. Imported analysis and compact result browsing remain available.
 - Native sampling changes and DPI instrumentation stay engine-owned. The native sampling backport patch is not vendored here; use the recorded external source/build archive when revisiting that historical protocol.
 
@@ -45,32 +49,18 @@ and exceed traditional Windows path limits. On Windows, clone with
 in this repository. The original filenames are retained rather than shortened,
 because historical manifests identify them.
 
-## Stage 3: source-repository retirement and publication
+## Stage 3: completed source/archive separation
 
-Only after equivalent migrated workflows are validated should we replace source-repository benchmark folders with links or remove duplicate working copies. No deletion, SJARACNe commit/PR changes, or public visibility change is authorized by this initial migration. Rights/attribution review and a deliberate data-hosting decision precede public release.
+The October 14 cleanup removed migrated benchmark copies from the engine,
+while retaining local run archives and native correctness support. The
+60-file engineering archive has a separate manifest and integrity verifier;
+six numerical fixtures remain engine-owned. See the dated
+[source-cleanup record](SOURCE_CLEANUP.md) for commits and validation results.
 
-On 2026-10-14 the user separately authorized bounded source cleanup. The
-standalone duplicate LUAD utility was removed from the active engine checkout;
-the path-bound THP-1 archive remains in place and is locally excluded from Git
-status. At the user's subsequent explicit request, engine cleanup commit
-`edf7a2f` was pushed and fast-forward merged into `develop`, removing the
-already migrated DREAM5 package and replacing its README link with a link
-here. No legacy PR
-branch or worktree is retired, no scientific result is recomputed, and this
-does not assert end-to-end portability. See [source cleanup](SOURCE_CLEANUP.md).
+Repository publication did not relicense imported material. See
+[licensing and attribution](LICENSING.md). Current benchmark navigation is
+in the [dataset index](../README.md#benchmark-index).
 
-The same day, the user authorized a second cleanup to retire the remaining
-engine `benchmarks/` tree. Its 60 files are preserved from pinned Git objects
-under `engine_performance/`, with a separate
-`provenance/engine_archive_manifest.json` and strict integrity verifier. The
-original mixed test module is retained as source text; its generator-only test
-moves with the tool, while all five native numerical regression tests remain
-engine-owned with the six fixtures relocated under `tests/fixtures/rank_cache/`.
-This separates historical evidence from required test support without making
-the engine depend on this repository. Historical native timing runners remain
-version-bound snapshots, not newly validated portable workflows.
-
-The archive was published at `984f48b` before engine cleanup commit `9f4959c`
-was fast-forward merged into `adamdingliang/SJARACNe:develop`. The tracked
-engine root `benchmarks/` tree is now retired; old feature branches and local
-run archives retain their original layouts.
+Frozen reports may retain relative paths from their original execution tree.
+Use the current dataset guides for repository navigation; these archival
+references are not rewritten to imply a relocated or rerun experiment.

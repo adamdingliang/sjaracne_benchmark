@@ -1,6 +1,6 @@
 # THP-1 historical reconstruction and complementary workflow evidence
 
-The current **primary THP-1 result** is the
+The archived **primary THP-1 result (2026-10-15)** is the
 [100-pair raw-MI response-ranking comparison](raw_mi/results_2026-10-15_full100/REPORT.md),
 before MI filtering, DPI or consensus. This page preserves the author-style
 baseline and the mixed/unfavorable filtered-workflow evidence as complementary
@@ -70,7 +70,7 @@ Only seeds 73--100 were queued; eight active WSL workers for seeds 73--80
 were verified, using new second-attempt directories and unchanged parameters.
 The old driver status, interrupted manifest and stale runner lock are
 preserved in `driver_resume_20261012/`; the original logs remain untouched.
-`driver_resume_20261012/status.json` is now the coordination status authority.
+`driver_resume_20261012/status.json` was the coordination authority for that recovery.
 The recovery subsequently completed the remaining work with unchanged inputs
 and parameters; the status and hashed artifacts record that completion.
 The earlier three-seed individual-cell pilot in [RESULTS.md](RESULTS.md) is

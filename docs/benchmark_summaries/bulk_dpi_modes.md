@@ -1,5 +1,10 @@
 # Bulk RNA DPI strategies and combined conditional conclusion
 
+Historical study summary: methods, tables and conclusions below describe
+the recorded pre-consensus experiments. Current cohort definitions and
+later native results are linked in [Bulk datasets](../BULK_DATASETS.md)
+and the [summary index](README.md).
+
 ## Question and matched design
 
 Can a hub-size-dependent DPI tolerance reduce context sensitivity without simply abandoning pruning? These are the **same common-source experiments** summarized in the [companion source-consistency summary](https://github.com/adamdingliang/sjaracne_benchmark/blob/81ca0bb1ce7fcb97479e24e82a155e31e45fa383/docs/benchmark_summaries/common_tf_sig_sources.md), not additional independent studies.

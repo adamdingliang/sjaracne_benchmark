@@ -1,4 +1,4 @@
-# DREAM5 Network 1: opt-in PR #70 benchmark
+# DREAM5 Network 1: historical sampling benchmark
 
 This measures direct, directed TF-to-target edge recovery on DREAM5 Network 1,
 an **in-silico** network with a known simulation graph. It compares the PR #70
@@ -8,10 +8,11 @@ not test PR #71's estimator-matched null, consensus recurrence, biological
 validity, or downstream NetBID activity. It is an external benchmark, **not**
 a unit-test fixture or a new default-parameter recommendation.
 
-This workflow and its compact evidence are now maintained in
-[`adamdingliang/sjaracne_benchmark`](https://github.com/adamdingliang/sjaracne_benchmark).
-The SJARACNe inference engine remains a separate repository. Historical result
-provenance keeps the original engine and benchmark source commits unchanged.
+This page documents the historical PR70 sampling study. The later completed
+[consensus-order comparison](../consensus_before_dpi/README.md) includes Network 1
+with five methods. Current software and installation guidance are maintained
+in [SJARACNe2](https://github.com/adamdingliang/SJARACNe2); the pinned engine and
+benchmark commits below describe the original experiment.
 
 The complete [DREAM5 archive](https://zenodo.org/records/17854236) is not
 committed. The three unmodified Network 1 source files needed for this

@@ -1,15 +1,11 @@
 # DREAM5 Network 4: yeast benchmark dataset
 
-This adds the released **Saccharomyces cerevisiae expression data and experimental TF-target reference** alongside DREAM5 Networks 1 and 3. Source acquisition, integrity checks and value-preserving input preparation are complete. No SJARACNe inference, DPI sweep, consensus construction or prediction scoring has been run for Network 4 in this addition.
-
-## Later completed consensus-order study
-
-The input-acquisition statement above describes the original 2026-11-07 data
-addition. Network 4 was subsequently included in the completed
+Source acquisition, validation and value-preserving input preparation completed
+on **2026-11-07**. Network 4 was then included in the completed
 [18-dataset consensus-order comparison](../consensus_before_dpi/README.md),
-with five methods, scored recovery, regulon sizes and the saved-raw native
-implementation check. The original acquisition and validation records remain
-unchanged; the later study is a separate historical result snapshot.
+which reports five methods, recovery scores and regulon sizes.
+This page describes the inputs; acquisition receipts and scored results
+remain separate dated records.
 
 ## Inputs and reference
 
@@ -63,6 +59,14 @@ Verification checks hashes, dimensions, finite expression values, identifiers, f
 
 ## Results status
 
-**Data and preparation only; inference results pending.** No network precision, recall, F1, AUROC, Average Precision or NetBID2 QC result is claimed for N4 here. Future runs should use fresh output paths, pin the SJARACNe engine and model configuration, preserve the full 333-TF inference list, and retain the fixed explicit-label scoring universe.
+**Input preparation and the subsequent consensus-order study are complete.**
+Recovery metrics are in the [completed comparison](../consensus_before_dpi/README.md);
+the original acquisition receipts do not themselves contain inference results.
+For new runs, pin the engine/configuration, retain all 333 candidate TFs and
+use the fixed explicitly labeled scoring universe.
 
-The full candidate hub count is 333, below the current dynamic-DPI reference count of 479. Therefore that schedule resolves to epsilon zero for this dataset; testing explicit fixed tolerances is a separate experiment and cannot by itself establish the larger-hub schedule used for bulk SIG networks.
+With H=333 and Href=479, the original **zero-offset** dynamic schedule yields
+epsilon zero. The [current consensus-first workflow](https://github.com/adamdingliang/SJARACNe2/blob/develop/SJARACNe/wdl/README.md#default-parameter-values)
+adds an offset of 0.025, so its default tolerance is 0.025 for this panel.
+These small-panel values do not validate tolerance choices for larger bulk
+SIG panels.

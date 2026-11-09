@@ -1,4 +1,4 @@
-# TCGA-LUAD expression acquisition benchmark
+# TCGA-LUAD expression acquisition utility
 
 `download_tcga_luad.py` downloads released, open-access TCGA-LUAD primary-tumor
 RNA-seq expression quantification files from GDC's **STAR - Counts** workflow.
@@ -6,23 +6,22 @@ A GDC token is not required for the selected open files. This is an acquisition
 utility, not a completed LUAD benchmark: it does not normalize/build an
 expression matrix, choose one file per patient, or invoke SJARACNe.
 
-The script and its synthetic tests were imported from the original SJARACNe
-workspace; source-file hashes are recorded in the repository's
-[import manifest](../../provenance/import_manifest.json).
-
-This is the **single LUAD benchmark entry point**. The formerly separate
-`archive/tcga_luad_gdc` copy has been consolidated here: overlapping tests are
-covered by the current suite, snapshot-reuse/tamper checks are in
-`test_query_snapshot.py`, and the older implementation remains recoverable
-from Git history rather than appearing as another recommended downloader.
+This is the single maintained LUAD downloader. Source hashes and the retired
+archive copy are documented in the [import manifest](../../provenance/import_manifest.json)
+and [consolidation record](../../docs/LUAD_CONSOLIDATION.md).
 
 ## Benchmark results
 
-**Pending:** no LUAD network inference or edge-recovery benchmark has been
-completed. There are no LUAD network TP/FP, precision, recall or AUROC results
-to report yet. Current outputs are acquisition metadata and file-validation
-reports, not network-performance results. The existing offline utility-test
-results and known parser limitation are documented in the
+This directory records acquisition and validation, not network inference.
+Completed LUAD network studies are documented separately:
+
+- [Cohort definitions: LUAD100 versus LUAD517](../../docs/BULK_DATASETS.md#tcga-luad).
+- [Completed native LUAD517 TF/SIG batch](../native_bulk_2026-11-09/README.md).
+- [Earlier consensus-order comparison](../consensus_before_dpi/README.md).
+
+Those bulk studies have no independent edge-level gold standard. Their network
+QC should not be read as TP/FP or edge-recovery accuracy. Offline utility checks
+and the known parser gap are recorded in the
 [consolidation record](../../docs/LUAD_CONSOLIDATION.md#checks-performed).
 
 ## Commands
@@ -95,24 +94,15 @@ separate documented preparation.
 
 ## Consolidation and older download snapshots
 
-The older utility originated from SJARACNe commit
-`11554e3df24a9cf4730f5eecf797133efeb26c0c`. Its original code, tests and README
-are recoverable from this repository's initial import commit
-`55f974555cb02eef53d7b1802c3b4e2e8c7d9b9e`; original hashes remain in the import
-manifest, marked retired with their current counterparts. There is no second
-active LUAD implementation or archive test group.
+Legacy `query.json` download folders are incompatible with the current
+`query_snapshot.json` protocol. Use a fresh `--outdir` and keep legacy downloads
+separate; no conversion is provided. Offline verification needs a current
+snapshot.
 
-Older `query.json` / `metadata.tsv` output directories are **not compatible**
-with the current `query_snapshot.json` protocol. Use a fresh `--outdir`; do
-not point the current utility at a legacy download directory. This cleanup
-does not convert, overwrite or move existing downloads. Offline verification
-requires a valid current snapshot.
-
-The current protocol deliberately selects primary tumors; it does not retain
-the older utility's general `--sample-type` option. Corrupt-file handling also
-follows the current validated-replacement contract described above, not the
-older fail-immediately behavior. No downloader runtime behavior was changed
-by this consolidation. See [consolidation record](../../docs/LUAD_CONSOLIDATION.md).
+The maintained protocol selects primary tumors and has no general
+`--sample-type` option. Its validated temporary-file replacement policy also
+differs from the retired downloader. Original source pins and the unchanged
+runtime contract are documented in the [consolidation record](../../docs/LUAD_CONSOLIDATION.md).
 
 Run the current utility's offline synthetic tests without downloads:
 

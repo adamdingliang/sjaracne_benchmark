@@ -1,22 +1,26 @@
-# Licensing and attribution status
+# Licensing and attribution
 
-This initial repository is private. No blanket MIT, BSD, GPL or other new license is assigned to the imported materials.
+This repository is public. Imported material is not assigned a new blanket
+license; retain its source notices and dataset-specific terms.
 
-The SJARACNe source repository carries a Columbia software-evaluation license, preserved as `provenance/licenses/SJARACNe_LICENSE.md`. The native engine, original consensus implementation, binaries and native sampling patch are not vendored here. Keeping an engine external does not establish unrestricted rights to every imported benchmark file; provenance and rights review remain necessary before public release.
+The original SJARACNe license is preserved in
+[provenance/licenses/SJARACNe_LICENSE.md](../provenance/licenses/SJARACNe_LICENSE.md).
+The current engine is maintained in
+[SJARACNe2](https://github.com/adamdingliang/SJARACNe2). The historical
+`engine_performance/` archive retains source identities in its
+[manifest](../provenance/engine_archive_manifest.json), without relicensing them.
 
-The later `engine_performance/` archive copies engineering tools, historical
-reports and synthetic fixtures from pinned SJARACNe Git objects. Its separate
-`provenance/engine_archive_manifest.json` records their source identities; it
-does not assign them a new license or change this repository's private status.
+## Data and third-party notices
 
-Dataset and third-party terms are separate:
+| Material | Recorded notices |
+| --- | --- |
+| DREAM5 Networks 1, 3 and 4 | Separate [N1](../benchmarks/dream5_network1/DATA_LICENSE.md), [N3](../benchmarks/dream5_network3/DATA_LICENSE.md) and [N4](../benchmarks/dream5_network4/DATA_LICENSE.md) source/attribution records. |
+| DREAM5 Systems Genetics A | [Original and archival access terms](../benchmarks/dream5_systems_genetics_a/DATA_LICENSE.md); raw sources remain external. |
+| THP-1 | GEO `GSM6858449` / `GSE221321`, author workbook and pinned analysis resources; see the [study guide](../benchmarks/thp1_perturbseq/README.md). |
+| TCGA-LUAD and TCGA-BLCA | Open GDC expression acquisition retains dataset attribution and applicable reuse terms. |
+| Analysis dependencies | SuperCell, scran, scater, NetBID2 and other tools retain their own licenses. |
 
-- DREAM5 attribution/source-data terms remain in `benchmarks/dream5_network1/DATA_LICENSE.md`; original source files and their checksums are retained.
-- The later E. coli Network 3 addition has its own `benchmarks/dream5_network3/DATA_LICENSE.md` and byte-preserved source-member manifest. It uses the same DREAM5 source archive and retains that archive's attribution and host-listed terms; no new blanket license or endorsement is asserted.
-- DREAM5 yeast Network 4 uses the same challenge archive, with its source terms and attribution in `benchmarks/dream5_network4/DATA_LICENSE.md`. Raw members and derived expression remain external; only metadata and preparation/validation materials are added here.
-- DREAM5 Systems Genetics A source and archival-access notices are recorded in `benchmarks/dream5_systems_genetics_a/DATA_LICENSE.md`. Access to an original or archived file does not assign it a new license; raw data remain external.
-- THP-1 uses public GEO `GSM6858449` / `GSE221321`, the scMINER paper/source-data workbook and pinned analysis resources. Resource URLs and revisions remain in the imported `source_pins.json` and fetch helpers. The reference is reconstructed perturbation response, not direct-edge truth or exact numerical reproduction.
-- SuperCell, scran, scater, NetBID2 and other dependencies are not relicensed by this repository. Dependency environments/install scripts do not transfer their licenses to the benchmark results.
-- TCGA LUAD acquisition requests open GDC expression files. Open-access status is not a replacement for dataset attribution or applicable reuse terms.
-
-Before making the repository public: classify authorship/rights for imported code and documentation, review representative HTML/notebook/source-data outputs, preserve required notices and decide which data/artifacts to distribute. Do not infer legal clearance from a file already being present in another repository.
+The N1/N3 data bundles are documented exceptions to the normal external-data
+policy, not permission to redistribute other data. Public availability or a
+copied file does not establish unrestricted reuse rights. Preserve provenance
+and review terms when adding material; see [data policy](DATA.md).

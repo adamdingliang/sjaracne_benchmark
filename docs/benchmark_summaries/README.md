@@ -1,6 +1,8 @@
 # DPI epsilon benchmark summaries
 
-These three summaries separate reference-edge recovery from engineering consistency across hub panels. They document exploratory benchmarks, not a change to SJARACNe's engine or defaults.
+Historical exploratory studies of reference-edge recovery and hub-panel
+consistency. Their zero-offset, no-consensus designs do not describe the
+later native consensus-first workflow.
 
 | Summary | Main question | Evidence boundary |
 | --- | --- | --- |
@@ -17,4 +19,6 @@ compares five methods across 18 DREAM settings and records an earlier bulk QC
 snapshot. It includes supporting-run mean MI, the +0.025 tolerance trial,
 weighting sensitivity and native implementation equivalence. It is a separate,
 later study rather than another presentation of the three DPI-epsilon summaries
-above. The subsequent native +0.025 bulk batch is outside its frozen tables.
+above. The subsequent [native +0.025 bulk batch](../../benchmarks/native_bulk_2026-11-09/README.md)
+completed all six arms on November 9; it is outside those frozen tables.
+See [bulk cohort definitions](../BULK_DATASETS.md) before comparing studies.

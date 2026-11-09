@@ -1,65 +1,41 @@
-# Staged AP-MI null calibration across sample counts
+# AP-MI null-calibration studies
 
-The [denser probability-axis refinement](p_axis_refinement/README.md) and
-[results](p_axis_refinement/RESULTS.md) reuse existing draws and improve most
-off-knot checks. They retain large small-m failures and a numerical/tie caveat.
-The separate 200-size [broad-grid process](broad_grid_10m/README.md) and
-[completed results](broad_grid_10m/RESULTS.md) select PCHIP over quadratic,
-with 6599/6600 moderate observed errors within 10%. The complete core grid is not
-confirmed by simultaneous intervals; no engine function/default is replaced.
+This directory contains the October 2026 calibration sequence. The selected
+[broad-grid PCHIP study](broad_grid_10m/README.md) supplies the frozen surface now
+used by [SJARACNe2 workflows](https://github.com/adamdingliang/SJARACNe2/blob/develop/SJARACNe/wdl/README.md#default-parameter-values).
+Calibration uses simulated independent ranks, not expression datasets or
+biological reference edges. Runtime adoption did not reopen the final evaluation.
 
-The later [cheap smooth-cutoff feasibility analysis](smooth_feasibility/README.md)
-and [results](smooth_feasibility/RESULTS.md) reuse the completed 19-size nulls
-without new simulations. A quadratic empirical surface was promising at the
-two main p values, but did not meet a uniform broad-p accuracy claim. No engine
-function or default was replaced.
+| Study | Scope | Results |
+| --- | --- | --- |
+| [Original exact-m GPD](PLAN_2026-10-15.md) | Eleven sizes, 5M fitting + 5M validation draws per size | [3 accepted, 8 rejected](RESULTS.md) |
+| [Expanded exact-m GPD](expanded_10m/README.md) | Nineteen sizes, 10M + 10M per size | [5 accepted, 14 rejected](expanded_10m/RESULTS.md) |
+| [Smooth feasibility](smooth_feasibility/README.md) | Reuse the nineteen-size streams; no new draws | [Quadratic surface within 10% in 34 main checks, with wider-p failures](smooth_feasibility/RESULTS.md) |
+| [Probability-axis refinement](p_axis_refinement/README.md) | Denser p knots on the same streams | [Quadratic 261/272; PCHIP 265/272 within 10% on off-knot probes](p_axis_refinement/RESULTS.md) |
+| [Broad-grid PCHIP](broad_grid_10m/README.md) | 200 sizes, 10M + 10M; separate selection and final validation | [6599/6600 moderate observed errors within 10%](broad_grid_10m/RESULTS.md) |
 
-The later [19-size 10M + 10M extension](expanded_10m/README.md) and its
-[results](expanded_10m/RESULTS.md) are separate from the original experiment
-below; original code, plans and result packages remain unchanged.
-
-The [m=50..10000 broad-grid study](broad_grid_10m/README.md) completed its
-generation and focused two-surface evaluation on October 16-17, 2026. The larger
-GPD/hybrid/spline candidate study remains deferred. Historical generation
-timing and the earlier stop-after-timing decision remain preserved in its logs.
-
-This study fits SJARACNe's independence-null GPD tail at exact selected
-observation counts, using the production-shared AP-MI kernel. It focuses on
-the provisional TF probability 0.001 and SIG probability 0.0005. These are
-exploratory operating points, not validated biological optima or FDR controls.
-
-The [prospective protocol](PLAN_2026-10-15.md) fixes the design and safeguards.
-The existing engine/calibrator is an external, hash-pinned dependency; this
-benchmark does not modify the shared engine checkout or install new defaults.
-
-The [completed 2026-10-15 results](RESULTS.md) include all eleven sizes,
-accepted and rejected fits, runtime, held-out checks and empirical diagnostics.
-Only m=90, 100, 150 passed both gates; all three DREAM5-size GPDs were rejected.
+The broad-grid simultaneous-interval assessment did not confirm the complete
+core grid. Larger GPD/hybrid/spline candidate searches remain deferred. Earlier
+plans, result packages and acceptance labels retain their original scope.
 
 ## Stages
 
-1. Measure native generation time at m=30, 300 and 1000 using 200,000 draws
-   each. Timing draws do not enter production calibration.
-2. Fit and validate anchors m=30, 50, 80, 90, 100, 150, 300, 1000.
-3. Fit exact DREAM5 sample counts m=644, 516, 725. No nearest-size substitution.
+The original eleven-size [protocol](PLAN_2026-10-15.md) used Npar=40 and fresh
+**5,000,000 fitting plus 5,000,000 validation draws** at each exact sample count:
 
-Every production size uses fresh **5,000,000 fitting draws plus 5,000,000
-independent validation draws**, with Npar=40. Fit data determine the tail;
-validation data do not refit or choose it. No expression or reference-edge
-data enter calibration.
+1. Time 200,000-draw pilots at m=30, 300 and 1000; exclude them from calibration.
+2. Calibrate anchors m=30, 50, 80, 90, 100, 150, 300 and 1000.
+3. Calibrate the exact DREAM5 counts m=644, 516 and 725.
 
-The primary GPD fit uses strict exceedances above q=0.995. Three valid fits at
-q=0.9925, 0.995, 0.9975 must agree within 10% at p=0.0005. Both proposed
-operating probabilities must pass independent held-out checks using the
-existing conservative 99.9% pointwise Clopper-Pearson intervals. This differs
-from the original protocol's extreme-p=1e-7 stability requirement; old results
-are preserved, not retrospectively relabeled as passing.
+The primary GPD uses strict exceedances above q=0.995. Valid fits at
+q=0.9925/0.995/0.9975 must agree within 10% at p=0.0005. Both p=0.001 and 0.0005
+must pass conservative 99.9% pointwise Clopper-Pearson checks. Only m=90, 100
+and 150 passed both gates. Rejected cutoffs remain diagnostic; there is no
+nearest-size substitution or held-out-data rescue.
 
-Small-m model failures and scientific rejections remain visible. A rejected
-candidate is not a usable runtime model. Fitting a valid independence null
-does not establish biological edge accuracy, a useful network density, or a
-multiple-testing error guarantee. Ties/zero inflation and nonexchangeable
-observations require additional validation beyond this synthetic rank study.
+These provisional TF/SIG probabilities are not biological FDR controls or
+universal optima. Ties, zero inflation and dependent observations require
+additional assessment beyond independent unique ranks.
 
 ## Runtime-first pilot
 
@@ -67,21 +43,18 @@ observations require additional validation beyond this synthetic rank study.
 python benchmarks/apmi_null_m_sweep/time_generator.py --generator PATH_TO_PINNED_GENERATOR --out runs/FRESH_TIMING_DIRECTORY
 ```
 
-On 2026-10-15 the sequential 200,000-draw native pilot took 0.11 seconds at
-m=30, 0.71 seconds at m=300 and 2.22 seconds at m=1000. These are generator
-measurements, not full-calibration timings. Full generation, GPD fitting,
-sorting, hashing, process overhead and parallel contention must also be
-accounted for. [Compact timing provenance](timing_2026-10-15/timing_results.json)
-includes exact commands, native times, metadata and raw-stream hashes. Timing
-binary payloads remain only under ignored `runs/`.
+The October 15 sequential pilot took 0.11 s at m=30, 0.71 s at m=300 and 2.22 s
+at m=1000. These are generator timings, excluding fitting, sorting, hashing and
+parallel contention. [Timing provenance](timing_2026-10-15/timing_results.json)
+records commands and hashes; binary streams remain under ignored `runs/`.
 
 ## Reproduce the staged run
 
-The driver uses Windows Python 3.13 with NumPy 2.4.4 and SciPy 1.17.1 for
-fitting, and WSL Ubuntu for the pinned native generator. Each child is limited
-to one numerical-library thread. The engine checkout is read-only to this
-workflow. Replace the machine-specific paths below with verified equivalents;
-the generator must match the SHA256 in the protocol.
+Historical reproduction uses the pinned generator/source with Windows Python
+3.13, NumPy 2.4.4, SciPy 1.17.1 and WSL Ubuntu. Numerical-library threads are
+limited to one per child. Replace local paths with verified equivalents and use
+fresh output directories; current engine defaults are not a substitute for the
+recorded runtime.
 
 ```powershell
 python benchmarks/apmi_null_m_sweep/run_staged.py plan --engine-root D:/GitHub/SJARACNe --generator D:/GitHub/SJARACNe/SJARACNe/bin/apmi_null_generator.exe --engine-commit 7633ebb4a0d966dbda15a4e32d0efa492fb71aeb --python C:/Users/adamd/miniconda3/python.exe --distro Ubuntu --protocol benchmarks/apmi_null_m_sweep/PLAN_2026-10-15.md --out runs/FRESH_CALIBRATION_DIRECTORY
@@ -92,15 +65,10 @@ python benchmarks/apmi_null_m_sweep/summarize.py --run runs/FRESH_CALIBRATION_DI
 python scripts/check_benchmarks.py --group apmi_null_m_sweep
 ```
 
-The m=80 technical smoke uses the full production draw counts. The anchor
-stage verifies and reuses that completed attempt regardless of its scientific
-acceptance; it does not simulate it again. A failure is preserved and never
-silently retried. Fresh generation occurs in WSL; only those newly generated,
-strictly verified files enter the calibrator's `--reuse-raw` fitting path.
-There is no reuse of earlier historical calibration streams.
+The m=80 smoke uses full draw counts. Later stages verify and reuse completed
+attempts regardless of scientific acceptance. Failures are preserved rather than
+silently retried. Only newly generated, verified streams enter `--reuse-raw`.
 
-The legacy calibrator's original CSV column `cutoff_p1e-7` actually contains
-the configured default-p cutoff (0.0005 here). Original reports remain
-unchanged; the new summary labels both probabilities correctly. Empirical
-fit-stream quantiles are diagnostic only, not replacement runtime models.
-Large raw streams stay local under ignored `runs/`.
+The legacy CSV label `cutoff_p1e-7` contains the configured default-p cutoff
+(0.0005 here); newer summaries label both probabilities explicitly. Fit-stream
+quantiles are diagnostics, not fallback models. Raw streams remain local.
