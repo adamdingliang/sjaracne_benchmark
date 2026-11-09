@@ -4,6 +4,20 @@ Research benchmarks, dataset preparation and analysis evidence for
 [SJARACNe2](https://github.com/adamdingliang/SJARACNe2). The engine is maintained
 separately and does not depend on this repository.
 
+## SJARACNe versus SJARACNe2
+
+Matched-input comparisons cover 18 DREAM settings and the TF/SIG networks of
+BRCA100, TCGA-LUAD517 and TCGA-BLCA406. The baseline is legacy SJARACNe before
+the sampling change; SJARACNe2 uses the consensus-first develop workflow.
+
+| Guide | Contents |
+| --- | --- |
+| [Comparison report](benchmarks/legacy_vs_sjaracne2_2026-11-09/README.md) | Workflow definitions, accuracy, target coverage, topology and provenance. |
+| [ROC figures and AUROC tables](benchmarks/legacy_vs_sjaracne2_2026-11-09/roc/README.md) | DREAM final-network ROC curves, full-range AUROC and low-FPR zooms. |
+| [Four bar plots](benchmarks/legacy_vs_sjaracne2_2026-11-09/bars/README.md) | DREAM precision/F1 and bulk median targets/adjusted scale-free R². |
+
+Figures are available as PNG, PDF and SVG, with exact values in linked tables.
+
 ## Benchmark index
 
 Rows identify datasets; linked studies describe their experiments. Reusing a
