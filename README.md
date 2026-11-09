@@ -1,6 +1,6 @@
 # SJARACNe benchmarking
 
-Dedicated research benchmarks and analysis evidence for [SJARACNe2](https://github.com/adamdingliang/SJARACNe2).
+Dedicated research benchmarks and analysis evidence for [SJARACNe](https://github.com/adamdingliang/SJARACNe).
 
 ## Benchmark index
 

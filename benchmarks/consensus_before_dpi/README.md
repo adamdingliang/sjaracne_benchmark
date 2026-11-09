@@ -1,16 +1,22 @@
 # Historical consensus-order benchmark results
 
-These saved results compare the original SJARACNe workflow, K20 consensus controls, and consensus-before-DPI experiments. They were produced before the native C++ consensus feature in SJARACNe2. Implementation equivalence was subsequently checked separately, as documented below. No MI inference was rerun for that check; no speedup measurement is implied.
+These saved results compare the original SJARACNe workflow, K20 consensus controls, and consensus-before-DPI experiments. They were produced before the native C++ consensus feature in SJARACNe. Implementation equivalence was subsequently checked separately, as documented below. No MI inference was rerun for that check; no speedup measurement is implied.
 
 ## Snapshot and migration status
 
 This completed study was moved on **2026-11-08** from the
-[SJARACNe2 source snapshot](https://github.com/adamdingliang/SJARACNe2/tree/e3e8d9f5e7d20881e5fc2e773f679b04936bc646/benchmarks/consensus_before_dpi).
+[SJARACNe source snapshot](https://github.com/adamdingliang/SJARACNe/tree/e3e8d9f5e7d20881e5fc2e773f679b04936bc646/benchmarks/consensus_before_dpi).
 [Migration provenance](migration.json) records every imported file's source
 commit/path and SHA-256, destination SHA-256 and presentation-only adaptations.
 The tables, native equivalence receipt and replay driver are byte-identical
 to their source Git objects; no inference, rescoring or metric recalculation
 was performed for this migration.
+
+**Canonical-link update (2026-11-09):** Only software-repository links and
+their explanatory text changed; the pinned software commit and paths are
+unchanged. `migration.json` describes the original import at benchmark
+commit `b195f8331496c645121fc614c930ce1f58049300`; frozen data, provenance,
+receipts and replay-driver bytes are unchanged.
 
 The DREAM tables contain the completed 18-dataset historical comparison and
 the separate 36-comparison native-equivalence check. `bulk_metrics.tsv` is the
@@ -95,4 +101,4 @@ The native implementation reproduced **all 18 saved DREAM datasets at both offse
 
 Historical raw files were explicitly canonicalized into private temporary files by ordering source rows and adding omitted empty rows. Their numeric MI tokens were unchanged. N1/N3 original final files rounded MI to six digits; their full-precision saved baseline replays are the weight references. The initial rounded-output diagnostic and its resolution are recorded in the receipt. Input precision lost in old raw files cannot be recovered, so this is equivalence on those saved numerical inputs, not a claim about newly recomputed unrounded N1/N3 MI.
 
-TP, FP, precision, recall and F1 are inherited from the frozen scored results **after exact graph equivalence**; this check did not independently rescore the gold standards. Native tests and real workflow integration checks are reported separately in the [feature validation document](https://github.com/adamdingliang/SJARACNe2/blob/e3e8d9f5e7d20881e5fc2e773f679b04936bc646/docs/native_consensus_validation.md). The native binary for these checks has SHA-256 `e9fc297e3025b8aeb6d236a57290cb05edfbdd3f23e2f429b4f3ecf2d4cd9475`.
+TP, FP, precision, recall and F1 are inherited from the frozen scored results **after exact graph equivalence**; this check did not independently rescore the gold standards. Native tests and real workflow integration checks are reported separately in the [feature validation document](https://github.com/adamdingliang/SJARACNe/blob/e3e8d9f5e7d20881e5fc2e773f679b04936bc646/docs/native_consensus_validation.md). The native binary for these checks has SHA-256 `e9fc297e3025b8aeb6d236a57290cb05edfbdd3f23e2f429b4f3ecf2d4cd9475`.
