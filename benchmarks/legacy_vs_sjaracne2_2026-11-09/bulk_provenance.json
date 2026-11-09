@@ -1,0 +1,504 @@
+{
+  "schema": "sjaracne-final-comparison-bulk-provenance-v1",
+  "source_pins": {
+    "benchmark": {
+      "repository": "adamdingliang/sjaracne_benchmark",
+      "commit": "5872684c39235a1c700b919592cb3fc77207f4de"
+    },
+    "sjaracne2_develop": {
+      "repository": "adamdingliang/SJARACNe2",
+      "commit": "7c1e71f36cd4ae1d4f377668b62015fa722c5b2a"
+    }
+  },
+  "source_audit": {
+    "local_path": "E:\\GitHub\\local_runs\\sjaracne_final_comparison_20261109\\bulk_source_audit.json",
+    "bytes": 45010,
+    "sha256": "dff4e1ab0db31c45820730c7102bcc5eed1aacbbecfdba6bf264bb2f9bc19c9d"
+  },
+  "public_sources": [
+    {
+      "path": "benchmarks/consensus_before_dpi/bulk_metrics.tsv",
+      "commit": "5872684c39235a1c700b919592cb3fc77207f4de",
+      "purpose": "Actual historical legacy pc=1e-5 metrics, six rows."
+    },
+    {
+      "path": "benchmarks/native_bulk_2026-11-09/README.md",
+      "commit": "5872684c39235a1c700b919592cb3fc77207f4de",
+      "purpose": "Current native K20 consensus-first offset0.025 bulk outputs and recovery provenance."
+    }
+  ],
+  "legacy_source_tree_equivalence": {
+    "canonical_legacy": "e59973a1891672a14f06d7847545c53368f3066c",
+    "reused_legacy": "12113fbc80d753d945598ffc2c7d9e45787bc8e0",
+    "SJARACNe_git_tree_both": "399e38012799443400a96473868da1e6c83e53ba",
+    "fresh_git_rev_parse_both": "399e38012799443400a96473868da1e6c83e53ba"
+  },
+  "input_matches": [
+    {
+      "arm": "BRCA100_TF",
+      "expression_sha256": "ad8a334f5f8cdf46a1000d3ee259b35258a18b3da2e314bb3a0cf7a421d98bc8",
+      "hubs_sha256": "9b1219a489b99432175e4c4ad46add7b06f25aae388ee8dd3261fa91e4c43ffd",
+      "equality_basis": "Existing recorded SHA-256 equality after CRLF/CR to LF normalization only; no fresh input rehash in this audit.",
+      "legacy_current_hashes_identical": true,
+      "source_profiles": 100,
+      "source_features": 28278,
+      "requested_hubs": 2608
+    },
+    {
+      "arm": "BRCA100_SIG",
+      "expression_sha256": "ad8a334f5f8cdf46a1000d3ee259b35258a18b3da2e314bb3a0cf7a421d98bc8",
+      "hubs_sha256": "16ca27df655f16684f880a4ad719c4e2ae3f8dc0d7e6b9eccdd24cd97c40797c",
+      "equality_basis": "Existing recorded SHA-256 equality after CRLF/CR to LF normalization only; no fresh input rehash in this audit.",
+      "legacy_current_hashes_identical": true,
+      "source_profiles": 100,
+      "source_features": 28278,
+      "requested_hubs": 10680
+    },
+    {
+      "arm": "LUAD517_TF",
+      "expression_sha256": "c8576c8e13dfd6b6fc9f4e05dc4ff9bc73de3f13644821078915247c544ec1bc",
+      "hubs_sha256": "1c21a065df56bd9bbd54405c34e11ea57e5ba1411897763ad92f72cf85076a4a",
+      "equality_basis": "Existing recorded SHA-256 equality after CRLF/CR to LF normalization only; no fresh input rehash in this audit.",
+      "legacy_current_hashes_identical": true,
+      "source_profiles": 517,
+      "source_features": 29841,
+      "requested_hubs": 1929
+    },
+    {
+      "arm": "LUAD517_SIG",
+      "expression_sha256": "c8576c8e13dfd6b6fc9f4e05dc4ff9bc73de3f13644821078915247c544ec1bc",
+      "hubs_sha256": "632fe7d96066417102726689a172cac25138cfa6dc6df4b4dd7071833a008034",
+      "equality_basis": "Existing recorded SHA-256 equality after CRLF/CR to LF normalization only; no fresh input rehash in this audit.",
+      "legacy_current_hashes_identical": true,
+      "source_profiles": 517,
+      "source_features": 29841,
+      "requested_hubs": 9464
+    },
+    {
+      "arm": "BLCA406_TF",
+      "expression_sha256": "9e5805e04847cfe0dd18a08f50fd4733d2fdeba547c5bc6bc93c740832dc285b",
+      "hubs_sha256": "87562db2a5c8a87eb5b20db27960fed0cd605217bb9dce2bf52c51d4a0dff575",
+      "equality_basis": "Existing recorded SHA-256 equality after CRLF/CR to LF normalization only; no fresh input rehash in this audit.",
+      "legacy_current_hashes_identical": true,
+      "source_profiles": 406,
+      "source_features": 29778,
+      "requested_hubs": 1920
+    },
+    {
+      "arm": "BLCA406_SIG",
+      "expression_sha256": "9e5805e04847cfe0dd18a08f50fd4733d2fdeba547c5bc6bc93c740832dc285b",
+      "hubs_sha256": "fd0d4d64dce4abdecb786ae773484e2178f4fb075f1763d3c578b5678e125b7e",
+      "equality_basis": "Existing recorded SHA-256 equality after CRLF/CR to LF normalization only; no fresh input rehash in this audit.",
+      "legacy_current_hashes_identical": true,
+      "source_profiles": 406,
+      "source_features": 29778,
+      "requested_hubs": 9428
+    }
+  ],
+  "executions": [
+    {
+      "row_id": "BRCA100_TF_legacy",
+      "source_commit": "12113fbc80d753d945598ffc2c7d9e45787bc8e0",
+      "actual_native_sha256": "aea2f5c6f7030cd19d5e2ca56ad663cbbbd1e920486f0dcfa60d893fcbd8759b",
+      "recorded_network_sha256": "81bbb47a10627501c56b9e222b5ba53e39012a17cecbb86315ad8d32dd4c34dd",
+      "recorded_network_format": "ncol",
+      "local_network": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\BRCA100_TF_legacy\\consensus_network_ncol_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\metrics\\BRCA100_TF_legacy.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\BRCA100_TF_legacy\\qc\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\BRCA100_TF_legacy\\qc\\TF_netQC.html"
+      ],
+      "scientific_options": {
+        "draws": 100,
+        "pb": 1e-07,
+        "epsilon": 0.0,
+        "mi_cutoff": 0.15325687467402607,
+        "B": 100,
+        "consensus_mode": "legacy_probability",
+        "consensus_cutoff": 1e-05
+      },
+      "profiles": 100,
+      "features": 28278,
+      "requested_hubs": 2608,
+      "Npar": 40,
+      "sampling": "Full-size bootstrap with replacement",
+      "source_tree_equivalent_to_e599": true,
+      "local_manifest": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\manifest.json",
+      "public_metrics": "benchmarks/consensus_before_dpi/bulk_metrics.tsv"
+    },
+    {
+      "row_id": "BRCA100_TF_sjaracne2",
+      "source_commit": "99a36f47542baceda1db2062d8e266743e90e5c5",
+      "actual_native_sha256": "e9fc297e3025b8aeb6d236a57290cb05edfbdd3f23e2f429b4f3ecf2d4cd9475",
+      "recorded_network_sha256": "f255043f649bebbcd6d145f489cc1c3f2851384e0598a35797bdf7dbaf2ae2aa",
+      "recorded_network_format": "3col",
+      "local_network": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\runs\\BRCA100_TF\\consensus_network_3col_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\metrics\\BRCA100_TF.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\qc\\BRCA100_TF\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\qc\\BRCA100_TF\\BRCA100_TF_native_K20_offset0025_netQC.html"
+      ],
+      "scientific_options": {
+        "SIG_pb": 0.0005,
+        "TF_pb": 0.001,
+        "apmi_null_model": "pchip",
+        "bootstrap_num": 100,
+        "consensus_order": "consensus-first",
+        "depth": 40,
+        "dpi_href": 479,
+        "dpi_max": 0.3,
+        "dpi_offset": 0.025,
+        "dpi_slope": 0.05,
+        "min_recurrence": 20,
+        "subsample_fraction": 0.8,
+        "pb": 0.001,
+        "epsilon": 0.14724231542474486
+      },
+      "profiles": 100,
+      "features": 28278,
+      "requested_hubs": 2608,
+      "recovery": false,
+      "sampling": "80% fixed-size subsample without replacement",
+      "public_metrics": "benchmarks/native_bulk_2026-11-09/README.md"
+    },
+    {
+      "row_id": "BRCA100_SIG_legacy",
+      "source_commit": "12113fbc80d753d945598ffc2c7d9e45787bc8e0",
+      "actual_native_sha256": "aea2f5c6f7030cd19d5e2ca56ad663cbbbd1e920486f0dcfa60d893fcbd8759b",
+      "recorded_network_sha256": "7332008bc7a9e75aaf63d146be658e90897daf3507b8b7d2173625de89c92af7",
+      "recorded_network_format": "ncol",
+      "local_network": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\BRCA100_SIG_legacy\\consensus_network_ncol_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\metrics\\BRCA100_SIG_legacy.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\BRCA100_SIG_legacy\\qc\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\BRCA100_SIG_legacy\\qc\\SIG_netQC.html"
+      ],
+      "scientific_options": {
+        "draws": 100,
+        "pb": 1e-07,
+        "epsilon": 0.0,
+        "mi_cutoff": 0.15325687467402607,
+        "B": 100,
+        "consensus_mode": "legacy_probability",
+        "consensus_cutoff": 1e-05
+      },
+      "profiles": 100,
+      "features": 28278,
+      "requested_hubs": 10680,
+      "Npar": 40,
+      "sampling": "Full-size bootstrap with replacement",
+      "source_tree_equivalent_to_e599": true,
+      "local_manifest": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\manifest.json",
+      "public_metrics": "benchmarks/consensus_before_dpi/bulk_metrics.tsv"
+    },
+    {
+      "row_id": "BRCA100_SIG_sjaracne2",
+      "source_commit": "99a36f47542baceda1db2062d8e266743e90e5c5",
+      "actual_native_sha256": "e9fc297e3025b8aeb6d236a57290cb05edfbdd3f23e2f429b4f3ecf2d4cd9475",
+      "recorded_network_sha256": "4784f42ce60faa7a20104cb2efb835039a04e34c87cfabd4d7368939586e05a2",
+      "recorded_network_format": "3col",
+      "local_network": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\runs\\BRCA100_SIG\\consensus_network_3col_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\metrics\\BRCA100_SIG.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\qc\\BRCA100_SIG\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\qc\\BRCA100_SIG\\BRCA100_SIG_native_K20_offset0025_netQC.html"
+      ],
+      "scientific_options": {
+        "SIG_pb": 0.0005,
+        "TF_pb": 0.001,
+        "apmi_null_model": "pchip",
+        "bootstrap_num": 100,
+        "consensus_order": "consensus-first",
+        "depth": 40,
+        "dpi_href": 479,
+        "dpi_max": 0.3,
+        "dpi_offset": 0.025,
+        "dpi_slope": 0.05,
+        "min_recurrence": 20,
+        "subsample_fraction": 0.8,
+        "pb": 0.0005,
+        "epsilon": 0.24893710904193683
+      },
+      "profiles": 100,
+      "features": 28278,
+      "requested_hubs": 10680,
+      "recovery": false,
+      "sampling": "80% fixed-size subsample without replacement",
+      "public_metrics": "benchmarks/native_bulk_2026-11-09/README.md"
+    },
+    {
+      "row_id": "LUAD517_TF_legacy",
+      "source_commit": "e59973a1891672a14f06d7847545c53368f3066c",
+      "actual_native_sha256": "eda4f07465160f9d2d536715023d439b36628b1e094dab8b7afed511efa24e11",
+      "recorded_network_sha256": "bc4b343feb315b61573b0a6ff9f9bc6b5db7fb510f53e2b6cbf05f452cb4ae25",
+      "recorded_network_format": "ncol",
+      "local_network": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\LUAD517_TF_legacy\\consensus_network_ncol_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\metrics\\LUAD517_TF_legacy.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\LUAD517_TF_legacy\\qc\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\LUAD517_TF_legacy\\qc\\LUAD517_TF_legacy_netQC.html"
+      ],
+      "scientific_options": {
+        "draws": 517,
+        "pb": 1e-07,
+        "epsilon": 0.0,
+        "mi_cutoff": 0.0456337306587857,
+        "B": 100,
+        "consensus_mode": "legacy_probability",
+        "consensus_cutoff": 1e-05
+      },
+      "profiles": 517,
+      "features": 29841,
+      "requested_hubs": 1929,
+      "Npar": 40,
+      "sampling": "Full-size bootstrap with replacement",
+      "source_tree_equivalent_to_e599": false,
+      "local_manifest": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\manifest.json",
+      "public_metrics": "benchmarks/consensus_before_dpi/bulk_metrics.tsv"
+    },
+    {
+      "row_id": "LUAD517_TF_sjaracne2",
+      "source_commit": "99a36f47542baceda1db2062d8e266743e90e5c5",
+      "actual_native_sha256": "e9fc297e3025b8aeb6d236a57290cb05edfbdd3f23e2f429b4f3ecf2d4cd9475",
+      "recorded_network_sha256": "2d2c14cc68db2a4c87c24298df73215b8e38020213861ccc506fa716a74f7eb8",
+      "recorded_network_format": "3col",
+      "local_network": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\runs\\LUAD517_TF\\consensus_network_3col_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\metrics\\LUAD517_TF.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\qc\\LUAD517_TF\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\qc\\LUAD517_TF\\LUAD517_TF_native_K20_offset0025_netQC.html"
+      ],
+      "scientific_options": {
+        "SIG_pb": 0.0005,
+        "TF_pb": 0.001,
+        "apmi_null_model": "pchip",
+        "bootstrap_num": 100,
+        "consensus_order": "consensus-first",
+        "depth": 40,
+        "dpi_href": 479,
+        "dpi_max": 0.3,
+        "dpi_offset": 0.025,
+        "dpi_slope": 0.05,
+        "min_recurrence": 20,
+        "subsample_fraction": 0.8,
+        "pb": 0.001,
+        "epsilon": 0.12548777911564618
+      },
+      "profiles": 517,
+      "features": 29841,
+      "requested_hubs": 1929,
+      "recovery": false,
+      "sampling": "80% fixed-size subsample without replacement",
+      "public_metrics": "benchmarks/native_bulk_2026-11-09/README.md"
+    },
+    {
+      "row_id": "LUAD517_SIG_legacy",
+      "source_commit": "e59973a1891672a14f06d7847545c53368f3066c",
+      "actual_native_sha256": "eda4f07465160f9d2d536715023d439b36628b1e094dab8b7afed511efa24e11",
+      "recorded_network_sha256": "f8d0a5c76b62e15aaf1976b407cdf3c3f5a5c2ed46b66eccdb2766f170bcd492",
+      "recorded_network_format": "ncol",
+      "local_network": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\LUAD517_SIG_legacy\\consensus_network_ncol_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\metrics\\LUAD517_SIG_legacy.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\LUAD517_SIG_legacy\\qc\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\results\\LUAD517_SIG_legacy\\qc\\LUAD517_SIG_legacy_netQC.html"
+      ],
+      "scientific_options": {
+        "draws": 517,
+        "pb": 1e-07,
+        "epsilon": 0.0,
+        "mi_cutoff": 0.0456337306587857,
+        "B": 100,
+        "consensus_mode": "legacy_probability",
+        "consensus_cutoff": 1e-05
+      },
+      "profiles": 517,
+      "features": 29841,
+      "requested_hubs": 9464,
+      "Npar": 40,
+      "sampling": "Full-size bootstrap with replacement",
+      "source_tree_equivalent_to_e599": false,
+      "local_manifest": "D:\\GitHub\\local_runs\\sjaracne_legacy_vs_develop_20261028\\manifest.json",
+      "public_metrics": "benchmarks/consensus_before_dpi/bulk_metrics.tsv"
+    },
+    {
+      "row_id": "LUAD517_SIG_sjaracne2",
+      "source_commit": "b2e1d2b093a9b5bcad76c9811c664aff64f63cc2",
+      "actual_native_sha256": "7fb2648e5934110fbec5bea7ffd489929f465139fbf5475342c7472f20847036",
+      "recorded_network_sha256": "79e96936a8580b2b39e77421b0c312acff3ee26804841e9358a05b8e1b25d5c6",
+      "recorded_network_format": "3col",
+      "local_network": "D:\\GitHub\\local_runs\\SIG_sequential_HDD_optional_hashes_20261109\\runs\\LUAD517_SIG\\consensus_network_3col_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\SIG_sequential_HDD_optional_hashes_20261109\\metrics\\LUAD517_SIG.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\SIG_sequential_HDD_optional_hashes_20261109\\qc\\LUAD517_SIG\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\SIG_sequential_HDD_optional_hashes_20261109\\qc\\LUAD517_SIG\\LUAD517_SIG_native_K20_offset0025_netQC.html"
+      ],
+      "scientific_options": {
+        "SIG_pb": 0.0005,
+        "TF_pb": 0.001,
+        "apmi_null_model": "pchip",
+        "bootstrap_num": 100,
+        "consensus_order": "consensus-first",
+        "depth": 40,
+        "dpi_href": 479,
+        "dpi_max": 0.3,
+        "dpi_offset": 0.025,
+        "dpi_slope": 0.05,
+        "min_recurrence": 20,
+        "subsample_fraction": 0.8,
+        "pb": 0.0005,
+        "epsilon": 0.24021762563018043
+      },
+      "profiles": 517,
+      "features": 29841,
+      "requested_hubs": 9464,
+      "recovery": true,
+      "sampling": "80% fixed-size subsample without replacement",
+      "public_metrics": "benchmarks/native_bulk_2026-11-09/README.md"
+    },
+    {
+      "row_id": "BLCA406_TF_legacy",
+      "source_commit": "e59973a1891672a14f06d7847545c53368f3066c",
+      "actual_native_sha256": "eda4f07465160f9d2d536715023d439b36628b1e094dab8b7afed511efa24e11",
+      "recorded_network_sha256": "beb2c7d3bad93fddfbdeffd3a0f1d0c00954fb8ae559842d430160068d89399d",
+      "recorded_network_format": "ncol",
+      "local_network": "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\results\\BLCA406_TF_legacy\\consensus_network_ncol_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\metrics\\BLCA406_TF_legacy.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\results\\BLCA406_TF_legacy\\qc\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\results\\BLCA406_TF_legacy\\qc\\BLCA406_TF_legacy_netQC.html"
+      ],
+      "scientific_options": {
+        "draws": 406,
+        "pb": 1e-07,
+        "epsilon": 0.0,
+        "mi_cutoff": 0.05612502826150041,
+        "B": 100,
+        "consensus_mode": "legacy_probability",
+        "consensus_cutoff": 1e-05
+      },
+      "profiles": 406,
+      "features": 29778,
+      "requested_hubs": 1920,
+      "Npar": 40,
+      "sampling": "Full-size bootstrap with replacement",
+      "source_tree_equivalent_to_e599": false,
+      "local_manifest": "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\manifest.json",
+      "public_metrics": "benchmarks/consensus_before_dpi/bulk_metrics.tsv"
+    },
+    {
+      "row_id": "BLCA406_TF_sjaracne2",
+      "source_commit": "99a36f47542baceda1db2062d8e266743e90e5c5",
+      "actual_native_sha256": "e9fc297e3025b8aeb6d236a57290cb05edfbdd3f23e2f429b4f3ecf2d4cd9475",
+      "recorded_network_sha256": "dec620050a5b50339c9650d4ea6af3be66ff63f07a041200c3e949328a0dd88b",
+      "recorded_network_format": "3col",
+      "local_network": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\runs\\BLCA406_TF\\consensus_network_3col_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\metrics\\BLCA406_TF.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\qc\\BLCA406_TF\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\bulk_native_consensus_20261108_99a36f4\\qc\\BLCA406_TF\\BLCA406_TF_native_K20_offset0025_netQC.html"
+      ],
+      "scientific_options": {
+        "SIG_pb": 0.0005,
+        "TF_pb": 0.001,
+        "apmi_null_model": "pchip",
+        "bootstrap_num": 100,
+        "consensus_order": "consensus-first",
+        "depth": 40,
+        "dpi_href": 479,
+        "dpi_max": 0.3,
+        "dpi_offset": 0.025,
+        "dpi_slope": 0.05,
+        "min_recurrence": 20,
+        "subsample_fraction": 0.8,
+        "pb": 0.001,
+        "epsilon": 0.12515043749361693
+      },
+      "profiles": 406,
+      "features": 29778,
+      "requested_hubs": 1920,
+      "recovery": false,
+      "sampling": "80% fixed-size subsample without replacement",
+      "public_metrics": "benchmarks/native_bulk_2026-11-09/README.md"
+    },
+    {
+      "row_id": "BLCA406_SIG_legacy",
+      "source_commit": "e59973a1891672a14f06d7847545c53368f3066c",
+      "actual_native_sha256": "eda4f07465160f9d2d536715023d439b36628b1e094dab8b7afed511efa24e11",
+      "recorded_network_sha256": "ef22e5ab5ba34206f64e756694c0afaf14f58282f99de6b957a552988b6d8e1f",
+      "recorded_network_format": "ncol",
+      "local_network": "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\results\\BLCA406_SIG_legacy\\consensus_network_ncol_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\metrics\\BLCA406_SIG_legacy.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\results\\BLCA406_SIG_legacy\\qc\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\results\\BLCA406_SIG_legacy\\qc\\BLCA406_SIG_legacy_netQC.html"
+      ],
+      "scientific_options": {
+        "draws": 406,
+        "pb": 1e-07,
+        "epsilon": 0.0,
+        "mi_cutoff": 0.05612502826150041,
+        "B": 100,
+        "consensus_mode": "legacy_probability",
+        "consensus_cutoff": 1e-05
+      },
+      "profiles": 406,
+      "features": 29778,
+      "requested_hubs": 9428,
+      "Npar": 40,
+      "sampling": "Full-size bootstrap with replacement",
+      "source_tree_equivalent_to_e599": false,
+      "local_manifest": "D:\\GitHub\\local_runs\\sjaracne_blca_legacy_vs_current_20261102\\manifest.json",
+      "public_metrics": "benchmarks/consensus_before_dpi/bulk_metrics.tsv"
+    },
+    {
+      "row_id": "BLCA406_SIG_sjaracne2",
+      "source_commit": "b2e1d2b093a9b5bcad76c9811c664aff64f63cc2",
+      "actual_native_sha256": "7fb2648e5934110fbec5bea7ffd489929f465139fbf5475342c7472f20847036",
+      "recorded_network_sha256": "ae7c0ffb7a29902a6de97191b837e4100405e3af4b73e5a2af8815c4fae022b1",
+      "recorded_network_format": "3col",
+      "local_network": "D:\\GitHub\\local_runs\\SIG_sequential_HDD_optional_hashes_20261109\\runs\\BLCA406_SIG\\consensus_network_3col_.txt",
+      "local_metrics": "D:\\GitHub\\local_runs\\SIG_sequential_HDD_optional_hashes_20261109\\metrics\\BLCA406_SIG.json",
+      "local_qc_summary": "D:\\GitHub\\local_runs\\SIG_sequential_HDD_optional_hashes_20261109\\qc\\BLCA406_SIG\\network_summary.tsv",
+      "local_qc_html": [
+        "D:\\GitHub\\local_runs\\SIG_sequential_HDD_optional_hashes_20261109\\qc\\BLCA406_SIG\\BLCA406_SIG_native_K20_offset0025_netQC.html"
+      ],
+      "scientific_options": {
+        "SIG_pb": 0.0005,
+        "TF_pb": 0.001,
+        "apmi_null_model": "pchip",
+        "bootstrap_num": 100,
+        "consensus_order": "consensus-first",
+        "depth": 40,
+        "dpi_href": 479,
+        "dpi_max": 0.3,
+        "dpi_offset": 0.025,
+        "dpi_slope": 0.05,
+        "min_recurrence": 20,
+        "subsample_fraction": 0.8,
+        "pb": 0.0005,
+        "epsilon": 0.23994270987569935
+      },
+      "profiles": 406,
+      "features": 29778,
+      "requested_hubs": 9428,
+      "recovery": true,
+      "sampling": "80% fixed-size subsample without replacement",
+      "public_metrics": "benchmarks/native_bulk_2026-11-09/README.md"
+    }
+  ],
+  "validation": {
+    "all_six_expression_and_hub_recorded_hashes_match": true,
+    "all_six_legacy_and_current_driver_tables_and_qc_metrics_match": true,
+    "no_raw_graphs_scanned": true,
+    "no_inference_run": true,
+    "no_large_fresh_hash_reads": true
+  },
+  "limitations": [
+    "Input and network hashes are existing recorded fingerprints; expression, hub inputs and graph files were not freshly rehashed in this audit.",
+    "Current recovery reused original 100 raw MI graphs; no inference rerun. Four completed original arms are retained; only LUAD517_SIG and BLCA406_SIG use recovery outputs.",
+    "Bulk expression cohorts do not provide independent edge-level ground truth; TP, FP, precision, recall and F1 are not estimable.",
+    "BRCA100 legacy native binary differs from e599 build but source SJARACNe Git trees are exactly identical; retain actual 12113fbc provenance.",
+    "Comparison spans full historical vs current workflows, so changes cannot be attributed to sampling alone."
+  ]
+}

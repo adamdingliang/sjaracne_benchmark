@@ -1,0 +1,44 @@
+{
+  "schema": "sjaracne-final-netbid2-topology-v1",
+  "created_utc": "2026-11-09T21:22:21Z",
+  "script": "compute_dream_topology.R",
+  "script_sha256": "4af58c07c6b508d3754458fea5e44f488e13faf3579a1c8af0765ec483c994a1",
+  "activity": "Saved final graph QC only; no inference, accuracy rescoring, raw-MI reads, or raw hash scan",
+  "inputs": ["dream_rows.json", "dream_provenance.json"],
+  "local_inputs": "Saved final graphs and requested hubs are resolved from dream_provenance.json; they are not redistributed in this report",
+  "environment": {
+    "R": "R version 4.4.3 (2025-02-28)",
+    "NetBID2": "2.2.0",
+    "NetBID2_RemoteSha": "5defa454d600b94f5dd6d1f9f4428f99759a6821",
+    "igraph": "2.3.3"
+  },
+  "method": {
+    "package_reference": "NetBID2::check_scalefree",
+    "reference_bulk_script": "D:/GitHub/local_runs/SIG_sequential_HDD_optional_hashes_20261109/scripts/run_netbid_qc.R",
+    "graph_reader": "NetBID2::get.SJAracne.network; directed graph from source and target columns; no simplification",
+    "degree_population": "All incident vertices, total degree (in plus out); requested zero-target hubs are not added as isolates",
+    "formula": "lm(log10(pk) ~ log10(k)) with intercept; pk=degree_distribution[-1]+1/V; k=1..max(total degree); adjusted R2",
+    "zero_bins": "Zero-degree bin excluded; unobserved positive integer degree bins receive 1/V",
+    "undefined": "NA for empty graph, maximum total degree below 3, or nonfinite adjusted R2; finite negative values retained",
+    "median_targets": "All requested hubs including zero-target hubs",
+    "adjacency_normalization": "Expand each noncomment source row to directed source-target-MI edges; omit zero-target rows from edge graph only; temporary files removed",
+    "validation": "Edges, active hubs, requested hubs and median targets equal all frozen source records"
+  },
+  "row_count": 36,
+  "undefined_fit_count": 0,
+  "all_counts_match_frozen": true,
+  "independent_bulk_crosscheck": {
+    "graph": "/mnt/d/GitHub/local_runs/bulk_native_consensus_20261108_99a36f4/runs/BRCA100_TF/consensus_network_3col_.txt",
+    "frozen_summary": "/mnt/d/GitHub/local_runs/bulk_native_consensus_20261108_99a36f4/qc/BRCA100_TF/network_summary.tsv",
+    "graph_bytes": 4080269,
+    "edges": 88915,
+    "incident_nodes": 19196,
+    "recomputed_r2": 0.80834051466105394,
+    "installed_NetBID2_check_scalefree_r2": 0.80834051466105394,
+    "frozen_r2": 0.80834051466105405,
+    "formula_and_package_identical": true,
+    "frozen_difference": -1.1102230246251565e-16,
+    "passed": true
+  },
+  "installed_check_scalefree_source": ["function (igraph_obj) ", "{", "    gr1 <- igraph_obj", "    fp1 <- igraph::degree_distribution(gr1)", "    dd <- as.data.frame(base::cbind(k = 1:base::max(igraph::degree(gr1)), ", "        pk = fp1[-1]))", "    dd$pk <- dd$pk + 1/base::length(V(gr1))", "    r2 <- stats::lm(log10(dd$pk) ~ log10(dd$k))", "    r3 <- summary(r2)$adj.r.squared", "    if (base::length(dd$k) > 100) ", "        graphics::plot(pk ~ k, data = dd, log = \"xy\", main = sprintf(\"R2:%s\", ", "            format(r3, digits = 4)), pch = 16, col = get_transparent(\"dark grey\", ", "            0.8), cex.lab = 1.4, cex.axis = 1.2)", "    if (base::length(dd$k) <= 100) ", "        graphics::plot(pk ~ k, data = dd, log = \"xy\", main = sprintf(\"R2:%s\", ", "            format(r3, digits = 4)), pch = 16, col = get_transparent(\"black\", ", "            0.8), cex.lab = 1.4, cex.axis = 1.2)", "    graphics::abline(a = r2$coefficients[1], b = r2$coefficients[2], ", "        col = get_transparent(\"red\", 0.5), lwd = 2)", "    return(r3)", "}"]
+}
