@@ -444,7 +444,7 @@ Step times are approximate and may overlap. The DPI plot contains 100 bootstrap-
 
 ## Data and reproduction
 
-[Overall values](whole_workflows.tsv) ? [Step measurements](steps.tsv) ? [MI/DPI timings](native_timers.tsv) ? [Measurement provenance](provenance.json) ? [Analysis script](build_steps.py)
+[Overall values](whole_workflows.tsv), [Step measurements](steps.tsv), [MI/DPI timings](native_timers.tsv), [Measurement provenance](provenance.json), [Analysis script](build_steps.py)
 
 Plots are available as PNG, PDF and SVG in [figures/](figures/).
 
