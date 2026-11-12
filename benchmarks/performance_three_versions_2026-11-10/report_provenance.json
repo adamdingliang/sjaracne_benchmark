@@ -1,0 +1,107 @@
+{
+  "schema": "sjaracne-performance-report-v1",
+  "generated_utc": "2026-11-12 15:56 UTC",
+  "builder_sha256": "f7cf77c84149fc56ad975195f7b4acaf8502a547a7d8911a5c91fed05ddf4131",
+  "inputs": {
+    "plan": {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\plan.json",
+      "exists": true,
+      "sha256": "8e245d69b5254eb4944b27715f82fffcfd4679a5fc3cdb963f589a00aaccf4aa"
+    },
+    "measurements": {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\measurements.json",
+      "exists": true,
+      "sha256": "c86512ab14391903b624c8599a53efa6af332add915706395783b850d78082c9"
+    },
+    "status": {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\status.json",
+      "exists": true,
+      "sha256": "5dddab8eacf297e90ac4bafb878c088d67e622445a936f208acd399f83dfb141"
+    },
+    "historical": {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\historical_context.json",
+      "exists": true,
+      "sha256": "39cd18ed5f20360eb42a7afd9aef64ab346c30e5b4076073e3ebffad70cf398d"
+    },
+    "hardware": {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\hardware.json",
+      "exists": true,
+      "sha256": "620c7efa9b139f5f41c121867361acd6d796251af13370a370cf7d86b5ef08ff"
+    },
+    "concurrent_workloads": {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\concurrent_workloads.json",
+      "exists": true,
+      "sha256": "27d066807dadfd8807ae35ffd183bdbea3055beb07ccabccf51ee59ec28f229a"
+    }
+  },
+  "case_count": 19,
+  "completed_validated_cases": 19,
+  "case_kinds": {
+    "full_cli": 6,
+    "component": 10,
+    "matched_native": 3
+  },
+  "metric_definitions": {
+    "wall_seconds": "Report primary wall time: finite GNU-time elapsed seconds; fallback valid UTC finish-start interval; fallback unchanged runner monotonic seconds. See wall_time_source.",
+    "gnu_time.max_single_process_rss_kib": "GNU time maximum resident set size in KiB; largest individual process, not summed scatter-worker RAM.",
+    "memory.peak_descendant_rss_bytes": "Maximum sampled sum of RSS of GNU time wrapper plus visible descendants; shared pages may be counted more than once.",
+    "memory.peak_descendant_pss_bytes": "Maximum sampled sum of PSS at samples where every observed process supplied PSS; excludes unmapped filesystem cache and kernel memory.",
+    "memory.sample_interval_seconds": "Target polling interval; short-lived processes/brief memory spikes can be missed. Actual timestamps are retained.",
+    "process_class_summary": "Argv-inferred phases. Active seconds sum polling intervals with a phase observed; phases overlap and are not exact stage wall times or additive.",
+    "process_events": "Observed PID/create-time identities, argv, first/last observations and per-process sampled memory peaks; unobserved short-lived processes are absent.",
+    "expected_min_edges": "Minimum nonempty noncomment line count of first expected file; not ground-truth accuracy.",
+    "runner_monotonic_wall_seconds": "Original unmodified measurements.results[*].wall_seconds.",
+    "utc_interval_seconds": "UTC finished_utc minus started_utc when valid and nonnegative."
+  },
+  "raw_measurement_metric_definitions": {
+    "wall_seconds": "Monotonic elapsed seconds from Popen through wait; excludes validation and report building.",
+    "gnu_time.max_single_process_rss_kib": "GNU time maximum resident set size in KiB; largest individual process, not summed scatter-worker RAM.",
+    "memory.peak_descendant_rss_bytes": "Maximum sampled sum of RSS of GNU time wrapper plus visible descendants; shared pages may be counted more than once.",
+    "memory.peak_descendant_pss_bytes": "Maximum sampled sum of PSS at samples where every observed process supplied PSS; excludes unmapped filesystem cache and kernel memory.",
+    "memory.sample_interval_seconds": "Target polling interval; short-lived processes/brief memory spikes can be missed. Actual timestamps are retained.",
+    "process_class_summary": "Argv-inferred phases. Active seconds sum polling intervals with a phase observed; phases overlap and are not exact stage wall times or additive.",
+    "process_events": "Observed PID/create-time identities, argv, first/last observations and per-process sampled memory peaks; unobserved short-lived processes are absent.",
+    "expected_min_edges": "Minimum nonempty noncomment line count of first expected file; not ground-truth accuracy."
+  },
+  "wall_clock_selection": {
+    "preference_order": [
+      "gnu_time.elapsed_seconds",
+      "UTC finished_utc-started_utc",
+      "raw wall_seconds monotonic fallback"
+    ],
+    "raw_measurements_modified": false,
+    "observed_clock_difference_cause": "Not established"
+  },
+  "phase_intervals_are_not_additive": true,
+  "missing_values_are_not_zero": true,
+  "default_method_comparison_not_pure_implementation_speedup": true,
+  "concurrent_workload_events": [
+    {
+      "affected_case_id": "LUAD517_commit_4cd8eae",
+      "started_utc": "2026-11-11T03:43:37.653081+00:00",
+      "workload_root": "/mnt/e/TCGA/BLCA/runs_sjaracne/MIBC372_v0.4.0_2026-11-10_8c0c1e0",
+      "cpu_affinity": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        14
+      ],
+      "benchmark_cpu_affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reason": "User requested MIBC372 alongside remaining benchmark",
+      "isolation": "Disjoint CPU affinity; shared cache, memory bandwidth, power and SSD",
+      "receipt": "/mnt/e/TCGA/BLCA/runs_sjaracne/MIBC372_v0.4.0_2026-11-10_8c0c1e0/provenance/concurrent_start.json"
+    }
+  ],
+  "concurrent_cases_excluded_from_isolated_rankings": [
+    "LUAD517_commit_4cd8eae"
+  ]
+}

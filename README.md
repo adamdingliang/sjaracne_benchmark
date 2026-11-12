@@ -15,6 +15,7 @@ the sampling change; SJARACNe2 uses the consensus-first develop workflow.
 | [Comparison report](benchmarks/legacy_vs_sjaracne2_2026-11-09/README.md) | Workflow definitions, accuracy, target coverage, topology and provenance. |
 | [ROC figures and AUROC tables](benchmarks/legacy_vs_sjaracne2_2026-11-09/roc/README.md) | DREAM final-network ROC curves, full-range AUROC and low-FPR zooms. |
 | [Four bar plots](benchmarks/legacy_vs_sjaracne2_2026-11-09/bars/README.md) | DREAM precision/F1 and bulk median targets/adjusted scale-free R². |
+| [Runtime and memory comparison](benchmarks/performance_three_versions_2026-11-10/steps/README.md) | LUAD517 TF total time, peak memory and step plots for `4cd8eae`, v0.3.0 and v0.4.0; 100 bootstraps and four workers. |
 
 Figures are available as PNG, PDF and SVG, with exact values in linked tables.
 

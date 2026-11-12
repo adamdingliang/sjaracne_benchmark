@@ -1,0 +1,621 @@
+{
+  "schema": "sjaracne-luad-step-comparison-v1",
+  "generated_utc": "2026-11-12T16:41:34.236819+00:00",
+  "builder": {
+    "path": "E:\\GitHub\\sjaracne_benchmark-performance-20261110\\benchmarks\\performance_three_versions_2026-11-10\\steps\\build_steps.py",
+    "bytes": 26434,
+    "sha256": "451d84cc157706824b68258a394d68cf68f8a42389324bd698e409186b471b63"
+  },
+  "inputs": [
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\concurrent_workloads.json",
+      "bytes": 783,
+      "sha256": "27d066807dadfd8807ae35ffd183bdbea3055beb07ccabccf51ee59ec28f229a"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\outputs\\LUAD517_v0_4_0\\sjaracne_run.json",
+      "bytes": 4648,
+      "sha256": "9251fc1bbf6fcecb40137efa7b8f58ce20475227f736372be46f730ea5c0f07a"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_commit_4cd8eae\\attempt_001\\process_events.json",
+      "bytes": 156268,
+      "sha256": "3bf6295845c3d2f2a800e1e854f7f3bd1145a9977b16397439fc003880d66774"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_commit_4cd8eae\\attempt_001\\result.json",
+      "bytes": 9005,
+      "sha256": "c9e531aa353cb34af87a2171d0d223b9a1a578737bac1ec55b2414b5d5738a4a"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_commit_4cd8eae\\attempt_001\\stderr.log",
+      "bytes": 236865,
+      "sha256": "e99c2663de232db60fa94d6bc13907966db8f2d08d65027fef2b8668796480ce"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_commit_4cd8eae\\attempt_001\\timeseries.tsv",
+      "bytes": 24979381,
+      "sha256": "dfba0bd486b1a775b902378b5992109eb2b1bfdd296cf1a1c676bc706d5f95ee"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_v0_3_0\\attempt_001\\process_events.json",
+      "bytes": 1396458,
+      "sha256": "8b4463bfa422dc91c7adfd671c5aca26b393338518d4c1ffc583521f15725417"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_v0_3_0\\attempt_001\\result.json",
+      "bytes": 8522,
+      "sha256": "18e87d7fc4d77b6255c1607a21d89585859260f72ba74f59eb6f141dc2ec31b0"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_v0_3_0\\attempt_001\\stderr.log",
+      "bytes": 243868,
+      "sha256": "d70b96d7e7df92e6621b31de7d9bfa693aa92cbdcdee2217de772b9efb1ad3d6"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_v0_3_0\\attempt_001\\timeseries.tsv",
+      "bytes": 2312094,
+      "sha256": "2dd98ff03fc1634d02ccd75eb9635b0cab7d5fa87f1bb60b59e018da98fe3a8b"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_v0_4_0\\attempt_001\\process_events.json",
+      "bytes": 2321764,
+      "sha256": "4c65bb87d952f5a11b3f9dcce63e709fea34169a62c59d9ee8b49a23010ea497"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_v0_4_0\\attempt_001\\result.json",
+      "bytes": 10427,
+      "sha256": "4462a8271e127bcd7b961877d7d5b5bbcf34ee1c533127d77170f5426694fe1d"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\results\\cases\\LUAD517_v0_4_0\\attempt_001\\timeseries.tsv",
+      "bytes": 1605033,
+      "sha256": "eb0c63b1de80b1d52189fb360caee48c03de8d29172b04e07031c96f24b65bd5"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\build_consensus_network\\attempts\\0\\work\\consensus.native.stdout.txt",
+      "bytes": 5619,
+      "sha256": "3b20755af400899c14aa85c64ebda461f516c7a6f71660ab896acc01812f0961"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-0\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "835cc8efeceef7a96c42b4944201fecc5d6b5d5d97b69c940e2f63d1e6191430"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-10\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "ac96b52ca06e975d2067a2d50032712421e8b6560ce93a64f6563cde4dee5363"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-11\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "762adab12c78f8300f9a87117c8b8c49af7fd380b39ffee960273f44955ede89"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-12\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "1e644324d170ec91863bc7f21a1501c7cf542965c512bbb48f71286829ffd227"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-13\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "48059bec78943f42784a78e020c32be6aadfe1479a570ffebdbd84a64b422e76"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-14\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "0b85635466f3d5664df622553e56ab55fac9de0ea843e6f3a712b1f4f531fc6a"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-15\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "f09454030650b1f8048465330326b07494fe26305ebb7f5911ab94256161f87b"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-16\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "de70f071d2dde44453a5a3056a03feab507ecb32baf4ce77e21ac07433c0bb18"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-17\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "4732568bf564f39b453a4512a3a98c6e04ea04ac99f29a415be55d232c282f8a"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-18\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "15a7eab2c86f31655af3c799143609f7059ed4977e5560c754db68b90bc91165"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-19\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "d114a774a4ffdc56e46aa0f5c1c7d287e1297d54ab38258116841a759258366c"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-1\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "4a00d89b51f4ae6b443e8afe184b06a0d7b93f97349ad190236c87e072e3322f"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-20\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "83778434f389698fb9794cec7f446784c34334fcd5f046b270b7a575c9942664"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-21\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "13b0fd0c4fee008e6abc60146999c3241fca9b8fd983c35c7e3084b8505f8a61"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-22\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "56d5fa766f034379048848737bb7de07defff081eac40dac487183cf7cd78dd4"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-23\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "7cca6e3558b66634c3f43802a55b6cfb637a29f2e3b52a48d272aa6eb2e711d7"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-24\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "414bdfdebd3623e7c7d51dde454603a1dae4bb805aaa9994c6312107f85f4412"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-25\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "e73236fa1f074c44d62c9717a8943a3dda2a443bc894543cd7dbaed4eedf907d"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-26\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "cc7962dca9038eeea46f49c2c00a2e7ed0802b4c1f17ae1600f55120811a6b29"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-27\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "0088e13ceb2e17df6eb45f35ad8a119265797ad5c7fe72d98d88818aacb66825"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-28\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "c2ef3de4f2e2ca50341d67d8b6877880c3dd47de33dfb06016824f36d44816b2"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-29\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "8e60a076f95b0eedc1ce6982f080199c168b1e40554f6bcf439bdb72984ef750"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-2\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "d92b8ac007d09695e8dca46118aec80bb2582e213b90c8c942613c950c49e933"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-30\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "7760601afbfc5d4a6dc9f7016ce3ea7a77013b63f41b671c19fc214c1ed86415"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-31\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "d0c1fa2bc77f37cce6464fe57085c3c0df846e784fec846123e4cf4070137dc9"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-32\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "3fb5613c677fd4e3111e912a764a0c35f023a409c1f1ba2a605da1f0e115e32c"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-33\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "f39b59c2e52b74be5b342361227f5200c0e1e0c58b36168bf7820422c76a7dd8"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-34\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "54ade1b3ff648bda66048ac740b485cdfd3742c45273895f58ded13ca7244aac"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-35\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "cee9782633f33d503d658ee9c759c696bfa0607dc5a840443d32e2cab2e5ee00"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-36\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1911,
+      "sha256": "b05e3f81849fb9fc738a263ae6e7b865b561a65319eaa8f3cdd429b1b3923fdd"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-37\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1911,
+      "sha256": "0c30c5b9a50c82f78b6cd63b16d8ada1e19b80c738c820d83fc0cbd8dfc1f45f"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-38\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1911,
+      "sha256": "5d1675cf0cbf4472f79ef00be11c066473f0986dfd7f486b9af1396046245b1b"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-39\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "929e4d8c76fb320830a50c9c3a8b8b3d188903b775cea936fcdf91b8ad3909d8"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-3\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "0eab6044fb0bbb9adee727ee2bbf66dec155b2f80a13a5bce8c4d540924cf8e7"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-40\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "ce888592013f29aafc8cfa18d981894a3a868ef9a6ddee0b1a101eeee0114330"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-41\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "83e9f98f13083ae80229e8fd03d818dca963021bf5892b1c92156be106690dfe"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-42\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "4d5439a1dea812d690360931b738782969c4590a7d2eac7439476fc274184b9a"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-43\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "59ca362a46ccc2918a293fcae314ed962f5d30e644ae84a37c178ba60a0ab013"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-44\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "aad3939012b18bfb5f8ee739e2571288b23acacb1fdb31fc7a76e23ec625107c"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-45\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "9694ffa9b91b014dee34e4be15b846655af31ef5dbf95df699d85c8be78b6267"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-46\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "4d0e231ec0f0b55cea85ecacfaf40b83f18ea50509170314cf3a5d70e7b482e2"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-47\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "0faf0745b0fa1bf56b3e137b199555af86134ccb4c350334e6d7966a3ca0a228"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-48\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "0a87e76a678c417daa8cdc6d08a4dd07ff96f3af46ea93b7038b6022a1574a81"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-49\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "8bcd07294011a5f1dd75baed212714e6fab8526e1ac3df53eca103974ae479c4"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-4\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "7c0448a12c7ba2e86f5fb2cfc9c66894c7369ce5f71d03a938a22f9ec5e2ed62"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-50\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "fb4f5ab4700dbe446b036b30f08c498e44ea304ef6d5dd0da3c59d07844fdff6"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-51\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "d961676d24154a525b5246c95577681084e4c2af7382fde58745d82659b01433"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-52\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "58dbc0d3a2737c7476cc418e0b840131a4bc53808000705545de8be90f7a10d9"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-53\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "19a2f0068ab7a80a385ff6fd478829452f094403682054a6f17dcc647f938dd4"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-54\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "34ebb9125e347466c997afd2a48d1d3be961d5e785229802faa237f6deca5d14"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-55\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "5c1373434cf2999605a69a55f5eab05834c236a5a0af0d98b72b338cf43c1a5d"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-56\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "52268da8cc7e14893982ee14c4a86458c55d5ee9984db44df0cbf90521c02658"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-57\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "54d9ccb0da771d128ff3224a7d909740a2604ab61219880941a59bbba4d54de3"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-58\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "1761a5645a8a2b742c11d7f13d5f317807e37df79d0665e255df582c7cfaac5e"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-59\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "8a64a6ef49ab7c0c20cc1f4d93ac6eba5a430b2bedd53d8a040feb11cf7c4986"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-5\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "cbf8475816105dd76d26057483118e81e02167e6efecdcd9f839252b0c89a6e4"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-60\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "1d4396bf0ed14f46e0510914ef6ed5263737b17e6e527872f3ec097d16c807ba"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-61\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "41681ae5ee26e9bf75d37b6e64cbb82180ef35a5a02d0e46c69437db9a96e254"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-62\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "297542883bbbfed0046df6fd73c73ac0e83ebc92e875698924a0d8e991711b82"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-63\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "daa608fe94acd7f176011211814937ada05afab5377568a09c497bbb3392a88c"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-64\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "876a1d7ae51aa245e1c6b5cdcc444674457a4e5189c0f65cf7d5b45d0b51e499"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-65\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "1b0e17f0784c7f938bfd74c9785101010544e5fe6ad12c05eff57e5ce04adfa9"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-66\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "1c15398d26c5e6234482b2e7df7e9cc7da099309bcc5ac612832ae894a47f0f9"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-67\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "b3c74a5daa91a8aa1017d0e83467ddcd048f038226fa8cb242bf276db0c05590"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-68\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "f2de021190abdf01055a5686c0b291ab55153768f3a7ab2304192dba3a38476c"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-69\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "6ab83660540742ec92a5ec10cee6d514b95eead5b5e82a688764360ed61a60c5"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-6\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "b0d769f40ba29e2e6d1a41032135cde0613d0e85f7b6a47fa82258b2ac6cee29"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-70\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "bedf0578a49c6810f44c3a3d93eda601e5af6ab582bbe5dc8e5ec44ea0aa8857"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-71\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "e50072b998d5cac0c0efa24374443046db65dd34564b718558ffcfc32249f78e"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-72\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "603194e9e6db48c2b797a9b21150cd2c91955759c372b35e36622b5c6ee46b81"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-73\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "7c0120fdc5635de82fcc35b203b04f297bfa564c298848a11e15a398033401f9"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-74\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "a26ee55116ea48f24833f7fec974921c74e6fc1209b24f6331648374dfe88c5c"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-75\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "adff5954f0d802812a88f69f6f897d50c3010d9fe29ac3147ff95d84cf658c6e"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-76\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "a8b2947c4856252e6826a63bd94741aa2e00dad6636432443bf2dbfcb671211b"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-77\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "587419355f6fb9201bf16198d93abe7f205d5b965e8bdb0bc2a2ffadda535633"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-78\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "7cc7dfecc10065c46ac7d9aee3c0fd2a64eacb46f53bc8b51a537aecc78e351f"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-79\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "b03e36487368fd852bb19d4d187613466da88b1242ce9a219709aab89501e66d"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-7\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "71d3ede492681cfd1815c1d1302dd0283626af9da914ef598e20cf8a30893088"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-80\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "f11a6e4080c4e403b25759b82195d494d3f2ce73d4b0b664ef8b7f4b9d2d0277"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-81\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "e75d068423152537e487bbddb881194d0084de0937daec64ff4afa73c6d41520"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-82\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "5a5c4c670e1784bbd9368cbd82a088b1a1871e162c2102675fde846411fd3e1b"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-83\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "99b577445aa677edc8ea9519bd94c8431cb3c4f877907b64877ff963c6af31a6"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-84\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "29c6cdde5b0a6cb80f1f74818d7ab53f577ce920851a51b650ceb1ebf046c84b"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-85\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "646cf7a4e8a2ed6931bb08f9ca279457b9a18a2c81a69757ca3b7b543d22fffc"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-86\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "fa2159ce90f83726cc5dd0ab6b705909eefbbdf4f0bf7964c5365b0d7b8c36b1"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-87\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "ef3cd2da34a674eca3490acc4a5bf22d4700fdfbc1043448c77e93b7cb57dc4c"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-88\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "7b74dc62d8328c2dfec957c89d2d72189e23f13815edc663593a1362cabd2a12"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-89\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "d2cb000ce52a4ffac5818f112170b108db656dd492737edf730eddcd9ab24594"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-8\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "08f57c1b61916dd84bd3265198722141a5eb171d81f2f09216e71b66930d9b9f"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-90\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "ab7949a442f8e9293cc65cdc00fd9fc7268541d6742e1e5886054d67725660d1"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-91\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "97f3d2d292cd2bfd6b5857f80bd5b5b3034e9d7a90aa357b828cfb7e02496e91"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-92\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "5fe5f565b504032c3034d68f168d8fc9fb76803dbce550cc404eb49a970ac486"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-93\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "5d9df11921abd526c7102b6beb5704c45f84de40789dc66f67968fe9dc0f67be"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-94\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "08ec8b2d961af21b75511c7458f3b739fdb15330cfd3588aeae9b93d1dd69fcd"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-95\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "8b5b371208779be6ba1a296134bc8fa9eba88436e119d2dd96055dd5c085c89d"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-96\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "29e8f815d231ed80285d8c162e72baeb98627d91b3c138388962bef587df3c01"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-97\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "37979f4dfcbc9ebd01da9b1561ed72c43b6e401522c9f068b2e193b0e4745842"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-98\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "019779839c446d4412aa5774fd316cad4e78b58625b1d95d6b91ace33e3c283f"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-99\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1909,
+      "sha256": "acfaf268d37119bf85e6603bf9c8a346305712ff099bae595f1b84fc919363e7"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\scratch\\LUAD517_v0_4_0\\sjaracne-sprocket-e49ql4mx\\runs\\SJARACNe\\2026-11-10_231703111629428\\calls\\resample_and_estimate_mi-9\\attempts\\0\\work\\native.stdout.txt",
+      "bytes": 1910,
+      "sha256": "cc57e76a31a60265d858b8b1a0c977525bc31a974f056c7f24c524722b3f3ab5"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\sources_lf\\commit_4cd8eae\\SJARACNe\\src\\matrix.cpp",
+      "bytes": 36013,
+      "sha256": "62983c2f51e52bc5a7b9dae4b1aaa23004aa8ab3b67b9ed0c959473b2fca6b68"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\sources_lf\\v0.3.0\\SJARACNe\\src\\matrix.cpp",
+      "bytes": 58433,
+      "sha256": "c52abfee34dbea8f6e96896bdb1bc57f7619011985bf6c918ad65fe735fd92d5"
+    },
+    {
+      "path": "E:\\GitHub\\local_runs\\sjaracne_performance_20261110\\three_versions\\sources_lf\\v0.4.0\\SJARACNe\\src\\matrix.cpp",
+      "bytes": 84654,
+      "sha256": "6c7aec5774a2aa7be36789ed74d06b64906240b2d1d3847882112165c8e735e3"
+    }
+  ],
+  "versions": [
+    "4cd8eae",
+    "v0.3.0",
+    "v0.4.0"
+  ],
+  "native_calls_required_per_version": 100,
+  "native_timer_observations": 501,
+  "step_rows": 10,
+  "process_grouping": "PID plus exact argument list; create-time fragments retained in process TSV",
+  "step_time_definition": "Union of first-to-last observation intervals, with one sample interval appended; unchanged sampler elapsed clock",
+  "step_wall_clock_rescaled": false,
+  "whole_workflow_plot_definitions": {
+    "wall_time": "GNU-time elapsed seconds divided by 3600; linear zero-baseline hours",
+    "peak_memory": "Sampled peak_descendant_pss_bytes divided by 1024**3; linear zero-baseline GiB",
+    "data_table": "whole_workflows.tsv",
+    "raw_result_values_modified": false
+  },
+  "memory_definition": "Maximum complete-sample whole-tree PSS inside merged step intervals; peaks are not summed",
+  "native_timer_definition": "Rounded std::time/std::difftime elapsed seconds; logs do not identify seeds for interleaved older timers",
+  "raw_graphs_read": false,
+  "inference_rerun": false,
+  "concurrent_case_ids": [
+    "LUAD517_commit_4cd8eae"
+  ],
+  "sampling_interval_seconds": 0.5
+}

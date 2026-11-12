@@ -1,0 +1,4 @@
+version	wall_seconds	wall_hours	peak_tree_pss_bytes	peak_tree_pss_gib	concurrent_load	wall_time_source
+4cd8eae	90549.0	25.1525	6633160704	6.1776123046875	True	GNU time
+v0.3.0	8678.0	2.4105555555555553	4390464512	4.0889387130737305	False	GNU time
+v0.4.0	5515.0	1.5319444444444446	2382226432	2.218621253967285	False	GNU time

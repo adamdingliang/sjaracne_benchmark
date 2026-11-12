@@ -1,0 +1,58 @@
+id	dataset	kind	stage	version	metric	value	metric_source	status	validation_passed	concurrent_workload	concurrent_workload_started_utc	performance_comparability
+Tcell_sparse_commit_4cd8eae	Tcell_sparse	full_cli		commit_4cd8eae	wall_seconds	202.22	GNU time	complete	True	False	NA	Sequential benchmark batch
+Tcell_sparse_commit_4cd8eae	Tcell_sparse	full_cli		commit_4cd8eae	peak_descendant_pss_bytes	344269824.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+Tcell_sparse_commit_4cd8eae	Tcell_sparse	full_cli		commit_4cd8eae	peak_descendant_rss_bytes	588685312.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+Tcell_sparse_v0_3_0	Tcell_sparse	full_cli		v0.3.0	wall_seconds	37.56	GNU time	complete	True	False	NA	Sequential benchmark batch
+Tcell_sparse_v0_3_0	Tcell_sparse	full_cli		v0.3.0	peak_descendant_pss_bytes	418579456.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+Tcell_sparse_v0_3_0	Tcell_sparse	full_cli		v0.3.0	peak_descendant_rss_bytes	606642176.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+Tcell_sparse_v0_4_0	Tcell_sparse	full_cli		v0.4.0	wall_seconds	190.59	GNU time	complete	True	False	NA	Sequential benchmark batch
+Tcell_sparse_v0_4_0	Tcell_sparse	full_cli		v0.4.0	peak_descendant_pss_bytes	575271936.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+Tcell_sparse_v0_4_0	Tcell_sparse	full_cli		v0.4.0	peak_descendant_rss_bytes	789213184.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_matched_native_commit_4cd8eae	LUAD517	matched_native	matched_native_MI_plus_DPI	commit_4cd8eae	wall_seconds	2966.86	GNU time	complete	True	False	NA	Sequential benchmark batch
+LUAD517_matched_native_commit_4cd8eae	LUAD517	matched_native	matched_native_MI_plus_DPI	commit_4cd8eae	peak_descendant_pss_bytes	1496367104.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_matched_native_commit_4cd8eae	LUAD517	matched_native	matched_native_MI_plus_DPI	commit_4cd8eae	peak_descendant_rss_bytes	1499729920.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_matched_native_v0_3_0	LUAD517	matched_native	matched_native_MI_plus_DPI	v0.3.0	wall_seconds	283.8	GNU time	complete	True	False	NA	Sequential benchmark batch
+LUAD517_matched_native_v0_3_0	LUAD517	matched_native	matched_native_MI_plus_DPI	v0.3.0	peak_descendant_pss_bytes	973615104.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_matched_native_v0_3_0	LUAD517	matched_native	matched_native_MI_plus_DPI	v0.3.0	peak_descendant_rss_bytes	977117184.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_matched_native_v0_4_0	LUAD517	matched_native	matched_native_MI_plus_DPI	v0.4.0	wall_seconds	286.43	GNU time	complete	True	False	NA	Sequential benchmark batch
+LUAD517_matched_native_v0_4_0	LUAD517	matched_native	matched_native_MI_plus_DPI	v0.4.0	peak_descendant_pss_bytes	973825024.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_matched_native_v0_4_0	LUAD517	matched_native	matched_native_MI_plus_DPI	v0.4.0	peak_descendant_rss_bytes	977489920.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v030_consensus	BRCA100_TF	component	legacy_consensus	v0.3.0	wall_seconds	326.11	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v030_consensus	BRCA100_TF	component	legacy_consensus	v0.3.0	peak_descendant_pss_bytes	10512655360.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v030_consensus	BRCA100_TF	component	legacy_consensus	v0.3.0	peak_descendant_rss_bytes	10521042944.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v030_enhance	BRCA100_TF	component	legacy_enhance	v0.3.0	wall_seconds	1148.26	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v030_enhance	BRCA100_TF	component	legacy_enhance	v0.3.0	peak_descendant_pss_bytes	183827456.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v030_enhance	BRCA100_TF	component	legacy_enhance	v0.3.0	peak_descendant_rss_bytes	191827968.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v040_native_consensus_dpi	BRCA100_TF	component	native_consensus_plus_DPI	v0.4.0	wall_seconds	11.85	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v040_native_consensus_dpi	BRCA100_TF	component	native_consensus_plus_DPI	v0.4.0	peak_descendant_pss_bytes	944635904.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v040_native_consensus_dpi	BRCA100_TF	component	native_consensus_plus_DPI	v0.4.0	peak_descendant_rss_bytes	948273152.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v040_export	BRCA100_TF	component	modern_export	v0.4.0	wall_seconds	6.04	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v040_export	BRCA100_TF	component	modern_export	v0.4.0	peak_descendant_pss_bytes	120398848.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v040_export	BRCA100_TF	component	modern_export	v0.4.0	peak_descendant_rss_bytes	128737280.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v040_enhance	BRCA100_TF	component	modern_enhance	v0.4.0	wall_seconds	136.13	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v040_enhance	BRCA100_TF	component	modern_enhance	v0.4.0	peak_descendant_pss_bytes	169837568.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_TF_v040_enhance	BRCA100_TF	component	modern_enhance	v0.4.0	peak_descendant_rss_bytes	178257920.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v030_consensus	BRCA100_SIG	component	legacy_consensus	v0.3.0	wall_seconds	714.44	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v030_consensus	BRCA100_SIG	component	legacy_consensus	v0.3.0	peak_descendant_pss_bytes	29679541248.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v030_consensus	BRCA100_SIG	component	legacy_consensus	v0.3.0	peak_descendant_rss_bytes	29687840768.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v030_enhance	BRCA100_SIG	component	legacy_enhance	v0.3.0	wall_seconds	1220.09	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v030_enhance	BRCA100_SIG	component	legacy_enhance	v0.3.0	peak_descendant_pss_bytes	183276544.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v030_enhance	BRCA100_SIG	component	legacy_enhance	v0.3.0	peak_descendant_rss_bytes	191602688.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v040_native_consensus_dpi	BRCA100_SIG	component	native_consensus_plus_DPI	v0.4.0	wall_seconds	26.4	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v040_native_consensus_dpi	BRCA100_SIG	component	native_consensus_plus_DPI	v0.4.0	peak_descendant_pss_bytes	3685697536.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v040_native_consensus_dpi	BRCA100_SIG	component	native_consensus_plus_DPI	v0.4.0	peak_descendant_rss_bytes	3689287680.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v040_export	BRCA100_SIG	component	modern_export	v0.4.0	wall_seconds	7.72	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v040_export	BRCA100_SIG	component	modern_export	v0.4.0	peak_descendant_pss_bytes	120423424.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v040_export	BRCA100_SIG	component	modern_export	v0.4.0	peak_descendant_rss_bytes	128602112.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v040_enhance	BRCA100_SIG	component	modern_enhance	v0.4.0	wall_seconds	380.86	GNU time	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v040_enhance	BRCA100_SIG	component	modern_enhance	v0.4.0	peak_descendant_pss_bytes	174433280.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+BRCA100_SIG_v040_enhance	BRCA100_SIG	component	modern_enhance	v0.4.0	peak_descendant_rss_bytes	182632448.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_v0_4_0	LUAD517	full_cli		v0.4.0	wall_seconds	5515.0	GNU time	complete	True	False	NA	Sequential benchmark batch
+LUAD517_v0_4_0	LUAD517	full_cli		v0.4.0	peak_descendant_pss_bytes	2382226432.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_v0_4_0	LUAD517	full_cli		v0.4.0	peak_descendant_rss_bytes	2593988608.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_v0_3_0	LUAD517	full_cli		v0.3.0	wall_seconds	8678.0	GNU time	complete	True	False	NA	Sequential benchmark batch
+LUAD517_v0_3_0	LUAD517	full_cli		v0.3.0	peak_descendant_pss_bytes	4390464512.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_v0_3_0	LUAD517	full_cli		v0.3.0	peak_descendant_rss_bytes	4601376768.0	Sampled process tree	complete	True	False	NA	Sequential benchmark batch
+LUAD517_commit_4cd8eae	LUAD517	full_cli		commit_4cd8eae	wall_seconds	90549.0	GNU time	complete	True	True	2026-11-11T03:43:37.653081+00:00	Partly concurrent external workload; timing is not an isolated comparison
+LUAD517_commit_4cd8eae	LUAD517	full_cli		commit_4cd8eae	peak_descendant_pss_bytes	6633160704.0	Sampled process tree	complete	True	True	2026-11-11T03:43:37.653081+00:00	Partly concurrent external workload; timing is not an isolated comparison
+LUAD517_commit_4cd8eae	LUAD517	full_cli		commit_4cd8eae	peak_descendant_rss_bytes	6851268608.0	Sampled process tree	complete	True	True	2026-11-11T03:43:37.653081+00:00	Partly concurrent external workload; timing is not an isolated comparison

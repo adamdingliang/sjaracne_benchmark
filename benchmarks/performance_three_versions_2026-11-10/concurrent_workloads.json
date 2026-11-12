@@ -1,0 +1,29 @@
+{
+  "schema": "sjaracne-performance-concurrent-workloads-v1",
+  "events": [
+    {
+      "affected_case_id": "LUAD517_commit_4cd8eae",
+      "started_utc": "2026-11-11T03:43:37.653081+00:00",
+      "workload_root": "/mnt/e/TCGA/BLCA/runs_sjaracne/MIBC372_v0.4.0_2026-11-10_8c0c1e0",
+      "cpu_affinity": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        14
+      ],
+      "benchmark_cpu_affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reason": "User requested MIBC372 alongside remaining benchmark",
+      "isolation": "Disjoint CPU affinity; shared cache, memory bandwidth, power and SSD",
+      "receipt": "/mnt/e/TCGA/BLCA/runs_sjaracne/MIBC372_v0.4.0_2026-11-10_8c0c1e0/provenance/concurrent_start.json"
+    }
+  ]
+}
